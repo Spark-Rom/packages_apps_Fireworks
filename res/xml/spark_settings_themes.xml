@@ -152,6 +152,17 @@
     </PreferenceCategory>
 
      <PreferenceCategory
+        android:key="themes_qs_category"
+        android:title="@string/qs_category">
+
+        <com.spark.support.preferences.SecureSettingSwitchPreference
+            android:key="quick_settings_vibrate"
+            android:title="@string/quick_settings_vibrate_title"
+            android:summary="@string/quick_settings_vibrate_summary"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+     <PreferenceCategory
         android:title="@string/notification_material_dismiss_button_title">
 
         <com.spark.support.preferences.SystemSettingSwitchPreference
