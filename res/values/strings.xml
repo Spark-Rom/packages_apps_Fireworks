@@ -28,6 +28,7 @@
     <string name="udfps_category">UDFPS</string>
     <string name="general_category">General</string>
     <string name="flashlight_category">Flashlight</string>
+    <string name="qs_category">Qs Customizations</string>
 
     <!-- AdBlock -->
     <string name="hosts_block_title">Ad-block</string>
@@ -761,4 +762,8 @@
     <!-- Brightness control -->
     <string name="status_bar_brightness_control_title">Brightness control</string>
     <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across the status bar</string>
+
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
+    <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
 </resources>
