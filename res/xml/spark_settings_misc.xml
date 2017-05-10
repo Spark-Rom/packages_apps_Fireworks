@@ -51,4 +51,11 @@
         android:title="@string/disable_transition_animations_title"
         android:summary="@string/disable_transition_animations_summary"
         android:defaultValue="false" />
+
+    <!-- Launch music player when headset is connected -->
+    <com.spark.settings.preferences.SystemSettingSwitchPreference
+        android:key="headset_connect_player"
+        android:title="@string/headset_connect_player_title"
+        android:summary="@string/headset_connect_player_summary"
+        android:defaultValue="false" />
 </PreferenceScreen>
