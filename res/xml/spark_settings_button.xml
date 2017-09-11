@@ -43,4 +43,9 @@
             android:summary="@string/click_partial_screenshot_summary"
             android:defaultValue="false" />
 
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="allow_incall_home"
+            android:title="@string/allow_incall_home_title"
+            android:summary="@string/allow_incall_home_summary"
+            android:defaultValue="true" />
 </PreferenceScreen>
