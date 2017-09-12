@@ -230,4 +230,8 @@
 
     <string name="system_navigation_summary">Choose which system navigation style to use</string>
     <string name="system_navigation_title">Syatem navigation</string>
+
+    <!-- Wakeup options -->
+    <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
+    <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged</string>
 </resources>
