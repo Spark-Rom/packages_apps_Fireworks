@@ -72,6 +72,13 @@ public class MiscSettings extends ActionFragment implements
         OnPreferenceChangeListener {
 
     private static final String PREF_ADBLOCK = "persist.spark.hosts_block";
+    private static final String CHARGING_LIGHTS_PREF = "charging_light";
+    private static final String LED_CATEGORY = "led";
+    private static final String NOTIFICATION_LIGHTS_PREF = "notification_light";
+
+    private Preference mChargingLeds;
+    private Preference mNotLights;
+    private PreferenceCategory mLedCategory;
 
     private Handler mHandler = new Handler();
 
@@ -88,6 +95,25 @@ public class MiscSettings extends ActionFragment implements
 
         findPreference(PREF_ADBLOCK).setOnPreferenceChangeListener(this);
 
+        boolean hasLED = res.getBoolean(
+                com.android.internal.R.bool.config_hasNotificationLed);
+        if (hasLED) {
+            mNotLights = (Preference) findPreference(NOTIFICATION_LIGHTS_PREF);
+            boolean mNotLightsSupported = res.getBoolean(
+                    com.android.internal.R.bool.config_intrusiveNotificationLed);
+            if (!mNotLightsSupported) {
+                prefSet.removePreference(mNotLights);
+            }
+            mChargingLeds = (Preference) findPreference(CHARGING_LIGHTS_PREF);
+            if (mChargingLeds != null
+                    && !getResources().getBoolean(
+                            com.android.internal.R.bool.config_intrusiveBatteryLed)) {
+                prefSet.removePreference(mChargingLeds);
+            }
+        } else {
+            mLedCategory = findPreference(LED_CATEGORY);
+            mLedCategory.setVisible(false);
+        }
     }
 
     @Override
