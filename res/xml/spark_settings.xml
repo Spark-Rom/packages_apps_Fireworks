@@ -50,7 +50,7 @@
             android:key="gestures_category"
             android:title="@string/gestures_title" 
             android:fragment="com.spark.settings.fragments.GestureSettings"
-            android:icon="@drawable/ic_settings_gestures"/>
+            android:icon="@drawable/ic_settings_gesture"/>
 
         <!-- Lock Screen -->
         <Preference
@@ -71,7 +71,7 @@
             android:key="notifications_category"
             android:title="@string/notifications_title"
             android:fragment="com.spark.settings.fragments.NotificationSettings"
-            android:icon="@drawable/ic_settings_notifications"/>
+            android:icon="@drawable/ic_settings_notification"/>
 
         <!-- Misc -->
         <Preference
