@@ -40,6 +40,7 @@ import androidx.preference.PreferenceViewHolder;
 import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.util.spark.SparkUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -52,6 +53,7 @@ import java.util.List;
 public class NotificationSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
     private static final String KEY_CHARGING_LIGHT = "charging_light";
 
     private Preference mChargingLeds;
@@ -67,6 +69,11 @@ public class NotificationSettings extends SettingsPreferenceFragment implements
                 && !getResources().getBoolean(
                         com.android.internal.R.bool.config_intrusiveBatteryLed)) {
             prefScreen.removePreference(mChargingLeds);
+        }
+
+        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
+        if (!SparkUtils.isVoiceCapable(getActivity())) {
+            prefScreen.removePreference(incallVibCategory);
         }
     }
 
