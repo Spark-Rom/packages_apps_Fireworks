@@ -17,10 +17,13 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/network_traffic_title">
 
-    <com.spark.settings.preferences.SystemSettingSwitchPreference
-        android:key="network_traffic_state"
-        android:title="@string/network_traffic_state_title"
-        android:defaultValue="false" />
+    <ListPreference
+        android:key="network_traffic_location"
+        android:title="@string/network_traffic_location"
+        android:summary="%s"
+        android:entries="@array/network_traffic_location_entries"
+        android:entryValues="@array/network_traffic_location_values"
+        android:persistent="false" />
 
     <com.spark.settings.preferences.CustomSeekBarPreference
         android:key="network_traffic_autohide_threshold"
