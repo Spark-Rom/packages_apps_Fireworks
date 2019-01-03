@@ -30,6 +30,11 @@
             android:summary="@string/battery_bar_summary"
             android:fragment="com.spark.settings.fragments.BatteryBarSettings" />
 
+        <Preference
+            android:key="cutout_settings"
+            android:fragment="com.spark.settings.fragments.CutoutFragment"
+            android:title="@string/cutout_main" />
+
 
     <Preference
             android:title="@string/statusbar_items_title" >
