@@ -35,6 +35,12 @@
             android:entryValues="@array/lockscreen_charging_animation_values"
             android:defaultValue="1" />
 
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="charging_animation"
+            android:title="@string/charging_animation_title"
+            android:summary="@string/charging_animation_summary"
+            android:defaultValue="true" />
+
       <!--  <Preference
             android:title="@string/lockscreen_tuner_title"
             android:summary="@string/lockscreen_tuner_summary">
