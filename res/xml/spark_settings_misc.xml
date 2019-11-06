@@ -24,6 +24,9 @@
         android:summary="@string/wakeup_when_plugged_unplugged_summary"
         android:defaultValue="true" />  -->
 
+    <PreferenceCategory
+         android:title="@string/battery_saving">
+
     <Preference
         android:key="gaming_mode"
         android:fragment="com.spark.settings.fragments.GamingMode"
@@ -37,6 +40,14 @@
             android:summary="@string/sensor_block_summary"
             android:fragment="com.spark.settings.fragments.SensorBlockSettings"/>
 
+
+        <Preference
+            android:key="suspend_actions"
+            android:fragment="com.spark.settings.fragments.ScreenStateToggles"
+            android:title="@string/screen_state_toggles_title"
+            android:summary="@string/screen_state_toggles_summary" />
+
+    </PreferenceCategory>
 
     <com.spark.settings.preferences.SecureSettingSwitchPreference
         android:key="tethering_allow_vpn_upstreams"
