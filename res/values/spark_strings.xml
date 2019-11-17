@@ -37,6 +37,7 @@
     <string name="reset">Reset</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
+    <string name="default_string">Default</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -47,6 +48,7 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
     <string name="color_default">Default</string>
+    <string name="color_picker_simple_dialog_title">Select a led color</string>
 
     <!-- Battery light -->
     <string name="light_settings_header">Light settings</string>
