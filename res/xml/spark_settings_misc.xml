@@ -24,6 +24,12 @@
         android:summary="@string/wakeup_when_plugged_unplugged_summary"
         android:defaultValue="true" />  -->
 
+    <Preference
+        android:key="gaming_mode"
+        android:fragment="com.spark.settings.fragments.GamingMode"
+        android:title="@string/gaming_mode_title"
+        android:summary="@string/gaming_mode_summary" />
+
     <com.spark.settings.preferences.SystemSettingListPreference
         android:key="screen_off_animation"
         android:title="@string/screen_off_animation_title"
