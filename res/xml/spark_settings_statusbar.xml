@@ -68,6 +68,11 @@
         android:fragment="com.spark.settings.fragments.ClockDateSettings"
         android:title="@string/status_bar_clock_title" />
 
+    <Preference
+        android:key="carrier_label"
+        android:fragment="com.spark.settings.fragments.CarrierLabel"
+        android:title="@string/carrier_label_settings_title" />
+
         <com.spark.support.preferences.SystemSettingSwitchPreference
             android:key="data_disabled_icon"
             android:title="@string/data_disabled_icon_title"
