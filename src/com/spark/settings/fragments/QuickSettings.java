@@ -20,6 +20,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
+import com.spark.settings.preferences.SystemSettingEditTextPreference;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -27,11 +28,13 @@ import java.util.ArrayList;
 public class QuickSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
+    private static final String FOOTER_TEXT_STRING = "footer_text_string";
     private static final String PREF_TILE_ANIM_STYLE = "qs_tile_animation_style";
     private static final String PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
     private static final String PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
     private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
 
+    private SystemSettingEditTextPreference mFooterString;
     private ListPreference mSmartPulldown;
     private ListPreference mTileAnimationStyle;
     private ListPreference mTileAnimationDuration;
@@ -51,6 +54,19 @@ public class QuickSettings extends SettingsPreferenceFragment implements
                 Settings.System.QS_SMART_PULLDOWN, 0);
         mSmartPulldown.setValue(String.valueOf(smartPulldown));
         updateSmartPulldownSummary(smartPulldown);
+
+        // Qs footer
+        mFooterString = (SystemSettingEditTextPreference) findPreference(FOOTER_TEXT_STRING);
+        mFooterString.setOnPreferenceChangeListener(this);
+        String footerString = Settings.System.getString(getContentResolver(),
+                FOOTER_TEXT_STRING);
+        if (footerString != null && footerString != "")
+            mFooterString.setText(footerString);
+        else {
+            mFooterString.setText("#Spark");
+            Settings.System.putString(getActivity().getContentResolver(),
+                    Settings.System.FOOTER_TEXT_STRING, "#Spark");
+        }
 
         // QS animation
         mTileAnimationStyle = (ListPreference) findPreference(PREF_TILE_ANIM_STYLE);
@@ -105,6 +121,18 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(resolver, Settings.System.QS_SMART_PULLDOWN, smartPulldown);
             updateSmartPulldownSummary(smartPulldown);
             return true;
+        } else if (preference == mFooterString) {
+            String value = (String) newValue;
+            if (value != "" && value != null)
+                Settings.System.putString(getActivity().getContentResolver(),
+                        Settings.System.FOOTER_TEXT_STRING, value);
+            else {
+                mFooterString.setText("#Spark");
+                Settings.System.putString(getActivity().getContentResolver(),
+                        Settings.System.FOOTER_TEXT_STRING, "#Spark");
+            }
+            return true;
+
         }
         return false;
     }
