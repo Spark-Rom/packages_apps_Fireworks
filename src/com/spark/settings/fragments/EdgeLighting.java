@@ -39,6 +39,7 @@ import com.spark.support.preferences.SystemSettingListPreference;
 import com.spark.support.preferences.SystemSettingSwitchPreference;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
+import com.spark.settings.preferences.AmbientLightSettingsPreview;
 
 @SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
 public class EdgeLighting extends SettingsPreferenceFragment implements
@@ -87,6 +88,7 @@ public class EdgeLighting extends SettingsPreferenceFragment implements
         value = Settings.System.getIntForUser(resolver,
                 KEY_COLOR, accentColor, UserHandle.USER_CURRENT);
         mColorPref.setDefaultColor(accentColor);
+        AmbientLightSettingsPreview.setAmbientLightPreviewColor(value);
         String colorHex = String.format("#%08x", (0xFFFFFFFF & value));
         if (value == accentColor) {
             mColorPref.setSummary(R.string.default_string);
@@ -147,6 +149,7 @@ public class EdgeLighting extends SettingsPreferenceFragment implements
             } else {
                 preference.setSummary(hex);
             }
+            AmbientLightSettingsPreview.setAmbientLightPreviewColor(Integer.valueOf(String.valueOf(newValue)));
             int color = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putIntForUser(resolver,
                     KEY_COLOR, color, UserHandle.USER_CURRENT);
