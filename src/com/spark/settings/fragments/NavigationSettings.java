@@ -41,6 +41,7 @@ import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
+import com.android.internal.util.spark.SparkUtils;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
@@ -52,6 +53,8 @@ import java.util.List;
 public class NavigationSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private Preference mGestureSystemNavigation;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +64,15 @@ public class NavigationSettings extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         return false;
+
+        mGestureSystemNavigation = findPreference(GESTURE_SYSTEM_NAVIGATION);
+        if (SparkUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
+            mGestureSystemNavigation.setSummary(getString(R.string.legacy_navigation_title));
+        } else if (SparkUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton")) {
+            mGestureSystemNavigation.setSummary(getString(R.string.swipe_up_to_switch_apps_title));
+        } else {
+            mGestureSystemNavigation.setSummary(getString(R.string.edge_to_edge_navigation_title));
+        }
     }
 
     @Override
