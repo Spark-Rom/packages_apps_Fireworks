@@ -46,6 +46,8 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.spark.settings.preferences.SystemSettingSwitchPreference;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,12 +55,17 @@ import java.util.List;
 public class NavigationSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    private Preference mGestureSystemNavigation;
+   private static final String GESTURE_SYSTEM_NAVIGATION = "gesture_system_navigation";
+   private static final String PIXEL_NAV_ANIMATION = "pixel_nav_animation";
+
+   private Preference mGestureSystemNavigation;
+   private SystemSettingSwitchPreference mPixelNavAnimation;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.spark_settings_navigation);
+        final PreferenceScreen prefScreen = getPreferenceScreen();
     }
 
     @Override
@@ -66,12 +73,14 @@ public class NavigationSettings extends SettingsPreferenceFragment implements
         return false;
 
         mGestureSystemNavigation = findPreference(GESTURE_SYSTEM_NAVIGATION);
+        mPixelNavAnimation = findPreference(PIXEL_NAV_ANIMATION);
         if (SparkUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
             mGestureSystemNavigation.setSummary(getString(R.string.legacy_navigation_title));
         } else if (SparkUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton")) {
             mGestureSystemNavigation.setSummary(getString(R.string.swipe_up_to_switch_apps_title));
         } else {
             mGestureSystemNavigation.setSummary(getString(R.string.edge_to_edge_navigation_title));
+            prefScreen.removePreference(mPixelNavAnimation);
         }
     }
 
