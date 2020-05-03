@@ -4,4 +4,6 @@
 
     <!-- FOD icon picker -->
     <color name="fod_item_background_stroke_color">#d6d6d6</color>
+
+    <color name="spark_icon_tint_color">@*android:color/accent_device_default_light</color>
 </resources>
