@@ -37,4 +37,10 @@
             android:summary="@string/swap_volume_buttons_summary"
             android:defaultValue="false" />
 
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="click_partial_screenshot"
+            android:title="@string/click_partial_screenshot_title"
+            android:summary="@string/click_partial_screenshot_summary"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
