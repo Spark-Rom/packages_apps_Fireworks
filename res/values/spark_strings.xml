@@ -314,6 +314,9 @@
     <string name="lockscreen_charging_animation_drop">Drop</string>
     <string name="lockscreen_charging_animation_explosion">Explosion</string>
     <string name="lockscreen_charging_animation_water">Water</string>
+    <string name="lockscreen_charging_animation_phone">Phone</string>
+    <string name="lockscreen_charging_animation_stack">Stack</string>
+    <string name="lockscreen_charging_animation_wavy">Wavy</string>
 
     <!-- Statusbar Clock -->
     <string name="status_bar_clock_date_title">Clock and Date</string>
