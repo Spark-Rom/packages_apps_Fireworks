@@ -137,6 +137,13 @@
             android:summary="@string/qs_bg_use_new_tint_summary"
             android:defaultValue="2" />
 
+        <com.spark.settings.preferences.SystemSettingListPreference
+            android:key="qs_header_background"
+            android:title="@string/qs_header_background_title"
+            android:entries="@array/qs_header_background_entries"
+            android:entryValues="@array/qs_header_background_values"
+            android:defaultValue="0" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
