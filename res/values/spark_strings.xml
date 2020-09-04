@@ -1100,4 +1100,6 @@
     <string name="pulse_custom_div">Bar spacing</string>
     <string name="pulse_filled_block_size">Block size</string>
     <string name="pulse_empty_block_size">Block spacing</string>
+    <string name="show_ambient_pulse_title">Ambient Pulse</string>
+    <string name="show_ambient_pulse_summary">Audio graphic equalizer on the ambient screen</string>
 </resources>
