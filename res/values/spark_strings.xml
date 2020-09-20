@@ -971,4 +971,13 @@
 
     <string name="active_edge_app_select_title">Select app</string>
     <string name="active_edge_activity_select_title">Select activity</string>
+
+    <!-- Navbar Picker -->
+    <string name="theme_navbar_picker_title">Navbar style</string>
+    <string name="theme_navbar_picker_summary">Select navbar style</string>
+    <string name="theme_navbar_picker_default">Default</string>
+    <string name="theme_navbar_picker_oneplus">OnePlus</string>
+    <string name="theme_navbar_picker_oneui">One UI</string>
+    <string name="theme_navbar_picker_tecno">Tecno Camon</string>
+    <string name="theme_navbar_picker_asus">ASUS</string>
 </resources>
