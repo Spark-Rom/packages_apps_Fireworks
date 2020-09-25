@@ -57,6 +57,12 @@
             android:summary="@string/notification_headers_summary"
             android:defaultValue="true" />
 
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="vibrate_on_notifications"
+            android:title="@string/vibrate_on_notifications_title"
+            android:summary="@string/vibrate_on_notifications_summary"
+            android:defaultValue="true"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory
