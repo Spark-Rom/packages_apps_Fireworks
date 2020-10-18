@@ -58,4 +58,12 @@
         android:title="@string/headset_connect_player_title"
         android:summary="@string/headset_connect_player_summary"
         android:defaultValue="false" />
+
+    <Preference
+        android:title="@string/radio_info_title"
+        android:key="radio_info_settings">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.phone"
+            android:targetClass="com.android.phone.settings.RadioInfo" />
+    </Preference>
 </PreferenceScreen>
