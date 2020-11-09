@@ -46,6 +46,8 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.spark.settings.preferences.SystemSettingSwitchPreference;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,14 +55,17 @@ import java.util.List;
 public class NotificationSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String NOTIFICATION_HEADERS = "notification_headers";
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
     private static final String KEY_CHARGING_LIGHT = "charging_light";
 
+    private SystemSettingSwitchPreference mNotificationHeader;
     private Preference mChargingLeds;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ContentResolver resolver = getActivity().getContentResolver();
         addPreferencesFromResource(R.xml.spark_settings_notifications);
         PreferenceScreen prefScreen = getPreferenceScreen();
 
@@ -75,10 +80,23 @@ public class NotificationSettings extends SettingsPreferenceFragment implements
         if (!SparkUtils.isVoiceCapable(getActivity())) {
             prefScreen.removePreference(incallVibCategory);
         }
+
+        mNotificationHeader = findPreference(NOTIFICATION_HEADERS);
+        mNotificationHeader.setChecked((Settings.System.getInt(resolver,
+                Settings.System.NOTIFICATION_HEADERS, 1) == 1));
+        mNotificationHeader.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mNotificationHeader) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.NOTIFICATION_HEADERS, value ? 1 : 0);
+            SparkUtils.showSystemUiRestartDialog(getContext());
+            return true;
+        }
         return false;
     }
 
