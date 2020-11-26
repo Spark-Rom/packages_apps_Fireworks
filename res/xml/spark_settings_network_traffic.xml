@@ -40,4 +40,10 @@
         settings:min="0"
         settings:units="" />
 
+    <com.spark.settings.preferences.SystemSettingSwitchPreference
+        android:key="network_traffic_arrow"
+        android:title="@string/network_traffic_arrow"
+        android:summary="@string/network_traffic_arrow_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
