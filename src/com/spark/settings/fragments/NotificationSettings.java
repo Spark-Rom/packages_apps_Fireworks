@@ -60,6 +60,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements
 
     private static final String NOTIFICATION_HEADERS = "notification_headers";
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
+    private static final String KEY_AMBIENT = "ambient_notification_light_enabled";
     private static final String KEY_CHARGING_LIGHT = "charging_light";
     private static final String AMBIENT_LIGHT_DURATION = "ambient_light_duration";
     private static final String AMBIENT_LIGHT_REPEAT_COUNT = "ambient_light_repeat_count";
@@ -72,6 +73,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements
     private ListPreference mColorMode;
     private SystemSettingSeekBarPreference mEdgeLightDurationPreference;
     private SystemSettingSeekBarPreference mEdgeLightRepeatCountPreference;
+    private SystemSettingSwitchPreference mAmbientPref;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -96,6 +98,15 @@ public class NotificationSettings extends SettingsPreferenceFragment implements
         mNotificationHeader.setChecked((Settings.System.getInt(resolver,
                 Settings.System.NOTIFICATION_HEADERS, 1) == 1));
         mNotificationHeader.setOnPreferenceChangeListener(this);
+
+        mAmbientPref = (SystemSettingSwitchPreference) findPreference(KEY_AMBIENT);
+        boolean aodEnabled = Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.DOZE_ALWAYS_ON, 0, UserHandle.USER_CURRENT) == 1;
+        if (!aodEnabled) {
+            mAmbientPref.setChecked(false);
+            mAmbientPref.setEnabled(false);
+            mAmbientPref.setSummary(R.string.aod_disabled);
+        }
 
         mEdgeLightRepeatCountPreference = (SystemSettingSeekBarPreference) findPreference(AMBIENT_LIGHT_REPEAT_COUNT);
         mEdgeLightRepeatCountPreference.setOnPreferenceChangeListener(this);
