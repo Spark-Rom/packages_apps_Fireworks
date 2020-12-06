@@ -485,6 +485,8 @@
     <!-- Notification headers -->
     <string name="notification_headers_title">Notification headers</string>
     <string name="notification_headers_summary">Show headers in the notification shade</string>
+    <string name="center_notification_headers_title">Center notification headers</string>
+    <string name="center_notification_headers_summary">Whether to Center notification headers (Requires a SystemUI restart)</string>
 
     <!-- Lock icon -->
     <string name="hide_lockicon_title">Hide lock icon</string>
