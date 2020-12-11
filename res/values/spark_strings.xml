@@ -766,4 +766,9 @@
     <string name="qs_panel_bg_use_new_tint_summary">Enable the accent color tint on the QS tiles</string>
     <string name="sysui_colors_active_title">Colored SystemUI</string>
     <string name="sysui_colors_active_summary">Wallpaper colored scrims and QS</string>
+
+    <!-- QS media player -->
+    <string name="qs_media_player_title">Media player</string>
+    <string name="qs_media_player_summary_on">Show media player in QS\nRequires a SystemUI restart</string>
+    <string name="qs_media_player_summary_off">Show media player as a notification\nRequires a SystemUI restart</string>
 </resources>
