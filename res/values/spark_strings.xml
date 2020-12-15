@@ -804,4 +804,13 @@
     <string name="lockscreen_maxnotif_title">Lockscreen notification count</string>
     <string name="lockscreen_maxnotif_sumary">Enable adjustment of max lockscreen notifications</string>
     <string name="lockscreen_maxnotif_config">Max lockscreen notifications</string>
+
+
+    <!-- Lock FP icon -->
+    <string name="lock_fp_icon_title">Fingerprint icon on lockscreen</string>
+    <string name="lock_fp_icon_summary">Display a fingerprint icon under the clock date when it is possible to unlock using fingerprint</string>
+    <string name="lock_fp_icon_fod_summary">This feature is unsupported on FOD-equipped devices</string>
+    <string name="lock_fp_icon_no_fp_summary">This feature is unsupported on devices without a fingerprint sensor</string>
+    <string name="lock_fp_icon_rart_user_summary">This feature is unsupported on devices without enrolled fingerprints</string>
+    <string name="unsupported_feature_summary">This feature is unsupported by your device</string>
 </resources>

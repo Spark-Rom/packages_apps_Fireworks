@@ -78,6 +78,12 @@
             android:defaultValue="true" />
 
         <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="lock_fp_icon"
+            android:title="@string/lock_fp_icon_title"
+            android:summary="@string/lock_fp_icon_summary"
+            android:defaultValue="false" />
+
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="pocket_judge"
             android:title="@string/pocket_judge_title"
             android:summary="@string/pocket_judge_summary"

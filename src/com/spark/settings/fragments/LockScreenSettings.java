@@ -12,6 +12,7 @@ import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import com.android.internal.util.spark.fod.FodUtils;
 import com.android.internal.util.spark.SparkUtils;
+import android.hardware.biometrics.BiometricSourceType;
 import android.hardware.fingerprint.FingerprintManager;
 import android.net.Uri;
 import android.os.Bundle;
@@ -21,6 +22,7 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 import com.spark.settings.preferences.CustomSeekBarPreference;
+import com.spark.settings.preferences.SystemSettingSwitchPreference;
 
 import android.provider.Settings;
 import com.android.settings.R;
@@ -35,6 +37,11 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private static final String FOD_ICON_PICKER_CATEGORY = "fod_icon_picker";
     private static final String FOD_ANIMATION_CATEGORY = "fod_animations";
     private static final String LOCKSCREEN_MAX_NOTIF_CONFIG = "lockscreen_max_notif_cofig";
+    private static final String LOCK_FP_ICON = "lock_fp_icon";
+
+    private SystemSettingSwitchPreference mLockFPIcon;
+
+    private boolean mHasFod;
 
     private FingerprintManager mFingerprintManager;
     private PreferenceCategory mFODIconPickerCategory;
@@ -57,6 +64,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         PreferenceScreen prefScreen = getPreferenceScreen();
         final PackageManager mPm = getActivity().getPackageManager();
         final Resources res = getResources();
+        Context mContext = getContext();
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
@@ -99,6 +107,27 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 
         ContentResolver resolver = getActivity().getContentResolver();
         Resources resources = getResources();
+
+        mLockFPIcon = findPreference(LOCK_FP_ICON);
+ 	FingerprintManager fingerprintManager = (FingerprintManager) mContext.getSystemService(Context.FINGERPRINT_SERVICE);
+        mHasFod = FodUtils.hasFodSupport(mContext);
+
+        if (fingerprintManager == null) {
+            mLockFPIcon.setSummary(getString(R.string.unsupported_feature_summary));
+            mLockFPIcon.setEnabled(false);
+        } else if (!fingerprintManager.isHardwareDetected()) {
+            mLockFPIcon.setSummary(getString(R.string.lock_fp_icon_no_fp_summary));
+            mLockFPIcon.setEnabled(false);
+        } else if (mHasFod) {
+            mLockFPIcon.setSummary(getString(R.string.lock_fp_icon_fod_summary));
+            mLockFPIcon.setEnabled(false);
+        } else if (!fingerprintManager.hasEnrolledFingerprints()) {
+            mLockFPIcon.setSummary(getString(R.string.lock_fp_icon_rart_user_summary));
+            mLockFPIcon.setEnabled(false);
+        } else {
+            mLockFPIcon.setSummary(getString(R.string.lock_fp_icon_summary));
+            mLockFPIcon.setEnabled(true);
+        }
 
         mAODPref = findPreference(AOD_SCHEDULE_KEY);
         updateAlwaysOnSummary();
