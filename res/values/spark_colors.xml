@@ -9,4 +9,8 @@
 
     <!-- Previews -->
     <color name="preview_container_border">#ECECEC</color>
+    <color name="preview_text">#ff000000</color>
+    <color name="themes_preview_background">#0f000000</color>
+    <color name="themes_preview_card">#ffffffff</color>
+
 </resources>

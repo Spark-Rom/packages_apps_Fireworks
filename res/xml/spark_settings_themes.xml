@@ -40,7 +40,7 @@
 
 
        <ListPreference
-            android:layout="@layout/accents_shapes_base_preview"
+            android:layout="@layout/themes_accent_preview"
             android:selectable="false" />
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
@@ -53,10 +53,6 @@
         <ListPreference
             android:key="android.theme.customization.accent_color"
             android:title="@string/theme_customization_accent_color_title"/>
-
-        <ListPreference
-            android:layout="@layout/settings_icons_preview"
-            android:selectable="false" />
 
         <ListPreference
             android:key="android.theme.customization.adaptive_icon_shape"
@@ -74,7 +70,7 @@
             android:entryValues="@array/switch_style_values" />
 
         <ListPreference
-            android:layout="@layout/fonts_base_preview"
+            android:layout="@layout/themes_font_preview"
             android:selectable="false" />
 
         <ListPreference
