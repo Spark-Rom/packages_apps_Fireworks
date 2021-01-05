@@ -22,6 +22,8 @@ import com.android.settings.R;
 
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.spark.settings.preferences.SystemSettingSwitchPreference;
+
 import com.spark.settings.preferences.ActionFragment;
 
 public class ButtonSettings extends ActionFragment implements OnPreferenceChangeListener {
@@ -33,6 +35,7 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
     private static final String KEY_BUTTON_BRIGHTNESS_SW = "button_brightness_sw";
     private static final String KEY_BACKLIGHT_TIMEOUT = "backlight_timeout";
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
+    private static final String ANBI_ENABLED_OPTION = "anbi_enabled_option";
 
     // category keys
     private static final String CATEGORY_HWKEY = "hardware_keys";
@@ -59,6 +62,7 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
     private ListPreference mVolumeKeyCursorControl;
     private SwitchPreference mButtonBrightness_sw;
     private SwitchPreference mHwKeyDisable;
+    private SystemSettingSwitchPreference mAnbiEnable;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -76,6 +80,9 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
             mVolumeKeyCursorControl.setValue(Integer.toString(volumeRockerCursorControl));
             mVolumeKeyCursorControl.setSummary(mVolumeKeyCursorControl.getEntry());
         }
+
+        mAnbiEnable = (SystemSettingSwitchPreference) findPreference(ANBI_ENABLED_OPTION);
+        mAnbiEnable.setOnPreferenceChangeListener(this);
 
         final boolean needsNavbar = ActionUtils.hasNavbarByDefault(getActivity());
         final PreferenceCategory hwkeyCat = (PreferenceCategory) prefScreen
@@ -126,6 +133,7 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
                     }
                 }
         } else {
+            mAnbiEnable.setChecked(false);
             prefScreen.removePreference(hwkeyCat);
         }
 
@@ -178,6 +186,8 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
             prefScreen.removePreference(assistCategory);
         }
 
+        mAnbiEnable.setEnabled(keysDisabled == 0);
+
         // let super know we can load ActionPreferences
         onPreferenceScreenLoaded(ActionConstants.getDefaults(ActionConstants.HWKEYS));
 
@@ -222,6 +232,13 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.HARDWARE_KEYS_DISABLE,
                     value ? 1 : 0);
             setActionPreferencesEnabled(!value);
+            mAnbiEnable.setEnabled(!value);
+            mAnbiEnable.setChecked(false);
+            return true;
+        } else if (preference == mAnbiEnable) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putInt(getContentResolver(), Settings.System.ANBI_ENABLED_OPTION,
+                    value ? 1 : 0);
             return true;
         }
         return false;
