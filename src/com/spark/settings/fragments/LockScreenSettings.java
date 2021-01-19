@@ -26,12 +26,14 @@ import com.android.settings.SettingsPreferenceFragment;
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String POCKET_JUDGE = "pocket_judge";
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
     private static final String FOD_ICON_PICKER_CATEGORY = "fod_icon_picker";
 
     private FingerprintManager mFingerprintManager;
     private PreferenceCategory mFODIconPickerCategory;
     private SwitchPreference mFingerprintVib;
+    private Preference mPocketJudge;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -39,6 +41,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.spark_settings_lockscreen);
         PreferenceScreen prefScreen = getPreferenceScreen();
         final PackageManager mPm = getActivity().getPackageManager();
+        final Resources res = getResources();
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
@@ -59,6 +62,11 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         if (mFODIconPickerCategory != null && !FodUtils.hasFodSupport(getContext())) {
             prefScreen.removePreference(mFODIconPickerCategory);
         }
+        mPocketJudge = (Preference) prefScreen.findPreference(POCKET_JUDGE);
+        boolean mPocketJudgeSupported = res.getBoolean(
+                com.android.internal.R.bool.config_pocketModeSupported);
+        if (!mPocketJudgeSupported)
+            prefScreen.removePreference(mPocketJudge);
 
         ContentResolver resolver = getActivity().getContentResolver();
         Resources resources = getResources();

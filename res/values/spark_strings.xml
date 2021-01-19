@@ -395,4 +395,9 @@
     <!-- Double Tap on Doze to wake -->
     <string name="double_tap_on_doze_to_wake_title">Double-tap to wake on doze</string>
     <string name="double_tap_on_doze_to_wake_summary">Double tap to wake when device is dreaming</string>
+
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">Pocket detection</string>
+    <string name="pocket_judge_summary">Block screen inputs when device is in pocket</string>
+
 </resources>
