@@ -695,4 +695,7 @@
     <!-- Notification Vibration -->
     <string name="vibrate_on_notifications_title">Vibrate for notifications</string>
     <string name="vibrate_on_notifications_summary">Toogle for disable vibrate notification</string>
+
+    <!-- Lock screen media blur -->
+    <string name="lockscreen_media_blur_title">Media artwork blur level</string>
 </resources>
