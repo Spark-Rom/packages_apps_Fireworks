@@ -50,7 +50,7 @@ public class PowerMenuSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.spark_settings_power_menu);
+        addPreferencesFromResource(R.xml.spark_settings_power);
     }
 
     @Override
@@ -76,7 +76,7 @@ public class PowerMenuSettings extends SettingsPreferenceFragment implements
                     ArrayList<SearchIndexableResource> result =
                             new ArrayList<SearchIndexableResource>();
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.spark_settings_power_menu;
+                    sir.xmlResId = R.xml.spark_settings_power;
                     result.add(sir);
                     return result;
                 }
