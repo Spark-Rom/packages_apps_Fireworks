@@ -17,6 +17,14 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/spark_settings_title" >
 
+        <!-- About Spark -->
+        <Preference
+            android:key="about_spark"
+            android:title="@string/spark_about_title"
+            android:summary="@string/spark_about_summary"
+            android:fragment="com.spark.settings.AboutSpark"
+            android:icon="@drawable/ic_settings_spark_about" />
+
         <!-- Status Bar -->
         <Preference
             android:key="statusbar_category"
@@ -38,13 +46,6 @@
             android:fragment="com.spark.settings.fragments.ButtonSettings"
             android:icon="@drawable/ic_settings_buttons"/>
 
-        <!-- Navigation Bar -->
-        <Preference
-            android:key="navigationbar_category"
-            android:title="@string/navbar_title" 
-            android:fragment="com.spark.settings.fragments.NavigationSettings"
-            android:icon="@drawable/ic_settings_navbar"/>
-
         <!-- Gestures -->
         <Preference
             android:key="gestures_category"
@@ -63,7 +64,7 @@
         <Preference
             android:key="powermenu__category"
             android:title="@string/powermenu_title" 
-            android:fragment="com.spark.settings.fragments.PowerMenuSettings"
+            android:fragment="com.android.settings.gestures.PowerMenuSettings"
             android:icon="@drawable/ic_settings_powermenu"/>
 
         <!-- Notifications -->

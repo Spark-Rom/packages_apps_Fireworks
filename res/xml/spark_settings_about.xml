@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2020-2021 The Spark Project
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+         http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/spark_about_title" >
+
+    <PreferenceCategory
+        android:key="spark_about_summary"
+        android:title="@string/spark_about_summary">
+
+        <Preference
+            android:title="@string/spark_website_title"
+            android:icon="@drawable/ic_settings_spark_about"
+            android:summary="@string/spark_website_summary">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://spark.spkal01.tech" />
+        </Preference>
+
+        <Preference
+            android:title="@string/spark_telegram_title"
+            android:icon="@drawable/ic_telegram"
+            android:summary="@string/spark_telegram_summary">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/Spark-Os" />
+        </Preference>
+
+        <Preference
+            android:title="@string/spark_github_title"
+            android:icon="@drawable/ic_github"
+            android:summary="@string/spark_github_summary">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/Spark-Rom" />
+        </Preference>
+
+        <Preference
+            android:summary="@string/spark_about_info_summary" />
+
+ </PreferenceCategory>
+
+    <!-- Team SPark -->
+    <PreferenceCategory
+        android:key="about_team"
+        android:title="@string/spark_about_team">
+
+        <Preference
+            android:title="@string/spark_about_spkal"
+            android:summary="@string/spark_about_spkal_summary">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.spkal01.tech" />
+        </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="about_supporters"
+        android:title="@string/spark_about_supporters">
+
+        <Preference
+            android:title="@string/spark_about_daniel"
+            android:summary="@string/spark_about_daniel_summary">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/daniml3" />
+        </Preference>
+
+        <Preference
+            android:title="@string/spark_about_yusuf"
+            android:summary="@string/spark_about_yusuf_summary">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/Noonlord" />
+        </Preference>
+
+        <Preference
+            android:title="@string/spark_about_redline"
+            android:summary="@string/spark_about_redline_summary">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/redline_soee" />
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
