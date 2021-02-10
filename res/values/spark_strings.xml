@@ -674,12 +674,14 @@
     <string name="volume_panel_compact">Compact</string>
     <string name="volume_panel_oreo">Oreo</string>
     <string name="volume_panel_tiled">Tiled</string>
+    <string name="volume_panel_miui">MIUI</string>
 
     <!-- Volume Panel Plugin Values -->
     <string name="volume_panel_stock_val" translatable="false">com.android.systemui.volume</string>
     <string name="volume_panel_compact_val" translatable="false">co.potatoproject.plugin.volume.compact</string>
     <string name="volume_panel_oreo_val" translatable="false">co.potatoproject.plugin.volume.oreo</string>
     <string name="volume_panel_tiled_val" translatable="false">co.potatoproject.plugin.volume.tiled</string>
+    <string name="volume_panel_miui_val" translatable="false">co.potatoproject.plugin.volume.miui</string>
 
     <!-- Allow fake signature -->
     <string name="allow_signature_fake">Allow signature spoofing</string>
