@@ -63,6 +63,13 @@
 
     </PreferenceCategory>
 
+        <!-- Sensor Block -->
+        <Preference
+            android:key="sensor_block_settings"
+            android:title="@string/sensor_block_title"
+            android:summary="@string/sensor_block_summary"
+            android:fragment="com.spark.settings.fragments.SensorBlockSettings"/>
+
     <com.spark.settings.preferences.SystemSettingListPreference
         android:key="screen_off_animation"
         android:title="@string/screen_off_animation_title"
