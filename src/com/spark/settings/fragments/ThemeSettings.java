@@ -38,6 +38,7 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.spark.settings.display.QsTileStylePreferenceController;
 import com.spark.settings.display.AccentColorPreferenceController;
+import com.spark.settings.display.SwitchStylePreferenceController;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -84,6 +85,7 @@ public class ThemeSettings extends DashboardFragment {
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.icon_pack"));
         controllers.add(new QsTileStylePreferenceController(context));
+        controllers.add(new SwitchStylePreferenceController(context));
         return controllers;
     }
 
