@@ -118,6 +118,13 @@
         android:key="misc_general_category"
         android:title="@string/general_category">
 
+        <!-- Sensor Block -->
+        <Preference
+            android:key="sensor_block_settings"
+            android:title="@string/sensor_block_title"
+            android:summary="@string/sensor_block_summary"
+            android:fragment="com.spark.settings.fragments.SensorBlockSettings"/>
+
     <!-- Smart Pixels -->
     <Preference
         android:key="smart_pixels"
