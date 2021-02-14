@@ -28,13 +28,28 @@
             android:summary="@string/lockscreen_battery_info_summary"
             android:defaultValue="true" />
 
-        <Preference
-            android:title="@string/lockscreen_tuner_title"
-            android:summary="@string/lockscreen_tuner_summary">
-            <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.LockscreenActivity" />
-        </Preference>
+    </PreferenceCategory>
+
+    <!-- FOD customization options -->
+    <PreferenceCategory
+        android:key="fod_icon_picker"
+        android:title="@string/fod_icon_picker_category_title">
+
+        <!-- FOD recognizing animation -->
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="fod_recognizing_animation"
+            android:title="@string/fod_recog_animation"
+            android:summary="@string/fod_recog_animation_summary"
+            android:defaultValue="false" />
+
+        <com.spark.settings.preferences.SystemSettingListPreference
+            android:key="fod_anim"
+            android:title="@string/fod_recog_animation_effect_title"
+            android:summary="%s"
+            android:entries="@array/fod_recog_animation_entries"
+            android:entryValues="@array/fod_recog_animation_values"
+            android:defaultValue="0"
+            android:dependency="fod_recognizing_animation" />
 
     </PreferenceCategory>
 
