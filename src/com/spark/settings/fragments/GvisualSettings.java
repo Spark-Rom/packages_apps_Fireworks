@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2021 The Evolution X Project
+ * Copyright (C) 2019-2021 The Spark Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -119,21 +119,43 @@ public class GvisualSettings extends SettingsPreferenceFragment implements
             handleOverlays(ThemesUtils.NAVBAR_COLOR_ORCD, false, mOverlayManager);
             handleOverlays(ThemesUtils.NAVBAR_COLOR_OPRD, false, mOverlayManager);
             handleOverlays(ThemesUtils.NAVBAR_COLOR_PURP, false, mOverlayManager);
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_BLUE, false, mOverlayManager);
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_ROSE, false, mOverlayManager);
             break;
             case "2":
             handleOverlays(ThemesUtils.NAVBAR_COLOR_ORCD, true, mOverlayManager);
             handleOverlays(ThemesUtils.NAVBAR_COLOR_OPRD, false, mOverlayManager);
             handleOverlays(ThemesUtils.NAVBAR_COLOR_PURP, false, mOverlayManager);
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_BLUE, false, mOverlayManager);
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_ROSE, false, mOverlayManager);
             break;
             case "3":
             handleOverlays(ThemesUtils.NAVBAR_COLOR_ORCD, false, mOverlayManager);
             handleOverlays(ThemesUtils.NAVBAR_COLOR_OPRD, true, mOverlayManager);
             handleOverlays(ThemesUtils.NAVBAR_COLOR_PURP, false, mOverlayManager);
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_BLUE, false, mOverlayManager);
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_ROSE, false, mOverlayManager);
             break;
             case "4":
             handleOverlays(ThemesUtils.NAVBAR_COLOR_ORCD, false, mOverlayManager);
             handleOverlays(ThemesUtils.NAVBAR_COLOR_OPRD, false, mOverlayManager);
             handleOverlays(ThemesUtils.NAVBAR_COLOR_PURP, true, mOverlayManager);
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_BLUE, false, mOverlayManager);
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_ROSE, false, mOverlayManager);
+            break;
+            case "5":
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_ORCD, false, mOverlayManager);
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_OPRD, false, mOverlayManager);
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_PURP, false, mOverlayManager);
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_BLUE, true, mOverlayManager);
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_ROSE, false, mOverlayManager);
+            break;
+            case "6":
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_ORCD, false, mOverlayManager);
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_OPRD, false, mOverlayManager);
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_PURP, false, mOverlayManager);
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_BLUE, false, mOverlayManager);
+            handleOverlays(ThemesUtils.NAVBAR_COLOR_ROSE, true, mOverlayManager);
             break;
         }
         try {
@@ -200,7 +222,11 @@ public class GvisualSettings extends SettingsPreferenceFragment implements
     private void setupNavbarSwitchPref() {
         mnbSwitch = (ListPreference) findPreference(PREF_NB_COLOR);
         mnbSwitch.setOnPreferenceChangeListener(this);
-        if (SparkUtils.isNavbarColor("com.gnonymous.gvisualmod.pgm_purp")){
+        if (SparkUtils.isNavbarColor("com.gnonymous.gvisualmod.pgm_rose")){
+            mnbSwitch.setValue("6");
+        } else if (SparkUtils.isNavbarColor("com.gnonymous.gvisualmod.pgm_blue")){
+            mnbSwitch.setValue("5");
+        } else if (SparkUtils.isNavbarColor("com.gnonymous.gvisualmod.pgm_purp")){
             mnbSwitch.setValue("4");
         } else if (SparkUtils.isNavbarColor("com.gnonymous.gvisualmod.pgm_oprd")){
             mnbSwitch.setValue("3");
