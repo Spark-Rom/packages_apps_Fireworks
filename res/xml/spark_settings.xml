@@ -17,14 +17,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/spark_settings_title" >
 
-        <!-- About Spark -->
-        <Preference
-            android:key="about_spark"
-            android:title="@string/spark_about_title"
-            android:summary="@string/spark_about_summary"
-            android:fragment="com.spark.settings.AboutSpark"
-            android:icon="@drawable/ic_settings_spark_about" />
-
         <!-- Status Bar -->
         <Preference
             android:key="statusbar_category"
@@ -98,4 +90,13 @@
                  android:targetPackage="org.omnirom.device"
                  android:targetClass="org.omnirom.device.DeviceSettings"/>
         </Preference>
+
+        <!-- About Spark -->
+        <PreferenceScreen
+            android:key="about_spark"
+            android:title="@string/spark_about_title"
+            android:summary="@string/spark_about_summary"
+            android:fragment="com.spark.settings.AboutSpark"
+            android:icon="@drawable/ic_settings_spark_about" />
+
 </PreferenceScreen>
