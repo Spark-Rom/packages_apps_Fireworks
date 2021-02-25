@@ -64,7 +64,7 @@
         <Preference
             android:key="powermenu__category"
             android:title="@string/powermenu_title" 
-            android:fragment="com.android.settings.gestures.PowerMenuSettings"
+            android:fragment="com.spark.settings.fragments.PowerSettings"
             android:icon="@drawable/ic_settings_powermenu"/>
 
         <!-- Notifications -->
