@@ -17,6 +17,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/spark_about_title" >
 
+    <Preference
+        android:key="spark_about_logo"
+        android:layout="@layout/spark_about_logo" />
+                
     <PreferenceCategory
         android:key="spark_about_summary"
         android:title="@string/spark_about_summary">
@@ -27,7 +31,7 @@
             android:summary="@string/spark_website_summary">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="https://spark.spkal01.tech" />
+                android:data="https://www.spark-os.live" />
         </Preference>
 
         <Preference
@@ -53,18 +57,24 @@
 
  </PreferenceCategory>
 
-    <!-- Team SPark -->
+    <!-- Team Spark -->
     <PreferenceCategory
         android:key="about_team"
         android:title="@string/spark_about_team">
 
         <Preference
             android:title="@string/spark_about_spkal"
-            android:summary="@string/spark_about_spkal_summary">
+            android:summary="@string/spark_about_spkal_summary"
+            android:icon="@drawable/ic_team">
             <intent
                 android:action="android.intent.action.VIEW"
                 android:data="https://www.spkal01.tech" />
         </Preference>
+
+        <Preference
+            android:title="@string/spark_about_phill"
+            android:summary="@string/spark_about_phill_summary"
+            android:icon="@drawable/ic_team"/>
 
     </PreferenceCategory>
 
@@ -78,22 +88,6 @@
             <intent
                 android:action="android.intent.action.VIEW"
                 android:data="https://github.com/daniml3" />
-        </Preference>
-
-        <Preference
-            android:title="@string/spark_about_yusuf"
-            android:summary="@string/spark_about_yusuf_summary">
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://github.com/Noonlord" />
-        </Preference>
-
-        <Preference
-            android:title="@string/spark_about_redline"
-            android:summary="@string/spark_about_redline_summary">
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://t.me/redline_soee" />
         </Preference>
 
     </PreferenceCategory>

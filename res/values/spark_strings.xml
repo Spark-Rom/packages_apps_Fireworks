@@ -96,14 +96,12 @@
     <string name="spark_github_summary">Tap here to open our GitHub!</string>
     <string name="spark_about_info_summary">Spark-Os is based on aosp and was created on january 2021</string>
     <string name="spark_about_team">Team Spark</string>
-    <string name="spark_about_spkal" translatable="false">Spyros Kal</string>
+    <string name="spark_about_spkal" translatable="false">Spyros (spkal01)</string>
     <string name="spark_about_spkal_summary" translatable="false">Lead Developer</string>
     <string name="spark_about_daniel" translatable="false">Daniel</string>
     <string name="spark_about_daniel_summary" translatable="false">Guru</string>
-    <string name="spark_about_yusuf" translatable="false">Yusuf</string>
-    <string name="spark_about_yusuf_summary" translatable="false">Guru</string>
-    <string name="spark_about_redline" translatable="false">redline</string>
-    <string name="spark_about_redline_summary" translatable="false">drawable helper</string>
+    <string name="spark_about_phill" translatable="false">Phill</string>
+    <string name="spark_about_phill_summary" translatable="false">Boot animation designer</string>
     <string name="spark_about_supporters">Supporters</string>
 
     <!-- FOD icon picker -->
