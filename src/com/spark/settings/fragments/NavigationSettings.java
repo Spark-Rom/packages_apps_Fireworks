@@ -66,11 +66,6 @@ public class NavigationSettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.spark_settings_navigation);
         final PreferenceScreen prefScreen = getPreferenceScreen();
-    }
-
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        return false;
 
         mGestureSystemNavigation = findPreference(GESTURE_SYSTEM_NAVIGATION);
         mPixelNavAnimation = findPreference(PIXEL_NAV_ANIMATION);
@@ -82,6 +77,11 @@ public class NavigationSettings extends SettingsPreferenceFragment implements
             mGestureSystemNavigation.setSummary(getString(R.string.edge_to_edge_navigation_title));
             prefScreen.removePreference(mPixelNavAnimation);
         }
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        return false;
     }
 
     @Override
