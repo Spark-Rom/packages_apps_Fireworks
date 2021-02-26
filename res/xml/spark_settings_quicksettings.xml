@@ -33,7 +33,7 @@
         android:defaultValue="true" />
 
     <com.spark.settings.preferences.SecureSettingSwitchPreference
-        android:key="qs_show_auto_brightnesss"
+        android:key="qs_show_auto_brightness"
         android:title="@string/qs_show_auto_brightness_title"
         android:summary="@string/qs_show_auto_brightness_summary"
         android:defaultValue="true" />

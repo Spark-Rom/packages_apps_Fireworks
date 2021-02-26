@@ -100,7 +100,7 @@
     <string name="spark_about_spkal_summary" translatable="false">Lead Developer</string>
     <string name="spark_about_daniel" translatable="false">Daniel</string>
     <string name="spark_about_daniel_summary" translatable="false">Guru</string>
-    <string name="spark_about_phill" translatable="false">Phill</string>
+    <string name="spark_about_phill" translatable="false">Phil</string>
     <string name="spark_about_phill_summary" translatable="false">Boot animation designer</string>
     <string name="spark_about_supporters">Supporters</string>
 
@@ -228,7 +228,7 @@
     <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
 
     <string name="system_navigation_summary">Choose which system navigation style to use</string>
-    <string name="system_navigation_title">Syatem navigation</string>
+    <string name="system_navigation_title">System navigation</string>
 
     <!-- Wakeup options -->
     <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>

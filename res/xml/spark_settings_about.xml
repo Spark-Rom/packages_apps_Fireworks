@@ -64,8 +64,8 @@
 
         <Preference
             android:title="@string/spark_about_spkal"
-            android:summary="@string/spark_about_spkal_summary"
-            android:icon="@drawable/ic_team">
+            android:icon="@drawable/ic_team"
+            android:summary="@string/spark_about_spkal_summary">
             <intent
                 android:action="android.intent.action.VIEW"
                 android:data="https://www.spkal01.tech" />
