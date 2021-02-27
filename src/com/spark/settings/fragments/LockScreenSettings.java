@@ -4,6 +4,7 @@ import com.android.internal.logging.nano.MetricsProto;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.UserHandle;
 import android.content.ContentResolver;
 import android.app.WallpaperManager;
 import android.content.Intent;
@@ -28,6 +29,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String POCKET_JUDGE = "pocket_judge";
+    private static final String AOD_SCHEDULE_KEY = "always_on_display_schedule";
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
     private static final String FOD_ICON_PICKER_CATEGORY = "fod_icon_picker";
     private static final String FOD_ANIMATION_CATEGORY = "fod_animations";
@@ -36,6 +38,8 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private PreferenceCategory mFODIconPickerCategory;
     private SwitchPreference mFingerprintVib;
     private Preference mPocketJudge;
+
+    Preference mAODPref;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -81,6 +85,31 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
         Resources resources = getResources();
 
+        mAODPref = findPreference(AOD_SCHEDULE_KEY);
+        updateAlwaysOnSummary();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        updateAlwaysOnSummary();
+    }
+
+    private void updateAlwaysOnSummary() {
+        if (mAODPref == null) return;
+        int mode = Settings.Secure.getIntForUser(getActivity().getContentResolver(),
+                Settings.Secure.DOZE_ALWAYS_ON_AUTO_MODE, 0, UserHandle.USER_CURRENT);
+        switch (mode) {
+            case 0:
+                mAODPref.setSummary(R.string.disabled);
+                break;
+            case 1:
+                mAODPref.setSummary(R.string.night_display_auto_mode_twilight);
+                break;
+            case 2:
+                mAODPref.setSummary(R.string.night_display_auto_mode_custom);
+                break;
+        }
     }
 
     @Override

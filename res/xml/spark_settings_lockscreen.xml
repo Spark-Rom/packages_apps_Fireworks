@@ -69,6 +69,11 @@
 
     </PreferenceCategory>
 
+    <Preference
+        android:key="always_on_display_schedule"
+        android:title="@string/always_on_display_schedule_title"
+        android:fragment="com.spark.settings.fragments.AODSchedule" />
+
     <SwitchPreference
         android:key="fingerprint_success_vib"
         android:title="@string/fprint_sucess_vib_title"
