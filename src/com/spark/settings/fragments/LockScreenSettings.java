@@ -11,6 +11,7 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import androidx.preference.ListPreference;
+import android.os.UserHandle;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceScreen;
@@ -38,12 +39,15 @@ import java.util.Collections;
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
+    private static final String AOD_SCHEDULE_KEY = "always_on_display_schedule";
+
     private static final String FINGERPRINT_SUCCESS_VIB = "fingerprint_success_vib";
     private static final String FINGERPRINT_ERROR_VIB = "fingerprint_error_vib";
 
     private FingerprintManager mFingerprintManager;
     private SwitchPreference mFingerprintSuccessVib;
     private SwitchPreference mFingerprintErrorVib;
+    Preference mAODPref;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -75,6 +79,32 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
             prefSet.removePreference(mFingerprintSuccessVib);
             prefSet.removePreference(mFingerprintErrorVib);
         }
+        mAODPref = findPreference(AOD_SCHEDULE_KEY);
+        updateAlwaysOnSummary();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        updateAlwaysOnSummary();
+    }
+
+    private void updateAlwaysOnSummary() {
+        if (mAODPref == null) return;
+        int mode = Settings.Secure.getIntForUser(getActivity().getContentResolver(),
+                Settings.Secure.DOZE_ALWAYS_ON_AUTO_MODE, 0, UserHandle.USER_CURRENT);
+        switch (mode) {
+            case 0:
+                mAODPref.setSummary(R.string.disabled);
+                break;
+            case 1:
+                mAODPref.setSummary(R.string.night_display_auto_mode_twilight);
+                break;
+            case 2:
+                mAODPref.setSummary(R.string.night_display_auto_mode_custom);
+                break;
+        }
+
     }
 
     @Override

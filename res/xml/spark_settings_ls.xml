@@ -15,6 +15,11 @@
     android:title="@string/lockscreen_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <Preference
+        android:key="always_on_display_schedule"
+        android:title="@string/always_on_display_schedule_title"
+        android:fragment="com.spark.settings.fragments.AODSchedule" />
+
     <PreferenceCategory
         android:key="lockscreen_general_category"
         android:title="@string/general_category" >

@@ -1,6 +1,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Fireworks</string>
     <string name="default_string">Default</string>
+    <string name="disabled">Disabled</string>
     <!-- Categories -->
     <string name="themes_title">Themes</string>
     <string name="gestures_title">Gestures</string>
@@ -511,4 +512,9 @@
     <!-- Screen off FOD -->
     <string name="screen_off_fod_title">Screen off FOD</string>
     <string name="screen_off_fod_summary">Keep FOD enabled when the screen is off</string>
+
+    <!-- AOD Schedule -->
+    <string name="always_on_display_schedule_title">Always on display schedule</string>
+    <string name="always_on_display_schedule_sunset">Sunset</string>
+    <string name="always_on_display_schedule_sunrise">Sunrise</string>
 </resources>
