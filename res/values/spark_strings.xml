@@ -65,7 +65,7 @@
     <string name="lockscreen_info_category_title">Lockscreen options</string>
 
     <!-- Double Tap gestures -->
-    <string name="dtts_category_title">Double tap to sleep</string>
+    <string name="dtt_category_title">Double tap Gestures</string>
 
     <!-- Double tap-to-sleep -->
     <string name="double_tap_to_sleep_title">Statusbar</string>
@@ -391,4 +391,8 @@
     <!-- Notification guts kill app button -->
     <string name="notification_guts_kill_app_button_title">Kill app button</string>
     <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
+
+    <!-- Double Tap on Doze to wake -->
+    <string name="double_tap_on_doze_to_wake_title">Double-tap to wake on doze</string>
+    <string name="double_tap_on_doze_to_wake_summary">Double tap to wake when device is dreaming</string>
 </resources>

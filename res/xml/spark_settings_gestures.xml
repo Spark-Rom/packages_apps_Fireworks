@@ -24,8 +24,8 @@
         android:fragment="com.android.settings.gestures.GestureSettings" />
 
     <PreferenceCategory
-        android:key="dtts_category"
-        android:title="@string/dtts_category_title">
+        android:key="dtt_category"
+        android:title="@string/dtt_category_title">
 
         <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="double_tap_sleep_gesture"
@@ -44,6 +44,12 @@
             android:title="@string/status_bar_toggle_brightness"
             android:summary="@string/status_bar_toggle_brightness_summary"
             android:defaultValue="false" />
+
+        <com.spark.settings.preferences.SecureSettingSwitchPreference
+            android:key="doze_pulse_on_double_tap"
+            android:title="@string/double_tap_on_doze_to_wake_title"
+            android:summary="@string/double_tap_on_doze_to_wake_summary"
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 
