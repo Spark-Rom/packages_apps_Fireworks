@@ -51,8 +51,12 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String RINGTONE_FOCUS_MODE = "ringtone_focus_mode";
+    private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
+    private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
+    private static final String SCROLLINGCACHE_DEFAULT = "2";
 
     private ListPreference mHeadsetRingtoneFocus;
+    private ListPreference mScrollingCachePref;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -66,6 +70,12 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         mHeadsetRingtoneFocus.setValue(Integer.toString(mHeadsetRingtoneFocusValue));
         mHeadsetRingtoneFocus.setSummary(mHeadsetRingtoneFocus.getEntry());
         mHeadsetRingtoneFocus.setOnPreferenceChangeListener(this);
+
+        mScrollingCachePref = (ListPreference) findPreference(SCROLLINGCACHE_PREF);
+        mScrollingCachePref.setValue(SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP,
+                SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP, SCROLLINGCACHE_DEFAULT)));
+        mScrollingCachePref.setOnPreferenceChangeListener(this);
+
     }
 
     @Override
@@ -77,6 +87,11 @@ public class MiscSettings extends SettingsPreferenceFragment implements
                     mHeadsetRingtoneFocus.getEntries()[index]);
             Settings.Global.putInt(getContentResolver(), Settings.Global.RINGTONE_FOCUS_MODE,
                     mHeadsetRingtoneFocusValue);
+            return true;
+        } else if (preference == mScrollingCachePref) {
+            if (newValue != null) {
+                SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String) newValue);
+            }
             return true;
         }
         return false;
