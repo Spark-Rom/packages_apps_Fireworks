@@ -74,14 +74,6 @@
         android:summary="@string/qs_footer_text_summary"
         android:defaultValue="false"/>
 
-    <!-- QS footer text string -->
-    <com.spark.settings.preferences.SystemSettingEditTextPreference
-        android:key="footer_text_string"
-        android:title="@string/qs_footer_text_string_title"
-        android:summary="@string/qs_footer_text_string_summary"
-        android:dependency="footer_text_show"
-        android:defaultValue="#Spark" />
-
     <PreferenceCategory
         android:key="quick_settings_animations"
         android:title="@string/qs_tile_animation_title">
