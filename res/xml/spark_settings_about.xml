@@ -64,7 +64,6 @@
 
         <Preference
             android:title="@string/spark_about_spkal"
-            android:icon="@drawable/ic_team"
             android:summary="@string/spark_about_spkal_summary">
             <intent
                 android:action="android.intent.action.VIEW"
@@ -73,9 +72,16 @@
 
         <Preference
             android:title="@string/spark_about_phill"
-            android:summary="@string/spark_about_phill_summary"
-            android:icon="@drawable/ic_team"/>
+            android:summary="@string/spark_about_phill_summary" />
 
+        <Preference
+            android:title="@string/spark_about_iron"
+            android:summary="@string/spark_about_iron_summary">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://sps.goindi.org" />
+        </Preference>
+ 
     </PreferenceCategory>
 
     <PreferenceCategory
