@@ -932,4 +932,7 @@
     <string name="screen_state_toggles_mobile_data_summary">Mobile data will be disabled on screen off</string>
     <string name="screen_state_off_delay_title">Screen-off actions delay</string>
     <string name="screen_state_on_delay_title">Screen-on actions delay</string>
+    <string name="screen_state_toggles_threeg">Switch to 3G</string>
+    <string name="screen_state_toggles_threeg_summary">Network mode will be switched to 3G on screen off</string>
+
 </resources>
