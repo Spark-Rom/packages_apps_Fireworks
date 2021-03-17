@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:background="?android:attr/colorPrimary"
+	android:layout_height="match_parent"
+	tools:context="com.spark.settings.SparkSettings">
+
+
+	<ScrollView
+	android:layout_width="match_parent"
+	android:layout_height="0dp"
+	app:layout_constraintTop_toTopOf="parent" >
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<ImageView
+				android:id="@+id/imageHeader"
+				android:layout_width="match_parent"
+				android:layout_height="250dp"
+				android:src="@drawable/header_bg"
+				android:contentDescription="@string/spark_settings_title"
+				app:layout_constraintTop_toTopOf="parent"
+				android:scaleType="centerCrop" >
+			</ImageView>
+
+			<View
+				android:id="@+id/imageBack"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:contentDescription="@string/spark_settings_title"
+				android:padding="1dp"
+				android:layout_marginTop="16dp"
+				android:layout_marginStart="16dp"
+				app:layout_constraintStart_toStartOf="@id/imageHeader"
+				app:layout_constraintTop_toTopOf="@id/imageHeader">
+			</View>
+			<ImageView
+				android:id="@+id/Logo"
+				android:layout_width="110dp"
+				android:layout_height="110dp"
+				android:contentDescription="@string/spark_settings_title"
+				android:padding="1dp"
+				android:src="@drawable/spark"
+				android:layout_marginTop="28dp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toTopOf="@id/imageHeader"
+				app:layout_constraintStart_toStartOf="parent"
+				tools:layout_editor_absoluteY="16dp" >
+			</ImageView>
+
+			<TextView
+				android:id="@+id/heading"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textAlignment="center"
+				android:text="@string/spark_settings_title"
+				android:textColor="@android:color/white"
+				android:layout_marginTop="25dp"
+				android:textStyle="bold"
+				app:layout_constraintTop_toBottomOf="@id/Logo"
+				android:textSize="23sp" >
+			</TextView>
+
+			<View
+				android:layout_width="1dp"
+				android:layout_height="1dp"
+				android:id="@+id/ViewSupport"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintBottom_toBottomOf="@id/imageHeader"
+				android:layout_marginBottom="15dp" >
+			</View>
+
+			<com.google.android.material.card.MaterialCardView
+			android:id="@+id/quicksettings_card"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			app:cardBackgroundColor="?android:attr/colorPrimary"
+			app:layout_constraintEnd_toStartOf="@id/statusbarsettings_card"
+			android:layout_marginEnd="10dp"
+			android:layout_marginStart="25dp"
+			app:cardCornerRadius="10dp"
+			app:cardElevation="15dp"
+			app:layout_constraintTop_toBottomOf="@id/ViewSupport"
+			app:layout_constraintStart_toStartOf="parent">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:padding="15dp"
+					tools:ignore="UseCompoundDrawables">
+
+					<ImageView
+						android:layout_width="45dp"
+						android:layout_height="45dp"
+						android:paddingTop="5dp"
+						android:contentDescription="@string/spark_settings_title"
+				    android:src="@drawable/ic_settings_quicksettings"
+						android:tint="?android:attr/textColorPrimary">
+					</ImageView>
+
+					<TextView
+						android:id="@+id/quicksettings_cardtitle"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:paddingTop="13dp"
+						android:text="@string/quicksettings_title"
+						android:textColor="?android:attr/textColorPrimary"
+						android:textSize="18sp"
+						android:textStyle="bold">
+					</TextView>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
+
+			<com.google.android.material.card.MaterialCardView
+				android:id="@+id/statusbarsettings_card"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				app:cardBackgroundColor="?android:attr/colorPrimary"
+				app:layout_constraintStart_toEndOf="@id/quicksettings_card"
+				android:layout_marginStart="10dp"
+				android:layout_marginEnd="25dp"
+				app:cardCornerRadius="10dp"
+				app:cardElevation="15dp"
+				app:layout_constraintTop_toBottomOf="@id/ViewSupport"
+				app:layout_constraintEnd_toEndOf="parent" >
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:padding="15dp">
+
+					<ImageView
+						android:layout_width="45dp"
+						android:layout_height="45dp"
+						android:contentDescription="@string/spark_settings_title"
+						android:paddingTop="5dp"
+            android:elevation="18dp"
+						android:src="@drawable/ic_settings_statusbar"
+						android:tint="?android:attr/textColorPrimary">
+					</ImageView>
+
+					<TextView
+						android:id="@+id/cardqstitle"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:paddingTop="13dp"
+						android:text="@string/statusbar_title"
+						android:textColor="?android:attr/textColorPrimary"
+						android:textSize="18sp"
+						android:textStyle="bold">
+					</TextView>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
+
+			<com.google.android.material.card.MaterialCardView
+				android:id="@+id/lockscreensettings_card"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				app:cardBackgroundColor="?android:attr/colorPrimary"
+				app:layout_constraintEnd_toStartOf="@id/powersettings_card"
+				android:layout_marginEnd="10dp"
+				android:layout_marginTop="25dp"
+				android:layout_marginStart="25dp"
+				app:cardCornerRadius="10dp"
+				app:cardElevation="15dp"
+				app:layout_constraintTop_toBottomOf="@id/quicksettings_card"
+				app:layout_constraintStart_toStartOf="parent">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:padding="15dp"
+					tools:ignore="UseCompoundDrawables">
+
+					<ImageView
+						android:layout_width="45dp"
+						android:layout_height="45dp"
+						android:paddingTop="5dp"
+						android:tint="?android:attr/textColorPrimary"
+						android:contentDescription="@string/spark_settings_title"
+	          android:elevation="18dp"
+    				android:src="@drawable/ic_settings_lockscreens" >
+					</ImageView>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:paddingTop="13dp"
+						android:gravity="center"
+						android:text="@string/lockscreen_title"
+						android:textColor="?android:attr/textColorPrimary"
+						android:textSize="18sp"
+						android:textStyle="bold" >
+					</TextView>
+
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
+
+			<com.google.android.material.card.MaterialCardView
+				android:id="@+id/powersettings_card"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				app:cardBackgroundColor="?android:attr/colorPrimary"
+				app:layout_constraintStart_toEndOf="@id/lockscreensettings_card"
+				android:layout_marginStart="10dp"
+				android:layout_marginTop="25dp"
+				android:layout_marginEnd="25dp"
+				app:cardCornerRadius="10dp"
+				app:cardElevation="15dp"
+				app:layout_constraintTop_toBottomOf="@id/statusbarsettings_card"
+				app:layout_constraintEnd_toEndOf="parent" >
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:padding="15dp" >
+
+					<ImageView
+						android:layout_width="45dp"
+						android:layout_height="45dp"
+						android:paddingTop="5dp"
+						android:tint="?android:attr/textColorPrimary"
+						android:contentDescription="@string/spark_settings_title"
+						android:src="@drawable/ic_settings_powermenu" >
+					</ImageView>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/powermenu_title"
+						android:gravity="center"
+						android:textColor="?android:attr/textColorPrimary"
+						android:textStyle="bold"
+						android:paddingTop="13dp"
+						android:textSize="18sp" >
+					</TextView>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
+
+			<com.google.android.material.card.MaterialCardView
+			android:id="@+id/gesturesettings_card"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			app:cardBackgroundColor="?android:attr/colorPrimary"
+			app:layout_constraintEnd_toStartOf="@id/notificationsettings_card"
+			android:layout_marginEnd="10dp"
+			android:layout_marginTop="25dp"
+			android:layout_marginStart="25dp"
+			app:cardCornerRadius="10dp"
+			app:cardElevation="15dp"
+			app:layout_constraintTop_toBottomOf="@id/lockscreensettings_card"
+			app:layout_constraintStart_toStartOf="parent">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:padding="15dp"
+					tools:ignore="UseCompoundDrawables">
+
+					<ImageView
+						android:layout_width="45dp"
+						android:layout_height="45dp"
+						android:paddingTop="5dp"
+						android:contentDescription="@string/spark_settings_title"
+						android:src="@drawable/ic_settings_gesture"
+						android:tint="?android:attr/textColorPrimary">
+					</ImageView>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:paddingTop="13dp"
+						android:text="@string/gestures_title"
+						android:textColor="?android:attr/textColorPrimary"
+						android:textSize="18sp"
+						android:textStyle="bold">
+					</TextView>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
+
+			<com.google.android.material.card.MaterialCardView
+				android:id="@+id/notificationsettings_card"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				app:cardBackgroundColor="?android:attr/colorPrimary"
+				app:layout_constraintStart_toEndOf="@id/gesturesettings_card"
+				android:layout_marginStart="10dp"
+				android:layout_marginTop="25dp"
+				android:layout_marginEnd="25dp"
+				app:cardCornerRadius="10dp"
+				app:cardElevation="15dp"
+				app:layout_constraintTop_toBottomOf="@id/powersettings_card"
+				app:layout_constraintEnd_toEndOf="parent" >
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:padding="15dp" >
+
+					<ImageView
+						android:layout_width="45dp"
+						android:layout_height="45dp"
+						android:paddingTop="5dp"
+						android:tint="?android:attr/textColorPrimary"
+						android:contentDescription="@string/spark_settings_title"
+						android:src="@drawable/ic_settings_notification">
+					</ImageView>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:paddingTop="13dp"
+						android:text="@string/notifications_title"
+						android:textColor="?android:attr/textColorPrimary"
+						android:textSize="18sp"
+						android:textStyle="bold">
+					</TextView>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
+
+			<com.google.android.material.card.MaterialCardView
+			android:id="@+id/navigationsettings_card"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			app:cardBackgroundColor="?android:attr/colorPrimary"
+			app:layout_constraintEnd_toStartOf="@id/buttonsettings_card"
+			android:layout_marginEnd="10dp"
+			android:layout_marginTop="25dp"
+			android:layout_marginStart="25dp"
+			app:cardCornerRadius="10dp"
+			app:cardElevation="15dp"
+			app:layout_constraintTop_toBottomOf="@id/gesturesettings_card"
+			app:layout_constraintStart_toStartOf="parent">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:padding="15dp"
+					tools:ignore="UseCompoundDrawables">
+
+					<ImageView
+						android:layout_width="45dp"
+						android:layout_height="45dp"
+						android:paddingTop="5dp"
+						android:contentDescription="@string/spark_settings_title"
+						android:src="@drawable/ic_settings_navbar"
+						android:tint="?android:attr/textColorPrimary">
+					</ImageView>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:paddingTop="13dp"
+						android:text="@string/navigation_title"
+						android:textColor="?android:attr/textColorPrimary"
+						android:textSize="18sp"
+						android:textStyle="bold">
+					</TextView>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
+
+			<com.google.android.material.card.MaterialCardView
+				android:id="@+id/buttonsettings_card"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				app:cardBackgroundColor="?android:attr/colorPrimary"
+				app:layout_constraintStart_toEndOf="@id/navigationsettings_card"
+				android:layout_marginStart="10dp"
+				android:layout_marginTop="25dp"
+				android:layout_marginEnd="25dp"
+				app:cardCornerRadius="10dp"
+				app:cardElevation="15dp"
+				app:layout_constraintTop_toBottomOf="@id/notificationsettings_card"
+				app:layout_constraintEnd_toEndOf="parent" >
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:padding="15dp" >
+
+					<ImageView
+						android:layout_width="45dp"
+						android:layout_height="45dp"
+						android:paddingTop="5dp"
+						android:tint="?android:attr/textColorPrimary"
+						android:contentDescription="@string/spark_settings_title"
+						android:src="@drawable/ic_settings_buttons">
+					</ImageView>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:paddingTop="13dp"
+						android:text="@string/button_title"
+						android:textColor="?android:attr/textColorPrimary"
+						android:textSize="18sp"
+						android:textStyle="bold">
+					</TextView>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
+
+			<com.google.android.material.card.MaterialCardView
+				android:id="@+id/miscsettings_card"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				app:cardBackgroundColor="?android:attr/colorPrimary"
+				app:layout_constraintEnd_toStartOf="@id/aboutspark_card"
+				android:layout_marginEnd="10dp"
+				android:layout_marginTop="25dp"
+				android:layout_marginStart="25dp"
+				app:cardCornerRadius="10dp"
+				app:cardElevation="15dp"
+				app:layout_constraintTop_toBottomOf="@id/navigationsettings_card"
+				app:layout_constraintStart_toStartOf="parent">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:padding="15dp"
+					tools:ignore="UseCompoundDrawables">
+
+					<ImageView
+						android:layout_width="45dp"
+						android:layout_height="45dp"
+						android:paddingTop="5dp"
+						android:tint="?android:attr/textColorPrimary"
+						android:contentDescription="@string/spark_settings_title"
+						android:src="@drawable/ic_settings_miscs" >
+					</ImageView>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:paddingTop="13dp"
+						android:gravity="center"
+						android:text="@string/misc_title"
+						android:textColor="?android:attr/textColorPrimary"
+						android:textSize="18sp"
+						android:textStyle="bold" >
+					</TextView>
+				 </LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
+
+			<com.google.android.material.card.MaterialCardView
+				android:id="@+id/aboutspark_card"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				app:cardBackgroundColor="?android:attr/colorPrimary"
+				app:layout_constraintStart_toEndOf="@id/miscsettings_card"
+				android:layout_marginStart="10dp"
+				android:layout_marginTop="25dp"
+				android:layout_marginEnd="25dp"
+				app:cardCornerRadius="10dp"
+				app:cardElevation="15dp"
+				app:layout_constraintTop_toBottomOf="@id/buttonsettings_card"
+				app:layout_constraintEnd_toEndOf="parent">             >
+
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:padding="15dp" >
+
+					<ImageView
+						android:layout_width="45dp"
+						android:layout_height="45dp"
+						android:paddingTop="5dp"
+						android:tint="?android:attr/textColorPrimary"
+						android:contentDescription="@string/spark_settings_title"
+						android:src="@drawable/ic_settings_about" >
+					</ImageView>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/spark_about_title"
+						android:gravity="center"
+						android:textColor="?android:attr/textColorPrimary"
+						android:textStyle="bold"
+						android:paddingTop="13dp"
+						android:textSize="18sp" >
+					</TextView>
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,10 +16,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/spark_about_title" >
-
-    <Preference
-        android:key="spark_about_logo"
-        android:layout="@layout/spark_about_logo" />
                 
     <PreferenceCategory
         android:key="spark_about_summary"
