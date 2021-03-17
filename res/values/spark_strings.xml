@@ -103,6 +103,8 @@
     <string name="spark_about_daniel_summary" translatable="false">Guru</string>
     <string name="spark_about_phill" translatable="false">Phil</string>
     <string name="spark_about_phill_summary" translatable="false">Boot animation designer</string>
+    <string name="spark_about_iron" translatable="false">Iron</string>
+    <string name="spark_about_iron_summary" translatable="false">Server manager</string>
     <string name="spark_about_supporters">Supporters</string>
 
     <!-- FOD icon picker -->
