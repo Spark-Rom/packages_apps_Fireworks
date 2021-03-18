@@ -23,7 +23,7 @@
 
         <Preference
             android:title="@string/spark_website_title"
-            android:icon="@drawable/ic_settings_spark_about"
+            android:icon="@drawable/ic_settings_about"
             android:summary="@string/spark_website_summary">
             <intent
                 android:action="android.intent.action.VIEW"
@@ -36,7 +36,7 @@
             android:summary="@string/spark_telegram_summary">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="https://t.me/Spark-Os" />
+                android:data="https://t.me/SparkOsCommunity" />
         </Preference>
 
         <Preference

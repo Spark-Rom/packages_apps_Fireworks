@@ -33,7 +33,7 @@
         android:defaultValue="0"
         android:persistent="false" />
 
-    <com.spark.settings.preferences.CustomSeekBarPreference
+    <com.spark.settings.preferences.CustomSystemSeekBarPreference
         android:key="network_traffic_autohide_threshold"
         android:title="@string/network_traffic_autohide_threshold_title"
         android:max="10"
