@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import com.android.internal.util.spark.fod.FodUtils;
+import com.android.internal.util.spark.SparkUtils;
 import android.hardware.fingerprint.FingerprintManager;
 import android.net.Uri;
 import android.os.Bundle;
@@ -29,6 +30,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private static final String POCKET_JUDGE = "pocket_judge";
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
     private static final String FOD_ICON_PICKER_CATEGORY = "fod_icon_picker";
+    private static final String FOD_ANIMATION_CATEGORY = "fod_animations";
 
     private FingerprintManager mFingerprintManager;
     private PreferenceCategory mFODIconPickerCategory;
@@ -62,6 +64,14 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         if (mFODIconPickerCategory != null && !FodUtils.hasFodSupport(getContext())) {
             prefScreen.removePreference(mFODIconPickerCategory);
         }
+        final PreferenceCategory fodCat = (PreferenceCategory) prefScreen
+                .findPreference(FOD_ANIMATION_CATEGORY);
+        final boolean isFodAnimationResources = SparkUtils.isPackageInstalled(getContext(),
+                      getResources().getString(com.android.internal.R.string.config_fodAnimationPackage));
+        if (!isFodAnimationResources) {
+            prefScreen.removePreference(fodCat);
+        }
+
         mPocketJudge = (Preference) prefScreen.findPreference(POCKET_JUDGE);
         boolean mPocketJudgeSupported = res.getBoolean(
                 com.android.internal.R.bool.config_pocketModeSupported);

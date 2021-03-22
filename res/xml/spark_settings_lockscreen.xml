@@ -91,6 +91,20 @@
             android:entryValues="@array/fod_pressed_color_values"
             android:defaultValue="@*android:integer/config_fod_pressed_color" />
 
+        <!-- Screen off fod -->
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="fod_gesture"
+            android:title="@string/fod_gesture_title"
+            android:summary="@string/fod_gesture_summary"
+            android:defaultValue="false"
+            settings:controller="com.android.settings.security.screenlock.ScreenOffFodPreferenceController" />
+
+     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/fod_recog_animation"
+        android:key="fod_animations">
+
         <!-- FOD recognizing animation -->
         <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="fod_recognizing_animation"
@@ -106,14 +120,6 @@
             android:entryValues="@array/fod_recog_animation_values"
             android:defaultValue="0"
             android:dependency="fod_recognizing_animation" />
-
-        <!-- Screen off fod -->
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="fod_gesture"
-            android:title="@string/fod_gesture_title"
-            android:summary="@string/fod_gesture_summary"
-            android:defaultValue="false"
-            settings:controller="com.android.settings.security.screenlock.ScreenOffFodPreferenceController" />
 
     </PreferenceCategory>
 
