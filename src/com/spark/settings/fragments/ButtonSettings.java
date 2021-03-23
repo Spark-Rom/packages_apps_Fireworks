@@ -6,12 +6,14 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.UserHandle;
 import androidx.preference.ListPreference;
+import androidx.preference.PreferenceCategory;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 import android.provider.Settings;
 import com.spark.settings.preferences.CustomSeekBarPreference;
+
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.internal.util.hwkeys.ActionConstants;
@@ -112,7 +114,7 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
                     if (mButtonBrightness != null) {
                         float ButtonBrightness = Settings.System.getFloat(getContentResolver(),
                                 Settings.System.BUTTON_BRIGHTNESS, 1.0f);
-                        mButtonBrightness.setValue((int)ButtonBrightness * 100.0f);
+                        mButtonBrightness.setValue((int)(ButtonBrightness * 100.0f));
                         mButtonBrightness.setOnPreferenceChangeListener(this);
                     }
                 } else {
@@ -232,7 +234,7 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SPARK_SETTINGS;
+        return MetricsEvent.SPARK_SETTINGS;
     }
 
 }
