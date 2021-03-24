@@ -184,7 +184,7 @@ public class SparkSettings extends SettingsPreferenceFragment implements View.On
                }
             if (id == R.id.themesettings_card)
               {
-                ThemeSettings fragment = new ThemeSettings();
+                ThemeSettings themesettingsfragment = new ThemeSettings();
                 FragmentTransaction transaction7 = getFragmentManager().beginTransaction();
                 transaction7.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
                 transaction7.replace(this.getId(), themesettingsfragment);
