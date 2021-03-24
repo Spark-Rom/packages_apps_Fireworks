@@ -16,6 +16,7 @@
 
     <!-- Categories -->
     <string name="aosp_setting_title">AOSP settings</string>
+    <string name="themes_title">Themes</string>
     <string name="button_title">Buttons</string>
     <string name="general_title">General</string>
     <string name="gestures_title">Gestures</string>
@@ -28,6 +29,8 @@
     <string name="statusbar_title">Status bar</string>
     <string name="notifications_title">Notifications</string>
     <string name="device_part_title">Device features</string>
+    <string name="dark_ui_mode_summary">Browse the dark theme options</string>
+    <string name="themes_summary">Customize your ye ye ash phone</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -607,4 +610,15 @@
     <string name="ambient_pulse_brightness_summary">Set brightness to use when notifcations are shown</string>
     <string name="ambient_doze_brightness_title">Ambient display brightness</string>
     <string name="ambient_doze_brightness_summary">Set brightness to use during ambient display on</string>
+
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Theming</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize accent color. -->
+    <string name="theme_customization_accent_color_title">Accent color</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Headline / Body font</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">Icon shape</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the statusbar icon -->
+    <string name="theme_customization_sysui_icon_title">Status bar icon style</string>
 </resources>

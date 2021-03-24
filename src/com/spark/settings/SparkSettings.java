@@ -48,6 +48,7 @@ import com.google.android.material.card.MaterialCardView;
 import com.android.settings.R;
 
 import com.spark.settings.preferences.Utils;
+import com.spark.settings.fragments.ThemeSettings;
 import com.spark.settings.fragments.StatusBarSettings;
 import com.spark.settings.fragments.LockScreenSettings;
 import com.spark.settings.fragments.PowerSettings;
@@ -57,7 +58,6 @@ import com.spark.settings.fragments.ButtonSettings;
 import com.spark.settings.fragments.MiscSettings;
 import com.spark.settings.fragments.NavigationSettings;
 import com.spark.settings.fragments.QuickSettings;
-import com.spark.settings.AboutSpark;
 
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -70,7 +70,7 @@ public class SparkSettings extends SettingsPreferenceFragment implements View.On
   MaterialCardView mGestureSettingsCard;
   MaterialCardView mNotificationSettingsCard;
   MaterialCardView mButtonSettingsCard;
-  MaterialCardView mAboutSparkCard;
+  MaterialCardView mThemeSettingsCard;
   MaterialCardView mNavigationSettingsCard;
   MaterialCardView mMiscSettingsCard;
 
@@ -106,8 +106,8 @@ public class SparkSettings extends SettingsPreferenceFragment implements View.On
         mButtonSettingsCard = (MaterialCardView) view.findViewById(R.id.buttonsettings_card);
         mButtonSettingsCard.setOnClickListener(this);
 
-        mAboutSparkCard = (MaterialCardView) view.findViewById(R.id.aboutspark_card);
-        mAboutSparkCard.setOnClickListener(this);
+        mThemeSettingsCard = (MaterialCardView) view.findViewById(R.id.themesettings_card);
+        mThemeSettingsCard.setOnClickListener(this);
 
         mNavigationSettingsCard = (MaterialCardView) view.findViewById(R.id.navigationsettings_card);
         mNavigationSettingsCard.setOnClickListener(this);
@@ -182,12 +182,12 @@ public class SparkSettings extends SettingsPreferenceFragment implements View.On
                 transaction6.addToBackStack(null);
                 transaction6.commit();
                }
-            if (id == R.id.aboutspark_card)
+            if (id == R.id.themesettings_card)
               {
-                AboutSpark aboutsparkfragment = new AboutSpark();
+                ThemeSettings fragment = new ThemeSettings();
                 FragmentTransaction transaction7 = getFragmentManager().beginTransaction();
                 transaction7.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-                transaction7.replace(this.getId(), aboutsparkfragment);
+                transaction7.replace(this.getId(), themesettingsfragment);
                 transaction7.addToBackStack(null);
                 transaction7.commit();
                }
