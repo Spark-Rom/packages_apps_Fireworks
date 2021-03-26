@@ -30,6 +30,12 @@
         android:title="@string/gaming_mode_title"
         android:summary="@string/gaming_mode_summary" />
 
+    <com.spark.settings.preferences.SecureSettingSwitchPreference
+        android:key="tethering_allow_vpn_upstreams"
+        android:title="@string/allow_vpn_upstreams"
+        android:summary="@string/allow_vpn_upstreams_summary"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:title="@string/doze_brightness_category">
 

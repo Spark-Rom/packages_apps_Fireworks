@@ -696,4 +696,8 @@
 
     <!-- Lock screen media blur -->
     <string name="lockscreen_media_blur_title">Media artwork blur level</string>
+
+    <!-- Vpn upstreams  -->
+    <string name="allow_vpn_upstreams">Allow clients to use VPNs</string>
+    <string name="allow_vpn_upstreams_summary">Permit hotspot/tethering clients to use this device\'s VPN connection</string>
 </resources>
