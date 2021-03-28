@@ -517,6 +517,9 @@
     <string name="pulse_ambient_light_duration_summary">Sets the ambient light animation duration</string>
     <string name="pulse_ambient_light_repeat_count_title">Edge Light Repeat count</string>
     <string name="pulse_ambient_light_repeat_count_summary">Set max repeat count. 0 for infinite</string>
+    <string name="pulse_ambient_light_repeat_direction_title">Light repeat mode</string>
+    <string name="pulse_ambient_light_repeat_direction_restart">Restart</string>
+    <string name="pulse_ambient_light_repeat_direction_reverse">Reverse</string>
 
     <!-- FOD icon picker -->
     <string name="fod_icon_picker_title">Fingerprint icon</string>
