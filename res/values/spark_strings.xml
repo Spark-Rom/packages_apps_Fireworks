@@ -727,7 +727,7 @@
     <string name="rounded_style_medium">Medium</string>
     <string name="statusbar_height_title">Statusbar height</string>
     <string name="statusbar_height_dialog_title">Select statusbar height model</string>
-    <string name="sb_height_default">Default</string>
+    <string name="sb_height_default">Small</string>
     <string name="sb_height_medium">Medium</string>
     <string name="sb_height_large">Large</string>
     <string name="sb_height_extralarge">Extra Large</string>
