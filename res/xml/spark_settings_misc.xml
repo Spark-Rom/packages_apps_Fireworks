@@ -78,6 +78,12 @@
         android:summaryOff="@string/qs_media_player_summary_off"
         android:defaultValue="true" />
 
+    <com.spark.settings.preferences.SystemSettingSwitchPreference
+        android:key="artwork_media_background"
+        android:title="@string/artwork_media_background_title"
+        android:summary="@string/artwork_media_background_summary"
+        android:defaultValue="true" />
+
     <com.spark.settings.preferences.SystemSettingListPreference
         android:key="screen_off_animation"
         android:title="@string/screen_off_animation_title"
