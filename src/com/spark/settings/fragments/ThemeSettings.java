@@ -36,6 +36,7 @@ import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.spark.settings.display.QsColorPreferenceController;
 import com.spark.settings.display.QsTileStylePreferenceController;
 import com.spark.settings.display.AccentColorPreferenceController;
 import com.spark.settings.display.SwitchStylePreferenceController;
@@ -84,6 +85,7 @@ public class ThemeSettings extends DashboardFragment {
                 "android.theme.customization.adaptive_icon_shape"));
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.icon_pack"));
+        controllers.add(new QsColorPreferenceController(context));
         controllers.add(new QsTileStylePreferenceController(context));
         controllers.add(new SwitchStylePreferenceController(context));
         return controllers;
