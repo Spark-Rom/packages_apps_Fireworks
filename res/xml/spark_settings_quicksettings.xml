@@ -115,7 +115,7 @@
         android:key="qs_columns_rows_category"
         android:title="@string/qs_columns_rows_category_title">
 
-        <com.spark.settings.preferences.CustomSystemSeekBarPreference
+        <com.spark.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_rows_portrait"
             android:title="@string/qs_rows_portrait_title"
             android:max="5"
@@ -123,7 +123,7 @@
             android:defaultValue="3"
             settings:units="" />
 
-        <com.spark.settings.preferences.CustomSystemSeekBarPreference
+        <com.spark.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_rows_landscape"
             android:title="@string/qs_rows_landscape_title"
             android:max="5"
@@ -131,7 +131,7 @@
             android:defaultValue="1"
             settings:units="" />
 
-        <com.spark.settings.preferences.CustomSystemSeekBarPreference
+        <com.spark.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_columns_portrait"
             android:title="@string/qs_columns_portrait_title"
             android:max="7"
@@ -139,7 +139,7 @@
             android:defaultValue="4"
             settings:units="" />
 
-        <com.spark.settings.preferences.CustomSystemSeekBarPreference
+        <com.spark.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_columns_landscape"
             android:title="@string/qs_columns_landscape_title"
             android:max="9"

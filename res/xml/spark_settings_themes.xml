@@ -21,24 +21,6 @@
         android:key="theme_customization_category"
         android:title="@string/theme_customization_category">
 
-        <Preference
-            android:key="dark_ui_mode"
-            android:title="@string/dark_ui_mode"
-            android:summary="@string/dark_ui_mode_summary"
-            android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
-            settings:controller="com.android.settings.display.DarkUIPreferenceController" />
-
-        <Preference
-            android:key="clock_style"
-            android:title="@string/clock_style_title"
-            android:summary="@string/clock_style_summary">
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:targetPackage="com.android.wallpaper"
-                android:targetClass="com.android.customization.picker.LockClockPickerActivity" />
-        </Preference>
-
-
        <ListPreference
             android:layout="@layout/themes_accent_preview"
             android:selectable="false" />
@@ -62,12 +44,35 @@
             android:key="android.theme.customization.icon_pack"
             android:title="@string/theme_customization_icon_pack_title"/>
 
+        <Preference
+            android:key="clock_style"
+            android:title="@string/clock_style_title"
+            android:summary="@string/clock_style_summary">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="com.android.wallpaper"
+                android:targetClass="com.android.customization.picker.LockClockPickerActivity" />
+        </Preference>
+
         <ListPreference
             android:key="switch_style"
             android:title="@string/switch_style_title"
             android:persistent="false"
             android:entries="@array/switch_style_entries"
             android:entryValues="@array/switch_style_values" />
+
+        <Preference
+            android:key="dark_ui_mode"
+            android:title="@string/dark_ui_mode"
+            android:summary="@string/dark_ui_mode_summary"
+            android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
+            settings:controller="com.android.settings.display.DarkUIPreferenceController" />
+
+    </PreferenceCategory>
+
+
+        <PreferenceCategory 
+            android:title="@string/theme_customization_font_title">
 
         <ListPreference
             android:layout="@layout/themes_font_preview"
