@@ -44,6 +44,17 @@
         android:summary="@string/allow_vpn_upstreams_summary"
         android:defaultValue="false" />
 
+    <!-- Screenshot compression -->
+    <com.spark.settings.preferences.SystemSettingSeekBarPreference
+        android:key="screenshot_compression"
+        android:title="@string/screenshot_compression_title"
+        android:summary="@string/screenshot_compression_summary"
+        android:defaultValue="100"
+        android:max="100"
+        android:min="10"
+        settings:units="%" />
+
+
     <PreferenceCategory
         android:title="@string/doze_brightness_category">
 

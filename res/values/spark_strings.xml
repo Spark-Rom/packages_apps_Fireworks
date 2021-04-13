@@ -814,4 +814,8 @@
     <string name="lock_fp_icon_no_fp_summary">This feature is unsupported on devices without a fingerprint sensor</string>
     <string name="lock_fp_icon_rart_user_summary">This feature is unsupported on devices without enrolled fingerprints</string>
     <string name="unsupported_feature_summary">This feature is unsupported by your device</string>
+ 
+    <!-- Screenshot compression  -->
+    <string name="screenshot_compression_title">Screenshot quality</string>
+    <string name="screenshot_compression_summary">Compress screenshot size with loss in image quality</string>
 </resources>
