@@ -823,4 +823,7 @@
     <string name="qs_header_background_title">Statusbar background</string>
     <string name="qs_header_background_black">Black</string>
     <string name="qs_header_background_transparent">Transparent</string>
+
+    <string name="statusbar_icons_style">Colored Statusbar Icons</string>
+    <string name="statusbar_icons_style_summary">Choose the style of your statusbar icons (requires SystemUI restart)</string>
 </resources>

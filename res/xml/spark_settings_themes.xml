@@ -137,6 +137,12 @@
             android:summary="@string/qs_bg_use_new_tint_summary"
             android:defaultValue="2" />
 
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="statusbar_icons_style"
+            android:title="@string/statusbar_icons_style"
+            android:summary="@string/statusbar_icons_style_summary"
+            android:defaultValue="true" />
+
         <com.spark.settings.preferences.SystemSettingListPreference
             android:key="qs_header_background"
             android:title="@string/qs_header_background_title"
