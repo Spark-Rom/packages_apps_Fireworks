@@ -143,6 +143,12 @@
             android:summary="@string/statusbar_icons_style_summary"
             android:defaultValue="true" />
 
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="headers_icons_style"
+            android:title="@string/header_icons_style"
+            android:summary="@string/header_icons_style_summary"
+            android:defaultValue="true" />
+
         <com.spark.settings.preferences.SystemSettingListPreference
             android:key="qs_header_background"
             android:title="@string/qs_header_background_title"
