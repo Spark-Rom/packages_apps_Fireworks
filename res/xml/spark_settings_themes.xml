@@ -212,6 +212,15 @@
         android:summary="@string/artwork_media_background_summary"
         android:defaultValue="false" />
 
+        <!-- Notification background opacity -->
+        <com.spark.settings.preferences.SystemSettingSeekBarPreference
+            android:key="notification_bg_alpha"
+            android:title="@string/notification_alpha_title"
+            android:defaultValue="255"
+            android:max="255"
+            settings:min="0"
+            settings:units="" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

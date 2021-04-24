@@ -781,6 +781,10 @@
     <string name="qs_panel_bg_disco_summary">Make your QS Tiles colorful!</string>
     <string name="qs_bg_use_new_tint">Tint QS tiles</string>
     <string name="qs_bg_use_new_tint_summary">Choose the QS Tint Style</string>
+
+    <!-- Notification background opacity -->
+    <string name="notification_alpha_title">Notification background alpha (experimental)</string>
+
     <string name="qs_tint_off">Default</string>
     <string name="qs_tint_accent">Accent Color</string>
     <string name="qs_tint_oos">OxygenOS 11</string>
