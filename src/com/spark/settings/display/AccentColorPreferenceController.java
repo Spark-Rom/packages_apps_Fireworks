@@ -68,7 +68,7 @@ public class AccentColorPreferenceController extends AbstractPreferenceControlle
             mAccentOverlay.setEnabled(true);
         } else {
             mAccentColor.setSummary(hexColor);
-            mAccentOverlay.setEnabled(true);
+            mAccentOverlay.setEnabled(false);
         }
         mAccentColor.setNewPreviewColor(intColor);
         if (hexColor.equals("#ff1a73e8"))
@@ -86,7 +86,7 @@ public class AccentColorPreferenceController extends AbstractPreferenceControlle
                 mAccentOverlay.setEnabled(true);
             } else {
                 mAccentColor.setSummary(hex);
-                mAccentOverlay.setEnabled(true);
+                mAccentOverlay.setEnabled(false);
             }
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putIntForUser(mContext.getContentResolver(),
