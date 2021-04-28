@@ -5,6 +5,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import android.app.Activity;
 import android.content.Context;
 import android.os.UserHandle;
+import android.graphics.Color;
 import android.content.ContentResolver;
 import android.app.WallpaperManager;
 import android.content.Intent;
@@ -23,6 +24,8 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 import com.spark.settings.preferences.CustomSeekBarPreference;
 import com.spark.settings.preferences.SystemSettingSwitchPreference;
+import com.spark.settings.preferences.SystemSettingSwitchPreference;
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 import android.provider.Settings;
 import com.android.settings.R;
@@ -31,6 +34,8 @@ import com.android.settings.SettingsPreferenceFragment;
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String AMBIENT_ICONS_COLOR = "ambient_icons_color";
+    private static final String AMBIENT_ICONS_LOCKSCREEN = "ambient_icons_lockscreen";
     private static final String POCKET_JUDGE = "pocket_judge";
     private static final String AOD_SCHEDULE_KEY = "always_on_display_schedule";
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
@@ -43,11 +48,13 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 
     private boolean mHasFod;
 
+    private ColorPickerPreference mAmbientIconsColor;
     private FingerprintManager mFingerprintManager;
     private PreferenceCategory mFODIconPickerCategory;
     private SwitchPreference mFingerprintVib;
     private CustomSeekBarPreference mMaxKeyguardNotifConfig;
     private Preference mPocketJudge;
+    private SystemSettingSwitchPreference mAmbientIconsLockscreen;
 
     static final int MODE_DISABLED = 0;
     static final int MODE_NIGHT = 1;
@@ -65,6 +72,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         final PackageManager mPm = getActivity().getPackageManager();
         final Resources res = getResources();
         Context mContext = getContext();
+        ContentResolver resolver = getActivity().getContentResolver();
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
@@ -105,7 +113,6 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         if (!mPocketJudgeSupported)
             prefScreen.removePreference(mPocketJudge);
 
-        ContentResolver resolver = getActivity().getContentResolver();
         Resources resources = getResources();
 
         mLockFPIcon = findPreference(LOCK_FP_ICON);
@@ -131,6 +138,20 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 
         mAODPref = findPreference(AOD_SCHEDULE_KEY);
         updateAlwaysOnSummary();
+
+        mAmbientIconsLockscreen = (SystemSettingSwitchPreference) findPreference(AMBIENT_ICONS_LOCKSCREEN);
+        mAmbientIconsLockscreen.setChecked((Settings.System.getInt(resolver,
+                Settings.System.AMBIENT_ICONS_LOCKSCREEN, 0) == 1));
+        mAmbientIconsLockscreen.setOnPreferenceChangeListener(this);
+
+        // Ambient Icons Color
+        mAmbientIconsColor = (ColorPickerPreference) findPreference(AMBIENT_ICONS_COLOR);
+        int intColor = Settings.System.getInt(getContentResolver(),
+                Settings.System.AMBIENT_ICONS_COLOR, Color.WHITE);
+        String hexColor = String.format("#%08x", (0xffffffff & intColor));
+        mAmbientIconsColor.setNewPreviewColor(intColor);
+        mAmbientIconsColor.setSummary(hexColor);
+        mAmbientIconsColor.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -175,6 +196,20 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
             int kgconf = (Integer) newValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.LOCKSCREEN_MAX_NOTIF_CONFIG, kgconf);
+            return true;
+        } else if (preference == mAmbientIconsLockscreen) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.AMBIENT_ICONS_LOCKSCREEN, value ? 1 : 0);
+            SparkUtils.showSystemUiRestartDialog(getContext());
+            return true;
+        } else if (preference == mAmbientIconsColor) {
+            String hex = ColorPickerPreference.convertToARGB(Integer
+                .parseInt(String.valueOf(newValue)));
+            mAmbientIconsColor.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(resolver,
+                    Settings.System.AMBIENT_ICONS_COLOR, intHex);
             return true;
         }
         return false;
