@@ -86,11 +86,6 @@
             settings:interval="1"
             android:defaultValue="80" />
 
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="ambient_icons_color"
-            android:title="@string/ambient_icons_color_title"
-            android:defaultValue="0xFFFFFFFF" />
-
     </PreferenceCategory>
 
         <com.spark.settings.preferences.SystemSettingSwitchPreference
