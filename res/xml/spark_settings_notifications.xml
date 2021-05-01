@@ -39,20 +39,6 @@
         android:key="notifications_general_category"
         android:title="@string/general_title">
 
-        <!-- reTicker  -->
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-           android:key="reticker_status"
-           android:title="@string/reticker_title"
-           android:summary="@string/reticker_summary"
-           android:defaultValue="false" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-           android:dependency="reticker_status"
-           android:key="reticker_colored"
-           android:title="@string/reticker_colored_title"
-           android:summary="@string/reticker_colored_summary"
-           android:defaultValue="false" />
-
         <com.spark.settings.preferences.SystemSettingSwitchPreference
            android:key="notification_guts_kill_app_button"
            android:title="@string/notification_guts_kill_app_button_title"
