@@ -52,6 +52,7 @@
         android:key="dont_touch_headsup"
         android:title="@string/dont_touch_headsup_title"
         android:summary="@string/dont_touch_headsup_summary"
+        android:dependency="heads_up_notifications_enabled"
         android:defaultValue="false" />
 
     <PreferenceCategory
