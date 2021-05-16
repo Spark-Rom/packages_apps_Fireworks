@@ -82,7 +82,7 @@
             android:summary="@string/notification_headers_summary"
             android:defaultValue="true" />
 
-        <com.spark.settings.preferences.SecureSettingSwitchPreference
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
            android:key="center_notification_headers"
            android:title="@string/center_notification_headers_title"
            android:summary="@string/center_notification_headers_summary"
