@@ -49,6 +49,15 @@
                 android:targetClass="com.android.systemui.tuner.LockscreenActivity" />
         </Preference> 
 
+        <com.spark.settings.preferences.SystemSettingSeekBarPreference
+            android:key="lockscreen_blur"
+            android:title="@string/lockscreen_blur_title"
+            android:summary="@string/lockscreen_blur_summary"
+            android:defaultValue="0"
+            android:max="100"
+            settings:min="0"
+            settings:units="%" />
+
         <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="lock_screen_custom_notif"
             android:title="@string/lockscreen_maxnotif_title"

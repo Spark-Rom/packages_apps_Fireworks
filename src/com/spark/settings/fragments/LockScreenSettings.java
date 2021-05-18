@@ -41,6 +41,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private static final String FOD_ANIMATION_CATEGORY = "fod_animations";
     private static final String LOCKSCREEN_MAX_NOTIF_CONFIG = "lockscreen_max_notif_cofig";
     private static final String LOCK_FP_ICON = "lock_fp_icon";
+    private static final String LOCKSCREEN_BLUR = "lockscreen_blur";
 
     private SystemSettingSwitchPreference mLockFPIcon;
 
@@ -52,6 +53,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private CustomSeekBarPreference mMaxKeyguardNotifConfig;
     private Preference mPocketJudge;
     private SystemSettingSwitchPreference mAmbientIconsLockscreen;
+    private Preference mLockscreenBlur;
 
     static final int MODE_DISABLED = 0;
     static final int MODE_NIGHT = 1;
@@ -131,6 +133,11 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         } else {
             mLockFPIcon.setSummary(getString(R.string.lock_fp_icon_summary));
             mLockFPIcon.setEnabled(true);
+        }
+
+        mLockscreenBlur = (Preference) findPreference(LOCKSCREEN_BLUR);
+        if (!SparkUtils.supportsBlur()) {
+            prefScreen.removePreference(mLockscreenBlur);
         }
 
         mAODPref = findPreference(AOD_SCHEDULE_KEY);

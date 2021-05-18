@@ -887,4 +887,8 @@
     <!-- Per-app volume -->
     <string name="show_app_volume_title">Show app volume</string>
     <string name="show_app_volume_summary">Show app volume in volume panel</string>
+
+    <!-- Lockscreen blur -->
+    <string name="lockscreen_blur_title">Background blur</string>
+    <string name="lockscreen_blur_summary">Blur lock screen background</string>
 </resources>
