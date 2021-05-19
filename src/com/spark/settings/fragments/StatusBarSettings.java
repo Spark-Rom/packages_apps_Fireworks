@@ -49,6 +49,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
         Preference mCutoutPref = (Preference) findPreference(PREF_KEY_CUTOUT);
 
+        String hasDisplayCutout = getResources().getString(com.android.internal.R.string.config_mainBuiltInDisplayCutout);
+
+        if (TextUtils.isEmpty(hasDisplayCutout)) {
+            getPreferenceScreen().removePreference(mCutoutPref);
+        }
+
     }
 
     @Override
