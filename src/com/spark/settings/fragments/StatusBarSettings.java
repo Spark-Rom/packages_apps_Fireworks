@@ -19,6 +19,7 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 import android.provider.Settings;
 import com.android.settings.R;
+import com.android.settings.search.BaseSearchIndexProvider;
 
 import java.util.Locale;
 import android.text.TextUtils;
@@ -67,5 +68,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.SPARK_SETTINGS;
     }
+
+    /**
+     * For Search.
+     */
+
+    public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider(R.xml.spark_settings_statusbar);
 
 }

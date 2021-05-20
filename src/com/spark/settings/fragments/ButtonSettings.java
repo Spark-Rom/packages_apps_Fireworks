@@ -13,7 +13,7 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 import android.provider.Settings;
 import com.spark.settings.preferences.CustomSeekBarPreference;
-
+import com.android.settings.search.BaseSearchIndexProvider;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.internal.util.hwkeys.ActionConstants;
@@ -253,5 +253,12 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
     public int getMetricsCategory() {
         return MetricsEvent.SPARK_SETTINGS;
     }
+
+    /**
+     * For Search.
+     */
+
+    public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider(R.xml.spark_settings_button);
 
 }
