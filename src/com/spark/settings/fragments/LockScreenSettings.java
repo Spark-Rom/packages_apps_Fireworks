@@ -25,6 +25,7 @@ import androidx.preference.PreferenceScreen;
 import com.spark.settings.preferences.CustomSeekBarPreference;
 import com.spark.settings.preferences.SystemSettingSwitchPreference;
 import com.spark.settings.preferences.SystemSettingSwitchPreference;
+import com.android.settings.search.BaseSearchIndexProvider;
 
 import android.provider.Settings;
 import com.android.settings.R;
@@ -207,5 +208,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.SPARK_SETTINGS;
     }
+
+    /**
+     * For Search.
+     */
+
+    public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider(R.xml.spark_settings_lockscreen);
 
 }

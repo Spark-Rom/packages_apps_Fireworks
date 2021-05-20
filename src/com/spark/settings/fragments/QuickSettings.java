@@ -20,6 +20,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
+import com.android.settings.search.BaseSearchIndexProvider;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -159,5 +160,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.SPARK_SETTINGS;
     }
+
+    /**
+     * For Search.
+     */
+
+    public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider(R.xml.spark_settings_quicksettings);
 
 }
