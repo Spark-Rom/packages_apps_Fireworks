@@ -474,8 +474,10 @@
      <string name="notification_sound_vib_screen_on_summary">Воспроизведение звука и вибрации для уведомлений при включенном экране</string>
 
      <!-- Notification headers -->
-	 <string name="notification_headers_title">Заголовки уведомлений</string>
+     <string name="notification_headers_title">Заголовки уведомлений</string>
      <string name="notification_headers_summary">Показывать заголовки в тени уведомлений</string>
+     <string name="center_notification_headers_title">Заголовки уведомлений по центру</string>
+     <string name="center_notification_headers_summary">Размещать заголовки уведомлений по центру (требуется перезапуск SystemUI)</string>
 	 
 	 <!-- Lock icon -->
 	 <string name="hide_lockicon_title">Скрытие иконки замка</string>
@@ -840,7 +842,7 @@
     <string name="heads_up_time_out_10sec">10 секунд</string>
 	
 	<!-- Heads up snooze -->
-	<string name="heads_up_snooze_title">Время повтора уведомлений</string>
+    <string name="heads_up_snooze_title">Время повтора уведомлений</string>
     <string name="heads_up_snooze_summary_one_minute">Смахивание вверх при просмотре уведомлений этого приложения, будет отложен на 1 минуту.</string>
     <string name="heads_up_snooze_summary">Смахивание вверх при просмотре уведомлений приведет к прерыванию работы этого приложения в течение %d минут(ы)</string>
     <string name="heads_up_snooze_disabled_summary">Время повтора уведомлений отключено</string>
@@ -849,5 +851,36 @@
     <string name="heads_up_snooze_10min">10 минут</string>
     <string name="heads_up_snooze_15min">15 минут</string>
     <string name="heads_up_snooze_20min">20 минут</string>
+	
+    <!-- Per-app volume -->
+    <string name="show_app_volume_title">Показывать громкость приложений</string>
+    <string name="show_app_volume_summary">Показывать громкость приложения на панели громкости</string>
+	
+    <!-- Lockscreen blur -->
+    <string name="lockscreen_blur_title">Размытие фона</string>
+    <string name="lockscreen_blur_summary">Размытие фона экрана блокировки</string>
+	
+    <!-- Display cutout options -->
+    <string name="cutout_main">Вырез в дисплее</string>
+    <string name="cutout_main_summary">Настроить вырез</string>
+    <string name="display_cutout_style_title">Стиль выреза</string>
+    <string name="display_cutout_style_normal">Нормальный</string>
+    <string name="display_cutout_style_immerse">Во весь экран</string>
+    <string name="display_cutout_style_hide">Скрывать</string>
+    <string name="stock_statusbar_in_hide">Стоковая высота строки состояния</string>
+    <string name="stock_statusbar_in_hide_summary">Использовать высоту строки состояния по умолчанию при скрытии</string>
+	
+    <!-- Rounded corners -->
+    <string name="corners_category">Углы</string>
+    <string name="corner_radius">Радиус закругления углов</string>
+    <string name="content_padding">Смещение содержимого</string>
+    <string name="corner_fwvals">Настройки фреймворка</string>
+    <string name="corner_fwvals_summary">Если устройство имеет реальные закругленные углы</string>
+	
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Полноэкранные приложения</string>
+    <string name="display_cutout_force_fullscreen_summary">Заставить приложения игнорировать вырез</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Пожалуйста, перезапустите приложение, чтобы изменения вступили в силу.</string>
+    <string name="cutout_force_fullscreen_no_apps">Нет приложений</string>  
 
 </resources>
