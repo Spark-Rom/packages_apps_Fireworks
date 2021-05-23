@@ -882,5 +882,25 @@
     <string name="display_cutout_force_fullscreen_summary">Заставить приложения игнорировать вырез</string>
     <string name="display_cutout_force_fullscreen_restart_app">Пожалуйста, перезапустите приложение, чтобы изменения вступили в силу.</string>
     <string name="cutout_force_fullscreen_no_apps">Нет приложений</string>  
+	
+    <!-- Screen state service -->
+    <string name="battery_saving">Экономия заряда батареи</string>
+    <string name="screen_state_toggles_title">Suspend actions</string>
+    <string name="screen_state_toggles_title">Действия в режиме ожидания</string>
+    <string name="screen_state_toggles_summary">Действия, выполняемые при выключенном экране</string>
+    <string name="screen_state_toggles_enable_title">Включить</string>
+    <string name="screen_state_toggles_enable_summary">Действия, выполняемые при выключении экрана. При включении возвращаются прежние состояния параметров.</string>
+    <string name="screen_state_toggles_mobile_title">Мобильные сети</string>
+    <string name="screen_state_toggles_location_title">Местоположение</string>
+    <string name="screen_state_toggles_twog">Использовать режим 2G</string>
+    <string name="screen_state_toggles_twog_summary">Режим передачи данных активной сети будет переключен в режим 2G при выключенном экране</string>
+    <string name="screen_state_toggles_gps">Выключить GPS</string>
+    <string name="screen_state_toggles_gps_summary">Не использовать GPS при выключенном экране</string>
+    <string name="screen_state_toggles_mobile_data">Отключить мобильные данные</string>
+    <string name="screen_state_toggles_mobile_data_summary">Не использовать передачу данных при выключенном экране</string>
+    <string name="screen_state_off_delay_title">Отложить действия при выключении экрана</string>
+    <string name="screen_state_on_delay_title">Отложить действия при включении экрана</string>
+    <string name="screen_state_toggles_threeg">Использовать режим 3G</string>
+    <string name="screen_state_toggles_threeg_summary">Режим передачи данных активной сети будет переключен в режим 3G при выключенном экране</string>
 
 </resources>
