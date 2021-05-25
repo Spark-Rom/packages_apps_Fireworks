@@ -291,34 +291,34 @@
 	 <string name="power_menu_hide_on_secure_title">Скрыть на экране блокировки</string>
      <string name="power_menu_hide_on_secure_summary">Не отображать меню питания на экране блокировки</string>
 	 
-	 <!-- Incall vibrate options -->
-	 <string name="incall_vibration_category">Параметры звука</string>
+      <!-- Incall vibrate options -->
+     <string name="incall_vibration_category">Параметры вибрации</string>
      <string name="incall_vibrate_connect_title">Вибрация при подключении</string>
      <string name="incall_vibrate_call_wait_title">Вибрировать при ожидании</string>
      <string name="incall_vibrate_disconnect_title">Вибрация при отключении</string>
 	 
-	 <!-- QS advanced settings -->
-	 <string name="qs_column_rows_settings_title">Настройки панели быстрых настроек</string>
+     <!-- QS advanced settings -->
+     <string name="qs_column_rows_settings_title">Настройки панели быстрых настроек</string>
      <string name="status_bar_quick_qs_pulldown">Быстрый доступ</string>
      <string name="quick_pulldown_none">Отключено</string>
      <string name="quick_pulldown_right">Справа</string>
      <string name="quick_pulldown_left">Слева</string>
 	 
-	 <!-- Headset ringtone audio focus -->
-	 <string name="ringtone_focus_mode_title">Где проигрываются мелодии звонка</string>
+     <!-- Headset ringtone audio focus -->
+     <string name="ringtone_focus_mode_title">Где проигрываются мелодии звонка</string>
      <string name="ringtone_focus_mode_dynamic">Через гарнитуру, если играет музыка</string>
      <string name="ringtone_focus_mode_stock">Через громкую связи (AOSP по умолчанию)</string>
 	 
-	 <!-- Lockscreen album art filter -->
-	 <string name="lockscreen_albumart_filter_title">Фильтр обложки медиа</string>
+     <!-- Lockscreen album art filter -->
+     <string name="lockscreen_albumart_filter_title">Фильтр обложки медиа</string>
      <string name="lockscreen_albumart_filter_none">Ничего</string>
      <string name="lockscreen_albumart_filter_grayscale">Оттенки серого</string>
      <string name="lockscreen_albumart_filter_tint">Тон акцента</string>
      <string name="lockscreen_albumart_filter_blur">Размытие</string>
      <string name="lockscreen_albumart_filter_grayblur">Оттенки серого и размытие</string>
 	 
-	 <!-- Charging animation -->
-	 <string name="lockscreen_charging_animation_title">Анимация зарядки</string>
+     <!-- Charging animation -->
+     <string name="lockscreen_charging_animation_title">Анимация зарядки</string>
      <string name="lockscreen_charging_animation_flash">Молния</string>
      <string name="lockscreen_charging_animation_battery">Батарея</string>
      <string name="lockscreen_charging_animation_drop">Капля</string>
