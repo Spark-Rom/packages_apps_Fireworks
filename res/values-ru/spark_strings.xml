@@ -885,7 +885,6 @@
 	
     <!-- Screen state service -->
     <string name="battery_saving">Экономия заряда батареи</string>
-    <string name="screen_state_toggles_title">Suspend actions</string>
     <string name="screen_state_toggles_title">Действия в режиме ожидания</string>
     <string name="screen_state_toggles_summary">Действия, выполняемые при выключенном экране</string>
     <string name="screen_state_toggles_enable_title">Включить</string>
