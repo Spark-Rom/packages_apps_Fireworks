@@ -935,4 +935,11 @@
     <string name="screen_state_toggles_threeg">Switch to 3G</string>
     <string name="screen_state_toggles_threeg_summary">Network mode will be switched to 3G on screen off</string>
 
+
+    <!-- Cusom settings dashboard icons -->
+    <string name="settings_dashboard_icons_title">Settings dashboard icons</string>
+    <string name="settings_dashboard_icons_default">Default</string>
+    <string name="settings_dashboard_icons_oos">Oxygen OS (A11)</string>
+    <string name="settings_dashboard_icons_oos2">Oxygen OS (A10)</string>
+    <string name="settings_dashboard_icons_stylish">Colorfull</string>
 </resources>
