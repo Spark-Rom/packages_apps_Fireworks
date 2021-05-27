@@ -944,6 +944,6 @@
 
     <!-- Custom statusbar paddings -->
     <string name="statusbar_custom_title">Statusbar</string>
-    <string name="custom_statusbar_padding_start">Padding (Start)</string>
-    <string name="custom_statusbar_padding_end">Padding (End)</string>
+    <string name="custom_statusbar_padding_start">Padding Left</string>
+    <string name="custom_statusbar_padding_end">Padding Right</string>
 </resources>
