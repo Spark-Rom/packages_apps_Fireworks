@@ -170,7 +170,7 @@
     <string name="show_network_traffic_down">Загрузка</string>
     <string name="show_network_traffic_all">Оба</string>
     <string name="network_traffic_arrow">Показывать стрелки</string>
-    <string name="network_traffic_arrow_summary">Скрыть стрелки индикатора сетевого трафика</string>
+    <string name="network_traffic_arrow_summary">Показать стрелки индикатора сетевого трафика</string>
 	
 	<!-- Fingerprint authentication vibration -->
 	<string name="fprint_sucess_vib_title">Вибрация при разблокировке пальцем</string>
