@@ -30,6 +30,61 @@
             android:summary="@string/battery_bar_summary"
             android:fragment="com.spark.settings.fragments.BatteryBarSettings" />
 
+    <PreferenceCategory    
+        android:key="corners_category"
+        android:title="@string/corners_category" >
+
+        <com.spark.settings.preferences.SecureSettingSwitchPreference
+            android:key="sysui_rounded_fwvals"
+            android:title="@string/corner_fwvals"
+            android:summary="@string/corner_fwvals_summary"
+            android:defaultValue="true"
+            android:disableDependentsState="true" />
+
+        <com.spark.settings.preferences.CustomSeekBarPreference
+            android:key="sysui_rounded_size"
+            android:title="@string/corner_radius"
+            android:max="60"
+            settings:min="0"
+            settings:units="dp"
+            android:persistent="false"
+            android:dependency="sysui_rounded_fwvals" />
+
+            <!--com.spark.settings.preferences.CustomSeekBarPreference
+            android:key="sysui_rounded_content_padding"
+            android:title="@string/content_padding"
+            android:max="30"
+            settings:min="0"
+            settings:units="dp"
+            android:persistent="false"
+            android:dependency="sysui_rounded_fwvals" /-->
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+         android:title="@string/statusbar_custom_title">
+
+        <com.spark.settings.preferences.CustomSeekBarPreference
+            android:key="custom_statusbar_padding_start"
+            android:title="@string/custom_statusbar_padding_start"
+            android:max="45"
+            settings:min="5"
+            settings:units="dp"
+            android:defaultValue="5"
+            android:persistent="false" />
+
+        <com.spark.settings.preferences.CustomSeekBarPreference
+            android:key="custom_statusbar_padding_end"
+            android:title="@string/custom_statusbar_padding_end"
+            android:max="45"
+            settings:min="5"
+            android:defaultValue="5"
+            settings:units="dp"
+            android:persistent="false" />
+
+    </PreferenceCategory>
+
+
         <Preference
             android:key="cutout_settings"
             android:fragment="com.spark.settings.fragments.CutoutFragment"
