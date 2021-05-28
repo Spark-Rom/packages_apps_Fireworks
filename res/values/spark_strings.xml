@@ -803,6 +803,9 @@
     <!-- Notification background opacity -->
     <string name="notification_alpha_title">Notification background alpha (experimental)</string>
 
+    <!-- Power menu background opacity -->
+    <string name="power_menu_alpha_title">Power menu opacity</string>
+
     <string name="qs_tint_off">Default</string>
     <string name="qs_tint_accent">Accent Color</string>
     <string name="qs_tint_oos">OxygenOS 11</string>
