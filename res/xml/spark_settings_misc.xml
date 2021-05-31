@@ -58,6 +58,13 @@
             android:layout="@layout/custom_card_pref" />
 
         <Preference
+            android:key="sleep_mode"
+            settings:iconSpaceReserved="false"
+            android:layout="@layout/custom_card_pref"
+            android:title="@string/sleep_mode_title"
+            android:fragment="com.spark.settings.fragments.SleepMode" /> 
+
+        <Preference
             android:key="ambientdoze_settings_key"
             android:layout="@layout/custom_card_pref"
             settings:iconSpaceReserved="false"
