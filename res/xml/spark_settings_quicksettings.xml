@@ -42,6 +42,12 @@
         android:defaultValue="true" />
 --> 
 
+    <com.spark.settings.preferences.SystemSettingSwitchPreference
+        android:key="oos_qsclock"
+        android:title="@string/oos_qsclock"
+        android:summary="@string/oos_qsclock_summary"
+        android:defaultValue="true" />
+
     <!-- Battery percent -->
     <com.spark.settings.preferences.SystemSettingListPreference
         android:key="qs_show_battery_percent"

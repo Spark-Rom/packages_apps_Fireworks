@@ -963,4 +963,8 @@
     <string name="qs_datausage_disabled">Disabled</string>
     <string name="qs_datausage_daily">Daily usage</string>
     <string name="qs_datausage_monthly">Monthly usage</string>
+
+    <!-- Qs Clock -->
+    <string name="oos_qsclock">Qs clock</string>
+    <string name="oos_qsclock_summary">Display an oos like clock on qs</string>
 </resources>
