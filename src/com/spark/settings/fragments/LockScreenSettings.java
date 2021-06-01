@@ -3,6 +3,8 @@ package com.spark.settings.fragments;
 import com.android.internal.logging.nano.MetricsProto;
 
 import android.app.Activity;
+import android.app.WallpaperManager;
+import android.os.ParcelFileDescriptor;
 import android.content.Context;
 import android.os.UserHandle;
 import android.graphics.Color;
@@ -72,6 +74,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         final PackageManager mPm = getActivity().getPackageManager();
         final Resources res = getResources();
         Context mContext = getContext();
+        WallpaperManager manager = WallpaperManager.getInstance(mContext);
         ContentResolver resolver = getActivity().getContentResolver();
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
@@ -136,8 +139,9 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
             mLockFPIcon.setEnabled(true);
         }
 
+        ParcelFileDescriptor pfd = manager.getWallpaperFile(WallpaperManager.FLAG_LOCK);
         mLockscreenBlur = (Preference) findPreference(LOCKSCREEN_BLUR);
-        if (!SparkUtils.supportsBlur()) {
+        if (!SparkUtils.supportsBlur() || pfd != null) {
             prefScreen.removePreference(mLockscreenBlur);
         }
 
