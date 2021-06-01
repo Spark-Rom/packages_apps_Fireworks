@@ -951,7 +951,7 @@
     <string name="settings_dashboard_icons_default">Default</string>
     <string name="settings_dashboard_icons_oos">Oxygen OS (A11)</string>
     <string name="settings_dashboard_icons_oos2">Oxygen OS (A10)</string>
-    <string name="settings_dashboard_icons_stylish">Colorfull</string>
+    <string name="settings_dashboard_icons_stylish">Colorful</string>
 
     <!-- Custom statusbar paddings -->
     <string name="statusbar_custom_title">Statusbar</string>
