@@ -639,7 +639,7 @@
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
     <string name="theme_customization_icon_pack_title">Набор значков</string>
     <string name="theme_customization_dark_theme_title">Палитра цветов</string>
-    <string name="default_accent_color">Pixel Blue (по умолчанию)</string>
+    <string name="default_accent_color">Spark Yellow (по умолчанию)</string>
     <string name="default_font">Inter / Manrope (по умолчанию)</string>
     <string name="default_icon_pack">AOSP (по умолчанию)</string>
     <string name="default_icon_shape">Circle (по умолчанию)</string>

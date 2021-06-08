@@ -28,7 +28,7 @@
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="accent_color"
             android:title="@string/accent_color_title"
-            android:defaultValue="0xFF1A73E8"
+            android:defaultValue="0xFFFCDC33"
             settings:iconSpaceReserved="false"
             android:dependency="use_wall_accent"
             settings:showReset="true"

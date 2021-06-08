@@ -154,7 +154,7 @@
             android:key="ambient_notification_light_color"
             android:title="@string/ambient_notification_light_color_title"
             ledPreview="true"
-            android:defaultValue="0xFF1A73E8" />
+            android:defaultValue="0xFFFCDC33" />
 
         <com.spark.settings.preferences.CustomSeekBarPreference
             android:key="notification_pulse_duration"
