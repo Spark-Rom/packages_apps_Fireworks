@@ -69,14 +69,10 @@
 
 
         <Preference
-            android:key="clock_style"
+            android:key="lockscreen_clock"
+            android:title="LS Clock"
             settings:iconSpaceReserved="false"
-            android:title="@string/clock_style_title"
-            android:summary="@string/clock_style_summary">
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:targetPackage="com.android.wallpaper"
-                android:targetClass="com.android.customization.picker.LockClockPickerActivity" />
-        </Preference>
+            android:summary="Change LockScreen Clock"
+            android:fragment="com.spark.settings.fragments.LockscreenClock" />
 
 </PreferenceScreen>
