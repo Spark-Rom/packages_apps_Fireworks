@@ -64,8 +64,6 @@ public class ThemeSettings extends DashboardFragment {
     private IOverlayManager mOverlayManager;
     private IOverlayManager mOverlayService;
     private IntentFilter mIntentFilter;
-
-    private ListPreference mLockClockStyles;
     private ListPreference mNavbarPicker;
 
     @Override
