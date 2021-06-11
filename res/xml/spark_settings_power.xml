@@ -15,8 +15,13 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/powermenu_title"
+    android:title=" "
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+   <!-- Title Header -->
+    <Preference
+        android:layout="@layout/spark_power_header"
+        android:selectable="false"/>
 
     <Preference
         android:key="gesture_power_menu_summary"

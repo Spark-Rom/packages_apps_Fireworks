@@ -1,7 +1,12 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/navigation_title">
+    android:title=" ">
+
+   <!-- Title Header -->
+    <Preference
+        android:layout="@layout/spark_settings_navigation_header"
+        android:selectable="false"/>
 
         <Preference
             android:key="gesture_system_navigation"

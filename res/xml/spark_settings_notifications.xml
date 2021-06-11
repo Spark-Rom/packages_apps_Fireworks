@@ -15,8 +15,13 @@
     limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-	android:title="@string/notifications_title"
+	android:title=" "
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+   <!-- Title Header -->
+    <Preference
+        android:layout="@layout/spark_settings_notifications_header"
+        android:selectable="false"/>
 
     <!-- Heads up -->
     <Preference

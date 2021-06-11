@@ -15,8 +15,13 @@
 -->
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
-	android:title="@string/misc_title"
+	android:title=" "
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+   <!-- Title Header -->
+    <Preference
+        android:layout="@layout/spark_settings_misc_header"
+        android:selectable="false"/>
 
  <!--  <com.spark.settings.preferences.SystemSettingSwitchPreference
         android:key="wake_when_plugged_or_unplugged"

@@ -18,7 +18,12 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/sensor_block_title">
+    android:title=" ">
+
+   <!-- Title Header -->
+    <Preference
+        android:layout="@layout/spark_settings_sensor_block_header"
+        android:selectable="false"/>
 
     <!-- Master switch -->
     <com.spark.settings.preferences.SystemSettingSwitchPreference

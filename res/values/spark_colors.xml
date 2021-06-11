@@ -11,4 +11,6 @@
     <color name="themes_preview_background">#0f000000</color>
     <color name="themes_preview_card">#ffffffff</color>
 
+    <color name="custom_card_pref_ripple">#1f000000</color>
+
 </resources>

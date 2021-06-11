@@ -18,7 +18,12 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/battery_bar_title">
+    android:title=" ">
+
+   <!-- Title Header -->
+    <Preference
+        android:layout="@layout/spark_settings_statusbar_battery_bar_header"
+        android:selectable="false"/>
 
     <ListPreference
         android:key="statusbar_battery_bar_no_navbar_list"

@@ -17,9 +17,14 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/cutout_main"
+    android:title=" "
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="cutout_settings">
+
+   <!-- Title Header -->
+    <Preference
+        android:layout="@layout/spark_cutout_header"
+        android:selectable="false"/>
 
     <ListPreference
         android:key="display_cutout_style"

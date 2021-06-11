@@ -15,8 +15,13 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/always_on_display_schedule_title"
+    android:title=" "
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+   <!-- Title Header -->
+    <Preference
+        android:layout="@layout/aod_schedule_header"
+        android:selectable="false"/>
 
     <com.spark.settings.preferences.SecureSettingListPreference
         android:key="doze_always_on_auto_mode"

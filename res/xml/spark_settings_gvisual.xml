@@ -16,8 +16,13 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/gvisual_title"
+    android:title=" "
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+   <!-- Title Header -->
+    <Preference
+        android:layout="@layout/spark_settings_gvisual_header"
+        android:selectable="false"/>
 
     <!-- Gvisual mod -->
     <PreferenceCategory

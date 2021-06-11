@@ -15,8 +15,13 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/lockscreen_title"
+    android:title=" "
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+   <!-- Title Header -->
+    <Preference
+        android:layout="@layout/spark_settings_lockscreen_header"
+        android:selectable="false"/>
 
     <PreferenceCategory
         android:key="lockscreen_info_category"
