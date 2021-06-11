@@ -131,8 +131,6 @@ public class ThemeSettings extends DashboardFragment implements OnPreferenceChan
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new AccentColorPreferenceController(context));
         controllers.add(new OverlayCategoryPreferenceController(context,
-                "android.theme.customization.accent_color"));
-        controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.adaptive_icon_shape"));
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.icon_pack"));
