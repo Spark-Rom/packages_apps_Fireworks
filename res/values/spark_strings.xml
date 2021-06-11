@@ -987,4 +987,10 @@
     <string name="theme_navbar_picker_nexus">Nexus</string>
     <string name="theme_navbar_picker_old">Old</string>
     <string name="theme_navbar_picker_sammy">Samsung</string>
+
+    <!-- Custom Signal bar icons -->
+    <string name="custom_signal_bar_title">Signal icons</string>
+
+    <!-- Custom Wi-Fi bar icons -->
+    <string name="custom_wifi_bar_title">Wi-Fi icon</string>
 </resources>
