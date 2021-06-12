@@ -696,7 +696,7 @@
 
     <!-- Volume Panel Plugin -->
     <string name="volume_panel">Volume panel style</string>
-    <string name="volume_panel_stock">Stock AOSP Panel</string>
+    <string name="volume_panel_stock">Default</string>
     <string name="volume_panel_aosp">AOSP Expanded</string>
     <string name="volume_panel_compact">Compact</string>
     <string name="volume_panel_oreo">Oreo</string>
