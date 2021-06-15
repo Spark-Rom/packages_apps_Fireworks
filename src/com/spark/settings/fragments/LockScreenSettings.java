@@ -28,10 +28,28 @@ import com.spark.settings.preferences.CustomSeekBarPreference;
 import com.spark.settings.preferences.SystemSettingSwitchPreference;
 import com.spark.settings.preferences.SystemSettingSwitchPreference;
 import com.android.settings.search.BaseSearchIndexProvider;
+import android.database.ContentObserver;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.BitmapDrawable;
+import android.text.TextUtils;
+import android.util.Log;
+import android.os.Handler;
+import android.os.UserHandle;
+import android.os.ParcelFileDescriptor;
 
 import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+
+import java.io.FileDescriptor;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -45,6 +63,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private static final String LOCKSCREEN_MAX_NOTIF_CONFIG = "lockscreen_max_notif_cofig";
     private static final String LOCK_FP_ICON = "lock_fp_icon";
     private static final String LOCKSCREEN_BLUR = "lockscreen_blur";
+    private static final String FINGERPRINT_CUSTOM_ICON = "custom_fingerprint_icon";
+    private static final int GET_CUSTOM_FP_ICON = 69;
+    private Preference mFilePicker;
+    private SystemSettingSwitchPreference mIconAnima;
+
+    private Handler mHandler;
 
     private SystemSettingSwitchPreference mLockFPIcon;
 
@@ -154,6 +178,59 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
                 Settings.System.AMBIENT_ICONS_LOCKSCREEN, 0) == 1));
         mAmbientIconsLockscreen.setOnPreferenceChangeListener(this);
 
+        mFilePicker = (Preference) findPreference(FINGERPRINT_CUSTOM_ICON);
+            final String customIconURI = Settings.System.getString(getContext().getContentResolver(),
+                Settings.System.OMNI_CUSTOM_FP_ICON);
+
+            if (!TextUtils.isEmpty(customIconURI)) {
+                setPickerIcon(customIconURI);
+                mFilePicker.setSummary(customIconURI);
+            }
+
+            mFilePicker.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+                @Override
+                public boolean onPreferenceClick(Preference preference) {
+                    Intent intent = new Intent(Intent.ACTION_PICK);
+                    intent.setType("image/png");
+
+                    startActivityForResult(intent, GET_CUSTOM_FP_ICON);
+
+                    return true;
+                }
+            });
+        }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode,
+        Intent resultData) {
+        if (requestCode == GET_CUSTOM_FP_ICON && resultCode == Activity.RESULT_OK) {
+            Uri uri = null;
+            if (resultData != null) {
+                uri = resultData.getData();
+                mFilePicker.setSummary(uri.toString());
+                setPickerIcon(uri.toString());
+                Settings.System.putString(getContentResolver(), Settings.System.OMNI_CUSTOM_FP_ICON,
+                    uri.toString());
+            }
+        } else if (requestCode == GET_CUSTOM_FP_ICON && resultCode == Activity.RESULT_CANCELED) {
+            mFilePicker.setSummary("");
+            mFilePicker.setIcon(new ColorDrawable(Color.TRANSPARENT));
+            Settings.System.putString(getContentResolver(), Settings.System.OMNI_CUSTOM_FP_ICON, "");
+        }
+    }
+
+
+    private void setPickerIcon(String uri) {
+        try {
+                ParcelFileDescriptor parcelFileDescriptor =
+                    getContext().getContentResolver().openFileDescriptor(Uri.parse(uri), "r");
+                FileDescriptor fileDescriptor = parcelFileDescriptor.getFileDescriptor();
+                Bitmap image = BitmapFactory.decodeFileDescriptor(fileDescriptor);
+                parcelFileDescriptor.close();
+                Drawable d = new BitmapDrawable(getResources(), image);
+                mFilePicker.setIcon(d);
+            }
+            catch (Exception e) {}
     }
 
     @Override
@@ -205,9 +282,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
                     Settings.System.AMBIENT_ICONS_LOCKSCREEN, value ? 1 : 0);
             SparkUtils.showSystemUiRestartDialog(getContext());
             return true;
+        } else if (preference == mIconAnima) {
+            return true;
         }
         return false;
     }
+
 
     @Override
     public int getMetricsCategory() {

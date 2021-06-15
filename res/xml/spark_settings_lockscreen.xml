@@ -167,6 +167,10 @@
             android:summary="@string/fod_icon_picker_summary"
             android:fragment="com.spark.settings.fragments.FODIconPickerFragment" />
 
+        <Preference
+            android:title="@string/custom_fod_icon_picker_title"
+            android:key="custom_fingerprint_icon" />
+
         <!-- FOD pressed color -->
         <com.spark.settings.preferences.SystemSettingListPreference
             android:key="fod_color"
