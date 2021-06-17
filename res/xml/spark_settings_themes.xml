@@ -86,6 +86,11 @@
             android:entries="@array/navbar_name_entries"
             android:entryValues="@array/navbar_picker_values"/>
 
+        <Preference 
+            android:title="Qs Media Player Settings"
+            android:key="media_player_settings_key" 
+            android:fragment="com.spark.settings.fragments.MediaPlayerSettings"/>
+
         <Preference
             android:key="dark_ui_mode"
             android:title="@string/dark_ui_mode"
@@ -237,25 +242,6 @@
             android:defaultValue="0xFFFFFFFF"
             android:persistent="false"
             android:dependency="sysui_colors_active" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/qs_media_player_title">
-
-    <!-- QS media player -->
-    <com.spark.settings.preferences.SystemSettingSwitchPreference
-        android:key="qs_media_player"
-        android:title="@string/qs_media_player_title"
-        android:summaryOn="@string/qs_media_player_summary_on"
-        android:summaryOff="@string/qs_media_player_summary_off"
-        android:defaultValue="false" />
-
-<!--    <com.spark.settings.preferences.SystemSettingSwitchPreference
-        android:key="artwork_media_background"
-        android:title="@string/artwork_media_background_title"
-        android:summary="@string/artwork_media_background_summary"
-        android:defaultValue="false" /> -->
 
     </PreferenceCategory>
 

@@ -817,8 +817,8 @@
 
     <!-- QS media player -->
     <string name="qs_media_player_title">Media player</string>
-    <string name="qs_media_player_summary_on">Show media player in QS\nRequires a SystemUI restart</string>
-    <string name="qs_media_player_summary_off">Show media player as a notification\nRequires a SystemUI restart</string>
+    <string name="qs_media_player_summary_off">Show media player in QS </string>
+    <string name="qs_media_player_summary_on">Show media player as a notification</string>
 
     <!-- Artwork Media background option -->
     <string name="artwork_media_background_title">Artwork media background</string>
@@ -1001,4 +1001,8 @@
     <string name="custom_fod_icon_png_explainer">You can download your own custom FOD icon PNGs from Telegram channels such as FODicons and OP_fps. Use a local gallery and not online services such as Google Photos to pick FOD icons.</string>
     <!-- FOD icon picker -->
     <string name="custom_fod_icon_picker_title">Custom Fingerprint icon</string>
+
+    <string name="media_player_picker">Select the media player Style you like</string>
+    <string name="media_player_androids">Android S Media Player</string>
+    <string name="media_player_compact">Compact Media Player</string>
 </resources>

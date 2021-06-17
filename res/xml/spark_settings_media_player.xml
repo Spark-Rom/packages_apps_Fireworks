@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2021 Spark OS
+     Licensed under the Apach e License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title=" " >    
+
+   <!-- Title Header -->
+    <Preference
+        android:layout="@layout/spark_settings_media_player_header"
+        android:selectable="false"/>
+
+    <PreferenceCategory
+        android:title="@string/qs_media_player_title">
+
+    <!-- QS media player -->
+    <com.spark.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_media_player"
+        android:title="@string/qs_media_player_title"
+        android:summaryOn="@string/qs_media_player_summary_on"
+        android:summaryOff="@string/qs_media_player_summary_off"
+        android:defaultValue="false" />
+
+    <com.spark.settings.preferences.SystemSettingListPreference
+            android:key="media_player_style"
+            android:title="@string/media_player_picker"
+            android:entries="@array/media_panel_style_entries"
+            android:entryValues="@array/media_panel_style_values"
+            android:defaultValue="0" />
+
+<!--    <com.spark.settings.preferences.SystemSettingSwitchPreference
+        android:key="artwork_media_background"
+        android:title="@string/artwork_media_background_title"
+        android:summary="@string/artwork_media_background_summary"
+        android:defaultValue="false" /> -->
+
+    </PreferenceCategory>
+</PreferenceScreen>
