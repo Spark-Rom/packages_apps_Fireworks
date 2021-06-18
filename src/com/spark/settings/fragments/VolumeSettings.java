@@ -49,24 +49,16 @@ import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.spark.settings.display.QsColorPreferenceController;
-import com.spark.settings.display.QsTileStylePreferenceController;
-import com.spark.settings.display.AccentColorPreferenceController;
-import com.spark.settings.display.SwitchStylePreferenceController;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class ThemeSettings extends DashboardFragment {
-    public static final String TAG = "ThemeSettings";
+public class VolumeSettings extends DashboardFragment {
+    public static final String TAG = "VolumeSettings";
 
     private Context mContext;
     private IOverlayManager mOverlayManager;
     private IOverlayManager mOverlayService;
-    private IntentFilter mIntentFilter;
 
-    private ListPreference mLockClockStyles;
-    private ListPreference mNavbarPicker;
 
     @Override
     public int getMetricsCategory() {
@@ -80,18 +72,15 @@ public class ThemeSettings extends DashboardFragment {
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.spark_settings_themes;
+        return R.xml.spark_settings_volume;
     }
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-
         mOverlayService = IOverlayManager.Stub
                 .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
-
         mContext = getActivity();
-
     }
 
     @Override
@@ -112,5 +101,5 @@ public class ThemeSettings extends DashboardFragment {
 
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.spark_settings_themes);
+            new BaseSearchIndexProvider(R.xml.spark_settings_volume);
 }

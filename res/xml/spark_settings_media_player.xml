@@ -28,6 +28,7 @@
     <com.spark.settings.preferences.SystemSettingSwitchPreference
         android:key="qs_media_player"
         android:title="@string/qs_media_player_title"
+        settings:iconSpaceReserved="false"  
         android:summaryOn="@string/qs_media_player_summary_on"
         android:summaryOff="@string/qs_media_player_summary_off"
         android:defaultValue="false" />
@@ -35,6 +36,7 @@
     <com.spark.settings.preferences.SystemSettingListPreference
             android:key="media_player_style"
             android:title="@string/media_player_picker"
+            settings:iconSpaceReserved="false"  
             android:entries="@array/media_panel_style_entries"
             android:entryValues="@array/media_panel_style_values"
             android:defaultValue="0" />

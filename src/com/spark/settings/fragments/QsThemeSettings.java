@@ -51,22 +51,16 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.spark.settings.display.QsColorPreferenceController;
 import com.spark.settings.display.QsTileStylePreferenceController;
-import com.spark.settings.display.AccentColorPreferenceController;
-import com.spark.settings.display.SwitchStylePreferenceController;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ThemeSettings extends DashboardFragment {
-    public static final String TAG = "ThemeSettings";
+public class QsThemeSettings extends DashboardFragment {
+    public static final String TAG = "QsThemeSettings";
 
     private Context mContext;
     private IOverlayManager mOverlayManager;
     private IOverlayManager mOverlayService;
-    private IntentFilter mIntentFilter;
-
-    private ListPreference mLockClockStyles;
-    private ListPreference mNavbarPicker;
 
     @Override
     public int getMetricsCategory() {
@@ -78,10 +72,12 @@ public class ThemeSettings extends DashboardFragment {
         return TAG;
     }
 
+
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.spark_settings_themes;
+        return R.xml.spark_settings_qsthemes;
     }
+
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -89,10 +85,22 @@ public class ThemeSettings extends DashboardFragment {
 
         mOverlayService = IOverlayManager.Stub
                 .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
-
         mContext = getActivity();
+   }
 
+    @Override
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
+        return buildPreferenceControllers(context, getSettingsLifecycle(), this);
     }
+
+    private static List<AbstractPreferenceController> buildPreferenceControllers(
+            Context context, Lifecycle lifecycle, Fragment fragment) {
+        final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new QsColorPreferenceController(context));
+        controllers.add(new QsTileStylePreferenceController(context));
+        return controllers;
+    }
+
 
     @Override
     public void onResume() {
@@ -110,7 +118,6 @@ public class ThemeSettings extends DashboardFragment {
      * For Search.
      */
 
-
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.spark_settings_themes);
+            new BaseSearchIndexProvider(R.xml.spark_settings_qsthemes);
 }

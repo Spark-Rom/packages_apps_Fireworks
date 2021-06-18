@@ -57,8 +57,10 @@ import com.spark.settings.display.SwitchStylePreferenceController;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ThemeSettings extends DashboardFragment {
-    public static final String TAG = "ThemeSettings";
+public class UiSettings extends DashboardFragment {
+    public static final String TAG = "UiSettings";
+
+    private static FontPickerPreferenceController mFontPickerPreference;
 
     private Context mContext;
     private IOverlayManager mOverlayManager;
@@ -66,7 +68,16 @@ public class ThemeSettings extends DashboardFragment {
     private IntentFilter mIntentFilter;
 
     private ListPreference mLockClockStyles;
-    private ListPreference mNavbarPicker;
+
+    private BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String action = intent.getAction();
+            if (action.equals("com.android.server.ACTION_FONT_CHANGED")) {
+                mFontPickerPreference.stopProgress();
+            }
+        }
+    };
 
     @Override
     public int getMetricsCategory() {
@@ -80,7 +91,7 @@ public class ThemeSettings extends DashboardFragment {
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.spark_settings_themes;
+        return R.xml.spark_settings_ui;
     }
 
     @Override
@@ -92,18 +103,38 @@ public class ThemeSettings extends DashboardFragment {
 
         mContext = getActivity();
 
+        mIntentFilter = new IntentFilter();
+        mIntentFilter.addAction("com.android.server.ACTION_FONT_CHANGED");
+
     }
+
+    @Override
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
+        return buildPreferenceControllers(context, getSettingsLifecycle(), this);
+    }
+
+    private static List<AbstractPreferenceController> buildPreferenceControllers(
+            Context context, Lifecycle lifecycle, Fragment fragment) {
+        final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new AccentColorPreferenceController(context));
+        controllers.add(mFontPickerPreference = new FontPickerPreferenceController(context, lifecycle));
+        return controllers;
+    }
+
 
     @Override
     public void onResume() {
         super.onResume();
         final Context context = getActivity();
+        context.registerReceiver(mIntentReceiver, mIntentFilter);
     }
 
     @Override
     public void onPause() {
         super.onPause();
         final Context context = getActivity();
+        context.unregisterReceiver(mIntentReceiver);
+        mFontPickerPreference.stopProgress();
     }
 
     /**
@@ -112,5 +143,5 @@ public class ThemeSettings extends DashboardFragment {
 
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.spark_settings_themes);
+            new BaseSearchIndexProvider(R.xml.spark_settings_ui);
 }

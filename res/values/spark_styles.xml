@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="CustomCardPref">
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@drawable/custom_card_pref</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+</resources>
+

@@ -21,227 +21,57 @@
         android:layout="@layout/spark_themes_header"
         android:selectable="false"/>
 
-
     <PreferenceCategory
         android:key="theme_customization_category"
         android:title="@string/theme_customization_category">
 
-       <ListPreference
-            android:layout="@layout/themes_accent_preview"
-            android:selectable="false" />
-
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="accent_color"
-            android:title="@string/accent_color_title"
-            android:defaultValue="0xFF1A73E8"
-            settings:showReset="true"
-            android:persistent="false" />
-
-        <ListPreference
-            android:key="android.theme.customization.adaptive_icon_shape"
-            android:title="@string/theme_customization_icon_shape_title"/>
-
-        <ListPreference
-            android:key="android.theme.customization.wifi_icon"
-            android:title="@string/custom_wifi_bar_title" />
-
-        <ListPreference
-            android:key="android.theme.customization.signal_icon"
-            android:title="@string/custom_signal_bar_title" />
-
-        <ListPreference
-            android:key="android.theme.customization.icon_pack"
-            android:title="@string/theme_customization_icon_pack_title"/>
-
-        <Preference
-            android:key="clock_style"
-            android:title="@string/clock_style_title"
-            android:summary="@string/clock_style_summary">
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:targetPackage="com.android.wallpaper"
-                android:targetClass="com.android.customization.picker.LockClockPickerActivity" />
-        </Preference>
-
-
-        <com.spark.settings.preferences.SystemSettingListPreference
-            android:key="settings_dashboard_icons"
-            android:title="@string/settings_dashboard_icons_title"
-            android:entries="@array/settings_dashboard_icons_entries"
-            android:entryValues="@array/settings_dashboard_icons_values"
-            android:summary="%s"
-            android:defaultValue="0" />
-
-        <ListPreference
-            android:key="switch_style"
-            android:title="@string/switch_style_title"
-            android:persistent="false"
-            android:entries="@array/switch_style_entries"
-            android:entryValues="@array/switch_style_values" />
-
-        <ListPreference
-            android:key="theme_navbar_style"
-            android:title="@string/theme_navbar_picker_title"
-            android:dialogTitle="@string/theme_navbar_picker_summary"
-            android:entries="@array/navbar_name_entries"
-            android:entryValues="@array/navbar_picker_values"/>
-
         <Preference 
-            android:title="Qs Media Player Settings"
-            android:key="media_player_settings_key" 
-            android:fragment="com.spark.settings.fragments.MediaPlayerSettings"/>
+            android:title="Ui Tweaker"
+            settings:iconSpaceReserved="false"
+            android:summary="Accent Color Ls Clocks and more"
+            android:layout="@layout/custom_card_pref"
+            android:key="ui_settings_key" 
+            android:fragment="com.spark.settings.fragments.UiSettings"/>
 
         <Preference
-            android:key="dark_ui_mode"
-            android:title="@string/dark_ui_mode"
-            android:summary="@string/dark_ui_mode_summary"
-            android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
-            settings:controller="com.android.settings.display.DarkUIPreferenceController" />
-
-    </PreferenceCategory>
-
-
-        <PreferenceCategory 
-            android:title="@string/theme_customization_font_title">
-
-        <ListPreference
-            android:layout="@layout/themes_font_preview"
-            android:selectable="false" />
-
-        <com.android.settings.display.FontDialogPreference
-            android:key="custom_font"
-            android:title="@string/font_picker_title"
-            android:persistent="false" />
-
-    </PreferenceCategory>
-
-    <!-- Gvisual mod -->
-    <PreferenceCategory 
-        android:key="gvisual_category"
-        android:title="@string/gvisual_title">
+            android:key="icon_settings_category"
+            android:summary="Tweak Icon related stuff"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:fragment="com.spark.settings.fragments.IconSettings"
+            android:title="Icons" />
 
         <PreferenceScreen
             android:key="gvisual"
+            settings:iconSpaceReserved="false"
+            android:layout="@layout/custom_card_pref"
             android:title="@string/gvisual_title"
             android:summary="@string/gvisual_summary"
             android:fragment="com.spark.settings.fragments.GvisualSettings" />
 
-    </PreferenceCategory>
+        <Preference
+            android:key="quick_settings_category"
+            android:summary="Revamp Your QS"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:fragment="com.spark.settings.fragments.QsThemeSettings"
+            android:title="@string/quicksettings_title" />
 
-    <PreferenceCategory
-        android:key="volume_panel_stuff"
-        android:title="@string/volume_panel">
+        <Preference 
+            android:title="Qs Media Player Settings"
+            settings:iconSpaceReserved="false"
+            android:summary="Customize your Media player"
+            android:layout="@layout/custom_card_pref"
+            android:key="media_player_settings_key" 
+            android:fragment="com.spark.settings.fragments.MediaPlayerSettings"/>
 
-        <com.spark.settings.preferences.SystemSettingListPreference
-            android:key="systemui_plugin_volume"
-            android:title="@string/volume_panel"
-            android:entries="@array/volume_panel_entries"
-            android:entryValues="@array/volume_panel_values"
-            android:defaultValue="@string/volume_panel_stock_val" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="show_app_volume"
-            android:title="@string/show_app_volume_title"
-            android:summary="@string/show_app_volume_summary"
-            android:defaultValue="false" />
-
-    </PreferenceCategory>
-
-
-    <PreferenceCategory
-        android:key="quick_settings_category"
-        android:title="@string/quicksettings_title">
-
-        <ListPreference
-            android:key="qs_tile_style"
-            android:title="@string/qs_tile_style_title"
-            android:persistent="false"
-            android:entries="@array/qs_selector_entries"
-            android:entryValues="@array/qs_selector_values" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="qs_tiles_bg_disco"
-            android:title="@string/qs_panel_bg_disco_title"
-            android:summary="@string/qs_panel_bg_disco_summary"
-            android:defaultValue="false" />
-
-        <com.spark.settings.preferences.SystemSettingListPreference
-            android:key="qs_panel_bg_use_new_tint"
-            android:title="@string/qs_bg_use_new_tint"
-            android:entries="@array/qs_tint_entries"
-	    android:entryValues="@array/qs_tint_values"
-            android:defaultValue="1" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="statusbar_icons_style"
-            android:title="@string/statusbar_icons_style"
-            android:summary="@string/statusbar_icons_style_summary"
-            android:defaultValue="true" />
-
-       <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="status_bar_notif_count"
-            android:title="@string/status_bar_notif_count_title"
-            android:summary="@string/status_bar_notif_count_summary"
-            android:defaultValue="false" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="headers_icons_style"
-            android:title="@string/header_icons_style"
-            android:summary="@string/header_icons_style_summary"
-            android:defaultValue="true" />
-
-        <com.spark.settings.preferences.SystemSettingListPreference
-            android:key="qs_header_background"
-            android:title="@string/qs_header_background_title"
-            android:entries="@array/qs_header_background_entries"
-            android:entryValues="@array/qs_header_background_values"
-            android:defaultValue="0" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="quick_settings_colors_category"
-        android:title="@string/qs_panel_colors_title">
-
-        <!-- QS panel opacity -->
-        <com.spark.settings.preferences.SystemSettingSeekBarPreference
-            android:key="qs_panel_bg_alpha"
-            android:title="@string/qs_panel_bg_alpha_title"
-            android:defaultValue="255"
-            android:max="255"
-            android:min="0"
-            settings:units="" />
-
-        <!-- Notification background opacity -->
-        <com.spark.settings.preferences.SystemSettingSeekBarPreference
-            android:key="notification_bg_alpha"
-            android:title="@string/notification_alpha_title"
-            android:defaultValue="255"
-            android:max="255"
-            settings:min="0"
-            settings:units="" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="qs_panel_bg_use_fw"
-            android:title="@string/qs_panel_bg_use_fw_title"
-            android:summary="@string/qs_panel_bg_use_fw_summary"
-            android:defaultValue="true"
-            android:disableDependentsState="true" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="sysui_colors_active"
-            android:title="@string/sysui_colors_active_title"
-            android:summary="@string/sysui_colors_active_summary"
-            android:defaultValue="false"
-            android:dependency="qs_panel_bg_use_fw"
-            android:disableDependentsState="true" />
-
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="qs_panel_color"
-            android:title="@string/qs_panel_bg_color_title"
-            android:defaultValue="0xFFFFFFFF"
-            android:persistent="false"
-            android:dependency="sysui_colors_active" />
+         <Preference
+            android:key="volume_panel_stuff"
+            android:summary="Tweak Your Volume Panel"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:fragment="com.spark.settings.fragments.VolumeSettings"
+            android:title="@string/volume_panel" />
 
     </PreferenceCategory>
 

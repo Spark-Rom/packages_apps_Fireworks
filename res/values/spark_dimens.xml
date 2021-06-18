@@ -36,5 +36,8 @@
     <dimen name="app_list_margin_start">72dp</dimen>
     <dimen name="app_list_margin_end">16dp</dimen>
 
+    <!-- Prefrence dimens -->
+    <dimen name="preference_fragment_padding_bottom">0.0dip</dimen>
+    <dimen name="preference_fragment_padding_side">16.0dip</dimen>
     <dimen name="custom_card_pref_radius">16dp</dimen>
 </resources>
