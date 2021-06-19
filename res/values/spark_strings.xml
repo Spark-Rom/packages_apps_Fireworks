@@ -158,6 +158,7 @@
     <string name="fod_icon_animation_oneui1">OneUI 1</string>
     <string name="fod_icon_animation_oneui2">OneUI 2</string>
     <string name="fod_icon_animation_oos">OOS 11</string>
+    <string name="fod_icon_animation_spark">Spark</string>
 
     <!-- Heads up -->
     <string name="heads_up_notifications">Heads up</string>
