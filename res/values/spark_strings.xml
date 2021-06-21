@@ -1005,4 +1005,15 @@
     <string name="media_player_picker">Select the media player Style you like</string>
     <string name="media_player_androids">Android S Media Player</string>
     <string name="media_player_compact">Compact Media Player</string>
+
+    <string name="use_wall_accent_string">Wallpaper based accent</string>
+    <string name="use_wall_accent_summary">(BETA) Auto sets an accent color based on your wallpaper</string>
+
+    <!-- Auto Accent Picker -->
+    <string name="auto_accent_picker_title">Accent generation algorithm</string>
+    <string name="auto_accent_picker_vibrant">Vibrant</string>
+    <string name="auto_accent_picker_vibrant_light">Vibrant Light</string>
+    <string name="auto_accent_picker_dominant">Dominant</string>
+    <string name="auto_accent_picker_dominant_bright">Dominant Bright</string>
+    <string name="auto_accent_picker_avg">Average</string>
 </resources>

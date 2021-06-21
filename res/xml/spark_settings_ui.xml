@@ -21,12 +21,7 @@
         android:layout="@layout/spark_ui_header"
         android:selectable="false"/>
 
-
-    <PreferenceCategory
-        android:key="ui_customization_category"
-        android:title="Ui Tweaker">
-
-       <ListPreference
+     <ListPreference
             android:layout="@layout/themes_accent_preview"
             android:selectable="false" />
 
@@ -35,8 +30,29 @@
             android:title="@string/accent_color_title"
             android:defaultValue="0xFF1A73E8"
             settings:iconSpaceReserved="false"
+            android:dependency="use_wall_accent"
             settings:showReset="true"
             android:persistent="false" />
+
+         <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="use_wall_accent"
+            android:disableDependentsState="true"
+            android:title="@string/use_wall_accent_string"
+            android:summary="@string/use_wall_accent_summary"
+            android:defaultValue="false" />
+
+         <com.spark.settings.display.WallAc
+            android:key="wall"
+            android:layout="@layout/wallacpreview"
+            android:selectable="false"/>
+
+        <com.spark.settings.preferences.SystemSettingListPreference
+            android:key="auto_accent_type"
+            android:title="@string/auto_accent_picker_title"
+            android:entries="@array/auto_accent_picker_entries"
+            android:summary="%s"
+            android:defaultValue="0"
+            android:entryValues="@array/auto_accent_picker_values" />
 
         <com.android.settings.display.FontDialogPreference
             android:key="custom_font"
@@ -63,7 +79,5 @@
                 android:targetPackage="com.android.wallpaper"
                 android:targetClass="com.android.customization.picker.LockClockPickerActivity" />
         </Preference>
-
-    </PreferenceCategory>
 
 </PreferenceScreen>
