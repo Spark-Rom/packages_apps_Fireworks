@@ -73,6 +73,7 @@ public class GvisualSettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.spark_settings_gvisual);
 
+                    getActivity().getActionBar().hide();
         PreferenceScreen prefScreen = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 

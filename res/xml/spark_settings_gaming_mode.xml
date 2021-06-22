@@ -26,12 +26,14 @@
 
     <com.spark.settings.preferences.SystemSettingSwitchPreference
         android:key="gaming_mode_enabled"
+            settings:iconSpaceReserved="false"
         android:title="@string/gaming_mode_enable_title"
         android:summary="@string/gaming_mode_enable_summary"
         android:defaultValue="false" />
 
     <com.spark.settings.preferences.SystemSettingListPreference
         android:key="gaming_mode_headsup_toggle"
+            settings:iconSpaceReserved="false"
         android:title="@string/gaming_mode_headsup_title"
         android:entries="@array/gaming_mode_headsup_toggle_entries"
         android:entryValues="@array/gaming_mode_headsup_toggle_values"
@@ -41,6 +43,7 @@
 
     <com.spark.settings.preferences.SystemSettingSwitchPreference
         android:key="gaming_mode_hw_keys_toggle"
+            settings:iconSpaceReserved="false"
         android:title="@string/gaming_mode_hardware_keys_title"
         android:summary="@string/gaming_mode_hardware_keys_summary"
         android:dependency="gaming_mode_enabled"
@@ -48,6 +51,7 @@
 
     <com.spark.settings.preferences.SystemSettingSwitchPreference
         android:key="gaming_mode_manual_brightness_toggle"
+            settings:iconSpaceReserved="false"
         android:title="@string/gaming_mode_brightness_title"
         android:summary="@string/gaming_mode_brightness_summary"
         android:dependency="gaming_mode_enabled"
@@ -55,6 +59,7 @@
 
     <com.spark.settings.preferences.SystemSettingListPreference
         android:key="gaming_mode_ringer_mode"
+            settings:iconSpaceReserved="false"
         android:title="@string/gaming_mode_ringer_title"
         android:entries="@array/gaming_mode_ringer_entries"
         android:entryValues="@array/gaming_mode_ringer_values"
@@ -64,6 +69,7 @@
 
     <com.spark.settings.preferences.SystemSettingListPreference
         android:key="gaming_mode_notifications"
+            settings:iconSpaceReserved="false"
         android:title="@string/gaming_mode_notifications_title"
         android:entries="@array/gaming_mode_notifications_entries"
         android:entryValues="@array/gaming_mode_notifications_values"

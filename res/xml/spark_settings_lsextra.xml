@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 Nitrogen Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title=" "
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+   <!-- Title Header -->
+    <Preference
+        android:layout="@layout/spark_settings_lsextra_header"
+        android:selectable="false"/>
+
+        <com.spark.settings.preferences.SystemSettingSeekBarPreference
+            settings:iconSpaceReserved="false"
+            android:key="lockscreen_blur"
+            android:title="@string/lockscreen_blur_title"
+            android:summary="@string/lockscreen_blur_summary"
+            android:defaultValue="0"
+            android:max="100"
+            settings:min="0"
+            settings:units="%" />
+
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_status_bar"
+            settings:iconSpaceReserved="false"
+            android:title="@string/lockscreen_status_bar_title"
+            android:summary="@string/lockscreen_status_bar_summary"
+            android:defaultValue="true" />
+
+        <com.spark.settings.preferences.SecureSettingSwitchPreference
+            android:key="hide_lockicon"
+            settings:iconSpaceReserved="false"
+            android:title="@string/hide_lockicon_title"
+            android:summary="@string/hide_lockicon_summary"
+            android:defaultValue="true" />
+
+    <SwitchPreference
+            settings:iconSpaceReserved="false"
+        android:key="fingerprint_success_vib"
+        android:title="@string/fprint_sucess_vib_title"
+        android:summary="@string/fprint_sucess_vib_summary"
+        android:persistent="false" />
+
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="lock_fp_icon"
+            settings:iconSpaceReserved="false"
+            android:title="@string/lock_fp_icon_title"
+            android:summary="@string/lock_fp_icon_summary"
+            android:defaultValue="false" />
+
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="pocket_judge"
+            settings:iconSpaceReserved="false"
+            android:title="@string/pocket_judge_title"
+            android:summary="@string/pocket_judge_summary"
+            android:defaultValue="false" />
+
+</PreferenceScreen>
+

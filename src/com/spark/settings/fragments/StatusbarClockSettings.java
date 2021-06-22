@@ -81,6 +81,7 @@ public class StatusbarClockSettings extends SettingsPreferenceFragment implement
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+		    getActivity().getActionBar().hide();
         addPreferencesFromResource(R.xml.spark_settings_statusbar_clock);
         final ContentResolver resolver = getActivity().getContentResolver();
 

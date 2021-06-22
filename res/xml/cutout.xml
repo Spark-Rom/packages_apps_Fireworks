@@ -28,18 +28,21 @@
 
     <ListPreference
         android:key="display_cutout_style"
+            settings:iconSpaceReserved="false"
         android:title="@string/display_cutout_style_title"
         android:persistent="false"
         android:entries="@array/display_cutout_style_entries"
         android:entryValues="@array/display_cutout_style_values" />
 
     <com.spark.settings.preferences.SystemSettingSwitchPreference
+            settings:iconSpaceReserved="false"
         android:key="stock_statusbar_in_hide"
         android:title="@string/stock_statusbar_in_hide"
         android:summary="@string/stock_statusbar_in_hide_summary"
         android:defaultValue="true" />
 
     <Preference
+            settings:iconSpaceReserved="false"
         android:key="display_cutout_force_fullscreen_settings"
         android:title="@string/display_cutout_force_fullscreen_title"
         android:summary="@string/display_cutout_force_fullscreen_summary"

@@ -29,6 +29,7 @@
     <com.spark.settings.preferences.SystemSettingSwitchPreference
         android:key="sensor_block"
         android:title="@string/sensor_block_title"
+            settings:iconSpaceReserved="false"
         android:summary="@string/sensor_block_summary"
         android:defaultValue="false" />
 

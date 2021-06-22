@@ -25,114 +25,60 @@
 
         <Preference
             android:key="statusbar_clock_date"
+            settings:iconSpaceReserved="false"
             android:title="@string/status_bar_clock_date_title"
+            android:layout="@layout/custom_card_pref"
             android:summary="@string/status_bar_clock_date_summary"
             android:fragment="com.spark.settings.fragments.StatusbarClockSettings" />
 
         <Preference
             android:key="battery_bar_category"
+            settings:iconSpaceReserved="false"
             android:title="@string/battery_bar_title"
+            android:layout="@layout/custom_card_pref"
             android:summary="@string/battery_bar_summary"
             android:fragment="com.spark.settings.fragments.BatteryBarSettings" />
 
-    <PreferenceCategory    
-        android:key="corners_category"
-        android:title="@string/corners_category" >
+        <Preference
+            android:key="extrasb_settings"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:title="Extra SB Settings"
+            android:summary="Further Tweak Your SB"
+            android:fragment="com.spark.settings.fragments.ExtraStatusBarSettings"/>
 
-        <com.spark.settings.preferences.SecureSettingSwitchPreference
-            android:key="sysui_rounded_fwvals"
-            android:title="@string/corner_fwvals"
-            android:summary="@string/corner_fwvals_summary"
-            android:defaultValue="true"
-            android:disableDependentsState="true" />
-
-        <com.spark.settings.preferences.CustomSeekBarPreference
-            android:key="sysui_rounded_size"
-            android:title="@string/corner_radius"
-            android:max="60"
-            settings:min="0"
-            settings:units="dp"
-            android:persistent="false"
-            android:dependency="sysui_rounded_fwvals" />
-
-            <!--com.spark.settings.preferences.CustomSeekBarPreference
-            android:key="sysui_rounded_content_padding"
-            android:title="@string/content_padding"
-            android:max="30"
-            settings:min="0"
-            settings:units="dp"
-            android:persistent="false"
-            android:dependency="sysui_rounded_fwvals" /-->
-    </PreferenceCategory>
-
-
-    <PreferenceCategory
-         android:title="@string/statusbar_custom_title">
-
-        <com.spark.settings.preferences.CustomSeekBarPreference
-            android:key="custom_statusbar_padding_start"
-            android:title="@string/custom_statusbar_padding_start"
-            android:max="45"
-            settings:min="5"
-            settings:units="dp"
-            android:defaultValue="5"
-            android:persistent="false" />
-
-        <com.spark.settings.preferences.CustomSeekBarPreference
-            android:key="custom_statusbar_padding_end"
-            android:title="@string/custom_statusbar_padding_end"
-            android:max="45"
-            settings:min="5"
-            android:defaultValue="5"
-            settings:units="dp"
-            android:persistent="false" />
-
-    </PreferenceCategory>
-
+       <Preference
+            android:key="traffic"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:title="@string/traffic_title"
+            android:summary="@string/traffic_summary"
+            android:fragment="com.spark.settings.fragments.NetworkTrafficSettings" />
 
         <Preference
+            android:key="statusbar_battery"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:title="@string/battery_percent_title"
+            android:summary="@string/battery_percent_summary"
+            android:fragment="com.spark.settings.fragments.StatusbarBatterySettings"/>
+
+        <Preference
+            settings:iconSpaceReserved="false"
             android:key="cutout_settings"
+            android:layout="@layout/custom_card_pref"
             android:fragment="com.spark.settings.fragments.CutoutFragment"
             android:title="@string/cutout_main" />
 
 
     <Preference
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
             android:title="@string/statusbar_items_title" >
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
     </Preference>
 
-       <Preference
-            android:key="traffic"
-            android:title="@string/traffic_title"
-            android:summary="@string/traffic_summary"
-            android:fragment="com.spark.settings.fragments.NetworkTrafficSettings" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="show_fourg"
-            android:title="@string/show_fourg_title"
-            android:summary="@string/show_fourg_summary"
-            android:defaultValue="false" />
-
-<!--
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="show_volte_icon"
-            android:title="@string/show_volte_title"
-            android:summary="@string/show_volte_summary"
-            android:defaultValue="true" />
--->
-
-        <Preference
-            android:key="statusbar_battery"
-            android:title="@string/battery_percent_title"
-            android:summary="@string/battery_percent_summary"
-            android:fragment="com.spark.settings.fragments.StatusbarBatterySettings"/>
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="roaming_indicator_icon"
-            android:title="@string/roaming_indicator_icon_title"
-            android:summary="@string/roaming_indicator_icon_summary"
-            android:defaultValue="true"/>
 
 </PreferenceScreen>

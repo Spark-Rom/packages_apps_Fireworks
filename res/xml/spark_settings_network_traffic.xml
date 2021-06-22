@@ -24,6 +24,7 @@
 
     <ListPreference
         android:key="network_traffic_location"
+        settings:iconSpaceReserved="false"
         android:title="@string/network_traffic_location"
         android:summary="%s"
         android:entries="@array/network_traffic_location_entries"
@@ -32,6 +33,7 @@
 
     <ListPreference
         android:key="network_traffic_type"
+        settings:iconSpaceReserved="false"
         android:title="@string/network_traffic_type"
         android:entries="@array/show_network_traffic_type_entries"
         android:entryValues="@array/show_network_traffic_type_values"
@@ -47,6 +49,7 @@
 
     <com.spark.settings.preferences.SystemSettingSwitchPreference
         android:key="network_traffic_arrow"
+        settings:iconSpaceReserved="false"
         android:title="@string/network_traffic_arrow"
         android:summary="@string/network_traffic_arrow_summary"
         android:defaultValue="false" />

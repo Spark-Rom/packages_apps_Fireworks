@@ -34,6 +34,13 @@
             android:entryValues="@array/qs_selector_values" />
 
         <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="oos_qsclock"
+            android:title="@string/oos_qsclock"
+            settings:iconSpaceReserved="false"
+            android:summary="@string/oos_qsclock_summary"
+            android:defaultValue="true" />
+
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_tiles_bg_disco"
             settings:iconSpaceReserved="false"
             android:title="@string/qs_panel_bg_disco_title"

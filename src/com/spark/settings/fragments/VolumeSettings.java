@@ -77,6 +77,7 @@ public class VolumeSettings extends DashboardFragment {
 
     @Override
     public void onCreate(Bundle icicle) {
+                    getActivity().getActionBar().hide();
         super.onCreate(icicle);
         mOverlayService = IOverlayManager.Stub
                 .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));

@@ -22,22 +22,26 @@
 
     <com.spark.settings.preferences.SystemSettingSwitchPreference
         android:key="battery_light_enabled"
+            settings:iconSpaceReserved="false"
         android:title="@string/battery_light_enable"
         android:defaultValue="true"/>
 
     <com.spark.settings.preferences.SystemSettingSwitchPreference
         android:key="battery_full_light_enabled"
+            settings:iconSpaceReserved="false"
         android:title="@string/battery_full_light_enabled"
         android:defaultValue="true" />
 
     <com.spark.settings.preferences.SystemSettingSwitchPreference
         android:key="battery_light_allow_on_dnd"
+            settings:iconSpaceReserved="false"
         android:title="@string/battery_light_allow_on_dnd_title"
         android:dependency="battery_light_enabled"
         android:defaultValue="false" />
 
     <com.spark.settings.preferences.SystemSettingSwitchPreference
         android:key="battery_light_low_blinking"
+            settings:iconSpaceReserved="false"
         android:title="@string/battery_light_low_blinking_title"
         android:dependency="battery_light_enabled"
         android:defaultValue="false" />
@@ -48,24 +52,28 @@
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="battery_light_low_color"
+            settings:iconSpaceReserved="false"
             android:title="@string/battery_light_low_color"
             ledPreview="true"
             android:defaultValue="0xFFFF0000" />
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="battery_light_medium_color"
+            settings:iconSpaceReserved="false"
             android:title="@string/battery_light_medium_color"
             ledPreview="true"
             android:defaultValue="0xFFFFFF00" />
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="battery_light_full_color"
+            settings:iconSpaceReserved="false"
             android:title="@string/battery_light_full_color"
             ledPreview="true"
             android:defaultValue="0xFF00FF00" />
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="battery_light_reallyfull_color"
+            settings:iconSpaceReserved="false"
             android:title="@string/battery_light_reallyfull_color"
             ledPreview="true"
             android:defaultValue="0xFF00FF00" />
