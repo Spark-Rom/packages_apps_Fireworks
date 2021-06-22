@@ -23,17 +23,10 @@
         android:layout="@layout/spark_settings_misc_header"
         android:selectable="false"/>
 
- <!--  <com.spark.settings.preferences.SystemSettingSwitchPreference
-        android:key="wake_when_plugged_or_unplugged"
-        android:title="@string/wakeup_when_plugged_unplugged_title"
-        android:summary="@string/wakeup_when_plugged_unplugged_summary"
-        android:defaultValue="true" />  -->
-
-    <PreferenceCategory
-         android:title="@string/battery_saving">
-
     <Preference
         android:key="gaming_mode"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
         android:fragment="com.spark.settings.fragments.GamingMode"
         android:title="@string/gaming_mode_title"
         android:summary="@string/gaming_mode_summary" />
@@ -41,6 +34,8 @@
         <!-- Sensor Block -->
         <Preference
             android:key="sensor_block_settings"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
             android:title="@string/sensor_block_title"
             android:summary="@string/sensor_block_summary"
             android:fragment="com.spark.settings.fragments.SensorBlockSettings"/>
@@ -48,129 +43,56 @@
 
         <Preference
             android:key="suspend_actions"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:summary="Stop actions on screen off"
             android:fragment="com.spark.settings.fragments.ScreenStateToggles"
-            android:title="@string/screen_state_toggles_title"
-            android:summary="@string/screen_state_toggles_summary" />
+            android:title="@string/screen_state_toggles_title" />
 
-    </PreferenceCategory>
+        <Preference
+            android:key="ambientdoze_settings_key"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:summary="Tweak Brightness on Ambient Display"
+            android:fragment="com.spark.settings.fragments.AmbientDozeSettings"
+            android:title="Doze Brightness" />
 
-    <com.spark.settings.preferences.SecureSettingSwitchPreference
-        android:key="tethering_allow_vpn_upstreams"
-        android:title="@string/allow_vpn_upstreams"
-        android:summary="@string/allow_vpn_upstreams_summary"
-        android:defaultValue="false" />
+        <Preference
+            android:key="animation_settings_key"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:summary="Power Off Animations, Scrolling Cache and more"
+            android:fragment="com.spark.settings.fragments.AnimationSettings"
+            android:title="Animations" />
 
-    <!-- Screenshot compression -->
-    <com.spark.settings.preferences.SystemSettingSeekBarPreference
-        android:key="screenshot_compression"
-        android:title="@string/screenshot_compression_title"
-        android:summary="@string/screenshot_compression_summary"
-        android:defaultValue="100"
-        android:max="100"
-        android:min="10"
-        settings:units="%" />
+        <Preference
+            android:key="audio_settings_key"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:summary="Call Settings and more"
+            android:fragment="com.spark.settings.fragments.AudioSettings"
+            android:title="Audio" />
 
-    <PreferenceCategory
-        android:title="@string/doze_brightness_category">
+        <Preference
+            android:key="miscextra_settings_key"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:summary="Extra Tweaks"
+            android:fragment="com.spark.settings.fragments.MiscExtraSettings"
+            android:title="Extra Tweaks" />
 
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="doze_brightness_force"
-            android:title="@string/doze_brightness_force_title"
-            android:summary="@string/doze_brightness_force_summary"
-            android:defaultValue="false" />
-
-        <com.spark.settings.preferences.CustomSeekBarPreference
-            android:key="ambient_doze_brightness"
-            android:title="@string/ambient_doze_brightness_title"
-            android:summary="@string/ambient_doze_brightness_summary"
-            android:max="255"
-            android:min="1"
-            android:persistent="false" />
-
-        <com.spark.settings.preferences.CustomSeekBarPreference
-            android:key="ambient_pulse_brightness"
-            android:title="@string/ambient_pulse_brightness_title"
-            android:summary="@string/ambient_pulse_brightness_summary"
-            android:max="255"
-            android:min="1"
-            android:persistent="false" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/animations_category">
-
-    <com.spark.settings.preferences.SystemSettingListPreference
-        android:key="screen_off_animation"
-        android:title="@string/screen_off_animation_title"
-        android:entries="@array/screen_off_animation_entries"
-        android:entryValues="@array/screen_off_animation_values"
-        android:summary="%s"
-        android:defaultValue="0" />
-
-    <ListPreference
-        android:key="pref_scrollingcache"
-        android:dialogTitle="@string/pref_scrollingcache_title"
-        android:title="@string/pref_scrollingcache_title"
-        android:summary="@string/pref_scrollingcache_summary"
-        android:entries="@array/entries_scrollingcache"
-        android:entryValues="@array/values_scrollingcache" />
-
-    <com.spark.settings.preferences.GlobalSettingSwitchPreference
-        android:key="disable_transition_animations"
-        android:title="@string/disable_transition_animations_title"
-        android:summary="@string/disable_transition_animations_summary"
-        android:defaultValue="false" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="incall_vib_options"
-        android:title="@string/incall_vibration_category">
-
-        <ListPreference
-            android:key="ringtone_focus_mode"
-            android:title="@string/ringtone_focus_mode_title"
-            android:entries="@array/ringtone_focus_mode_entries"
-            android:entryValues="@array/ringtone_focus_mode_values" />
-
-        <!-- Launch music player when headset is connected -->
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="headset_connect_player"
-            android:title="@string/headset_connect_player_title"
-            android:summary="@string/headset_connect_player_summary"
-            android:defaultValue="false" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="vibrate_on_connect"
-            android:title="@string/incall_vibrate_connect_title"
-            android:defaultValue="true" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="vibrate_on_callwaiting"
-            android:title="@string/incall_vibrate_call_wait_title"
-            android:defaultValue="true" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="vibrate_on_disconnect"
-            android:title="@string/incall_vibrate_disconnect_title"
-            android:defaultValue="true" />
-
-    </PreferenceCategory>
 
     <Preference
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
         android:key="default_usb_configuration"
         android:fragment="com.android.settings.connecteddevice.usb.UsbDefaultFragment"
         android:title="@string/usb_default_config_title"
         android:summary="@string/usb_default_config_summary"/>
 
-    <com.spark.settings.preferences.GlobalSettingSwitchPreference
-        android:key="allow_signature_fake"
-        android:title="@string/allow_signature_fake"
-        android:summary="@string/allow_signature_fake_summary"
-        android:defaultValue="false" />
-
     <Preference
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
         android:title="@string/radio_info_title"
         android:key="radio_info_settings">
         <intent android:action="android.intent.action.MAIN"

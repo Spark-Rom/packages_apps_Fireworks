@@ -50,21 +50,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
-public class MiscSettings extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
-
-    private static final String KEY_PULSE_BRIGHTNESS = "ambient_pulse_brightness";
-    private static final String KEY_DOZE_BRIGHTNESS = "ambient_doze_brightness";
-    private static final String RINGTONE_FOCUS_MODE = "ringtone_focus_mode";
-    private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
-    private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
-    private static final String SCROLLINGCACHE_DEFAULT = "2";
-
-
-    private CustomSeekBarPreference mPulseBrightness;
-    private CustomSeekBarPreference mDozeBrightness;
-    private ListPreference mHeadsetRingtoneFocus;
-    private ListPreference mScrollingCachePref;
+public class MiscSettings extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -72,66 +58,6 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.spark_settings_misc);
         final ContentResolver resolver = getActivity().getContentResolver();
 
-        mHeadsetRingtoneFocus = (ListPreference) findPreference(RINGTONE_FOCUS_MODE);
-        int mHeadsetRingtoneFocusValue = Settings.Global.getInt(resolver,
-                Settings.Global.RINGTONE_FOCUS_MODE, 0);
-        mHeadsetRingtoneFocus.setValue(Integer.toString(mHeadsetRingtoneFocusValue));
-        mHeadsetRingtoneFocus.setSummary(mHeadsetRingtoneFocus.getEntry());
-        mHeadsetRingtoneFocus.setOnPreferenceChangeListener(this);
-
-        mScrollingCachePref = (ListPreference) findPreference(SCROLLINGCACHE_PREF);
-        mScrollingCachePref.setValue(SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP,
-                SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP, SCROLLINGCACHE_DEFAULT)));
-        mScrollingCachePref.setOnPreferenceChangeListener(this);
-
-        int defaultDoze = getResources().getInteger(
-                com.android.internal.R.integer.config_screenBrightnessDoze);
-        int defaultPulse = getResources().getInteger(
-                com.android.internal.R.integer.config_screenBrightnessPulse);
-        if (defaultPulse == -1) {
-            defaultPulse = defaultDoze;
-        }
-
-        mPulseBrightness = (CustomSeekBarPreference) findPreference(KEY_PULSE_BRIGHTNESS);
-        int value = Settings.System.getInt(getContentResolver(),
-                Settings.System.PULSE_BRIGHTNESS, defaultPulse);
-        mPulseBrightness.setValue(value);
-        mPulseBrightness.setOnPreferenceChangeListener(this);
-
-        mDozeBrightness = (CustomSeekBarPreference) findPreference(KEY_DOZE_BRIGHTNESS);
-        value = Settings.System.getInt(getContentResolver(),
-                Settings.System.DOZE_BRIGHTNESS, defaultDoze);
-        mDozeBrightness.setValue(value);
-        mDozeBrightness.setOnPreferenceChangeListener(this);
-
-    }
-
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mHeadsetRingtoneFocus) {
-            int mHeadsetRingtoneFocusValue = Integer.valueOf((String) newValue);
-            int index = mHeadsetRingtoneFocus.findIndexOfValue((String) newValue);
-            mHeadsetRingtoneFocus.setSummary(
-                    mHeadsetRingtoneFocus.getEntries()[index]);
-            Settings.Global.putInt(getContentResolver(), Settings.Global.RINGTONE_FOCUS_MODE,
-                    mHeadsetRingtoneFocusValue);
-            return true;
-        } else if (preference == mScrollingCachePref) {
-            if (newValue != null) {
-                SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String) newValue);
-            }
-        } else if (preference == mPulseBrightness) {
-            int value = (Integer) newValue;
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.PULSE_BRIGHTNESS, value);
-            return true;
-        } else if (preference == mDozeBrightness) {
-            int value = (Integer) newValue;
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.DOZE_BRIGHTNESS, value);
-            return true;
-        }
-        return false;
     }
 
     @Override

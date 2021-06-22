@@ -30,11 +30,13 @@
 
         <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="statusbar_clock"
+            settings:iconSpaceReserved="false"
             android:title="@string/status_bar_clock_show"
             android:defaultValue="true" />
 
         <ListPreference
             android:key="statusbar_clock_style"
+            settings:iconSpaceReserved="false"
             android:title="@string/status_bar_clock_style_title"
             android:dialogTitle="@string/status_bar_clock_style_title"
             android:entries="@array/status_bar_clock_style_entries"
@@ -42,6 +44,7 @@
             android:dependency="statusbar_clock" />
 
         <ListPreference
+            settings:iconSpaceReserved="false"
             android:key="statusbar_am_pm"
             android:title="@string/status_bar_am_pm_title"
             android:dialogTitle="@string/status_bar_am_pm_title"
@@ -50,6 +53,7 @@
             android:dependency="statusbar_clock" />
 
         <com.spark.settings.preferences.SystemSettingSwitchPreference
+            settings:iconSpaceReserved="false"
             android:key="statusbar_clock_seconds"
             android:title="@string/clock_seconds_display"
             android:dependency="statusbar_clock"
@@ -62,6 +66,7 @@
 
         <ListPreference
             android:key="clock_date_display"
+            settings:iconSpaceReserved="false"
             android:title="@string/clock_date_display"
             android:summary="@string/clock_date_display_summary"
             android:entries="@array/clock_date_display_entries"
@@ -69,6 +74,7 @@
             android:dependency="statusbar_clock" />
 
         <ListPreference
+            settings:iconSpaceReserved="false"
             android:key="clock_date_style"
             android:title="@string/clock_date_style"
             android:entries="@array/clock_date_style_entries"
@@ -76,6 +82,7 @@
             android:dependency="clock_date_display" />
 
         <ListPreference
+            settings:iconSpaceReserved="false"
             android:key="clock_date_format"
             android:title="@string/clock_date_format"
             android:entries="@array/clock_date_format_entries_values"
@@ -83,6 +90,7 @@
             android:dependency="clock_date_display" />
 
         <ListPreference
+            settings:iconSpaceReserved="false"
             android:key="statusbar_clock_date_position"
             android:title="@string/clock_date_position"
             android:entries="@array/clock_date_position_entries"

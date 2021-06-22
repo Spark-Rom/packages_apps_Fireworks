@@ -26,166 +26,42 @@
     <!-- Heads up -->
     <Preference
         android:key="heads_up_notifications"
+        android:summary="Timeout, Snooze and more"
+        android:layout="@layout/custom_card_pref"
+        settings:iconSpaceReserved="false"
         android:title="@string/heads_up_notifications"
         android:fragment="com.spark.settings.fragments.HeadsUpSettings" />
-
-    <PreferenceCategory
-        android:title="@string/light_settings_header">
 
         <Preference
             android:key="charging_light"
             android:title="@string/battery_light_settings"
             android:summary="@string/battery_light_summary"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
             android:fragment="com.spark.settings.fragments.BatteryLightSettings" />
 
-    </PreferenceCategory>
+        <Preference
+            android:key="edgelightning_settings_key"
+            android:title="Edge Lighting"
+            android:summary="custom color repeat time and more"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:fragment="com.spark.settings.fragments.EdgeSettings" />
 
-    <PreferenceCategory
-        android:key="notifications_general_category"
-        android:title="@string/general_title">
+        <Preference
+            android:key="extranotification_settings_key"
+            android:title="Extra Notification Settings"
+            android:summary="Notification Headers and more"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:fragment="com.spark.settings.fragments.ExtraNotificationSettings" />
 
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="status_bar_show_ticker"
-            android:title="@string/status_bar_show_ticker_title"
-            android:summary="@string/status_bar_show_ticker_summary"
-            android:defaultValue="false" />
-
-        <com.spark.settings.preferences.SystemSettingIntListPreference
-            android:key="status_bar_ticker_animation_mode"
-            android:title="@string/ticker_animation_mode_title"
-            android:entries="@array/ticker_animation_mode_entries"
-            android:entryValues="@array/ticker_animation_mode_values"
-            android:dependency="status_bar_show_ticker"
-            android:defaultValue="0" />
-
-        <com.spark.settings.preferences.SystemSettingSeekBarPreference
-            android:key="status_bar_ticker_tick_duration"
-            android:title="@string/ticker_tick_duration_title"
-            android:dependency="status_bar_show_ticker"
-            android:min="500"
-            android:max="10000"
-            android:defaultValue="3000"
-            interval="100"
-            unitsLeft=""
-            unitsRight="ms" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-           android:key="notification_guts_kill_app_button"
-           android:title="@string/notification_guts_kill_app_button_title"
-           android:summary="@string/notification_guts_kill_app_button_summary"
-           android:defaultValue="false" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="notification_sound_vib_screen_on"
-            android:title="@string/notification_sound_vib_screen_on_title"
-            android:summary="@string/notification_sound_vib_screen_on_summary"
-            android:defaultValue="true" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="notification_headers"
-            android:title="@string/notification_headers_title"
-            android:summary="@string/notification_headers_summary"
-            android:defaultValue="true" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-           android:key="center_notification_headers"
-           android:title="@string/center_notification_headers_title"
-           android:summary="@string/center_notification_headers_summary"
-           android:dependency="notification_headers"
-           android:defaultValue="false" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="vibrate_on_notifications"
-            android:title="@string/vibrate_on_notifications_title"
-            android:summary="@string/vibrate_on_notifications_summary"
-            android:defaultValue="true"/>
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="pulse_ambient_light_category"
-        android:title="@string/pulse_ambient_light_category">
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="pulse_ambient_light"
-            android:title="@string/pulse_ambient_light_title"
-            android:summary="@string/pulse_ambient_light_summary"
-            android:defaultValue="false" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="ambient_notification_light_enabled"
-            android:title="@string/ambient_notification_light_enabled_title"
-            android:summary="@string/ambient_notification_light_enabled_summary"
-            android:defaultValue="false" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="ambient_notification_light_hide_aod"
-            android:title="@string/ambient_notification_light_hide_aod_title"
-            android:summary="@string/ambient_notification_light_hide_aod_summary"
-            android:defaultValue="false"
-            android:dependency="ambient_notification_light_enabled"/>
-
-	<com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="ambient_light_pulse_for_all"
-            android:title="@string/pulse_ambient_light_show_always_title"
-            android:summary="@string/pulse_ambient_light_show_always_summary"
-            android:defaultValue="false" />
-
-
-        <com.spark.settings.preferences.SystemSettingListPreference
-            android:key="ambient_notification_light_timeout"
-            android:dialogTitle="@string/ambient_notification_light_timeout_title"
-            android:title="@string/ambient_notification_light_timeout_title"
-            android:entries="@array/ambient_notification_light_timeout_entries"
-            android:entryValues="@array/ambient_notification_light_timeout_values"
-            android:defaultValue="0"
-            android:dependency="ambient_notification_light_enabled"
-            android:summary="%s" />
-
-        <ListPreference
-            android:key="ambient_notification_light_color_mode"
-            android:title="@string/ambient_notification_light_color_mode_title"
-            android:persistent="false"
-            android:entries="@array/ambient_notification_light_color_mode_entries"
-            android:entryValues="@array/ambient_notification_light_color_mode_values"
-            android:defaultValue="2" />
-
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="ambient_notification_light_color"
-            android:title="@string/ambient_notification_light_color_title"
-            ledPreview="true"
-            android:defaultValue="0xFFFCDC33" />
-
-        <com.spark.settings.preferences.CustomSeekBarPreference
-            android:key="notification_pulse_duration"
-            android:title="@string/pulse_ambient_light_duration_title"
-            android:summary="@string/pulse_ambient_light_duration_summary"
-            android:persistent="false"
-            android:defaultValue="2"
-            android:max="10"
-            android:min="1"
-            settings:units="sec"
-            settings:interval="1"
-            android:dependency="pulse_ambient_light" />
-
-        <com.spark.settings.preferences.CustomSeekBarPreference
-            android:key="notification_pulse_repeats"
-            android:title="@string/pulse_ambient_light_repeat_count_title"
-            android:summary="@string/pulse_ambient_light_repeat_count_summary"
-            android:persistent="false"
-            android:defaultValue="0"
-            android:max="10"
-            android:min="0"
-            settings:interval="1"
-            android:dependency="pulse_ambient_light" />
-
-        <com.spark.settings.preferences.SystemSettingListPreference
-            android:key="ambient_light_repeat_direction"
-            android:title="@string/pulse_ambient_light_repeat_direction_title"
-            android:entries="@array/pulse_ambient_light_repeat_direction_entries"
-            android:entryValues="@array/pulse_ambient_light_repeat_direction_values"
-            android:defaultValue="0" />
-
-    </PreferenceCategory>
+        <Preference
+            android:key="ticker_settings_key"
+            android:title="Notification Ticker"
+            android:summary="Tweak duration and animation"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:fragment="com.spark.settings.fragments.TickerSettings" />
 
 </PreferenceScreen>

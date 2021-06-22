@@ -23,149 +23,28 @@
         android:layout="@layout/spark_settings_quicksettings_header"
         android:selectable="false"/>
 
-<!--    <com.spark.settings.preferences.SecureSettingListPreference
-        android:key="qs_show_brightness_slider"
-        android:title="@string/qs_show_brightness_slider_title"
-        android:summary="%s"
-        android:dialogTitle="@string/qs_show_brightness_slider_title"
-        android:entries="@array/qs_show_brightness_slider_entries"
-        android:entryValues="@array/qs_show_brightness_slider_values"
-        android:defaultValue="1" />
+        <Preference
+            android:key="qsitems_settings_category"
+            android:summary="Customize Stuff in QS"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:fragment="com.spark.settings.fragments.QsItemsSettings"
+            android:title="Qs Items" />
 
--->
+        <Preference
+            android:key="qsanimations_settings_category"
+            android:summary="Tweak Qs Tile Animations"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:fragment="com.spark.settings.fragments.QsAnimationSettings"
+            android:title="Tile Animations" />
 
-    <com.spark.settings.preferences.SystemSettingSwitchPreference
-        android:key="qs_tile_title_visibility"
-        android:title="@string/qs_tile_title_visibility_title"
-        android:defaultValue="true" />
-
-<!--
-    <com.spark.settings.preferences.SecureSettingSwitchPreference
-        android:key="qs_show_auto_brightness"
-        android:title="@string/qs_show_auto_brightness_title"
-        android:summary="@string/qs_show_auto_brightness_summary"
-        android:defaultValue="true" />
---> 
-
-    <com.spark.settings.preferences.SystemSettingSwitchPreference
-        android:key="oos_qsclock"
-        android:title="@string/oos_qsclock"
-        android:summary="@string/oos_qsclock_summary"
-        android:defaultValue="true" />
-
-    <!-- Battery percent -->
-    <com.spark.settings.preferences.SystemSettingListPreference
-        android:key="qs_show_battery_percent"
-        android:title="@string/battery_percentage_title"
-        android:entries="@array/battery_percent_entries"
-        android:entryValues="@array/battery_percent_values"
-        android:defaultValue="2" />
-
-    <!-- Battery estimate -->
-    <com.spark.settings.preferences.SystemSettingSwitchPreference
-        android:key="qs_show_battery_estimate"
-        android:title="@string/battery_estimate_title"
-        android:summary="@string/battery_estimate_summary"
-        android:defaultValue="true" />
-
-    <!-- QS Header data uasge -->
-    <com.spark.settings.preferences.SystemSettingListPreference
-        android:key="qs_datausage"
-        android:title="@string/qs_datausage_title"
-        android:entries="@array/qs_datausage_entries"
-        android:entryValues="@array/qs_datausage_values"
-        android:defaultValue="0" />
-
-    <com.spark.settings.preferences.SecureSettingListPreference
-        android:key="status_bar_quick_qs_pulldown"
-        android:title="@string/status_bar_quick_qs_pulldown"
-        android:entries="@array/quick_pulldown_entries"
-        android:entryValues="@array/quick_pulldown_values"
-        android:defaultValue="1" />
-
-    <ListPreference
-        android:key="smart_pulldown"
-        android:title="@string/smart_pulldown_title"
-        android:entries="@array/smart_pulldown_entries"
-        android:entryValues="@array/smart_pulldown_values"
-        android:persistent="false" />
-
-    <com.spark.settings.preferences.SecureSettingSwitchPreference
-        android:key="quick_settings_vibrate"
-        android:title="@string/quick_settings_vibrate_title"
-        android:summary="@string/quick_settings_vibrate_summary"
-        android:defaultValue="false" />
-
-    <com.spark.settings.preferences.SystemSettingSwitchPreference
-        android:key="status_bar_locked_on_secure_keyguard"
-        android:title="@string/lockscreen_qs_disabled_title"
-        android:summary="@string/lockscreen_qs_disabled_summary"
-        android:defaultValue="false" />
-
-    <PreferenceCategory
-        android:key="quick_settings_animations"
-        android:title="@string/qs_tile_animation_title">
-
-        <ListPreference
-            android:key="qs_tile_animation_style"
-            android:title="@string/qs_tile_animation_style_title"
-            android:entries="@array/qs_tile_animation_style_entries"
-            android:entryValues="@array/qs_tile_animation_style_values"
-            android:persistent="false" />
-
-        <ListPreference
-            android:key="qs_tile_animation_duration"
-            android:title="@string/qs_tile_animation_duration_title"
-            android:entries="@array/qs_tile_animation_duration_entries"
-            android:entryValues="@array/qs_tile_animation_duration_values"
-            android:persistent="false" />
-
-        <ListPreference
-            android:key="qs_tile_animation_interpolator"
-            android:title="@string/qs_tile_animation_interpolator_title"
-            android:entries="@array/qs_tile_animation_interpolator_entries"
-            android:entryValues="@array/qs_tile_animation_interpolator_values"
-            android:persistent="false" />
-
-    </PreferenceCategory>
-
-
-    <PreferenceCategory
-        android:key="qs_columns_rows_category"
-        android:title="@string/qs_columns_rows_category_title">
-
-        <com.spark.settings.preferences.SystemSettingSeekBarPreference
-            android:key="qs_rows_portrait"
-            android:title="@string/qs_rows_portrait_title"
-            android:max="5"
-            android:min="1"
-            android:defaultValue="3"
-            settings:units="" />
-
-        <com.spark.settings.preferences.SystemSettingSeekBarPreference
-            android:key="qs_rows_landscape"
-            android:title="@string/qs_rows_landscape_title"
-            android:max="5"
-            android:min="1"
-            android:defaultValue="1"
-            settings:units="" />
-
-        <com.spark.settings.preferences.SystemSettingSeekBarPreference
-            android:key="qs_columns_portrait"
-            android:title="@string/qs_columns_portrait_title"
-            android:max="7"
-            android:min="1"
-            android:defaultValue="4"
-            settings:units="" />
-
-        <com.spark.settings.preferences.SystemSettingSeekBarPreference
-            android:key="qs_columns_landscape"
-            android:title="@string/qs_columns_landscape_title"
-            android:max="9"
-            android:min="1"
-            android:defaultValue="4"
-            settings:units="" />
-
-        </PreferenceCategory>
+        <Preference
+            android:key="qsrow_settings_category"
+            android:summary="Extend Your Qs"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:fragment="com.spark.settings.fragments.QsRowSettings"
+            android:title="QsRows" />
 
 </PreferenceScreen>

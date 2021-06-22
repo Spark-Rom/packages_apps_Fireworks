@@ -196,11 +196,13 @@
 
         <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="volume_rocker_wake"
+            settings:iconSpaceReserved="false"
             android:summary="@string/volume_rocker_wake_summary"
             android:title="@string/volume_rocker_wake_title"
             android:defaultValue="false" />
 
         <ListPreference
+            settings:iconSpaceReserved="false"
             android:dialogTitle="@string/volume_key_cursor_control_title"
             android:entries="@array/volume_key_cursor_control_entries"
             android:entryValues="@array/volume_key_cursor_control_values"
@@ -208,12 +210,14 @@
             android:title="@string/volume_key_cursor_control_title" />
 
         <com.spark.settings.preferences.SystemSettingSwitchPreference
+            settings:iconSpaceReserved="false"
             android:key="swap_volume_buttons"
             android:title="@string/swap_volume_buttons_title"
             android:summary="@string/swap_volume_buttons_summary"
             android:defaultValue="false" />
 
         <com.spark.settings.preferences.SystemSettingSwitchPreference
+            settings:iconSpaceReserved="false"
             android:key="click_partial_screenshot"
             android:title="@string/click_partial_screenshot_title"
             android:summary="@string/click_partial_screenshot_summary"

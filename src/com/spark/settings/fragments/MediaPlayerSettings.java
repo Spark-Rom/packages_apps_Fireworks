@@ -76,6 +76,7 @@ public class MediaPlayerSettings extends DashboardFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+		    getActivity().getActionBar().hide();
         final ContentResolver resolver = getActivity().getContentResolver();
         Context mContext = getContext();
         mOverlayManager = IOverlayManager.Stub.asInterface(

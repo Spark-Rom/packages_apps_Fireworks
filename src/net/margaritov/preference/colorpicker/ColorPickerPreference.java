@@ -72,6 +72,7 @@ public class ColorPickerPreference extends Preference implements
     private boolean mShowPreview;
     private boolean mDividerAbove;
     private boolean mDividerBelow;
+    private boolean miconSpaceReserved;
     private EditText mEditText;
 
     //private boolean mIsCrappyLedDevice;
@@ -127,6 +128,7 @@ public class ColorPickerPreference extends Preference implements
             mShowPreview = attrs.getAttributeBooleanValue(SETTINGS_NS, "showPreview", true);
             mDividerAbove = attrs.getAttributeBooleanValue(SETTINGS_NS, "dividerAbove", false);
             mDividerBelow = attrs.getAttributeBooleanValue(SETTINGS_NS, "dividerBelow", false);
+            miconSpaceReserved = attrs.getAttributeBooleanValue(SETTINGS_NS, "iconSpaceReserved", false);
         }
     }
 
