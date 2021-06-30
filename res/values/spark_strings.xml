@@ -1020,4 +1020,11 @@
     <string name="auto_accent_picker_dominant">Dominant</string>
     <string name="auto_accent_picker_dominant_bright">Dominant Bright</string>
     <string name="auto_accent_picker_avg">Average</string>
+
+    <!-- Slider Styles -->
+    <string name="slider_styles_title">Change Brightness Slider</string>
+    <string name="slider_default">Default</string>
+    <string name="slider_oos">OOS</string>
+    <string name="slider_aosp">Aosp</string>
+    <string name="slider_rui">RUI</string>
 </resources>

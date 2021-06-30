@@ -40,6 +40,15 @@
             android:summary="@string/oos_qsclock_summary"
             android:defaultValue="true" />
 
+        <com.spark.settings.preferences.SystemSettingListPreference
+            android:key="slider_style"
+            settings:iconSpaceReserved="false"
+            android:title="@string/slider_styles_title"
+            android:entries="@array/slider_styles_entries"
+	    android:entryValues="@array/slider_styles_values"
+            android:defaultValue="0" />
+
+
         <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_tiles_bg_disco"
             settings:iconSpaceReserved="false"
