@@ -23,13 +23,6 @@
         android:layout="@layout/spark_settings_audio_header"
         android:selectable="false"/>
 
-        <ListPreference
-            android:key="ringtone_focus_mode"
-            settings:iconSpaceReserved="false"
-            android:title="@string/ringtone_focus_mode_title"
-            android:entries="@array/ringtone_focus_mode_entries"
-            android:entryValues="@array/ringtone_focus_mode_values" />
-
         <!-- Launch music player when headset is connected -->
         <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="headset_connect_player"
