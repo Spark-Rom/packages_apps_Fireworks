@@ -59,7 +59,6 @@ public class ChargingSettings extends SettingsPreferenceFragment {
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-		    getActivity().getActionBar().hide();
         addPreferencesFromResource(R.xml.spark_settings_charging);
         PreferenceScreen prefScreen = getPreferenceScreen();
         final PackageManager mPm = getActivity().getPackageManager();

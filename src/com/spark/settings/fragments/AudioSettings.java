@@ -56,7 +56,6 @@ public class AudioSettings extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.spark_settings_audio);
-		    getActivity().getActionBar().hide();
         final ContentResolver resolver = getActivity().getContentResolver();
 
     }

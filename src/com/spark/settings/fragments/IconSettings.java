@@ -83,8 +83,6 @@ public class IconSettings extends DashboardFragment implements OnPreferenceChang
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-
-                    getActivity().getActionBar().hide();
         mOverlayService = IOverlayManager.Stub
                 .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
 

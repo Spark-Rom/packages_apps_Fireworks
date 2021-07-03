@@ -35,7 +35,6 @@ public class QsItemsSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-		    getActivity().getActionBar().hide();
 
         addPreferencesFromResource(R.xml.spark_settings_qsitems);
         final ContentResolver resolver = getActivity().getContentResolver();

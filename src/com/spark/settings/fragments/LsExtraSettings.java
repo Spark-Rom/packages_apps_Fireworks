@@ -71,7 +71,6 @@ public class LsExtraSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-		    getActivity().getActionBar().hide();
         addPreferencesFromResource(R.xml.spark_settings_lsextra);
         PreferenceScreen prefScreen = getPreferenceScreen();
         final PackageManager mPm = getActivity().getPackageManager();

@@ -67,7 +67,6 @@ public class ExtraStatusBarSettings extends SettingsPreferenceFragment implement
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-		    getActivity().getActionBar().hide();
 
         addPreferencesFromResource(R.xml.spark_settings_extrastatusbar);
 

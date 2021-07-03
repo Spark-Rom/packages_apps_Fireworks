@@ -24,6 +24,7 @@
 
     <com.spark.settings.preferences.GlobalSettingSwitchPreference
         android:key="heads_up_notifications_enabled"
+            settings:iconSpaceReserved="false"
         android:title="@string/heads_up_notifications"
         android:summaryOn="@string/summary_heads_up_enabled"
         android:summaryOff="@string/summary_heads_up_disabled"
@@ -31,6 +32,7 @@
 
     <ListPreference
         android:key="heads_up_time_out"
+            settings:iconSpaceReserved="false"
         android:title="@string/heads_up_time_out_title"
         android:entries="@array/heads_up_time_out_entries"
         android:entryValues="@array/heads_up_time_out_values"
@@ -38,6 +40,7 @@
         android:persistent="false" />
 
     <ListPreference
+            settings:iconSpaceReserved="false"
         android:key="heads_up_snooze_time"
         android:title="@string/heads_up_snooze_title"
         android:entries="@array/heads_up_snooze_entries"
@@ -47,6 +50,7 @@
 
     <com.spark.settings.preferences.SystemSettingSwitchPreference
         android:key="less_boring_heads_up"
+            settings:iconSpaceReserved="false"
         android:title="@string/less_boring_heads_up_title"
         android:summary="@string/less_boring_heads_up_summary"
         android:dependency="heads_up_notifications_enabled"
@@ -55,6 +59,7 @@
     <!-- Avoid touches on Headsup  -->
     <com.spark.settings.preferences.SystemSettingSwitchPreference
         android:key="dont_touch_headsup"
+            settings:iconSpaceReserved="false"
         android:title="@string/dont_touch_headsup_title"
         android:summary="@string/dont_touch_headsup_summary"
         android:dependency="heads_up_notifications_enabled"
@@ -66,6 +71,7 @@
         android:dependency="heads_up_notifications_enabled">
 
         <Preference
+            settings:iconSpaceReserved="false"
             android:key="add_stoplist_packages"
             android:icon="@drawable/ic_menu_add_activated_tint"
             android:title="@string/add_heads_up_package"

@@ -63,7 +63,6 @@ public class LsNotificationSettings extends SettingsPreferenceFragment implement
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-		    getActivity().getActionBar().hide();
         addPreferencesFromResource(R.xml.spark_settings_lsnotifications);
         PreferenceScreen prefScreen = getPreferenceScreen();
         final PackageManager mPm = getActivity().getPackageManager();

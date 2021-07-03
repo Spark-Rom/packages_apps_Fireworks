@@ -73,7 +73,6 @@ public class BatteryBarSettings extends SettingsPreferenceFragment
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-		    getActivity().getActionBar().hide();
 
         addPreferencesFromResource(R.xml.spark_settings_statusbar_battery_bar);
 

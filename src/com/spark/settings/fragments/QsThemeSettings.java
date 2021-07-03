@@ -75,7 +75,6 @@ public class QsThemeSettings extends DashboardFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-                    getActivity().getActionBar().hide();
         super.onCreate(savedInstanceState);
         final ContentResolver resolver = getActivity().getContentResolver();
         Context mContext = getContext();
