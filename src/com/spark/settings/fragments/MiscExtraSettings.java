@@ -55,7 +55,6 @@ public class MiscExtraSettings extends SettingsPreferenceFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-		    getActivity().getActionBar().hide();
         addPreferencesFromResource(R.xml.spark_settings_miscextra);
         final ContentResolver resolver = getActivity().getContentResolver();
     }

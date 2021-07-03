@@ -61,7 +61,6 @@ public class AmbientDozeSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-		    getActivity().getActionBar().hide();
         addPreferencesFromResource(R.xml.spark_settings_ambientdoze);
         final ContentResolver resolver = getActivity().getContentResolver();
 

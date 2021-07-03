@@ -78,7 +78,6 @@ public class EdgeSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
         addPreferencesFromResource(R.xml.spark_settings_edge);
         PreferenceScreen prefScreen = getPreferenceScreen();
-		    getActivity().getActionBar().hide();
 
         mAmbientPref = (SystemSettingSwitchPreference) findPreference(KEY_AMBIENT);
         boolean aodEnabled = Settings.Secure.getIntForUser(resolver,

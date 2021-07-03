@@ -56,7 +56,6 @@ public class MusicSettings extends SettingsPreferenceFragment {
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-		    getActivity().getActionBar().hide();
         addPreferencesFromResource(R.xml.spark_settings_music);
         PreferenceScreen prefScreen = getPreferenceScreen();
 
