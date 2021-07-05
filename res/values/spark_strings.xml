@@ -1060,6 +1060,8 @@
     <string name="vowifi_icon_simple2">Simple2 Icon</string>
     <string name="vowifi_icon_simple3">Simple3 Icon</string>
     <string name="vowifi_icon_vivo">Vivo Icon</string>
+    <string name="volte_icon_margaritov">HD Filled Icon</string>
+    <string name="volte_icon_margaritov2">Margaritov VoLTE Icon</string>
 
     <!-- OOS style material dismiss all button for notifications -->
     <string name="notification_material_dismiss_button_title">Material dimiss button</string>
