@@ -83,6 +83,9 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+            android:title="SB Icons">
+
         <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="show_fourg"
             settings:iconSpaceReserved="false"
@@ -90,6 +93,34 @@
             android:summary="@string/show_fourg_summary"
             android:defaultValue="false" />
 
+        <com.spark.settings.preferences.SystemSettingListPreference
+            android:key="volte_icon_style"
+            settings:iconSpaceReserved="false"
+ 	    android:title="@string/volte_icon_style_title"
+            android:entries="@array/volte_icon_type_entries"
+            android:entryValues="@array/volte_icon_type_values"
+            android:summary="%s"
+	    android:defaultValue="0"/>
+
+        <com.spark.settings.preferences.SystemSettingListPreference
+            android:key="vowifi_icon"
+            settings:iconSpaceReserved="false"
+            android:title="@string/vowifi_icon_title"
+            android:entries="@array/vowifi_icon_entries"
+            android:entryValues="@array/vowifi_icon_values"
+            android:summary="%s"
+            android:defaultValue="0"/>
+
+         <com.spark.settings.preferences.SystemSettingListPreference
+            android:key="vowifi_icon_style"
+            settings:iconSpaceReserved="false"
+            android:title="@string/vowifi_icon_style_title"
+            android:entries="@array/vowifi_icon_style_entries"
+            android:entryValues="@array/vowifi_icon_style_values"
+            android:summary="%s"
+            android:defaultValue="0"/>
+
+ 	</PreferenceCategory>
 <!--
         <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="show_volte_icon"
@@ -97,11 +128,5 @@
             android:summary="@string/show_volte_summary"
             android:defaultValue="true" />
 -->
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="roaming_indicator_icon"
-            settings:iconSpaceReserved="false"
-            android:title="@string/roaming_indicator_icon_title"
-            android:summary="@string/roaming_indicator_icon_summary"
-            android:defaultValue="true"/>
 
 </PreferenceScreen>
