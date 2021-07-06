@@ -93,6 +93,15 @@
             android:entryValues="@array/qs_header_background_values"
             android:defaultValue="0" />
 
+
+        <!-- OOS style material dismiss all button for notifications -->
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="notification_material_dismiss"
+            settings:iconSpaceReserved="false"
+            android:title="@string/notification_material_dismiss_button_title"
+            android:summary="@string/notification_material_dismiss_button_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
