@@ -69,7 +69,9 @@ public class QsThemeSettings extends DashboardFragment {
     private IOverlayManager mOverlayManager;
     private PackageManager mPackageManager;
     private static final String SLIDER_STYLE  = "slider_style";
+    private static final String CLEAR_ALL_ICON_STYLE  = "clear_all_icon_style";
 
+    private SystemSettingListPreference mClearAll;
     private SystemSettingListPreference mSlider;
     private Handler mHandler;
 
@@ -81,6 +83,7 @@ public class QsThemeSettings extends DashboardFragment {
         mOverlayManager = IOverlayManager.Stub.asInterface(
                 ServiceManager.getService(Context.OVERLAY_SERVICE));
         mSlider = (SystemSettingListPreference) findPreference(SLIDER_STYLE);
+        mClearAll = (SystemSettingListPreference) findPreference(CLEAR_ALL_ICON_STYLE);
         mCustomSettingsObserver.observe();
     }
 
@@ -97,12 +100,17 @@ public class QsThemeSettings extends DashboardFragment {
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.SLIDER_STYLE  ),
                     false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.CLEAR_ALL_ICON_STYLE  ),
+                    false, this, UserHandle.USER_ALL);
         }
 
         @Override
         public void onChange(boolean selfChange, Uri uri) {
             if (uri.equals(Settings.System.getUriFor(Settings.System.SLIDER_STYLE  ))) {
                 updateSlider();
+            } else if (uri.equals(Settings.System.getUriFor(Settings.System.CLEAR_ALL_ICON_STYLE))) {
+                updateClearAll();
             }
         }
     }
@@ -112,8 +120,53 @@ public class QsThemeSettings extends DashboardFragment {
         if (preference == mSlider) {
             mCustomSettingsObserver.observe();
             return true;
+        } else if (preference == mClearAll) {
+            mCustomSettingsObserver.observe();
+             SparkUtils.showSystemUiRestartDialog(getContext());
+            return true;
         }
         return false;
+    }
+
+    private void updateClearAll() {
+        ContentResolver resolver = getActivity().getContentResolver();
+        boolean ClearAllDefault = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.CLEAR_ALL_ICON_STYLE , 0, UserHandle.USER_CURRENT) == 0;
+        boolean ClearAllOOS = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.CLEAR_ALL_ICON_STYLE , 0, UserHandle.USER_CURRENT) == 1;
+
+        if (ClearAllDefault) {
+            setDefaultClearAll(mOverlayManager);
+        } else if (ClearAllOOS) {
+            enableClearAll(mOverlayManager, "com.android.theme.systemui_clearall_oos");
+        }
+    }
+
+    public static void setDefaultClearAll(IOverlayManager overlayManager) {
+        for (int i = 0; i < CLEAR_ALL_ICONS.length; i++) {
+            String icons = CLEAR_ALL_ICONS[i];
+            try {
+                overlayManager.setEnabled(icons, false, USER_SYSTEM);
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static void enableClearAll(IOverlayManager overlayManager, String overlayName) {
+        try {
+            for (int i = 0; i < CLEAR_ALL_ICONS.length; i++) {
+                String icons = CLEAR_ALL_ICONS[i];
+                try {
+                    overlayManager.setEnabled(icons, false, USER_SYSTEM);
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+            }
+            overlayManager.setEnabled(overlayName, true, USER_SYSTEM);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
     }
 
     private void updateSlider() {
@@ -179,6 +232,10 @@ public class QsThemeSettings extends DashboardFragment {
         "com.android.theme.systemui_slider_oos",
         "com.android.theme.systemui_slider.aosp",
         "com.android.theme.systemui_slider.rui"
+    };
+
+    public static final String[] CLEAR_ALL_ICONS = {
+        "com.android.theme.systemui_clearall_oos"
     };
 
     @Override
