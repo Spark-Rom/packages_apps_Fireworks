@@ -30,10 +30,12 @@
             settings:iconSpaceReserved="false"
             android:title="@string/theme_customization_icon_shape_title"/>
 
-        <ListPreference
-            android:key="android.theme.customization.icon_pack"
+        <Preference
+            android:key="android.theme.customization.icon_pack.android"
             settings:iconSpaceReserved="false"
-            android:title="@string/theme_customization_icon_pack_title"/>
+            android:title="@string/theme_customization_system_icon_title"
+            android:summary="@string/theme_customization_system_icon_summary"
+            android:fragment="com.spark.settings.fragments.StatusbarIcons" />
 
         <com.spark.settings.preferences.SystemSettingListPreference
             android:key="settings_dashboard_icons"
