@@ -25,6 +25,11 @@
             android:layout="@layout/themes_accent_preview"
             android:selectable="false" />
 
+         <com.spark.settings.display.WallAc
+            android:key="wall"
+            android:layout="@layout/wallacpreview"
+            android:selectable="false"/
+
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="accent_color"
             android:title="@string/accent_color_title"
@@ -35,23 +40,24 @@
 
          <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="use_wall_accent"
+            settings:iconSpaceReserved="false"
             android:title="@string/use_wall_accent_string"
             android:summary="@string/use_wall_accent_summary"
             android:defaultValue="false" />
 
-         <com.spark.settings.display.WallAc
-            android:key="wall"
-            android:layout="@layout/wallacpreview"
-            android:selectable="false"/>
-
         <com.spark.settings.preferences.SystemSettingListPreference
             android:key="auto_accent_type"
+            settings:iconSpaceReserved="false"
             android:dependency="use_wall_accent"
             android:title="@string/auto_accent_picker_title"
             android:entries="@array/auto_accent_picker_entries"
             android:summary="%s"
             android:defaultValue="0"
             android:entryValues="@array/auto_accent_picker_values" />
+
+        <ListPreference
+            android:layout="@layout/themes_font_preview"
+            android:selectable="false" />
 
         <com.android.settings.display.FontDialogPreference
             android:key="custom_font"
