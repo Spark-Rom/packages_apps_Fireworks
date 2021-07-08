@@ -28,7 +28,7 @@
          <com.spark.settings.display.WallAc
             android:key="wall"
             android:layout="@layout/wallacpreview"
-            android:selectable="false"/
+            android:selectable="false"/>
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="accent_color"
