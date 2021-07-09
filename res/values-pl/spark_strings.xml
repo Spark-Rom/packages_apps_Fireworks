@@ -310,192 +310,192 @@
     <string name="power_menu_hide_on_secure_summary">Ukrywa globalne menu akcji na zabezpieczonym ekranie blokady</string>
 
     <!-- Incall vibrate options -->
-    <string name="incall_vibration_category">Audio options</string>
-    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
-    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
-    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    <string name="incall_vibration_category">Ustawienia wibracji połączeń</string>
+    <string name="incall_vibrate_connect_title">Wibruj po połączeniu</string>
+    <string name="incall_vibrate_call_wait_title">Wibruj na połączenie oczekujące</string>
+    <string name="incall_vibrate_disconnect_title">Wibruj po rozłączeniu</string>
 
     <!-- QS advanced settings -->
-    <string name="qs_column_rows_settings_title">QS panel settings</string>
-    <string name="status_bar_quick_qs_pulldown">Quick QS pulldown</string>
-    <string name="quick_pulldown_none">Disabled</string>
-    <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
-    <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
+    <string name="qs_column_rows_settings_title">Ustawienia panelu szybkich ustawień</string>
+    <string name="status_bar_quick_qs_pulldown">Szybkie rozwijanie panelu szybkich ustawień</string>
+    <string name="quick_pulldown_none">Wyłączone</string>
+    <string name="quick_pulldown_right">Rozwijanie z prawej strony</string>
+    <string name="quick_pulldown_left">Rozwijanie z lewej strony</string>
 
     <!-- Headset ringtone audio focus -->
-    <string name="ringtone_focus_mode_title">Where to play ringtones from</string>
-    <string name="ringtone_focus_mode_dynamic">From headset if connected and playing music</string>
-    <string name="ringtone_focus_mode_stock">"From speakerphone (AOSP default)"</string>
+    <string name="ringtone_focus_mode_title">Skąd odtwarzać dzwonki</string>
+    <string name="ringtone_focus_mode_dynamic">Z zestawu słuchawkowego, jeśli jest podłączony i odtwarza muzykę</string>
+    <string name="ringtone_focus_mode_stock">Z zestawu głośnika (domyślnie AOSP)</string>
 
     <!-- Lockscreen album art filter -->
-    <string name="lockscreen_albumart_filter_title">Media cover art filter</string>
-    <string name="lockscreen_albumart_filter_none">None</string>
-    <string name="lockscreen_albumart_filter_grayscale">Grayscale</string>
-    <string name="lockscreen_albumart_filter_tint">Accent tinted</string>
+    <string name="lockscreen_albumart_filter_title">Filtr okładki multimediów</string>
+    <string name="lockscreen_albumart_filter_none">Brak</string>
+    <string name="lockscreen_albumart_filter_grayscale">Skala szarości</string>
+    <string name="lockscreen_albumart_filter_tint">Przyciemniane akcentem</string>
     <string name="lockscreen_albumart_filter_blur">Blur</string>
-    <string name="lockscreen_albumart_filter_grayblur">Grayscale and blurred</string>
+    <string name="lockscreen_albumart_filter_grayblur">Skala szarości i blur</string>
 
     <!-- Charging animation -->
-    <string name="lockscreen_charging_animation_title">Charging animation</string>
-    <string name="lockscreen_charging_animation_flash">Flash</string>
-    <string name="lockscreen_charging_animation_battery">Battery</string>
-    <string name="lockscreen_charging_animation_drop">Drop</string>
-    <string name="lockscreen_charging_animation_explosion">Explosion</string>
-    <string name="lockscreen_charging_animation_water">Water</string>
-    <string name="lockscreen_charging_animation_phone">Phone</string>
-    <string name="lockscreen_charging_animation_stack">Stack</string>
-    <string name="lockscreen_charging_animation_wavy">Wavy</string>
+    <string name="lockscreen_charging_animation_title">Animacja ładowania</string>
+    <string name="lockscreen_charging_animation_flash">Błysk</string>
+    <string name="lockscreen_charging_animation_battery">Bateria</string>
+    <string name="lockscreen_charging_animation_drop">Upuszczanie</string>
+    <string name="lockscreen_charging_animation_explosion">Wybuch</string>
+    <string name="lockscreen_charging_animation_water">Woda</string>
+    <string name="lockscreen_charging_animation_phone">Telefon</string>
+    <string name="lockscreen_charging_animation_stack">Stos</string>
+    <string name="lockscreen_charging_animation_wavy">Falisty</string>
 
     <!-- Statusbar Clock -->
-    <string name="status_bar_clock_date_title">Clock and Date</string>
-    <string name="status_bar_clock_date_summary">Customize your statusbar clock and date</string>
-    <string name="status_bar_clock_title">Clock settings</string>
-    <string name="status_bar_clock_show">Show clock and date</string>
-    <string name="status_bar_clock_style_title">Clock style</string>
-    <string name="status_bar_clock_style_right">Right</string>
-    <string name="status_bar_clock_style_center">Center</string>
-    <string name="status_bar_clock_style_left">Left</string>
-    <string name="status_bar_date_title">Date settings</string>
-    <string name="status_bar_am_pm_title">AM/PM style</string>
-    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
-    <string name="status_bar_am_pm_normal">Normal</string>
-    <string name="status_bar_am_pm_small">Small</string>
-    <string name="status_bar_am_pm_hidden">Hidden (default)</string>
-    <string name="clock_seconds_display">Show seconds</string>
-    <string name="clock_date_display">Date</string>
-    <string name="clock_date_display_summary">Display custom date before the clock</string>
-    <string name="clock_date_display_none">Don\'t show</string>
-    <string name="clock_date_display_small">Small font size</string>
-    <string name="clock_date_display_normal">Normal font size</string>
-    <string name="clock_date_style">Date style</string>
-    <string name="clock_date_style_normal">Normal</string>
-    <string name="clock_date_style_lowercase">Lowercase</string>
-    <string name="clock_date_style_uppercase">Uppercase</string>
-    <string name="clock_date_format_custom">Custom java format</string>
-    <string name="clock_date_format">Date format</string>
-    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
-    <string name="clock_date_string_edittext_summary">Enter string</string>
-    <string name="clock_date_right">Right of time</string>
-    <string name="clock_date_left">Left of time</string>
-    <string name="clock_date_position">Date position</string>
+    <string name="status_bar_clock_date_title">Zegar i data</string>
+    <string name="status_bar_clock_date_summary">Dostosuj zegar i datę na pasku stanu</string>
+    <string name="status_bar_clock_title">Ustawienia zegara</string>
+    <string name="status_bar_clock_show">Pokaż zegar i datę</string>
+    <string name="status_bar_clock_style_title">Styl zegara</string>
+    <string name="status_bar_clock_style_right">Prawo</string>
+    <string name="status_bar_clock_style_center">Centralnie</string>
+    <string name="status_bar_clock_style_left">Lewo</string>
+    <string name="status_bar_date_title">Ustawienia daty</string>
+    <string name="status_bar_am_pm_title">Styl AM/PM</string>
+    <string name="status_bar_am_pm_info">Zegar 24-godzinny jest włączony</string>
+    <string name="status_bar_am_pm_normal">Normalny</string>
+    <string name="status_bar_am_pm_small">Mały</string>
+    <string name="status_bar_am_pm_hidden">Ukryty (domyślnie)</string>
+    <string name="clock_seconds_display">Pokaż sekundy</string>
+    <string name="clock_date_display">Data</string>
+    <string name="clock_date_display_summary">Wyświetl niestandardową datę przed zegarem</string>
+    <string name="clock_date_display_none">Nie pokazuj</string>
+    <string name="clock_date_display_small">Mały rozmiar czcionki</string>
+    <string name="clock_date_display_normal">Normalny rozmiar czcionki</string>
+    <string name="clock_date_style">Styl daty</string>
+    <string name="clock_date_style_normal">Normalny</string>
+    <string name="clock_date_style_lowercase">Małe litery</string>
+    <string name="clock_date_style_uppercase">Duże litery</string>
+    <string name="clock_date_format_custom">Niestandardowy format java</string>
+    <string name="clock_date_format">Format daty</string>
+    <string name="clock_date_string_edittext_title">Musi być w formacie daty, np. MM/dd/rr</string>
+    <string name="clock_date_string_edittext_summary">Wpisz wartość</string>
+    <string name="clock_date_right">Prawo od zegara</string>
+    <string name="clock_date_left">Lewo od zegara</string>
+    <string name="clock_date_position">Pozycja daty</string>
 
     <!-- Charging animation -->
-    <string name="charging_animation_title">Charging animation</string>
-    <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
+    <string name="charging_animation_title">Animacja ładowania</string>
+    <string name="charging_animation_summary">Wyświetlaj animację, gdy urządzenie jest podłączone</string>
 
     <!-- QuickSettings haptic feedback -->
-    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
-    <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
+    <string name="quick_settings_vibrate_title">Wibruje po dotknięciu</string>
+    <string name="quick_settings_vibrate_summary">Wibracje przy dotykaniu ikon szybkich ustawień</string>
 
     <!-- Tiles animation style  -->
-    <string name="qs_tile_animation_title">Animations</string>
-    <string name="qs_tile_animation_style_title">Animation style</string>
-    <string name="qs_tile_animation_duration_title">Animation duration</string>
-    <string name="qs_tile_animation_interpolator_title">Tiles animation interpolator</string>
-    <string name="qs_tile_animation_style_off">No animation</string>
-    <string name="qs_tile_animation_style_flip">Flip</string>
-    <string name="qs_tile_animation_style_rotate">Rotate</string>
-    <string name="qs_tile_animation_duration_low">Low</string>
-    <string name="qs_tile_animation_duration_default">Default</string>
-    <string name="qs_tile_animation_duration_fast">Fast</string>
-    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
-    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
-    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
-    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
-    <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
-    <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
-    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
-    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+    <string name="qs_tile_animation_title">Animacje</string>
+    <string name="qs_tile_animation_style_title">Style animacji</string>
+    <string name="qs_tile_animation_duration_title">Czas trwania animacji</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolator animacji ikon</string>
+    <string name="qs_tile_animation_style_off">Brak animacji</string>
+    <string name="qs_tile_animation_style_flip">Obracanie </string>
+    <string name="qs_tile_animation_style_rotate">Obrót ikony</string>
+    <string name="qs_tile_animation_duration_low">Niski</string>
+    <string name="qs_tile_animation_duration_default">Domyślny</string>
+    <string name="qs_tile_animation_duration_fast">Szybki</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Liniowa</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Przyśpieszenie</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Zwolenienie</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Przyspiesz i zwalniaj</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Odbijanie</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Przeregulowanie</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Przewidywalne</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Przewidywanie i przekroczenie</string>
     <string name="qs_set_animation_style">%1$s</string>
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
 
     <!-- Quick Settings -->
-    <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
-    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
+    <string name="lockscreen_qs_disabled_title">Wyłącz szybkie ustawienia po zablokowaniu</string>
+    <string name="lockscreen_qs_disabled_summary">Wyłącz rozwijanie szybkich ustawień na zabezpieczonym ekranie blokady</string>
 
     <!-- Volume swap buttons -->
-    <string name="swap_volume_buttons_title">Reorient</string>
-    <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
+    <string name="swap_volume_buttons_title">Zmień orientację</string>
+    <string name="swap_volume_buttons_summary">Zamień miejscami przyciski głośności, gdy ekran jest obracany</string>
 
     <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Roaming indicator</string>
-    <string name="roaming_indicator_icon_summary">Display roaming indicator in signal icon when in roaming mode</string>
+    <string name="roaming_indicator_icon_title">Wskaźnik roamingu</string>
+    <string name="roaming_indicator_icon_summary">Wyświetlaj wskaźnik roamingu w ikonie sygnału w trybie roamingu</string>
 
     <!-- Smart pulldown-->
-    <string name="smart_pulldown_title">Smart pulldown</string>
-    <string name="smart_pulldown_summary">Open quick settings when there are %1$s notifications</string>
-    <string name="smart_pulldown_none_summary">Open quick settings when there are no notifications</string>
-    <string name="smart_pulldown_off">Off</string>
-    <string name="smart_pulldown_none">no notifications</string>
-    <string name="smart_pulldown_dismissable">no dismissable</string>
-    <string name="smart_pulldown_ongoing">no ongoing</string>
+    <string name="smart_pulldown_title">Inteligentne rozwijanie</string>
+    <string name="smart_pulldown_summary">twórz szybkie ustawienia, gdy są %1$s powiadomienia</string>
+    <string name="smart_pulldown_none_summary">Otwórz szybkie ustawienia, gdy nie ma powiadomień</string>
+    <string name="smart_pulldown_off">Wyłączone</string>
+    <string name="smart_pulldown_none">Gdy brak powiadomień</string>
+    <string name="smart_pulldown_dismissable">Gdy są nieodrzucalne</string>
+    <string name="smart_pulldown_ongoing">Gdy są trwające powiadomienia</string>
 
     <!-- Brightness control -->
-    <string name="status_bar_toggle_brightness">Brightness control</string>
-    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+    <string name="status_bar_toggle_brightness">Kontrola jasności</string>
+    <string name="status_bar_toggle_brightness_summary">Dostosuj jasność, przesuwając po pasku stanu</string>
 
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Less boring heads up</string>
-    <string name="less_boring_heads_up_summary">Quickly disable heads up for all apps but keep them enabled for dialer and messaging apps</string>
+    <string name="less_boring_heads_up_title">Mniej irytujące wyskakujące powiadomienia</string>
+    <string name="less_boring_heads_up_summary">Wyłącz wyskakujące powiadomienia dla wszystkich aplikacji z wyłączeniem połączeń i wiadomości</string>
 
     <!-- Notification guts kill app button -->
-    <string name="notification_guts_kill_app_button_title">Kill app button</string>
-    <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
+    <string name="notification_guts_kill_app_button_title">Przycisk zabijania aplikacji</string>
+    <string name="notification_guts_kill_app_button_summary">Pokaż przycisk zabicia aplikacji po długim naciśnięciu na powiadomienie aplikacji</string>
 
     <!-- Double Tap on Doze to wake -->
-    <string name="double_tap_on_doze_to_wake_title">Double-tap to wake on doze</string>
-    <string name="double_tap_on_doze_to_wake_summary">Double tap to wake when device is dreaming</string>
+    <string name="double_tap_on_doze_to_wake_title">Kliknij dwukrotnie, wybudzić podczas trybu doze</string>
+    <string name="double_tap_on_doze_to_wake_summary">Kliknij dwukrotnie, wybudzić podczas gdy telefon odpoczywa :)</string>
 
     <!-- Pocket judge -->
-    <string name="pocket_judge_title">Pocket detection</string>
-    <string name="pocket_judge_summary">Block screen inputs when device is in pocket</string>
+    <string name="pocket_judge_title">Wykrywanie telefonu w kieszeni</string>
+    <string name="pocket_judge_summary">Blokuj interakcje z ekranem gdy telefon jest w kieszeni</string>
 
     <!-- Battery Bar -->
-    <string name="battery_bar_title">Battery bar</string>
-    <string name="battery_bar_summary">Display and customize battery bar near status bar or navigation bar</string>
-    <string name="battery_bar_no_navbar">Battery bar location</string>
-    <string name="battery_bar_location_hide">Hide</string>
-    <string name="battery_bar_statusbar_top">Statusbar Top</string>
-    <string name="battery_bar_statusbar_bot">Statusbar bottom</string>
-    <string name="battery_bar_color">Battery bar color</string>
-    <string name="battery_bar_charging_color">Battery bar charging color</string>
-    <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
-    <string name="battery_bar_cat">Battery bar style</string>
-    <string name="battery_bar_style_title">Battery bar alignment</string>
-    <string name="battery_bar_thickness_title">Battery bar thickness</string>
-    <string name="battery_bar_animate_title">Charging animation</string>
-    <string name="battery_bar_style_regular">Regular</string>
-    <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
-    <string name="battery_bar_style_reversed">Reversed</string>
-    <string name="battery_bar_use_charging_color">Custom charging color</string>
-    <string name="battery_bar_blend_color_title">Blend colors</string>
-    <string name="battery_bar_blend_color_summary">Blend full/empty colors corresponding to battery percentage</string>
-    <string name="battery_bar_blend_color_reverse_title">Reverse color direction</string>
-    <string name="battery_bar_blend_color_reverse_summary_off">Full &#8594; empty: red &#8592; green &#8592; blue &#8592; red</string>
-    <string name="battery_bar_blend_color_reverse_summary_on">Full &#8594; empty: red &#8594; green &#8594; blue &#8594; red</string>
+    <string name="battery_bar_title">Pasek baterii</string>
+    <string name="battery_bar_summary">Wyświetl i dostosuj pasek baterii w pobliżu paska stanu lub paska nawigacyjnego</string>
+    <string name="battery_bar_no_navbar">Lokalizacja paska baterii</string>
+    <string name="battery_bar_location_hide">Ukryty</string>
+    <string name="battery_bar_statusbar_top">Góra paska statusu</string>
+    <string name="battery_bar_statusbar_bot">Dół paska statusu</string>
+    <string name="battery_bar_color">Kolor paska baterii</string>
+    <string name="battery_bar_charging_color">Kolor paska baterii podczas baterii</string>
+    <string name="battery_bar_battery_low_color">Kolor paska baterii podczas niskiego poziomu baterii</string>
+    <string name="battery_bar_cat">Styl paska baterii</string>
+    <string name="battery_bar_style_title">Wyrównanie paska baterii</string>
+    <string name="battery_bar_thickness_title">Grubość paska baterii</string>
+    <string name="battery_bar_animate_title">Animacja ładowania</string>
+    <string name="battery_bar_style_regular">Regularna</string>
+    <string name="battery_bar_style_center_mirrored">Lustrzane odbicie na środku</string>
+    <string name="battery_bar_style_reversed">Odwrócona</string>
+    <string name="battery_bar_use_charging_color">Niestandardowy kolor ładowania</string>
+    <string name="battery_bar_blend_color_title">Mieszaj kolory</string>
+    <string name="battery_bar_blend_color_summary">Mieszaj pełne/puste kolory odpowiadające procentowi baterii</string>
+    <string name="battery_bar_blend_color_reverse_title">Odwróć kierunek koloru</string>
+    <string name="battery_bar_blend_color_reverse_summary_off">Pełna &#8594; pusta: czerwony &#8592; zielony &#8592; niebieski &#8592; czerwony</string>
+    <string name="battery_bar_blend_color_reverse_summary_on">Pełna &#8594; pustay: czerwony &#8594; zielony &#8594; niebieski &#8594; czerwony</string>
 
     <!-- Option to enable/disable scrolling cache -->
-    <string name="pref_scrollingcache_title">Scrolling cache</string>
-    <string name="pref_scrollingcache_summary">Scrolling cache may improve scrolling performance at the cost of memory</string>
-    <string name="pref_scrollingcache_force_enable">Force enable</string>
-    <string name="pref_scrollingcache_default_enable">Default enable</string>
-    <string name="pref_scrollingcache_default_disable">Default disable</string>
-    <string name="pref_scrollingcache_force_disable">Force disable</string>
+    <string name="pref_scrollingcache_title">Pamięć podręczna przewijania</string>
+    <string name="pref_scrollingcache_summary">Pamięć podręczna przewijania może poprawić wydajność przewijania kosztem pamięci</string>
+    <string name="pref_scrollingcache_force_enable">Wymuś włączenie</string>
+    <string name="pref_scrollingcache_default_enable">Domyślnie włączone</string>
+    <string name="pref_scrollingcache_default_disable">Domyślnie wyłączone</string>
+    <string name="pref_scrollingcache_force_disable">Wymuś wyłączenie</string>
 
     <!-- Force disable transition animation -->
-    <string name="disable_transition_animations_title">Disable transition animations</string>
-    <string name="disable_transition_animations_summary">Force disable all transition animations</string>
+    <string name="disable_transition_animations_title">Wyłącz animacje przejścia</string>
+    <string name="disable_transition_animations_summary">Wymuś wyłączenie wszystkich animacji przejścia</string>
 
     <!-- Supress notifications if screen is on -->
-    <string name="notification_sound_vib_screen_on_title">Notification sound if active</string>
-    <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
+    <string name="notification_sound_vib_screen_on_title">Dźwięk powiadomienia, jeśli jest aktywny</string>
+    <string name="notification_sound_vib_screen_on_summary">Odtwarzaj dźwięk i wibracje dla powiadomień, gdy ekran jest włączony</string>
 
     <!-- Notification headers -->
-    <string name="notification_headers_title">Notification headers</string>
-    <string name="notification_headers_summary">Show headers in the notification shade</string>
-    <string name="center_notification_headers_title">Center notification headers</string>
-    <string name="center_notification_headers_summary">Whether to Center notification headers (Requires a SystemUI restart)</string>
+    <string name="notification_headers_title">Nagłówki powiadomień</string>
+    <string name="notification_headers_summary">Pokaż nagłówki w obszarze powiadomień</string>
+    <string name="center_notification_headers_title">Wyśrodkuj nagłówki w obszarze powiadomień</string>
+    <string name="center_notification_headers_summary">Wyśrodkowanie nagłówków w obszarze powiadomień (wymaga ponownego uruchomienia SystemUI)</string>
 
     <!-- Lock icon -->
     <string name="hide_lockicon_title">Hide lock icon</string>
