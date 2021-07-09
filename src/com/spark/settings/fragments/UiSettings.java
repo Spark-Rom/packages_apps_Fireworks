@@ -19,6 +19,8 @@ package com.spark.settings.fragments;
 import static android.os.UserHandle.USER_CURRENT;
 import static android.os.UserHandle.USER_SYSTEM;
 
+import android.os.UserHandle;
+import android.graphics.Color;
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
