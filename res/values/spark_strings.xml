@@ -1079,4 +1079,7 @@
     <string name="flashlight_on_call_not_dnd">Only in ringer mode</string>
     <string name="flashlight_on_call_dnd">Only in DND mode</string>
     <string name="flashlight_on_call_always">Always</string>
+
+    <string name="rgb_accent_picker_title">RGB accent picker</string>
+    <string name="rgb_accent_picker_summary">Choose the accent color yourself</string>
 </resources>

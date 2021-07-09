@@ -19,6 +19,8 @@ package com.spark.settings.fragments;
 import static android.os.UserHandle.USER_CURRENT;
 import static android.os.UserHandle.USER_SYSTEM;
 
+import android.os.UserHandle;
+import android.graphics.Color;
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -52,20 +54,25 @@ import com.android.settingslib.search.SearchIndexable;
 import com.spark.settings.display.QsColorPreferenceController;
 import com.spark.settings.display.QsTileStylePreferenceController;
 import com.spark.settings.display.SwitchStylePreferenceController;
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class UiSettings extends DashboardFragment {
+public class UiSettings extends DashboardFragment implements
+        OnPreferenceChangeListener {
+
     public static final String TAG = "UiSettings";
 
     private static FontPickerPreferenceController mFontPickerPreference;
+    private static final String PREF_RGB_ACCENT_PICKER = "rgb_accent_picker";
 
     private Context mContext;
     private IOverlayManager mOverlayManager;
     private IOverlayManager mOverlayService;
     private IntentFilter mIntentFilter;
 
+    private ColorPickerPreference rgbAccentPicker;
     private ListPreference mLockClockStyles;
 
     private BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
@@ -102,6 +109,15 @@ public class UiSettings extends DashboardFragment {
 
         mContext = getActivity();
 
+        rgbAccentPicker = (ColorPickerPreference) findPreference(PREF_RGB_ACCENT_PICKER);
+        String colorVal = Settings.Secure.getStringForUser(mContext.getContentResolver(),
+                Settings.Secure.ACCENT_COLOR, UserHandle.USER_CURRENT);
+        int color = (colorVal == null)
+                ? Color.WHITE
+                : Color.parseColor("#" + colorVal);
+        rgbAccentPicker.setNewPreviewColor(color);
+        rgbAccentPicker.setOnPreferenceChangeListener(this);
+
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction("com.android.server.ACTION_FONT_CHANGED");
 
@@ -117,6 +133,25 @@ public class UiSettings extends DashboardFragment {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(mFontPickerPreference = new FontPickerPreferenceController(context, lifecycle));
         return controllers;
+    }
+
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if (preference == rgbAccentPicker) {
+            int color = (Integer) objValue;
+            String hexColor = String.format("%08X", (0xFFFFFFFF & color));
+            Settings.Secure.putStringForUser(mContext.getContentResolver(),
+                        Settings.Secure.ACCENT_COLOR,
+                        hexColor, UserHandle.USER_CURRENT);
+            try {
+                 mOverlayManager.reloadAssets("com.android.settings", UserHandle.USER_CURRENT);
+                 mOverlayManager.reloadAssets("com.android.systemui", UserHandle.USER_CURRENT);
+             } catch (RemoteException ignored) {
+             }
+            return true;
+        }
+        return false;
     }
 
 
