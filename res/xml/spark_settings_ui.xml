@@ -30,14 +30,6 @@
             android:layout="@layout/wallacpreview"
             android:selectable="false"/>
 
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="accent_color"
-            android:title="@string/accent_color_title"
-            android:defaultValue="0xFFFCDC33"
-            settings:iconSpaceReserved="false"
-            settings:showReset="true"
-            android:persistent="false" />
-
          <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="use_wall_accent"
             settings:iconSpaceReserved="false"

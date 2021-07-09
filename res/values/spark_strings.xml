@@ -671,9 +671,6 @@
     <string name="default_icon_pack">AOSP (default)</string>
     <string name="default_icon_shape">Circle (default)</string>
 
-    <!-- Accent color picker -->
-    <string name="accent_color_title">Accent color picker</string>
-
     <!-- QS tile styles -->
     <string name="qs_tile_style_title">QS tile style</string>
     <string name="qstile_default">Default</string>
