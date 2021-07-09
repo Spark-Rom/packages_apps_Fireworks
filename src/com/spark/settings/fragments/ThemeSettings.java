@@ -43,7 +43,6 @@ import com.android.internal.util.spark.ThemesUtils;
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.development.OverlayCategoryPreferenceController;
-import com.android.settings.display.FontPickerPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
@@ -51,7 +50,6 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.spark.settings.display.QsColorPreferenceController;
 import com.spark.settings.display.QsTileStylePreferenceController;
-import com.spark.settings.display.AccentColorPreferenceController;
 import com.spark.settings.display.SwitchStylePreferenceController;
 
 import java.util.ArrayList;
