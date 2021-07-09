@@ -15,32 +15,32 @@
     <string name="spark_settings_title">Fireworks</string>
 
     <!-- Categories -->
-    <string name="aosp_setting_title">AOSP settings</string>
-    <string name="themes_title">Themes</string>
-    <string name="button_title">Buttons</string>
-    <string name="general_title">General</string>
-    <string name="gestures_title">Gestures</string>
-    <string name="lockscreen_title">Lock screen</string>
-    <string name="misc_title">Misc</string>
-    <string name="navigation_title">Navigation bar</string>
-    <string name="powermenu_title">Power menu</string>
-    <string name="quicksettings_title">Quick Settings</string>
-    <string name="recents_title">Recents apps</string>
-    <string name="statusbar_title">Status bar</string>
-    <string name="notifications_title">Notifications</string>
-    <string name="device_part_title">Device features</string>
-    <string name="dark_ui_mode_summary">Browse the dark theme options</string>
-    <string name="themes_summary">Customize your ye ye ash phone</string>
-    <string name="animations_category">Animations</string>
+    <string name="aosp_setting_title">Ustawienia AOSP</string>
+    <string name="themes_title">Motywy</string>
+    <string name="button_title">Przyciski</string>
+    <string name="general_title">Ogólne</string>
+    <string name="gestures_title">Gesty</string>
+    <string name="lockscreen_title">Ekran blokady</string>
+    <string name="misc_title">Różne</string>
+    <string name="navigation_title">Pasek nawigacji</string>
+    <string name="powermenu_title">Menu zasilania</string>
+    <string name="quicksettings_title">Szybkie ustawienia</string>
+    <string name="recents_title">Ostatnie aplikacje</string>
+    <string name="statusbar_title">Pasek statusu</string>
+    <string name="notifications_title">Powiadomienia</string>
+    <string name="device_part_title">Funkcje urządzenia</string>
+    <string name="dark_ui_mode_summary">Przeglądaj opcje ciemnego motywu</string>
+    <string name="themes_summary">Dostosuj swój telefon</string>
+    <string name="animations_category">Animacje</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
-    <string name="reset">Reset</string>
-    <string name="cancel">Cancel</string>
-    <string name="save">Save</string>
-    <string name="default_string">Default</string>
-    <string name="disabled">Disabled</string>
-    <string name="enable_first">Please enable first</string>
+    <string name="reset">Resetuj</string>
+    <string name="cancel">Odrzuć</string>
+    <string name="save">Zapisz</string>
+    <string name="default_string">Domyślny</string>
+    <string name="disabled">Wyłączony</string>
+    <string name="enable_first">Najpierw włącz</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
