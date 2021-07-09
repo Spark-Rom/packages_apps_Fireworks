@@ -45,7 +45,6 @@ import com.android.internal.util.spark.ThemesUtils;
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.development.OverlayCategoryPreferenceController;
-import com.android.settings.display.FontPickerPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
@@ -64,7 +63,6 @@ public class UiSettings extends DashboardFragment implements
 
     public static final String TAG = "UiSettings";
 
-    private static FontPickerPreferenceController mFontPickerPreference;
     private static final String PREF_RGB_ACCENT_PICKER = "rgb_accent_picker";
 
     private Context mContext;
@@ -74,16 +72,6 @@ public class UiSettings extends DashboardFragment implements
 
     private ColorPickerPreference rgbAccentPicker;
     private ListPreference mLockClockStyles;
-
-    private BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            String action = intent.getAction();
-            if (action.equals("com.android.server.ACTION_FONT_CHANGED")) {
-                mFontPickerPreference.stopProgress();
-            }
-        }
-    };
 
     @Override
     public int getMetricsCategory() {
@@ -118,9 +106,6 @@ public class UiSettings extends DashboardFragment implements
         rgbAccentPicker.setNewPreviewColor(color);
         rgbAccentPicker.setOnPreferenceChangeListener(this);
 
-        mIntentFilter = new IntentFilter();
-        mIntentFilter.addAction("com.android.server.ACTION_FONT_CHANGED");
-
     }
 
     @Override
@@ -131,7 +116,8 @@ public class UiSettings extends DashboardFragment implements
     private static List<AbstractPreferenceController> buildPreferenceControllers(
             Context context, Lifecycle lifecycle, Fragment fragment) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
-        controllers.add(mFontPickerPreference = new FontPickerPreferenceController(context, lifecycle));
+        controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.font"));
         return controllers;
     }
 
@@ -154,21 +140,6 @@ public class UiSettings extends DashboardFragment implements
         return false;
     }
 
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        final Context context = getActivity();
-        context.registerReceiver(mIntentReceiver, mIntentFilter);
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        final Context context = getActivity();
-        context.unregisterReceiver(mIntentReceiver);
-        mFontPickerPreference.stopProgress();
-    }
 
     /**
      * For Search.
