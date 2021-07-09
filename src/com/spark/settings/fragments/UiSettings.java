@@ -51,7 +51,6 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.spark.settings.display.QsColorPreferenceController;
 import com.spark.settings.display.QsTileStylePreferenceController;
-import com.spark.settings.display.AccentColorPreferenceController;
 import com.spark.settings.display.SwitchStylePreferenceController;
 
 import java.util.ArrayList;
@@ -116,7 +115,6 @@ public class UiSettings extends DashboardFragment {
     private static List<AbstractPreferenceController> buildPreferenceControllers(
             Context context, Lifecycle lifecycle, Fragment fragment) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
-        controllers.add(new AccentColorPreferenceController(context));
         controllers.add(mFontPickerPreference = new FontPickerPreferenceController(context, lifecycle));
         return controllers;
     }
