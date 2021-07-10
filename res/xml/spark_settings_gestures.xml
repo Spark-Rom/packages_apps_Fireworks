@@ -33,7 +33,7 @@
 
 
         <Preference 
-            android:title="Extra Gesures"
+            android:title="Extra Gestures"
             settings:iconSpaceReserved="false"
             android:summary="Double Tap to Sleep and more"
             android:layout="@layout/custom_card_pref"
