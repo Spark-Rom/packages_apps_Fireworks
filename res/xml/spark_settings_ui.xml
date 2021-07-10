@@ -59,6 +59,7 @@
 
         <ListPreference
             android:key="android.theme.customization.font"
+            settings:iconSpaceReserved="false"
             android:title="@string/theme_customization_font_title"/>
 
         <Preference
