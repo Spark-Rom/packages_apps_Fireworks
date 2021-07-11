@@ -180,6 +180,8 @@ public class QsThemeSettings extends DashboardFragment {
                 Settings.System.SLIDER_STYLE , 0, UserHandle.USER_CURRENT) == 2;
         boolean sliderRUI = Settings.System.getIntForUser(getContext().getContentResolver(),
                 Settings.System.SLIDER_STYLE , 0, UserHandle.USER_CURRENT) == 3;
+        boolean sliderA12 = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.SLIDER_STYLE , 0, UserHandle.USER_CURRENT) == 4;
 
         if (sliderDefault) {
             setDefaultSlider(mOverlayManager);
@@ -189,6 +191,8 @@ public class QsThemeSettings extends DashboardFragment {
             enableSlider(mOverlayManager, "com.android.theme.systemui_slider.aosp");
         } else if (sliderRUI) {
             enableSlider(mOverlayManager, "com.android.theme.systemui_slider.rui");
+        } else if (sliderA12) {
+            enableSlider(mOverlayManager, "com.android.theme.systemui_slider.a12");
         }
     }
 
@@ -231,7 +235,8 @@ public class QsThemeSettings extends DashboardFragment {
     public static final String[] SLIDERS = {
         "com.android.theme.systemui_slider_oos",
         "com.android.theme.systemui_slider.aosp",
-        "com.android.theme.systemui_slider.rui"
+        "com.android.theme.systemui_slider.rui",
+        "com.android.theme.systemui_slider.a12"
     };
 
     public static final String[] CLEAR_ALL_ICONS = {

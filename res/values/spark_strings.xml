@@ -1029,6 +1029,7 @@
     <string name="slider_oos">OOS</string>
     <string name="slider_aosp">Aosp</string>
     <string name="slider_rui">RUI</string>
+    <string name="slider_a12">A12</string>
 
      <!-- VoLTE -->
     <string name="volte_icon_style_title">Select VoLTE Icon</string>
