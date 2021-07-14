@@ -43,8 +43,8 @@
             android:key="extrasb_settings"
             android:layout="@layout/custom_card_pref"
             settings:iconSpaceReserved="false"
-            android:title="Extra SB Settings"
-            android:summary="Further Tweak Your SB"
+            android:title="@string/status_bar_extra_title"
+            android:summary="@string/status_bar_extra_summary"
             android:fragment="com.spark.settings.fragments.ExtraStatusBarSettings"/>
 
        <Preference

@@ -24,41 +24,41 @@
         android:selectable="false"/>
 
         <Preference 
-            android:title="LS Charging"
+            android:title="@string/lockscreen_charging_title"
             settings:iconSpaceReserved="false"
-            android:summary="Charging Info and Animations"
+            android:summary="@string/lockscreen_charging_summary"
             android:layout="@layout/custom_card_pref"
             android:key="charging_settings_key" 
             android:fragment="com.spark.settings.fragments.ChargingSettings"/>
 
         <Preference 
-            android:title="Fod Settings"
+            android:title="@string/fod_icon_picker_category_title"
             settings:iconSpaceReserved="false"
-            android:summary="Fod Icons Animations and more"
+            android:summary="@string/fod_settings_summary"
             android:layout="@layout/custom_card_pref"
             android:key="fod_settings_key" 
             android:fragment="com.spark.settings.fragments.FodSettings"/>
 
         <Preference 
-            android:title="LS Extras"
+            android:title="@string/lockscreen_extras_title"
             settings:iconSpaceReserved="false"
-            android:summary="Some more extra tweaks"
+            android:summary="@string/lockscreen_extras_summary"
             android:layout="@layout/custom_card_pref"
             android:key="ui_settings_key" 
             android:fragment="com.spark.settings.fragments.LsExtraSettings"/>
 
         <Preference 
-            android:title="LS Music"
+            android:title="@string/lockscreen_media_title"
             settings:iconSpaceReserved="false"
-            android:summary="Album art Visualizer and more"
+            android:summary="@string/lockscreen_media_summary"
             android:layout="@layout/custom_card_pref"
             android:key="music_settings_key" 
             android:fragment="com.spark.settings.fragments.MusicSettings"/>
 
         <Preference 
-            android:title="LS Notifications"
+            android:title="@string/lockscreen_notif_title"
             settings:iconSpaceReserved="false"
-            android:summary="Notification count and more"
+            android:summary="@string/lockscreen_notif_summary"
             android:layout="@layout/custom_card_pref"
             android:key="ui_settings_key" 
             android:fragment="com.spark.settings.fragments.LsNotificationSettings"/>

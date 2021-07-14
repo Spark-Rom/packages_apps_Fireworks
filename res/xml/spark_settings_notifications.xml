@@ -26,7 +26,7 @@
     <!-- Heads up -->
     <Preference
         android:key="heads_up_notifications"
-        android:summary="Timeout, Snooze and more"
+        android:summary="@string/heads_up_notifications_summary"
         android:layout="@layout/custom_card_pref"
         settings:iconSpaceReserved="false"
         android:title="@string/heads_up_notifications"
@@ -42,24 +42,24 @@
 
         <Preference
             android:key="edgelightning_settings_key"
-            android:title="Edge Lighting"
-            android:summary="custom color repeat time and more"
+            android:title="@string/edge_light_title"
+            android:summary="@string/edge_light_title"
             android:layout="@layout/custom_card_pref"
             settings:iconSpaceReserved="false"
             android:fragment="com.spark.settings.fragments.EdgeSettings" />
 
         <Preference
             android:key="extranotification_settings_key"
-            android:title="Extra Notification Settings"
-            android:summary="Notification Headers and more"
+            android:title="@string/extra_notif_title"
+            android:summary="@string/extra_notif_summary"
             android:layout="@layout/custom_card_pref"
             settings:iconSpaceReserved="false"
             android:fragment="com.spark.settings.fragments.ExtraNotificationSettings" />
 
         <Preference
             android:key="ticker_settings_key"
-            android:title="Notification Ticker"
-            android:summary="Tweak duration and animation"
+            android:title="@string/notif_ticker_title"
+            android:summary="@string/notif_ticker_summary"
             android:layout="@layout/custom_card_pref"
             settings:iconSpaceReserved="false"
             android:fragment="com.spark.settings.fragments.TickerSettings" />

@@ -45,41 +45,41 @@
             android:key="suspend_actions"
             android:layout="@layout/custom_card_pref"
             settings:iconSpaceReserved="false"
-            android:summary="Stop actions on screen off"
+            android:summary="@string/suspend_actions_summary"
             android:fragment="com.spark.settings.fragments.ScreenStateToggles"
-            android:title="@string/screen_state_toggles_title" />
+            android:title="@string/suspend_actions_title" />
 
         <Preference
             android:key="ambientdoze_settings_key"
             android:layout="@layout/custom_card_pref"
             settings:iconSpaceReserved="false"
-            android:summary="Tweak Brightness on Ambient Display"
+            android:summary="@string/doze_brightness_summary"
             android:fragment="com.spark.settings.fragments.AmbientDozeSettings"
-            android:title="Doze Brightness" />
+            android:title="@string/doze_brightness_title" />
 
         <Preference
             android:key="animation_settings_key"
             android:layout="@layout/custom_card_pref"
             settings:iconSpaceReserved="false"
-            android:summary="Power Off Animations, Scrolling Cache and more"
+            android:summary="@string/animation_summary"
             android:fragment="com.spark.settings.fragments.AnimationSettings"
-            android:title="Animations" />
+            android:title="@string/animation_title" />
 
         <Preference
             android:key="audio_settings_key"
             android:layout="@layout/custom_card_pref"
             settings:iconSpaceReserved="false"
-            android:summary="Call Settings and more"
+            android:summary="@string/misc_audio_summary"
             android:fragment="com.spark.settings.fragments.AudioSettings"
-            android:title="Audio" />
+            android:title="@string/misc_audio_title" />
 
         <Preference
             android:key="miscextra_settings_key"
             android:layout="@layout/custom_card_pref"
             settings:iconSpaceReserved="false"
-            android:summary="Extra Tweaks"
+            android:summary="@string/extra_tweaks_summary"
             android:fragment="com.spark.settings.fragments.MiscExtraSettings"
-            android:title="Extra Tweaks" />
+            android:title="@string/extra_tweaks_title" />
 
 
     <Preference
