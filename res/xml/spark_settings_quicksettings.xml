@@ -25,26 +25,26 @@
 
         <Preference
             android:key="qsitems_settings_category"
-            android:summary="Customize Stuff in QS"
+            android:summary="@string/qs_items_summary"
             android:layout="@layout/custom_card_pref"
             settings:iconSpaceReserved="false"
             android:fragment="com.spark.settings.fragments.QsItemsSettings"
-            android:title="Qs Items" />
+            android:title="@string/qs_items_title" />
 
         <Preference
             android:key="qsanimations_settings_category"
-            android:summary="Tweak Qs Tile Animations"
+            android:summary="@string/tile_animations_summary"
             android:layout="@layout/custom_card_pref"
             settings:iconSpaceReserved="false"
             android:fragment="com.spark.settings.fragments.QsAnimationSettings"
-            android:title="Tile Animations" />
+            android:title="@string/tile_animations_title" />
 
         <Preference
             android:key="qsrow_settings_category"
-            android:summary="Extend Your Qs"
+            android:summary="@string/qs_rows_summary"
             android:layout="@layout/custom_card_pref"
             settings:iconSpaceReserved="false"
             android:fragment="com.spark.settings.fragments.QsRowSettings"
-            android:title="QsRows" />
+            android:title="@string/qs_rows_title" />
 
 </PreferenceScreen>

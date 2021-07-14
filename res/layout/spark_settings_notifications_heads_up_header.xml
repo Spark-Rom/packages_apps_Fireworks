@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Heads Up"
+            android:text="@string/heads_up_notifications"
             android:textSize="42sp"
             android:textColor="?android:attr/textColorPrimary"
             android:layout_margin="25dp"

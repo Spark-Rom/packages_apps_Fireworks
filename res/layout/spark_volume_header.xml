@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Volume Panel Tweaks"
+            android:text="@string/volume_panel_header"
             android:textSize="42sp"
             android:textColor="?android:attr/textColorPrimary"
             android:layout_margin="25dp"

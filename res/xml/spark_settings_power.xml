@@ -34,9 +34,9 @@
 
 
         <Preference 
-            android:title="PowerMenu Settings"
+            android:title="@string/extra_powermenu_title"
             settings:iconSpaceReserved="false"
-            android:summary="Advanced PowerMenu and more"
+            android:summary="@string/extra_powermenu_summary"
             android:layout="@layout/custom_card_pref"
             android:key="advancedpower_settings_key" 
             android:fragment="com.spark.settings.fragments.AdvancedPowerSettings"/>

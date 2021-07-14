@@ -26,20 +26,20 @@
         android:title="@string/theme_customization_category">
 
         <Preference 
-            android:title="Ui Tweaker"
+            android:title="@string/ui_tweaker_title"
             settings:iconSpaceReserved="false"
-            android:summary="Accent Color Ls Clocks and more"
+            android:summary="@string/ui_tweaker_summary"
             android:layout="@layout/custom_card_pref"
             android:key="ui_settings_key" 
             android:fragment="com.spark.settings.fragments.UiSettings"/>
 
         <Preference
             android:key="icon_settings_category"
-            android:summary="Tweak Icon related stuff"
+            android:summary="@string/icons_tweak_summary"
             android:layout="@layout/custom_card_pref"
             settings:iconSpaceReserved="false"
             android:fragment="com.spark.settings.fragments.IconSettings"
-            android:title="Icons" />
+            android:title="@string/icons_tweak_title" />
 
         <PreferenceScreen
             android:key="gvisual"
@@ -51,27 +51,27 @@
 
         <Preference
             android:key="quick_settings_category"
-            android:summary="Revamp Your QS"
+            android:summary="@string/qs_themes_summary"
             android:layout="@layout/custom_card_pref"
             settings:iconSpaceReserved="false"
             android:fragment="com.spark.settings.fragments.QsThemeSettings"
-            android:title="@string/quicksettings_title" />
+            android:title="@string/qs_themes_title" />
 
         <Preference 
-            android:title="Qs Media Player Settings"
+            android:title="@string/qs_media_player_themes_title"
             settings:iconSpaceReserved="false"
-            android:summary="Customize your Media player"
+            android:summary="@string/qs_media_player_themes_summary"
             android:layout="@layout/custom_card_pref"
             android:key="media_player_settings_key" 
             android:fragment="com.spark.settings.fragments.MediaPlayerSettings"/>
 
          <Preference
             android:key="volume_panel_stuff"
-            android:summary="Tweak Your Volume Panel"
+            android:summary="@string/volume_panel_themes_summary"
             android:layout="@layout/custom_card_pref"
             settings:iconSpaceReserved="false"
             android:fragment="com.spark.settings.fragments.VolumeSettings"
-            android:title="@string/volume_panel" />
+            android:title="@string/volume_panel_themes_title" />
 
     </PreferenceCategory>
 

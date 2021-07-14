@@ -27,15 +27,14 @@
         android:key="gesture_settings"
         settings:iconSpaceReserved="false"
         android:layout="@layout/custom_card_pref"
-        android:summary="Swipe for screenshot and more"
+        android:summary="@string/aosp_gesture_summary"
         android:title="@string/aosp_gesture_title"
         android:fragment="com.android.settings.gestures.GestureSettings" />
 
-
         <Preference 
-            android:title="Extra Gestures"
+            android:title="@string/extra_gestures_title"
             settings:iconSpaceReserved="false"
-            android:summary="Double Tap to Sleep and more"
+            android:summary="@string/extra_gestures_summary"
             android:layout="@layout/custom_card_pref"
             android:key="dtt_settings_key" 
             android:fragment="com.spark.settings.fragments.DttSettings"/>
