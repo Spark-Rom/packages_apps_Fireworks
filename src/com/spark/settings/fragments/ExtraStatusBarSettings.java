@@ -32,6 +32,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import android.content.pm.PackageManager.NameNotFoundException;
 import com.spark.settings.preferences.SecureSettingSwitchPreference;
 import com.spark.settings.preferences.CustomSeekBarPreference;
+import com.spark.settings.preferences.SecureSettingSeekBarPreference;
 
 import java.util.Locale;
 import android.text.TextUtils;
@@ -56,8 +57,8 @@ public class ExtraStatusBarSettings extends SettingsPreferenceFragment implement
     private static final String CUSTOM_STATUSBAR_PADDING_START = "custom_statusbar_padding_start";
     private static final String CUSTOM_STATUSBAR_PADDING_END = "custom_statusbar_padding_end";
 
-    private CustomSeekBarPreference mCustomStatusbarPaddingStart;
-    private CustomSeekBarPreference mCustomStatusbarPaddingEnd;
+    private SecureSettingSeekBarPreference mCustomStatusbarPaddingStart;
+    private SecureSettingCustomSeekBarPreference mCustomStatusbarPaddingEnd;
 
     private CustomSeekBarPreference mCornerRadius;
     private CustomSeekBarPreference mContentPadding;

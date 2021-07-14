@@ -61,7 +61,7 @@
     <PreferenceCategory
          android:title="@string/statusbar_custom_title">
 
-        <com.spark.settings.preferences.CustomSeekBarPreference
+        <com.spark.settings.preferences.SecureSettingSeekBarPreference
             android:key="custom_statusbar_padding_start"
             settings:iconSpaceReserved="false"
             android:title="@string/custom_statusbar_padding_start"
@@ -71,7 +71,7 @@
             android:defaultValue="5"
             android:persistent="false" />
 
-        <com.spark.settings.preferences.CustomSeekBarPreference
+        <com.spark.settings.preferences.SecureSettingSeekBarPreference
             android:key="custom_statusbar_padding_end"
             settings:iconSpaceReserved="false"
             android:title="@string/custom_statusbar_padding_end"
