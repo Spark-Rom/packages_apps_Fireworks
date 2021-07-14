@@ -53,11 +53,6 @@ public class ExtraStatusBarSettings extends SettingsPreferenceFragment implement
     private static final String SYSUI_ROUNDED_SIZE = "sysui_rounded_size";
     private static final String SYSUI_ROUNDED_CONTENT_PADDING = "sysui_rounded_content_padding";
     private static final String SYSUI_ROUNDED_FWVALS = "sysui_rounded_fwvals";
-    private static final String CUSTOM_STATUSBAR_PADDING_START = "custom_statusbar_padding_start";
-    private static final String CUSTOM_STATUSBAR_PADDING_END = "custom_statusbar_padding_end";
-
-    private CustomSeekBarPreference mCustomStatusbarPaddingStart;
-    private CustomSeekBarPreference mCustomStatusbarPaddingEnd;
 
     private CustomSeekBarPreference mCornerRadius;
     private CustomSeekBarPreference mContentPadding;
@@ -103,19 +98,6 @@ public class ExtraStatusBarSettings extends SettingsPreferenceFragment implement
         // Rounded use Framework Values
         mRoundedFwvals = (SecureSettingSwitchPreference) findPreference(SYSUI_ROUNDED_FWVALS);
         mRoundedFwvals.setOnPreferenceChangeListener(this);
-
-        mCustomStatusbarPaddingStart = (CustomSeekBarPreference) findPreference(CUSTOM_STATUSBAR_PADDING_START);
-        int customStatusbarPaddingStart = Settings.System.getIntForUser(ctx.getContentResolver(),
-                Settings.System.CUSTOM_STATUSBAR_PADDING_START, res.getIdentifier("com.android.systemui:dimen/status_bar_padding_start", null, null), UserHandle.USER_CURRENT);
-        mCustomStatusbarPaddingStart.setValue(customStatusbarPaddingStart);
-        mCustomStatusbarPaddingStart.setOnPreferenceChangeListener(this);
-
-        mCustomStatusbarPaddingEnd = (CustomSeekBarPreference) findPreference(CUSTOM_STATUSBAR_PADDING_END);
-        int customStatusbarPaddingEnd = Settings.System.getIntForUser(getActivity().getContentResolver(),
-                Settings.System.CUSTOM_STATUSBAR_PADDING_END, res.getIdentifier("com.android.systemui:dimen/status_bar_padding_end", null, null), UserHandle.USER_CURRENT);
-        mCustomStatusbarPaddingEnd.setValue(customStatusbarPaddingEnd);
-        mCustomStatusbarPaddingEnd.setOnPreferenceChangeListener(this);
-
     }
 
     @Override
@@ -130,16 +112,6 @@ public class ExtraStatusBarSettings extends SettingsPreferenceFragment implement
         //    return true;
         } else if (preference == mRoundedFwvals) {
             restoreCorners();
-            return true;
-        } else if (preference == mCustomStatusbarPaddingStart) {
-            int value = (Integer) newValue;
-            Settings.System.putIntForUser(getContext().getContentResolver(),
-                    Settings.System.CUSTOM_STATUSBAR_PADDING_START, value, UserHandle.USER_CURRENT);
-            return true;
-        } else if (preference == mCustomStatusbarPaddingEnd) {
-            int value = (Integer) newValue;
-            Settings.System.putIntForUser(getContext().getContentResolver(),
-                    Settings.System.CUSTOM_STATUSBAR_PADDING_END, value, UserHandle.USER_CURRENT);
             return true;
         }
         return false;
