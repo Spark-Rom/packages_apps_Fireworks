@@ -72,7 +72,7 @@
             android:entryValues="@array/pulse_color_mode_values"
             android:defaultValue="1"/>
 
-        <com.net.margaritov.colorpicker.ColorPickerPreference
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="pulse_color_user"
             settings:iconSpaceReserved="false"
             android:title="@string/pulse_color_chooser" />

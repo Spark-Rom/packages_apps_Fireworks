@@ -37,7 +37,7 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.net.margaritov.colorpicker.ColorPickerPreference;
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
 import com.spark.settings.preferences.SecureSettingSeekBarPreference;
 import com.spark.settings.preferences.SecureSettingSwitchPreference;
 import com.spark.settings.preferences.SecureSettingListPreference;
