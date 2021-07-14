@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fod Settings"
+            android:text="@string/fod_icon_picker_category_title"
             android:textSize="42sp"
             android:textColor="?android:attr/textColorPrimary"
             android:layout_margin="25dp"
