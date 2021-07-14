@@ -146,8 +146,6 @@
     <string name="fod_icon_animation">Анимация значка сканера отпечатка пальца под экраном</string>
     <string name="fod_icon_animation_effect_title">Выберите эффект анимации значка сканера пальца под экраном</string>
     <string name="fod_icon_animation_summary">Анимация значка сканера отпечатка пальцев под экраном при включении экрана</string>
-    <string name="fod_icon_animation_oneui1">OneUI 1</string>
-    <string name="fod_icon_animation_oneui2">OneUI 2</string>
 	
     <!-- Heads up -->
     <string name="heads_up_notifications">Всплывающие уведомления</string>
@@ -675,13 +673,15 @@
     <string name="qstile_oos">Кислород</string>
     <string name="qstile_triangles">Треугольник</string>
 	
-	<!-- Volume Panel Plugin -->
-	<string name="volume_panel">Стиль панели громкости</string>
-    <string name="volume_panel_stock">Стандартная расширенная панель AOSP</string>
+   <!-- Volume Panel Plugin -->
+    <string name="volume_panel">Стиль панели громкости</string>
+    <string name="volume_panel_stock">По умолчанию</string>
+    <string name="volume_panel_aosp">AOSP Расширенная</string>
     <string name="volume_panel_compact">Компактная</string>
     <string name="volume_panel_oreo">Oreo</string>
     <string name="volume_panel_tiled">Плитки</string>
     <string name="volume_panel_miui">MIUI</string>
+	<string name="volume_panel_oos">OOS</string>
 	
 	<!-- Allow fake signature -->
 	<string name="allow_signature_fake">Разрешить подмену подписи</string>
@@ -754,6 +754,7 @@
     <string name="global_actions_screenshot_title">Снимок экрана</string>
     <string name="global_actions_screenrecord_title">Запись экрана</string>
     <string name="global_actions_none_title">Ничего</string>
+	<string name="global_actions_onthego_title">На ходу</string>
 	
 	<!-- QS themes -->
 	<string name="qs_panel_colors_title">Цвета панели быстрых настроек</string>
@@ -916,9 +917,6 @@
     <!-- Custom settings dashboard icons -->
     <string name="settings_dashboard_icons_title">Значки панели настроек</string>
     <string name="settings_dashboard_icons_default">По умолчанию</string>
-    <string name="settings_dashboard_icons_oos">Oxygen OS (A11)</string>
-    <string name="settings_dashboard_icons_oos2">Oxygen OS (A10)</string>
-    <string name="settings_dashboard_icons_stylish">Colorfull</string>
 
     <!-- Custom statusbar paddings -->
     <string name="statusbar_custom_title">Строка состояния</string>
@@ -937,5 +935,96 @@
 
     <string name="active_edge_app_select_title">Выбрать приложение</string>
     <string name="active_edge_activity_select_title">Выбрать действие</string>
+	
+    <!-- Navbar Picker -->
+    <string name="theme_navbar_picker_title">Стиль панели навигации</string>
+    <string name="theme_navbar_picker_summary">Выберите стиль панели навигации</string>
+    <string name="theme_navbar_picker_default">По умолчанию</string>
+    <string name="theme_navbar_picker_old">Старая</string>
+
+	
+    <!-- Custom Signal bar icons -->
+    <string name="custom_signal_bar_title">Иконки сигналов</string>
+
+    <!-- Custom Wi-Fi bar icons -->
+    <string name="custom_wifi_bar_title">Иконка Wi-Fi</string>
+	
+   <!-- Notification count -->
+    <string name="status_bar_notif_count_title">Отображение количества уведомлений</string>
+    <string name="status_bar_notif_count_summary">Отображение количества пришедших уведомлений</string>
+	
+    <string name="custom_fod_icon_png_explainer">Вы можете загрузить свои собственные пользовательские значки FOD в формате PNG из каналов Telegram, таких как FODicons и OP_fps. Используйте локальную галерею, а не онлайн-сервисы, такие как Google Фото, для выбора значков FOD.</string>
+    <!-- FOD icon picker -->
+    <string name="custom_fod_icon_picker_title">Пользовательский значок отпечатка пальца</string>
+	
+    <string name="media_player_picker">Выберите стиль медиаплеера, который вам нравится</string>
+    <string name="media_player_androids">Android S Медиаплеер</string>
+    <string name="media_player_compact">Компактный медиаплеер</string>
+	
+	 <string name="use_wall_accent_string">Акцент на основе обоев</string>
+    <string name="use_wall_accent_summary">(БЕТА) Авто устанавливает акцентный цвет на основе ваших обоев.</string>
+
+    <!-- Auto Accent Picker -->
+    <string name="auto_accent_picker_title">Алгоритм генерации акцента</string>
+    <string name="auto_accent_picker_vibrant">Яркий</string>
+    <string name="auto_accent_picker_vibrant_light">Яркий свет</string>
+    <string name="auto_accent_picker_dominant">Доминирующий</string>
+    <string name="auto_accent_picker_dominant_bright">Доминант Яркий</string>
+    <string name="auto_accent_picker_avg">Средний</string>
+	
+	<!-- Slider Styles -->
+    <string name="slider_styles_title">Ползунок изменения яркости</string>
+    <string name="slider_default">По умолчанию</string>
+
+<!-- VoLTE -->
+    <string name="volte_icon_style_title">Выберите значок VoLTE</string>
+    <string name="volte_icon_asus">VoLTE Asus значок</string>
+    <string name="volte_icon_vo">Отключен</string>
+    <string name="volte_icon_volte">VoLTE значок</string>
+    <string name="volte_icon_oos">VoLTE OOS 10 значок</string>
+    <string name="volte_icon_oos11">VoLTE OOS 11 значок</string>
+    <string name="volte_icon_hd">HD значок</string>
+    <string name="volte_icon_hd2">HD CAF значок</string>
+    <string name="volte_icon_miui">MIUI 11</string>
+    <string name="volte_icon_emui">EMUI</string>
+    <string name="volte_icon_moto">VoLTE Motorola значок</string>
+    <string name="volte_icon_vivo">VoLTE Vivo значок</string>
+
+    <!-- VoWiFi icon -->
+    <string name="vowifi_icon_title">Значок VoWiFi</string>
+    <string name="vowifi_icon_enabled">Значок VoWiFi включен</string>
+    <string name="vowifi_icon_disabled">Значок VoWiFi выключен</string>
+    <string name="vowifi_icon_enabled_volte_disabled">VoWiFi вместо значка VoLTE</string>
+    <string name="vowifi_icon_style_title">Стиль значка VoWiFi</string>
+    <string name="vowifi_icon_default">Значок по умолчанию</string>
+    <string name="vowifi_icon_emui">EMUI значок</string>
+    <string name="vowifi_icon_asus">Asus значок</string>
+    <string name="vowifi_icon_oneplus">OOS значок</string>
+    <string name="vowifi_icon_oos11">OOS 11 значок</string>
+    <string name="vowifi_icon_moto">Motorola значок</string>
+    <string name="vowifi_icon_simple1">Simple1 значок</string>
+    <string name="vowifi_icon_simple2">Simple2 значок</string>
+    <string name="vowifi_icon_simple3">Simple3 значок</string>
+    <string name="vowifi_icon_vivo">Vivo значок</string>
+    <string name="volte_icon_margaritov">HD Filled значок</string>
+    <string name="volte_icon_margaritov2">Margaritov VoLTE значок</string>
+	
+	 <!-- OOS style material dismiss all button for notifications -->
+    <string name="notification_material_dismiss_button_title">Кнопка очистки уведомлений</string>
+    <string name="notification_material_dismiss_button_summary">Заменяет текст \"Очистить все\" на плавающую кнопку</string>
+
+    <!-- Clear All -->
+    <string name="clearall_icon_title">Значок \"Очистить все\"</string>
+    <string name="clearall_icon_summary">Изменить значок \"Очистить все\" </string>
+    <string name="clearall_icon_default">Крест (По умолчанию)</string>
+    <string name="clearall_icon_oos">OOS</string>
+
+    <!-- Blink flashlight for incoming calls -->
+    <string name="flashlight_on_call_title">Мигать фонариком при звонке</string>
+    <string name="flashlight_on_call_disabled">Отключен</string>
+    <string name="flashlight_on_call_not_dnd">Только в режиме звонка</string>
+    <string name="flashlight_on_call_dnd">Только в режиме \"Не беспокоить\"</string>
+    <string name="flashlight_on_call_always">Всегда</string>
+	
 
 </resources>
