@@ -498,79 +498,79 @@
     <string name="center_notification_headers_summary">Wyśrodkowanie nagłówków w obszarze powiadomień (wymaga ponownego uruchomienia SystemUI)</string>
 
     <!-- Lock icon -->
-    <string name="hide_lockicon_title">Hide lock icon</string>
-    <string name="hide_lockicon_summary">Hide the lock icon on lockscreen</string>
+    <string name="hide_lockicon_title">Ukryj ikonę kłódki</string>
+    <string name="hide_lockicon_summary">Ukryj ikonę kłódki na ekranie blokady</string>
 
     <!-- Ambient edge lighting -->
-    <string name="pulse_ambient_light_category">Screen edge lighting</string>
-    <string name="pulse_ambient_light_title">Show on new notifcation</string>
-    <string name="pulse_ambient_light_summary">Show light pulse on new notification</string>
-    <string name="ambient_notification_light_enabled_title">Show on always on</string>
-    <string name="aod_disabled">AOD is disabled</string>
-    <string name="pulse_ambient_light_show_always_title">Show for all doze events</string>
-    <string name="pulse_ambient_light_show_always_summary">Show lights for all doze events and not just notifications</string>
-    <string name="ambient_notification_light_enabled_summary">Show light pulse on new notification using always on</string>
-    <string name="ambient_notification_light_color_title">Custom color</string>
-    <string name="ambient_notification_light_hide_aod_title">Only show light pulse</string>
-    <string name="ambient_notification_light_hide_aod_summary">Hide all other display elements from always on</string>
-    <string name="ambient_notification_light_timeout_title">Timeout for light pulse</string>
-    <string name="entry_infinite">Infinite</string>
-    <string name="entry_five_minute">5 minutes</string>
-    <string name="entry_ten_minute">10 minutes</string>
-    <string name="entry_thirty_minute">30 minutes</string>
-    <string name="entry_sixty_minute">60 minutes</string>
-    <string name="entry_fifteen_minute">15 minutes</string>
-    <string name="ambient_notification_light_color_mode_title">Light pulse color</string>
-    <string name="ambient_notification_light_color_mode_automatic">Notification color</string>
-    <string name="ambient_notification_light_color_mode_accent">System accent color</string>
-    <string name="ambient_notification_light_color_mode_custom">Custom color</string>
-    <string name="pulse_ambient_light_duration_title">Duration</string>
-    <string name="pulse_ambient_light_duration_summary">Sets the ambient light animation duration</string>
-    <string name="pulse_ambient_light_repeat_count_title">Edge Light Repeat count</string>
-    <string name="pulse_ambient_light_repeat_count_summary">Set max repeat count. 0 for infinite</string>
-    <string name="pulse_ambient_light_repeat_direction_title">Light repeat mode</string>
+    <string name="pulse_ambient_light_category">Podświetlanie krawędziowe</string>
+    <string name="pulse_ambient_light_title">Pokazuj gdy nowe powiadomienia</string>
+    <string name="pulse_ambient_light_summary">Pokaż podświetlenie krawędziowe w nowym powiadomieniu</string>
+    <string name="ambient_notification_light_enabled_title">Pokaż gdy AOD włączone</string>
+    <string name="aod_disabled">AOD jest wyłączony</string>
+    <string name="pulse_ambient_light_show_always_title">Pokaż dla wszystkich wydarzeń drzemki</string>
+    <string name="pulse_ambient_light_show_always_summary">Pokaż światła dla wszystkich zdarzeń drzemki, a nie tylko powiadomień</string>
+    <string name="ambient_notification_light_enabled_summary">Pokazuj podświetlenie krawędziowe w nowym powiadomieniu, używając AOD</string>
+    <string name="ambient_notification_light_color_title">Niestandardowy kolor</string>
+    <string name="ambient_notification_light_hide_aod_title">Pokaż tylko impuls świetlny!</string>
+    <string name="ambient_notification_light_hide_aod_summary">Ukryj wszystkie inne elementy wyświetlacza AOD</string>
+    <string name="ambient_notification_light_timeout_title">Limit czasu dla impulsu świetlnego</string>
+    <string name="entry_infinite">Nieskończony</string>
+    <string name="entry_five_minute">5 minut</string>
+    <string name="entry_ten_minute">10 minut</string>
+    <string name="entry_thirty_minute">30 minut</string>
+    <string name="entry_sixty_minute">60 minut</string>
+    <string name="entry_fifteen_minute">15 minut</string>
+    <string name="ambient_notification_light_color_mode_title">Kolor impulsu świetlnego</string>
+    <string name="ambient_notification_light_color_mode_automatic">Kolor powiadomienia</string>
+    <string name="ambient_notification_light_color_mode_accent">Kolor akcentu systemowego</string>
+    <string name="ambient_notification_light_color_mode_custom">Niestandardowy kolor</string>
+    <string name="pulse_ambient_light_duration_title">Czas trwania</string>
+    <string name="pulse_ambient_light_duration_summary">Ustawia czas trwania animacji światła ambient</string>
+    <string name="pulse_ambient_light_repeat_count_title">Liczba powtórzeń podświetlania krawędziowego</string>
+    <string name="pulse_ambient_light_repeat_count_summary">SUstaw maksymalną liczbę powtórzeń. 0 dla nieskończoności</string>
+    <string name="pulse_ambient_light_repeat_direction_title">Tryb powtarzania światła</string>
     <string name="pulse_ambient_light_repeat_direction_restart">Restart</string>
-    <string name="pulse_ambient_light_repeat_direction_reverse">Reverse</string>
+    <string name="pulse_ambient_light_repeat_direction_reverse">Odwróć</string>
 
     <!-- FOD icon picker -->
-    <string name="fod_icon_picker_title">Fingerprint icon</string>
-    <string name="fod_icon_picker_summary">Choose your favorite fingerprint icon</string>
-    <string name="fod_icon_picker_footer">In order to add your own icon, select the top left icon and use the OnePlus 6T FP Customizer app to select the icon you want.</string>
+    <string name="fod_icon_picker_title">Ikona odcisku palca</string>
+    <string name="fod_icon_picker_summary">Wybierz swoją ulubioną ikonę odcisku palca</string>
+    <string name="fod_icon_picker_footer">Aby dodać własną ikonę, wybierz ikonę w lewym górnym rogu i użyj aplikacji OnePlus 6T FP Customizer, aby wybrać żądaną ikonę.</string>
 
     <!-- FOD pressed color -->
-    <string name="fod_pressed_color_title">Fingerprint pressed color</string>
-    <string name="fod_pressed_color_white">White</string>
+    <string name="fod_pressed_color_title">Kolor podświetlenia odcisku palca</string>
+    <string name="fod_pressed_color_white">Biały</string>
     <string name="fod_pressed_color_cyan">Cyan</string>
-    <string name="fod_pressed_color_green">Green</string>
-    <string name="fod_pressed_color_yellow">Yellow</string>
+    <string name="fod_pressed_color_green">Zielony</string>
+    <string name="fod_pressed_color_yellow">Żółty</string>
 
     <!-- Launch music player when headset is connected -->
-    <string name="headset_connect_player_title">Launch music app on headset connection</string>
-    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
+    <string name="headset_connect_player_title">Uruchom aplikację muzyczną na połączeniu zestawu słuchawkowego</string>
+    <string name="headset_connect_player_summary">Uruchom domyślną aplikację muzyczną po podłączeniu zestawu słuchawkowego</string>
 
     <!-- Partial Screenshot -->
-    <string name="click_partial_screenshot_title">Click to partial screenshot</string>
-    <string name="click_partial_screenshot_summary">Short click Volume Down and Power to take partial screenshot</string>
+    <string name="click_partial_screenshot_title">Kliknij, aby uzyskać częściowy zrzut ekranu</string>
+    <string name="click_partial_screenshot_summary">Krótkie kliknięcie zmniejszania głośności i zasilania wykona częściowy zrzut ekranu</string>
 
     <!-- Incall Home button behavior-->
-    <string name="allow_incall_home_title">Home button when ringing</string>
-    <string name="allow_incall_home_summary">Allow to use Home button when device is ringing</string>
+    <string name="allow_incall_home_title">Przycisk Home podczas dzwonienia</string>
+    <string name="allow_incall_home_summary">Zezwalaj na używanie przycisku Home, gdy urządzenie dzwoni</string>
 
     <!-- Buttons backlight timeout -->
-    <string name="backlight_timeout_title">Buttons backlight timeout</string>
-    <string name="backlight_timeout_on">Enabled always</string>
-    <string name="backlight_timeout_3s">3 sec</string>
-    <string name="backlight_timeout_default">5 sec (default)</string>
-    <string name="backlight_timeout_10s">10 sec</string>
-    <string name="backlight_timeout_15s">15 sec</string>
-    <string name="backlight_timeout_20s">20 sec</string>
-    <string name="backlight_timeout_30s">30 sec</string>
+    <string name="backlight_timeout_title">Limit czasu podświetlenia przycisków</string>
+    <string name="backlight_timeout_on">Zawsze włączony</string>
+    <string name="backlight_timeout_3s">3 sek</string>
+    <string name="backlight_timeout_default">5 sek (domyślny)</string>
+    <string name="backlight_timeout_10s">10 sek</string>
+    <string name="backlight_timeout_15s">15 sek</string>
+    <string name="backlight_timeout_20s">20 sek</string>
+    <string name="backlight_timeout_30s">30 sek</string>
 
     <!-- Enable keys backlight-->
-    <string name="button_brightness_title">Backlight</string>
-    <string name="button_brightness_sw_title">Enable backlight</string>
-    <string name="button_backlight_on_touch_only_title">Button touch</string>
-    <string name="button_backlight_on_touch_only_summary">Enable backlight with timeout only on button touch</string>
+    <string name="button_brightness_title">Podświetlenie</string>
+    <string name="button_brightness_sw_title">Włącz podświetlenie</string>
+    <string name="button_backlight_on_touch_only_title">Dotyk przycisku</string>
+    <string name="button_backlight_on_touch_only_summary">Włącz podświetlenie z limitem czasu tylko po dotknięciu przycisku</string>
 
     <!-- HW Keys customization -->
     <string name="action_value_default_action" translatable="false">default</string>
@@ -582,64 +582,64 @@
     <string name="action_value_recent_apps" translatable="false">task_recents</string>
     <string name="action_value_voice_search" translatable="false">task_voice_search</string>
     <string name="action_value_menu" translatable="false">task_menu</string>
-    <string name="picker_activities">Activities</string>
-    <string name="select_custom_app_title">Select custom app</string>
-    <string name="select_custom_activity_title">Select custom activity</string>
-    <string name="profile_applist_title">Applications</string>
-    <string name="choose_action_title">Choose action</string>
-    <string name="action_entry_default_action">Default settings</string>
-    <string name="action_entry_select_app">Select application</string>
-    <string name="action_entry_custom_action">Select custom action</string>
-    <string name="hardware_keys_home_key_title">Home button</string>
-    <string name="hardware_keys_menu_key_title">Menu button</string>
-    <string name="hardware_keys_assist_key_title">Search button</string>
-    <string name="hardware_keys_appswitch_key_title">Overview button</string>
-    <string name="hardware_keys_back_key_title">Back button</string>
-    <string name="hardware_keys_double_tap_summary">Set double tap action</string>
-    <string name="hardware_keys_single_tap_summary">Set single tap action</string>
-    <string name="hardware_keys_long_press_summary">Set long press action</string>
-    <string name="hardware_keys_single_tap_title">Single tap action</string>
-    <string name="hardware_keys_long_press_title">Long press action</string>
-    <string name="hardware_keys_double_tap_title">Double tap action</string>
-    <string name="hardware_keys_disable_title">Disable keys</string>
-    <string name="hardware_keys_title">Hardware keys</string>
+    <string name="picker_activities">Zajęcia</string>
+    <string name="select_custom_app_title">Wybierz aplikację niestandardową</string>
+    <string name="select_custom_activity_title">Wybierz aktywność niestandardową</string>
+    <string name="profile_applist_title">Aplikacje</string>
+    <string name="choose_action_title">Wybrać działanie</string>
+    <string name="action_entry_default_action">Ustawienia domyślne</string>
+    <string name="action_entry_select_app">Wybierz aplikację</string>
+    <string name="action_entry_custom_action">Wybierz akcję niestandardową</string>
+    <string name="hardware_keys_home_key_title">Przycisk Home</string>
+    <string name="hardware_keys_menu_key_title">Przycisk Menu</string>
+    <string name="hardware_keys_assist_key_title">Przycisk Szukaj</string>
+    <string name="hardware_keys_appswitch_key_title">Przycisk Przegląd</string>
+    <string name="hardware_keys_back_key_title">Przycisk powrotu</string>
+    <string name="hardware_keys_double_tap_summary">Ustaw działanie podwójnego dotknięcia</string>
+    <string name="hardware_keys_single_tap_summary">Ustaw działanie pojedynczego dotknięcia</string>
+    <string name="hardware_keys_long_press_summary">Ustaw działanie długiego naciśnięcia</string>
+    <string name="hardware_keys_single_tap_title">Akcja pojedynczego dotknięcia</string>
+    <string name="hardware_keys_long_press_title">Długie naciśnięcie działania</string>
+    <string name="hardware_keys_double_tap_title">Akcja dwukrotnego dotknięcia</string>
+    <string name="hardware_keys_disable_title">Wyłącz klawisze</string>
+    <string name="hardware_keys_title">Klucze sprzętowe</string>
 
     <!-- ANBI -->
-    <string name="anbi_title">Accidental touch</string>
-    <string name="anbi_summary">Prevent interaction with navigation buttons while the screen is being touched</string>
+    <string name="anbi_title">Przypadkowy dotyk</string>
+    <string name="anbi_summary">Zapobiegaj interakcji z przyciskami nawigacyjnymi, gdy ekran jest dotykany</string>
 
-    <string name="radio_info_title">Radio info</string>
+    <string name="radio_info_title">Informacje o sieci telekomunikacyjnej</string>
 
     <!-- Gaming mode -->
-    <string name="gaming_mode_title">Gaming Mode</string>
-    <string name="gaming_mode_summary">Customize gaming mode preferences</string>
-    <string name="gaming_mode_enable_title">Enable Gaming Mode</string>
-    <string name="gaming_mode_enable_summary">Master switch for Gaming Mode</string>
-    <string name="gaming_mode_app_picker_title">Automatically turn on for these apps</string>
-    <string name="add_gaming_mode_package_title">Add apps for Gaming mode</string>
-    <string name="add_gaming_mode_package_summary">Gaming mode will turn on automatically when these apps are opened and turn off when they are closed</string>
-    <string name="gaming_mode_headsup_title">Heads-up Notifications</string>
-    <string name="gaming_mode_headsup_allow">Allow all headsup notifications</string>
-    <string name="gaming_mode_headsup_dnc">Block all headsup notifications except calls &amp; alarms</string>
-    <string name="gaming_mode_headsup_clock">Block all headsup notifications except alarms</string>
-    <string name="gaming_mode_headsup_dialer">Block all headsup notifications except calls</string>
-    <string name="gaming_mode_headsup_stop">Block all headsup notifications</string>
-    <string name="gaming_mode_hardware_keys_title">Lock buttons</string>
-    <string name="gaming_mode_hardware_keys_summary">Disable hardware buttons when Gaming mode is turned on</string>
-    <string name="gaming_mode_brightness_title">Disable automatic brightness</string>
-    <string name="gaming_mode_brightness_summary">Lock screen brightness when Gaming mode is turned on</string>
-    <string name="gaming_mode_ringer_title">Ringer in gaming mode</string>
-    <string name="gaming_mode_ringer_off_title">Do not change</string>
-    <string name="gaming_mode_ringer_vibrate_title">Vibrate</string>
-    <string name="gaming_mode_ringer_dnd_title">Do Not Disturb</string>
-    <string name="gaming_mode_ringer_silent_title">Silent</string>
-    <string name="gaming_mode_notifications_title">Gaming mode indication</string>
-    <string name="gaming_mode_notifications_off_title">Disabled</string>
-    <string name="gaming_mode_notifications_notif_title">Show notification</string>
-    <string name="gaming_mode_notifications_toast_title">Show toasts</string>
-    <string name="gaming_mode_notifications_all_title">Show toasts and notification</string>
-    <string name="gaming_mode_dynamic_title">Dynamic mode</string>
-    <string name="gaming_mode_dynamic_summary">Try detecting and adding gaming apps automatically</string>
+    <string name="gaming_mode_title">Tryb gry</string>
+    <string name="gaming_mode_summary">Dostosuj preferencje w trybie gry</string>
+    <string name="gaming_mode_enable_title">Włącz tryb gry</string>
+    <string name="gaming_mode_enable_summary">Główny przełącznik trybu gry</string>
+    <string name="gaming_mode_app_picker_title">Automatycznie włącz dla tych aplikacji</string>
+    <string name="add_gaming_mode_package_title">Dodaj aplikacje do trybu gry</string>
+    <string name="add_gaming_mode_package_summary">Tryb gry włącza się automatycznie po otwarciu tych aplikacji i wyłącza się po ich zamknięciu</string>
+    <string name="gaming_mode_headsup_title">Powiadomienia heads-up</string>
+    <string name="gaming_mode_headsup_allow">Zezwalaj na wszystkie powiadomienia heads-up</string>
+    <string name="gaming_mode_headsup_dnc">Blokuj wszystkie powiadomienia heads-up z wyjątkiem połączeń &amp; alarmów</string>
+    <string name="gaming_mode_headsup_clock">Blokuj wszystkie powiadomienia heads-up z wyjątkiem alarmów</string>
+    <string name="gaming_mode_headsup_dialer">Blokuj wszystkie powiadomienia heads-up z wyjątkiem połączeń</string>
+    <string name="gaming_mode_headsup_stop">Blokuj wszystkie powiadomienia headsup</string>
+    <string name="gaming_mode_hardware_keys_title">Zablokuj przyciski</string>
+    <string name="gaming_mode_hardware_keys_summary">Wyłącz przyciski sprzętowe, gdy włączony jest tryb gry</string>
+    <string name="gaming_mode_brightness_title">Wyłącz automatyczną jasność</string>
+    <string name="gaming_mode_brightness_summary">Zablokuj jasność ekranu, gdy włączony jest tryb gry</string>
+    <string name="gaming_mode_ringer_title">Dzwonek w trybie gry</string>
+    <string name="gaming_mode_ringer_off_title">Nie zmieniaj</string>
+    <string name="gaming_mode_ringer_vibrate_title">Wibruj</string>
+    <string name="gaming_mode_ringer_dnd_title">Nie przeszkadzać</string>
+    <string name="gaming_mode_ringer_silent_title">Cichy</string>
+    <string name="gaming_mode_notifications_title">Wskaźnik trybu gry</string>
+    <string name="gaming_mode_notifications_off_title">Wyłączony</string>
+    <string name="gaming_mode_notifications_notif_title">Pokaż powiadomienie</string>
+    <string name="gaming_mode_notifications_toast_title">Pokaż powiadomienie typu "toast"</string>
+    <string name="gaming_mode_notifications_all_title">Pokaż powiadomienie typu "toast" i zwykłe powiadomienie</string>
+    <string name="gaming_mode_dynamic_title">Tryb dynamiczny</string>
+    <string name="gaming_mode_dynamic_summary">Spróbuj automatycznie wykrywać i dodawać aplikacje do gier</string>
 
     <!-- Global Actions -->
     <string name="powermenu_advanced_reboot_title">Advanced reboot</string>
