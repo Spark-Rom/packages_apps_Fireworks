@@ -642,41 +642,41 @@
     <string name="gaming_mode_dynamic_summary">Spróbuj automatycznie wykrywać i dodawać aplikacje do gier</string>
 
     <!-- Global Actions -->
-    <string name="powermenu_advanced_reboot_title">Advanced reboot</string>
-    <string name="powermenu_advanced_reboot_summary">Enables access to recovery and bootloader</string>
+    <string name="powermenu_advanced_reboot_title">Zaawansowane ponowne uruchamianie</string>
+    <string name="powermenu_advanced_reboot_summary">Umożliwia dostęp do recovery i bootloadera</string>
 
     <!-- Doze Brightness Config -->
-    <string name="doze_brightness_category">Doze Brightness Config</string>
-    <string name="doze_brightness_force_title">Force brightness values</string>
-    <string name="doze_brightness_force_summary">Use custom brightness values instead of screen brightness</string>
-    <string name="ambient_pulse_brightness_title">Ambient notification brightness</string>
-    <string name="ambient_pulse_brightness_summary">Set brightness to use when notifcations are shown</string>
-    <string name="ambient_doze_brightness_title">Ambient display brightness</string>
-    <string name="ambient_doze_brightness_summary">Set brightness to use during ambient display on</string>
+    <string name="doze_brightness_category">Konfiguracja jasności doze</string>
+    <string name="doze_brightness_force_title">Wymuś wartości jasności</string>
+    <string name="doze_brightness_force_summary">Użyj niestandardowych wartości jasności zamiast jasności ekranu</string>
+    <string name="ambient_pulse_brightness_title">Jasność powiadomień ambient</string>
+    <string name="ambient_pulse_brightness_summary">Ustaw jasność, która ma być używana, gdy wyświetlane są powiadomienia</string>
+    <string name="ambient_doze_brightness_title">Jasność wyświetlacza ambient</string>
+    <string name="ambient_doze_brightness_summary">Ustaw jasność, która ma być używana przy włączonym wyświetlaczu ambient</string>
 
     <!-- Themes customization -->
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
-    <string name="theme_customization_category">Theming</string>
+    <string name="theme_customization_category">Motywy</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize accent color. -->
-    <string name="theme_customization_accent_color_title">Accent color</string>
+    <string name="theme_customization_accent_color_title">Kolor akcentu</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
-    <string name="theme_customization_font_title">Headline / Body font</string>
+    <string name="theme_customization_font_title">Czcionka nagłówka/treści</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
-    <string name="theme_customization_icon_shape_title">Icon shape</string>
+    <string name="theme_customization_icon_shape_title">Kształt ikony</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
-    <string name="theme_customization_icon_pack_title">Icon pack</string>
-    <string name="theme_customization_dark_theme_title">Color bucket</string>
-    <string name="default_accent_color">Spark Yellow (default)</string>
-    <string name="default_font">Inter / Manrope (default)</string>
-    <string name="default_icon_pack">AOSP (default)</string>
-    <string name="default_icon_shape">Circle (default)</string>
+    <string name="theme_customization_icon_pack_title">Pakiet ikon</string>
+    <string name="theme_customization_dark_theme_title">Selektor koloru</string>
+    <string name="default_accent_color">Spark Yellow (domyślny)</string>
+    <string name="default_font">Inter / Manrope (domyślny)</string>
+    <string name="default_icon_pack">AOSP (domyślny)</string>
+    <string name="default_icon_shape">Circle (domyślny)</string>
 
     <!-- Accent color picker -->
-    <string name="accent_color_title">Accent color picker</string>
+    <string name="accent_color_title">Selektor koloru akcentu</string>
 
     <!-- QS tile styles -->
-    <string name="qs_tile_style_title">QS tile style</string>
-    <string name="qstile_default">Default</string>
+    <string name="qs_tile_style_title">Styl ikon QS</string>
+    <string name="qstile_default">Domyślny</string>
     <string name="qstile_circle_trim">Circle with trim</string>
     <string name="qstile_dual_tone_circle">Dual-toned circle</string>
     <string name="qstile_squircle_trim">Squircle with trim</string>
@@ -696,12 +696,12 @@
     <string name="qstile_triangles">Triangle</string>
 
     <!-- Volume Panel Plugin -->
-    <string name="volume_panel">Volume panel style</string>
-    <string name="volume_panel_stock">Default</string>
+    <string name="volume_panel">Styl panelu głośności</string>
+    <string name="volume_panel_stock">Domyślny</string>
     <string name="volume_panel_aosp">AOSP Expanded</string>
-    <string name="volume_panel_compact">Compact</string>
+    <string name="volume_panel_compact">Kompaktowy</string>
     <string name="volume_panel_oreo">Oreo</string>
-    <string name="volume_panel_tiled">Tiled</string>
+    <string name="volume_panel_tiled">Kafelkowy</string>
     <string name="volume_panel_miui">MIUI</string>
     <string name="volume_panel_oos">OOS</string>
     <string name="volume_panel_p404">P404</string>
@@ -719,70 +719,70 @@
     <string name="volume_panel_ssos_val" translatable="false">co.potatoproject.plugin.volume.ssos</string>
 
     <!-- Allow fake signature -->
-    <string name="allow_signature_fake">Allow signature spoofing</string>
-    <string name="allow_signature_fake_summary">Allow apps to bypass security systems by pretending to be a different app.</string>
+    <string name="allow_signature_fake">Zezwalaj na fałszowanie podpisu</string>
+    <string name="allow_signature_fake_summary">Zezwalaj aplikacjom na omijanie systemów bezpieczeństwa podszywając się pod inną aplikację</string>
 
     <!-- Show Statusbar on Lockscreen -->
-    <string name="lockscreen_status_bar_title">Status bar</string>
-    <string name="lockscreen_status_bar_summary">Display status bar on the lockscreen</string>
+    <string name="lockscreen_status_bar_title">Pasek stanu</string>
+    <string name="lockscreen_status_bar_summary">Wyświetl pasek stanu na ekranie blokady</string>
 
     <!-- Notification Vibration -->
-    <string name="vibrate_on_notifications_title">Vibrate for notifications</string>
-    <string name="vibrate_on_notifications_summary">Toogle for disable vibrate notification</string>
+    <string name="vibrate_on_notifications_title">Wibracje przy powiadomieniach</string>
+    <string name="vibrate_on_notifications_summary">Przełącz, aby wyłączyć powiadomienia wibracyjne</string>
 
     <!-- Lock screen media blur -->
-    <string name="lockscreen_media_blur_title">Media artwork blur level</string>
+    <string name="lockscreen_media_blur_title">Poziom rozmycia grafiki multimedii</string>
 
     <!-- Vpn upstreams  -->
-    <string name="allow_vpn_upstreams">Allow clients to use VPNs</string>
-    <string name="allow_vpn_upstreams_summary">Permit hotspot/tethering clients to use this device\'s VPN connection</string>
+    <string name="allow_vpn_upstreams">Zezwalaj klientom na korzystanie z VPN</string>
+    <string name="allow_vpn_upstreams_summary">Zezwalaj klientom hotspot/tethering na używanie połączenia VPN tego urządzenia</string>
 
     <!-- Sensor block per-package -->
-    <string name="sensor_block_title">Sensor block per-package</string>
-    <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery</string>
-    <string name="sensor_block_app_picker_title">Block sensors for these apps</string>
-    <string name="add_sensor_block_package_title">Add apps for Sensor block</string>
-    <string name="add_sensor_block_package_summary">Significant motion, accelerometer, linear acceleration sensors will be blocked for these apps</string>
+    <string name="sensor_block_title">Blokuj sensory telefonu dla poszczególnych aplikacji</string>
+    <string name="sensor_block_summary">Zablokuj dostęp do niektórych czujników niektórym aplikacjom, aby oszczędzać baterię</string>
+    <string name="sensor_block_app_picker_title">Zablokuj czujniki dla tych aplikacji</string>
+    <string name="add_sensor_block_package_title">Dodaj aplikacje do blokowania</string>
+    <string name="add_sensor_block_package_summary">Znaczny ruch, akcelerometr, czujniki przyspieszenia liniowego będą blokowane dla tych aplikacji</string>
 
     <!-- gvisual mod -->
     <string name="gvisual_title">G-Visual Mod</string>
-    <string name="gvisual_summary">Various UI customizations</string>
-    <string name="rounded_ui_title">Rounded corner</string>
-    <string name="rounded_ui_dialog_title">Select rounded corner model</string>
-    <string name="rounded_style_default">Default</string>
-    <string name="rounded_style_rectangle">Rectangle</string>
-    <string name="rounded_style_large">Large</string>
-    <string name="rounded_style_medium">Medium</string>
-    <string name="statusbar_height_title">Statusbar height</string>
-    <string name="statusbar_height_dialog_title">Select statusbar height model</string>
-    <string name="sb_height_default">Small</string>
-    <string name="sb_height_medium">Medium</string>
-    <string name="sb_height_large">Large</string>
-    <string name="sb_height_extralarge">Extra Large</string>
-    <string name="navbar_color_title">Navbar colors</string>
-    <string name="navbar_color_dialog_title">Select color</string>
-    <string name="navbar_default">Default</string>
-    <string name="navbar_orchid">Orchid</string>
-    <string name="navbar_red">Red</string>
-    <string name="navbar_purp">Purple</string>
-    <string name="navbar_blue">Blue</string>
-    <string name="navbar_rose">Rose</string>
-    <string name="header_default">Default</string>
-    <string name="header_large">Large</string>
-    <string name="header_xlarge">Extra Large</string>
-    <string name="header_title">Header sizes</string>
-    <string name="header_dialog_title">Select size</string>
+    <string name="gvisual_summary">Różne dostosowania interfejsu użytkownika</string>
+    <string name="rounded_ui_title">Zaokrąglone naróżniki w systemie</string>
+    <string name="rounded_ui_dialog_title">Wybierz tryb zaokrąglonych narożników</string>
+    <string name="rounded_style_default">Domyślny</string>
+    <string name="rounded_style_rectangle">Prostokąt</string>
+    <string name="rounded_style_large">Duże zaokrąglenie</string>
+    <string name="rounded_style_medium">Średnie zaokrąglenie</string>
+    <string name="statusbar_height_title">Wysokość paska stanu</string>
+    <string name="statusbar_height_dialog_title">Wybierz wysokość paska stanu</string>
+    <string name="sb_height_default">Mała</string>
+    <string name="sb_height_medium">Srednia</string>
+    <string name="sb_height_large">Duża</string>
+    <string name="sb_height_extralarge">Bardzo duża</string>
+    <string name="navbar_color_title">Kolory paska nawigacyjnego</string>
+    <string name="navbar_color_dialog_title">Wybierz kolor</string>
+    <string name="navbar_default">Domyślny</string>
+    <string name="navbar_orchid">Orchidea</string>
+    <string name="navbar_red">Czerwony</string>
+    <string name="navbar_purp">Fioletowy</string>
+    <string name="navbar_blue">Niebieski</string>
+    <string name="navbar_rose">Różany</string>
+    <string name="header_default">Domyślny</string>
+    <string name="header_large">Duży</string>
+    <string name="header_xlarge">Bardzo duży</string>
+    <string name="header_title">Wielkość nagłowka QS</string>
+    <string name="header_dialog_title">Wybierz wielkość nagłówka QS</string>
 
     <!-- AOD Schedule -->
-    <string name="always_on_display_schedule_title">Always on display schedule</string>
-    <string name="always_on_display_schedule_sunset">Sunset</string>
-    <string name="always_on_display_schedule_sunrise">Sunrise</string>
-    <string name="always_on_display_schedule_mixed_sunset">Turns on from sunset till a time</string>
-    <string name="always_on_display_schedule_mixed_sunrise">Turns on from a time till sunrise</string>
+    <string name="always_on_display_schedule_title">Harmonogram AOD</string>
+    <string name="always_on_display_schedule_sunset">Zachód słońca</string>
+    <string name="always_on_display_schedule_sunrise">Wschód słońca</string>
+    <string name="always_on_display_schedule_mixed_sunset">Włącza się od zachodu słońca do czasu</string>
+    <string name="always_on_display_schedule_mixed_sunrise">Włącza się od czasu do wschodu słońca</string>
 
     <!-- Switch styles -->
-    <string name="switch_style_title">Switch style</string>
-    <string name="switch_default">Default</string>
+    <string name="switch_style_title">Zmień styl</string>
+    <string name="switch_default">Domyślny</string>
     <string name="switch_contained">Contained</string>
     <string name="switch_telegram">Telegram</string>
     <string name="switch_md2">Material Design 2</string>
@@ -792,201 +792,201 @@
     <string name="switch_android_s">Android S</string>
 
     <!-- Global Actions -->
-    <string name="global_actions_users_choice_title">Optional user action</string>
-    <string name="global_actions_flashlight_title">Flashlight</string>
-    <string name="global_actions_screenshot_title">Screenshot</string>
-    <string name="global_actions_screenrecord_title">Screenrecord</string>
-    <string name="global_actions_none_title">None</string>
-    <string name="global_actions_onthego_title">On The Go</string>
+    <string name="global_actions_users_choice_title">Opcjonalne działania użytkownika</string>
+    <string name="global_actions_flashlight_title">Latarka</string>
+    <string name="global_actions_screenshot_title">Zrzut ekranu</string>
+    <string name="global_actions_screenrecord_title">Nagrywanie ekranu</string>
+    <string name="global_actions_none_title">Brak</string>
+    <string name="global_actions_onthego_title">On The Go (W drodze)</string>
 
     <!-- QS themes -->
-    <string name="qs_panel_colors_title">Quick settings colors</string>
-    <string name="qs_panel_bg_use_fw_title">Framework defaults</string>
-    <string name="qs_panel_bg_use_fw_summary">Disable QS and scrim color customizations</string>
-    <string name="qs_panel_bg_color_title">Background color</string>
-    <string name="qs_panel_bg_color_summary">Change color of your QS panel</string>
-    <string name="qs_panel_bg_alpha_title">Background alpha</string>
-    <string name="qs_panel_bg_disco_title">QS Tile Disco</string>
-    <string name="qs_panel_bg_disco_summary">Make your QS Tiles colorful!</string>
-    <string name="qs_bg_use_new_tint">Tint QS tiles</string>
-    <string name="qs_bg_use_new_tint_summary">Choose the QS Tint Style</string>
+    <string name="qs_panel_colors_title">Kolory szybkich ustawień</string>
+    <string name="qs_panel_bg_use_fw_title">Domyślne ustawienia</string>
+    <string name="qs_panel_bg_use_fw_summary">Wyłącz dostosowywanie szybkich ustawień</string>
+    <string name="qs_panel_bg_color_title">Kolor tła</string>
+    <string name="qs_panel_bg_color_summary">Zmień kolor swojego panelu szybkich ustawień</string>
+    <string name="qs_panel_bg_alpha_title">Przezroczystość tła</string>
+    <string name="qs_panel_bg_disco_title">Kolorowe ikony QS</string>
+    <string name="qs_panel_bg_disco_summary">Spraw, aby Twoje ikony QS były kolorowe!</string>
+    <string name="qs_bg_use_new_tint">Odcień ikon QS</string>
+    <string name="qs_bg_use_new_tint_summary">Wybierz styl ikon QS</string>
 
     <!-- Notification background opacity -->
-    <string name="notification_alpha_title">Notification background alpha (experimental)</string>
+    <string name="notification_alpha_title">Przezroczystość tła powiadomień (eksperymentalnie)</string>
 
     <!-- Power menu background opacity -->
-    <string name="power_menu_alpha_title">Power menu opacity</string>
+    <string name="power_menu_alpha_title">Przezroczystość menu zasilania</string>
 
-    <string name="qs_tint_off">Default</string>
-    <string name="qs_tint_accent">Accent Color</string>
+    <string name="qs_tint_off">Domyślny</string>
+    <string name="qs_tint_accent">Kolor akcentu</string>
     <string name="qs_tint_oos">OxygenOS 11</string>
     <string name="qs_tint_twelve">Android 12</string>
-    <string name="sysui_colors_active_title">Colored SystemUI</string>
-    <string name="sysui_colors_active_summary">Wallpaper colored scrims and QS</string>
+    <string name="sysui_colors_active_title">Kolorowe SystemUI</string>
+    <string name="sysui_colors_active_summary">Pobieranie kolorów z tapety dla elementów systemu</string>
 
     <!-- QS media player -->
-    <string name="qs_media_player_title">Media player</string>
-    <string name="qs_media_player_summary_off">Show media player in QS </string>
-    <string name="qs_media_player_summary_on">Show media player as a notification</string>
+    <string name="qs_media_player_title">Odtwarzacz multimedialny</string>
+    <string name="qs_media_player_summary_off">Pokaż odtwarzacz multimedialny w QS</string>
+    <string name="qs_media_player_summary_on">Pokaż odtwarzacz multimedialny jako powiadomienie</string>
 
     <!-- Artwork Media background option -->
-    <string name="artwork_media_background_title">Artwork media background</string>
-    <string name="artwork_media_background_summary">Set media artwork as notification media background</string>
+    <string name="artwork_media_background_title">Tło okładki mediów</string>
+    <string name="artwork_media_background_summary">Ustawia tło okładki mediów jako tło powiadomienia</string>
 
     <!-- USB configuration -->
-    <string name="usb_default_config_title">USB configuration</string>
-    <string name="usb_default_config_summary">Choose the default behavior when connected to a device via USB</string>
+    <string name="usb_default_config_title">Konfiguracja USB</string>
+    <string name="usb_default_config_summary">Wybierz domyślne zachowanie po podłączeniu do urządzenia przez USB</string>
 
     <!-- Don't touch headsup -->
-    <string name="dont_touch_headsup_title">Don\'t touch heads-up</string>
-    <string name="dont_touch_headsup_summary">Avoid launching app after touching the heads-up notification</string>
+    <string name="dont_touch_headsup_title">Nie dotykaj heads-up</string>
+    <string name="dont_touch_headsup_summary">Unikaj uruchamiania aplikacji po dotknięciu powiadomienia heads-up</string>
 
     <!-- Lockscreen notif count -->
-    <string name="lockscreen_maxnotif_title">Lockscreen notification count</string>
-    <string name="lockscreen_maxnotif_sumary">Enable adjustment of max lockscreen notifications</string>
-    <string name="lockscreen_maxnotif_config">Max lockscreen notifications</string>
+    <string name="lockscreen_maxnotif_title">Liczba powiadomień na ekranie blokady</string>
+    <string name="lockscreen_maxnotif_sumary">Włącz dostosowanie maksymalnej liczby powiadomień na ekranie blokady</string>
+    <string name="lockscreen_maxnotif_config">Maksymalna liczba powiadomień na ekranie blokady</string>
 
 
     <!-- Lock FP icon -->
-    <string name="lock_fp_icon_title">Fingerprint icon on lockscreen</string>
-    <string name="lock_fp_icon_summary">Display a fingerprint icon under the clock date when it is possible to unlock using fingerprint</string>
-    <string name="lock_fp_icon_fod_summary">This feature is unsupported on FOD-equipped devices</string>
-    <string name="lock_fp_icon_no_fp_summary">This feature is unsupported on devices without a fingerprint sensor</string>
-    <string name="lock_fp_icon_rart_user_summary">This feature is unsupported on devices without enrolled fingerprints</string>
-    <string name="unsupported_feature_summary">This feature is unsupported by your device</string>
+    <string name="lock_fp_icon_title">Ikona odcisku palca na ekranie blokady</string>
+    <string name="lock_fp_icon_summary">Wyświetlaj ikonę odcisku palca pod datą zegara, gdy możliwe jest odblokowanie za pomocą odcisku palca</string>
+    <string name="lock_fp_icon_fod_summary">Ta funkcja nie jest obsługiwana na urządzeniach wyposażonych w FOD</string>
+    <string name="lock_fp_icon_no_fp_summary">Ta funkcja nie jest obsługiwana na urządzeniach bez czujnika odcisków palców</string>
+    <string name="lock_fp_icon_rart_user_summary">Ta funkcja nie jest obsługiwana na urządzeniach bez zarejestrowanych odcisków palców</string>
+    <string name="unsupported_feature_summary">Ta funkcja nie jest obsługiwana przez Twoje urządzenie</string>
  
     <!-- Screenshot compression  -->
-    <string name="screenshot_compression_title">Screenshot quality</string>
-    <string name="screenshot_compression_summary">Compress screenshot size with loss in image quality</string>
+    <string name="screenshot_compression_title">Jakość zrzutu ekranu</string>
+    <string name="screenshot_compression_summary">Kompresuj rozmiar zrzutu ekranu przez utratę jakości obrazu</string>
 
     <!-- QS statusbar background -->
-    <string name="qs_header_background_title">Statusbar background</string>
-    <string name="qs_header_background_black">Black</string>
-    <string name="qs_header_background_transparent">Transparent</string>
+    <string name="qs_header_background_title">Tło nagłówka QS</string>
+    <string name="qs_header_background_black">Czarny</string>
+    <string name="qs_header_background_transparent">Przezroczysty</string>
 
-    <string name="statusbar_icons_style">Colored Statusbar Icons</string>
-    <string name="statusbar_icons_style_summary">Choose the style of your statusbar icons (requires SystemUI restart)</string>
-    <string name="header_icons_style">Colored Header Icons</string>
-    <string name="header_icons_style_summary">Choose the style of your notification headers icons (requires SystemUI restart)</string>
+    <string name="statusbar_icons_style">Kolorowe ikony paska stanu</string>
+    <string name="statusbar_icons_style_summary">Wybierz styl ikon na pasku stanu (wymaga ponownego uruchomienia interfejsu systemu)</string>
+    <string name="header_icons_style">Kolorowe ikony nagłówków</string>
+    <string name="header_icons_style_summary">Wybierz styl ikon nagłówków powiadomień (wymaga ponownego uruchomienia SystemUI)</string>
 
     <!-- AOD Icons in Lock screen -->
-    <string name="lock_aod_icons_title">AOD icons</string>
-    <string name="ambient_icons_lockscreen_title">AOD icons on lock screen</string>
-    <string name="ambient_icons_lockscreen_summary">Replace notifications with AOD icons</string>
-    <string name="ambient_icons_size_title">AOD icons size</string>
-    <string name="ambient_icons_color_title">AOD icons color</string>
+    <string name="lock_aod_icons_title">Ikony AOD</string>
+    <string name="ambient_icons_lockscreen_title">Ikony AOD na ekranie blokady</string>
+    <string name="ambient_icons_lockscreen_summary">Zastąp powiadomienia ikonami AOD</string>
+    <string name="ambient_icons_size_title">Rozmiar ikon AOD</string>
+    <string name="ambient_icons_color_title">Kolor ikon AOD</string>
 
     <!-- Ticker -->
     <string name="status_bar_ticker_title">Ticker</string>
     <string name="status_bar_show_ticker_title">Ticker</string>
-    <string name="status_bar_show_ticker_summary">Notification preview in status bar</string>
-    <string name="ticker_animation_mode_title">Ticker animation</string>
-    <string name="ticker_animation_mode_alpha_fade">Fade</string>
-    <string name="ticker_animation_mode_scroll">Scroll</string>
-    <string name="ticker_tick_duration_title">Ticker duration</string>
+    <string name="status_bar_show_ticker_summary">Podgląd powiadomień na pasku stanu</string>
+    <string name="ticker_animation_mode_title">Animacja powiadomienia Ticker</string>
+    <string name="ticker_animation_mode_alpha_fade">Zanikająca</string>
+    <string name="ticker_animation_mode_scroll">Przewijanie</string>
+    <string name="ticker_tick_duration_title">Czas trwania animacji ticker</string>
 
     <!-- Heads up timeout -->
-    <string name="heads_up_footer">Time out and snooze features may require a SystemUI restart.</string>
-    <string name="heads_up_time_out_title">Time out</string>
-    <string name="heads_up_time_out_summary">Peeking notifications will show for <xliff:g id="number">%d</xliff:g> seconds</string>
-    <string name="heads_up_time_out_2sec">2 seconds</string>
-    <string name="heads_up_time_out_4sec">4 seconds</string>
-    <string name="heads_up_time_out_5sec">5 seconds</string>
-    <string name="heads_up_time_out_6sec">6 seconds</string>
-    <string name="heads_up_time_out_8sec">8 seconds</string>
-    <string name="heads_up_time_out_10sec">10 seconds</string>
+    <string name="heads_up_footer">Funkcje przekroczenia limitu czasu i drzemki mogą wymagać ponownego uruchomienia interfejsu SystemUI</string>
+    <string name="heads_up_time_out_title">Czas wyświetlania heads-up</string>
+    <string name="heads_up_time_out_summary">Powiadomienia podglądu będą wyświetlane przez <xliff:g id="number">%d</xliff:g> sekund</string>
+    <string name="heads_up_time_out_2sec">2 sekundy</string>
+    <string name="heads_up_time_out_4sec">4 sekundy</string>
+    <string name="heads_up_time_out_5sec">5 sekund</string>
+    <string name="heads_up_time_out_6sec">6 sekund</string>
+    <string name="heads_up_time_out_8sec">8 sekund</string>
+    <string name="heads_up_time_out_10sec">10 sekund</string>
 
     <!-- Heads up snooze -->
-    <string name="heads_up_snooze_title">Snooze timer</string>
-    <string name="heads_up_snooze_summary_one_minute">Swiping up on peeking notifications will snooze heads-up from that application for 1 minute</string>
-    <string name="heads_up_snooze_summary">Swiping up on peeking notifications will snooze heads-up from that application for <xliff:g id="number">%d</xliff:g> minutes</string>
+    <string name="heads_up_snooze_title">Czas odkładania heads-up</string>
+    <string name="heads_up_snooze_summary_one_minute">Przesuwanie w górę powiadominia spowoduje uśpienie powiadomienia heads-up z tej aplikacji na 1 minutę</string>
+    <string name="heads_up_snooze_summary">Przesuwanie w górę powiadominia spowoduje uśpienie powiadomienia heads-up z tej aplikacji <xliff:g id="number">%d</xliff:g> minut</string>
     <string name="heads_up_snooze_disabled_summary">Snooze timer is disabled</string>
-    <string name="heads_up_snooze_1min">1 minute</string>
-    <string name="heads_up_snooze_5min">5 minutes</string>
-    <string name="heads_up_snooze_10min">10 minutes</string>
-    <string name="heads_up_snooze_15min">15 minutes</string>
-    <string name="heads_up_snooze_20min">20 minutes</string>
+    <string name="heads_up_snooze_1min">1 minuta</string>
+    <string name="heads_up_snooze_5min">5 minut</string>
+    <string name="heads_up_snooze_10min">10 minut</string>
+    <string name="heads_up_snooze_15min">15 minut</string>
+    <string name="heads_up_snooze_20min">20 minut</string>
 
     <!-- Per-app volume -->
-    <string name="show_app_volume_title">Show app volume</string>
-    <string name="show_app_volume_summary">Show app volume in volume panel</string>
+    <string name="show_app_volume_title">Pokaż głośność aplikacji</string>
+    <string name="show_app_volume_summary">Pokaż głośność aplikacji w panelu głośności</string>
 
     <!-- Lockscreen blur -->
-    <string name="lockscreen_blur_title">Background blur</string>
-    <string name="lockscreen_blur_summary">Blur lock screen background</string>
-    <string name="lockscreen_blur_disabled">Lockscreen Blur cant be enabled cause your lockscreen wallpaper doesnt match your homescreen one. Or your device doesnt support Blur.</string>
+    <string name="lockscreen_blur_title">Rozmycie tła</string>
+    <string name="lockscreen_blur_summary">Rozmycie tła ekranu blokady</string>
+    <string name="lockscreen_blur_disabled">Nie można włączyć rozmycia ekranu blokady, ponieważ tapeta na ekranie blokady nie pasuje do tapety na ekranie głównym lub Twoje urządzenie nie obsługuje rozmycia</string>
 
     <!-- Display cutout options -->
-    <string name="cutout_main">Display Cutout</string>
-    <string name="cutout_main_summary">They really cut corners with this one</string>
-    <string name="display_cutout_style_title">Cutout style</string>
-    <string name="display_cutout_style_normal">Normal</string>
-    <string name="display_cutout_style_immerse">Immerse</string>
-    <string name="display_cutout_style_hide">Hide</string>
-    <string name="stock_statusbar_in_hide">Stock statusbar height</string>
-    <string name="stock_statusbar_in_hide_summary">Use default statusbar height in Hide</string>
+    <string name="cutout_main">Wycięcie w ekranie</string>
+    <string name="cutout_main_summary">Wybierz jedno z wycięć w ekranie</string>
+    <string name="display_cutout_style_title">Styl wycięcia</string>
+    <string name="display_cutout_style_normal">Normalny</string>
+    <string name="display_cutout_style_immerse">Immersyjny</string>
+    <string name="display_cutout_style_hide">Ukryty</string>
+    <string name="stock_statusbar_in_hide">Domyślna wysokość paska stanu</string>
+    <string name="stock_statusbar_in_hide_summary">Użyj domyślnej wysokości paska stanu kiedy ukryty</string>
 
     <!-- Rounded corners -->
-    <string name="corners_category">Corners</string>
-    <string name="corner_radius">Rounded corner radius</string>
-    <string name="content_padding">Corner content padding</string>
-    <string name="corner_fwvals">Use framework values</string>
-    <string name="corner_fwvals_summary">Useful if the device actually has rounded corners</string>
+    <string name="corners_category">Narożniki</string>
+    <string name="corner_radius">Promień zaokrąglenia narożnika</string>
+    <string name="content_padding">Odstęp zawartości naróżnika</string>
+    <string name="corner_fwvals">Użyj domyślnych wartości</string>
+    <string name="corner_fwvals_summary">Przydatne, jeśli urządzenie ma zaokrąglone rogi</string>
 
     <!-- Notch: Full screen apps -->
-    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
-    <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
-    <string name="display_cutout_force_fullscreen_restart_app">Please restart the application to apply the changes.</string>
-    <string name="cutout_force_fullscreen_no_apps">No apps</string>  
+    <string name="display_cutout_force_fullscreen_title">Aplikacje pełnoekranowe</string>
+    <string name="display_cutout_force_fullscreen_summary">Wymuś aplikacje, aby ignorowały notch'a</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Uruchom ponownie aplikację, aby zastosować zmiany</string>
+    <string name="cutout_force_fullscreen_no_apps">Brak aplikacji</string>  
 
     <!-- Screen state service -->
-    <string name="battery_saving">Battery saving</string>
-    <string name="screen_state_toggles_title">Suspend actions</string>
-    <string name="screen_state_toggles_summary">Control how the device network and gps should behave when the screen is on/off</string>
-    <string name="screen_state_toggles_enable_title">Enable</string>
-    <string name="screen_state_toggles_enable_summary">Actions executed when the screen is turned off</string>
-    <string name="screen_state_toggles_mobile_title">Mobile network</string>
-    <string name="screen_state_toggles_location_title">Location</string>
-    <string name="screen_state_toggles_twog">Switch to 2G</string>
-    <string name="screen_state_toggles_twog_summary">Network mode will be switched to 2G on screen off</string>
-    <string name="screen_state_toggles_gps">Disable GPS</string>
-    <string name="screen_state_toggles_gps_summary">GPS based location service will be disabled on screen off</string>
-    <string name="screen_state_toggles_mobile_data">Disable mobile data</string> 
-    <string name="screen_state_toggles_mobile_data_summary">Mobile data will be disabled on screen off</string>
-    <string name="screen_state_off_delay_title">Screen-off actions delay</string>
-    <string name="screen_state_on_delay_title">Screen-on actions delay</string>
-    <string name="screen_state_toggles_threeg">Switch to 3G</string>
-    <string name="screen_state_toggles_threeg_summary">Network mode will be switched to 3G on screen off</string>
+    <string name="battery_saving">Oszczędzanie baterii</string>
+    <string name="screen_state_toggles_title">Akcje po uśpieniu ekranu</string>
+    <string name="screen_state_toggles_summary">Kontroluj, jak sieć urządzenia i GPS powinny zachowywać się, gdy ekran jest włączony/wyłączony</string>
+    <string name="screen_state_toggles_enable_title">Włącz</string>
+    <string name="screen_state_toggles_enable_summary">Czynności wykonywane po wyłączeniu ekranu</string>
+    <string name="screen_state_toggles_mobile_title">Sieć komórkowa</string>
+    <string name="screen_state_toggles_location_title">Lokalizacja</string>
+    <string name="screen_state_toggles_twog">Przełącz na 2G</string>
+    <string name="screen_state_toggles_twog_summary">Tryb sieci zostanie przełączony na 2G przy wyłączonym ekranie</string>
+    <string name="screen_state_toggles_gps">Wyłącz GPS</string>
+    <string name="screen_state_toggles_gps_summary">Usługa lokalizacji oparta na GPS zostanie wyłączona na ekranie wyłączonym</string>
+    <string name="screen_state_toggles_mobile_data">Wyłącz komórkową transmisję danych</string> 
+    <string name="screen_state_toggles_mobile_data_summary">Dane mobilne zostaną wyłączone na ekranie wyłączonym</string>
+    <string name="screen_state_off_delay_title">Opóźnienie działań przy wyłączonym ekranie</string>
+    <string name="screen_state_on_delay_title">Opóźnienie działań przy włączonym ekranie</string>
+    <string name="screen_state_toggles_threeg">Przełącz na 3G</string>
+    <string name="screen_state_toggles_threeg_summary">Tryb sieci zostanie przełączony na 3G przy wyłączonym ekranie</string>
 
     <!-- Custom settings dashboard icons -->
-    <string name="settings_dashboard_icons_title">Settings dashboard icons</string>
-    <string name="settings_dashboard_icons_default">Default</string>
+    <string name="settings_dashboard_icons_title">Ikony głównych ustawień</string>
+    <string name="settings_dashboard_icons_default">Domyślne</string>
     <string name="settings_dashboard_icons_oos">Oxygen OS (A11)</string>
     <string name="settings_dashboard_icons_oos2">Oxygen OS (A10)</string>
-    <string name="settings_dashboard_icons_stylish">Colorful</string>
+    <string name="settings_dashboard_icons_stylish">Kolorowe</string>
 
     <!-- Custom statusbar paddings -->
-    <string name="statusbar_custom_title">Statusbar</string>
-    <string name="custom_statusbar_padding_start">Padding Left</string>
-    <string name="custom_statusbar_padding_end">Padding Right</string>
+    <string name="statusbar_custom_title">Pasek stanu</string>
+    <string name="custom_statusbar_padding_start">Odstęp z lewej</string>
+    <string name="custom_statusbar_padding_end">Odstęp z prawej</string>
 
     <!-- QS DataUsage Toggle -->
-    <string name="qs_datausage_title">Data usage in QS Header</string>
-    <string name="qs_datausage_disabled">Disabled</string>
-    <string name="qs_datausage_daily">Daily usage</string>
-    <string name="qs_datausage_monthly">Monthly usage</string>
+    <string name="qs_datausage_title">Wykorzystanie danych w nagłówku QS</string>
+    <string name="qs_datausage_disabled">Wyłączone</string>
+    <string name="qs_datausage_daily">Dzienne zużycie</string>
+    <string name="qs_datausage_monthly">Miesięczne zużycie</string>
 
     <!-- Qs Clock -->
-    <string name="oos_qsclock">Qs clock</string>
-    <string name="oos_qsclock_summary">Display an oos like clock on qs</string>
+    <string name="oos_qsclock">Zegar w szybkich ustawieniach (QS)</string>
+    <string name="oos_qsclock_summary">Wyświetlaj podobny do OOS zegar w QS</string>
 
-    <string name="active_edge_app_select_title">Select app</string>
-    <string name="active_edge_activity_select_title">Select activity</string>
+    <string name="active_edge_app_select_title">Wybierz aplikację</string>
+    <string name="active_edge_activity_select_title">Wybierz aktywność</string>
 
     <!-- Navbar Picker -->
-    <string name="theme_navbar_picker_title">Navbar style</string>
-    <string name="theme_navbar_picker_summary">Select navbar style</string>
-    <string name="theme_navbar_picker_default">Default</string>
+    <string name="theme_navbar_picker_title">Styl paska nawigacyjnego</string>
+    <string name="theme_navbar_picker_summary">Wybierz styl paska nawigacyjnego</string>
+    <string name="theme_navbar_picker_default">Domyślny</string>
     <string name="theme_navbar_picker_oneplus">OnePlus</string>
     <string name="theme_navbar_picker_oneui">One UI</string>
     <string name="theme_navbar_picker_tecno">Tecno Camon</string>
@@ -994,92 +994,92 @@
     <string name="theme_navbar_picker_android">Android</string>
     <string name="theme_navbar_picker_moto">Moto</string>
     <string name="theme_navbar_picker_nexus">Nexus</string>
-    <string name="theme_navbar_picker_old">Old</string>
+    <string name="theme_navbar_picker_old">Stary</string>
     <string name="theme_navbar_picker_sammy">Samsung</string>
 
     <!-- Custom Signal bar icons -->
-    <string name="custom_signal_bar_title">Signal icons</string>
+    <string name="custom_signal_bar_title">Ikony sygnału</string>
 
     <!-- Custom Wi-Fi bar icons -->
-    <string name="custom_wifi_bar_title">Wi-Fi icon</string>
+    <string name="custom_wifi_bar_title">Ikona Wi-Fi</string>
 
     <!-- Notification count -->
     <string name="status_bar_notif_count_title">Show notifications count</string>
-    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+    <string name="status_bar_notif_count_summary">Wyświetl liczbę oczekujących powiadomień</string>
 
-    <string name="custom_fod_icon_png_explainer">You can download your own custom FOD icon PNGs from Telegram channels such as FODicons and OP_fps. Use a local gallery and not online services such as Google Photos to pick FOD icons.</string>
+    <string name="custom_fod_icon_png_explainer">Możesz pobrać własne niestandardowe pliki PNG ikony FOD z kanałów Telegram, takich jak FODicons i OP_fps. Do wybierania ikon FOD używaj lokalnej galerii, a nie usług internetowych, takich jak Zdjęcia Google</string>
     <!-- FOD icon picker -->
-    <string name="custom_fod_icon_picker_title">Custom Fingerprint icon</string>
+    <string name="custom_fod_icon_picker_title">Niestandardowa ikona odcisku palca</string>
 
-    <string name="media_player_picker">Select the media player Style you like</string>
-    <string name="media_player_androids">Android S Media Player</string>
-    <string name="media_player_compact">Compact Media Player</string>
+    <string name="media_player_picker">Wybierz styl odtwarzacza multimedialnego, który Ci się podoba</string>
+    <string name="media_player_androids">Styl Android S</string>
+    <string name="media_player_compact">Styl kompaktowy</string>
 
-    <string name="use_wall_accent_string">Wallpaper based accent</string>
-    <string name="use_wall_accent_summary">(BETA) Auto sets an accent color based on your wallpaper</string>
+    <string name="use_wall_accent_string">Akcent oparty na tapecie</string>
+    <string name="use_wall_accent_summary">(BETA) Automatycznie ustawia kolor akcentu na podstawie tapety</string>
 
     <!-- Auto Accent Picker -->
-    <string name="auto_accent_picker_title">Accent generation algorithm</string>
-    <string name="auto_accent_picker_vibrant">Vibrant</string>
-    <string name="auto_accent_picker_vibrant_light">Vibrant Light</string>
-    <string name="auto_accent_picker_dominant">Dominant</string>
-    <string name="auto_accent_picker_dominant_bright">Dominant Bright</string>
-    <string name="auto_accent_picker_avg">Average</string>
+    <string name="auto_accent_picker_title">Algorytm generowania akcentów</string>
+    <string name="auto_accent_picker_vibrant">Żywy</string>
+    <string name="auto_accent_picker_vibrant_light">Żywy jasny</string>
+    <string name="auto_accent_picker_dominant">Dominujący</string>
+    <string name="auto_accent_picker_dominant_bright">Dominujący jasny</string>
+    <string name="auto_accent_picker_avg">Pośredni</string>
 
     <!-- Slider Styles -->
-    <string name="slider_styles_title">Change Brightness Slider</string>
-    <string name="slider_default">Default</string>
+    <string name="slider_styles_title">Suwak zmiany jasności</string>
+    <string name="slider_default">Domyślny</string>
     <string name="slider_oos">OOS</string>
-    <string name="slider_aosp">Aosp</string>
+    <string name="slider_aosp">AOSP</string>
     <string name="slider_rui">RUI</string>
 
      <!-- VoLTE -->
-    <string name="volte_icon_style_title">Select VoLTE Icon</string>
-    <string name="volte_icon_asus">VoLTE Asus Icon</string>
-    <string name="volte_icon_vo">Disabled</string>
-    <string name="volte_icon_volte">VoLTE Icon</string>
-    <string name="volte_icon_oos">VoLTE OOS 10 Icon</string>
-    <string name="volte_icon_oos11">VoLTE OOS 11 Icon</string>
-    <string name="volte_icon_hd">HD Icon</string>
-    <string name="volte_icon_hd2">HD CAF Icon</string>
+    <string name="volte_icon_style_title">Wybierz ikonę VoLTE</string>
+    <string name="volte_icon_asus">VoLTE Asus</string>
+    <string name="volte_icon_vo">Wyłączone</string>
+    <string name="volte_icon_volte"> VoLTE</string>
+    <string name="volte_icon_oos">VoLTE OOS 10</string>
+    <string name="volte_icon_oos11">VoLTE OOS 11</string>
+    <string name="volte_icon_hd">HD</string>
+    <string name="volte_icon_hd2">HD CAF</string>
     <string name="volte_icon_miui">MIUI 11</string>
     <string name="volte_icon_emui">EMUI</string>
-    <string name="volte_icon_moto">VoLTE Motorola Icon</string>
-    <string name="volte_icon_vivo">VoLTE Vivo Icon</string>
+    <string name="volte_icon_moto">VoLTE Motorola</string>
+    <string name="volte_icon_vivo">VoLTE Vivo</string>
 
     <!-- VoWiFi icon -->
-    <string name="vowifi_icon_title">VoWiFi icon</string>
-    <string name="vowifi_icon_enabled">VoWiFi icon enabled</string>
-    <string name="vowifi_icon_disabled">VoWiFi icon disabled</string>
-    <string name="vowifi_icon_enabled_volte_disabled">VoWiFi instead of VoLTE icon</string>
-    <string name="vowifi_icon_style_title">VoWiFi icon style</string>
-    <string name="vowifi_icon_default">Default Icon</string>
-    <string name="vowifi_icon_emui">EMUI Icon</string>
-    <string name="vowifi_icon_asus">Asus Icon</string>
-    <string name="vowifi_icon_oneplus">OOS Icon</string>
-    <string name="vowifi_icon_oos11">OOS 11 Icon</string>
-    <string name="vowifi_icon_moto">Motorola Icon</string>
-    <string name="vowifi_icon_simple1">Simple1 Icon</string>
-    <string name="vowifi_icon_simple2">Simple2 Icon</string>
-    <string name="vowifi_icon_simple3">Simple3 Icon</string>
-    <string name="vowifi_icon_vivo">Vivo Icon</string>
-    <string name="volte_icon_margaritov">HD Filled Icon</string>
-    <string name="volte_icon_margaritov2">Margaritov VoLTE Icon</string>
+    <string name="vowifi_icon_title">Ikona VoWiFi</string>
+    <string name="vowifi_icon_enabled">Ikona VoWiFi włączona</string>
+    <string name="vowifi_icon_disabled">VIkona VoWiFi wyłączona</string>
+    <string name="vowifi_icon_enabled_volte_disabled">VoWiFi zamiast ikony VoLTE</string>
+    <string name="vowifi_icon_style_title">Styl ikony VoWiFi</string>
+    <string name="vowifi_icon_default">Domyślna</string>
+    <string name="vowifi_icon_emui">EMUI</string>
+    <string name="vowifi_icon_asus">Asus</string>
+    <string name="vowifi_icon_oneplus">OOS</string>
+    <string name="vowifi_icon_oos11">OOS 11</string>
+    <string name="vowifi_icon_moto">Motorola</string>
+    <string name="vowifi_icon_simple1">Prosta 1</string>
+    <string name="vowifi_icon_simple2">Prosta 2</string>
+    <string name="vowifi_icon_simple3">Prosta 3</string>
+    <string name="vowifi_icon_vivo">Vivo</string>
+    <string name="volte_icon_margaritov">HD wypełniona</string>
+    <string name="volte_icon_margaritov2">Margaritov VoLTE</string>
 
     <!-- OOS style material dismiss all button for notifications -->
-    <string name="notification_material_dismiss_button_title">Material dimiss button</string>
-    <string name="notification_material_dismiss_button_summary">Replace clear all notification text with floating button</string>
+    <string name="notification_material_dismiss_button_title">Przycisk odrzucania w stylu "Material"</string>
+    <string name="notification_material_dismiss_button_summary">Zastąp tekst "Wyczyść wszystko" pływającym przyciskiem</string>
 
     <!-- Clear All -->
-    <string name="clearall_icon_title">Clear All Icon</string>
-    <string name="clearall_icon_summary">Change Clear All Icon </string>
-    <string name="clearall_icon_default">Cross (Default)</string>
+    <string name="clearall_icon_title">Ikona "Wyczyść wszystko"</string>
+    <string name="clearall_icon_summary">Zmień  ikonę "Wyczyść wszystko"</string>
+    <string name="clearall_icon_default">Krzyż (domyślnie)</string>
     <string name="clearall_icon_oos">OOS</string>
 
     <!-- Blink flashlight for incoming calls -->
-    <string name="flashlight_on_call_title">Blink Flashlight for call</string>
-    <string name="flashlight_on_call_disabled">Disabled</string>
-    <string name="flashlight_on_call_not_dnd">Only in ringer mode</string>
-    <string name="flashlight_on_call_dnd">Only in DND mode</string>
+    <string name="flashlight_on_call_title">Migaj latarką do połączenia</string>
+    <string name="flashlight_on_call_disabled">Wyłączone</string>
+    <string name="flashlight_on_call_not_dnd">Tylko w trybie dzwonka</string>
+    <string name="flashlight_on_call_dnd">Tylko w trybie nie przeszkadzać</string>
     <string name="flashlight_on_call_always">Zawsze</string>
 </resources>
