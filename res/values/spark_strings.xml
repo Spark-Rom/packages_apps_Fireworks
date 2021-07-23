@@ -1208,4 +1208,6 @@
     <!-- SystemUI Icon style -->
     <string name="theme_customization_system_icon_title">Statusbar icon style</string>
     <string name="theme_customization_system_icon_summary">Set custom statusbar icon style</string>
+
+    <string name="config_fodIconAnimationPackage" translatable="false">com.android.systemui</string>
 </resources>
