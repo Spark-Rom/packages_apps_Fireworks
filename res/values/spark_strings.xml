@@ -310,7 +310,7 @@
     <string name="navbar_invert_layout_title">Invert layout</string>
 
     <!-- Amimations -->
-    <string name="animation_title">Amimations</string>
+    <string name="animation_title">Animations</string>
     <string name="animation_summary">Power Off Animations, Scrolling Cache and more</string>
 
     <!-- Screen off animation -->
