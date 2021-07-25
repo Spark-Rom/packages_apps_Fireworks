@@ -82,10 +82,10 @@ public class FODIconAnimation extends SettingsPreferenceFragment {
 
     private String[] mAnimPreviews = {
         "fod_icon_animation_miui_35",
-        "zaid_oneui_36",
-        "oneui2_35",
-        "oos_fod_39",
-        "fod_spark_00049",
+        "zaid_oneui_14",
+        "oneui2_15",
+        "oos_fod_19",
+        "fod_spark_00029",
     };
 
     private String[] mTitles = {
