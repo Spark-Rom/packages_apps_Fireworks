@@ -26,8 +26,14 @@
             android:selectable="false" />
 
          <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="rgb_accent_picker"
-            android:title="@string/rgb_accent_picker_title"
+            android:key="rgb_accent_picker_white"
+            android:title="@string/rgb_accent_picker_title_white"
+            android:summary="@string/rgb_accent_picker_summary"
+            android:persistent="false" />
+
+         <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="rgb_accent_picker_dark"
+            android:title="@string/rgb_accent_picker_title_dark"
             android:summary="@string/rgb_accent_picker_summary"
             android:persistent="false" />
 

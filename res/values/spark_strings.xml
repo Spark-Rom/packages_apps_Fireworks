@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2016 The Nitrogen OS
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -1162,8 +1162,9 @@
     <string name="flashlight_on_call_dnd">Only in DND mode</string>
     <string name="flashlight_on_call_always">Always</string>
 
-    <string name="rgb_accent_picker_title">RGB accent picker</string>
+    <string name="rgb_accent_picker_title_white">RGB accent picker Light Theme</string>
     <string name="rgb_accent_picker_summary">Choose the accent color yourself</string>
+    <string name="rgb_accent_picker_title_dark">RGB accent picker Dark Theme</string>
 
     <!-- Pulse -->
     <string name="pulse_help_policy_notice_summary">Pulse does not work with some audio sources when listening on device speaker</string>
@@ -1210,4 +1211,12 @@
     <string name="theme_customization_system_icon_summary">Set custom statusbar icon style</string>
 
     <string name="config_fodIconAnimationPackage" translatable="false">com.android.systemui</string>
+
+    <string name="monet_0">Vibrant</string>
+    <string name="monet_1">Light Vibrant</string>
+    <string name="monet_2">Dark Vibrant</string>
+    <string name="monet_3">Dominant</string>
+    <string name="monet_4">Muted</string>
+    <string name="monet_5">Light Muted</string>
+    <string name="monet_6">Dark Muted</string>
 </resources>
