@@ -63,14 +63,17 @@ public class UiSettings extends DashboardFragment implements
 
     public static final String TAG = "UiSettings";
 
-    private static final String PREF_RGB_ACCENT_PICKER = "rgb_accent_picker";
+    private static final String PREF_RGB_ACCENT_PICKER_WHITE = "rgb_accent_picker_white";
+    private static final String PREF_RGB_ACCENT_PICKER_DARK = "rgb_accent_picker_dark";
 
     private Context mContext;
     private IOverlayManager mOverlayManager;
     private IOverlayManager mOverlayService;
     private IntentFilter mIntentFilter;
 
-    private ColorPickerPreference rgbAccentPicker;
+    private ColorPickerPreference rgbAccentPickerWhite;
+    private ColorPickerPreference rgbAccentPickerDark;
+
     private ListPreference mLockClockStyles;
 
     @Override
@@ -97,15 +100,22 @@ public class UiSettings extends DashboardFragment implements
 
         mContext = getActivity();
 
-        rgbAccentPicker = (ColorPickerPreference) findPreference(PREF_RGB_ACCENT_PICKER);
-        String colorVal = Settings.Secure.getStringForUser(mContext.getContentResolver(),
-                Settings.Secure.ACCENT_COLOR, UserHandle.USER_CURRENT);
-        int color = (colorVal == null)
+        rgbAccentPickerWhite = (ColorPickerPreference) findPreference(PREF_RGB_ACCENT_PICKER_WHITE);
+        rgbAccentPickerDark = (ColorPickerPreference) findPreference(PREF_RGB_ACCENT_PICKER_DARK);
+        String colorValWhite = Settings.Secure.getStringForUser(mContext.getContentResolver(),
+                Settings.Secure.ACCENT_LIGHT, UserHandle.USER_CURRENT);
+        String colorValDark = Settings.Secure.getStringForUser(mContext.getContentResolver(),
+                Settings.Secure.ACCENT_DARK, UserHandle.USER_CURRENT);
+        int colorWhite = (colorValWhite == null)
                 ? Color.WHITE
-                : Color.parseColor("#" + colorVal);
-        rgbAccentPicker.setNewPreviewColor(color);
-        rgbAccentPicker.setOnPreferenceChangeListener(this);
-
+                : Color.parseColor("#" + colorValWhite);
+        rgbAccentPickerWhite.setNewPreviewColor(colorWhite);
+        rgbAccentPickerWhite.setOnPreferenceChangeListener(this);
+        int colorDark = (colorValDark == null)
+                ? Color.WHITE
+                : Color.parseColor("#" + colorValDark);
+        rgbAccentPickerDark.setNewPreviewColor(colorDark);
+        rgbAccentPickerDark.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -124,11 +134,23 @@ public class UiSettings extends DashboardFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == rgbAccentPicker) {
-            int color = (Integer) objValue;
-            String hexColor = String.format("%08X", (0xFFFFFFFF & color));
+        if (preference == rgbAccentPickerWhite) {
+            int colorWhite = (Integer) objValue;
+            String hexColor = String.format("%08X", (0xFFFFFFFF & colorWhite));
             Settings.Secure.putStringForUser(mContext.getContentResolver(),
-                        Settings.Secure.ACCENT_COLOR,
+                        Settings.Secure.ACCENT_LIGHT,
+                        hexColor, UserHandle.USER_CURRENT);
+            try {
+                 mOverlayManager.reloadAssets("com.android.settings", UserHandle.USER_CURRENT);
+                 mOverlayManager.reloadAssets("com.android.systemui", UserHandle.USER_CURRENT);
+             } catch (RemoteException ignored) {
+             }
+            return true;
+        } else if (preference == rgbAccentPickerDark) {
+            int colorDark = (Integer) objValue;
+            String hexColor = String.format("%08X", (0xFFFFFFFF & colorDark));
+            Settings.Secure.putStringForUser(mContext.getContentResolver(),
+                        Settings.Secure.ACCENT_DARK,
                         hexColor, UserHandle.USER_CURRENT);
             try {
                  mOverlayManager.reloadAssets("com.android.settings", UserHandle.USER_CURRENT);
