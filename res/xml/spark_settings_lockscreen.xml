@@ -31,6 +31,14 @@
             android:key="charging_settings_key" 
             android:fragment="com.spark.settings.fragments.ChargingSettings"/>
 
+        <Preference
+            android:key="omnijaws_settings"
+            android:title="@string/lockscreen_weather_settings_title"
+            android:summary="@string/lockscreen_weather_settings_summary"
+            android:layout="@layout/custom_card_pref"
+            settings:iconSpaceReserved="false"
+            android:fragment="com.spark.settings.fragments.OmniJawsSettings" />
+
         <Preference 
             android:title="@string/fod_icon_picker_category_title"
             settings:iconSpaceReserved="false"
