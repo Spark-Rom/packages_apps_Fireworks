@@ -24,6 +24,7 @@
     <string name="misc_title">Misc</string>
     <string name="navigation_title">Navigation bar</string>
     <string name="powermenu_title">Power menu</string>
+    <string name="powersave_title">Power Saving</string>
     <string name="quicksettings_title">Quick Settings</string>
     <string name="recents_title">Recents apps</string>
     <string name="statusbar_title">Status bar</string>
@@ -1265,4 +1266,13 @@
     <string name="hide_apps_from_recents_summary">Hide apps from appearing in recents</string>
     <string name="hide_from_recents_add_app">Add app</string>
     <string name="title_activity_spark_recents_settings">Recents</string>
+
+    <!-- Power Profiles -->
+    <string name="power_profile">Battery saver profile</string>
+    <string name="power_profile_default">Default</string>
+    <string name="power_profile_light">Light</string>
+    <string name="power_profile_med">Moderate</string>
+    <string name="power_profile_high">High</string>
+    <string name="power_profile_ext">Extreme</string>
+    <string name="powersave_summary">Options to extend your battery life</string>
 </resources>
