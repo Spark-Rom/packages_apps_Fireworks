@@ -31,22 +31,5 @@
             android:summary="@string/headset_connect_player_summary"
             android:defaultValue="false" />
 
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="vibrate_on_connect"
-            settings:iconSpaceReserved="false"
-            android:title="@string/incall_vibrate_connect_title"
-            android:defaultValue="true" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="vibrate_on_callwaiting"
-            settings:iconSpaceReserved="false"
-            android:title="@string/incall_vibrate_call_wait_title"
-            android:defaultValue="true" />
-
-        <com.spark.settings.preferences.SystemSettingSwitchPreference
-            android:key="vibrate_on_disconnect"
-            settings:iconSpaceReserved="false"
-            android:title="@string/incall_vibrate_disconnect_title"
-            android:defaultValue="true" />
 </PreferenceScreen>
 

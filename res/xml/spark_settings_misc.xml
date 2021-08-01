@@ -52,7 +52,7 @@
         <Preference
             android:key="ps_cat"
             android:title="@string/powersave_title" 
-            android:title="@string/powersave_summary"
+            android:summary="@string/powersave_summary"
             android:fragment="com.spark.settings.fragments.PowerSaving"
             settings:iconSpaceReserved="false"
             android:layout="@layout/custom_card_pref" />
