@@ -58,7 +58,6 @@ public class ExtraNotificationSettings extends SettingsPreferenceFragment implem
         Preference.OnPreferenceChangeListener {
 
     private static final String NOTIFICATION_HEADERS = "notification_headers";
-    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
 
 
     private SystemSettingSwitchPreference mNotificationHeader;
@@ -69,11 +68,6 @@ public class ExtraNotificationSettings extends SettingsPreferenceFragment implem
         ContentResolver resolver = getActivity().getContentResolver();
         addPreferencesFromResource(R.xml.spark_settings_extranotifications);
         PreferenceScreen prefScreen = getPreferenceScreen();
-
-        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
-        if (!SparkUtils.isVoiceCapable(getActivity())) {
-            prefScreen.removePreference(incallVibCategory);
-        }
 
         mNotificationHeader = findPreference(NOTIFICATION_HEADERS);
         mNotificationHeader.setChecked((Settings.System.getInt(resolver,
