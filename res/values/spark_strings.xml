@@ -1163,9 +1163,8 @@
     <string name="flashlight_on_call_dnd">Only in DND mode</string>
     <string name="flashlight_on_call_always">Always</string>
 
-    <string name="rgb_accent_picker_title_white">RGB accent picker Light Theme</string>
     <string name="rgb_accent_picker_summary">Choose the accent color yourself</string>
-    <string name="rgb_accent_picker_title_dark">RGB accent picker Dark Theme</string>
+    <string name="rgb_accent_picker_title_dark">Accent Picker</string>
 
     <!-- Pulse -->
     <string name="pulse_help_policy_notice_summary">Pulse does not work with some audio sources when listening on device speaker</string>
@@ -1213,6 +1212,12 @@
 
     <string name="config_fodIconAnimationPackage" translatable="false">com.android.systemui</string>
 
+    <string name="monet_title">MonetWannabe</string>
+    <string name="monet_summary">System Wide Accent Color based on Wallpaper</string>
+    <string name="monet_pallete_title">Pallete</string>
+    <string name="monet_pallete_summary">Color Modes.  \n(After Choosing you need to reapply the wallpaper for the changes to take affect).</string>
+    <string name="monet_accuracy">Monet Accuracy</string>
+    <string name="monet_accuracy_summary">The More Accurate the slower (Def 16)</string>
     <string name="monet_0">Vibrant</string>
     <string name="monet_1">Light Vibrant</string>
     <string name="monet_2">Dark Vibrant</string>
