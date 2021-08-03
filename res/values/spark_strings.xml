@@ -1280,4 +1280,9 @@
     <string name="power_profile_high">High</string>
     <string name="power_profile_ext">Extreme</string>
     <string name="powersave_summary">Options to extend your battery life</string>
+
+    <string name="voicon_picker">Volte And Vowifi Icon Picker</string>
+    <string name="voiconpack_default">Default</string>
+    <string name="voiconpack_vivo">Vivo</string>
+    <string name="voiconpack_oos">OOS</string>
 </resources>

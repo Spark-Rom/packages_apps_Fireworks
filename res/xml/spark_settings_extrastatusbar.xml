@@ -60,6 +60,14 @@
     <PreferenceCategory
             android:title="SB Icons">
 
+    <com.spark.settings.preferences.SystemSettingListPreference
+            android:key="vo_icon_picker"
+            settings:iconSpaceReserved="false"
+            android:title="@string/voicon_picker"
+            android:entries="@array/voiconpack_entries"
+            android:entryValues="@array/voiconpack_values"
+            android:defaultValue="0" />
+
     <com.spark.settings.preferences.SystemSettingSwitchPreference
         android:key="data_disabled_icon"
             settings:iconSpaceReserved="false"
