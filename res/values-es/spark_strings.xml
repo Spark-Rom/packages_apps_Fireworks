@@ -20,10 +20,10 @@
     <string name="button_title">Botones</string>
     <string name="general_title">General</string>
     <string name="gestures_title">Gestos</string>
-    <string name="lockscreen_title">Pantalla de bloqueo</string>
+    <string name="lockscreen_title">Lockscreen</string>
     <string name="misc_title">Misc</string>
-    <string name="navigation_title">Barra de navegación</string>
-    <string name="powermenu_title">Menú de arranque</string>
+    <string name="navigation_title">Navegación</string>
+    <string name="powermenu_title">Menú de energía</string>
     <string name="quicksettings_title">Ajustes rápidos</string>
     <string name="recents_title">Aplicaciones recientes</string>
     <string name="statusbar_title">Barra de estado</string>
@@ -274,19 +274,19 @@
 
     <!-- Volume rocker wake -->
     <string name="volume_keys_title">Teclas de volumen</string>
-    <string name="volume_rocker_wake_title">Estela de balancín de volumen</string>
+    <string name="volume_rocker_wake_title">Despertar con teclas de volumen</string>
     <string name="volume_rocker_wake_summary">Al presionar las teclas de volumen, su dispositivo se activará</string>
 
     <!-- Volume rocker cursor control -->
     <string name="cursor_section_header">Cursor</string>
-    <string name="volume_key_cursor_control_title">Control del cursor de la tecla de volumen</string>
-    <string name="volume_key_cursor_control_off">Discapacitado</string>
-    <string name="volume_key_cursor_control_on">Subir/bajar volumen mueve el cursor hacia la izquierda/derecha</string>
-    <string name="volume_key_cursor_control_on_reverse">Subir/bajar volumen mueve el cursor hacia la derecha/izquierda</string>
+    <string name="volume_key_cursor_control_title">Controlar cursor con teclas de volumen</string>
+    <string name="volume_key_cursor_control_off">Desactivado</string>
+    <string name="volume_key_cursor_control_on">Subir/bajar mueve izquierda/derecha</string>
+    <string name="volume_key_cursor_control_on_reverse">Subir/bajar mueve derecha/izquierda</string>
 
     <string name="system_navigation_summary">Elija qué estilo de navegación usar</string>
     <string name="system_navigation_title">Navegación del sistema</string>
-    <string name="system_navigation_header">Barra de Navegación</string>
+    <string name="system_navigation_header">Navegación</string>
 
     <!-- Wakeup options -->
     <string name="wakeup_when_plugged_unplugged_title">Despierta al cargar</string>
