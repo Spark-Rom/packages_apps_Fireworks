@@ -1285,4 +1285,7 @@
     <string name="voiconpack_default">Default</string>
     <string name="voiconpack_vivo">Vivo</string>
     <string name="voiconpack_oos">OOS</string>
+
+    <string name="collapsed_toolbar_title">Settings Collapsed ToolBar</string>
+    <string name="collapsed_toolbar_summary">Dont Use Collapsed ToolBar On Settings</string>
 </resources>

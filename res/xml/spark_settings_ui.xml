@@ -57,6 +57,13 @@
             android:defaultValue="16"
             settings:interval="1"/>
 
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="collapsed_toolbar"
+            settings:iconSpaceReserved="false"
+            android:title="@string/collapsed_toolbar_title"
+            android:summary="@string/collapsed_toolbar_summary"
+            android:defaultValue="false" />
+
         <ListPreference
             android:layout="@layout/themes_font_preview"
             android:selectable="false" />
