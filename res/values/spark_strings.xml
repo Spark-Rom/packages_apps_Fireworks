@@ -1287,7 +1287,7 @@
     <string name="voiconpack_oos">OOS</string>
 
     <string name="collapsed_toolbar_title">Settings Collapsed ToolBar</string>
-    <string name="collapsed_toolbar_summary">Dont Use Collapsed ToolBar On Settings</string>
+    <string name="collapsed_toolbar_summary">Use Collapsed ToolBar On Settings</string>
 
 
     <!-- Sleep Mode -->
