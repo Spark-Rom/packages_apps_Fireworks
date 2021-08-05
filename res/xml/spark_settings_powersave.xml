@@ -30,4 +30,28 @@
         android:defaultValue="1"
         android:entryValues="@array/power_profile_type_values"/>
 
+    <com.spark.settings.preferences.GlobalSettingSwitchPreference
+        android:key="aggressive_idle_enabled"
+        android:title="@string/aggressive_idle_title"
+                    settings:iconSpaceReserved="false"
+        android:summary="@string/aggressive_idle_summary"
+        android:defaultValue="false"
+        android:dependency="aggressive_battery_saver" />
+
+    <com.spark.settings.preferences.GlobalSettingSwitchPreference
+        android:key="aggressive_standby_enabled"
+        android:title="@string/aggressive_standby_title"
+        android:summary="@string/aggressive_standby_summary"
+        settings:iconSpaceReserved="false"   
+        android:defaultValue="false"
+        android:dependency="aggressive_battery_saver" />
+
+    <com.spark.settings.preferences.GlobalSettingSwitchPreference
+        android:key="aggressive_battery_saver"
+                    settings:iconSpaceReserved="false"
+        android:title="@string/aggressive_battery_saver_title"
+        android:summary="@string/aggressive_battery_saver_summary"
+        android:defaultValue="true"
+        android:disableDependentsState="true" />
+
 </PreferenceScreen>
