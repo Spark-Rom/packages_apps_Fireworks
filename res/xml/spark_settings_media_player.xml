@@ -37,6 +37,7 @@
     <com.spark.settings.preferences.SystemSettingListPreference
             android:key="media_player_style"
             android:title="@string/media_player_picker"
+            android:disableDependentsState="true"
             settings:iconSpaceReserved="false"  
             android:entries="@array/media_panel_style_entries"
             android:dependency="qs_media_player"
