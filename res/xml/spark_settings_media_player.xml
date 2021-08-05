@@ -43,11 +43,11 @@
             android:entryValues="@array/media_panel_style_values"
             android:defaultValue="0" />
 
-<!--    <com.spark.settings.preferences.SystemSettingSwitchPreference
+    <com.spark.settings.preferences.SystemSettingSwitchPreference
         android:key="artwork_media_background"
         android:title="@string/artwork_media_background_title"
         android:summary="@string/artwork_media_background_summary"
-        android:defaultValue="false" /> -->
+        android:defaultValue="false" /> 
 
     </PreferenceCategory>
 </PreferenceScreen>
