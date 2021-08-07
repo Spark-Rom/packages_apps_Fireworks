@@ -64,6 +64,13 @@
             android:summary="@string/collapsed_toolbar_summary"
             android:defaultValue="false" />
 
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="ls_wallpaper_color"
+            settings:iconSpaceReserved="false"
+            android:title="@string/s_wp_title"
+            android:summary="@string/s_wp_summary"
+            android:defaultValue="false" />
+
         <ListPreference
             android:layout="@layout/themes_font_preview"
             android:selectable="false" />
