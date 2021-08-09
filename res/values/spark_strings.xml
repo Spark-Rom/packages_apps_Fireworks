@@ -308,6 +308,7 @@
     <string name="pixel_navbar_anim_summary">Toggle home button animation</string>
 
     <!-- Navbar options -->
+    <string name="navbar_visibility">Enable on-screen navigation bar</string>
     <string name="navbar_invert_layout_title">Invert layout</string>
 
     <!-- Amimations -->
