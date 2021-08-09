@@ -57,12 +57,17 @@ public class NavigationSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
    private static final String GESTURE_SYSTEM_NAVIGATION = "gesture_system_navigation";
+   private static final String NAVBAR_VISIBILITY = "navbar_visibility";
    private static final String PIXEL_NAV_ANIMATION = "pixel_nav_animation";
    private static final String SYSUI_NAV_BAR_INVERSE = "sysui_nav_bar_inverse";
 
    private Preference mGestureSystemNavigation;
+   private SwitchPreference mNavbarVisibility;
    private SystemSettingSwitchPreference mPixelNavAnimation;
    private SecureSettingSwitchPreference mSysuiNavBarInverse;
+
+   private boolean mIsNavSwitchingMode = false;
+   private Handler mHandler;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -83,11 +88,44 @@ public class NavigationSettings extends SettingsPreferenceFragment implements
             prefScreen.removePreference(mPixelNavAnimation);
             prefScreen.removePreference(mSysuiNavBarInverse);
         }
+
+        mNavbarVisibility = (SwitchPreference) findPreference(NAVBAR_VISIBILITY);
+        boolean defaultToNavigationBar = SparkUtils.deviceSupportNavigationBar(getActivity());
+        boolean showing = Settings.System.getInt(getContentResolver(),
+                Settings.System.FORCE_SHOW_NAVBAR,
+                defaultToNavigationBar ? 1 : 0) != 0;
+        updateBarVisibleAndUpdatePrefs(showing);
+
+        mNavbarVisibility.setOnPreferenceChangeListener(this);
+
+        mHandler = new Handler();
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+
+        if (preference.equals(mNavbarVisibility)) {
+            if (mIsNavSwitchingMode) {
+                return false;
+            }
+            mIsNavSwitchingMode = true;
+            boolean showing = ((Boolean)newValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.FORCE_SHOW_NAVBAR,
+                    showing ? 1 : 0);
+            updateBarVisibleAndUpdatePrefs(showing);
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mIsNavSwitchingMode = false;
+                }
+	            }, 1500);
+            return true;
+        }
         return false;
+    }
+
+    private void updateBarVisibleAndUpdatePrefs(boolean showing) {
+        mNavbarVisibility.setChecked(showing);
     }
 
     @Override

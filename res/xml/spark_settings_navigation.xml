@@ -17,6 +17,11 @@
             android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
             settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController" />
 
+        <SwitchPreference
+            android:key="navbar_visibility"
+            settings:iconSpaceReserved="false"
+            android:title="@string/navbar_visibility" />
+
         <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="pixel_nav_animation"
             settings:iconSpaceReserved="false"
