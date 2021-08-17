@@ -15,4 +15,7 @@
 
     <color name="option_border_default">#5f6368</color>
     <color name="white">#FFF</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+
 </resources>

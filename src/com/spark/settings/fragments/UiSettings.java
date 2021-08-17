@@ -37,7 +37,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.preference.*;
 import androidx.preference.Preference.OnPreferenceChangeListener;
-
+import com.spark.settings.fragments.AccentPickerFragment;
+import com.spark.settings.preferences.AccentPickerPreference;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.internal.util.spark.SparkUtils;
 import com.android.internal.util.spark.ThemesUtils;
@@ -95,6 +96,16 @@ public class UiSettings extends DashboardFragment {
 
     }
 
+    @Override
+    public void onDisplayPreferenceDialog(Preference preference) {
+        if (preference instanceof AccentPickerPreference) {
+            final AccentPickerFragment fragment = new AccentPickerFragment();
+            fragment.setTargetFragment(this, 0);
+            fragment.show(getParentFragmentManager(), TAG);
+        } else {
+            super.onDisplayPreferenceDialog(preference);
+        }
+    }
     @Override
     protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         return buildPreferenceControllers(context, getSettingsLifecycle(), this);

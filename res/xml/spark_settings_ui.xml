@@ -51,6 +51,11 @@
             android:defaultValue="16"
             settings:interval="1"/>
 
+    <com.spark.settings.preferences.AccentPickerPreference
+        android:key="accent_picker_preference"
+            settings:iconSpaceReserved="false"
+        android:title="@string/accent_picker_title" />
+
         <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="collapsed_toolbar"
             settings:iconSpaceReserved="false"

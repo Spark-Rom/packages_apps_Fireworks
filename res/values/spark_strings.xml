@@ -1165,8 +1165,17 @@
     <string name="flashlight_on_call_dnd">Only in DND mode</string>
     <string name="flashlight_on_call_always">Always</string>
 
-    <string name="rgb_accent_picker_summary">Choose the accent color yourself</string>
-    <string name="rgb_accent_picker_title_dark">Accent Picker</string>
+    <!-- Accent picker -->
+    <string name="accent_picker_title">RGB accent picker</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="auto_calculate_shade">Auto-magically calculate alt shades</string>
+    <string name="light_too_light">Light color is too light</string>
+    <string name="dark_too_dark">Dark color is too dark</string>
+    <string name="rgb">RGB</string>
+    <string name="hsl">HSL</string>
+    <string name="hsv">HSV</string>
+    <string name="confirm">Confirm</string>
 
     <!-- Pulse -->
     <string name="pulse_help_policy_notice_summary">Pulse does not work with some audio sources when listening on device speaker</string>
@@ -1332,4 +1341,6 @@
 
     <string name="s_wp_title">S Clocks Color</string>    
     <string name="s_wp_summary">Use Wallpaper Color or White color on Android S Clocks</string>
+
+
 </resources>
