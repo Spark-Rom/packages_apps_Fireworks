@@ -25,12 +25,6 @@
             android:layout="@layout/themes_accent_preview"
             android:selectable="false" />
 
-         <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="rgb_accent_picker_dark"
-            android:title="@string/rgb_accent_picker_title_dark"
-            android:summary="@string/rgb_accent_picker_summary"
-            android:persistent="false" />
-
         <com.spark.settings.preferences.SecureSettingSwitchPreference
             android:key="monet_engine"
             settings:iconSpaceReserved="false"

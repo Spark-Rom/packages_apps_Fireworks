@@ -58,20 +58,14 @@ import net.margaritov.preference.colorpicker.ColorPickerPreference;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UiSettings extends DashboardFragment implements
-        OnPreferenceChangeListener {
+public class UiSettings extends DashboardFragment {
 
     public static final String TAG = "UiSettings";
-
-    private static final String PREF_RGB_ACCENT_PICKER_DARK = "rgb_accent_picker_dark";
 
     private Context mContext;
     private IOverlayManager mOverlayManager;
     private IOverlayManager mOverlayService;
     private IntentFilter mIntentFilter;
-
-    private ColorPickerPreference rgbAccentPickerWhite;
-    private ColorPickerPreference rgbAccentPickerDark;
 
     private ListPreference mLockClockStyles;
 
@@ -99,14 +93,6 @@ public class UiSettings extends DashboardFragment implements
 
         mContext = getActivity();
 
-        rgbAccentPickerDark = (ColorPickerPreference) findPreference(PREF_RGB_ACCENT_PICKER_DARK);
-        String colorValDark = Settings.Secure.getStringForUser(mContext.getContentResolver(),
-                Settings.Secure.ACCENT_DARK, UserHandle.USER_CURRENT);
-        int colorDark = (colorValDark == null)
-                ? Color.WHITE
-                : Color.parseColor("#" + colorValDark);
-        rgbAccentPickerDark.setNewPreviewColor(colorDark);
-        rgbAccentPickerDark.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -120,25 +106,6 @@ public class UiSettings extends DashboardFragment implements
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.font"));
         return controllers;
-    }
-
-
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == rgbAccentPickerDark) {
-            int colorDark = (Integer) objValue;
-            String hexColor = String.format("%08X", (0xFFFFFFFF & colorDark));
-            Settings.Secure.putStringForUser(mContext.getContentResolver(),
-                        Settings.Secure.ACCENT_DARK,
-                        hexColor, UserHandle.USER_CURRENT);
-            try {
-                 mOverlayManager.reloadAssets("com.android.settings", UserHandle.USER_CURRENT);
-                 mOverlayManager.reloadAssets("com.android.systemui", UserHandle.USER_CURRENT);
-             } catch (RemoteException ignored) {
-             }
-            return true;
-        }
-        return false;
     }
 
 
