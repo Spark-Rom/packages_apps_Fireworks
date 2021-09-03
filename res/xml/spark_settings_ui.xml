@@ -25,6 +25,17 @@
             android:layout="@layout/themes_accent_preview"
             android:selectable="false" />
 
+        <com.spark.settings.preferences.AccentPickerPreference
+            android:key="accent_picker_preference"
+            settings:iconSpaceReserved="false"
+            android:title="@string/accent_picker_title" />
+
+        <ListPreference
+            android:key="android.theme.customization.accent_color"
+            settings:iconSpaceReserved="false"
+            android:title="@string/theme_customization_accent_color_title"/>
+
+
         <com.spark.settings.preferences.SecureSettingSwitchPreference
             android:key="monet_engine"
             settings:iconSpaceReserved="false"
@@ -50,11 +61,6 @@
             settings:min="1"
             android:defaultValue="16"
             settings:interval="1"/>
-
-    <com.spark.settings.preferences.AccentPickerPreference
-        android:key="accent_picker_preference"
-            settings:iconSpaceReserved="false"
-        android:title="@string/accent_picker_title" />
 
         <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="collapsed_toolbar"

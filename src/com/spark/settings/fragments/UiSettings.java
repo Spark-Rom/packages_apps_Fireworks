@@ -55,7 +55,7 @@ import com.spark.settings.display.QsColorPreferenceController;
 import com.spark.settings.display.QsTileStylePreferenceController;
 import com.spark.settings.display.SwitchStylePreferenceController;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
-
+import com.spark.settings.preferences.AccentOverlayCategoryPreferenceController;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -116,6 +116,8 @@ public class UiSettings extends DashboardFragment {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.font"));
+        controllers.add(new AccentOverlayCategoryPreferenceController(context,
+                "android.theme.customization.accent_color"));
         return controllers;
     }
 
