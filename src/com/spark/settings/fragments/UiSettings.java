@@ -114,8 +114,6 @@ public class UiSettings extends DashboardFragment {
     private static List<AbstractPreferenceController> buildPreferenceControllers(
             Context context, Lifecycle lifecycle, Fragment fragment) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
-        controllers.add(new OverlayCategoryPreferenceController(context,
-                "android.theme.customization.font"));
         controllers.add(new AccentOverlayCategoryPreferenceController(context,
                 "android.theme.customization.accent_color"));
         return controllers;
