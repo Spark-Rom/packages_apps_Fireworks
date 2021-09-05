@@ -23,14 +23,6 @@
         android:layout="@layout/spark_settings_misc_header"
         android:selectable="false"/>
 
-    <Preference
-        android:key="gaming_mode"
-            android:layout="@layout/custom_card_pref"
-            settings:iconSpaceReserved="false"
-        android:fragment="com.spark.settings.fragments.GamingMode"
-        android:title="@string/gaming_mode_title"
-        android:summary="@string/gaming_mode_summary" />
-
         <!-- Sensor Block -->
         <Preference
             android:key="sensor_block_settings"
