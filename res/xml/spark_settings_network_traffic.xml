@@ -22,36 +22,55 @@
         android:layout="@layout/spark_settings_network_traffic_header"
         android:selectable="false"/>
 
-    <ListPreference
-        android:key="network_traffic_location"
-        settings:iconSpaceReserved="false"
-        android:title="@string/network_traffic_location"
-        android:summary="%s"
-        android:entries="@array/network_traffic_location_entries"
-        android:entryValues="@array/network_traffic_location_values"
-        android:persistent="false" />
+    <!-- Network traffic -->
+    <PreferenceCategory
+        android:title="@string/network_traffic_category_title">
 
-    <ListPreference
-        android:key="network_traffic_type"
-        settings:iconSpaceReserved="false"
-        android:title="@string/network_traffic_type"
-        android:entries="@array/show_network_traffic_type_entries"
-        android:entryValues="@array/show_network_traffic_type_values"
-        android:defaultValue="0"
-        android:persistent="false" />
+        <com.spark.settings.preferences.SettingSwitchPreference
+            android:key="statusbar_show_network_traffic_switch_preference"
+            android:title="@string/statusbar_show_network_traffic_title"
+            settings:iconSpaceReserved="false"
+            settings:settingNamespace="system"
+            settings:settingKey="network_traffic_enabled" />
 
-    <com.spark.settings.preferences.CustomSystemSeekBarPreference
-        android:key="network_traffic_autohide_threshold"
-        android:title="@string/network_traffic_autohide_threshold_title"
-        android:max="10"
-        android:min="0"
-        settings:units="" />
+        <com.spark.settings.preferences.SettingEditTextPreference
+            settings:iconSpaceReserved="false"
+            android:key="statusbar_network_traffic_threshold_preference"
+            android:title="@string/statusbar_network_traffic_threshold_tx_title"
+            android:dependency="statusbar_show_network_traffic_switch_preference"
+            android:summary="@string/statusbar_network_traffic_threshold_tx_summary"
+            android:dialogTitle="@string/statusbar_network_traffic_threshold_dialog_title"
+            settings:settingKey="network_traffic_auto_hide_threshold_tx"
+            settings:settingNamespace="system" />
 
-    <com.spark.settings.preferences.SystemSettingSwitchPreference
-        android:key="network_traffic_arrow"
-        settings:iconSpaceReserved="false"
-        android:title="@string/network_traffic_arrow"
-        android:summary="@string/network_traffic_arrow_summary"
-        android:defaultValue="false" />
+        <com.spark.settings.preferences.SettingEditTextPreference
+            android:key="statusbar_network_traffic_threshold_rx_preference"
+            settings:iconSpaceReserved="false"
+            android:title="@string/statusbar_network_traffic_threshold_rx_title"
+            android:dependency="statusbar_show_network_traffic_switch_preference"
+            android:summary="@string/statusbar_network_traffic_threshold_rx_summary"
+            android:dialogTitle="@string/statusbar_network_traffic_threshold_dialog_title"
+            settings:settingKey="network_traffic_auto_hide_threshold_rx"
+            settings:settingNamespace="system" />
 
+        <com.spark.settings.preferences.SettingEditTextPreference
+            settings:iconSpaceReserved="false"
+            android:key="statusbar_network_traffic_unit_text_size_preference"
+            android:title="@string/statusbar_network_traffic_unit_text_size_title"
+            android:summary="@string/statusbar_network_traffic_unit_text_size_summary"
+            android:dialogTitle="@string/statusbar_network_traffic_unit_text_size_dialog_title"
+            android:dependency="statusbar_show_network_traffic_switch_preference"
+            settings:settingKey="network_traffic_unit_text_size"
+            settings:settingNamespace="system" />
+
+        <com.spark.settings.preferences.SettingEditTextPreference
+            settings:iconSpaceReserved="false"
+            android:key="statusbar_network_traffic_rate_text_scale_factor_preference"
+            android:title="@string/statusbar_network_traffic_rate_text_scale_factor_title"
+            android:summary="@string/statusbar_network_traffic_rate_text_scale_factor_summary"
+            android:dialogTitle="@string/statusbar_network_traffic_rate_text_scale_factor_dialog_title"
+            android:dependency="statusbar_show_network_traffic_switch_preference"
+            settings:settingKey="network_traffic_rate_text_scale_factor"
+            settings:settingNamespace="system" />
+    </PreferenceCategory>
 </PreferenceScreen>

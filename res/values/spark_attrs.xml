@@ -14,6 +14,20 @@
      limitations under the License.
 -->
 <resources>
+
+    <declare-styleable name="SettingPreferenceBaseAttrs">
+        <attr name="settingKey" format="string" />
+        <attr name="settingNamespace" format="string" />
+        <attr name="settingDefault" format="boolean|integer" />
+        <attr name="settingDependencyKey" format="string" />
+        <attr name="settingDependencyNS" format="string" />
+        <attr name="settingDependencyValue" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingEditTextPreference">
+        <attr name="inputType" format="string" />
+    </declare-styleable>
+
     <!-- Base attributes available to CustomSeekBarPreference. -->
     <declare-styleable name="CustomSeekBarPreference">
         <attr name="interval" format="integer" />

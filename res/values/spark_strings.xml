@@ -184,19 +184,20 @@
     <string name="traffic_header">Network Traffic</string>
     <string name="traffic_title">Traffic indicators</string>
     <string name="traffic_summary">Enable or disable network speed indicators</string>
-    <string name="network_traffic_title">Network traffic</string>
-    <string name="network_traffic_location">Net activity location</string>
-    <string name="traffic_disabled">Disabled</string>
-    <string name="traffic_statusbar">Statusbar</string>
-    <string name="traffic_expanded_statusbar">Expanded statusbar header</string>
-    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
-    <string name="network_traffic_type">Select net activity type</string>
-    <string name="show_network_traffic_dynamic">Dynamic (Up-/Download)</string>
-    <string name="show_network_traffic_up">Upload</string>
-    <string name="show_network_traffic_down">Download</string>
-    <string name="show_network_traffic_all">Both</string>
-    <string name="network_traffic_arrow">Show arrows</string>
-    <string name="network_traffic_arrow_summary">Show the network traffic indicator arrows</string>
+    <string name="network_traffic_category_title">Network Traffic</string>
+    <string name="statusbar_show_network_traffic_title">Show network traffic in statusbar</string>
+    <string name="statusbar_network_traffic_threshold_tx_title">Auto hide threshold for upload</string>
+    <string name="statusbar_network_traffic_threshold_tx_summary">Threshold value below which upload speed indicator will be hidden</string>
+    <string name="statusbar_network_traffic_threshold_rx_title">Auto hide threshold for download</string>
+    <string name="statusbar_network_traffic_threshold_rx_summary">Threshold value below which download speed indicator will be hidden</string>
+    <string name="statusbar_network_traffic_threshold_dialog_title">Threshold value in KiB/s</string>
+    <string name="statusbar_network_traffic_unit_text_size_title">Network traffic unit text size</string>
+    <string name="statusbar_network_traffic_unit_text_size_summary">Adjust text size of the unit text (ex: KiB/s)</string>
+    <string name="statusbar_network_traffic_unit_text_size_dialog_title">Text size</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_title">Network traffic rate text scale factor</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_summary">Adjust the scale factor of the rate text. Text size of the rate text is determined by
+        the unit text size and this scale factor</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_dialog_title">Scale factor</string>
 
    <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
