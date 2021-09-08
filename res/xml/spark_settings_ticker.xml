@@ -53,6 +53,13 @@
             unitsRight="ms" />
 
 
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="status_bar_show_lyric"
+            android:title="@string/status_bar_show_lyric_title"
+            settings:iconSpaceReserved="false"
+            android:summary="@string/status_bar_show_lyric_summary"
+            android:defaultValue="true" />
+
     <PreferenceCategory
         android:key="reticker"
         android:title="@string/reticker_category" >
