@@ -1309,6 +1309,9 @@
     <string name="gaming_mode_dynamic_add_title">Dynamic mode</string>
     <string name="gaming_mode_dynamic_add_summary">Try detecting and adding gaming apps automatically</string>
 
+    <string name="gaming_mode_use_menu_overlay_title">Show menu overlay</string>
+    <string name="gaming_mode_use_menu_overlay_summary">Show menu overlay when game is running. If this option is disabled, some game mode features will be disabled, such as Danmaku notifications</string>
+
     <string name="gaming_mode_show_danmaku_title">Show danmaku</string>
     <string name="gaming_mode_danmaku_dynamic_notification_filter_title">Dynamic filtering notification</string>
     <string name="gaming_mode_danmaku_dynamic_notification_filter_summary">Automatically filter notifications such as download progress</string>
