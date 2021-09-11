@@ -101,6 +101,7 @@ public class FODAnimation extends SettingsPreferenceFragment {
         "fod_recog_animation_smoke",
         "fod_recog_animation_strings",
         "fod_recog_animation_quantum",
+        "fod_recog_animation_redwave",
     };
 
     private String[] mAnimPreviews = {
@@ -132,6 +133,7 @@ public class FODAnimation extends SettingsPreferenceFragment {
         "fod_recog_animation_smoke_5",
         "fod_recog_animation_strings_9",
         "fod_recog_animation_quantum_1",
+        "fod_recog_animation_redwave_05",
     };
 
     private String[] mTitles = {
@@ -163,6 +165,7 @@ public class FODAnimation extends SettingsPreferenceFragment {
         "Smoke",
         "Strings",
         "Quantum",
+        "Red Wave"
     };
 
     @Override
