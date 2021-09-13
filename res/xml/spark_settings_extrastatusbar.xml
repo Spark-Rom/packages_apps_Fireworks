@@ -60,6 +60,22 @@
     <PreferenceCategory
             android:title="SB Icons">
 
+    <com.spark.settings.preferences.SystemSettingSeekBarPreference
+         android:key="statusbar_left_padding"
+         settings:iconSpaceReserved="false"
+         android:title="@string/statusbar_left_padding"
+         android:max="50"
+         android:min="-5"
+         android:defaultValue="8"/>
+
+    <com.spark.settings.preferences.SystemSettingSeekBarPreference
+         android:key="statusbar_right_padding"
+         settings:iconSpaceReserved="false"
+         android:title="@string/statusbar_right_padding"
+         android:max="50"
+         android:min="-5"
+         android:defaultValue="8"/>
+
     <com.spark.settings.preferences.SystemSettingListPreference
             android:key="volte_icon_style" 
             android:title="@string/volte_icon_style_title" 

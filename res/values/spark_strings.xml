@@ -1362,4 +1362,8 @@
     <string name="vowifi_icon_oneplus">OnePlus VoWiFi Icon</string>
     <string name="vowifi_icon_moto">Moto VoWiFi Icons</string>
     <string name="vowifi_icon_emui">EMUI Icons</string>
+
+    <!-- Statusbar left_right padding -->
+    <string name="statusbar_left_padding">SB left padding</string>
+    <string name="statusbar_right_padding">SB right padding</string>
 </resources>
