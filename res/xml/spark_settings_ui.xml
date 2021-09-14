@@ -84,6 +84,7 @@
         <Preference
             android:key="font_picker_preference"
             android:title="@string/font_picker_preference_title"
+            settings:iconSpaceReserved="false"
             android:fragment="com.spark.settings.fragments.FontPickerFragment" />
 
         <Preference
