@@ -52,7 +52,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.Indexable;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
-
+import androidx.preference.Preference.OnPreferenceChangeListener;
 import com.spark.settings.display.QsColorPreferenceController;
 import com.spark.settings.display.QsTileStylePreferenceController;
 import com.android.settings.R;
@@ -70,7 +70,9 @@ public class QsThemeSettings extends DashboardFragment {
     private PackageManager mPackageManager;
     private static final String SLIDER_STYLE  = "slider_style";
     private static final String CLEAR_ALL_ICON_STYLE  = "clear_all_icon_style";
+    private static final String STATUSBAR_ICONS_STYLE = "statusbar_icons_style";
 
+    private SystemSettingSwitchPreference mSbIconStyle;
     private SystemSettingListPreference mClearAll;
     private SystemSettingListPreference mSlider;
     private Handler mHandler;
@@ -84,6 +86,7 @@ public class QsThemeSettings extends DashboardFragment {
                 ServiceManager.getService(Context.OVERLAY_SERVICE));
         mSlider = (SystemSettingListPreference) findPreference(SLIDER_STYLE);
         mClearAll = (SystemSettingListPreference) findPreference(CLEAR_ALL_ICON_STYLE);
+        mSbIconStyle = (SystemSettingSwitchPreference) findPreference(STATUSBAR_ICONS_STYLE);
         mCustomSettingsObserver.observe();
     }
 
@@ -103,6 +106,9 @@ public class QsThemeSettings extends DashboardFragment {
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.CLEAR_ALL_ICON_STYLE  ),
                     false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.STATUSBAR_ICONS_STYLE),
+                    false, this, UserHandle.USER_ALL);
         }
 
         @Override
@@ -121,6 +127,10 @@ public class QsThemeSettings extends DashboardFragment {
             mCustomSettingsObserver.observe();
             return true;
         } else if (preference == mClearAll) {
+            mCustomSettingsObserver.observe();
+             SparkUtils.showSystemUiRestartDialog(getContext());
+            return true;
+        } else if (preference == mSbIconStyle) {
             mCustomSettingsObserver.observe();
              SparkUtils.showSystemUiRestartDialog(getContext());
             return true;
