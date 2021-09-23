@@ -870,8 +870,8 @@
     <string name="qs_media_player_themes_title">QS Media Player Settings</string>
     <string name="qs_media_player_themes_summary">Customize your Media Player</string>
     <string name="qs_media_player_title">Media player</string>
-    <string name="qs_media_player_summary_off">Show media player in QS </string>
-    <string name="qs_media_player_summary_on">Show media player as a notification</string>
+    <string name="qs_media_player_summary_off">Show media player as a notification</string>
+    <string name="qs_media_player_summary_on">Show media player in QS</string>
     <string name="media_player_picker">Select the media player Style you like</string>
     <string name="media_player_androids">Android S Media Player</string>
     <string name="media_player_compact">Compact Media Player</string>
