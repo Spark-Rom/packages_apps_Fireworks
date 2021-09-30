@@ -80,12 +80,10 @@
             android:layout="@layout/themes_font_preview"
             android:selectable="false" />
 
-        <!-- Font picker -->
-        <Preference
-            android:key="font_picker_preference"
-            android:title="@string/font_picker_preference_title"
+        <ListPreference
+            android:key="android.theme.customization.font"
             settings:iconSpaceReserved="false"
-            android:fragment="com.spark.settings.fragments.FontPickerFragment" />
+            android:title="@string/theme_customization_font_title"/>
 
         <Preference
             android:key="dark_ui_mode"
