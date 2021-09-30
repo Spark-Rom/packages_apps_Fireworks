@@ -1352,7 +1352,6 @@
     <string name="unable_to_remove_fonts">An error occured while deleting fonts</string>
     <string name="unable_to_create_cache">An error occured while creating cache folder</string>
     <string name="cannot_resolve_activity">Unable to find a suitable activity to perform the action!</string>
-    <string name="reboot_to_apply_font">Reboot to apply selected font</string>
 
     <!-- VoLTE Icon Type -->
     <string name="volte_icon_style_title">Select VoLTE/HD Icon</string>
