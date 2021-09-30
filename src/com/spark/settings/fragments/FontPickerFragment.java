@@ -175,11 +175,12 @@ public class FontPickerFragment extends BaseFragment implements FontListAdapter.
             Log.e(TAG, "RemoteException when querying current font info", e);
             toast(R.string.unable_to_get_current_font);
         }
-        mAdapter = new FontListAdapter(mContext, fontInfo.fontName, mFontList);
+        mAdapter = new FontListAdapter(mContext, fontInfo.fontName);
         mAdapter.registerCallback(this);
         final RecyclerView recyclerView = view.findViewById(R.id.fontList);
         recyclerView.setAdapter(mAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(mContext));
+        mAdapter.setFontList(mFontList);
     }
 
     @Override
