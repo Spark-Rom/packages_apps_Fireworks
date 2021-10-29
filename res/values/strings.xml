@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Fireworks</string>
+
+    <!-- Categories -->
+    <string name="themes_title">Themes</string>
+    <string name="gestures_title">Gestures</string>
+    <string name="lockscreen_title">Lock screen</string>
+    <string name="misc_title">Miscellaneous</string>
+    <string name="powermenu_title">Power menu</string>
+    <string name="statusbar_title">Status bar</string>
+</resources>
