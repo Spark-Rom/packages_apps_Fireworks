@@ -20,6 +20,16 @@
     <string name="double_tap_sleep_gesture_title">Tap to sleep</string>
     <string name="double_tap_sleep_gesture_summary">Double-tap anywhere on the status bar to put the device to sleep</string>
 
+    <!-- Monet engine -->
+    <string name="monet_engine_settings_title">Monet engine</string>
+    <string name="monet_engine_settings_summary">Adjust monet engine parameters</string>
+    <string name="accurate_shades_title">Use accurate shades</string>
+    <string name="color_override_title">Color override</string>
+    <string name="invalid_color_input">Invalid color input!</string>
+    <string name="chroma_factor_title">Colorfulness</string>
+    <string name="linear_lightness_title">Use custom lightness scale</string>
+    <string name="white_luminance_title">Brightness</string>
+
     <!-- Tuner -->
     <string name="general_category">General</string>
     <string name="lockscreen_tuner_title">Lock screen shortcuts</string>

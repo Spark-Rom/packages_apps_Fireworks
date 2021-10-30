@@ -33,10 +33,12 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
+import java.util.regex.Pattern;
 
 public class ThemeSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
+    public static final Pattern HEX_PATTERN = Pattern.compile("[0-9A-F]+");
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
