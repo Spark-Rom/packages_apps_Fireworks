@@ -67,12 +67,9 @@ public class SparkSettings extends SettingsPreferenceFragment implements View.On
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-		    getActivity().getActionBar().hide();
 
         Resources res = getResources();
         Window win = getActivity().getWindow();
-        getActivity().getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-        win.setStatusBarColor(Color.TRANSPARENT);
 
         mStatusbarSettingsCard = (CardView) view.findViewById(R.id.statusbarsettings_card);
         mStatusbarSettingsCard.setOnClickListener(this);
