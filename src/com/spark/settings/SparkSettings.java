@@ -56,7 +56,6 @@ public class SparkSettings extends SettingsPreferenceFragment implements View.On
   CardView mThemeSettingsCard;
   CardView mMiscSettingsCard;
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -67,6 +66,7 @@ public class SparkSettings extends SettingsPreferenceFragment implements View.On
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
 
         Resources res = getResources();
         Window win = getActivity().getWindow();
