@@ -8,4 +8,8 @@
     <string name="misc_title">Miscellaneous</string>
     <string name="powermenu_title">Power menu</string>
     <string name="statusbar_title">Status bar</string>
+
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
+    <string name="global_actions_advanced_reboot_summary">Show options for recovery and bootloader in power menu</string>
 </resources>
