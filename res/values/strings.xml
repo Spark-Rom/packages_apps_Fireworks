@@ -463,4 +463,8 @@
     <string name="battery_estimate_title">Battery estimate</string>
     <string name="battery_estimate_summary">Display estimated remaining battery life when available</string>
 
+    <!-- Call strength icons in QS -->
+    <string name="show_qs_call_strength_icon_title">Show call strength icon(s)</string>
+    <string name="show_qs_call_strength_icon_summary">Show call strength icons in QuickSettings panel when available</string>
+
 </resources>
