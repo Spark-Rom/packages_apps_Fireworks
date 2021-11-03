@@ -24,10 +24,10 @@
         android:defaultValue="1"/>
 
     <!-- Color override -->
-    <EditTextPreference
-        android:key="color_override"
+    <com.spark.settings.preferences.SecureSettingColorPickerPreference
+        android:key="monet_engine_color_override"
         android:title="@string/color_override_title" />
-    
+
     <!-- Chroma factor -->
     <com.spark.support.preferences.CustomSeekBarPreference
         android:key="chroma_factor"
@@ -41,10 +41,11 @@
     <!-- Custom lightness scale -->
     <com.spark.support.preferences.SecureSettingSwitchPreference
         android:key="monet_engine_linear_lightness"
-        android:title="@string/linear_lightness_title" />
+        android:title="@string/linear_lightness_title"
+        android:defaultValue="0" />
 
     <!-- Brightness -->
-    <com.spark.support.preferences.SecureSettingCustomSeekBarPreference
+    <com.spark.support.preferences.SecureSettingSeekBarPreference
         android:key="monet_engine_white_luminance"
         android:title="@string/white_luminance_title"
         android:defaultValue="425"

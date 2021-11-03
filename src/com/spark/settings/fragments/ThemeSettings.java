@@ -39,7 +39,6 @@ import java.util.regex.Pattern;
 public class ThemeSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    public static final Pattern HEX_PATTERN = Pattern.compile("[0-9A-F]+");
     private static final String PREF_TILE_ANIM_STYLE = "qs_tile_animation_style";
     private static final String PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
     private static final String PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
