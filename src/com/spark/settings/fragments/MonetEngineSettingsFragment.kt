@@ -24,7 +24,6 @@ import android.provider.Settings.Secure.MONET_ENGINE_COLOR_OVERRIDE
 import android.provider.Settings.Secure.MONET_ENGINE_WHITE_LUMINANCE
 import android.widget.Toast
 import androidx.preference.EditTextPreference
-import androidx.preference.Preference
 import com.spark.settings.fragments.ThemeSettings;
 import com.spark.support.preferences.CustomSeekBarPreference
 import com.spark.settings.preferences.SettingColorPickerPreference
@@ -32,14 +31,31 @@ import com.android.settings.R
 import com.android.internal.logging.nano.MetricsProto
 import com.android.settings.SettingsPreferenceFragment
 
+import androidx.preference.Preference
+import androidx.preference.SwitchPreference
+
+
 class MonetEngineSettingsFragment: SettingsPreferenceFragment(),
         Preference.OnPreferenceChangeListener {
 
     override fun getMetricsCategory(): Int = MetricsProto.MetricsEvent.SPARK_SETTINGS
 
+    private var customColorPickerPreference: SettingColorPickerPreference? = null
+
     override fun onCreate(bundle: Bundle?) {
         super.onCreate(bundle)
         addPreferencesFromResource(R.xml.monet_engine_settings)
+
+        val customColor: String? = Settings.Secure.getString(
+            context!!.contentResolver, MONET_ENGINE_COLOR_OVERRIDE)
+
+        customColorPickerPreference = findPreference<SettingColorPickerPreference>(CUSTOM_COLOR_PREF_KEY)
+
+        findPreference<SwitchPreference>(USE_WALLPAPER_COLOR_PREF_KEY)?.also {
+            val isEnabled = customColor == null || customColor.isEmpty()
+            it.setChecked(isEnabled)
+            customColorPickerPreference?.setEnabled(!isEnabled)
+        }?.setOnPreferenceChangeListener(this)
 
         val chromaFactor = Settings.Secure.getFloat(
             context!!.contentResolver, MONET_ENGINE_CHROMA_FACTOR,
@@ -51,21 +67,30 @@ class MonetEngineSettingsFragment: SettingsPreferenceFragment(),
     }
 
     override fun onPreferenceChange(preference: Preference, newValue: Any): Boolean =
-        if (preference.key == CHROMA_SLIDER_PREF_KEY) {
-            Settings.Secure.putFloat(context!!.contentResolver,
+        when (preference.key) {
+            USE_WALLPAPER_COLOR_PREF_KEY -> {
+                (newValue as Boolean).let {
+                    if (it) {
+                        Settings.Secure.putString(context!!.contentResolver,
+                            MONET_ENGINE_COLOR_OVERRIDE, "")
+                    }
+                    customColorPickerPreference?.setEnabled(!it)
+                    return true
+                }
+            }
+            CHROMA_SLIDER_PREF_KEY -> Settings.Secure.putFloat(context!!.contentResolver,
                     MONET_ENGINE_CHROMA_FACTOR, (newValue as Int) / 100f)
-        } else {
-            false
+            else -> false
         }
     
     override fun onDisplayPreferenceDialog(preference: Preference) {
-        if (preference is SettingColorPickerPreference) {
-            val preferenceDataStore = preference.getSettingsDataStore(context!!)
-            var defaultColor: Int = preferenceDataStore.getString(preference.key, null)
+        if (preference == customColorPickerPreference) {
+            val preferenceDataStore = customColorPickerPreference?.getSettingsDataStore(context!!)
+            var defaultColor: Int = preferenceDataStore?.getString(preference.key, null)
                 ?.takeIf { it.isNotEmpty() }
-                ?.let { Color.parseColor(it) } ?: Color.GREEN
+                ?.let { Color.parseColor(it) } ?: CUSTOM_COLOR_DEFAULT
             MonetColorOverrideFragment(
-                preference.key,
+                customColorPickerPreference?.key,
                 preferenceDataStore,
                 defaultColor,
             ).let {
@@ -79,6 +104,10 @@ class MonetEngineSettingsFragment: SettingsPreferenceFragment(),
 
     companion object {
         private const val TAG = "MonetEngineSettingsFragment"
+
+        private const val USE_WALLPAPER_COLOR_PREF_KEY = "monet_engine_use_wallpaper_color"
+        private const val CUSTOM_COLOR_PREF_KEY = "monet_engine_color_override"
+        private const val CUSTOM_COLOR_DEFAULT = Color.GREEN
 
         private const val CHROMA_SLIDER_PREF_KEY = "chroma_factor"
         private const val CHROMA_DEFAULT = 1f
