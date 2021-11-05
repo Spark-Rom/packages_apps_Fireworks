@@ -83,4 +83,8 @@
     <string name="volume_rocker_music_controls_title">Music control</string>
     <string name="volume_rocker_music_controls_summary">Long press volume buttons to switch tracks while the screen is off</string>
 
+    <string name="icons_category">Icons</string>
+    <string name="show_fourg_icon_title">Show 4G instead of LTE</string>
+    <string name="show_fourg_icon_summary">Replace LTE indicator with 4G</string>
+
 </resources>
