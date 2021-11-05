@@ -16,6 +16,9 @@
 
 package com.spark.settings.fragments;
 
+
+import static android.view.DisplayCutout.BOUNDS_POSITION_LEFT;
+import static android.view.DisplayCutout.BOUNDS_POSITION_RIGHT;
 import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -30,7 +33,7 @@ import android.text.format.DateFormat;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
-
+import com.android.internal.util.spark.SparkUtils;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
@@ -156,6 +159,29 @@ public class ClockDateSettings extends SettingsPreferenceFragment
             mClockDateStyle.setEnabled(false);
             mClockDateFormat.setEnabled(false);
             mClockDatePosition.setEnabled(false);
+        }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        final boolean hasNotch = SparkUtils.hasNotch(getActivity());
+        final int notchType = SparkUtils.getCutoutType(getActivity());
+        Log.v("SparkUtils" ,"notchType: " + notchType);
+
+        // Adjust status bar preferences for RTL
+        if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
+            if (hasNotch && !(notchType == BOUNDS_POSITION_LEFT || notchType == BOUNDS_POSITION_RIGHT)) {
+                mStatusBarClockStyle.setEntries(R.array.statusbar_clock_style_entries_notch_rtl);
+                mStatusBarClockStyle.setEntryValues(R.array.statusbar_clock_style_values_notch_rtl);
+            } else {
+                mStatusBarClockStyle.setEntries(R.array.statusbar_clock_style_entries_rtl);
+                mStatusBarClockStyle.setEntryValues(R.array.statusbar_clock_style_values_rtl);
+            }
+        } else if (hasNotch && !(notchType == BOUNDS_POSITION_LEFT || notchType == BOUNDS_POSITION_RIGHT)) {
+            mStatusBarClockStyle.setEntries(R.array.statusbar_clock_style_entries_notch);
+            mStatusBarClockStyle.setEntryValues(R.array.statusbar_clock_style_values_notch);
         }
     }
 
