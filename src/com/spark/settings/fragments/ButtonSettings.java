@@ -128,6 +128,17 @@ public class ButtonSettings extends ActionFragment {
         return MetricsEvent.SPARK_SETTINGS;
     }
 
+    @Override
+    protected boolean usesExtendedActionsList() {
+        return true;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+
     /**
      * For Search.
      */
