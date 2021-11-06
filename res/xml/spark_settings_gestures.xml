@@ -58,4 +58,8 @@
 
     </PreferenceCategory>
 
+        <Preference
+             android:key="button_settings"
+             android:title="button_pref_title"
+             android:fragment="com.spark.settings.fragments.ButtonSettings" />
 </PreferenceScreen>

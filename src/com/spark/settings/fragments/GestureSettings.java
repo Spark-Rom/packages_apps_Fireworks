@@ -59,6 +59,15 @@ public class GestureSettings extends DashboardFragment implements
         mTorchPowerButton.setValue(Integer.toString(mTorchPowerButtonValue));
         mTorchPowerButton.setSummary(mTorchPowerButton.getEntry());
         mTorchPowerButton.setOnPreferenceChangeListener(this);
+
+        final int deviceKeys = getResources().getInteger(
+                com.android.internal.R.integer.config_deviceHardwareKeys);
+        final boolean hashwkeys = (deviceKeys) = 64;
+        if (!hashwkeys) {
+        final Preference hwkeyscategory = (Preference) prefSet
+                .findPreference("button_settings");
+            prefSet.removePreference(hwkeyscategory);
+        }
     }
 
     @Override
