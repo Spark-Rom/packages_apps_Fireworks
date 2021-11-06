@@ -70,6 +70,7 @@ public class SparkSettings extends SettingsPreferenceFragment implements View.On
 
         Resources res = getResources();
         Window win = getActivity().getWindow();
+    getActivity().setTitle(getResources().getString(R.string.app_name));
 
         mStatusbarSettingsCard = (CardView) view.findViewById(R.id.statusbarsettings_card);
         mStatusbarSettingsCard.setOnClickListener(this);
