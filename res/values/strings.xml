@@ -520,4 +520,8 @@
     <string name="always_on_display_schedule_sunrise">Sunrise</string>
     <string name="always_on_display_schedule_mixed_sunset">Turns on from sunset till a time</string>
     <string name="always_on_display_schedule_mixed_sunrise">Turns on from a time till sunrise</string>
+
+    <!-- Udfps Haptic Feedback -->
+    <string name="udfps_haptic_feedback_title">Udfps haptic feedback</string>
+    <string name="udfps_haptic_feedback_summary">Vibrate when touching udfps icon</string>
 </resources>

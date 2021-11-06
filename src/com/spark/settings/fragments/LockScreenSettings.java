@@ -26,11 +26,11 @@ import android.hardware.fingerprint.FingerprintSensorPropertiesInternal;
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
-
+import com.android.internal.util.spark.udfps.UdfpsUtils;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import android.util.Log;
-
+import com.spark.support.preferences.SystemSettingSwitchPreference;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
@@ -44,10 +44,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private static final String FINGERPRINT_SUCCESS_VIB = "fingerprint_success_vib";
     private static final String FINGERPRINT_ERROR_VIB = "fingerprint_error_vib";
     private static final String SCREEN_OFF_FOD_KEY = "screen_off_fod";
+    private static final String UDFPS_HAPTIC_FEEDBACK = "udfps_haptic_feedback";
 
     private FingerprintManager mFingerprintManager;
     private SwitchPreference mFingerprintSuccessVib;
     private SwitchPreference mFingerprintErrorVib;
+    private SystemSettingSwitchPreference mUdfpsHapticFeedback;
 
     static final int MODE_DISABLED = 0;
     static final int MODE_NIGHT = 1;
@@ -62,19 +64,23 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         super.onCreate(icicle);
 
         addPreferencesFromResource(R.xml.spark_settings_ls);
-
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
         final PackageManager mPm = getActivity().getPackageManager();
+        final PreferenceCategory fpCategory = (PreferenceCategory)
+                findPreference("lockscreen_ui_finterprint_category");
 
-        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
-        mFingerprintSuccessVib = (SwitchPreference) findPreference(FINGERPRINT_SUCCESS_VIB);
-        mFingerprintErrorVib = (SwitchPreference) findPreference(FINGERPRINT_ERROR_VIB);
+        mFingerprintManager = (FingerprintManager)
+                getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+        mFingerprintSuccessVib = findPreference(FINGERPRINT_SUCCESS_VIB);
+        mFingerprintErrorVib = findPreference(FINGERPRINT_ERROR_VIB);
+        mUdfpsHapticFeedback = findPreference(UDFPS_HAPTIC_FEEDBACK);
+        mFODPref = findPreference(SCREEN_OFF_FOD_KEY);
+
         if (mPm.hasSystemFeature(PackageManager.FEATURE_FINGERPRINT) &&
                  mFingerprintManager != null) {
             if (!mFingerprintManager.isHardwareDetected()){
-                prefSet.removePreference(mFingerprintSuccessVib);
-                prefSet.removePreference(mFingerprintErrorVib);
+                prefSet.removePreference(fpCategory);
             } else {
                 mFingerprintSuccessVib.setChecked((Settings.System.getInt(getContentResolver(),
                         Settings.System.FP_SUCCESS_VIBRATE, 1) == 1));
@@ -82,15 +88,20 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
                 mFingerprintErrorVib.setChecked((Settings.System.getInt(getContentResolver(),
                         Settings.System.FP_ERROR_VIBRATE, 1) == 1));
                 mFingerprintErrorVib.setOnPreferenceChangeListener(this);
+                if (UdfpsUtils.hasUdfpsSupport(getActivity())) {
+                    mUdfpsHapticFeedback.setChecked((Settings.System.getInt(getContentResolver(),
+                            Settings.System.UDFPS_HAPTIC_FEEDBACK, 1) == 1));
+                    mUdfpsHapticFeedback.setOnPreferenceChangeListener(this);
+                } else {
+                    fpCategory.removePreference(mUdfpsHapticFeedback);
+                    fpCategory.removePreference(mFODPref);
+
+                }
             }
         } else {
-            prefSet.removePreference(mFingerprintSuccessVib);
-            prefSet.removePreference(mFingerprintErrorVib);
+            prefSet.removePreference(fpCategory);
         }
-        mFODPref = findPreference(SCREEN_OFF_FOD_KEY);
-        if (!hasUDFPS(getActivity())) {
-            removePreference(SCREEN_OFF_FOD_KEY);
-        }
+
         mAODPref = findPreference(AOD_SCHEDULE_KEY);
         updateAlwaysOnSummary();
     }
@@ -140,20 +151,6 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
             return true;
         }
         return false;
-    }
-
-
-    /**
-     * Checks if the device has udfps
-     * @param context context for getting FingerprintManager
-     * @return true is udfps is present
-     */
-    public static boolean hasUDFPS(Context context) {
-        final FingerprintManager fingerprintManager =
-                context.getSystemService(FingerprintManager.class);
-        final List<FingerprintSensorPropertiesInternal> props =
-                fingerprintManager.getSensorPropertiesInternal();
-        return props != null && props.size() == 1 && props.get(0).isAnyUdfpsType();
     }
 
     @Override
