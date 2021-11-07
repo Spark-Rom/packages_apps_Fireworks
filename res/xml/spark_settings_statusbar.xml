@@ -37,6 +37,12 @@
         android:title="@string/status_bar_clock_title" />
     </PreferenceCategory>
 
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="data_disabled_icon"
+            android:title="@string/data_disabled_icon_title"
+            android:summary="@string/data_disabled_icon_summary"
+            android:defaultValue="true"/>
+
     <Preference
         android:key="systemui_tuner_statusbar"
         android:title="@string/statusbar_items_category">
