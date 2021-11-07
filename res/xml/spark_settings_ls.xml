@@ -70,12 +70,11 @@
         android:key="lockscreen_visualizer_options"
         android:title="@string/lockscreen_visualizer_title" >
 
-        <com.spark.support.preferences.SecureSettingSwitchPreference
-            android:key="lockscreen_visualizer_enabled"
+        <Preference
+            android:key="lockscreen_visualizer"
             android:title="@string/lockscreen_visualizer_enable"
-            android:summary="@string/lockscreen_visualizer_enable_summary"
-            android:defaultValue="false" />
-
+            android:fragment="com.spark.settings.fragments.Visualizer"
+            android:summary="@string/lockscreen_visualizer_enable_summary" />
     </PreferenceCategory>
 
 </PreferenceScreen>
