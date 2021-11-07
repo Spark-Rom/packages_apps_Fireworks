@@ -61,5 +61,4 @@
             android:summary="@string/add_heads_up_blacklist_summary" />
 
     </PreferenceCategory>
-
 </PreferenceScreen>

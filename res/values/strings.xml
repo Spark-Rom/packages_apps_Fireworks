@@ -387,4 +387,18 @@
     <string name="show_cpu_info">Show CPU info</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+
+    <!-- Battery light -->
+    <string name="light_settings_header">Light settings</string>
+    <string name="battery_light_settings">Battery light</string>
+    <string name="battery_light_summary">Enable or disable battery light while on DND, low battery</string>
+    <string name="battery_light_enable">Battery light</string>
+    <string name="battery_full_light_enabled">Battery light when fully charged</string>
+    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
+    <string name="battery_light_low_blinking_title">Pulse if battery low</string>
+    <string name="battery_light_cat">Battery light color when charging</string>
+    <string name="battery_light_low_color">Battery low</string>
+    <string name="battery_light_medium_color">Charging</string>
+    <string name="battery_light_full_color">Almost fully charged</string>
+    <string name="battery_light_reallyfull_color">Fully charged</string>
 </resources>
