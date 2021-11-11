@@ -467,4 +467,7 @@
     <string name="show_qs_call_strength_icon_title">Show call strength icon(s)</string>
     <string name="show_qs_call_strength_icon_summary">Show call strength icons in QuickSettings panel when available</string>
 
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Less boring heads up</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer, messaging and alarm app</string>
 </resources>
