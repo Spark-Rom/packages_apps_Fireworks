@@ -19,6 +19,12 @@
         android:key="lockscreen_general_category"
         android:title="@string/general_category" >
 
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+        android:key="lockscreen_battery_info"
+        android:title="@string/lockscreen_battery_info_title"
+        android:summary="@string/lockscreen_battery_info_summary"
+        android:defaultValue="true" />
+
        <Preference
             android:title="@string/lockscreen_tuner_title">
             <intent android:action="android.intent.action.MAIN"
