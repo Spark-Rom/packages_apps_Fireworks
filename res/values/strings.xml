@@ -25,6 +25,7 @@
     <string name="screenshot_category">Screenshot Settings</string>
     <string name="statusbar_clock_category_title">Status Bar Clock</string>
     <string name="powermenu_items_title">Power menu items</string>
+    <string name="monet_category">Monet Settings</string>
 
     <!-- AdBlock -->
     <string name="hosts_block_title">Ad-block</string>
@@ -179,7 +180,6 @@
     <string name="fprint_success_vib_summary">Vibrate on successful fingerprint authentication</string>
 
     <!-- Monet Engine -->
-    <string name="monet_category">Monet</string>
     <string name="monet_engine_title">Monet engine</string>
     <string name="monet_engine_summary">Customize monet parameters</string>
     <string name="monet_engine_custom_color_title">Use custom color</string>
@@ -382,4 +382,10 @@
     <!-- Combined signal icons in status bar -->
     <string name="combined_status_bar_signal_icons_title">Combined signal icons</string>
     <string name="combined_status_bar_signal_icons_summary">Show single combined icon for WiFi and mobile signal</string>
+
+    <!-- QS footer text -->
+    <string name="qs_footer_category">Qs Footer Customization</string>
+    <string name="qs_footer_text_show_title">Show QS footer text</string>
+    <string name="qs_footer_text_string_title">Customize footer text</string>
+    <string name="qs_footer_text_string_summary">Set to empty for default Spark</string>
 </resources>

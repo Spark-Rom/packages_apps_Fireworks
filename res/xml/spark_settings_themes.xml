@@ -15,10 +15,34 @@
     android:title="@string/themes_title"
     xmlns:settings="http://schemas.android.com/apk/res-auto">
 
+     <PreferenceCategory
+        android:title="@string/monet_category">
+
     <Preference
         android:key="monet_engine_settings"
         android:title="@string/monet_engine_title"
         android:summary="@string/monet_engine_summary"
         android:fragment="com.spark.settings.fragments.MonetEngineSettingsFragment" />
+
+     </PreferenceCategory>
+
+     <PreferenceCategory
+        android:title="@string/qs_footer_category">
+
+    <!-- QS footer text toggle -->
+    <com.spark.support.preferences.SystemSettingSwitchPreference
+        android:key="qs_footer_text_show"
+        android:title="@string/qs_footer_text_show_title"
+        android:defaultValue="false" />
+
+    <!-- QS footer text string -->
+    <com.spark.settings.preferences.SystemSettingEditTextPreference
+        android:key="qs_footer_text_string"
+        android:title="@string/qs_footer_text_string_title"
+        android:summary="@string/qs_footer_text_string_summary"
+        android:dependency="qs_footer_text_show"
+        android:defaultValue="Spark" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
