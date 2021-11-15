@@ -26,6 +26,7 @@ import android.provider.Settings;
 import com.spark.support.preferences.SystemSettingMasterSwitchPreference;
 import com.spark.support.preferences.SystemSettingSwitchPreference;
 import com.spark.support.preferences.SystemSettingListPreference;
+import com.spark.support.preferences.SystemSettingEditTextPreference;
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import java.util.Locale;
@@ -62,6 +63,10 @@ public class ThemeSettings extends DashboardFragment implements
     public static final String TAG = "ThemeSettings";
     private Context mContext;
 
+    private static final String QS_FOOTER_TEXT_STRING = "qs_footer_text_string";
+
+    private SystemSettingEditTextPreference mFooterString;
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -71,6 +76,17 @@ public class ThemeSettings extends DashboardFragment implements
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
+        mFooterString = (SystemSettingEditTextPreference) findPreference(QS_FOOTER_TEXT_STRING);
+        mFooterString.setOnPreferenceChangeListener(this);
+        String footerString = Settings.System.getString(getContentResolver(),
+                QS_FOOTER_TEXT_STRING);
+        if (footerString != null && !footerString.isEmpty())
+            mFooterString.setText(footerString);
+        else {
+            mFooterString.setText("Spark");
+            Settings.System.putString(getActivity().getContentResolver(),
+                    Settings.System.QS_FOOTER_TEXT_STRING, "Spark");
+        }
     }
 
     @Override
@@ -81,6 +97,18 @@ public class ThemeSettings extends DashboardFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mFooterString) {
+            String value = (String) newValue;
+            if (value != "" && !value.isEmpty())
+                Settings.System.putString(getActivity().getContentResolver(),
+                        Settings.System.QS_FOOTER_TEXT_STRING, value);
+            else {
+                mFooterString.setText("Spark");
+                Settings.System.putString(getActivity().getContentResolver(),
+                        Settings.System.QS_FOOTER_TEXT_STRING, "Spark");
+            }
+            return true;
+        }
         return false;
     }
 
