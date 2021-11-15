@@ -19,6 +19,7 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 import android.provider.Settings;
+import com.spark.settings.preferences.SystemSettingEditTextPreference;
 import com.android.settings.R;
 
 import java.util.Locale;
@@ -43,7 +44,9 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     private static final String PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
     private static final String PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
     private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
+    private static final String QS_FOOTER_TEXT_STRING = "qs_footer_text_string";
 
+    private SystemSettingEditTextPreference mFooterString;
     private ListPreference mQuickPulldown;
     private ListPreference mTileAnimationInterpolator;
     private ListPreference mTileAnimationStyle;
@@ -95,6 +98,18 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
                 Settings.System.QS_SMART_PULLDOWN, 0);
         mSmartPulldown.setValue(String.valueOf(smartPulldown));
         updateSmartPulldownSummary(smartPulldown);
+
+        mFooterString = (SystemSettingEditTextPreference) findPreference(QS_FOOTER_TEXT_STRING);
+        mFooterString.setOnPreferenceChangeListener(this);
+        String footerString = Settings.System.getString(getContentResolver(),
+                QS_FOOTER_TEXT_STRING);
+        if (footerString != null && !footerString.isEmpty())
+            mFooterString.setText(footerString);
+        else {
+            mFooterString.setText("Spark");
+            Settings.System.putString(getActivity().getContentResolver(),
+                    Settings.System.QS_FOOTER_TEXT_STRING, "Spark");
+        }
     }
 
     @Override
@@ -132,6 +147,17 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
             int smartPulldown = Integer.valueOf((String) newValue);
             Settings.System.putInt(resolver, Settings.System.QS_SMART_PULLDOWN, smartPulldown);
             updateSmartPulldownSummary(smartPulldown);
+            return true;
+        } else if (preference == mFooterString) {
+            String value = (String) newValue;
+            if (value != "" && !value.isEmpty())
+                Settings.System.putString(getActivity().getContentResolver(),
+                        Settings.System.QS_FOOTER_TEXT_STRING, value);
+            else {
+                mFooterString.setText("Spark");
+                Settings.System.putString(getActivity().getContentResolver(),
+                        Settings.System.QS_FOOTER_TEXT_STRING, "Spark");
+            }
             return true;
         }
         return false;
