@@ -56,6 +56,15 @@
             android:defaultValue="false"
             android:dependency="volume_rocker_wake" />
 
+        <com.spark.support.preferences.CustomSeekBarPreference
+            android:key="volume_button_music_control_delay"
+            android:title="@string/volume_rocker_music_controls_delay_title"
+            android:defaultValue="500"
+            android:max="2000"
+            settings:min="300"
+            settings:interval="100"
+            settings:units="ms" />
+
         <com.spark.support.preferences.SystemSettingSwitchPreference
             android:key="swap_volume_buttons"
             android:title="@string/swap_volume_buttons_title"
