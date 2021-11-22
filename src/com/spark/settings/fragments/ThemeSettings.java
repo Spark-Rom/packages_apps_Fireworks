@@ -20,12 +20,13 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 import android.provider.Settings;
 import com.spark.settings.preferences.SystemSettingEditTextPreference;
+import com.spark.support.preferences.SystemSettingMasterSwitchPreference;
 import com.android.settings.R;
 
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
-
+import android.os.UserHandle;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import android.util.Log;
@@ -45,7 +46,9 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     private static final String PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
     private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
     private static final String QS_FOOTER_TEXT_STRING = "qs_footer_text_string";
+    private static final String KEY_EDGE_LIGHTNING = "pulse_ambient_light";
 
+    private SystemSettingMasterSwitchPreference mEdgeLightning;
     private SystemSettingEditTextPreference mFooterString;
     private ListPreference mQuickPulldown;
     private ListPreference mTileAnimationInterpolator;
@@ -110,6 +113,13 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
             Settings.System.putString(getActivity().getContentResolver(),
                     Settings.System.QS_FOOTER_TEXT_STRING, "Spark");
         }
+
+        mEdgeLightning = (SystemSettingMasterSwitchPreference)
+                findPreference(KEY_EDGE_LIGHTNING);
+        boolean enabled = Settings.System.getIntForUser(resolver,
+                KEY_EDGE_LIGHTNING, 0, UserHandle.USER_CURRENT) == 1;
+        mEdgeLightning.setChecked(enabled);
+        mEdgeLightning.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -147,6 +157,11 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
             int smartPulldown = Integer.valueOf((String) newValue);
             Settings.System.putInt(resolver, Settings.System.QS_SMART_PULLDOWN, smartPulldown);
             updateSmartPulldownSummary(smartPulldown);
+            return true;
+        } else if (preference == mEdgeLightning) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putIntForUser(resolver, KEY_EDGE_LIGHTNING,
+                    value ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
         } else if (preference == mFooterString) {
             String value = (String) newValue;
