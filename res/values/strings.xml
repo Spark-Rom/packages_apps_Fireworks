@@ -11,10 +11,6 @@
     <string name="statusbar_title">Status bar</string>
     <string name="buttons_title">Buttons</string>
 
-    <!-- Global Actions -->
-    <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
-    <string name="global_actions_advanced_reboot_summary">Show options for recovery and bootloader in power menu</string>
-
     <!-- Display tap to wake custom summary -->
     <string name="tap_to_wake_summary_spark">Double-tap anywhere on the screen to wake or sleep device</string>
 
