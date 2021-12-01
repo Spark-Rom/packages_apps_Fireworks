@@ -593,4 +593,6 @@
     <string name="powermenu_emergency">Emergency</string>
     <string name="powermenu_torch">Flashlight</string>
 
+    <string name="smart_space_title">SmartSpace</string>
+    <string name="smart_space_summary">Display conditional info such as weather and events on lockscreen\nRequires a SystemUI restart</string>
 </resources>
