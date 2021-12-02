@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.UserHandle;
+import com.android.settings.development.OverlayCategoryPreferenceController;
 import android.content.ContentResolver;
 import android.database.ContentObserver;
 import android.content.res.Resources;
@@ -22,14 +23,18 @@ import android.provider.Settings;
 import com.spark.settings.preferences.SystemSettingEditTextPreference;
 import com.spark.support.preferences.SystemSettingMasterSwitchPreference;
 import com.android.settings.R;
-
+import com.android.settings.dashboard.DashboardFragment;
 import java.util.Locale;
 import android.text.TextUtils;
+import android.content.Context;
+import androidx.fragment.app.Fragment;
 import android.view.View;
 import android.os.UserHandle;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import android.util.Log;
+import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.lifecycle.Lifecycle;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -38,8 +43,10 @@ import java.util.HashMap;
 import java.util.Collections;
 import java.util.regex.Pattern;
 
-public class ThemeSettings extends SettingsPreferenceFragment implements
+public class ThemeSettings extends DashboardFragment implements
         OnPreferenceChangeListener {
+
+    public static final String TAG = "ThemeSettings";
 
     private static final String PREF_TILE_ANIM_STYLE = "qs_tile_animation_style";
     private static final String PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
@@ -60,7 +67,6 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.spark_settings_themes);
         final ContentResolver resolver = getActivity().getContentResolver();
 
         PreferenceScreen prefSet = getPreferenceScreen();
@@ -120,6 +126,11 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
                 KEY_EDGE_LIGHTNING, 0, UserHandle.USER_CURRENT) == 1;
         mEdgeLightning.setChecked(enabled);
         mEdgeLightning.setOnPreferenceChangeListener(this);
+    }
+
+    @Override
+    protected int getPreferenceScreenResId() {
+        return R.xml.spark_settings_themes;
     }
 
     @Override
@@ -224,6 +235,25 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
         }
     }
 
+    @Override
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
+        return buildPreferenceControllers(context, getSettingsLifecycle(), this);
+    }
+
+    private static List<AbstractPreferenceController> buildPreferenceControllers(
+            Context context, Lifecycle lifecycle, Fragment fragment) {
+        final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.font"));
+        controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.icon_pack"));
+        return controllers;
+    }
+
+    @Override
+    protected String getLogTag() {
+        return TAG;
+    }
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.SPARK_SETTINGS;
