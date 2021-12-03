@@ -560,6 +560,11 @@
     <string name="notification_material_dismiss_button_title">Material dimiss button</string>
     <string name="notification_material_dismiss_button_summary">Replace clear all notification text with floating button</string>
 
+    <!-- Statusbar left_right padding -->
+    <string name="statusbar_padding_category">Paddings</string>
+    <string name="statusbar_left_padding">Left padding</string>
+    <string name="statusbar_right_padding">Right padding</string>
+
     <!-- Custom carrier label and position -->
     <string name="carrier_label_settings_title">Carrier label</string>
     <string name="carrier_label_settings_summary">Customize the carrier label</string>
@@ -587,4 +592,5 @@
     <string name="powermenu_logout">Logout</string>
     <string name="powermenu_emergency">Emergency</string>
     <string name="powermenu_torch">Flashlight</string>
+
 </resources>

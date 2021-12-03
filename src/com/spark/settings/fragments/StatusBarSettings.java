@@ -24,6 +24,7 @@ import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
 import com.spark.support.preferences.SystemSettingSwitchPreference;
+import com.spark.support.preferences.SystemSettingSeekBarPreference;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import android.util.Log;
@@ -45,7 +46,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private static final int BATTERY_STYLE_HIDDEN = 7;
     private static final int BATTERY_PERCENT_HIDDEN = 0;
     private static final String LEFT_BATTERY_TEXT = "do_left_battery_text";
+    private static final String STATUSBAR_LEFT_PADDING = "statusbar_left_padding";
+    private static final String STATUSBAR_RIGHT_PADDING = "statusbar_right_padding";
 
+
+    private SystemSettingSeekBarPreference msbleft;
+    private SystemSettingSeekBarPreference msbright;
     private SystemSettingSwitchPreference mLeftBatteryText;
     private ListPreference mBatteryPercent;
     private ListPreference mBatteryStyle;
@@ -83,6 +89,23 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                 batterystyle != BATTERY_STYLE_TEXT && batterystyle != BATTERY_STYLE_HIDDEN);
         mLeftBatteryText.setEnabled(
                 batterystyle != BATTERY_STYLE_TEXT && batterystyle != BATTERY_STYLE_HIDDEN);
+
+        msbleft = (SystemSettingSeekBarPreference) findPreference(
+                STATUSBAR_LEFT_PADDING);
+        msbright = (SystemSettingSeekBarPreference) findPreference(
+                STATUSBAR_RIGHT_PADDING);
+        final int defleftpad = getResources().getInteger(
+                com.android.internal.R.integer.config_statusbarPaddingStartDef);
+        final int defrightpad = getResources().getInteger(
+                com.android.internal.R.integer.config_statusbarPaddingEndDef);
+        final int currentsbleft = Settings.System.getInt(resolver,
+                Settings.System.STATUSBAR_LEFT_PADDING, defleftpad);
+        final int currentsbright = Settings.System.getInt(resolver,
+                Settings.System.STATUSBAR_RIGHT_PADDING, defrightpad);
+        msbleft.setValue(currentsbleft);
+        msbright.setValue(currentsbright);
+        msbleft.setOnPreferenceChangeListener(this);
+        msbright.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -111,6 +134,14 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(resolver,
                     Settings.System.DO_LEFT_BATTERY_TEXT, value ? 1 : 0);
             return true;
+        } else if (preference == msbleft) {
+            int sbpaddingleft = (Integer) newValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.STATUSBAR_LEFT_PADDING, sbpaddingleft);
+        } else if (preference == msbright) {
+            int sbpaddingright = (Integer) newValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.STATUSBAR_RIGHT_PADDING, sbpaddingright);
         }
         return false;
     }
