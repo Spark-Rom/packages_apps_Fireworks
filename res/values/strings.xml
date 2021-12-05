@@ -634,4 +634,8 @@
     <string name="invalid_font_file">Font file does not have valid postscript table</string>
     <string name="failed_to_update_font">Failed to update font</string>
     <string name="failed_to_copy_file_to_cache">Failed to copy font to cache</string>
+
+    <!-- Annoying Notifs -->
+    <string name="notification_sound_vib_screen_on_title">Annoying Notifications</string>
+    <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
 </resources>
