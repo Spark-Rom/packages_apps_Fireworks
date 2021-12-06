@@ -175,6 +175,7 @@
             android:title="@string/statusbar_left_padding"
             android:max="50"
             android:min="-5"
+            android:persistent="false"
             settings:units="dip"/>
 
     <com.spark.support.preferences.SystemSettingSeekBarPreference
@@ -182,6 +183,7 @@
             android:title="@string/statusbar_right_padding"
             android:max="50"
             android:min="-5"
+            android:persistent="false"
             settings:units="dip" />
     </PreferenceCategory>
 
