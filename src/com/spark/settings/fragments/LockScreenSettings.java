@@ -149,6 +149,11 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.FP_ERROR_VIBRATE, value ? 1 : 0);
             return true;
+        } else if (preference == mUdfpsHapticFeedback) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.UDFPS_HAPTIC_FEEDBACK, value ? 1 : 0);
+            return true;
         }
         return false;
     }

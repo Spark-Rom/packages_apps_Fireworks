@@ -102,8 +102,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                 Settings.System.STATUSBAR_LEFT_PADDING, defleftpad);
         final int currentsbright = Settings.System.getInt(resolver,
                 Settings.System.STATUSBAR_RIGHT_PADDING, defrightpad);
-        msbleft.setValue(currentsbleft);
-        msbright.setValue(currentsbright);
+        msbleft.setprogress(currentsbleft);
+        msbright.setprogress(currentsbright);
         msbleft.setOnPreferenceChangeListener(this);
         msbright.setOnPreferenceChangeListener(this);
     }
