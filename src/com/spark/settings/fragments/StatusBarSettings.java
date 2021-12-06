@@ -25,6 +25,7 @@ import android.text.TextUtils;
 import android.view.View;
 import com.spark.support.preferences.SystemSettingSwitchPreference;
 import com.spark.support.preferences.SystemSettingSeekBarPreference;
+import com.spark.support.preferences.SecureSettingSwitchPreference;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import android.util.Log;
@@ -48,8 +49,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private static final String LEFT_BATTERY_TEXT = "do_left_battery_text";
     private static final String STATUSBAR_LEFT_PADDING = "statusbar_left_padding";
     private static final String STATUSBAR_RIGHT_PADDING = "statusbar_right_padding";
+    private static final String COBINED_STATUSBAR_ICONS = "show_combined_status_bar_signal_icons";
+    private static final String SYSTEMUI_PACKAGE = "com.android.systemui";
+    private static final String CONFIG_RESOURCE_NAME = "flag_combined_status_bar_signal_icons";
 
-
+    private SecureSettingSwitchPreference mCombinedIcons;
     private SystemSettingSeekBarPreference msbleft;
     private SystemSettingSeekBarPreference msbright;
     private SystemSettingSwitchPreference mLeftBatteryText;
@@ -65,6 +69,28 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mCombinedIcons = (SecureSettingSwitchPreference)
+                findPreference(COBINED_STATUSBAR_ICONS);
+        Resources sysUIRes = null;
+        boolean def = false;
+        int resId = 0;
+        try {
+            sysUIRes = getActivity().getPackageManager()
+                    .getResourcesForApplication(SYSTEMUI_PACKAGE);
+        } catch (Exception ignored) {
+            // If you don't have system UI you have bigger issues
+        }
+        if (sysUIRes != null) {
+            resId = sysUIRes.getIdentifier(
+                    CONFIG_RESOURCE_NAME, "bool", SYSTEMUI_PACKAGE);
+            if (resId != 0) def = sysUIRes.getBoolean(resId);
+        }
+        enabled = Settings.Secure.getInt(resolver,
+                COBINED_STATUSBAR_ICONS, def ? 1 : 0) == 1;
+        mCombinedIcons.setChecked(enabled);
+        mCombinedIcons.setOnPreferenceChangeListener(this);
+
         int batterystyle = Settings.System.getIntForUser(getContentResolver(),
                 Settings.System.STATUS_BAR_BATTERY_STYLE, BATTERY_STYLE_PORTRAIT, UserHandle.USER_CURRENT);
 
@@ -142,6 +168,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             int sbpaddingright = (Integer) newValue;
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUSBAR_RIGHT_PADDING, sbpaddingright);
+        } else if (preference == mCombinedIcons) {
+            boolean enabled = (boolean) objValue;
+            Settings.Secure.putInt(resolver,
+                    COBINED_STATUSBAR_ICONS, enabled ? 1 : 0);
+            return true;
         }
         return false;
     }
