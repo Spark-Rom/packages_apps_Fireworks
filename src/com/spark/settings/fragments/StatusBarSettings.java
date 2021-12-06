@@ -102,10 +102,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                 Settings.System.STATUSBAR_LEFT_PADDING, defleftpad);
         final int currentsbright = Settings.System.getInt(resolver,
                 Settings.System.STATUSBAR_RIGHT_PADDING, defrightpad);
-        msbleft.setValue(currentsbleft);
-        msbright.setValue(currentsbright);
-        msbleft.setOnPreferenceChangeListener(this);
-        msbright.setOnPreferenceChangeListener(this);
+        msbleft.setDefaultValue(currentsbleft);
+        msbright.setDefaultValue(currentsbright);
     }
 
     @Override
@@ -134,14 +132,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(resolver,
                     Settings.System.DO_LEFT_BATTERY_TEXT, value ? 1 : 0);
             return true;
-        } else if (preference == msbleft) {
-            int sbpaddingleft = (Integer) newValue;
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.STATUSBAR_LEFT_PADDING, sbpaddingleft);
-        } else if (preference == msbright) {
-            int sbpaddingright = (Integer) newValue;
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.STATUSBAR_RIGHT_PADDING, sbpaddingright);
         }
         return false;
     }
