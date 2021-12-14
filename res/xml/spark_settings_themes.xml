@@ -36,6 +36,14 @@
         android:key="quick_settings_general_category"
         android:title="@string/general_category">
 
+    <com.spark.support.preferences.SystemSettingListPreference
+        android:key="qs_clock_picker"
+        android:defaultValue="0"
+        android:title="@string/qsclockpicker_title"
+        android:entries="@array/qsclock_type_entries"
+        android:entryValues="@array/qsclock_type_values"
+        android:summary="%s" />
+
     <!-- QS footer text toggle -->
     <com.spark.support.preferences.SystemSettingSwitchPreference
         android:key="qs_footer_text_show"

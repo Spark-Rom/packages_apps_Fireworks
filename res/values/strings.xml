@@ -604,4 +604,11 @@
      <string name="theme_customization_font_title">Headline / Body font</string>
      <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
     <string name="theme_customization_icon_pack_title">Icon pack</string>
+
+    <string name="qsclockpicker_title">QsCLock Picker</string>
+    <string name="qsclockpicker_def">Default Aosp look</string>
+    <string name="qsclockpicker_img">ImgClock</string>
+    <string name="qsclockpicker_big">BigClock</string>
+
+
 </resources>
