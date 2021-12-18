@@ -606,9 +606,8 @@
     <string name="theme_customization_icon_pack_title">Icon pack</string>
 
     <string name="qsclockpicker_title">QsCLock Picker</string>
-    <string name="qsclockpicker_def">Default Aosp look</string>
-    <string name="qsclockpicker_img">ImgClock</string>
-    <string name="qsclockpicker_big">BigClock</string>
+    <string name="qsclockpicker_img">SparkClock1</string>
+    <string name="qsclockpicker_big">SparkClock2</string>
 
 
 </resources>
