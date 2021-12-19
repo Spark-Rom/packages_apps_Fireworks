@@ -15,22 +15,17 @@
     android:title="@string/themes_title"
     xmlns:settings="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory
-         android:key="theme_customization_category"
-         android:title="@string/theme_customization_category">
-
-         <ListPreference
-            android:key="android.theme.customization.font"
-            android:title="@string/theme_customization_font_title"/>
-        <ListPreference
-            android:key="android.theme.customization.icon_pack"
-            android:title="@string/theme_customization_icon_pack_title"/>
-    </PreferenceCategory>
     <Preference
         android:key="monet_engine_settings"
         android:title="@string/monet_engine_settings_title"
         android:summary="@string/monet_engine_settings_summary"
         android:fragment="com.spark.settings.fragments.MonetEngineSettingsFragment" />
+
+    <Preference
+        android:key="extra_theme_settings"
+        android:title="@string/extra_theme_settings_title"
+        android:summary="@string/extra_theme_settings_summary"
+        android:fragment="com.spark.settings.fragments.ExtraThemes" />
 
      <PreferenceCategory
         android:key="quick_settings_general_category"
