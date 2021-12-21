@@ -26,6 +26,7 @@ import android.hardware.fingerprint.FingerprintSensorPropertiesInternal;
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
+import com.android.internal.util.spark.SparkUtils;
 import com.android.internal.util.spark.udfps.UdfpsUtils;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
@@ -104,6 +105,13 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 
         mAODPref = findPreference(AOD_SCHEDULE_KEY);
         updateAlwaysOnSummary();
+
+        boolean udfpsResPkgInstalled = SparkUtils.isPackageInstalled(getContext(),
+                "com.spark.udfps.resources");
+        PreferenceCategory udfps = (PreferenceCategory) prefSet.findPreference("udfps_category");
+        if (!udfpsResPkgInstalled) {
+            prefSet.removePreference(udfps);
+        }
     }
 
     @Override

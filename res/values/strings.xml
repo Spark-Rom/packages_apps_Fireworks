@@ -9,6 +9,7 @@
     <string name="misc_title">Miscellaneous</string>
     <string name="powermenu_title">Power menu</string>
     <string name="statusbar_title">Status bar</string>
+    <string name="udfps_category">Udfps</string>
     <string name="buttons_title">Buttons</string>
 
     <!-- Display tap to wake custom summary -->
@@ -635,4 +636,15 @@
     <string name="qs_media_controls_title">Media player</string>
     <string name="qs_media_controls_summary_on">Show media player in QS\nRequires a SystemUI restart</string>
     <string name="qs_media_controls_summary_off">Show media player as a notification\nRequires a SystemUI restart</string>
+
+    <!-- Udfps animations -->
+    <string name="udfps_recog_animation">Udfps animation</string>
+    <string name="udfps_recog_animation_summary">Shows an animation while reading your finger</string>
+    <string name="udfps_recog_animation_effect_title">Udfps animation effect</string>
+    <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
+
+    <!-- Udfps icon picker -->
+    <string name="udfps_icon_picker_title">Udfps icon picker</string>
+    <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
+
 </resources>
