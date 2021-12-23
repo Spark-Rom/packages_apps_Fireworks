@@ -41,6 +41,11 @@
             android:persistent="false" />
 
          <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_onthego"
+            android:title="@string/powermenu_onthego"
+            android:defaultValue="false" />
+
+         <com.spark.support.preferences.SystemSettingSwitchPreference
             android:key="powermenu_settings"
             android:title="@string/powermenu_settings"
             android:defaultValue="false" />
