@@ -22,6 +22,10 @@
           android:title="@string/theme_customization_icon_pack_title"/>
 
      <ListPreference
+          android:key="iconshape_list_preference"
+          android:title="@string/theme_customization_icon_shape_title"/>
+
+     <ListPreference
           android:key="font_list_preference"
           android:title="@string/theme_customization_font_title"/>
      

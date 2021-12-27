@@ -92,6 +92,10 @@ class ExtraThemes: DashboardFragment() {
                 mapOf(OVERLAY_CATEGORY_FONT to TARGET_ANDROID),
             ),
             ThemeOverlayPreferenceController(context,
+                "iconshape_list_preference",
+                mapOf(OVERLAY_CATEGORY_ICONSHAPE to TARGET_ANDROID),
+            ),
+            ThemeOverlayPreferenceController(context,
                 "icon_pack_list_preference",
                 mutableMapOf(
                     OVERLAY_CATEGORY_ICON_ANDROID to TARGET_ANDROID,
@@ -200,6 +204,7 @@ class ExtraThemes: DashboardFragment() {
         private const val TAG = "ThemeSettingsFragment"
 
         private const val OVERLAY_CATEGORY_FONT = "android.theme.customization.font"
+        private const val OVERLAY_CATEGORY_ICONSHAPE = "android.theme.customization.adaptive_icon_shape"
         private const val OVERLAY_CATEGORY_ICON_ANDROID = "android.theme.customization.icon_pack.android"
         private const val OVERLAY_CATEGORY_ICON_SYSUI = "android.theme.customization.icon_pack.systemui"
         private const val OVERLAY_CATEGORY_ICON_SETTINGS = "android.theme.customization.icon_pack.settings"
