@@ -37,8 +37,8 @@
 
          <com.spark.support.preferences.SystemSettingSwitchPreference
             android:key="powermenu_torch"
-            android:title="@string/powermenu_torch"
-            android:persistent="false" />
+            android:title="@string/power_menu_torch_title"
+            android:defaultValue="false" />
 
          <com.spark.support.preferences.SystemSettingSwitchPreference
             android:key="powermenu_onthego"
