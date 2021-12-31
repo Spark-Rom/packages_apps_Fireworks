@@ -35,7 +35,12 @@ import com.android.settings.Utils;
 import android.util.Log;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
-
+import org.json.JSONException;
+import org.json.JSONObject;
+import static android.os.UserHandle.USER_SYSTEM;
+import android.os.RemoteException;
+import android.os.ServiceManager;
+import static android.os.UserHandle.USER_CURRENT;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
@@ -47,6 +52,7 @@ public class ThemeSettings extends DashboardFragment implements
         OnPreferenceChangeListener {
 
     public static final String TAG = "ThemeSettings";
+    private Context mContext;
 
     private static final String PREF_TILE_ANIM_STYLE = "qs_tile_animation_style";
     private static final String PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
@@ -54,7 +60,10 @@ public class ThemeSettings extends DashboardFragment implements
     private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
     private static final String QS_FOOTER_TEXT_STRING = "qs_footer_text_string";
     private static final String KEY_EDGE_LIGHTNING = "pulse_ambient_light";
+    private static final String CUSTOM_CLOCK_FACE = Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK_FACE;
+    private static final String DEFAULT_CLOCK = "com.android.keyguard.clock.DefaultClockController";
 
+    private ListPreference mLockClockStyles;
     private SystemSettingMasterSwitchPreference mEdgeLightning;
     private SystemSettingEditTextPreference mFooterString;
     private ListPreference mQuickPulldown;
@@ -126,6 +135,12 @@ public class ThemeSettings extends DashboardFragment implements
                 KEY_EDGE_LIGHTNING, 0, UserHandle.USER_CURRENT) == 1;
         mEdgeLightning.setChecked(enabled);
         mEdgeLightning.setOnPreferenceChangeListener(this);
+
+        mLockClockStyles = (ListPreference) findPreference(CUSTOM_CLOCK_FACE);
+        String mLockClockStylesValue = getLockScreenCustomClockFace();
+        mLockClockStyles.setValue(mLockClockStylesValue);
+        mLockClockStyles.setSummary(mLockClockStyles.getEntry());
+        mLockClockStyles.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -184,6 +199,11 @@ public class ThemeSettings extends DashboardFragment implements
                 Settings.System.putString(getActivity().getContentResolver(),
                         Settings.System.QS_FOOTER_TEXT_STRING, "Spark");
             }
+            return true;
+        } else if (preference == mLockClockStyles) {
+            setLockScreenCustomClockFace((String) newValue);
+            int index = mLockClockStyles.findIndexOfValue((String) newValue);
+            mLockClockStyles.setSummary(mLockClockStyles.getEntries()[index]);
             return true;
         }
         return false;
@@ -248,6 +268,31 @@ public class ThemeSettings extends DashboardFragment implements
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.icon_pack"));
         return controllers;
+    }
+
+    private String getLockScreenCustomClockFace() {
+        mContext = getActivity();
+        String value = Settings.Secure.getStringForUser(mContext.getContentResolver(),
+                CUSTOM_CLOCK_FACE, USER_CURRENT);
+
+        if (value == null || value.isEmpty()) value = DEFAULT_CLOCK;
+
+        try {
+            JSONObject json = new JSONObject(value);
+            return json.getString("clock");
+        } catch (JSONException ex) {
+        }
+        return value;
+    }
+
+    private void setLockScreenCustomClockFace(String value) {
+        try {
+            JSONObject json = new JSONObject();
+            json.put("clock", value);
+            Settings.Secure.putStringForUser(mContext.getContentResolver(), CUSTOM_CLOCK_FACE,
+                    json.toString(), USER_CURRENT);
+        } catch (JSONException ex) {
+        }
     }
 
     @Override

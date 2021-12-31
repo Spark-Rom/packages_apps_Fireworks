@@ -21,6 +21,17 @@
         android:summary="@string/monet_engine_settings_summary"
         android:fragment="com.spark.settings.fragments.MonetEngineSettingsFragment" />
 
+    <PreferenceCategory
+        android:title="@string/lock_screen_custom_clock_face_category">
+
+        <ListPreference
+            android:key="lock_screen_custom_clock_face"
+            android:summary="%s"
+            android:title="@string/lock_screen_custom_clock_face_title"
+            android:entries="@array/lock_screen_custom_clock_face_entries"
+            android:entryValues="@array/lock_screen_custom_clock_face_values" />
+    </PreferenceCategory>
+
     <Preference
         android:key="extra_theme_settings"
         android:title="@string/extra_theme_settings_title"
