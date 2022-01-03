@@ -94,6 +94,13 @@
             android:title="@string/udfps_recog_animation_effect_title"
             android:summary="@string/udfps_recog_animation_effect_summary"
             android:fragment="com.spark.settings.fragments.UdfpsAnimation"/>
+        <com.spark.support.preferences.SystemSettingListPreference
+            android:key="fod_color"
+            android:title="@string/fod_pressed_color_title"
+            android:summary="%s"
+            android:entries="@array/fod_pressed_color_entries"
+            android:entryValues="@array/fod_pressed_color_values"
+            android:defaultValue="@*android:integer/config_fod_pressed_color" />
     </PreferenceCategory>
 
     <PreferenceCategory
