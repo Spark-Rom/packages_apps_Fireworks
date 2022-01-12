@@ -608,6 +608,7 @@
     <string name="qsclockpicker_new">Custom Clock 1</string>
     <string name="qsclockpicker_new1">Custom Clock 2</string>
     <string name="qsclockpicker_interactive_1">Interactive Clock 1</string>
+    <string name="qsclockpicker_aosp">Aosp Clock</string>
 
    <!-- VoWiFi icon -->
     <string name="vowifi_icon_title">VoWiFi icon</string>
@@ -660,6 +661,7 @@
     <string name="lock_screen_custom_clock_face_oos">OOS</string>
     <string name="lock_screen_custom_clock_face_clockertino">Clockertino</string>
     <string name="lock_screen_custom_clock_face_spark">Spark</string>
+    <string name="lock_screen_custom_clock_face_spark_circle">Spark Circle</string>
 
     <!-- FOD pressed color -->
     <string name="udfps_pressed_color_title">Udfps pressed color</string>
