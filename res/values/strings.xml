@@ -673,4 +673,7 @@
     <string name="use_wp_zoom_title">Enable wallpaper Zoom</string>
     <string name="use_wp_zoom_summary">Reboot after toggling</string>
 
+    <!-- Lockscreen Clock -->
+    <string name="force_lockscreen_small">Force small LS clock</string>
+    <string name="force_lockscreen_small_summary">Use small clock for Lockscreen clock</string>
 </resources>
