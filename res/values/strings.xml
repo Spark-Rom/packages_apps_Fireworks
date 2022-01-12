@@ -603,6 +603,9 @@
     <string name="qsclockpicker_title">QsCLock Picker</string>
     <string name="qsclockpicker_img">SparkClock1</string>
     <string name="qsclockpicker_big">SparkClock2</string>
+    <string name="qsclockpicker_new">Custom Clock 1</string>
+    <string name="qsclockpicker_new1">Custom Clock 2</string>
+    <string name="qsclockpicker_interactive_1">Interactive Clock 1</string>
 
    <!-- VoWiFi icon -->
     <string name="vowifi_icon_title">VoWiFi icon</string>
