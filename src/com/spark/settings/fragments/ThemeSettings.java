@@ -10,6 +10,9 @@ import android.os.UserHandle;
 import com.android.settings.development.OverlayCategoryPreferenceController;
 import android.content.ContentResolver;
 import android.database.ContentObserver;
+import android.net.Uri;
+import android.os.Handler;
+import android.content.om.IOverlayManager;
 import android.content.res.Resources;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -22,6 +25,7 @@ import androidx.preference.SwitchPreference;
 import android.provider.Settings;
 import com.spark.settings.preferences.SystemSettingEditTextPreference;
 import com.spark.support.preferences.SystemSettingMasterSwitchPreference;
+import com.spark.support.preferences.SystemSettingListPreference;
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import java.util.Locale;
@@ -62,15 +66,21 @@ public class ThemeSettings extends DashboardFragment implements
     private static final String KEY_EDGE_LIGHTNING = "pulse_ambient_light";
     private static final String CUSTOM_CLOCK_FACE = Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK_FACE;
     private static final String DEFAULT_CLOCK = "com.android.keyguard.clock.DefaultClockController";
+    private static final String QS_CLOCK_PICKER = "qs_clock_picker";
 
     private ListPreference mLockClockStyles;
     private SystemSettingMasterSwitchPreference mEdgeLightning;
     private SystemSettingEditTextPreference mFooterString;
+    private SystemSettingListPreference mQsClockPicker;
     private ListPreference mQuickPulldown;
     private ListPreference mTileAnimationInterpolator;
     private ListPreference mTileAnimationStyle;
     private ListPreference mTileAnimationDuration;
     private ListPreference mSmartPulldown;
+
+    private IOverlayManager mOverlayManager;
+    private IOverlayManager mOverlayService;
+    private Handler mHandler;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -79,7 +89,10 @@ public class ThemeSettings extends DashboardFragment implements
         final ContentResolver resolver = getActivity().getContentResolver();
 
         PreferenceScreen prefSet = getPreferenceScreen();
-
+        mOverlayManager = IOverlayManager.Stub.asInterface(
+                ServiceManager.getService(Context.OVERLAY_SERVICE));
+        mOverlayService = IOverlayManager.Stub
+                .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
         // QS animation
         mTileAnimationStyle = (ListPreference) findPreference(PREF_TILE_ANIM_STYLE);
         int tileAnimationStyle = Settings.System.getIntForUser(resolver,
@@ -141,11 +154,57 @@ public class ThemeSettings extends DashboardFragment implements
         mLockClockStyles.setValue(mLockClockStylesValue);
         mLockClockStyles.setSummary(mLockClockStyles.getEntry());
         mLockClockStyles.setOnPreferenceChangeListener(this);
+
+        mQsClockPicker = (SystemSettingListPreference) findPreference(QS_CLOCK_PICKER);
+        boolean isAospClock = Settings.System.getIntForUser(resolver,
+                KEY_EDGE_LIGHTNING, 0, UserHandle.USER_CURRENT) == 5;
+        mQsClockPicker.setOnPreferenceChangeListener(this);
+        mCustomSettingsObserver.observe();
     }
 
     @Override
     protected int getPreferenceScreenResId() {
         return R.xml.spark_settings_themes;
+    }
+
+    private CustomSettingsObserver mCustomSettingsObserver = new CustomSettingsObserver(mHandler);
+    private class CustomSettingsObserver extends ContentObserver {
+
+        CustomSettingsObserver(Handler handler) {
+            super(handler);
+        }
+
+        void observe() {
+            Context mContext = getContext();
+            ContentResolver resolver = mContext.getContentResolver();
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_CLOCK_PICKER ),
+                    false, this, UserHandle.USER_ALL);
+        }
+
+        @Override
+        public void onChange(boolean selfChange, Uri uri) {
+            if (uri.equals(Settings.System.getUriFor(Settings.System.QS_CLOCK_PICKER ))) {
+                updateQsClock();
+            }
+        }
+    }
+
+    private void updateQsClock() {
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        boolean AospClock = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.QS_CLOCK_PICKER , 0, UserHandle.USER_CURRENT) == 5;
+        boolean ColorOsClock = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.QS_CLOCK_PICKER , 0, UserHandle.USER_CURRENT) == 6;
+
+        if (AospClock) {
+            updateQsClockPicker(mOverlayManager, "com.spark.qsclockoverlays.aosp");
+        } else if (ColorOsClock) {
+            updateQsClockPicker(mOverlayManager, "com.spark.qsclockoverlays.coloros");
+        } else {
+            setDefaultClock(mOverlayManager);
+        }
     }
 
     @Override
@@ -205,9 +264,56 @@ public class ThemeSettings extends DashboardFragment implements
             int index = mLockClockStyles.findIndexOfValue((String) newValue);
             mLockClockStyles.setSummary(mLockClockStyles.getEntries()[index]);
             return true;
+        } else if (preference == mQsClockPicker) {
+            int SelectedClock = Integer.valueOf((String) newValue);
+            Settings.System.putInt(resolver, Settings.System.QS_CLOCK_PICKER, SelectedClock);
+            mCustomSettingsObserver.observe();
+            return true;
         }
         return false;
     }
+
+
+    public static void setDefaultClock(IOverlayManager overlayManager) {
+        for (int i = 0; i < CLOCKS.length; i++) {
+            String clocks = CLOCKS[i];
+            try {
+                overlayManager.setEnabled(clocks, false, USER_SYSTEM);
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static void updateQsClockPicker(IOverlayManager overlayManager, String overlayName) {
+        try {
+            for (int i = 0; i < CLOCKS.length; i++) {
+                String clocks = CLOCKS[i];
+                try {
+                    overlayManager.setEnabled(clocks, false, USER_SYSTEM);
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+            }
+            overlayManager.setEnabled(overlayName, true, USER_SYSTEM);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void handleOverlays(String packagename, Boolean state, IOverlayManager mOverlayManager) {
+        try {
+            mOverlayManager.setEnabled(packagename,
+                    state, USER_SYSTEM);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static final String[] CLOCKS = {
+        "com.spark.qsclockoverlays.aosp",
+        "com.spark.qsclockoverlays.coloros",
+    };
 
     private void updateTileAnimationStyleSummary(int tileAnimationStyle) {
         String prefix = (String) mTileAnimationStyle.getEntries()[mTileAnimationStyle.findIndexOfValue(String
