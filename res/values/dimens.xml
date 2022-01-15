@@ -35,4 +35,8 @@
     <dimen name="ambient_light_preview_paddingHorizontal">50dp</dimen>
     <dimen name="ambient_light_preview_paddingVertical">30dp</dimen>
 
+    <dimen name="package_list_padding_top">16dp</dimen>
+
+    <!-- Oval preview size -->
+    <dimen name="oval_notification_size">26dp</dimen>
 </resources>

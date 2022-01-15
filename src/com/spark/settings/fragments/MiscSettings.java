@@ -19,7 +19,9 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 import android.provider.Settings;
 import com.android.settings.R;
-
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settingslib.search.SearchIndexable;
+import android.content.Context;
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
@@ -34,17 +36,43 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 
+@SearchIndexable
 public class MiscSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
+
+    private static final String BATTERY_LIGHTS_PREF = "battery_lights";
+    private static final String NOTIFICATION_LIGHTS_PREF = "notification_lights";
+
+    private Preference mBatLights;
+    private Preference mNotLights;
+    private PreferenceCategory lightsCategory;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
+        Context mContext = getActivity().getApplicationContext();
+
         addPreferencesFromResource(R.xml.spark_settings_misc);
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+        final Resources res = mContext.getResources();
 
-        PreferenceScreen prefSet = getPreferenceScreen();
+        mBatLights = (Preference) prefScreen.findPreference(BATTERY_LIGHTS_PREF);
+        boolean mBatLightsSupported = res.getInteger(
+                org.lineageos.platform.internal.R.integer.config_deviceLightCapabilities) >= 64;
+        if (!mBatLightsSupported)
+            prefScreen.removePreference(mBatLights);
 
+        mNotLights = (Preference) prefScreen.findPreference(NOTIFICATION_LIGHTS_PREF);
+        boolean mNotLightsSupported = res.getBoolean(
+                com.android.internal.R.bool.config_intrusiveNotificationLed);
+        if (!mNotLightsSupported)
+            prefScreen.removePreference(mNotLights);
+
+        if (!mBatLightsSupported && !mNotLightsSupported) {
+            lightsCategory = (PreferenceCategory) prefScreen.findPreference("light_brightness");
+            prefScreen.removePreference(lightsCategory);
+        }
     }
 
     @Override
@@ -58,4 +86,28 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         return MetricsProto.MetricsEvent.SPARK_SETTINGS;
     }
 
+    /**
+     * For search
+     */
+    public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider(R.xml.spark_settings_misc) {
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    List<String> keys = super.getNonIndexableKeys(context);
+                    final Resources res = context.getResources();
+
+                    boolean mBatLightsSupported = res.getInteger(
+                            org.lineageos.platform.internal.R.integer.config_deviceLightCapabilities) >= 64;
+                    if (!mBatLightsSupported)
+                        keys.add(BATTERY_LIGHTS_PREF);
+
+                    boolean mNotLightsSupported = res.getBoolean(
+                            com.android.internal.R.bool.config_intrusiveNotificationLed);
+                    if (!mNotLightsSupported)
+                        keys.add(NOTIFICATION_LIGHTS_PREF);
+
+                    return keys;
+                }
+            };
 }
