@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">आतिशबाजी</string>
+    <string name="default_string">पूर्व निर्धारित</string>
+    <string name="disabled">निष्क्रिय</string>
+    <!-- Categories -->
+    <string name="themes_title">थीम्स</string>
+    <string name="gestures_title">इशारे</string>
+    <string name="lockscreen_title">लॉक स्क्रीन</string>
+    <string name="misc_title">विविध</string>
+    <string name="powermenu_title">पावर मेन्यू</string>
+    <string name="statusbar_title">स्टेटस बार</string>
+    <string name="udfps_category">Udfps</string>
+    <string name="buttons_title">Buttons &amp; Navigation</string>
+    <!-- Display tap to wake custom summary -->
+    <string name="tap_to_wake_summary_spark">फोन को चालू करने के लिए स्क्रीन पर दो बार दबाएं</string>
+    <!-- Double Tap to Sleep Statusbar -->
+    <string name="double_tap_sleep_gesture_title">स्क्रीन बंद करने के लिए दो बार स्पर्श करें</string>
+    <string name="double_tap_sleep_gesture_summary">स्क्रीन बंद करने के लिए दो बार स्टेटस बार स्पर्श करें</string>
+    <!-- Color picker -->
+    <string name="rgb">आरजीबी</string>
+    <string name="hsl">HSL</string>
+    <string name="hsv">HSV</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="confirm">पुष्टि करना</string>
+    <!-- Monet engine -->
+    <string name="monet_engine_settings_title">मोनेट इंजन</string>
+    <string name="monet_engine_settings_summary">मोनेट इंजन पैरामीटर समायोजित करें</string>
+    <string name="accurate_shades_title">Use accurate shades</string>
+    <string name="use_wallpaper_color_title">Use wallpaper color</string>
+    <string name="color_override_title">Custom color picker</string>
+    <string name="invalid_color_input">Invalid color input!</string>
+    <string name="chroma_factor_title">Colorfulness</string>
+    <string name="linear_lightness_title">Use custom lightness scale</string>
+    <string name="white_luminance_title">Brightness</string>
+    <!-- Tuner -->
+    <string name="general_category">General</string>
+    <string name="lockscreen_tuner_title">Lock screen shortcuts</string>
+    <string name="statusbar_items_category">आइकॉन</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">स्पर्श प्रतिक्रिया</string>
+    <string name="quick_settings_vibrate_summary">क्विक सेटिंग्स टाइल दबाने पर कंपन करें</string>
+    <!-- Tiles animation style  -->
+    <string name="qs_tile_animation_title">Animations</string>
+    <string name="qs_tile_animation_style_title">क्विक सेटिंग्स टाइल एनीमेशन</string>
+    <string name="qs_tile_animation_duration_title">क्विक सेटिंग्स टाइल एनीमेशन अवधि</string>
+    <string name="qs_tile_animation_interpolator_title">क्विक सेटिंग्स टाइल एनीमेशन इंटरपोलर</string>
+    <string name="qs_tile_animation_style_off">बंद</string>
+    <string name="qs_tile_animation_style_flip">उल्टा करें</string>
+    <string name="qs_tile_animation_style_rotate">घुमाएं</string>
+    <string name="qs_tile_animation_duration_low">कम</string>
+    <string name="qs_tile_animation_duration_fast">तेज</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">रैखिक</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">गति बढ़ाना</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">गति कम करना</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">गति कम और ज्यादा करना</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">उछाल</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">ओवरशूट</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">पूर्वानुमान</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">पूर्वानुमान और ओवरशूट</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">स्क्रीन बंद फ्लैशलाइट</string>
+    <string name="torch_power_button_gesture_none">बंद</string>
+    <string name="torch_power_button_gesture_dt">पॉवर बटन दो बार दबाएं</string>
+    <string name="torch_power_button_gesture_dt_toast">कैमरा खोलने वाली सेटिंग्स अब बंद कर दी गई हैं</string>
+    <string name="torch_power_button_gesture_lp">थोड़ी देर पॉवर बटन दबाएं</string>
+    <!-- Volume buttons category -->
+    <string name="volume_category">Volume rocker</string>
+    <string name="volume_rocker_wake_title">फोन चालू करें</string>
+    <string name="volume_rocker_wake_summary">वॉल्यूम बटन दबाने से आपका फोन चालू हो जाएगा</string>
+    <string name="volume_rocker_music_controls_title">संगीत नियंत्रित करें</string>
+    <string name="volume_rocker_music_controls_summary">स्क्रीन बंद होने पर गाना आगे करने के लिए वॉल्यूम बटन थोड़ी देर दबाए रखें</string>
+    <string name="volume_rocker_music_controls_delay_title">Playback control activation delay</string>
+    <string name="icons_category">Icons</string>
+    <string name="show_fourg_icon_title">4G आइकन</string>
+    <string name="show_fourg_icon_summary">एलटीई के बजाय सिग्नल आइकन में 4G आइकन प्रदर्शित करें</string>
+    <!-- Show VoLTE icon on statusbar -->
+    <string name="volte_icon_title">VoLTE icon</string>
+    <string name="volte_icon_summary">Display VoLTE icon when available</string>
+    <string name="swap_volume_buttons_title">बटन की अदला बदली करें</string>
+    <string name="swap_volume_buttons_summary">फोन घुमाने पर वॉल्यूम बटन उल्टा करें</string>
+    <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">Disable power menu on lock screen</string>
+    <string name="lockscreen_power_menu_disabled_summary">This will only disable the power menu on secure lock screens</string>
+    <!-- Toast app icon -->
+    <string name="toast_icon_title">Toast app icon</string>
+    <string name="toast_icon_summary">Display the app\'s icon corresponding with the toast</string>
+    <string name="headsup_category">Heads up settings</string>
+    <!-- Heads up -->
+    <string name="heads_up_notifications">हेड्स अप</string>
+    <string name="heads_up_notifications_summary">स्टेटस बार नोटिफिकेशंस को बाहर निकाल कर दिखाएं</string>
+    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
+    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
+    <string name="add_heads_up_package">ऐप जोड़ें</string>
+    <string name="add_heads_up_stoplist_summary">इन ऐप्स में हेड्स अप बंद करें</string>
+    <string name="add_heads_up_blacklist_summary">इन ऐप्स के लिए हेड्स अप बंद करें</string>
+    <string name="heads_up_stoplist_title">स्टॉप-लिस्ट</string>
+    <string name="heads_up_blacklist_title">ब्लैक-लिस्ट</string>
+    <string name="profile_choose_app">ऐप चुनें</string>
+    <string name="dialog_delete_title">हटाएँ</string>
+    <string name="dialog_delete_message">चयनित आइटम हटाएं?</string>
+    <!-- Heads up snooze -->
+    <string name="heads_up_snooze_title">टाइमर स्नूज़ करें</string>
+    <string name="heads_up_snooze_summary_one_minute">दिख रहे नोटिफिकेशन पर स्वाइप करने से 1 मिनट के लिए उस एप्लिकेशन में हेड्स अप नोटिफिकेशंस दिखाई नहीं देंगे</string>
+    <string name="heads_up_snooze_summary">दिख रहे नोटिफिकेशन पर स्वाइप करने से उस एप्लिकेशन के लिए हेड्स अप नोटिफिकेशंस <xliff:g id="number">%d</xliff:g> मिनट के लिए बंद हो जाएंगे</string>
+    <string name="heads_up_snooze_disabled_summary">स्नूज़ टाइमर बंद है</string>
+    <string name="heads_up_snooze_1min">1 मिनट</string>
+    <string name="heads_up_snooze_5min">5 मिनट</string>
+    <string name="heads_up_snooze_10min">10 मिनट</string>
+    <string name="heads_up_snooze_15min">15 मिनट</string>
+    <string name="heads_up_snooze_20min">20 मिनट</string>
+    <string name="heads_up_footer">Time out feature may require a SystemUI restart.</string>
+    <string name="heads_up_time_out_title">समय समाप्त</string>
+    <string name="heads_up_time_out_summary">नोटिफिकेशन की झलक <xliff:g id="number">%d</xliff:g> सेकंड तक दिखाई देगी</string>
+    <string name="heads_up_time_out_2sec">2 सेकंड</string>
+    <string name="heads_up_time_out_4sec">4 सेकंड</string>
+    <string name="heads_up_time_out_5sec">5 सेकंड</string>
+    <string name="heads_up_time_out_6sec">6 सेकंड</string>
+    <string name="heads_up_time_out_8sec">8 सेकंड</string>
+    <string name="heads_up_time_out_10sec">10 सेकंड</string>
+    <string name="status_bar_quick_qs_pulldown">Quick QS pulldown</string>
+    <string name="quick_pulldown_none">Disabled</string>
+    <string name="quick_pulldown_right">दाएं</string>
+    <string name="quick_pulldown_left">बाएं</string>
+    <string name="quick_pulldown_always">Always show quick settings on status bar pull down</string>
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_clock_title">घड़ी</string>
+    <string name="status_bar_clock">Clock &amp; date</string>
+    <string name="clock_enabled">Enabled</string>
+    <string name="clock_disabled">Disabled</string>
+    <string name="statusbar_clock_style_title">Clock &amp; date position</string>
+    <string name="statusbar_clock_style_right">Right</string>
+    <string name="statusbar_clock_style_centre">Center</string>
+    <string name="statusbar_clock_style_left">Left</string>
+    <string name="status_bar_clock_style_reset">Reset color</string>
+    <string name="status_bar_show_clock_title">Show clock &amp; date</string>
+    <string name="status_bar_am_pm_title">ऐऍम/पीऍम शैली</string>
+    <string name="status_bar_am_pm_info">24-घंटे की घड़ी चालू है</string>
+    <string name="clock_seconds_display">सेकंड दिखाएँ</string>
+    <string name="enable_clock_weekday">Day of the week</string>
+    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
+    <string name="dont_show">Don\'t show</string>
+    <string name="clock_date_display">दिनांक</string>
+    <string name="clock_date_display_summary">घड़ी से पहले इच्छित शैली में दिनांक दिखाएं</string>
+    <string name="clock_date_style">दिनांक शैली</string>
+    <string name="clock_date_format">दिनांक स्वरूप</string>
+    <string name="clock_date_string_edittext_title">दिनांक स्वरुप जैसे कि:- mm/dd/yy में होना चाहिए।</string>
+    <string name="clock_date_string_edittext_summary">स्ट्रिंग दर्ज करें</string>
+    <string name="am_pm_clock_normal">Normal font size</string>
+    <string name="am_pm_clock_small">Small font size</string>
+    <string name="am_pm_clock_none">Don\'t show</string>
+    <string name="clock_date_display_none">छुपा हुआ</string>
+    <string name="clock_date_display_small">छोटा</string>
+    <string name="clock_date_display_normal">सामान्य</string>
+    <string name="clock_date_style_normal">सामान्य</string>
+    <string name="clock_date_style_lowercase">छोटे अक्षरों में</string>
+    <string name="clock_date_style_uppercase">बड़े अक्षरों में</string>
+    <string name="clock_date_right">समय के दाएं ओर</string>
+    <string name="clock_date_left">समय के बाएं ओर</string>
+    <string name="clock_date_position">दिनांक स्थान</string>
+    <string name="status_bar_clock_auto_hide_title">स्वत: घड़ी छुपाएं</string>
+    <string name="status_bar_clock_auto_hide_summary">नियमित अंतराल पर घड़ी छिपाएं और दिखाएं</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">छिपाने की अवधि</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">दिखाने की अवधि</string>
+    <!-- Running Services button -->
+    <string name="qs_running_services_title">Running services icon</string>
+    <string name="qs_running_services_summary">Enable the running services icon in the footer</string>
+    <!-- QS advanced settings -->
+    <string name="qs_edit_title">Edit icon</string>
+    <string name="qs_edit_summary">Enable the tile edit icon in the footer</string>
+    <!-- Network traffic -->
+    <string name="network_traffic_category_title">Network traffic</string>
+    <string name="statusbar_show_network_traffic_title">Show network traffic in statusbar</string>
+    <string name="statusbar_network_traffic_threshold_tx_title">Auto hide threshold for upload</string>
+    <string name="statusbar_network_traffic_threshold_rx_title">Auto hide threshold for download</string>
+    <string name="statusbar_network_traffic_unit_text_size_title">Network traffic unit text size</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_title">Network traffic rate text scale factor</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_dialog_title">Scale factor</string>
+    <!-- HW keys -->
+    <string name="hardware_keys_title">हार्डवेयर</string>
+    <string name="hardware_keys_category">Hardware navigation buttons</string>
+    <string name="hardware_keys_disable_title">हार्डवेयर बटन</string>
+    <string name="hardware_keys_disable_summary">नेविगेशन के लिए हार्डवेयर बटन्स का प्रयोग करें</string>
+    <string name="hardware_keys_volume_keys_title">Volume rocker</string>
+    <!-- ANBI -->
+    <string name="anbi_title">आकस्मिक स्पर्श</string>
+    <string name="anbi_summary">स्क्रीन को छूते समय नेविगेशन बटन्स को बंद करें</string>
+    <!-- Button settings -->
+    <string name="button_pref_title">Buttons</string>
+    <!-- Hardware button navigation -->
+    <string name="picker_activities">Activities</string>
+    <string name="select_custom_app_title">Select custom app</string>
+    <string name="select_custom_activity_title">Select custom activity</string>
+    <string name="profile_applist_title">Applications</string>
+    <string name="choose_action_title">Choose action</string>
+    <string name="action_entry_default_action">Default settings</string>
+    <string name="action_entry_select_app">Select application</string>
+    <string name="action_entry_custom_action">Select custom action</string>
+    <string name="hardware_keys_home_key_title">Home button</string>
+    <string name="hardware_keys_back_key_title">Back button</string>
+    <string name="hardware_keys_menu_key_title">Menu button</string>
+    <string name="hardware_keys_assist_key_title">Search button</string>
+    <string name="hardware_keys_appswitch_key_title">Recents button</string>
+    <string name="hardware_keys_camera_key_title">Camera button</string>
+    <string name="hardware_keys_short_press_title">Short press action</string>
+    <string name="hardware_keys_double_tap_summary">Set double tap action</string>
+    <string name="hardware_keys_single_tap_summary">Set single tap action</string>
+    <string name="hardware_keys_long_press_summary">Set long press action</string>
+    <string name="hardware_keys_single_tap_title">Single tap action</string>
+    <string name="hardware_keys_long_press_title">Long press action</string>
+    <string name="hardware_keys_double_tap_title">Double tap action</string>
+    <string name="hardware_keys_action_nothing">No action</string>
+    <string name="hardware_keys_action_menu">Open/close menu</string>
+    <string name="hardware_keys_action_app_switch">Recent apps switcher</string>
+    <string name="hardware_keys_action_search">Search assistant</string>
+    <string name="hardware_keys_action_voice_search">Voice search</string>
+    <string name="hardware_keys_action_in_app_search">In-app search</string>
+    <string name="hardware_keys_action_launch_camera">Launch camera</string>
+    <string name="hardware_keys_action_sleep">Turn screen off</string>
+    <string name="hardware_keys_action_split_screen">Split screen</string>
+    <string name="hardware_keys_action_close_app">Kill app</string>
+    <string name="hardware_keys_action_torch">Torch</string>
+    <string name="hardware_keys_action_screenshot">Screenshot</string>
+    <string name="hardware_keys_action_volume_panel">Toggle volume panel</string>
+    <string name="hardware_keys_action_clear_all_notifications">Clear all notifications</string>
+    <string name="hardware_keys_action_notifications_panel">Toggle notifications panel</string>
+    <string name="hardware_keys_action_toggle_qs_panel">Toggle QS panel</string>
+    <string name="hardware_keys_action_ringer_modes">Ringer modes</string>
+    <string name="hardware_keys_swipe_right_key_title">Swipe right</string>
+    <string name="hardware_keys_swipe_left_key_title">Swipe left</string>
+    <string name="hardware_keys_long_tap_key_title">Long tap</string>
+    <string name="hardware_keys_swipe_tap_title">Swipe action</string>
+    <string name="hardware_keys_long_tap_title">Long tap action</string>
+    <string name="button_wake_title">Wake device</string>
+    <string name="button_wake_summary">Wake device by pressing the button</string>
+    <string name="camera_sleep_on_release_title">Screen peek</string>
+    <string name="camera_sleep_on_release_summary">A half press will keep the screen on only while the button is held down</string>
+    <string name="camera_launch_title">Launch camera</string>
+    <string name="camera_launch_summary">A longpress and release will launch camera</string>
+    <string name="volbtn_music_controls_title">Control playback</string>
+    <string name="volbtn_music_controls_summary">Seek music tracks by long pressing the volume keys while the display is off</string>
+    <string name="volbtn_cursor_control_title">Keyboard cursor control</string>
+    <string name="volbtn_cursor_control_off">Disabled</string>
+    <string name="volbtn_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volbtn_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="volume_panel_on_left_summary">Display volume panel on the left side of the screen</string>
+    <string name="extras_title">Extras</string>
+    <string name="click_partial_screenshot_title">Click to partial screenshot</string>
+    <string name="click_partial_screenshot_summary">Short click Volume Down and Power to take partial screenshot</string>
+    <!-- Key backlight -->
+    <string name="button_backlight_title">बटन बैकलाइट</string>
+    <string name="button_backlight_enabled">Illuminate buttons</string>
+    <string name="button_backlight_only_when_pressed_title">Illuminate buttons only when pressed</string>
+    <string name="keyboard_backlight_enabled">Illuminate keyboard</string>
+    <string name="button_backlight_seekbar_title">Button brightness</string>
+    <string name="keyboard_backlight_seekbar_title">Keyboard brightness</string>
+    <string name="backlight_timeout_title">Illumination timeout</string>
+    <string name="backlight_timeout_unlimited">Don\'t turn off</string>
+    <string name="backlight_summary_disabled">Disabled</string>
+    <string name="backlight_summary_enabled_with_timeout">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="backlight_summary_enabled">Enabled</string>
+    <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">Enable on-screen nav bar</string>
+    <string name="disable_navkeys_summary">Enable on-screen navigation bar and disable hardware buttons</string>
+    <!-- Buttons - Swap capacitive keys -->
+    <string name="swap_capacitive_keys_title">Swap capacitive buttons</string>
+    <string name="swap_capacitive_keys_summary">Swap the order of recents and back buttons</string>
+    <!-- Lock screen media artwork -->
+    <string name="lockscreen_media_blur_title">मीडिया आवरण चित्र के धुंधलेपन का स्तर</string>
+    <string name="show_lockscreen_media_art_title">Show media art</string>
+    <string name="lockscreen_media_art_options_title">Lockscreen media art</string>
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_error_vib_title">फिंगरप्रिंट प्रमाणित ना होने पर कम्पन</string>
+    <string name="fprint_error_vib_summary">फिंगरप्रिंट प्रमाणित ना होने पर कम्पन</string>
+    <string name="fprint_success_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_success_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <string name="fingerprint_category">Fingerprint</string>
+    <string name="cursor_section_header">कर्सर</string>
+    <string name="volume_key_cursor_control_title">कीबोर्ड के कर्सर को नियंत्रित करें</string>
+    <string name="volume_key_cursor_control_off">बंद</string>
+    <string name="volume_key_cursor_control_on">वॉल्यूम ऊपर / नीचे करने वाले बटन कर्सर को बाएँ / दांए ले जाते हैं</string>
+    <string name="volume_key_cursor_control_on_reverse">वॉल्यूम ऊपर / नीचे करने वाले बटन कर्सर को दाएं / बाएं ले जाते हैं</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">डेटा बंद आइकन दिखाएं</string>
+    <string name="data_disabled_icon_summary">डेटा बंद होने पर सिग्नल बार के बगल में क्रॉस का चिन्ह् प्रदर्शित करें</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">रोमिंग सूचक</string>
+    <string name="roaming_indicator_icon_summary">जब रोमिंग मोड में हो तब संकेत चिह्न में रोमिंग सूचक प्रदर्शित करें</string>
+    <!-- Button brightness -->
+    <string name="button_backlight_options_category">Backlight options</string>
+    <string name="button_backlight_enable_title">बैक लाईट की अनुमति दें</string>
+    <string name="button_link_brightness">स्क्रीन चमक से जोड़ें</string>
+    <string name="button_link_brightness_summary">स्क्रीन चमक स्तर का उपयोग करें</string>
+    <string name="button_manual_brightness">चमक स्तर</string>
+    <string name="button_timeout_title">बैकलाइट समय समाप्ति</string>
+    <string name="button_backlight_on_touch_only_title">बटन स्पर्श</string>
+    <string name="button_backlight_on_touch_only_summary">केवल बटन स्पर्श पर समय समाप्ति के साथ बैकलाइट सक्षम करें</string>
+    <!-- Lock screen visualizer -->
+    <string name="enable_visualizer">Enable visualizer</string>
+    <string name="lockscreen_visualizer_title">Visualizer</string>
+    <string name="lockscreen_visualizer_enable">Music visualizer</string>
+    <string name="lockscreen_visualizer_enable_summary">Show visualizer bars while playing music</string>
+    <string name="lockscreen_autocolor_title">Automatic color</string>
+    <string name="lockscreen_autocolor_summary">Sync color with lock screen background</string>
+    <string name="lockscreen_autocolor_lavalamp">Requires lava lamp disabled</string>
+    <string name="lockscreen_lavalamp_title">Lava lamp</string>
+    <string name="lockscreen_lavalamp_summary">Use a smooth lava lamp style color blend animation</string>
+    <string name="lockscreen_lavalamp_speed_title">Color blend interval</string>
+    <string name="lockscreen_solid_lines_category">Solid Lines</string>
+    <string name="lockscreen_solid_units_count_title">Lines count</string>
+    <string name="lockscreen_solid_fudge_factor_title">Sanity level</string>
+    <string name="lockscreen_solid_units_opacity_title">Lines opacity</string>
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_slider_category">Brightness slider</string>
+    <string name="qs_brightness_slider_title">स्लाइडर विकल्प</string>
+    <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
+    <string name="qs_brightness_position_bottom_title">Show brightness slider on bottom</string>
+    <string name="qs_brightness_position_bottom_summary">Show a brightness slider on bottom quick settings</string>
+    <!-- Quick Settings brightness icon -->
+    <string name="brightness_icon_title">स्वत: चमक आइकन</string>
+    <string name="brightness_icon_summary">स्वत: चमक के लिए स्लाइडर के बग़ल स्विच दिखाएं</string>
+    <!-- Quick QS Panel brightness slider -->
+    <string name="quick_qs_brightness_slider_title">Show brightness slider in Quick QS Panel</string>
+    <string name="quick_qs_brightness_slider_summary">Show a brightness slider in the quick qs panel</string>
+    <!-- QS footer warnings -->
+    <string name="qs_footer_warnings_title">QS footer warnings</string>
+    <string name="qs_footer_warnings_summary">Display a warning at bottom of QS panel when network is monitored by external apps or vpn</string>
+    <!-- Smart pulldown-->
+    <string name="smart_pulldown_title">Smart pulldown</string>
+    <string name="smart_pulldown_summary">Open quick settings when there are %1$s notifications</string>
+    <string name="smart_pulldown_none_summary">Open quick settings when there are no notifications</string>
+    <string name="smart_pulldown_off">Off</string>
+    <string name="smart_pulldown_none">No notifications</string>
+    <string name="smart_pulldown_dismissable">No dismissable notifications</string>
+    <string name="smart_pulldown_ongoing">No ongoing notifications</string>
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Show CPU info</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+    <!-- Battery light -->
+    <string name="light_settings_header">Light settings</string>
+    <string name="battery_light_settings">चार्जिंग एलईडी</string>
+    <string name="battery_light_summary">Enable or disable battery light while on DND, low battery</string>
+    <string name="battery_light_enable">Battery light</string>
+    <string name="battery_full_light_enabled">Battery light when fully charged</string>
+    <string name="battery_light_allow_on_dnd_title">परेशान ना करें मोड में बैटरी लाइट</string>
+    <string name="battery_light_low_blinking_title">कम बैटरी सूचक</string>
+    <string name="battery_light_cat">चार्जिंग</string>
+    <string name="battery_light_low_color">कम बैटरी</string>
+    <string name="battery_light_medium_color">मध्यम बैटरी</string>
+    <string name="battery_light_full_color">लगभग पूर्ण बैटरी</string>
+    <string name="battery_light_reallyfull_color">पूर्ण बैटरी</string>
+    <!-- Volume Steps Fragment -->
+    <string name="volume_steps_fragment_title">Volume steps</string>
+    <string name="volume_steps_summary">ध्वनि के लिए इच्छित स्तर सेट करें</string>
+    <string name="volume_steps_alarm_title">ध्वनि स्तर: अलार्म</string>
+    <string name="volume_steps_dtmf_title">ध्वनि स्तर: DTMF</string>
+    <string name="volume_steps_music_title">ध्वनि स्तर: संगीत</string>
+    <string name="volume_steps_notification_title">ध्वनि स्तर: अधिसूचना</string>
+    <string name="volume_steps_ring_title">ध्वनि स्तर: रिंगर</string>
+    <string name="volume_steps_system_title">ध्वनि स्तर: सिस्टम</string>
+    <string name="volume_steps_voice_call_title">ध्वनि स्तर: वॉयस कॉल</string>
+    <string name="volume_steps_reset">पुनः सेट करें</string>
+    <!-- Show old style mobile data icon -->
+    <string name="use_old_mobiletype_title">पुराना छोटा नेटवर्क आइकन</string>
+    <string name="use_old_mobiletype_summary">सिग्नल सूचक के ऊपर नेटवर्क प्रकार आइकन दिखाएं</string>
+    <!-- Brightness control -->
+    <string name="status_bar_toggle_brightness">चमक नियंत्रण</string>
+    <string name="status_bar_toggle_brightness_summary">स्टेटस बार पर स्लाइड करके चमक समायोजित करें</string>
+    <!-- Battery percent -->
+    <string name="battery_settings_title">Battery Settings</string>
+    <!-- Battery Styles -->
+    <string name="battery_style_category_title">Battery styles</string>
+    <string name="battery_percent_title">Battery percent</string>
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">आइकन स्टाइल</string>
+    <string name="status_bar_battery_style_icon_portrait">पोर्ट्रेट</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Icon landscape R</string>
+    <string name="status_bar_battery_style_icon_landscape">Icon landscape L</string>
+    <string name="status_bar_battery_style_circle">वृत्त</string>
+    <string name="status_bar_battery_style_dotted_circle">वृत्त (बिंदुकृत)</string>
+    <string name="status_bar_battery_style_filled_circle">वृत्त (भरा हुआ)</string>
+    <string name="status_bar_battery_style_big_circle">Big circle</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Big dotted circle</string>
+    <string name="status_bar_battery_style_text">लेख</string>
+    <string name="status_bar_battery_style_hidden">छुपा हुआ</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_default">छिपा हुआ</string>
+    <string name="status_bar_battery_percentage_text_inside">चिह्न के अंदर</string>
+    <string name="status_bar_battery_percentage_text_next">चिह्न के आगे</string>
+    <string name="left_battery_text_title">Left battery text</string>
+    <string name="left_battery_text_summary">Put the battery text on left of battery icon</string>
+    <!-- Battery estimate -->
+    <string name="battery_estimate_title">Battery estimate</string>
+    <string name="battery_estimate_summary">Display estimated remaining battery life when available</string>
+    <!-- Call strength icons in QS -->
+    <string name="show_qs_call_strength_icon_title">Show call strength icon(s)</string>
+    <string name="show_qs_call_strength_icon_summary">Show call strength icons in QuickSettings panel when available</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">कम उबाऊ हेड्स अप</string>
+    <string name="less_boring_heads_up_summary">केवल फोन, मैसेजिंग और अलार्म के लिए हेड्स अप नोटिफिकेशन दिखाएं</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">ऐप बंद करने के लिए बटन</string>
+    <string name="notification_guts_kill_app_button_summary">नोटिफिकेशन को लंबा दबाने पर आने वाली मेन्यू में एप बंद करने का बटन दिखाएं</string>
+    <string name="general_title">General</string>
+    <string name="notification_light_settings">नोटिफिकेशन एलईडी</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">चार्जिंग की जानकारी</string>
+    <string name="lockscreen_battery_info_summary">चार्ज करते समय बैटरी के बारे में अतिरिक्त जानकारी दिखाएं</string>
+    <!-- Charging animation -->
+    <string name="charging_animation_title">चार्जिंग एनीमेशन</string>
+    <string name="charging_animation_summary">फोन चार्ज करते समय एनीमेशन प्रदर्शित करें</string>
+    <!-- QS footer text -->
+    <string name="qs_footer_text_show_title">Show QS footer text</string>
+    <string name="qs_footer_text_string_title">Customize footer text</string>
+    <string name="qs_footer_text_string_summary">Set to empty for default Spark</string>
+    <!-- Sb Icon Style -->
+    <string name="statusbar_icons_style">Colored Statusbar Icons</string>
+    <string name="statusbar_icons_style_summary">Choose the style of your statusbar icons (requires SystemUI restart)</string>
+    <!-- Notification headers -->
+    <string name="notification_headers_title">Notification Headers</string>
+    <string name="notification_headers_summary">Show headers in the notification shade</string>
+    <!-- Combined signal icons in status bar -->
+    <string name="combined_status_bar_signal_icons">Combined signal icons</string>
+    <string name="combined_status_bar_signal_icons_summary">Enable combined signal icons in status bar. Needs SystemUI restart or reboot</string>
+    <!-- Screen off FOD -->
+    <string name="screen_off_fod_title">स्क्रीन बंद एफओडी</string>
+    <string name="screen_off_fod_summary">स्क्रीन बंद होने पर भी फिंगरप्रिंट स्कैनर का इस्तेमाल करें</string>
+    <!-- AOD Schedule -->
+    <string name="always_on_display_schedule_title">Always on display schedule</string>
+    <string name="always_on_display_schedule_sunset">Sunset</string>
+    <string name="always_on_display_schedule_sunrise">Sunrise</string>
+    <string name="always_on_display_schedule_mixed_sunset">Turns on from sunset till a time</string>
+    <string name="always_on_display_schedule_mixed_sunrise">Turns on from a time till sunrise</string>
+    <!-- Udfps Haptic Feedback -->
+    <string name="udfps_haptic_feedback_title">Udfps haptic feedback</string>
+    <string name="udfps_haptic_feedback_summary">Vibrate when touching udfps icon</string>
+    <!-- Tiles on secure keyguard -->
+    <string name="use_tiles_on_secure_keyguard_title">Require unlocking to use sensitive tiles</string>
+    <string name="use_tiles_on_secure_keyguard_summary">Ask to unlock lockscreen when using sensitive tiles</string>
+    <!-- Pulse notifications lightning -->
+    <string name="pulse_ambient_light_title">प्रकाशित किनारे</string>
+    <string name="pulse_ambient_light_summary">नोटिफिकेशन आने पर स्क्रीन के किनारों को प्रकाशित करें</string>
+    <string name="ambient_notification_light_enabled_title">Show on AOD</string>
+    <string name="ambient_notification_light_enabled_summary">Keep showing edge lightning on AOD</string>
+    <string name="ambient_notification_light_hide_aod_title">Hide AOD content</string>
+    <string name="ambient_notification_light_hide_aod_summary">Hide AOD content when edges are lighted</string>
+    <string name="ambient_notification_light_duration_title">Duration</string>
+    <string name="ambient_notification_light_duration_summary">Time it takes for each animation to complete</string>
+    <string name="ambient_notification_light_repeats_title">Repeats</string>
+    <string name="ambient_notification_light_repeats_summary">Amount of times the animation should show\n0 for infinite</string>
+    <string name="ambient_notification_light_timeout_title">Timeout</string>
+    <string name="ambient_notification_light_timeout_forever">Forever</string>
+    <string name="ambient_notification_light_timeout_half_minute">30 seconds</string>
+    <string name="ambient_notification_light_timeout_minute">1 minute</string>
+    <string name="ambient_notification_light_timeout_three_minutes">3 minutes</string>
+    <string name="ambient_notification_light_timeout_five_minutes">5 minutes</string>
+    <string name="ambient_notification_light_timeout_ten_minutes">10 minutes</string>
+    <string name="set_to_zero">Set repeats to 0 to enable</string>
+    <string name="aod_disabled">AOD is disabled</string>
+    <string name="ambient_notification_color_mode_title">Color mode</string>
+    <string name="ambient_notification_color_mode_accent">Accent color</string>
+    <string name="ambient_notification_color_mode_wall">Wallpaper dominant color</string>
+    <string name="ambient_notification_color_mode_notification">Notification icon color</string>
+    <string name="ambient_notification_color_mode_custom">@string/ambient_notification_light_color_title</string>
+    <string name="ambient_notification_light_color_title">Custom color</string>
+    <string name="pulse_ambient_light_show_always_title">Show always</string>
+    <string name="pulse_ambient_light_show_always_summary">Show lights for all doze events and not just notifications</string>
+    <!-- OOS style material dismiss all button for notifications -->
+    <string name="notification_material_dismiss_button_title">Material dimiss button</string>
+    <string name="notification_material_dismiss_button_summary">Replace clear all notification text with floating button</string>
+    <!-- Statusbar left_right padding -->
+    <string name="statusbar_padding_category">Paddings</string>
+    <string name="statusbar_left_padding">Left padding</string>
+    <string name="statusbar_right_padding">Right padding</string>
+    <!-- Custom carrier label and position -->
+    <string name="carrier_label_settings_title">कैरियर लेबल</string>
+    <string name="carrier_label_settings_summary">स्टेटस बार में नेटवर्क का नाम दिखाएं</string>
+    <string name="custom_carrier_label_title">Custom text</string>
+    <string name="custom_carrier_label_explain">एक इच्छित लेबल दर्ज करें अपने नेटवर्क नाम का उपयोग करने के लिए खाली छोड़ दें</string>
+    <string name="custom_carrier_label_notset">वर्तमान में इच्छित लेबल सेट नहीं है</string>
+    <string name="show_carrier_title">स्थान</string>
+    <string name="show_carrier_disabled">Disabled</string>
+    <string name="show_carrier_keyguard">लॉकस्क्रीन</string>
+    <string name="show_carrier_statusbar">स्टेटस बार</string>
+    <string name="show_carrier_enabled">दोनों</string>
+    <!-- Power Menu -->
+    <string name="power_menu_title">Power menu</string>
+    <string name="power_menu_title_summary">View or change power menu entries</string>
+    <string name="powermenu_screenshot">Screenshot</string>
+    <string name="powermenu_power">Power</string>
+    <string name="powermenu_advanced">Advanced reboot options</string>
+    <string name="powermenu_restart">Restart</string>
+    <string name="powermenu_airplane">Airplane</string>
+    <string name="powermenu_settings">Settings</string>
+    <string name="powermenu_lockdown">लॉकडाउन</string>
+    <string name="powermenu_soundpanel">Sound Panel</string>
+    <string name="powermenu_users">Users</string>
+    <string name="powermenu_logout">Logout</string>
+    <string name="powermenu_emergency">Emergency</string>
+    <string name="powermenu_torch">फ्लैश लाइट</string>
+    <string name="powermenu_onthego">On-The-Go mode</string>
+    <string name="smart_space_title">SmartSpace</string>
+    <string name="smart_space_summary">Display conditional info such as weather and events on lockscreen\nRequires a SystemUI restart</string>
+    <!-- Themes customization -->
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Theming</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Headline / Body font</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">Icon pack</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">Icon shape</string>
+    <string name="qsclockpicker_title">QsCLock Picker</string>
+    <string name="qsclockpicker_img">SparkClock1</string>
+    <string name="qsclockpicker_big">SparkClock2</string>
+    <string name="qsclockpicker_imgnew">SparkClock3</string>
+    <string name="qsclockpicker_oos">OOS</string>
+    <string name="qsclockpicker_interactive_1">Interactive Clock 1</string>
+    <string name="qsclockpicker_aosp">Aosp Clock</string>
+    <string name="qsclockpicker_coloros">ColorOS</string>
+    <!-- VoWiFi icon -->
+    <string name="vowifi_icon_title">VoWiFi icon</string>
+    <string name="vowifi_icon_summary">Display VoWiFi icon when available</string>
+    <string name="extra_theme_settings_title">Extra Themes</string>
+    <string name="extra_theme_settings_summary">iconpacks and fonts</string>
+    <string name="custom_font_preference_title">Select a custom font</string>
+    <string name="custom_font_preference_footer_message">Reboot after selecting a font to take effect</string>
+    <string name="cannot_resolve_activity">Unable to find a suitable activity to perform this action!</string>
+    <string name="invalid_font_file">Font file does not have valid postscript table</string>
+    <string name="failed_to_update_font">Failed to update font</string>
+    <string name="failed_to_copy_file_to_cache">Failed to copy font to cache</string>
+    <!-- Annoying Notifs -->
+    <string name="notification_sound_vib_screen_on_title">अशांत नोटिफिकेशंस</string>
+    <string name="notification_sound_vib_screen_on_summary">स्क्रीन चालू होने पर नोटिफिकेशंस के लिए ध्वनि व: कम्पन करें</string>
+    <!-- Ambient Ticker -->
+    <string name="pulse_on_new_tracks_title">Music ticker</string>
+    <string name="pulse_on_new_tracks_summary">Show music ticker on Ambient Display during track change</string>
+    <!-- Media artwork -->
+    <string name="media_category">Media notification</string>
+    <string name="artwork_media_background_title">Artwork media background</string>
+    <string name="artwork_media_background_summary">Set media artwork as the notification media background</string>
+    <string name="artwork_media_background_enable_blur_title">Blur media media artwork background</string>
+    <string name="artwork_media_background_blur_radius_title">Blur amount for media artwork</string>
+    <string name="artwork_media_background_alpha_title">Transparency of media artwork</string>
+    <!-- QS media player -->
+    <string name="qs_media_controls_title">Media player</string>
+    <string name="qs_media_controls_summary_on">Show media player in QS\nRequires a SystemUI restart</string>
+    <string name="qs_media_controls_summary_off">Show media player as a notification\nRequires a SystemUI restart</string>
+    <!-- Udfps animations -->
+    <string name="udfps_recog_animation">Udfps animation</string>
+    <string name="udfps_recog_animation_summary">Shows an animation while reading your finger</string>
+    <string name="udfps_recog_animation_effect_title">Udfps animation effect</string>
+    <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
+    <!-- Udfps icon picker -->
+    <string name="udfps_icon_picker_title">Udfps icon picker</string>
+    <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
+    <!-- Lockscreen Clocks -->
+    <string name="lock_screen_custom_clock_face_category">Lockscreen Clock</string>
+    <string name="lock_screen_custom_clock_face_title">Lockscreen clock style</string>
+    <string name="lock_screen_custom_clock_face_default">Default</string>
+    <string name="lock_screen_custom_clock_face_sfunny">Sfuny</string>
+    <string name="lock_screen_custom_clock_face_oos">OOS</string>
+    <string name="lock_screen_custom_clock_face_clockertino">Clockertino</string>
+    <string name="lock_screen_custom_clock_face_spark">Spark</string>
+    <string name="lock_screen_custom_clock_face_spark_circle">Spark Circle</string>
+    <!-- FOD pressed color -->
+    <string name="udfps_pressed_color_title">Udfps pressed color</string>
+    <string name="udfps_pressed_color_summary">Choose your favorite udfps pressed color</string>
+    <string name="fod_pressed_color_default">Default</string>
+    <string name="fod_pressed_color_white">White</string>
+    <string name="fod_pressed_color_white_new">White (New)</string>
+    <string name="fod_pressed_color_green">Green</string>
+    <string name="fod_pressed_color_yellow">Yellow</string>
+    <string name="fod_pressed_color_light_yellow">Light Yellow</string>
+    <!-- Wp zoom -->
+    <string name="use_wp_zoom_title">Enable wallpaper Zoom</string>
+    <string name="use_wp_zoom_summary">Reboot after toggling</string>
+    <!-- Lockscreen Clock -->
+    <string name="force_lockscreen_small">Force small LS clock</string>
+    <string name="force_lockscreen_small_summary">Use small clock for Lockscreen clock</string>
+    <!-- Custom FOD Icon -->
+    <string name="custom_fp_icon_title">Custom UDFPS Icon</string>
+    <string name="custom_fp_icon_summary">Enable custom UDFPS Icon from files</string>
+    <string name="custom_fp_select_title">Select Custom UDFPS Icon</string>
+    <string name="custom_fp_select_summary">Select custom image from your saved files or gallery</string>
+</resources>
