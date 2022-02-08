@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">Fireworks</string>
+    <string name="app_name">Πυροτεχνήματα</string>
     <string name="default_string">Προεπιλογή</string>
     <string name="disabled">Απενεργοποιημένο</string>
     <!-- Categories -->
@@ -9,26 +9,26 @@
     <string name="lockscreen_title">Οθόνη κλειδώματος</string>
     <string name="misc_title">Διάφορα</string>
     <string name="powermenu_title">Μενού Ενεργοποίησης</string>
-    <string name="statusbar_title">Status bar</string>
+    <string name="statusbar_title">Γραμμή κατάστασης</string>
     <string name="udfps_category">Udfps</string>
     <string name="buttons_title">Buttons</string>
     <!-- Display tap to wake custom summary -->
     <string name="tap_to_wake_summary_spark">Double-tap anywhere on the screen to wake or sleep device</string>
     <!-- Double Tap to Sleep Statusbar -->
-    <string name="double_tap_sleep_gesture_title">Tap to sleep</string>
-    <string name="double_tap_sleep_gesture_summary">Double-tap anywhere on the status bar to put the device to sleep</string>
+    <string name="double_tap_sleep_gesture_title">Πατήστε για αναστολή</string>
+    <string name="double_tap_sleep_gesture_summary">Διπλό πάτημα οπουδήποτε στη γραμμή κατάστασης για αναστολή της συσκευής</string>
     <!-- Color picker -->
     <string name="rgb">RGB</string>
     <string name="hsl">HSL</string>
     <string name="hsv">HSV</string>
     <string name="cancel">Ακύρωση</string>
-    <string name="confirm">Confirm</string>
+    <string name="confirm">Επιβεβαίωση</string>
     <!-- Monet engine -->
     <string name="monet_engine_settings_title">Monet engine</string>
     <string name="monet_engine_settings_summary">Adjust monet engine parameters</string>
     <string name="accurate_shades_title">Use accurate shades</string>
-    <string name="use_wallpaper_color_title">Use wallpaper color</string>
-    <string name="color_override_title">Custom color picker</string>
+    <string name="use_wallpaper_color_title">Χρήση χρώματος ταπετσαρίας</string>
+    <string name="color_override_title">Επιλογέας προσαρμοσμένου χρώματος</string>
     <string name="invalid_color_input">Invalid color input!</string>
     <string name="chroma_factor_title">Colorfulness</string>
     <string name="linear_lightness_title">Use custom lightness scale</string>

@@ -28,7 +28,7 @@
     <string name="monet_engine_settings_summary">Ajustes no tema Monet</string>
     <string name="accurate_shades_title">Usar tons precisos</string>
     <string name="use_wallpaper_color_title">Usar cores do papel de parede</string>
-    <string name="color_override_title">Seletor de cores personalizado</string>
+    <string name="color_override_title">Selecionar cor personalizada</string>
     <string name="invalid_color_input">Cor inválida!</string>
     <string name="chroma_factor_title">Coloração</string>
     <string name="linear_lightness_title">Usar escala de luz personalizada</string>
@@ -471,7 +471,7 @@
     <string name="ambient_notification_color_mode_accent">Cor de destaque</string>
     <string name="ambient_notification_color_mode_wall">Cor de destaque do papel de parede</string>
     <string name="ambient_notification_color_mode_notification">Cor do ícone da notificação</string>
-    <string name="ambient_notification_color_mode_custom">Iluminação nas bordas da tela</string>
+    <string name="ambient_notification_color_mode_custom">Cor personalizada</string>
     <string name="ambient_notification_light_color_title">Cor personalizada</string>
     <string name="pulse_ambient_light_show_always_title">Sempre mostrar</string>
     <string name="pulse_ambient_light_show_always_summary">Mostrar luzes para todos os eventos que despertem a tela ambiente e não apenas para notificações</string>
@@ -587,7 +587,7 @@
     <string name="use_wp_zoom_summary">Reinicie após alterar</string>
     <!-- Lockscreen Clock -->
     <string name="force_lockscreen_small">Relógio pequeno na tela de bloqueio</string>
-    <string name="force_lockscreen_small_summary">Forçar tamanho menor para o relógio da tela de bloqueio</string>
+    <string name="force_lockscreen_small_summary">Mostrar relógio pequeno na tela de bloqueio mesmo quando não houver notificações</string>
     <!-- Custom FOD Icon -->
     <string name="custom_fp_icon_title">Ícone de impressão digital personalizado</string>
     <string name="custom_fp_icon_summary">Usar ícone de impressão digital personalizado através de um arquivo</string>

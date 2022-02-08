@@ -127,16 +127,16 @@
     <string name="quick_pulldown_left">Pociągnij w dół pasek stanu z lewej strony</string>
     <string name="quick_pulldown_always">Zawsze pokazuj szybkie ustawienia podczas rozwijania paska</string>
     <!-- Status bar clock and date options -->
-    <string name="status_bar_clock_title">Ustawienia zegara &amp; i daty</string>
-    <string name="status_bar_clock">Zegar &amp; data</string>
+    <string name="status_bar_clock_title">Ustawienia zegara i daty</string>
+    <string name="status_bar_clock">Zegar i data</string>
     <string name="clock_enabled">Włączony</string>
     <string name="clock_disabled">Wyłączony</string>
-    <string name="statusbar_clock_style_title">Pozycja zegara &amp; i daty</string>
+    <string name="statusbar_clock_style_title">Pozycja zegara i daty</string>
     <string name="statusbar_clock_style_right">Z prawej</string>
     <string name="statusbar_clock_style_centre">Wyśrodkowany</string>
     <string name="statusbar_clock_style_left">Z lewej</string>
     <string name="status_bar_clock_style_reset">Przywróć domyślny kolor</string>
-    <string name="status_bar_show_clock_title">Pokaż zegar &amp; datę</string>
+    <string name="status_bar_show_clock_title">Pokaż zegar i datę</string>
     <string name="status_bar_am_pm_title">12-godzinny</string>
     <string name="status_bar_am_pm_info">24 godzinny zegar jest włączony</string>
     <string name="clock_seconds_display">Pokaż sekundy</string>
@@ -155,7 +155,7 @@
     <string name="clock_date_display_none">Nie pokazuj</string>
     <string name="clock_date_display_small">Mały rozmiar czcionki</string>
     <string name="clock_date_display_normal">Normalny rozmiar czcionki</string>
-    <string name="clock_date_style_normal">Normalny</string>
+    <string name="clock_date_style_normal">Domyślny</string>
     <string name="clock_date_style_lowercase">Małe litery</string>
     <string name="clock_date_style_uppercase">Wielkie litery</string>
     <string name="clock_date_right">Po prawej stronie zegara</string>
@@ -163,8 +163,8 @@
     <string name="clock_date_position">Pozycja daty</string>
     <string name="status_bar_clock_auto_hide_title">Automatyczne ukrywanie zegara</string>
     <string name="status_bar_clock_auto_hide_summary">Ukrywaj i pokazuj zegar w regularnych odstępach czasu</string>
-    <string name="status_bar_clock_auto_hide_hdur_title">Ukryj długość wyświetlania</string>
-    <string name="status_bar_clock_auto_hide_sdur_title">Pokaż długość wyświetlania</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">Długość ukrywania</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">Długość pokazywania</string>
     <!-- Running Services button -->
     <string name="qs_running_services_title">Ikona uruchomionych usług</string>
     <string name="qs_running_services_summary">Włącz ikonę uruchomionych usług w stopce</string>
@@ -290,7 +290,7 @@
     <string name="incall_vibrate_disconnect_title">Wibracje przy rozłączeniu</string>
     <!-- Data disabled icon -->
     <string name="data_disabled_icon_title">Pokaż ikonę wyłączonych danych komórkowych</string>
-    <string name="data_disabled_icon_summary">Wyświetlaj krzyżyk obok ikony sygnału, kiedy przesyłanie danych jest wyłączone</string>
+    <string name="data_disabled_icon_summary">Wyświetlaj wykrzyknik obok ikony sygnału, kiedy przesyłanie danych jest wyłączone</string>
     <!-- Roaming indicator icon -->
     <string name="roaming_indicator_icon_title">Wskaźnik roamingu</string>
     <string name="roaming_indicator_icon_summary">Pokaż znacznik roamingu w ikonie sygnału podczas trybu roamingowego</string>
@@ -389,7 +389,7 @@
     <string name="status_bar_battery_style_dotted_circle">Okrąg</string>
     <string name="status_bar_battery_style_filled_circle">Okrąg (wypełniony)</string>
     <string name="status_bar_battery_style_big_circle">Duży okrąg</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Duże kropkowane koło</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Duży kropkowany okrąg</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_style_hidden">Ukryta</string>
     <!-- Status bar - Battery percentage -->
@@ -422,7 +422,7 @@
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">Tekst stopki szybkich ustawień</string>
     <string name="qs_footer_text_string_title">Dostosuj tekst stopki</string>
-    <string name="qs_footer_text_string_summary">Ustaw jako puste dla domyślnych Spark</string>
+    <string name="qs_footer_text_string_summary">Ustaw jako puste dla domyślnego \"Spark\"</string>
     <!-- Sb Icon Style -->
     <string name="statusbar_icons_style">Kolorowe ikony na pasku powiadomień</string>
     <string name="statusbar_icons_style_summary">Wybierz styl ikon paska powiadomień (wymaga restartu SystemUI)</string>
@@ -439,7 +439,7 @@
     <string name="always_on_display_schedule_title">Harmonogram dla Always on display</string>
     <string name="always_on_display_schedule_sunset">Zachód słońca</string>
     <string name="always_on_display_schedule_sunrise">Wschód słońca</string>
-    <string name="always_on_display_schedule_mixed_sunset">Działa od zachodu do ustalonej godziny</string>
+    <string name="always_on_display_schedule_mixed_sunset">Działa od zachodu słońca do ustalonej godziny</string>
     <string name="always_on_display_schedule_mixed_sunrise">Działa od ustalonej godziny do wschodu słońca</string>
     <!-- Udfps Haptic Feedback -->
     <string name="udfps_haptic_feedback_title">Wibracja dla czytnika linii papilarnych</string>
@@ -457,7 +457,7 @@
     <string name="ambient_notification_light_duration_title">Czas trwania</string>
     <string name="ambient_notification_light_duration_summary">Czas do zakończenia każdej z animacji</string>
     <string name="ambient_notification_light_repeats_title">Powtórzenia</string>
-    <string name="ambient_notification_light_repeats_summary">Ile razy animacja powinna pokazywać\n0 się w nieskończoność</string>
+    <string name="ambient_notification_light_repeats_summary">Ile razy animacja powinna się pokazywać\ndla wartości 0 - nieskończoność</string>
     <string name="ambient_notification_light_timeout_title">Limit czasu</string>
     <string name="ambient_notification_light_timeout_forever">Bez końca</string>
     <string name="ambient_notification_light_timeout_half_minute">30 sekund</string>

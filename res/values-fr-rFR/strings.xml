@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">Fireworks</string>
+    <string name="app_name">Extra customisation</string>
     <string name="default_string">Défaut</string>
     <string name="disabled">Désactivé</string>
     <!-- Categories -->
@@ -9,37 +9,37 @@
     <string name="lockscreen_title">Écran de verrouillage</string>
     <string name="misc_title">Divers</string>
     <string name="powermenu_title">Menu marche/arrêt</string>
-    <string name="statusbar_title">Status bar</string>
+    <string name="statusbar_title">Barre d\'état</string>
     <string name="udfps_category">Udfps</string>
-    <string name="buttons_title">Buttons</string>
+    <string name="buttons_title">Boutons</string>
     <!-- Display tap to wake custom summary -->
-    <string name="tap_to_wake_summary_spark">Double-tap anywhere on the screen to wake or sleep device</string>
+    <string name="tap_to_wake_summary_spark">Appuyez deux fois n\'importe où sur l\'écran pour réveiller ou mettre en veille le mobile</string>
     <!-- Double Tap to Sleep Statusbar -->
-    <string name="double_tap_sleep_gesture_title">Tap to sleep</string>
-    <string name="double_tap_sleep_gesture_summary">Double-tap anywhere on the status bar to put the device to sleep</string>
+    <string name="double_tap_sleep_gesture_title">Appuyez pour mettre en veille</string>
+    <string name="double_tap_sleep_gesture_summary">Appuyez deux fois n\'importe où sur la barre d\'état pour mettre le mobile en veille</string>
     <!-- Color picker -->
     <string name="rgb">RGB</string>
     <string name="hsl">HSL</string>
     <string name="hsv">HSV</string>
     <string name="cancel">Annuler</string>
-    <string name="confirm">Confirm</string>
+    <string name="confirm">Confirmez</string>
     <!-- Monet engine -->
-    <string name="monet_engine_settings_title">Monet engine</string>
-    <string name="monet_engine_settings_summary">Adjust monet engine parameters</string>
-    <string name="accurate_shades_title">Use accurate shades</string>
-    <string name="use_wallpaper_color_title">Use wallpaper color</string>
-    <string name="color_override_title">Custom color picker</string>
-    <string name="invalid_color_input">Invalid color input!</string>
-    <string name="chroma_factor_title">Colorfulness</string>
-    <string name="linear_lightness_title">Use custom lightness scale</string>
-    <string name="white_luminance_title">Brightness</string>
+    <string name="monet_engine_settings_title">Moteur de Monet</string>
+    <string name="monet_engine_settings_summary">Ajustez les paramètres du moteur Monet</string>
+    <string name="accurate_shades_title">Utiliser des nuances précises</string>
+    <string name="use_wallpaper_color_title">Utiliser les couleurs du fond d\'écran</string>
+    <string name="color_override_title">Sélecteur de couleurs personnelles</string>
+    <string name="invalid_color_input">Code couleur invalide!</string>
+    <string name="chroma_factor_title">Couleurs</string>
+    <string name="linear_lightness_title">Utiliser une échelle de luminosité personnalisée</string>
+    <string name="white_luminance_title">Luminosité</string>
     <!-- Tuner -->
     <string name="general_category">Général</string>
     <string name="lockscreen_tuner_title">Raccourcis de l\'écran de verrouillage</string>
     <string name="statusbar_items_category">Éléments de la barre d\'état</string>
     <!-- QuickSettings haptic feedback -->
     <string name="quick_settings_vibrate_title">Vibrer au toucher</string>
-    <string name="quick_settings_vibrate_summary">Vibrer lorsque un raccourci est touché dans les paramètres rapides</string>
+    <string name="quick_settings_vibrate_summary">Vibrer au toucher des tuiles des réglages rapides</string>
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">Animations</string>
     <string name="qs_tile_animation_style_title">Style d\'animation</string>
@@ -64,36 +64,36 @@
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Activer/désactiver la lampe de poche lorsque l\'écran est éteint</string>
     <string name="torch_power_button_gesture_none">Désactivé</string>
-    <string name="torch_power_button_gesture_dt">Presser deux fois le bouton power (réduit le temps de réponse de l\'appui simple), Désactive l\'appui double pour la caméra.</string>
+    <string name="torch_power_button_gesture_dt">Presser deux fois le bouton marche (réduit le temps de réponse de l\'appui simple), désactive l\'appui double pour la caméra.</string>
     <string name="torch_power_button_gesture_dt_toast">Le geste pour ouvrir la caméra est maintenant désactivé</string>
     <string name="torch_power_button_gesture_lp">Appui prolongé sur le bouton Marche/Arrêt</string>
     <!-- Volume buttons category -->
     <string name="volume_category">Contrôleur de volume</string>
     <string name="volume_rocker_wake_title">Réveiller l\'appareil en utilisant les boutons volume</string>
     <string name="volume_rocker_wake_summary">Appuyer sur les touches volume allumera votre téléphone</string>
-    <string name="volume_rocker_music_controls_title">Music control</string>
-    <string name="volume_rocker_music_controls_summary">Long press volume buttons to switch tracks while the screen is off</string>
-    <string name="volume_rocker_music_controls_delay_title">Playback control activation delay</string>
+    <string name="volume_rocker_music_controls_title">Contrôle de la musique</string>
+    <string name="volume_rocker_music_controls_summary">Appuyez longuement sur les boutons de volume pour changer de piste lorsque l\'écran est éteint</string>
+    <string name="volume_rocker_music_controls_delay_title">Délai d\'activation du contrôle de la lecture</string>
     <string name="icons_category">Icônes</string>
     <string name="show_fourg_icon_title">Afficher 4G au lieu de LTE</string>
     <string name="show_fourg_icon_summary">Remplacer l\'indicateur LTE de la barre d\'état par 4G</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">Icône VoLTE</string>
-    <string name="volte_icon_summary">Display VoLTE icon when available</string>
-    <string name="swap_volume_buttons_title">Reorient</string>
-    <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
+    <string name="volte_icon_summary">Afficher l\'icône VoLTE si disponible</string>
+    <string name="swap_volume_buttons_title">Réorientation</string>
+    <string name="swap_volume_buttons_summary">Intervertir les boutons de volume lorsque l\'écran est tourné</string>
     <!-- Power menu on lockscreen -->
     <string name="lockscreen_power_menu_disabled_title">Désactiver le menu Marche/Arrêt sur l’écran de verrouillage</string>
     <string name="lockscreen_power_menu_disabled_summary">Cela désactivera le menu Marche/Arrêt seulement sur un écran de verrouillage sécurisé</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Icône des notifications contextuelles</string>
     <string name="toast_icon_summary">Afficher l\'icône de l\'application correspondante dans la notification contextuelle</string>
-    <string name="headsup_category">Heads up settings</string>
+    <string name="headsup_category">Paramètres Tête en l\'air</string>
     <!-- Heads up -->
     <string name="heads_up_notifications">Notifications flottantes</string>
     <string name="heads_up_notifications_summary">Pop-up de notification de la barre d\'état</string>
     <string name="summary_heads_up_enabled">Les notifications pop-up sont activées</string>
-    <string name="summary_heads_up_disabled">Les notification pop-up sont désactivées</string>
+    <string name="summary_heads_up_disabled">Les notifications pop-up sont désactivées</string>
     <string name="add_heads_up_package">Ajouter une application</string>
     <string name="add_heads_up_stoplist_summary">Désactiver les notifications flottantes dans ces applications</string>
     <string name="add_heads_up_blacklist_summary">Désactiver les notifications flottantes venant de ces applications</string>
@@ -103,21 +103,21 @@
     <string name="dialog_delete_title">Supprimer</string>
     <string name="dialog_delete_message">Supprimer l\'élément sélectionné ?</string>
     <!-- Heads up snooze -->
-    <string name="heads_up_snooze_title">Snooze timer</string>
-    <string name="heads_up_snooze_summary_one_minute">Swiping up on peeking notifications will snooze heads up from that application for 1 minute</string>
-    <string name="heads_up_snooze_summary">Swiping up on peeking notifications will snooze heads up from that application for <xliff:g id="number">%d</xliff:g> minutes</string>
-    <string name="heads_up_snooze_disabled_summary">Snooze timer is disabled</string>
+    <string name="heads_up_snooze_title">Minuteur de réveil</string>
+    <string name="heads_up_snooze_summary_one_minute">Balayer vers le haut dans la zone de notifications rapide répète Tête en l\'air pour l\'application pendant 1 minute</string>
+    <string name="heads_up_snooze_summary">Balayer vers le haut dans la zone de notifications rapide répète Tête en l\'air pour l\'application pendant <xliff:g id="number">%d</xliff:g> minute</string>
+    <string name="heads_up_snooze_disabled_summary">Répétition d\'alarme arrêtée</string>
     <string name="heads_up_snooze_1min">1 minute</string>
     <string name="heads_up_snooze_5min">5 minutes</string>
     <string name="heads_up_snooze_10min">10 minutes</string>
     <string name="heads_up_snooze_15min">15 minutes</string>
     <string name="heads_up_snooze_20min">20 minutes</string>
-    <string name="heads_up_footer">Time out feature may require a SystemUI restart.</string>
+    <string name="heads_up_footer">Délai expiré pour la fonction, redémarrage du système requis.</string>
     <string name="heads_up_time_out_title">Time out</string>
-    <string name="heads_up_time_out_summary">Peeking notifications will show for <xliff:g id="number">%d</xliff:g> seconds</string>
+    <string name="heads_up_time_out_summary">La zone de notification rapide sera affichée <xliff:g id="number">%d</xliff:g> secondes</string>
     <string name="heads_up_time_out_2sec">2 seconds</string>
     <string name="heads_up_time_out_4sec">4 seconds</string>
-    <string name="heads_up_time_out_5sec">5 seconds</string>
+    <string name="heads_up_time_out_5sec">5 secondes</string>
     <string name="heads_up_time_out_6sec">6 seconds</string>
     <string name="heads_up_time_out_8sec">8 seconds</string>
     <string name="heads_up_time_out_10sec">10 secondes</string>
@@ -127,16 +127,16 @@
     <string name="quick_pulldown_left">Tirer la barre d\'état vers le bas à partir de la gauche</string>
     <string name="quick_pulldown_always">Toujours afficher les réglages rapides dans le menu déroulant de la barre d\'état</string>
     <!-- Status bar clock and date options -->
-    <string name="status_bar_clock_title">Paramètres horloge et date</string>
-    <string name="status_bar_clock">Date et heure</string>
+    <string name="status_bar_clock_title">Paramètres horloge &amp; et date</string>
+    <string name="status_bar_clock">Date et heure &amp;</string>
     <string name="clock_enabled">Activé</string>
     <string name="clock_disabled">Désactivé</string>
-    <string name="statusbar_clock_style_title">Paramètres horloge et date</string>
+    <string name="statusbar_clock_style_title">Paramètres horloge &amp; et date</string>
     <string name="statusbar_clock_style_right">À droite</string>
     <string name="statusbar_clock_style_centre">Centré</string>
     <string name="statusbar_clock_style_left">À gauche</string>
     <string name="status_bar_clock_style_reset">Réinitialiser la couleur</string>
-    <string name="status_bar_show_clock_title">Afficher la date et l\'heure</string>
+    <string name="status_bar_show_clock_title">Afficher la date et l\'heure &amp;</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
     <string name="status_bar_am_pm_info">L\'heure au format 24 heures est activée</string>
     <string name="clock_seconds_display">Afficher les secondes</string>
@@ -172,35 +172,35 @@
     <string name="qs_edit_title">Éditer l\'icône</string>
     <string name="qs_edit_summary">Activer l\'édition d\'icône en bas de page</string>
     <!-- Network traffic -->
-    <string name="network_traffic_category_title">Network traffic</string>
-    <string name="statusbar_show_network_traffic_title">Show network traffic in statusbar</string>
-    <string name="statusbar_network_traffic_threshold_tx_title">Auto hide threshold for upload</string>
-    <string name="statusbar_network_traffic_threshold_rx_title">Auto hide threshold for download</string>
-    <string name="statusbar_network_traffic_unit_text_size_title">Network traffic unit text size</string>
-    <string name="statusbar_network_traffic_rate_text_scale_factor_title">Network traffic rate text scale factor</string>
-    <string name="statusbar_network_traffic_rate_text_scale_factor_dialog_title">Scale factor</string>
+    <string name="network_traffic_category_title">Trafic réseau</string>
+    <string name="statusbar_show_network_traffic_title">Montrer l\'activité réseau dans la barre d\'état</string>
+    <string name="statusbar_network_traffic_threshold_tx_title">Masquer automatiquement le seuil de téléchargement</string>
+    <string name="statusbar_network_traffic_threshold_rx_title">Masquer automatiquement le seuil de téléchargement</string>
+    <string name="statusbar_network_traffic_unit_text_size_title">Taille du texte de l\'unité de trafic réseau</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_title">Facteur d\'échelle du texte du taux de trafic réseau</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_dialog_title">Facteur d\'échelle</string>
     <!-- HW keys -->
     <string name="hardware_keys_title">Buttons</string>
     <string name="hardware_keys_category">Hardware navigation buttons</string>
-    <string name="hardware_keys_disable_title">Disable hardware buttons</string>
-    <string name="hardware_keys_disable_summary">Use the device hardware keys for navigation</string>
-    <string name="hardware_keys_volume_keys_title">Volume rocker</string>
+    <string name="hardware_keys_disable_title">Désactive les boutons</string>
+    <string name="hardware_keys_disable_summary">Utilise les boutons pour la navigation</string>
+    <string name="hardware_keys_volume_keys_title">Changement de volume</string>
     <!-- ANBI -->
     <string name="anbi_title">Accidental touch</string>
-    <string name="anbi_summary">Prevent interaction with the hardware buttons while the screen is being used</string>
+    <string name="anbi_summary">Empêche les interactions avec les boutons lorsque l\'écran est en cours d\'utilisation</string>
     <!-- Button settings -->
     <string name="button_pref_title">Buttons</string>
     <!-- Hardware button navigation -->
-    <string name="picker_activities">Activities</string>
-    <string name="select_custom_app_title">Select custom app</string>
-    <string name="select_custom_activity_title">Select custom activity</string>
+    <string name="picker_activities">Activités</string>
+    <string name="select_custom_app_title">Choisir une application personnalisée</string>
+    <string name="select_custom_activity_title">Choisir une activité personnalisée</string>
     <string name="profile_applist_title">Applications</string>
-    <string name="choose_action_title">Choose action</string>
-    <string name="action_entry_default_action">Default settings</string>
+    <string name="choose_action_title">Choisir une action</string>
+    <string name="action_entry_default_action">Paramètres par défaut</string>
     <string name="action_entry_select_app">Select application</string>
     <string name="action_entry_custom_action">Select custom action</string>
-    <string name="hardware_keys_home_key_title">Home button</string>
-    <string name="hardware_keys_back_key_title">Back button</string>
+    <string name="hardware_keys_home_key_title">Bouton Home</string>
+    <string name="hardware_keys_back_key_title">Touche retour</string>
     <string name="hardware_keys_menu_key_title">Menu button</string>
     <string name="hardware_keys_assist_key_title">Search button</string>
     <string name="hardware_keys_appswitch_key_title">Recents button</string>
@@ -240,28 +240,28 @@
     <string name="camera_sleep_on_release_summary">A half press will keep the screen on only while the button is held down</string>
     <string name="camera_launch_title">Launch camera</string>
     <string name="camera_launch_summary">A longpress and release will launch camera</string>
-    <string name="volbtn_music_controls_title">Control playback</string>
-    <string name="volbtn_music_controls_summary">Seek music tracks by long pressing the volume keys while the display is off</string>
-    <string name="volbtn_cursor_control_title">Keyboard cursor control</string>
-    <string name="volbtn_cursor_control_off">Disabled</string>
-    <string name="volbtn_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volbtn_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="volbtn_music_controls_title">Contrôle de la lecture</string>
+    <string name="volbtn_music_controls_summary">Changer de piste audio à l\'aide d\'une pression longue sur les boutons de volume lorsque l\'écran est éteint</string>
+    <string name="volbtn_cursor_control_title">Contrôle de curseur du clavier</string>
+    <string name="volbtn_cursor_control_off">Désactivé</string>
+    <string name="volbtn_cursor_control_on">Volume haut/bas déplace le curseur à gauche/droite</string>
+    <string name="volbtn_cursor_control_on_reverse">Volume haut/bas déplace le curseur à droite/gauche</string>
     <string name="volume_panel_on_left_summary">Display volume panel on the left side of the screen</string>
     <string name="extras_title">Extras</string>
     <string name="click_partial_screenshot_title">Click to partial screenshot</string>
     <string name="click_partial_screenshot_summary">Short click Volume Down and Power to take partial screenshot</string>
     <!-- Key backlight -->
-    <string name="button_backlight_title">Button backlight</string>
-    <string name="button_backlight_enabled">Illuminate buttons</string>
-    <string name="button_backlight_only_when_pressed_title">Illuminate buttons only when pressed</string>
-    <string name="keyboard_backlight_enabled">Illuminate keyboard</string>
-    <string name="button_backlight_seekbar_title">Button brightness</string>
-    <string name="keyboard_backlight_seekbar_title">Keyboard brightness</string>
-    <string name="backlight_timeout_title">Illumination timeout</string>
-    <string name="backlight_timeout_unlimited">Don\'t turn off</string>
-    <string name="backlight_summary_disabled">Disabled</string>
-    <string name="backlight_summary_enabled_with_timeout">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
-    <string name="backlight_summary_enabled">Enabled</string>
+    <string name="button_backlight_title">Rétroéclairage des boutons</string>
+    <string name="button_backlight_enabled">Eclairage des boutons</string>
+    <string name="button_backlight_only_when_pressed_title">Éclairer les boutons seulement lors de l\'appui</string>
+    <string name="keyboard_backlight_enabled">Éclairer le clavier</string>
+    <string name="button_backlight_seekbar_title">Luminosité des boutons</string>
+    <string name="keyboard_backlight_seekbar_title">Luminosité du clavier</string>
+    <string name="backlight_timeout_title">Délai d\'extinction du rétro-éclairage</string>
+    <string name="backlight_timeout_unlimited">Ne pas éteindre</string>
+    <string name="backlight_summary_disabled">Désactivé</string>
+    <string name="backlight_summary_enabled_with_timeout">Activé pendant <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="backlight_summary_enabled">Activé</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Enable on-screen nav bar</string>
     <string name="disable_navkeys_summary">Enable on-screen navigation bar and disable hardware buttons</string>
@@ -388,8 +388,8 @@
     <string name="status_bar_battery_style_circle">Cercle</string>
     <string name="status_bar_battery_style_dotted_circle">Cercle (pointillé)</string>
     <string name="status_bar_battery_style_filled_circle">Cercle (rempli)</string>
-    <string name="status_bar_battery_style_big_circle">Big circle</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Big dotted circle</string>
+    <string name="status_bar_battery_style_big_circle">Grand cercle</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Grand cercle en pointillé</string>
     <string name="status_bar_battery_style_text">Texte</string>
     <string name="status_bar_battery_style_hidden">Cachée</string>
     <!-- Status bar - Battery percentage -->
@@ -403,8 +403,8 @@
     <string name="battery_estimate_title">Autonomie estimée</string>
     <string name="battery_estimate_summary">Afficher la durée restante estimée de la batterie si disponible</string>
     <!-- Call strength icons in QS -->
-    <string name="show_qs_call_strength_icon_title">Show call strength icon(s)</string>
-    <string name="show_qs_call_strength_icon_summary">Show call strength icons in QuickSettings panel when available</string>
+    <string name="show_qs_call_strength_icon_title">Afficher l\'icone(s) de niveau d\'appel</string>
+    <string name="show_qs_call_strength_icon_summary">Afficher les icônes de niveau des appels dans le panneau des réglages rapides lorsque disponible</string>
     <!-- Heads up options -->
     <string name="less_boring_heads_up_title">Moins de notifications flottantes inutiles</string>
     <string name="less_boring_heads_up_summary">Montrer uniquement les notifications flottantes pour les appels, messages et alarmes</string>
@@ -414,18 +414,18 @@
     <string name="general_title">Général</string>
     <string name="notification_light_settings">Lumière de notification</string>
     <!-- Lockscreen battery info indicator  -->
-    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
-    <string name="lockscreen_battery_info_summary">Show charging current, voltage, wattage and battery temperature on lockscreen while charging</string>
+    <string name="lockscreen_battery_info_title">Informations de charge sur l\'écran de verrouillage</string>
+    <string name="lockscreen_battery_info_summary">Afficher le courant de charge, la tension, la puissance en watts et la température de la batterie sur l\'écran de verrouillage pendant le chargement</string>
     <!-- Charging animation -->
     <string name="charging_animation_title">Charging animation</string>
     <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
     <!-- QS footer text -->
-    <string name="qs_footer_text_show_title">Show QS footer text</string>
+    <string name="qs_footer_text_show_title">Afficher le texte du pied de page des réglages rapides</string>
     <string name="qs_footer_text_string_title">Personnaliser le texte du pied de page</string>
     <string name="qs_footer_text_string_summary">Mettre à vide pour les valeurs par défaut</string>
     <!-- Sb Icon Style -->
-    <string name="statusbar_icons_style">Colored Statusbar Icons</string>
-    <string name="statusbar_icons_style_summary">Choose the style of your statusbar icons (requires SystemUI restart)</string>
+    <string name="statusbar_icons_style">Icônes colorées dans la barre d\'État</string>
+    <string name="statusbar_icons_style_summary">Choisissez le style de vos icônes dans la barre d\'état (nécessite un redémarrage de SystemUI)</string>
     <!-- Notification headers -->
     <string name="notification_headers_title">Aperçu des notifications</string>
     <string name="notification_headers_summary">Show headers in the notification shade</string>
@@ -445,8 +445,8 @@
     <string name="udfps_haptic_feedback_title">Retour haptique du capteur biométrique</string>
     <string name="udfps_haptic_feedback_summary">Vribrer lorsque l\'icône du capteur biométrique est pressée</string>
     <!-- Tiles on secure keyguard -->
-    <string name="use_tiles_on_secure_keyguard_title">Require unlocking to use sensitive tiles</string>
-    <string name="use_tiles_on_secure_keyguard_summary">Ask to unlock lockscreen when using sensitive tiles</string>
+    <string name="use_tiles_on_secure_keyguard_title">Nécessite un déverrouillage pour utiliser des tuiles sensibles</string>
+    <string name="use_tiles_on_secure_keyguard_summary">Demander à déverrouiller l\'écran de déverrouillage lorsque vous utilisez des tuiles sensibles</string>
     <!-- Pulse notifications lightning -->
     <string name="pulse_ambient_light_title">Éclairage ambiant de bordure</string>
     <string name="pulse_ambient_light_summary">Éclairage ambiant de bordure pour les notifications push</string>
@@ -466,22 +466,22 @@
     <string name="ambient_notification_light_timeout_five_minutes">5 minutes</string>
     <string name="ambient_notification_light_timeout_ten_minutes">10 minutes</string>
     <string name="set_to_zero">Définissez le nombre de répétitions à 0 pour activer</string>
-    <string name="aod_disabled">AOD is disabled</string>
+    <string name="aod_disabled">L\'Always on Display est désactivé</string>
     <string name="ambient_notification_color_mode_title">Mode couleur</string>
     <string name="ambient_notification_color_mode_accent">Couleur d\'accentuation</string>
     <string name="ambient_notification_color_mode_wall">Couleur dominante du fond d\'écran</string>
     <string name="ambient_notification_color_mode_notification">Couleurs des icônes de notification</string>
     <string name="ambient_notification_color_mode_custom">@string/ambient_notification_light_color_title</string>
     <string name="ambient_notification_light_color_title">Couleur personnalisée</string>
-    <string name="pulse_ambient_light_show_always_title">Show always</string>
-    <string name="pulse_ambient_light_show_always_summary">Show lights for all doze events and not just notifications</string>
+    <string name="pulse_ambient_light_show_always_title">Toujours montrer</string>
+    <string name="pulse_ambient_light_show_always_summary">Afficher les lumières pour tous les événements en veille et pas seulement les notifications</string>
     <!-- OOS style material dismiss all button for notifications -->
     <string name="notification_material_dismiss_button_title">Material dimiss button</string>
     <string name="notification_material_dismiss_button_summary">Remplace le texte \"Effacer toutes les notifications\" par un bouton flottant</string>
     <!-- Statusbar left_right padding -->
-    <string name="statusbar_padding_category">Paddings</string>
-    <string name="statusbar_left_padding">Left padding</string>
-    <string name="statusbar_right_padding">Right padding</string>
+    <string name="statusbar_padding_category">Marges</string>
+    <string name="statusbar_left_padding">Marge de gauche</string>
+    <string name="statusbar_right_padding">Marge de droite</string>
     <!-- Custom carrier label and position -->
     <string name="carrier_label_settings_title">Carrier label</string>
     <string name="carrier_label_settings_summary">Customize the carrier label</string>
@@ -508,9 +508,9 @@
     <string name="powermenu_logout">Se déconnecter</string>
     <string name="powermenu_emergency">Urgence</string>
     <string name="powermenu_torch">Lampe torche</string>
-    <string name="powermenu_onthego">On-The-Go mode</string>
-    <string name="smart_space_title">SmartSpace</string>
-    <string name="smart_space_summary">Display conditional info such as weather and events on lockscreen\nRequires a SystemUI restart</string>
+    <string name="powermenu_onthego">Mode OTG</string>
+    <string name="smart_space_title">Espace intelligent</string>
+    <string name="smart_space_summary">Afficher les informations conditionnelles telles que la météo et les événements sur l\'écran de verrouillage\nNécessite un redémarrage de l\'interface utilisateur</string>
     <!-- Themes customization -->
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
     <string name="theme_customization_category">Customisation</string>
@@ -519,78 +519,78 @@
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
     <string name="theme_customization_icon_pack_title">Pack d\'icônes</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
-    <string name="theme_customization_icon_shape_title">Icon shape</string>
-    <string name="qsclockpicker_title">QsCLock Picker</string>
+    <string name="theme_customization_icon_shape_title">Forme des icônes</string>
+    <string name="qsclockpicker_title">Sélecteur de QsCLock</string>
     <string name="qsclockpicker_img">SparkClock1</string>
     <string name="qsclockpicker_big">SparkClock2</string>
     <string name="qsclockpicker_imgnew">SparkClock3</string>
     <string name="qsclockpicker_oos">OOS</string>
-    <string name="qsclockpicker_interactive_1">Interactive Clock 1</string>
-    <string name="qsclockpicker_aosp">Aosp Clock</string>
-    <string name="qsclockpicker_coloros">ColorOS</string>
+    <string name="qsclockpicker_interactive_1">Horloge interactive 1</string>
+    <string name="qsclockpicker_aosp">Horloge Aosp</string>
+    <string name="qsclockpicker_coloros">Couleur OS</string>
     <!-- VoWiFi icon -->
     <string name="vowifi_icon_title">Icône VoWiFi</string>
-    <string name="vowifi_icon_summary">Display VoWiFi icon when available</string>
-    <string name="extra_theme_settings_title">Extra Themes</string>
-    <string name="extra_theme_settings_summary">iconpacks and fonts</string>
-    <string name="custom_font_preference_title">Select a custom font</string>
-    <string name="custom_font_preference_footer_message">Reboot after selecting a font to take effect</string>
-    <string name="cannot_resolve_activity">Unable to find a suitable activity to perform this action!</string>
-    <string name="invalid_font_file">Font file does not have valid postscript table</string>
-    <string name="failed_to_update_font">Failed to update font</string>
-    <string name="failed_to_copy_file_to_cache">Failed to copy font to cache</string>
+    <string name="vowifi_icon_summary">Afficher l\'icône VoWifi si disponible</string>
+    <string name="extra_theme_settings_title">Thèmes supplémentaires</string>
+    <string name="extra_theme_settings_summary">packs d\'icônes et polices</string>
+    <string name="custom_font_preference_title">Sélectionnez une police personnalisée</string>
+    <string name="custom_font_preference_footer_message">Redémarrer après avoir sélectionné une police pour prise en compte</string>
+    <string name="cannot_resolve_activity">Application introuvable pour exécuter cette action</string>
+    <string name="invalid_font_file">Le fichier de police n\'a pas de table Postscript valide</string>
+    <string name="failed_to_update_font">Échec de la mise à jour de la police</string>
+    <string name="failed_to_copy_file_to_cache">Impossible de copier la police vers le cache</string>
     <!-- Annoying Notifs -->
     <string name="notification_sound_vib_screen_on_title">Son de notification si l\'écran est allumé</string>
     <string name="notification_sound_vib_screen_on_summary">Jouer un son avec vibrations pour les notifications lorsque l\'écran est allumé</string>
     <!-- Ambient Ticker -->
-    <string name="pulse_on_new_tracks_title">Music ticker</string>
-    <string name="pulse_on_new_tracks_summary">Show music ticker on Ambient Display during track change</string>
+    <string name="pulse_on_new_tracks_title">Informations sur la musique</string>
+    <string name="pulse_on_new_tracks_summary">Afficher les informations musicales sur l\'affichage ambiant lors d\'un changement de piste</string>
     <!-- Media artwork -->
-    <string name="media_category">Media notification</string>
-    <string name="artwork_media_background_title">Artwork media background</string>
-    <string name="artwork_media_background_summary">Set media artwork as the notification media background</string>
-    <string name="artwork_media_background_enable_blur_title">Blur media media artwork background</string>
-    <string name="artwork_media_background_blur_radius_title">Blur amount for media artwork</string>
-    <string name="artwork_media_background_alpha_title">Transparency of media artwork</string>
+    <string name="media_category">Notification de média</string>
+    <string name="artwork_media_background_title">Arrière-plan du média visuel</string>
+    <string name="artwork_media_background_summary">Définir la pochette comme fond de média de notification</string>
+    <string name="artwork_media_background_enable_blur_title">Flouter l\'arrière-plan de la pochette</string>
+    <string name="artwork_media_background_blur_radius_title">Niveau de flou pour les pochettes</string>
+    <string name="artwork_media_background_alpha_title">Transparence des pochettes</string>
     <!-- QS media player -->
-    <string name="qs_media_controls_title">Media player</string>
-    <string name="qs_media_controls_summary_on">Show media player in QS\nRequires a SystemUI restart</string>
-    <string name="qs_media_controls_summary_off">Show media player as a notification\nRequires a SystemUI restart</string>
+    <string name="qs_media_controls_title">Lecteur multimédia</string>
+    <string name="qs_media_controls_summary_on">Afficher le lecteur multimédia dans les réglages rapides\nNécessite un redémarrage de l\'interface utilisateur</string>
+    <string name="qs_media_controls_summary_off">Afficher le lecteur multimédia en tant que notification\nNécessite un redémarrage de l\'interface utilisateur</string>
     <!-- Udfps animations -->
-    <string name="udfps_recog_animation">Udfps animation</string>
-    <string name="udfps_recog_animation_summary">Shows an animation while reading your finger</string>
-    <string name="udfps_recog_animation_effect_title">Udfps animation effect</string>
-    <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
+    <string name="udfps_recog_animation">Animation Udfps</string>
+    <string name="udfps_recog_animation_summary">Affiche une animation lors de la reconnaissance de l\'empreinte</string>
+    <string name="udfps_recog_animation_effect_title">Effet d\'animation Udfps</string>
+    <string name="udfps_recog_animation_effect_summary">Choisir un effet d\'animation</string>
     <!-- Udfps icon picker -->
-    <string name="udfps_icon_picker_title">Udfps icon picker</string>
-    <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
+    <string name="udfps_icon_picker_title">Sélecteur d\'icônes Udfps</string>
+    <string name="udfps_icon_picker_summary">Choisissez votre icône d\'empreinte digitale préférée</string>
     <!-- Lockscreen Clocks -->
-    <string name="lock_screen_custom_clock_face_category">Lockscreen Clock</string>
-    <string name="lock_screen_custom_clock_face_title">Lockscreen clock style</string>
-    <string name="lock_screen_custom_clock_face_default">Default</string>
+    <string name="lock_screen_custom_clock_face_category">Horloge de l\'écran de verrouillage</string>
+    <string name="lock_screen_custom_clock_face_title">Style de l\'horloge de l\'écran de verrouillage</string>
+    <string name="lock_screen_custom_clock_face_default">Par Défaut</string>
     <string name="lock_screen_custom_clock_face_sfunny">Sfuny</string>
     <string name="lock_screen_custom_clock_face_oos">OOS</string>
     <string name="lock_screen_custom_clock_face_clockertino">Clockertino</string>
     <string name="lock_screen_custom_clock_face_spark">Spark</string>
-    <string name="lock_screen_custom_clock_face_spark_circle">Spark Circle</string>
+    <string name="lock_screen_custom_clock_face_spark_circle">Cercle Spark</string>
     <!-- FOD pressed color -->
-    <string name="udfps_pressed_color_title">Udfps pressed color</string>
-    <string name="udfps_pressed_color_summary">Choose your favorite udfps pressed color</string>
-    <string name="fod_pressed_color_default">Default</string>
-    <string name="fod_pressed_color_white">White</string>
-    <string name="fod_pressed_color_white_new">White (New)</string>
-    <string name="fod_pressed_color_green">Green</string>
-    <string name="fod_pressed_color_yellow">Yellow</string>
-    <string name="fod_pressed_color_light_yellow">Light Yellow</string>
+    <string name="udfps_pressed_color_title">Couleur de pression du capteur d\'empreinte</string>
+    <string name="udfps_pressed_color_summary">Choisissez votre couleur préférée de udfps</string>
+    <string name="fod_pressed_color_default">Par Défaut</string>
+    <string name="fod_pressed_color_white">Blanc</string>
+    <string name="fod_pressed_color_white_new">Blanc (nouveau)</string>
+    <string name="fod_pressed_color_green">Vert</string>
+    <string name="fod_pressed_color_yellow">Jaune</string>
+    <string name="fod_pressed_color_light_yellow">Jaune clair</string>
     <!-- Wp zoom -->
-    <string name="use_wp_zoom_title">Enable wallpaper Zoom</string>
-    <string name="use_wp_zoom_summary">Reboot after toggling</string>
+    <string name="use_wp_zoom_title">Activer le zoom du fond d\'écran</string>
+    <string name="use_wp_zoom_summary">Redémarrer après avoir activé</string>
     <!-- Lockscreen Clock -->
-    <string name="force_lockscreen_small">Force small LS clock</string>
-    <string name="force_lockscreen_small_summary">Use small clock for Lockscreen clock</string>
+    <string name="force_lockscreen_small">Forcer la petite horloge LS</string>
+    <string name="force_lockscreen_small_summary">Utiliser une petite horloge pour l\'horloge de l\'écran de verrouillage</string>
     <!-- Custom FOD Icon -->
-    <string name="custom_fp_icon_title">Custom UDFPS Icon</string>
-    <string name="custom_fp_icon_summary">Enable custom UDFPS Icon from files</string>
-    <string name="custom_fp_select_title">Select Custom UDFPS Icon</string>
-    <string name="custom_fp_select_summary">Select custom image from your saved files or gallery</string>
+    <string name="custom_fp_icon_title">Icône UDFPS Personnalisée</string>
+    <string name="custom_fp_icon_summary">Autoriser l\'utilisation d\'une icône UDFPS personnalisée à partir de fichiers</string>
+    <string name="custom_fp_select_title">Sélectionnez l\'icône UDFPS personnalisée</string>
+    <string name="custom_fp_select_summary">Sélectionnez une image personnalisée à partir de vos fichiers enregistrés ou de votre galerie</string>
 </resources>

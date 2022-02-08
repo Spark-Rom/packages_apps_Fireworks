@@ -422,7 +422,7 @@
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">クイック設定フッターの文字を表示</string>
     <string name="qs_footer_text_string_title">フッターのテキストを編集</string>
-    <string name="qs_footer_text_string_summary">空白に設定して既定値になります</string>
+    <string name="qs_footer_text_string_summary">空白に設定すると Spark が既定値として表示されます</string>
     <!-- Sb Icon Style -->
     <string name="statusbar_icons_style">ステータスバーの色</string>
     <string name="statusbar_icons_style_summary">ステータスバーのスタイルを選択する (システム UI の再起動が必要です)</string>

@@ -10,7 +10,7 @@
     <string name="misc_title">Lain-lain</string>
     <string name="powermenu_title">Menu Daya</string>
     <string name="statusbar_title">Bilah Status</string>
-    <string name="udfps_category">Udfps</string>
+    <string name="udfps_category">Sidik jari dalam layar</string>
     <string name="buttons_title">Tombol</string>
     <!-- Display tap to wake custom summary -->
     <string name="tap_to_wake_summary_spark">Ketuk dua kali di mana saja pada layar untuk membangunkan atau tidurkan perangkat</string>
@@ -557,12 +557,12 @@
     <string name="qs_media_controls_summary_on">Tampilkan pemutar media di QS.\nMemerlukan mulai ulang SistemUI</string>
     <string name="qs_media_controls_summary_off">Tampilkan pemutar media sebagai notifikasi.\nMemerlukan mulai ulang SistemUI</string>
     <!-- Udfps animations -->
-    <string name="udfps_recog_animation">Udfps animation</string>
+    <string name="udfps_recog_animation">Animasi sidik jari</string>
     <string name="udfps_recog_animation_summary">Perlihatkan animasi saat jari Anda terdeteksi</string>
-    <string name="udfps_recog_animation_effect_title">Udfps animation effect</string>
-    <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
+    <string name="udfps_recog_animation_effect_title">Efek animasi sidik jari</string>
+    <string name="udfps_recog_animation_effect_summary">Pilih efek animasi</string>
     <!-- Udfps icon picker -->
-    <string name="udfps_icon_picker_title">Udfps icon picker</string>
+    <string name="udfps_icon_picker_title">Pemilih ikon sidik jari</string>
     <string name="udfps_icon_picker_summary">Pilih ikon sidik jari favorit Anda</string>
     <!-- Lockscreen Clocks -->
     <string name="lock_screen_custom_clock_face_category">Jam Layar Kunci</string>
@@ -574,8 +574,8 @@
     <string name="lock_screen_custom_clock_face_spark">Spark</string>
     <string name="lock_screen_custom_clock_face_spark_circle">Spark Circle</string>
     <!-- FOD pressed color -->
-    <string name="udfps_pressed_color_title">Udfps pressed color</string>
-    <string name="udfps_pressed_color_summary">Choose your favorite udfps pressed color</string>
+    <string name="udfps_pressed_color_title">Warna sidik jari ditekan</string>
+    <string name="udfps_pressed_color_summary">Pilih warna tekan sidik jari favorit Anda</string>
     <string name="fod_pressed_color_default">Bawaan</string>
     <string name="fod_pressed_color_white">Putih</string>
     <string name="fod_pressed_color_white_new">Putih (Baru)</string>
@@ -589,8 +589,8 @@
     <string name="force_lockscreen_small">Paksa kecil jam layar kunci</string>
     <string name="force_lockscreen_small_summary">Gunakan jam kecil untuk jam layar kunci</string>
     <!-- Custom FOD Icon -->
-    <string name="custom_fp_icon_title">Custom UDFPS Icon</string>
-    <string name="custom_fp_icon_summary">Enable custom UDFPS Icon from files</string>
-    <string name="custom_fp_select_title">Select Custom UDFPS Icon</string>
-    <string name="custom_fp_select_summary">Select custom image from your saved files or gallery</string>
+    <string name="custom_fp_icon_title">Ikon Sidik Jari Kustom</string>
+    <string name="custom_fp_icon_summary">Aktifkan ikon sidik jari kustom dari file</string>
+    <string name="custom_fp_select_title">Pilih Ikon Kustom Sidik Jari</string>
+    <string name="custom_fp_select_summary">Pilih gambar kustom dari file atau galeri yang Anda simpan</string>
 </resources>

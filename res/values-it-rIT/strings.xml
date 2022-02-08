@@ -13,7 +13,7 @@
     <string name="udfps_category">Udfps</string>
     <string name="buttons_title">Pulsanti</string>
     <!-- Display tap to wake custom summary -->
-    <string name="tap_to_wake_summary_spark">Double-tap anywhere on the screen to wake or sleep device</string>
+    <string name="tap_to_wake_summary_spark">Tocca due volte un punto qualsiasi dello schermo per riattivare il dispositivo</string>
     <!-- Double Tap to Sleep Statusbar -->
     <string name="double_tap_sleep_gesture_title">Tocca per sospendere</string>
     <string name="double_tap_sleep_gesture_summary">Doppio tocco sulla barra di stato per sospendere il dispositivo</string>
@@ -25,13 +25,13 @@
     <string name="confirm">Conferma</string>
     <!-- Monet engine -->
     <string name="monet_engine_settings_title">Monet engine</string>
-    <string name="monet_engine_settings_summary">Adjust monet engine parameters</string>
-    <string name="accurate_shades_title">Use accurate shades</string>
-    <string name="use_wallpaper_color_title">Use wallpaper color</string>
-    <string name="color_override_title">Custom color picker</string>
-    <string name="invalid_color_input">Invalid color input!</string>
-    <string name="chroma_factor_title">Colorfulness</string>
-    <string name="linear_lightness_title">Use custom lightness scale</string>
+    <string name="monet_engine_settings_summary">Regola i parametri del Monet engine</string>
+    <string name="accurate_shades_title">Usa tonalità precise</string>
+    <string name="use_wallpaper_color_title">Usa i colori dello sfondo</string>
+    <string name="color_override_title">Selettore colore personalizzato</string>
+    <string name="invalid_color_input">Dato invalido!</string>
+    <string name="chroma_factor_title">Colorazione</string>
+    <string name="linear_lightness_title">Usa scala di luminosità personalizzata</string>
     <string name="white_luminance_title">Luminosità</string>
     <!-- Tuner -->
     <string name="general_category">Generale</string>
@@ -71,15 +71,15 @@
     <string name="volume_category">Bilanciere del volume</string>
     <string name="volume_rocker_wake_title">Risveglio con tasti del volume</string>
     <string name="volume_rocker_wake_summary">I tasti del volume risveglieranno il dispositivo</string>
-    <string name="volume_rocker_music_controls_title">Music control</string>
-    <string name="volume_rocker_music_controls_summary">Long press volume buttons to switch tracks while the screen is off</string>
-    <string name="volume_rocker_music_controls_delay_title">Playback control activation delay</string>
+    <string name="volume_rocker_music_controls_title">Controllo musicale</string>
+    <string name="volume_rocker_music_controls_summary">Premi a lungo i pulsanti del volume per cambiare traccia mentre lo schermo è spento</string>
+    <string name="volume_rocker_music_controls_delay_title">Ritardo di attivazione controllo riproduzione</string>
     <string name="icons_category">Icone</string>
     <string name="show_fourg_icon_title">Mostra 4G invece che LTE</string>
     <string name="show_fourg_icon_summary">Sostituisci gli indicatori LTE della barra di stato con 4G</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">Icona VoLTE</string>
-    <string name="volte_icon_summary">Display VoLTE icon when available</string>
+    <string name="volte_icon_summary">Mostra l\'icona VoLTE quando disponibile</string>
     <string name="swap_volume_buttons_title">Riorienta</string>
     <string name="swap_volume_buttons_summary">Scambia tasti volume quando lo schermo viene ruotato</string>
     <!-- Power menu on lockscreen -->
@@ -172,13 +172,13 @@
     <string name="qs_edit_title">Icona modifica</string>
     <string name="qs_edit_summary">Abilita l\'icona della modifica dei tile nel piè di pagina</string>
     <!-- Network traffic -->
-    <string name="network_traffic_category_title">Network traffic</string>
-    <string name="statusbar_show_network_traffic_title">Show network traffic in statusbar</string>
-    <string name="statusbar_network_traffic_threshold_tx_title">Auto hide threshold for upload</string>
-    <string name="statusbar_network_traffic_threshold_rx_title">Auto hide threshold for download</string>
-    <string name="statusbar_network_traffic_unit_text_size_title">Network traffic unit text size</string>
+    <string name="network_traffic_category_title">Traffico di rete</string>
+    <string name="statusbar_show_network_traffic_title">Mostra attività di rete nella barra di stato</string>
+    <string name="statusbar_network_traffic_threshold_tx_title">Nascondi automaticamente la soglia per l\'upload</string>
+    <string name="statusbar_network_traffic_threshold_rx_title">Nascondi automaticamente la soglia per il download</string>
+    <string name="statusbar_network_traffic_unit_text_size_title">Dimensione testo unità di traffico di rete</string>
     <string name="statusbar_network_traffic_rate_text_scale_factor_title">Network traffic rate text scale factor</string>
-    <string name="statusbar_network_traffic_rate_text_scale_factor_dialog_title">Scale factor</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_dialog_title">Scala di ingrandimento</string>
     <!-- HW keys -->
     <string name="hardware_keys_title">Tasti fisici</string>
     <string name="hardware_keys_category">Pulsanti di navigazione hardware</string>
@@ -240,24 +240,24 @@
     <string name="camera_sleep_on_release_summary">Una mezza pressione terrà acceso lo schermo solo mentre il pulsante è tenuto premuto</string>
     <string name="camera_launch_title">Avvia fotocamera</string>
     <string name="camera_launch_summary">Una pressione prolungata e rilascio avvierà la fotocamera</string>
-    <string name="volbtn_music_controls_title">Control playback</string>
-    <string name="volbtn_music_controls_summary">Seek music tracks by long pressing the volume keys while the display is off</string>
-    <string name="volbtn_cursor_control_title">Keyboard cursor control</string>
+    <string name="volbtn_music_controls_title">Controllo riproduzione</string>
+    <string name="volbtn_music_controls_summary">Quando lo schermo è spento, passa da un brano all\'altro tenendo premuti i tasti del volume</string>
+    <string name="volbtn_cursor_control_title">Controllo del cursore della tastiera</string>
     <string name="volbtn_cursor_control_off">Disabilitato</string>
-    <string name="volbtn_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volbtn_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="volbtn_cursor_control_on">I tasti volume su/giù spostano il cursore a sinistra/destra</string>
+    <string name="volbtn_cursor_control_on_reverse">Volume su/giù muove il cursore a destra/sinistra</string>
     <string name="volume_panel_on_left_summary">Visualizza il pannello volume sul lato sinistro dello schermo</string>
     <string name="extras_title">Extra</string>
     <string name="click_partial_screenshot_title">Clicca per uno screenshot parziale</string>
     <string name="click_partial_screenshot_summary">Premi volume giù e il pulsante di accensione per acquisire uno screenshot parziale</string>
     <!-- Key backlight -->
-    <string name="button_backlight_title">Button backlight</string>
-    <string name="button_backlight_enabled">Illuminate buttons</string>
-    <string name="button_backlight_only_when_pressed_title">Illuminate buttons only when pressed</string>
-    <string name="keyboard_backlight_enabled">Illuminate keyboard</string>
-    <string name="button_backlight_seekbar_title">Button brightness</string>
-    <string name="keyboard_backlight_seekbar_title">Keyboard brightness</string>
-    <string name="backlight_timeout_title">Illumination timeout</string>
+    <string name="button_backlight_title">Pulsante retroilluminazione</string>
+    <string name="button_backlight_enabled">Illumina i pulsanti</string>
+    <string name="button_backlight_only_when_pressed_title">Illumina i pulsanti solo quando premuti</string>
+    <string name="keyboard_backlight_enabled">Illumina la tastiera</string>
+    <string name="button_backlight_seekbar_title">Pulsante della luminosità</string>
+    <string name="keyboard_backlight_seekbar_title">Luminosità della tastiera</string>
+    <string name="backlight_timeout_title">Timeout illuminazione</string>
     <string name="backlight_timeout_unlimited">Non spegnere</string>
     <string name="backlight_summary_disabled">Disabilitato</string>
     <string name="backlight_summary_enabled_with_timeout">Abilitato per <xliff:g id="timeout">%s</xliff:g></string>
@@ -388,8 +388,8 @@
     <string name="status_bar_battery_style_circle">Cerchio</string>
     <string name="status_bar_battery_style_dotted_circle">Cerchio tratteggiato</string>
     <string name="status_bar_battery_style_filled_circle">Cerchio (pieno)</string>
-    <string name="status_bar_battery_style_big_circle">Big circle</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Big dotted circle</string>
+    <string name="status_bar_battery_style_big_circle">Cerchio grande</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Cerchio grande punteggiato</string>
     <string name="status_bar_battery_style_text">Testo</string>
     <string name="status_bar_battery_style_hidden">Nascosto</string>
     <!-- Status bar - Battery percentage -->
@@ -403,8 +403,8 @@
     <string name="battery_estimate_title">Stima della batteria</string>
     <string name="battery_estimate_summary">Mostra la percentuale di carica rimasta quando disponibile</string>
     <!-- Call strength icons in QS -->
-    <string name="show_qs_call_strength_icon_title">Show call strength icon(s)</string>
-    <string name="show_qs_call_strength_icon_summary">Show call strength icons in QuickSettings panel when available</string>
+    <string name="show_qs_call_strength_icon_title">Mostra icone forza chiamata</string>
+    <string name="show_qs_call_strength_icon_summary">Mostra le icone di forza della chiamata nel pannello Impostazioni rapide quando disponibile</string>
     <!-- Heads up options -->
     <string name="less_boring_heads_up_title">Notifiche fluttuanti meno insistenti</string>
     <string name="less_boring_heads_up_summary">Mostra le notifiche a comparsa solo per telefono, messaggi e sveglia</string>
@@ -414,18 +414,18 @@
     <string name="general_title">Generale</string>
     <string name="notification_light_settings">Luci delle notifiche</string>
     <!-- Lockscreen battery info indicator  -->
-    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
-    <string name="lockscreen_battery_info_summary">Show charging current, voltage, wattage and battery temperature on lockscreen while charging</string>
+    <string name="lockscreen_battery_info_title">Informazioni di ricarica nella schermata di blocco</string>
+    <string name="lockscreen_battery_info_summary">Mostra la corrente di ricarica, il voltaggio, il wattaggio e la temperatura della batteria nella schermata di blocco durante la ricarica</string>
     <!-- Charging animation -->
     <string name="charging_animation_title">Animazione di ricarica</string>
     <string name="charging_animation_summary">Visualizza un\'animazione quando il dispositivo è in carica</string>
     <!-- QS footer text -->
-    <string name="qs_footer_text_show_title">Show QS footer text</string>
+    <string name="qs_footer_text_show_title">Mostra testo a piè di pagina delle impostazioni rapide</string>
     <string name="qs_footer_text_string_title">Personalizza testo piè di pagina</string>
     <string name="qs_footer_text_string_summary">Impostato su vuoto per impostazione predefinita</string>
     <!-- Sb Icon Style -->
-    <string name="statusbar_icons_style">Colored Statusbar Icons</string>
-    <string name="statusbar_icons_style_summary">Choose the style of your statusbar icons (requires SystemUI restart)</string>
+    <string name="statusbar_icons_style">Icone barra di stato colorate</string>
+    <string name="statusbar_icons_style_summary">Scegli lo stile delle icone della barra di stato (richiede il riavvio della SystemUI)</string>
     <!-- Notification headers -->
     <string name="notification_headers_title">Intestazioni di notifica</string>
     <string name="notification_headers_summary">Mostra intestazioni nel ombra delle notifiche</string>
@@ -445,8 +445,8 @@
     <string name="udfps_haptic_feedback_title">FOD feedback tattile</string>
     <string name="udfps_haptic_feedback_summary">Vibra quando si tocca l\'icona FOD</string>
     <!-- Tiles on secure keyguard -->
-    <string name="use_tiles_on_secure_keyguard_title">Require unlocking to use sensitive tiles</string>
-    <string name="use_tiles_on_secure_keyguard_summary">Ask to unlock lockscreen when using sensitive tiles</string>
+    <string name="use_tiles_on_secure_keyguard_title">Richiede lo sblocco per usare i tile sensibili</string>
+    <string name="use_tiles_on_secure_keyguard_summary">Chiedi di sbloccare la schermata di blocco quando si usano i tile sensibili</string>
     <!-- Pulse notifications lightning -->
     <string name="pulse_ambient_light_title">Illuminazione ambientale del bordo</string>
     <string name="pulse_ambient_light_summary">Illuminazione ambientale dei bordi per le notifiche pulsanti</string>
@@ -473,15 +473,15 @@
     <string name="ambient_notification_color_mode_notification">Colore icona notifica</string>
     <string name="ambient_notification_color_mode_custom">@string/ambient_notification_light_color_title</string>
     <string name="ambient_notification_light_color_title">Colore personalizzato</string>
-    <string name="pulse_ambient_light_show_always_title">Show always</string>
-    <string name="pulse_ambient_light_show_always_summary">Show lights for all doze events and not just notifications</string>
+    <string name="pulse_ambient_light_show_always_title">Mostra sempre</string>
+    <string name="pulse_ambient_light_show_always_summary">Mostra le luci per tutti gli eventi doze e non solo le notifiche</string>
     <!-- OOS style material dismiss all button for notifications -->
     <string name="notification_material_dismiss_button_title">Pulsante cancella in Material Design</string>
     <string name="notification_material_dismiss_button_summary">Sostituisce la cancellazione dell\'intero testo di notifica con il pulsante fluttuante</string>
     <!-- Statusbar left_right padding -->
-    <string name="statusbar_padding_category">Paddings</string>
-    <string name="statusbar_left_padding">Left padding</string>
-    <string name="statusbar_right_padding">Right padding</string>
+    <string name="statusbar_padding_category">Spaziatura</string>
+    <string name="statusbar_left_padding">Spaziatura sinistra</string>
+    <string name="statusbar_right_padding">Spaziatura destra</string>
     <!-- Custom carrier label and position -->
     <string name="carrier_label_settings_title">Nome operatore</string>
     <string name="carrier_label_settings_summary">Personalizzazione dell\'etichetta operatore</string>
@@ -508,9 +508,9 @@
     <string name="powermenu_logout">Disconnetti</string>
     <string name="powermenu_emergency">Emergenza</string>
     <string name="powermenu_torch">Torcia</string>
-    <string name="powermenu_onthego">On-The-Go mode</string>
+    <string name="powermenu_onthego">Modalità On-The-Go</string>
     <string name="smart_space_title">SmartSpace</string>
-    <string name="smart_space_summary">Display conditional info such as weather and events on lockscreen\nRequires a SystemUI restart</string>
+    <string name="smart_space_summary">Mostra informazioni condizionali come meteo ed eventi nella schermata di blocco. Richiede un riavvio del sistema</string>
     <!-- Themes customization -->
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
     <string name="theme_customization_category">Tema</string>
@@ -519,78 +519,78 @@
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
     <string name="theme_customization_icon_pack_title">Pacchetto icone</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
-    <string name="theme_customization_icon_shape_title">Icon shape</string>
+    <string name="theme_customization_icon_shape_title">Forma dell\'icona</string>
     <string name="qsclockpicker_title">Selettore QsClock</string>
     <string name="qsclockpicker_img">Orologio Spark 1</string>
     <string name="qsclockpicker_big">Orologio Spark 2</string>
     <string name="qsclockpicker_imgnew">SparkClock3</string>
     <string name="qsclockpicker_oos">OOS</string>
-    <string name="qsclockpicker_interactive_1">Interactive Clock 1</string>
-    <string name="qsclockpicker_aosp">Aosp Clock</string>
+    <string name="qsclockpicker_interactive_1">Orologio Interattivo 1</string>
+    <string name="qsclockpicker_aosp">Orologio Aosp</string>
     <string name="qsclockpicker_coloros">ColorOS</string>
     <!-- VoWiFi icon -->
     <string name="vowifi_icon_title">Icona VoWiFi</string>
-    <string name="vowifi_icon_summary">Display VoWiFi icon when available</string>
+    <string name="vowifi_icon_summary">Mostra l\'icona VoWiFi quando disponibile</string>
     <string name="extra_theme_settings_title">Temi extra</string>
     <string name="extra_theme_settings_summary">pacchetto icone e font</string>
     <string name="custom_font_preference_title">Seleziona un font personalizzato</string>
-    <string name="custom_font_preference_footer_message">Reboot after selecting a font to take effect</string>
-    <string name="cannot_resolve_activity">Unable to find a suitable activity to perform this action!</string>
-    <string name="invalid_font_file">Font file does not have valid postscript table</string>
-    <string name="failed_to_update_font">Failed to update font</string>
-    <string name="failed_to_copy_file_to_cache">Failed to copy font to cache</string>
+    <string name="custom_font_preference_footer_message">Riavvia dopo aver selezionato un tipo di carattere da applicare</string>
+    <string name="cannot_resolve_activity">Impossibile trovare un\'attività adatta per eseguire questa azione!</string>
+    <string name="invalid_font_file">Il file di carattere non ha una tabella postscript valida</string>
+    <string name="failed_to_update_font">Impossibile aggiornare il carattere</string>
+    <string name="failed_to_copy_file_to_cache">Impossibile copiare il carattere nella cache</string>
     <!-- Annoying Notifs -->
     <string name="notification_sound_vib_screen_on_title">Suono delle notifiche se attivo</string>
     <string name="notification_sound_vib_screen_on_summary">Riproduci il suono e la vibrazione delle notifiche quando lo schermo è acceso</string>
     <!-- Ambient Ticker -->
-    <string name="pulse_on_new_tracks_title">Music ticker</string>
-    <string name="pulse_on_new_tracks_summary">Show music ticker on Ambient Display during track change</string>
+    <string name="pulse_on_new_tracks_title">Ticker musicale</string>
+    <string name="pulse_on_new_tracks_summary">Mostra ticker musicale su Ambient Display durante il cambio traccia</string>
     <!-- Media artwork -->
-    <string name="media_category">Media notification</string>
-    <string name="artwork_media_background_title">Artwork media background</string>
-    <string name="artwork_media_background_summary">Set media artwork as the notification media background</string>
-    <string name="artwork_media_background_enable_blur_title">Blur media media artwork background</string>
-    <string name="artwork_media_background_blur_radius_title">Blur amount for media artwork</string>
-    <string name="artwork_media_background_alpha_title">Transparency of media artwork</string>
+    <string name="media_category">Notifiche multimediali</string>
+    <string name="artwork_media_background_title">Sfondo multimediale della grafica</string>
+    <string name="artwork_media_background_summary">Imposta copertina multimediale come sfondo di notifica</string>
+    <string name="artwork_media_background_enable_blur_title">Sfoca lo sfondo della grafica multimediale</string>
+    <string name="artwork_media_background_blur_radius_title">Livello di sfocatura per la grafica multimediale</string>
+    <string name="artwork_media_background_alpha_title">Trasparenza della grafica multimediale</string>
     <!-- QS media player -->
-    <string name="qs_media_controls_title">Media player</string>
-    <string name="qs_media_controls_summary_on">Show media player in QS\nRequires a SystemUI restart</string>
-    <string name="qs_media_controls_summary_off">Show media player as a notification\nRequires a SystemUI restart</string>
+    <string name="qs_media_controls_title">Lettore multimediale</string>
+    <string name="qs_media_controls_summary_on">Mostra lettore multimediale nelle impostazioni rapide. Richiede un riavvio del sistema</string>
+    <string name="qs_media_controls_summary_off">Mostra lettore multimediale come una notifica. Richiede un riavvio del sistema</string>
     <!-- Udfps animations -->
-    <string name="udfps_recog_animation">Udfps animation</string>
-    <string name="udfps_recog_animation_summary">Shows an animation while reading your finger</string>
-    <string name="udfps_recog_animation_effect_title">Udfps animation effect</string>
-    <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
+    <string name="udfps_recog_animation">Animazione Udfps</string>
+    <string name="udfps_recog_animation_summary">Mostra un\'animazione durante la scansione dell\'impronta digitale</string>
+    <string name="udfps_recog_animation_effect_title">Effetto animazione Udfps</string>
+    <string name="udfps_recog_animation_effect_summary">Scegli l\'effetto dell\'animazione</string>
     <!-- Udfps icon picker -->
-    <string name="udfps_icon_picker_title">Udfps icon picker</string>
-    <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
+    <string name="udfps_icon_picker_title">Scegli l\'icona Udfps</string>
+    <string name="udfps_icon_picker_summary">Scegli la tua icona preferita per l\'impronta</string>
     <!-- Lockscreen Clocks -->
-    <string name="lock_screen_custom_clock_face_category">Lockscreen Clock</string>
-    <string name="lock_screen_custom_clock_face_title">Lockscreen clock style</string>
-    <string name="lock_screen_custom_clock_face_default">Default</string>
+    <string name="lock_screen_custom_clock_face_category">Orologio della schermata di blocco</string>
+    <string name="lock_screen_custom_clock_face_title">Stile orologio della schermata di blocco</string>
+    <string name="lock_screen_custom_clock_face_default">Predefinito</string>
     <string name="lock_screen_custom_clock_face_sfunny">Sfuny</string>
     <string name="lock_screen_custom_clock_face_oos">OOS</string>
     <string name="lock_screen_custom_clock_face_clockertino">Clockertino</string>
     <string name="lock_screen_custom_clock_face_spark">Spark</string>
-    <string name="lock_screen_custom_clock_face_spark_circle">Spark Circle</string>
+    <string name="lock_screen_custom_clock_face_spark_circle">Spark Cerchio</string>
     <!-- FOD pressed color -->
-    <string name="udfps_pressed_color_title">Udfps pressed color</string>
+    <string name="udfps_pressed_color_title">Colore del pulsante premuto</string>
     <string name="udfps_pressed_color_summary">Choose your favorite udfps pressed color</string>
-    <string name="fod_pressed_color_default">Default</string>
-    <string name="fod_pressed_color_white">White</string>
-    <string name="fod_pressed_color_white_new">White (New)</string>
-    <string name="fod_pressed_color_green">Green</string>
-    <string name="fod_pressed_color_yellow">Yellow</string>
-    <string name="fod_pressed_color_light_yellow">Light Yellow</string>
+    <string name="fod_pressed_color_default">Predefinito</string>
+    <string name="fod_pressed_color_white">Bianco</string>
+    <string name="fod_pressed_color_white_new">Bianco (Nuovo)</string>
+    <string name="fod_pressed_color_green">Verde</string>
+    <string name="fod_pressed_color_yellow">Giallo</string>
+    <string name="fod_pressed_color_light_yellow">Giallo chiaro</string>
     <!-- Wp zoom -->
-    <string name="use_wp_zoom_title">Enable wallpaper Zoom</string>
-    <string name="use_wp_zoom_summary">Reboot after toggling</string>
+    <string name="use_wp_zoom_title">Abilita Ingrandimento sfondo</string>
+    <string name="use_wp_zoom_summary">Riavvia dopo aver disabilitato</string>
     <!-- Lockscreen Clock -->
-    <string name="force_lockscreen_small">Force small LS clock</string>
-    <string name="force_lockscreen_small_summary">Use small clock for Lockscreen clock</string>
+    <string name="force_lockscreen_small">Forza l\'orologio piccolo</string>
+    <string name="force_lockscreen_small_summary">Usa orologio piccolo per l\'orologio della schermata di blocco</string>
     <!-- Custom FOD Icon -->
-    <string name="custom_fp_icon_title">Custom UDFPS Icon</string>
-    <string name="custom_fp_icon_summary">Enable custom UDFPS Icon from files</string>
-    <string name="custom_fp_select_title">Select Custom UDFPS Icon</string>
-    <string name="custom_fp_select_summary">Select custom image from your saved files or gallery</string>
+    <string name="custom_fp_icon_title">Icona Udfps Personalizzata</string>
+    <string name="custom_fp_icon_summary">Abilita l\'icona UDFPS personalizzata dai file</string>
+    <string name="custom_fp_select_title">Seleziona l\'icona UDFPS personalizzata</string>
+    <string name="custom_fp_select_summary">Seleziona un\'immagine personalizzata dai tuoi file o dalla galleria</string>
 </resources>

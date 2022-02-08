@@ -71,15 +71,15 @@
     <string name="volume_category">Lautstärketasten</string>
     <string name="volume_rocker_wake_title">Aufwecken mit Lautstärketasten</string>
     <string name="volume_rocker_wake_summary">Drücken der Lautstärketasten weckt das Gerät</string>
-    <string name="volume_rocker_music_controls_title">Music control</string>
-    <string name="volume_rocker_music_controls_summary">Long press volume buttons to switch tracks while the screen is off</string>
-    <string name="volume_rocker_music_controls_delay_title">Playback control activation delay</string>
+    <string name="volume_rocker_music_controls_title">Musiksteuerung</string>
+    <string name="volume_rocker_music_controls_summary">Halten Sie die Lautstärketasten gedrückt, um die Titel bei ausgeschaltetem Bildschirm zu wechseln</string>
+    <string name="volume_rocker_music_controls_delay_title">Aktivierungsverzögerung für Wiedergabesteuerung</string>
     <string name="icons_category">Symbole</string>
     <string name="show_fourg_icon_title">4G statt LTE anzeigen</string>
     <string name="show_fourg_icon_summary">Ersetzt die LTE-Anzeigen in der Statusleiste durch 4G</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">VoLTE-Symbol</string>
-    <string name="volte_icon_summary">Display VoLTE icon when available</string>
+    <string name="volte_icon_summary">VoLTE-Symbol anzeigen, wenn verfügbar</string>
     <string name="swap_volume_buttons_title">Lautstärketasten umkehren</string>
     <string name="swap_volume_buttons_summary">Lautstärketasten tauschen, wenn das Gerät gedreht wird</string>
     <!-- Power menu on lockscreen -->
@@ -172,10 +172,10 @@
     <string name="qs_edit_title">Symbol bearbeiten</string>
     <string name="qs_edit_summary">Bearbeitungsbutton im Header aktiveren</string>
     <!-- Network traffic -->
-    <string name="network_traffic_category_title">Network traffic</string>
-    <string name="statusbar_show_network_traffic_title">Show network traffic in statusbar</string>
-    <string name="statusbar_network_traffic_threshold_tx_title">Auto hide threshold for upload</string>
-    <string name="statusbar_network_traffic_threshold_rx_title">Auto hide threshold for download</string>
+    <string name="network_traffic_category_title">Netzwerkverkehr</string>
+    <string name="statusbar_show_network_traffic_title">Netzwerkaktivität in der Statusleiste anzeigen</string>
+    <string name="statusbar_network_traffic_threshold_tx_title">Auto-Versteck-Schwellwert für Upload</string>
+    <string name="statusbar_network_traffic_threshold_rx_title">Auto-Versteck-Schwelle für Download</string>
     <string name="statusbar_network_traffic_unit_text_size_title">Network traffic unit text size</string>
     <string name="statusbar_network_traffic_rate_text_scale_factor_title">Network traffic rate text scale factor</string>
     <string name="statusbar_network_traffic_rate_text_scale_factor_dialog_title">Scale factor</string>
