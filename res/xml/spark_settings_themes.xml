@@ -21,6 +21,12 @@
         android:summary="@string/monet_engine_settings_summary"
         android:fragment="com.spark.settings.fragments.MonetEngineSettingsFragment" />
 
+    <Preference
+        android:key="extra_theme_settings"
+        android:title="@string/extra_theme_settings_title"
+        android:summary="@string/extra_theme_settings_summary"
+        android:fragment="com.spark.settings.fragments.ExtraThemes" />
+
     <PreferenceCategory
         android:title="@string/lock_screen_custom_clock_face_category">
 
@@ -38,15 +44,15 @@
             android:defaultValue="false" />
     </PreferenceCategory>
 
-    <Preference
-        android:key="extra_theme_settings"
-        android:title="@string/extra_theme_settings_title"
-        android:summary="@string/extra_theme_settings_summary"
-        android:fragment="com.spark.settings.fragments.ExtraThemes" />
-
      <PreferenceCategory
         android:key="quick_settings_general_category"
         android:title="@string/general_category">
+
+    <com.spark.support.preferences.SystemSettingSwitchPreference
+        android:key="use_wp_zoom"
+        android:title="@string/use_wp_zoom_title"
+        android:summary="@string/use_wp_zoom_summary"
+        android:defaultValue="false" 
 
     <com.spark.support.preferences.SystemSettingListPreference
         android:key="qs_clock_picker"
