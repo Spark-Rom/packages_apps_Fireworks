@@ -52,7 +52,7 @@
         android:key="use_wp_zoom"
         android:title="@string/use_wp_zoom_title"
         android:summary="@string/use_wp_zoom_summary"
-        android:defaultValue="false" 
+        android:defaultValue="false" />
 
     <com.spark.support.preferences.SystemSettingListPreference
         android:key="qs_clock_picker"
