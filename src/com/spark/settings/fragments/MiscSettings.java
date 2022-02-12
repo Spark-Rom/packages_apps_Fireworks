@@ -100,6 +100,9 @@ public class MiscSettings extends ActionFragment implements
     private static final String KEY_BUTTON_MANUAL_BRIGHTNESS_NEW = "button_manual_brightness_new";
     private static final String KEY_BUTTON_TIMEOUT = "button_timeout";
     private static final String KEY_BUTON_BACKLIGHT_OPTIONS = "button_backlight_options_category";
+    private static final String KEY_GAMES_SPOOF = "use_games_spoof";
+
+    private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
 
     // Masks for checking presence of hardware keys.
     // Must match values in frameworks/base/core/res/res/values/config.xml
@@ -116,6 +119,7 @@ public class MiscSettings extends ActionFragment implements
     private PreferenceCategory mButtonBackLightCategory;
     private SwitchPreference mHwKeyDisable;
     private SwitchPreference mNavbarVisibility;
+    private SwitchPreference mGamesSpoof;
 
     private boolean mIsNavSwitchingMode = false;
 
@@ -186,6 +190,10 @@ public class MiscSettings extends ActionFragment implements
                     findPreference(PREF_FLASH_ON_CALL);
             mFlashOnCall.setSummary(mFlashOnCall.getEntries()[value]);
             mFlashOnCall.setOnPreferenceChangeListener(this);
+
+            mGamesSpoof = (SwitchPreference) findPreference(KEY_GAMES_SPOOF);
+            mGamesSpoof.setChecked(SystemProperties.getBoolean(SYS_GAMES_SPOOF, false));
+            mGamesSpoof.setOnPreferenceChangeListener(this);
         }
 
         final boolean needsNavbar = ActionUtils.hasNavbarByDefault(getActivity());
@@ -364,9 +372,12 @@ public class MiscSettings extends ActionFragment implements
             Settings.System.putIntForUser(resolver, KEY_EDGE_LIGHTING,
                     value ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
-        } else {
-            return false;
+        } else if (preference == mGamesSpoof) {
+            boolean value = (Boolean) newValue;
+            SystemProperties.set(SYS_GAMES_SPOOF, value ? "true" : "false");
+            return true;
         }
+        return false;
     }
 
 

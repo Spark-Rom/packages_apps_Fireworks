@@ -114,6 +114,18 @@
  
    </PreferenceCategory>
 
+   <PreferenceCategory
+        android:key="misc_spoof_category"
+        android:title="@string/spoof_category">
+
+    <!-- Unlock FPS for specific games -->
+    <SwitchPreference
+        android:key="use_games_spoof"
+        android:title="@string/use_games_spoof_title"
+        android:summary="@string/use_games_spoof_summary" />
+
+   </PreferenceCategory>
+
     <PreferenceCategory
         android:key="misc_general_category"
         android:title="@string/general_category">
