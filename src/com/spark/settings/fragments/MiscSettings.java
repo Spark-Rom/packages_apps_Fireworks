@@ -101,8 +101,10 @@ public class MiscSettings extends ActionFragment implements
     private static final String KEY_BUTTON_TIMEOUT = "button_timeout";
     private static final String KEY_BUTON_BACKLIGHT_OPTIONS = "button_backlight_options_category";
     private static final String KEY_GAMES_SPOOF = "use_games_spoof";
+    private static final String KEY_STREAM_SPOOF = "use_stream_spoof";
 
     private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
+    private static final String SYS_STREAM_SPOOF = "persist.sys.pixelprops.streaming";
 
     // Masks for checking presence of hardware keys.
     // Must match values in frameworks/base/core/res/res/values/config.xml
@@ -120,6 +122,7 @@ public class MiscSettings extends ActionFragment implements
     private SwitchPreference mHwKeyDisable;
     private SwitchPreference mNavbarVisibility;
     private SwitchPreference mGamesSpoof;
+    private SwitchPreference mStreamSpoof;
 
     private boolean mIsNavSwitchingMode = false;
 
@@ -194,6 +197,10 @@ public class MiscSettings extends ActionFragment implements
             mGamesSpoof = (SwitchPreference) findPreference(KEY_GAMES_SPOOF);
             mGamesSpoof.setChecked(SystemProperties.getBoolean(SYS_GAMES_SPOOF, false));
             mGamesSpoof.setOnPreferenceChangeListener(this);
+
+            mStreamSpoof = (SwitchPreference) findPreference(KEY_STREAM_SPOOF);
+            mStreamSpoof.setChecked(SystemProperties.getBoolean(SYS_STREAM_SPOOF, true));
+            mStreamSpoof.setOnPreferenceChangeListener(this);
         }
 
         final boolean needsNavbar = ActionUtils.hasNavbarByDefault(getActivity());
@@ -375,6 +382,10 @@ public class MiscSettings extends ActionFragment implements
         } else if (preference == mGamesSpoof) {
             boolean value = (Boolean) newValue;
             SystemProperties.set(SYS_GAMES_SPOOF, value ? "true" : "false");
+            return true;
+        } else if (preference == mStreamSpoof) {
+            boolean value = (Boolean) newValue;
+            SystemProperties.set(SYS_STREAM_SPOOF, value ? "true" : "false");
             return true;
         }
         return false;
