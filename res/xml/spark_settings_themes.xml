@@ -17,8 +17,8 @@
 
     <Preference
         android:key="monet_engine_settings"
-        android:title="@string/monet_engine_settings_title"
-        android:summary="@string/monet_engine_settings_summary"
+        android:title="@string/monet_engine_title"
+        android:summary="@string/monet_engine_summary"
         android:fragment="com.spark.settings.fragments.MonetEngineSettingsFragment" />
 
     <Preference
