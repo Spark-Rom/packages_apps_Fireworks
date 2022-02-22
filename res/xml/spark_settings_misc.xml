@@ -15,4 +15,10 @@
     android:title="@string/misc_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.spark.support.preferences.SystemPropSwitchPreference
+        android:key="persist.spark.hosts_block"
+        android:title="@string/hosts_block_title"
+        android:summary="@string/hosts_block_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>

@@ -71,6 +71,8 @@ import java.util.Collections;
 public class MiscSettings extends ActionFragment implements
         OnPreferenceChangeListener {
 
+    private static final String PREF_ADBLOCK = "persist.spark.hosts_block";
+
     private Handler mHandler = new Handler();
 
     @Override
@@ -84,12 +86,26 @@ public class MiscSettings extends ActionFragment implements
         final PreferenceScreen prefSet = getPreferenceScreen();
         final Resources res = mContext.getResources();
 
+        findPreference(PREF_ADBLOCK).setOnPreferenceChangeListener(this);
+
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
+        if (PREF_ADBLOCK.equals(preference.getKey())) {
+            // Flush the java VM DNS cache to re-read the hosts file.
+            // Delay to ensure the value is persisted before we refresh
+            mHandler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        InetAddress.clearDnsCache();
+                    }
+            }, 1000);
+            return true;
+        } else {
             return false;
+        }
     }
 
 
