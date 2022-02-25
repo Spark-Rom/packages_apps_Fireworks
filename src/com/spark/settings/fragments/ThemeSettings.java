@@ -37,6 +37,7 @@ import android.os.UserHandle;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import android.util.Log;
+import com.android.internal.util.spark.SparkUtils;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import org.json.JSONException;
@@ -67,11 +68,13 @@ public class ThemeSettings extends DashboardFragment implements
     private static final String CUSTOM_CLOCK_FACE = Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK_FACE;
     private static final String DEFAULT_CLOCK = "com.android.keyguard.clock.DefaultClockController";
     private static final String QS_CLOCK_PICKER = "qs_clock_picker";
+    private static final String SETTINGS_DASHBOARD_STYLE = "settings_dashboard_style";
 
     private ListPreference mLockClockStyles;
     private SystemSettingMasterSwitchPreference mEdgeLightning;
     private SystemSettingEditTextPreference mFooterString;
     private SystemSettingListPreference mQsClockPicker;
+    private SystemSettingListPreference mSettingsDashBoardStyle;
     private ListPreference mQuickPulldown;
     private ListPreference mTileAnimationInterpolator;
     private ListPreference mTileAnimationStyle;
@@ -156,10 +159,12 @@ public class ThemeSettings extends DashboardFragment implements
         mLockClockStyles.setOnPreferenceChangeListener(this);
 
         mQsClockPicker = (SystemSettingListPreference) findPreference(QS_CLOCK_PICKER);
-        boolean isAospClock = Settings.System.getIntForUser(resolver,
-                KEY_EDGE_LIGHTNING, 0, UserHandle.USER_CURRENT) == 5;
         mQsClockPicker.setOnPreferenceChangeListener(this);
         mCustomSettingsObserver.observe();
+
+        mSettingsDashBoardStyle = (SystemSettingListPreference) findPreference(SETTINGS_DASHBOARD_STYLE);
+        mSettingsDashBoardStyle.setOnPreferenceChangeListener(this);
+
     }
 
     @Override
@@ -268,6 +273,9 @@ public class ThemeSettings extends DashboardFragment implements
             int SelectedClock = Integer.valueOf((String) newValue);
             Settings.System.putInt(resolver, Settings.System.QS_CLOCK_PICKER, SelectedClock);
             mCustomSettingsObserver.observe();
+            return true;
+        } else if (preference == mSettingsDashBoardStyle) {
+            SparkUtils.showSettingsRestartDialog(getContext());
             return true;
         }
         return false;

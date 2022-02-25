@@ -745,4 +745,9 @@
 
     <string name="hosts_block_title">Ad-block</string>
     <string name="hosts_block_summary">Block ads with a modified hosts file. Turn off to use third party solutions or if apps cause issues.</string>
+
+    <!-- Custom settings dashboard style -->
+    <string name="settings_dashboard_style_title">Settings dashboard icons</string>
+    <string name="settings_dashboard_style_default">Default</string>
+    <string name="settings_dashboard_style_aosp">Aosp</string>
 </resources>

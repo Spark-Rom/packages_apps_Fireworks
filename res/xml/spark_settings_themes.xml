@@ -44,6 +44,14 @@
             android:defaultValue="false" />
     </PreferenceCategory>
 
+        <com.spark.support.preferences.SystemSettingListPreference
+            android:key="settings_dashboard_style"
+            android:title="@string/settings_dashboard_style_title"
+            android:entries="@array/settings_dashboard_style_entries"
+            android:entryValues="@array/settings_dashboard_style_values"
+            android:summary="%s"
+            android:defaultValue="0" />
+
      <PreferenceCategory
         android:key="quick_settings_general_category"
         android:title="@string/general_category">
