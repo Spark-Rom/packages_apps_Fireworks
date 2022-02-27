@@ -23,16 +23,22 @@
     <string name="hsv">HSV</string>
     <string name="cancel">Cancelar</string>
     <string name="confirm">Confirmar</string>
-    <!-- Monet engine -->
-    <string name="monet_engine_settings_title">Monet engine</string>
-    <string name="monet_engine_settings_summary">Ajustar los parámetros de monet</string>
-    <string name="accurate_shades_title">Usar sombras precisas</string>
-    <string name="use_wallpaper_color_title">Usar color del fondo de pantalla</string>
-    <string name="color_override_title">Selector de color personalizado</string>
-    <string name="invalid_color_input">¡Entrada no válida!</string>
-    <string name="chroma_factor_title">Colorido</string>
-    <string name="linear_lightness_title">Usar escala de luz personalizada</string>
-    <string name="white_luminance_title">Brillo</string>
+    <string name="search">Buscar</string>
+    <string name="search_apps">Buscar aplicaciones</string>
+    <!-- Monet Engine -->
+    <string name="monet_category">Monet</string>
+    <string name="monet_engine_title">Monet engine</string>
+    <string name="monet_engine_summary">Personalizar parámetros de Monet</string>
+    <string name="monet_engine_custom_color_title">Usar color personalizado</string>
+    <string name="monet_engine_custom_color_summary">Usar color personalizado para Monet en lugar de los colores del fondo de pantalla</string>
+    <string name="monet_engine_color_override_title">Color personalizado</string>
+    <string name="monet_engine_white_luminance_user_title">Luminosidad blanca</string>
+    <string name="monet_engine_accurate_shades_title">Usar matices precisos</string>
+    <string name="monet_engine_chroma_factor_title">Factor cromático</string>
+    <string name="monet_engine_linear_lightness_title">Usar luminosidad lineal</string>
+    <!-- Black theme -->
+    <string name="system_black_theme_title">Usar tema oscuro</string>
+    <string name="system_black_theme_summary">Forzar colores de fondo negros</string>
     <!-- Tuner -->
     <string name="general_category">General</string>
     <string name="lockscreen_tuner_title">Atajos en pantalla de bloqueo</string>
@@ -303,21 +309,6 @@
     <string name="button_timeout_title">Duración de la retroiluminación</string>
     <string name="button_backlight_on_touch_only_title">Iluminación del botón al tocar</string>
     <string name="button_backlight_on_touch_only_summary">La retroiluminación de los botones solo aparecerá cuando se pulsen los botones en lugar de estar encendida todo el tiempo. El tiempo de espera sigue afectando a esta función.</string>
-    <!-- Lock screen visualizer -->
-    <string name="enable_visualizer">Activar visualizador</string>
-    <string name="lockscreen_visualizer_title">Visualizador</string>
-    <string name="lockscreen_visualizer_enable">Visualizador de música</string>
-    <string name="lockscreen_visualizer_enable_summary">Mostrar barras del visualizador mientras reproduce música</string>
-    <string name="lockscreen_autocolor_title">Color automático</string>
-    <string name="lockscreen_autocolor_summary">Sincronizar color con el fondo de la pantalla de bloqueo</string>
-    <string name="lockscreen_autocolor_lavalamp">Requiere desactivar la lámpara de lava</string>
-    <string name="lockscreen_lavalamp_title">Lámpara de lava</string>
-    <string name="lockscreen_lavalamp_summary">Usa una animación suave de mezcla de color de lámpara de lava</string>
-    <string name="lockscreen_lavalamp_speed_title">Intervalo de mezcla de colores</string>
-    <string name="lockscreen_solid_lines_category">Líneas sólidas</string>
-    <string name="lockscreen_solid_units_count_title">Número de líneas</string>
-    <string name="lockscreen_solid_fudge_factor_title">Nivel de sensibilidad (tamaño)</string>
-    <string name="lockscreen_solid_units_opacity_title">Opacidad de líneas</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Barra de brillo</string>
     <string name="qs_brightness_slider_title">Mostrar barra de brillo</string>
@@ -593,4 +584,63 @@
     <string name="custom_fp_icon_summary">Activar icono personalizado desde archivos de Huella en Pantalla</string>
     <string name="custom_fp_select_title">Seleccionar icono personalizado de Huella en Pantalla</string>
     <string name="custom_fp_select_summary">Seleccionar imagen personalizada de tus archivos guardados o galería</string>
+    <!-- Pulse music visualizer -->
+    <string name="pulse_category">Visualizador musical Pulse</string>
+    <string name="pulse_help_policy_notice_title">Acerca de Pulse</string>
+    <string name="unit_milliseconds">milisegundos</string>
+    <string name="pulse_help_policy_notice_summary">Pulse es un brillante ecualizador gráfico de audio para la reproducción musical en el dispositivo</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Ecualizador gráfico de audio en la barra de navegación y pantalla de bloqueo</string>
+    <string name="show_navbar_pulse_title">Pulse en la barra de navegación</string>
+    <string name="show_navbar_pulse_summary">Ecualizador gráfico de audio en la barra de navegación</string>
+    <string name="show_lockscreen_pulse_title">Pulse en pantalla de bloqueo</string>
+    <string name="show_lockscreen_pulse_summary">Ecualizador gráfico de audio en la pantalla de bloqueo</string>
+    <string name="show_ambient_pulse_title">Pulse en pantalla ambiente</string>
+    <string name="show_ambient_pulse_summary">Ecualizador gráfico de audio en la pantalla ambiente</string>
+    <string name="pulse_render_mode_title">Modo de renderizado</string>
+    <string name="pulse_render_mode_fading_bars">Desvanecimiento de bloques</string>
+    <string name="pulse_render_mode_solid_lines">Líneas sólidas</string>
+    <string name="pulse_legacy_mode_advanced_category">Ajustes del modo de bloques</string>
+    <string name="pulse_custom_fudge_factor">Nivel de sensibilidad</string>
+    <string name="pulse_lavalamp_speed_title">Velocidad de la lámpara de lava</string>
+    <string name="pulse_solid_units_count">Cantidad de líneas sólidas</string>
+    <string name="pulse_solid_units_opacity">Opacidad de líneas sólidas</string>
+    <string name="pulse_solid_units_rounded_title">Esquinas redondeadas</string>
+    <string name="pulse_solid_units_rounded_summary">Líneas sólidas con punta redondeada</string>
+    <string name="pulse_solid_dimen_category">Ajustes del modo de lineas solidas</string>
+    <string name="pulse_color_mode_title">Color</string>
+    <string name="pulse_color_accent">Acento</string>
+    <string name="pulse_color_custom">Personalizado</string>
+    <string name="pulse_color_lava_lamp">Lámpara de lava</string>
+    <string name="pulse_color_user_title">Elegir color</string>
+    <string name="pulse_smoothing_enabled_title">Activar suavizado</string>
+    <string name="pulse_smoothing_enabled_summary">Animación de las barras más suave</string>
+    <string name="pulse_custom_dimen">Ancho de la barra</string>
+    <string name="pulse_custom_div">Espacio entre las barras</string>
+    <string name="pulse_filled_block_size">Tamaño de los bloques</string>
+    <string name="pulse_empty_block_size">Espacio entre bloques</string>
+    <!-- Qs Pulse Option -->
+    <string name="show_qs_pulse_title">Pulse en ajustes rápidos</string>
+    <string name="show_qs_pulse_summary">Ecualizador gráfico de audio en ajustes rápidos</string>
+    <!-- Pulse Gravity n Mirror Options -->
+    <string name="pulse_custom_gravity_title">Gravedad</string>
+    <string name="pulse_custom_gravity_bottom">Abajo</string>
+    <string name="pulse_custom_gravity_top">Arriba</string>
+    <string name="pulse_custom_gravity_center">Centro</string>
+    <string name="visualizer_center_mirrored_title">Centrado en espejo</string>
+    <string name="visualizer_center_mirrored_summary">Establecer el visualizador centrado en modo espejo</string>
+    <string name="pulse_vertical_mirror_title">En modo espejo vertical</string>
+    <string name="pulse_vertical_mirror_summary">Crear otro pulso y girar verticalmente</string>
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_title">Animación de bloqueo</string>
+    <string name="screen_off_animation_crt">CRT (Tubo de Rayos Catódicos)</string>
+    <string name="screen_off_animation_scale">Escalado</string>
+    <!-- Gaming mode -->
+    <string name="gaming_mode_title">Espacio de juego</string>
+    <string name="gaming_mode_summary">Características adicionales para una experiencia de juego inmersiva</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Efecto Ripple</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Mostrar efecto ripple al desbloquear con huella</string>
+    <string name="hosts_block_title">Bloqueo de anuncios</string>
+    <string name="hosts_block_summary">Bloquear anuncios con un archivo de hosts modificado. Desactívalo para usar soluciones de terceros o si las aplicaciones causan problemas.</string>
 </resources>

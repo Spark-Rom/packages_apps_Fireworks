@@ -23,16 +23,22 @@
     <string name="hsv">HSV</string>
     <string name="cancel">Anuluj</string>
     <string name="confirm">Potwierdź</string>
-    <!-- Monet engine -->
-    <string name="monet_engine_settings_title">Ustawienia monet</string>
-    <string name="monet_engine_settings_summary">Dostosuj ustawienia monet</string>
-    <string name="accurate_shades_title">Używaj dokładnych odcieni</string>
-    <string name="use_wallpaper_color_title">Użyj kolorów tapety</string>
-    <string name="color_override_title">Użyj własnego koloru</string>
-    <string name="invalid_color_input">Nieprawidłowy kolor!</string>
-    <string name="chroma_factor_title">Barwność</string>
-    <string name="linear_lightness_title">Użyj niestandardowej skali jasności</string>
-    <string name="white_luminance_title">Jasność</string>
+    <string name="search">Wyszukaj</string>
+    <string name="search_apps">Wyszukaj aplikacje</string>
+    <!-- Monet Engine -->
+    <string name="monet_category">Monet</string>
+    <string name="monet_engine_title">Silnik monet</string>
+    <string name="monet_engine_summary">Dostosuj parametry monet</string>
+    <string name="monet_engine_custom_color_title">Użyj niestandardowego koloru</string>
+    <string name="monet_engine_custom_color_summary">Użyj niestandardowego koloru silnika monet zamiast kolorów tapety</string>
+    <string name="monet_engine_color_override_title">Niestandardowy kolor</string>
+    <string name="monet_engine_white_luminance_user_title">Iluminacja bieli</string>
+    <string name="monet_engine_accurate_shades_title">Używaj dokładnych odcieni</string>
+    <string name="monet_engine_chroma_factor_title">Współczynnik chroma</string>
+    <string name="monet_engine_linear_lightness_title">Użyj światła liniowego</string>
+    <!-- Black theme -->
+    <string name="system_black_theme_title">Użyj czarnego motywu</string>
+    <string name="system_black_theme_summary">Wymuś czarne kolory tła</string>
     <!-- Tuner -->
     <string name="general_category">Ogólne</string>
     <string name="lockscreen_tuner_title">Skróty na ekranie blokady</string>
@@ -303,21 +309,6 @@
     <string name="button_timeout_title">Czas opóźnienia podświetlenia</string>
     <string name="button_backlight_on_touch_only_title">Podświetlenie przycisków podczas naciskania</string>
     <string name="button_backlight_on_touch_only_summary">Podświetlenie przycisków włączy się tylko gdy przyciski są używane, zamiast świecić się cały czas. Czas podświetlenia ma wpływ na tę funkcję.</string>
-    <!-- Lock screen visualizer -->
-    <string name="enable_visualizer">Włącz wizualizator muzyki na ekranie blokady</string>
-    <string name="lockscreen_visualizer_title">Wizualizator</string>
-    <string name="lockscreen_visualizer_enable">Wizualizator muzyki</string>
-    <string name="lockscreen_visualizer_enable_summary">Pokaż paski wizualizatora podczas odtwarzania muzyki</string>
-    <string name="lockscreen_autocolor_title">Automatyczny kolor</string>
-    <string name="lockscreen_autocolor_summary">Synchronizuj kolor z tłem ekranu blokady</string>
-    <string name="lockscreen_autocolor_lavalamp">Wymaga wyłączenia efektu lampy lawowej</string>
-    <string name="lockscreen_lavalamp_title">Efekt lampy lawowej</string>
-    <string name="lockscreen_lavalamp_summary">Użyj płynnej animacji mieszania kolorów w stylu lampy lawowej</string>
-    <string name="lockscreen_lavalamp_speed_title">Interwał mieszania kolorów</string>
-    <string name="lockscreen_solid_lines_category">Linie ciągłe</string>
-    <string name="lockscreen_solid_units_count_title">Liczba linii</string>
-    <string name="lockscreen_solid_fudge_factor_title">Poziom czułości</string>
-    <string name="lockscreen_solid_units_opacity_title">Przezroczystość linii</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Suwak jasności</string>
     <string name="qs_brightness_slider_title">Pokaż suwak jasności</string>
@@ -530,7 +521,7 @@
     <string name="qsclockpicker_coloros">ColorOS</string>
     <!-- VoWiFi icon -->
     <string name="vowifi_icon_title">Ikona VoWiFi</string>
-    <string name="vowifi_icon_summary">Wyświetl ikonę VoLTE, gdy jest dostępna</string>
+    <string name="vowifi_icon_summary">Wyświetl ikonę VoWiFi, gdy jest dostępna</string>
     <string name="extra_theme_settings_title">Dodatkowe Motywy</string>
     <string name="extra_theme_settings_summary">pakiety ikon i czcionki</string>
     <string name="custom_font_preference_title">Wybierz niestandardową czcionkę</string>
@@ -593,4 +584,63 @@
     <string name="custom_fp_icon_summary">Własna ikona Udfps wybierana z plików lokalnych</string>
     <string name="custom_fp_select_title">Wybierz własną ikonę Udfps</string>
     <string name="custom_fp_select_summary">Wybierz niestandardowy obraz z zapisanych plików lub galerii</string>
+    <!-- Pulse music visualizer -->
+    <string name="pulse_category">Wizualizacja muzyki Pulse</string>
+    <string name="pulse_help_policy_notice_title">O Pulse</string>
+    <string name="unit_milliseconds">milisekundy</string>
+    <string name="pulse_help_policy_notice_summary">Pulse jest znakomitym wizualizatorem graficznym dźwięku, gdy muzyka odtwarza się na urządzeniu</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Wizualizacja graficzna na pasku nawigacji i ekranie blokady</string>
+    <string name="show_navbar_pulse_title">Pulse na pasku nawigacji</string>
+    <string name="show_navbar_pulse_summary">Wizualizacja graficzna audio na pasku nawigacji</string>
+    <string name="show_lockscreen_pulse_title">Pulse na ekranie blokady</string>
+    <string name="show_lockscreen_pulse_summary">Wizualizacja graficzna audio na ekranie blokady</string>
+    <string name="show_ambient_pulse_title">Pulse na ekranie ambient</string>
+    <string name="show_ambient_pulse_summary">Wizualizacja graficzna audio na ekranie ambient</string>
+    <string name="pulse_render_mode_title">Tryb renderowania</string>
+    <string name="pulse_render_mode_fading_bars">Zanikające bloki</string>
+    <string name="pulse_render_mode_solid_lines">Linie ciągłe</string>
+    <string name="pulse_legacy_mode_advanced_category">Ustawienia zanikania bloków</string>
+    <string name="pulse_custom_fudge_factor">Poziom czułości</string>
+    <string name="pulse_lavalamp_speed_title">Prędkość lampy lawowej</string>
+    <string name="pulse_solid_units_count">Liczba ciągłych linii</string>
+    <string name="pulse_solid_units_opacity">Przezroczystość ciągłych linii</string>
+    <string name="pulse_solid_units_rounded_title">Zaokrąglone narożniki</string>
+    <string name="pulse_solid_units_rounded_summary">Linie ciągłe z zaokrągloną końcówką</string>
+    <string name="pulse_solid_dimen_category">Ustawienia trybu linii ciągłych</string>
+    <string name="pulse_color_mode_title">Kolor</string>
+    <string name="pulse_color_accent">Akcent</string>
+    <string name="pulse_color_custom">Własne</string>
+    <string name="pulse_color_lava_lamp">Lampa lawowa</string>
+    <string name="pulse_color_user_title">Wybierz kolor</string>
+    <string name="pulse_smoothing_enabled_title">Włącz wygładzanie</string>
+    <string name="pulse_smoothing_enabled_summary">Każdy pasek jest animowany płynniej</string>
+    <string name="pulse_custom_dimen">Szerokość paska</string>
+    <string name="pulse_custom_div">Odstęp paska</string>
+    <string name="pulse_filled_block_size">Rozmiar bloku</string>
+    <string name="pulse_empty_block_size">Odstępy między blokami</string>
+    <!-- Qs Pulse Option -->
+    <string name="show_qs_pulse_title">Pulse w szybkich ustawieniach</string>
+    <string name="show_qs_pulse_summary">Wizualizacja audio w szybkich ustawieniach</string>
+    <!-- Pulse Gravity n Mirror Options -->
+    <string name="pulse_custom_gravity_title">Grawitacja</string>
+    <string name="pulse_custom_gravity_bottom">Dół</string>
+    <string name="pulse_custom_gravity_top">Góra</string>
+    <string name="pulse_custom_gravity_center">Wyśrodkowany</string>
+    <string name="visualizer_center_mirrored_title">Wyśrodkowany z odbiciem lustrzanym</string>
+    <string name="visualizer_center_mirrored_summary">Ustaw wizualizacje w trybie wyśrodkowanym z odbiciem lustrzanym</string>
+    <string name="pulse_vertical_mirror_title">Pionowy z odbiciem lustrzanym</string>
+    <string name="pulse_vertical_mirror_summary">Utwórz następny puls i obróć w pionie</string>
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_title">Animacja wyłączenia ekranu</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Skala</string>
+    <!-- Gaming mode -->
+    <string name="gaming_mode_title">Przestrzeń gier</string>
+    <string name="gaming_mode_summary">Dodatkowe funkcje dla pełnoekranowego doświadczenia w grach</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Efekt fali</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Pokaż efekt fali podczas odblokowywania odciskiem palca</string>
+    <string name="hosts_block_title">Ad-block</string>
+    <string name="hosts_block_summary">Block ads with a modified hosts file. Turn off to use third party solutions or if apps cause issues.</string>
 </resources>
