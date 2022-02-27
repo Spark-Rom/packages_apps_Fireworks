@@ -13,7 +13,7 @@
     <string name="udfps_category">Udfps</string>
     <string name="buttons_title">Buttons</string>
     <!-- Display tap to wake custom summary -->
-    <string name="tap_to_wake_summary_spark">Double-tap anywhere on the screen to wake or sleep device</string>
+    <string name="tap_to_wake_summary_spark">Πατήστε δύο φορές οπουδήποτε στην οθόνη για αφύπνιση ή αναστολή της συσκευής</string>
     <!-- Double Tap to Sleep Statusbar -->
     <string name="double_tap_sleep_gesture_title">Πατήστε για αναστολή</string>
     <string name="double_tap_sleep_gesture_summary">Διπλό πάτημα οπουδήποτε στη γραμμή κατάστασης για αναστολή της συσκευής</string>
@@ -23,16 +23,22 @@
     <string name="hsv">HSV</string>
     <string name="cancel">Ακύρωση</string>
     <string name="confirm">Επιβεβαίωση</string>
-    <!-- Monet engine -->
-    <string name="monet_engine_settings_title">Monet engine</string>
-    <string name="monet_engine_settings_summary">Adjust monet engine parameters</string>
-    <string name="accurate_shades_title">Use accurate shades</string>
-    <string name="use_wallpaper_color_title">Χρήση χρώματος ταπετσαρίας</string>
-    <string name="color_override_title">Επιλογέας προσαρμοσμένου χρώματος</string>
-    <string name="invalid_color_input">Invalid color input!</string>
-    <string name="chroma_factor_title">Colorfulness</string>
-    <string name="linear_lightness_title">Use custom lightness scale</string>
-    <string name="white_luminance_title">Brightness</string>
+    <string name="search">Search</string>
+    <string name="search_apps">Search apps</string>
+    <!-- Monet Engine -->
+    <string name="monet_category">Monet</string>
+    <string name="monet_engine_title">Monet engine</string>
+    <string name="monet_engine_summary">Προσαρμογή παραμέτρων monet</string>
+    <string name="monet_engine_custom_color_title">Χρήση προσαρμοσμένου χρώματος</string>
+    <string name="monet_engine_custom_color_summary">Use custom color for monet engine instead of wallpaper colors</string>
+    <string name="monet_engine_color_override_title">Custom color</string>
+    <string name="monet_engine_white_luminance_user_title">White luminance</string>
+    <string name="monet_engine_accurate_shades_title">Use accurate shades</string>
+    <string name="monet_engine_chroma_factor_title">Chroma factor</string>
+    <string name="monet_engine_linear_lightness_title">Use linear lightness</string>
+    <!-- Black theme -->
+    <string name="system_black_theme_title">Use black theme</string>
+    <string name="system_black_theme_summary">Force black background colors</string>
     <!-- Tuner -->
     <string name="general_category">Γενικά</string>
     <string name="lockscreen_tuner_title">Συντομεύσεις οθόνης κλειδώματος</string>
@@ -303,21 +309,6 @@
     <string name="button_timeout_title">Χρονικό όριο φωτισμού</string>
     <string name="button_backlight_on_touch_only_title">Φωτισμός πλήκτρων κατά το άγγιγμα</string>
     <string name="button_backlight_on_touch_only_summary">Ο φωτισμός πλήκτρων θα εμφανιστεί μόνο όταν τα πλήκτρα πατηθούν αντί για όλη την ώρα. Το όριο απενεργοποίησης παραμένει.</string>
-    <!-- Lock screen visualizer -->
-    <string name="enable_visualizer">Ενεργοποίηση οπτικοποίησης</string>
-    <string name="lockscreen_visualizer_title">Οπτικά εφέ</string>
-    <string name="lockscreen_visualizer_enable">Οπτικό εφέ μουσικής</string>
-    <string name="lockscreen_visualizer_enable_summary">Εμφάνιση μπάρας οπτικών εφέ κατά την αναπαραγωγή μουσικής</string>
-    <string name="lockscreen_autocolor_title">Αυτόματος χρωματισμός</string>
-    <string name="lockscreen_autocolor_summary">Συγχρονισμός χρώματος με φόντο οθόνης κλειδώματος</string>
-    <string name="lockscreen_autocolor_lavalamp">Απαιτείται η απενεργοποίηση της λάμπας λάβας</string>
-    <string name="lockscreen_lavalamp_title">Λάμπα λάβας</string>
-    <string name="lockscreen_lavalamp_summary">Χρησιμοποιήστε ένα απαλό στυλ συνδυασμών χρωμάτων λάμπας λάβας</string>
-    <string name="lockscreen_lavalamp_speed_title">Χρόνος μείγματος χρώματος</string>
-    <string name="lockscreen_solid_lines_category">Συμπαγείς γραμμές</string>
-    <string name="lockscreen_solid_units_count_title">Αριθμός γραμμών</string>
-    <string name="lockscreen_solid_fudge_factor_title">Επίπεδο υγιούς λειτουργίας</string>
-    <string name="lockscreen_solid_units_opacity_title">Αδιαφάνεια γραμμών</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Ρυθμιστικό φωτεινότητας</string>
     <string name="qs_brightness_slider_title">Εμφάνιση ρυθμιστικού φωτεινότητας</string>
@@ -593,4 +584,63 @@
     <string name="custom_fp_icon_summary">Enable custom UDFPS Icon from files</string>
     <string name="custom_fp_select_title">Select Custom UDFPS Icon</string>
     <string name="custom_fp_select_summary">Select custom image from your saved files or gallery</string>
+    <!-- Pulse music visualizer -->
+    <string name="pulse_category">Pulse music visualizer</string>
+    <string name="pulse_help_policy_notice_title">About Pulse</string>
+    <string name="unit_milliseconds">milliseconds</string>
+    <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio graphic equalizer when music plays on the device</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Audio graphic equalizer for navigation bar and lock screen</string>
+    <string name="show_navbar_pulse_title">Navbar Pulse</string>
+    <string name="show_navbar_pulse_summary">Audio graphic equalizer on the navigation bar</string>
+    <string name="show_lockscreen_pulse_title">Lock screen Pulse</string>
+    <string name="show_lockscreen_pulse_summary">Audio graphic equalizer on the lock screen</string>
+    <string name="show_ambient_pulse_title">Ambient Pulse</string>
+    <string name="show_ambient_pulse_summary">Audio graphic equalizer on the ambient screen</string>
+    <string name="pulse_render_mode_title">Render mode</string>
+    <string name="pulse_render_mode_fading_bars">Fading blocks</string>
+    <string name="pulse_render_mode_solid_lines">Solid lines</string>
+    <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
+    <string name="pulse_custom_fudge_factor">Sanity level</string>
+    <string name="pulse_lavalamp_speed_title">Lava lamp speed</string>
+    <string name="pulse_solid_units_count">Solid lines count</string>
+    <string name="pulse_solid_units_opacity">Solid lines opacity</string>
+    <string name="pulse_solid_units_rounded_title">Rounded corners</string>
+    <string name="pulse_solid_units_rounded_summary">Solid lines with rounded tip</string>
+    <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
+    <string name="pulse_color_mode_title">Color</string>
+    <string name="pulse_color_accent">Accent</string>
+    <string name="pulse_color_custom">Custom</string>
+    <string name="pulse_color_lava_lamp">Lava lamp</string>
+    <string name="pulse_color_user_title">Choose color</string>
+    <string name="pulse_smoothing_enabled_title">Turn on smoothing</string>
+    <string name="pulse_smoothing_enabled_summary">Each bar is animated more smoothly</string>
+    <string name="pulse_custom_dimen">Bar width</string>
+    <string name="pulse_custom_div">Bar spacing</string>
+    <string name="pulse_filled_block_size">Block size</string>
+    <string name="pulse_empty_block_size">Block spacing</string>
+    <!-- Qs Pulse Option -->
+    <string name="show_qs_pulse_title">Quick Settings Pulse</string>
+    <string name="show_qs_pulse_summary">Audio visualizer on the quick settings</string>
+    <!-- Pulse Gravity n Mirror Options -->
+    <string name="pulse_custom_gravity_title">Gravity</string>
+    <string name="pulse_custom_gravity_bottom">Bottom</string>
+    <string name="pulse_custom_gravity_top">Top</string>
+    <string name="pulse_custom_gravity_center">Center</string>
+    <string name="visualizer_center_mirrored_title">Center mirrored</string>
+    <string name="visualizer_center_mirrored_summary">Set the visualizer in center mirrored mode</string>
+    <string name="pulse_vertical_mirror_title">Vertical Mirror</string>
+    <string name="pulse_vertical_mirror_summary">Create other pulse and flip vertically</string>
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
+    <!-- Gaming mode -->
+    <string name="gaming_mode_title">Game space</string>
+    <string name="gaming_mode_summary">Extra features for immersive gaming experience</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
+    <string name="hosts_block_title">Ad-block</string>
+    <string name="hosts_block_summary">Block ads with a modified hosts file. Turn off to use third party solutions or if apps cause issues.</string>
 </resources>
