@@ -18,6 +18,7 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 import android.provider.Settings;
+import android.content.Context;
 import com.android.settings.R;
 
 import java.util.Locale;
