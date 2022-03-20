@@ -32,6 +32,8 @@ import android.util.Log;
 import androidx.fragment.app.Fragment;
 import com.android.settings.dashboard.DashboardFragment;
 import java.util.List;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settingslib.search.SearchIndexable;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.HashMap;
@@ -41,34 +43,43 @@ import android.widget.Toast;
 import com.spark.support.preferences.CustomSeekBarPreference;
 import com.spark.support.preferences.SystemSettingSwitchPreference;
 
+@SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
+public class GestureSettings extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
 
-public class GestureSettings extends DashboardFragment implements
-        OnPreferenceChangeListener {
+    private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
 
-    public static final String TAG = "GestureSettings";
+    private ListPreference mTorchPowerButton;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-
+        addPreferencesFromResource(R.xml.spark_settings_gestures);
         final ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
 
-    }
+        // screen off torch
+        mTorchPowerButton = (ListPreference) findPreference(TORCH_POWER_BUTTON_GESTURE);
+        int mTorchPowerButtonValue = Settings.System.getInt(resolver,
+                Settings.System.TORCH_POWER_BUTTON_GESTURE, 0);
+        mTorchPowerButton.setValue(Integer.toString(mTorchPowerButtonValue));
+        mTorchPowerButton.setSummary(mTorchPowerButton.getEntry());
+        mTorchPowerButton.setOnPreferenceChangeListener(this);
 
-    @Override
-    protected int getPreferenceScreenResId() {
-        return R.xml.spark_settings_gestures;
-    }
-
-    @Override
-    protected String getLogTag() {
-       return TAG;
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mTorchPowerButton) {
+            int mTorchPowerButtonValue = Integer.valueOf((String) newValue);
+            int index = mTorchPowerButton.findIndexOfValue((String) newValue);
+            mTorchPowerButton.setSummary(
+                    mTorchPowerButton.getEntries()[index]);
+            Settings.System.putInt(resolver, Settings.System.TORCH_POWER_BUTTON_GESTURE,
+                    mTorchPowerButtonValue);
+            return true;
+        }
         return false;
     }
 
@@ -77,14 +88,10 @@ public class GestureSettings extends DashboardFragment implements
         return MetricsProto.MetricsEvent.SPARK_SETTINGS;
     }
 
-    @Override
-    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
-        return buildPreferenceControllers(context, getSettingsLifecycle(), this);
-   }
+    /**
 
-    private static List<AbstractPreferenceController> buildPreferenceControllers(
-            Context context, Lifecycle lifecycle, Fragment fragment) {
-        final List<AbstractPreferenceController> controllers = new ArrayList<>();
-        return controllers;
-    }
+     * For Search.
+     */
+    public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider(R.xml.spark_settings_gestures);
 }
