@@ -440,4 +440,8 @@
     <!-- QS footer warnings -->
     <string name="qs_footer_warnings_title">QS footer warnings</string>
     <string name="qs_footer_warnings_summary">Display a warning at bottom of QS panel when network is monitored by external apps or vpn</string>
+
+    <!-- Lockscreen battery info -->
+    <string name="lockscreen_charging_info_title">Show charging info in lockscreen</string>
+    <string name="lockscreen_charging_info_summary">Shows temperature, charging current and more while plugged in</string>
 </resources>
