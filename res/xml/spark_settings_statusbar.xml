@@ -15,6 +15,10 @@
     android:title="@string/statusbar_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- Status bar icons customizations -->
+    <PreferenceCategory
+        android:title="@string/status_bar_icons_category_title">
+
     <Preference
         android:key="systemui_tuner_statusbar"
         android:title="@string/statusbar_items_category">
@@ -30,4 +34,49 @@
         android:summary="@string/traffic_summary"
         android:fragment="com.spark.settings.fragments.Traffic" />
 
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="data_disabled_icon"
+            android:title="@string/data_disabled_icon_title"
+            android:summary="@string/data_disabled_icon_summary"
+            android:defaultValue="true"/>
+
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="show_fourg_icon"
+            android:title="@string/show_fourg_icon_title"
+            android:summary="@string/show_fourg_icon_summary"
+            android:defaultValue="false"/>
+
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="roaming_indicator_icon"
+            android:title="@string/roaming_indicator_icon_title"
+            android:summary="@string/roaming_indicator_icon_summary"
+            android:defaultValue="true"/>
+
+        <com.spark.support.preferences.SystemSettingSeekBarPreference
+            android:key="volte_icon_style"
+            android:title="@string/volte_icon_title"
+            android:summary="@string/volte_icon_summary"
+            android:defaultValue="0"
+            settings:defaultValueText="@string/disabled"
+            android:max="9"
+            settings:min="0"
+            settings:units="" />
+
+        <com.spark.support.preferences.SystemSettingSeekBarPreference
+            android:key="vowifi_icon_style"
+            android:title="@string/vowifi_icon_title"
+            android:summary="@string/vowifi_icon_summary"
+            android:defaultValue="0"
+            settings:defaultValueText="@string/disabled"
+            android:max="8"
+            settings:min="0"
+            settings:units="" />
+
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="volte_vowifi_override"
+            android:title="@string/volte_vowifi_override_title"
+            android:summary="@string/volte_vowifi_override_summary"
+            android:defaultValue="true"/>
+
+</PreferenceCategory>
 </PreferenceScreen>
