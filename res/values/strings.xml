@@ -62,6 +62,16 @@
     <string name="torch_power_button_gesture_dt">Double tap power button (slower single tap response), Disables double power tap for camera.</string>
     <string name="torch_power_button_gesture_dt_toast">Jump to camera gesture is now disabled</string>
     <string name="torch_power_button_gesture_lp">Long press power button</string>
+    <!-- Long press power for torch -->
+    <string name="torch_long_press_power_gesture_title">Long press for torch</string>
+    <string name="torch_long_press_power_gesture_desc">Activate the torch by long pressing the power button while the display is off</string>
+    <string name="torch_long_press_power_timeout_title">Automatically turn torch off</string>
+    <string name="torch_long_press_power_timeout_never">Never</string>
+    <string name="torch_long_press_power_timeout_1min">1 minute</string>
+    <string name="torch_long_press_power_timeout_2min">2 minutes</string>
+    <string name="torch_long_press_power_timeout_5min">5 minutes</string>
+    <string name="torch_long_press_power_timeout_10min">10 minutes</string>
+
     <string name="aosp_gesture_summary">Stock gestures included with Android</string>
 
     <!-- Double Tap Lock screen to Sleep -->
@@ -78,6 +88,8 @@
 
     <!-- Volume buttons category -->
     <string name="volume_category">Volume rocker</string>
+    <string name="volume_rocker_wake_title">Volume rocker wake</string>
+    <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
     <string name="click_partial_screenshot_title">Click to partial screenshot</string>
     <string name="click_partial_screenshot_summary">Short click Volume Down and Power to take partial screenshot</string>
 </resources>
