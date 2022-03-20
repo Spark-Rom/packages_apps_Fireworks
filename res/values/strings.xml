@@ -15,6 +15,7 @@
     <string name="statusbar_title">Status bar</string>
     <string name="udfps_category">Udfps</string>
     <string name="buttons_title">Buttons</string>
+    <string name="statusbar_items_category">Status bar items</string>
 
     <!-- AdBlock -->
     <string name="hosts_block_title">Ad-block</string>
