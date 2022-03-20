@@ -95,4 +95,7 @@
     <!-- Double Tap on Doze to wake -->
     <string name="double_tap_on_doze_to_wake_title">Tap to wake on doze</string>
     <string name="double_tap_on_doze_to_wake_summary">Double-tap to wake when device is dreaming</string>
+
+    <!-- Volume buttons category -->
+    <string name="volume_category">Volume rocker</string>
 </resources>

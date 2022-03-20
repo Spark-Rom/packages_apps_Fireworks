@@ -28,6 +28,13 @@
         android:entries="@array/torch_power_button_gesture_entries"
         android:entryValues="@array/torch_power_button_gesture_values" />
 
+    <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="volume_rocker_wake"
+            android:summary="@string/volume_rocker_wake_summary"
+            android:title="@string/volume_rocker_wake_title"
+            android:defaultValue="false"
+            android:disableDependentsState="true" />
+
     <PreferenceCategory
         android:key="lockscreen_ui_gestures_category"
         android:title="@string/gestures_title">
