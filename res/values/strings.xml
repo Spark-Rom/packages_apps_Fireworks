@@ -8,6 +8,7 @@
     <string name="confirm">Confirm</string>
     <!-- Categories -->
     <string name="themes_title">Themes</string>
+    <string name="themes_title">Qs Settings</string>
     <string name="gestures_title">Gestures</string>
     <string name="aosp_setting_title">System settings</string>
     <string name="lockscreen_title">Lock screen</string>
@@ -157,5 +158,10 @@
     <string name="lockscreen_power_menu_disabled_title">Disable power menu on lock screen</string>
     <string name="lockscreen_power_menu_disabled_summary">This will only disable the power menu on secure lock screens</string>
 
-
+    <!-- QS advanced settings -->
+    <string name="status_bar_quick_qs_pulldown">Quick QS pulldown</string>
+    <string name="quick_pulldown_none">Disabled</string>
+    <string name="quick_pulldown_right">Pulldown status bar from right side</string>
+    <string name="quick_pulldown_left">Pulldown status bar from left side</string>
+    <string name="quick_pulldown_always">Always show quick settings on status bar pull down</string>
 </resources>
