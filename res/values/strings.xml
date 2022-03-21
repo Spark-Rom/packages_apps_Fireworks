@@ -8,7 +8,7 @@
     <string name="confirm">Confirm</string>
     <!-- Categories -->
     <string name="themes_title">Themes</string>
-    <string name="themes_title">Qs Settings</string>
+    <string name="qs_themes">Qs Settings</string>
     <string name="gestures_title">Gestures</string>
     <string name="aosp_setting_title">System settings</string>
     <string name="lockscreen_title">Lock screen</string>
@@ -18,6 +18,8 @@
     <string name="udfps_category">Udfps</string>
     <string name="buttons_title">Buttons</string>
     <string name="statusbar_items_category">Status bar items</string>
+    <string name="fingerprint_category">Fingerprint</string>
+    <string name="powermenu_items_title">Power menu items</string>
 
     <!-- AdBlock -->
     <string name="hosts_block_title">Ad-block</string>
@@ -164,4 +166,10 @@
     <string name="quick_pulldown_right">Pulldown status bar from right side</string>
     <string name="quick_pulldown_left">Pulldown status bar from left side</string>
     <string name="quick_pulldown_always">Always show quick settings on status bar pull down</string>
+
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
+    <string name="fprint_success_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_success_vib_summary">Vibrate on successful fingerprint authentication</string>
 </resources>
