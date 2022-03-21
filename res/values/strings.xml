@@ -167,4 +167,10 @@
     <string name="quick_pulldown_right">Pulldown status bar from right side</string>
     <string name="quick_pulldown_left">Pulldown status bar from left side</string>
     <string name="quick_pulldown_always">Always show quick settings on status bar pull down</string>
+
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
+    <string name="fprint_success_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_success_vib_summary">Vibrate on successful fingerprint authentication</string>
 </resources>
