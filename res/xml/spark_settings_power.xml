@@ -15,4 +15,76 @@
     android:title="@string/powermenu_title"
     xmlns:settings="http://schemas.android.com/apk/res-auto">
 
+    <Preference
+        android:key="gesture_power_menu_summary"
+        android:title="@string/aosp_setting_title"
+        android:fragment="com.android.settings.gestures.PowerMenuSettings"
+        settings:controller="com.android.settings.gestures.PowerMenuPreferenceController" />
+
+    <com.spark.support.preferences.SystemSettingSwitchPreference
+        android:key="lockscreen_power_menu_disabled"
+        android:title="@string/lockscreen_power_menu_disabled_title"
+        android:summary="@string/lockscreen_power_menu_disabled_summary"
+        android:defaultValue="true" />
+
+    <PreferenceCategory
+        android:title="@string/powermenu_items_title">
+
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_power"
+            android:title="@string/powermenu_power"
+            android:defaultValue="true" />
+
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_restart"
+            android:title="@string/powermenu_restart"
+            android:defaultValue="true" />
+
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_advanced"
+            android:title="@string/powermenu_advanced"
+            android:defaultValue="true" />
+
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_screenshot"
+            android:title="@string/powermenu_screenshot"
+            android:defaultValue="false" />
+
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_onthego"
+            android:title="@string/powermenu_onthego"
+            android:defaultValue="false" />
+
+        <SwitchPreference
+            android:key="powermenu_torch"
+            android:title="@string/powermenu_torch"
+            android:persistent="false" />
+
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_settings"
+            android:title="@string/powermenu_settings"
+            android:defaultValue="false" />
+
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_lockdown"
+            android:title="@string/powermenu_lockdown"
+            android:defaultValue="false" />
+
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_emergency"
+            android:title="@string/powermenu_emergency"
+            android:defaultValue="false" />
+
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_users"
+            android:title="@string/powermenu_users"
+            android:defaultValue="false" />
+
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_logout"
+            android:title="@string/powermenu_logout"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
