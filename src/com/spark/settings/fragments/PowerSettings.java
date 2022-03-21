@@ -19,6 +19,7 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 import android.provider.Settings;
 import com.android.settings.R;
+import com.android.internal.util.spark.SparkUtils;
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
@@ -38,6 +39,10 @@ import java.util.Collections;
 public class PowerSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
+    private static final String KEY_POWERMENU_TORCH = "powermenu_torch";
+
+    private SwitchPreference mPowermenuTorch;
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -47,11 +52,26 @@ public class PowerSettings extends SettingsPreferenceFragment implements
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
+        mPowermenuTorch = (SwitchPreference) findPreference(KEY_POWERMENU_TORCH);
+        mPowermenuTorch.setOnPreferenceChangeListener(this);
+        if (!SparkUtils.deviceHasFlashlight(getActivity())) {
+            prefScreen.removePreference(mPowermenuTorch);
+        } else {
+        mPowermenuTorch.setChecked((Settings.System.getInt(resolver,
+                Settings.System.POWERMENU_TORCH, 0) == 1));
+        }
+
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mPowermenuTorch) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.POWERMENU_TORCH, value ? 1 : 0);
+            return true;
+        }
         return false;
     }
 
