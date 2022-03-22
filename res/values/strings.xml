@@ -19,6 +19,7 @@
     <string name="buttons_title">Buttons</string>
     <string name="statusbar_items_category">Status bar items</string>
     <string name="fingerprint_category">Fingerprint</string>
+    <string name="animations_category">Animations</string>
     <string name="powermenu_items_title">Power menu items</string>
 
     <!-- AdBlock -->
@@ -196,4 +197,9 @@
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Secure QS tiles require unlocking</string>
     <string name="qstile_requires_unlocking_summary">The following QS tiles require unlocking before you can acccess them from lock screen:\nAirplane, Cellular, NFC, Hotspot, USB tethering and Location</string>
+
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
 </resources>
