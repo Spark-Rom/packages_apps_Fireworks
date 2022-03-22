@@ -172,4 +172,20 @@
     <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
     <string name="fprint_success_vib_title">Fingerprint authentication vibration</string>
     <string name="fprint_success_vib_summary">Vibrate on successful fingerprint authentication</string>
+
+    <!-- Monet Engine -->
+    <string name="monet_category">Monet</string>
+    <string name="monet_engine_title">Monet engine</string>
+    <string name="monet_engine_summary">Customize monet parameters</string>
+    <string name="monet_engine_custom_color_title">Use custom color</string>
+    <string name="monet_engine_custom_color_summary">Use custom color for monet engine instead of wallpaper colors</string>
+    <string name="monet_engine_color_override_title">Custom color</string>
+    <string name="monet_engine_white_luminance_user_title">White luminance</string>
+    <string name="monet_engine_accurate_shades_title">Use accurate shades</string>
+    <string name="monet_engine_chroma_factor_title">Chroma factor</string>
+    <string name="monet_engine_linear_lightness_title">Use linear lightness</string>
+
+    <!-- Black theme -->
+    <string name="system_black_theme_title">Use black theme</string>
+    <string name="system_black_theme_summary">Force black background colors</string>
 </resources>
