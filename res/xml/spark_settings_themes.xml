@@ -15,6 +15,12 @@
     android:title="@string/themes_title"
     xmlns:settings="http://schemas.android.com/apk/res-auto">
 
+    <Preference
+        android:key="monet_engine_settings"
+        android:title="@string/monet_engine_title"
+        android:summary="@string/monet_engine_summary"
+        android:fragment="com.spark.settings.fragments.MonetEngineSettingsFragment" />
+
     <PreferenceCategory 
          android:title="@string/qs_themes">
 
@@ -24,6 +30,12 @@
             android:entries="@array/quick_pulldown_entries"
             android:entryValues="@array/quick_pulldown_values"
             android:defaultValue="0" />
+
+       <com.spark.support.preferences.SecureSettingSwitchPreference
+            android:key="disable_secure_tiles_on_lockscreen"
+            android:title="@string/qstile_requires_unlocking_title"
+            android:summary="@string/qstile_requires_unlocking_summary"
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 
