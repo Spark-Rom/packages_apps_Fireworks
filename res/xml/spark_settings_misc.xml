@@ -130,6 +130,14 @@
             android:targetClass="org.exthmui.game.ui.MainActivity" />
     </Preference>
 
+    <!-- Hidden apps -->
+    <Preference
+        android:key="hidden_apps"
+        android:title="@string/hidden_apps_title"
+        android:summary="@string/hidden_apps_summary"
+        android:persistent="false"
+        android:fragment="com.spark.settings.fragments.HiddenAppSettingsFragment" />
+
     <!-- Launch music player when headset is connected -->
     <com.spark.support.preferences.SystemSettingSwitchPreference
         android:key="headset_connect_player"

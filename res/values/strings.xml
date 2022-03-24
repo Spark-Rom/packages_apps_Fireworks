@@ -695,6 +695,10 @@
     <string name="bottom">Bottom</string>
     <string name="show_auto_brightness_button_title">Show auto brightness button</string>
 
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">Auto brightness icon</string>
+    <string name="qs_show_auto_brightness_summary">Show toggle for adaptive brightness near the slider</string>
+
     <!-- Wp zoom -->
     <string name="use_wp_zoom_title">Enable wallpaper Zoom</string>
     <string name="use_wp_zoom_summary">Reboot after toggling</string>
@@ -708,4 +712,8 @@
     <!-- Screen off FOD -->
     <string name="screen_off_fod_title">Screen off FOD</string>
     <string name="screen_off_fod_summary">Keep FOD enabled when the screen is off</string>
+
+    <!-- Hidden apps -->
+    <string name="hidden_apps_title">Hidden apps</string>
+    <string name="hidden_apps_summary">Applications that should be hidden from launcher</string>
 </resources>
