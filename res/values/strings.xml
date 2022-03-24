@@ -22,6 +22,7 @@
     <string name="animations_category">Animations</string>
     <string name="charging_category">Ls Charging configurations</string>
     <string name="notifications_category">Notification Settings</string>
+    <string name="screenshot_category">Screenshot Settings</string>
     <string name="powermenu_items_title">Power menu items</string>
 
     <!-- AdBlock -->
@@ -220,4 +221,9 @@
     <!-- Notification guts kill app button -->
     <string name="notification_guts_kill_app_button_title">Kill app button</string>
     <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
+
+    <!-- Screenshot type -->
+    <string name="screenshot_type_title">Screenshot type</string>
+    <string name="screenshot_type_fullscreen">Take fullscreen screenshots</string>
+    <string name="screenshot_type_partial">Drag selection on the area you want to take as a screenshot</string>
 </resources>
