@@ -34,6 +34,12 @@
         android:summary="@string/traffic_summary"
         android:fragment="com.spark.settings.fragments.Traffic" />
 
+    <Preference
+        android:key="clock"
+        android:title="@string/status_bar_clock_title"
+        android:summary="@string/status_bar_clock_summary"
+        android:fragment="com.spark.settings.fragments.Clock" />
+
     <com.spark.support.preferences.SystemSettingSwitchPreference
         android:key="statusbar_colored_icons"
         android:title="@string/statusbar_colored_icons_title"
