@@ -40,6 +40,12 @@
         android:summary="@string/status_bar_clock_summary"
         android:fragment="com.spark.settings.fragments.Clock" />
 
+    <Preference
+        android:key="batterybar"
+        android:title="@string/battery_bar_title"
+        android:summary="@string/battery_bar_summary"
+        android:fragment="com.spark.settings.fragments.BatteryBar" />
+
     <com.spark.support.preferences.SystemSettingSwitchPreference
         android:key="statusbar_colored_icons"
         android:title="@string/statusbar_colored_icons_title"
