@@ -29,7 +29,7 @@ import android.os.UserHandle;
 import android.provider.Settings;
 import android.text.format.DateFormat;
 import android.widget.EditText;
-
+import android.view.View;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference;
