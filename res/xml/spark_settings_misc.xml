@@ -66,6 +66,12 @@
             android:summary="@string/notification_guts_kill_app_button_summary"
             android:defaultValue="false" />
 
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="toast_icon"
+            android:title="@string/toast_icon_title"
+            android:summary="@string/toast_icon_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -85,8 +91,11 @@
             android:title="@string/use_games_spoof_title"
             android:summary="@string/use_games_spoof_summary"
             android:defaultValue="false" />
-
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="misc_general_category"
+        android:title="@string/general_category">
 
     <!-- Launch music player when headset is connected -->
     <com.spark.support.preferences.SystemSettingSwitchPreference
@@ -107,5 +116,6 @@
         android:title="@string/alert_slider_notifications_title"
         android:summary="@string/alert_slider_notifications_summary"
         android:defaultValue="true" />
+   </PreferenceCategory>
 
 </PreferenceScreen>
