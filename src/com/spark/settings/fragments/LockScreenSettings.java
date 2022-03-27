@@ -36,12 +36,16 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 
+import com.android.internal.util.spark.udfps.UdfpsUtils;
+
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private static final String AMBIENT_ICONS_COLOR = "ambient_icons_color";
+    private static final String UDFPS_CATEGORY = "udfps_category";
 
     private SystemSettingColorPickerPreference mAmbientIconsColor;
+    private PreferenceCategory mUdfpsCategory;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -53,6 +57,10 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 
         mAmbientIconsColor = (SystemSettingColorPickerPreference) findPreference(AMBIENT_ICONS_COLOR);
         mAmbientIconsColor.setOnPreferenceChangeListener(this);
+        mUdfpsCategory = findPreference(UDFPS_CATEGORY);
+        if (!UdfpsUtils.hasUdfpsSupport(getContext())) {
+            prefScreen.removePreference(mUdfpsCategory);
+        }
     }
 
     @Override
