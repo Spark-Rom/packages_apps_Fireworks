@@ -67,6 +67,12 @@
             android:summary="@string/notification_guts_kill_app_button_summary"
             android:defaultValue="false" />
 
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="toast_icon"
+            android:title="@string/toast_icon_title"
+            android:summary="@string/toast_icon_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -80,6 +86,10 @@
         android:defaultValue="0" />
  
    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="misc_general_category"
+        android:title="@string/general_category">
 
     <!-- Gaming mode -->
     <Preference
@@ -105,4 +115,7 @@
         android:title="@string/hosts_block_title"
         android:summary="@string/hosts_block_summary"
         android:defaultValue="false" />
+
+   </PreferenceCategory>
+
 </PreferenceScreen>

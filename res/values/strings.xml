@@ -394,4 +394,8 @@
     <string name="udfps_haptic_feedback_summary">Vibrate when touching UDFPS icon</string>
     <string name="udfps_settings_title">UDFPS settings</string>
     <string name="udfps_settings_summary">Customizations for the UDFPS</string>
+
+    <!-- Toast app icon -->
+    <string name="toast_icon_title">Toast app icon</string>
+    <string name="toast_icon_summary">Display the app\'s icon corresponding with the toast</string>
 </resources>
