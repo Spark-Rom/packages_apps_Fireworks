@@ -36,12 +36,16 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 
+import com.android.internal.util.spark.udfps.UdfpsUtils;
+
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private static final String KG_CUSTOM_CLOCK_COLOR_ENABLED = "kg_custom_clock_color_enabled";
+    private static final String UDFPS_CATEGORY = "udfps_category";
 
     private SwitchPreference mKGCustomClockColor;
+    private PreferenceCategory mUdfpsCategory;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -58,18 +62,23 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
                 Settings.Secure.KG_CUSTOM_CLOCK_COLOR_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
         mKGCustomClockColor.setChecked(mKGCustomClockColorEnabled);
         mKGCustomClockColor.setOnPreferenceChangeListener(this);
+
+        mUdfpsCategory = findPreference(UDFPS_CATEGORY);
+        if (!UdfpsUtils.hasUdfpsSupport(getContext())) {
+            prefScreen.removePreference(mUdfpsCategory);
+        }
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-	Context mContext = getActivity().getApplicationContext();
-	ContentResolver resolver = mContext.getContentResolver();
+        Context mContext = getActivity().getApplicationContext();
+        ContentResolver resolver = mContext.getContentResolver();
         if (preference == mKGCustomClockColor) {
             boolean val = (Boolean) newValue;
             Settings.Secure.putIntForUser(resolver,
                 Settings.Secure.KG_CUSTOM_CLOCK_COLOR_ENABLED, val ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
-	}
+        }
         return false;
     }
 
