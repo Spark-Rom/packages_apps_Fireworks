@@ -15,7 +15,6 @@
     <string name="misc_title">Miscellaneous</string>
     <string name="powermenu_title">Power menu</string>
     <string name="statusbar_title">Status bar</string>
-    <string name="udfps_category">Udfps</string>
     <string name="buttons_title">Buttons</string>
     <string name="statusbar_items_category">Status bar items</string>
     <string name="fingerprint_category">Fingerprint</string>
@@ -26,6 +25,7 @@
     <string name="statusbar_clock_category_title">Status Bar Clock</string>
     <string name="powermenu_items_title">Power menu items</string>
     <string name="monet_category">Monet Settings</string>
+    <string name="udfps_category">UDFPS</string>
 
     <!-- AdBlock -->
     <string name="hosts_block_title">Ad-block</string>
@@ -388,4 +388,10 @@
     <string name="qs_footer_text_show_title">Show QS footer text</string>
     <string name="qs_footer_text_string_title">Customize footer text</string>
     <string name="qs_footer_text_string_summary">Set to empty for default Spark</string>
+
+    <!-- UDFPS Haptic Feedback -->
+    <string name="udfps_haptic_feedback_title">UDFPS haptic feedback</string>
+    <string name="udfps_haptic_feedback_summary">Vibrate when touching UDFPS icon</string>
+    <string name="udfps_settings_title">UDFPS settings</string>
+    <string name="udfps_settings_summary">Customizations for the UDFPS</string>
 </resources>
