@@ -52,6 +52,7 @@ import com.android.settingslib.search.SearchIndexable;
 import com.spark.settings.preferences.ActionFragment;
 import com.spark.support.preferences.CustomSeekBarPreference;
 import com.spark.support.preferences.SystemSettingSwitchPreference;
+import com.spark.support.preferences.SystemSettingListPreference;
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
@@ -77,6 +78,10 @@ public class MiscSettings extends ActionFragment implements
     private static final String NOTIFICATION_LIGHTS_PREF = "notification_light";
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
     private static final String NAVBAR_VISIBILITY = "navbar_visibility";
+    private static final String PREF_FLASH_ON_CALL = "flashlight_on_call";
+    private static final String PREF_FLASH_ON_CALL_DND = "flashlight_on_call_ignore_dnd";
+    private static final String PREF_FLASH_ON_CALL_RATE = "flashlight_on_call_rate";
+    private static final String FLASHLIGHT_CATEGORY = "flashlight_category";
 
     // category keys
     private static final String CATEGORY_HWKEY = "hardware_keys";
@@ -113,6 +118,9 @@ public class MiscSettings extends ActionFragment implements
     private Preference mChargingLeds;
     private Preference mNotLights;
     private PreferenceCategory mLedCategory;
+    private CustomSeekBarPreference mFlashOnCallRate;
+    private SystemSettingSwitchPreference mFlashOnCallIgnoreDND;
+    private SystemSettingListPreference mFlashOnCall;
 
     private Handler mHandler = new Handler();
 
@@ -147,6 +155,31 @@ public class MiscSettings extends ActionFragment implements
         } else {
             mLedCategory = findPreference(LED_CATEGORY);
             mLedCategory.setVisible(false);
+        }
+
+        if (!SparkUtils.deviceHasFlashlight(mContext)) {
+            final PreferenceCategory flashlightCategory =
+                    (PreferenceCategory) findPreference(FLASHLIGHT_CATEGORY);
+            prefSet.removePreference(flashlightCategory);
+        } else {
+            mFlashOnCallRate = (CustomSeekBarPreference)
+                    findPreference(PREF_FLASH_ON_CALL_RATE);
+            int value = Settings.System.getInt(resolver,
+                    Settings.System.FLASHLIGHT_ON_CALL_RATE, 1);
+            mFlashOnCallRate.setValue(value);
+            mFlashOnCallRate.setOnPreferenceChangeListener(this);
+
+            mFlashOnCallIgnoreDND = (SystemSettingSwitchPreference)
+                    findPreference(PREF_FLASH_ON_CALL_DND);
+            value = Settings.System.getInt(resolver,
+                    Settings.System.FLASHLIGHT_ON_CALL, 0);
+            mFlashOnCallIgnoreDND.setVisible(value > 1);
+            mFlashOnCallRate.setVisible(value != 0);
+
+            mFlashOnCall = (SystemSettingListPreference)
+                    findPreference(PREF_FLASH_ON_CALL);
+            mFlashOnCall.setSummary(mFlashOnCall.getEntries()[value]);
+            mFlashOnCall.setOnPreferenceChangeListener(this);
         }
 
         final boolean needsNavbar = ActionUtils.hasNavbarByDefault(getActivity());
@@ -288,6 +321,19 @@ public class MiscSettings extends ActionFragment implements
                     mIsNavSwitchingMode = false;
                 }
             }, 1500);
+            return true;
+        } else if (preference == mFlashOnCall) {
+            int value = Integer.parseInt((String) newValue);
+            Settings.System.putInt(resolver,
+                    Settings.System.FLASHLIGHT_ON_CALL, value);
+            mFlashOnCall.setSummary(mFlashOnCall.getEntries()[value]);
+            mFlashOnCallIgnoreDND.setVisible(value > 1);
+            mFlashOnCallRate.setVisible(value != 0);
+            return true;
+        } else if (preference == mFlashOnCallRate) {
+            int value = (Integer) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.FLASHLIGHT_ON_CALL_RATE, value);
             return true;
         } else {
             return false;
