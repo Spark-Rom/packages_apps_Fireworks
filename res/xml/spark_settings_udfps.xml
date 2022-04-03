@@ -8,7 +8,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/udfps_category">
 
-    <com.spark.support.preferences.SystemSettingSwitchPreference
+    <com.spark.settings.preferences.SystemSettingSwitchPreference
         android:key="udfps_haptic_feedback"
         android:title="@string/udfps_haptic_feedback_title"
         android:summary="@string/udfps_haptic_feedback_summary"
