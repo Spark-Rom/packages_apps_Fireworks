@@ -48,11 +48,14 @@ import android.os.ServiceManager;
 import static android.os.UserHandle.USER_CURRENT;
 import java.util.List;
 import java.util.ArrayList;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settingslib.search.SearchIndexable;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 import java.util.regex.Pattern;
 
+@SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
 public class ThemeSettings extends DashboardFragment implements
         OnPreferenceChangeListener {
 
@@ -69,6 +72,7 @@ public class ThemeSettings extends DashboardFragment implements
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+
 
         final ContentResolver resolver = getActivity().getContentResolver();
 
@@ -130,4 +134,9 @@ public class ThemeSettings extends DashboardFragment implements
         return MetricsProto.MetricsEvent.SPARK_SETTINGS;
     }
 
+    /**
+     * For Search.
+     */
+    public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider(R.xml.spark_settings_themes);
 }
