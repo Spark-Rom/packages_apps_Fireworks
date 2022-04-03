@@ -82,6 +82,7 @@ public class MiscSettings extends ActionFragment implements
     private static final String PREF_FLASH_ON_CALL_DND = "flashlight_on_call_ignore_dnd";
     private static final String PREF_FLASH_ON_CALL_RATE = "flashlight_on_call_rate";
     private static final String FLASHLIGHT_CATEGORY = "flashlight_category";
+    private static final String RETICKER_STATUS = "reticker_status";
 
     // category keys
     private static final String CATEGORY_HWKEY = "hardware_keys";
@@ -121,6 +122,7 @@ public class MiscSettings extends ActionFragment implements
     private CustomSeekBarPreference mFlashOnCallRate;
     private SystemSettingSwitchPreference mFlashOnCallIgnoreDND;
     private SystemSettingListPreference mFlashOnCall;
+    private SystemSettingSwitchPreference mRetickerStatus;
 
     private Handler mHandler = new Handler();
 
@@ -275,6 +277,11 @@ public class MiscSettings extends ActionFragment implements
                 SparkUtils.hasNavbarByDefault(getActivity()) ? 1 : 0, UserHandle.USER_CURRENT) != 0;
         mNavbarVisibility.setChecked(showing);
         mNavbarVisibility.setOnPreferenceChangeListener(this);
+
+        mRetickerStatus = findPreference(RETICKER_STATUS);
+        mRetickerStatus.setChecked((Settings.System.getInt(resolver,
+                Settings.System.RETICKER_STATUS, 0) == 1));
+        mRetickerStatus.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -334,6 +341,12 @@ public class MiscSettings extends ActionFragment implements
             int value = (Integer) newValue;
             Settings.System.putInt(resolver,
                     Settings.System.FLASHLIGHT_ON_CALL_RATE, value);
+            return true;
+        } else if (preference == mRetickerStatus) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.RETICKER_STATUS, value ? 1 : 0);
+            SparkUtils.showSystemUiRestartDialog(getContext());
             return true;
         } else {
             return false;
