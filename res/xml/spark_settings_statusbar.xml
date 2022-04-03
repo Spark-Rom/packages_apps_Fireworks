@@ -46,6 +46,13 @@
         android:summary="@string/battery_bar_summary"
         android:fragment="com.spark.settings.fragments.BatteryBar" />
 
+    <!-- Show logo on Statusbar -->
+    <Preference
+        android:key="status_bar_logo"
+        android:title="@string/status_bar_logo_title"
+        android:summary="@string/status_bar_logo_summary"
+        android:fragment="com.spark.settings.fragments.StatusBarLogo" />
+
     <com.spark.support.preferences.SystemSettingSwitchPreference
         android:key="statusbar_colored_icons"
         android:title="@string/statusbar_colored_icons_title"
