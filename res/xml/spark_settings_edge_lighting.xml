@@ -108,8 +108,7 @@
         android:title="@string/pulse_ambient_light_width_title"
         android:max="150"
         android:min="1"
-        settings:unitsLeft=""
-        settings:unitsRight="px"
+        settings:units="px"
         android:defaultValue="125" />
 
 </PreferenceScreen>
