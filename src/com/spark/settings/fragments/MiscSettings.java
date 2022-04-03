@@ -53,6 +53,8 @@ import com.spark.settings.preferences.ActionFragment;
 import com.spark.support.preferences.CustomSeekBarPreference;
 import com.spark.support.preferences.SystemSettingSwitchPreference;
 import com.spark.support.preferences.SystemSettingListPreference;
+import com.spark.support.preferences.SystemSettingSwitchPreference;
+import com.spark.support.preferences.SystemSettingMasterSwitchPreference;
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
@@ -83,6 +85,7 @@ public class MiscSettings extends ActionFragment implements
     private static final String PREF_FLASH_ON_CALL_RATE = "flashlight_on_call_rate";
     private static final String FLASHLIGHT_CATEGORY = "flashlight_category";
     private static final String RETICKER_STATUS = "reticker_status";
+    private static final String KEY_EDGE_LIGHTING = "pulse_ambient_light";
 
     // category keys
     private static final String CATEGORY_HWKEY = "hardware_keys";
@@ -123,6 +126,7 @@ public class MiscSettings extends ActionFragment implements
     private SystemSettingSwitchPreference mFlashOnCallIgnoreDND;
     private SystemSettingListPreference mFlashOnCall;
     private SystemSettingSwitchPreference mRetickerStatus;
+    private SystemSettingMasterSwitchPreference mEdgeLighting;
 
     private Handler mHandler = new Handler();
 
@@ -282,6 +286,13 @@ public class MiscSettings extends ActionFragment implements
         mRetickerStatus.setChecked((Settings.System.getInt(resolver,
                 Settings.System.RETICKER_STATUS, 0) == 1));
         mRetickerStatus.setOnPreferenceChangeListener(this);
+
+        mEdgeLighting = (SystemSettingMasterSwitchPreference)
+                findPreference(KEY_EDGE_LIGHTING);
+        boolean enabled = Settings.System.getIntForUser(resolver,
+                KEY_EDGE_LIGHTING, 0, UserHandle.USER_CURRENT) == 1;
+        mEdgeLighting.setChecked(enabled);
+        mEdgeLighting.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -347,6 +358,11 @@ public class MiscSettings extends ActionFragment implements
             Settings.System.putInt(resolver,
                     Settings.System.RETICKER_STATUS, value ? 1 : 0);
             SparkUtils.showSystemUiRestartDialog(getContext());
+            return true;
+        } else if (preference == mEdgeLighting) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putIntForUser(resolver, KEY_EDGE_LIGHTING,
+                    value ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
         } else {
             return false;
