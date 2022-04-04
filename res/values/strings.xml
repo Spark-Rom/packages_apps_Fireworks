@@ -702,4 +702,6 @@
     <!-- OOS style material dismiss all button for notifications -->
     <string name="notification_material_dismiss_button_title">Material dimiss button</string>
     <string name="notification_material_dismiss_button_summary">Replace clear all notification text with floating button</string>
+    <string name="clearall_style_title">Material dismiss button style</string>
+    <string name="clearall_bgstyle_title">Material dismiss background style</string>
 </resources>
