@@ -694,4 +694,8 @@
     <string name="top">Top</string>
     <string name="bottom">Bottom</string>
     <string name="show_auto_brightness_button_title">Show auto brightness button</string>
+
+    <!-- Wp zoom -->
+    <string name="use_wp_zoom_title">Enable wallpaper Zoom</string>
+    <string name="use_wp_zoom_summary">Reboot after toggling</string>
 </resources>
