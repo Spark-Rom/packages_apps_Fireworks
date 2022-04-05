@@ -196,7 +196,7 @@
             android:title="@string/clearall_bgstyle_title"
             android:dependency="notification_material_dismiss"
             android:defaultValue="0"
-            android:max="4"   
+            android:max="2"   
             settings:min="0" />
 
     </PreferenceCategory>
