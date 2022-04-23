@@ -151,6 +151,12 @@
         android:summary="@string/hosts_block_summary"
         android:defaultValue="false" />
 
+    <com.spark.support.preferences.GlobalSettingSwitchPreference
+        android:key="pm_downgrade_allowed"
+        android:title="@string/app_downgrade_title"
+        android:summary="@string/app_downgrade_summary"
+        android:defaultValue="false"/>
+
    </PreferenceCategory>
 
     <SwitchPreference
