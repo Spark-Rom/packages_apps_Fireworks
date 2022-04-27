@@ -5,6 +5,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import android.os.Bundle;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import com.android.internal.util.spark.SparkUtils;
 import android.content.pm.ResolveInfo;
 import android.os.UserHandle;
 import com.android.settings.development.OverlayCategoryPreferenceController;
@@ -25,6 +26,7 @@ import androidx.preference.SwitchPreference;
 import android.provider.Settings;
 import com.spark.settings.preferences.SystemSettingEditTextPreference;
 import com.spark.support.preferences.SystemSettingMasterSwitchPreference;
+import com.spark.support.preferences.SystemSettingSwitchPreference;
 import com.spark.support.preferences.SystemSettingListPreference;
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
@@ -66,8 +68,16 @@ public class ThemeSettings extends DashboardFragment implements
     private IOverlayManager mOverlayService;
     private Handler mHandler;
     private static final String QS_FOOTER_TEXT_STRING = "qs_footer_text_string";
+    private static final String ALT_SETTINGS_LAYOUT = "alt_settings_layout";
+    private static final String SETTINGS_DASHBOARD_STYLE = "settings_dashboard_style";
+    private static final String USE_STOCK_LAYOUT = "use_stock_layout";
+    private static final String DISABLE_USERCARD = "disable_usercard";
 
     private SystemSettingEditTextPreference mFooterString;
+    private SystemSettingListPreference mSettingsDashBoardStyle;
+    private SystemSettingSwitchPreference mAltSettingsLayout;
+    private SystemSettingSwitchPreference mUseStockLayout;
+    private SystemSettingSwitchPreference mDisableUserCard; 
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -89,6 +99,14 @@ public class ThemeSettings extends DashboardFragment implements
             Settings.System.putString(getActivity().getContentResolver(),
                     Settings.System.QS_FOOTER_TEXT_STRING, "Spark");
         }
+        mSettingsDashBoardStyle = (SystemSettingListPreference) findPreference(SETTINGS_DASHBOARD_STYLE);
+        mSettingsDashBoardStyle.setOnPreferenceChangeListener(this);
+        mAltSettingsLayout = (SystemSettingSwitchPreference) findPreference(ALT_SETTINGS_LAYOUT);
+        mAltSettingsLayout.setOnPreferenceChangeListener(this);
+        mUseStockLayout = (SystemSettingSwitchPreference) findPreference(USE_STOCK_LAYOUT);
+        mUseStockLayout.setOnPreferenceChangeListener(this);
+        mDisableUserCard = (SystemSettingSwitchPreference) findPreference(DISABLE_USERCARD);
+        mDisableUserCard.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -109,6 +127,18 @@ public class ThemeSettings extends DashboardFragment implements
                 Settings.System.putString(getActivity().getContentResolver(),
                         Settings.System.QS_FOOTER_TEXT_STRING, "Spark");
             }
+            return true;
+        } else if (preference == mSettingsDashBoardStyle) {
+            SparkUtils.showSettingsRestartDialog(getContext());
+            return true;
+        } else if (preference == mAltSettingsLayout) {
+            SparkUtils.showSettingsRestartDialog(getContext());
+            return true;
+        } else if (preference == mUseStockLayout) {
+            SparkUtils.showSettingsRestartDialog(getContext());
+            return true;
+        } else if (preference == mDisableUserCard) {
+            SparkUtils.showSettingsRestartDialog(getContext());
             return true;
         }
         return false;
