@@ -60,7 +60,7 @@
     <PreferenceCategory
         android:key="settings_layout_category"
         android:title="@string/settings_layout_category_title">
-        
+
     <com.spark.support.preferences.SystemSettingListPreference
             android:key="settings_dashboard_style"
             android:title="@string/settings_dashboard_style_title"
@@ -118,6 +118,16 @@
 
      <PreferenceCategory
         android:title="@string/qs_footer_category">
+
+    <com.spark.support.preferences.SystemSettingSeekBarPreference
+        android:key="qs_transparency"
+        android:title="@string/qs_transparency_title"
+        android:summary="@string/qs_transparency_summary"
+        android:defaultValue="100"
+        settings:interval="1"
+        android:max="100"
+        settings:units="%"         
+        android:min="1" />
 
     <!-- QS footer text toggle -->
     <com.spark.support.preferences.SystemSettingSwitchPreference
