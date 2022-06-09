@@ -29,6 +29,7 @@
     <string name="udfps_category">Huella</string>
     <string name="general_category">General</string>
     <string name="flashlight_category">Linterna</string>
+    <string name="qs_category">Qs Customizations</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">Ad-block</string>
     <string name="hosts_block_summary">Bloquear anuncios con hosts modificado. Apágalo para usar el de terceros o si da problemas.</string>
@@ -48,8 +49,8 @@
     <!-- Notification light -->
     <string name="notification_light_settings">Led de notificación</string>
     <!-- Gaming mode -->
-    <string name="gaming_mode_title">Modo Juego</string>
-    <string name="gaming_mode_summary">Funciones para experiencia de juego inmersiva</string>
+    <string name="game_space_title">Game Space</string>
+    <string name="game_space_summary">Enhance your gaming experience</string>
     <!-- Lockscreen battery info -->
     <string name="lockscreen_charging_info_title">Info de carga en pantalla de bloqueo</string>
     <string name="lockscreen_charging_info_summary">Temperatura e info de carga mientras está enchufado</string>
@@ -243,10 +244,10 @@
     <string name="pulse_category">Visualizador musical Pulse</string>
     <string name="pulse_help_policy_notice_title">Sobre Pulse</string>
     <string name="unit_milliseconds">milisegundos</string>
-    <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio graphic equalizer when music plays on the device</string>
-    <string name="pulse_settings">Pulse</string>
-    <string name="pulse_settings_summary">Audio graphic equalizer for navigation bar and lock screen</string>
-    <string name="show_navbar_pulse_title">Navbar Pulse</string>
+    <string name="pulse_help_policy_notice_summary">Pulso es un brillante ecualizador gráfico de audio cuándo la música se reproduce en el dispositivo</string>
+    <string name="pulse_settings">Pulso</string>
+    <string name="pulse_settings_summary">Ecualizador gráfico de audio para la barra de navegación y pantalla de bloqueo</string>
+    <string name="show_navbar_pulse_title">Pulso de la barra de navegación</string>
     <string name="show_navbar_pulse_summary">Audio graphic equalizer on the navigation bar</string>
     <string name="show_lockscreen_pulse_title">Lock screen Pulse</string>
     <string name="show_lockscreen_pulse_summary">Audio graphic equalizer on the lock screen</string>
@@ -663,4 +664,35 @@
     <!-- Qs Transparency -->
     <string name="qs_transparency_summary">Choose how transparent you want your qs to be (Requires SystemUI Restart)</string>
     <string name="qs_transparency_title">Qs Transparency</string>
+    <!-- Brightness control -->
+    <string name="status_bar_brightness_control_title">Brightness control</string>
+    <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across the status bar</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
+    <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
+    <!-- Tiles animation style  -->
+    <string name="qs_tile_animation_title">Animaciones</string>
+    <string name="qs_tile_animation_style_title">Animation style</string>
+    <string name="qs_tile_animation_duration_title">Animation duration</string>
+    <string name="qs_tile_animation_interpolator_title">Tiles animation interpolator</string>
+    <string name="qs_tile_animation_style_off">No animation</string>
+    <string name="qs_tile_animation_style_flip">Flip</string>
+    <string name="qs_tile_animation_style_rotate">Rotate</string>
+    <string name="qs_tile_animation_duration_low">Low</string>
+    <string name="qs_tile_animation_duration_default">Predeterminado</string>
+    <string name="qs_tile_animation_duration_fast">Fast</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+    <!-- Data usage info in QS footer -->
+    <string name="qs_footer_datausage_title">Data usage</string>
+    <string name="qs_footer_datausage_summary">Display data usage summary in quick settings footer</string>
 </resources>

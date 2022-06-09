@@ -29,6 +29,7 @@
     <string name="udfps_category">Huella en Pantalla</string>
     <string name="general_category">General</string>
     <string name="flashlight_category">Linterna</string>
+    <string name="qs_category">Personalizar QS</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">Bloqueo de anuncios</string>
     <string name="hosts_block_summary">Bloquear anuncios con un archivo de hosts modificado. Desactívalo para usar soluciones de terceros o si las aplicaciones causan problemas.</string>
@@ -48,8 +49,8 @@
     <!-- Notification light -->
     <string name="notification_light_settings">Led de notificación</string>
     <!-- Gaming mode -->
-    <string name="gaming_mode_title">Espacio de juego</string>
-    <string name="gaming_mode_summary">Características adicionales para una experiencia de juego inmersiva</string>
+    <string name="game_space_title">Espacio de juego</string>
+    <string name="game_space_summary">Mejora tu experiencia de juego</string>
     <!-- Lockscreen battery info -->
     <string name="lockscreen_charging_info_title">Mostrar info de carga en pantalla de bloqueo</string>
     <string name="lockscreen_charging_info_summary">Muestra temperatura, carga actual y más mientras está enchufado</string>
@@ -292,8 +293,8 @@
     <string name="status_bar_battery_style_icon_portrait">Icono vertical (predeterminado)</string>
     <string name="status_bar_battery_style_icon_rlandscape">Icono horizontal (derecha)</string>
     <string name="status_bar_battery_style_icon_landscape">Icono horizontal (izquierda)</string>
-    <string name="status_bar_battery_style_circle">Círculo (punteado)</string>
-    <string name="status_bar_battery_style_dotted_circle">Círculo</string>
+    <string name="status_bar_battery_style_circle">Círculo</string>
+    <string name="status_bar_battery_style_dotted_circle">Círculo punteado</string>
     <string name="status_bar_battery_style_filled_circle">Círculo (lleno)</string>
     <string name="status_bar_battery_style_text">Texto</string>
     <string name="status_bar_battery_style_hidden">Oculto</string>
@@ -663,4 +664,35 @@
     <!-- Qs Transparency -->
     <string name="qs_transparency_summary">Elige la transparencia del panel de Ajustes Rápidos (requiere reiniciar SystemUI)</string>
     <string name="qs_transparency_title">Transparencia de Ajustes Rápidos</string>
+    <!-- Brightness control -->
+    <string name="status_bar_brightness_control_title">Control de brillo</string>
+    <string name="status_bar_brightness_control_summary">Ajusta el brillo deslizando sobre la barra de estado</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrar al tocar</string>
+    <string name="quick_settings_vibrate_summary">Vibrar al tocar los ajustes rápidos</string>
+    <!-- Tiles animation style  -->
+    <string name="qs_tile_animation_title">Animaciones</string>
+    <string name="qs_tile_animation_style_title">Estilo de animación</string>
+    <string name="qs_tile_animation_duration_title">Duración de la animación</string>
+    <string name="qs_tile_animation_interpolator_title">Animación de interpolación de QS</string>
+    <string name="qs_tile_animation_style_off">Sin animación</string>
+    <string name="qs_tile_animation_style_flip">Voltear</string>
+    <string name="qs_tile_animation_style_rotate">Rotar</string>
+    <string name="qs_tile_animation_duration_low">Baja</string>
+    <string name="qs_tile_animation_duration_default">Predeterminado</string>
+    <string name="qs_tile_animation_duration_fast">Rápida</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Lineal</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Acelerado</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Ralentizado</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Acelerar/ralentizar</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Rebote</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Excedido</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipado</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Excedido anticipado</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+    <!-- Data usage info in QS footer -->
+    <string name="qs_footer_datausage_title">Uso de datos</string>
+    <string name="qs_footer_datausage_summary">Resumen de uso de datos al pie del panel de ajustes rápidos</string>
 </resources>

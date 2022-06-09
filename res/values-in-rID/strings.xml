@@ -29,6 +29,7 @@
     <string name="udfps_category">Sidik Jari Dalam Layar</string>
     <string name="general_category">Umum</string>
     <string name="flashlight_category">Lampu Senter</string>
+    <string name="qs_category">Kustomisasi Setelan Cepat</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">Pemblokir Iklan</string>
     <string name="hosts_block_summary">Blokir iklan dengan file host yang dimodifikasi. Matikan untuk menggunakan solusi pihak ketiga atau jika aplikasi menyebabkan masalah.</string>
@@ -48,8 +49,8 @@
     <!-- Notification light -->
     <string name="notification_light_settings">Lampu notifikasi</string>
     <!-- Gaming mode -->
-    <string name="gaming_mode_title">Ruang Permainan</string>
-    <string name="gaming_mode_summary">Fitur ekstra untuk pengalaman bermain game yang impresif</string>
+    <string name="game_space_title">Ruang Game</string>
+    <string name="game_space_summary">Tingkatkan pengalaman bermain game Anda</string>
     <!-- Lockscreen battery info -->
     <string name="lockscreen_charging_info_title">Tampilkan info pengisian daya di layar kunci</string>
     <string name="lockscreen_charging_info_summary">Tampilkan suhu, arus pengisian daya, dan lainnya saat mengisi daya</string>
@@ -341,7 +342,7 @@
     <string name="combined_status_bar_signal_icons_summary">Tampilkan ikon gabungan tunggal untuk WiFi dan sinyal seluler</string>
     <!-- QS footer text -->
     <string name="qs_footer_category">Kustomisasi Footer Setelan Cepat</string>
-    <string name="qs_footer_text_show_title">Tampilkan teks footer QS</string>
+    <string name="qs_footer_text_show_title">Tampilkan teks footer Setelan Cepat</string>
     <string name="qs_footer_text_string_title">Kustomisasi teks footer</string>
     <string name="qs_footer_text_string_summary">Setel ke kosong sebagai Spark</string>
     <!-- UDFPS Haptic Feedback -->
@@ -420,7 +421,7 @@
     <string name="hardware_keys_action_volume_panel">Tombol alihkan Panel Volume</string>
     <string name="hardware_keys_action_clear_all_notifications">Hapus semua notifikasi</string>
     <string name="hardware_keys_action_notifications_panel">Tombol alihkan panel notifikasi</string>
-    <string name="hardware_keys_action_toggle_qs_panel">Tombol alihkan panel QS</string>
+    <string name="hardware_keys_action_toggle_qs_panel">Tombol alihkan panel Setelan Cepat</string>
     <string name="hardware_keys_action_ringer_modes">Mode dering</string>
     <string name="hardware_keys_swipe_right_key_title">Usap ke kanan</string>
     <string name="hardware_keys_swipe_left_key_title">Usap ke kiri</string>
@@ -468,8 +469,8 @@
     <string name="disable_qs_title">Sembunyikan Setelan Cepat di layar kunci aman</string>
     <string name="disable_qs_summary">Menyembunyikan Setelan Cepat jika perangkat terkunci. Tidak menonaktifkan bayangan notifikasi</string>
     <!-- QS footer warnings -->
-    <string name="qs_footer_warnings_title">Peringatan footer QS</string>
-    <string name="qs_footer_warnings_summary">Tampilkan peringatan di bagian bawah panel QS saat jaringan dipantau oleh aplikasi eksternal atau vpn</string>
+    <string name="qs_footer_warnings_title">Peringatan footer Setelan Cepat</string>
+    <string name="qs_footer_warnings_summary">Tampilkan peringatan di bagian bawah panel Setelan Cepat saat jaringan dipantau oleh aplikasi eksternal atau vpn</string>
     <!-- QS footer icons -->
     <string name="qs_footer_users_icon_title">Ikon akun pengguna</string>
     <string name="qs_footer_users_icon_summary">Tampilkan ikon aksesibilitas multipengguna bila tersedia</string>
@@ -663,4 +664,35 @@
     <!-- Qs Transparency -->
     <string name="qs_transparency_summary">Pilih seberapa transparan yang Anda inginkan dari setelan cepat Anda (Membutuhkan mulai ulang SistemUI)</string>
     <string name="qs_transparency_title">Transparansi Setelan Cepat</string>
+    <!-- Brightness control -->
+    <string name="status_bar_brightness_control_title">Kontrol kecerahan</string>
+    <string name="status_bar_brightness_control_summary">Sesuaikan kecerahan dengan menggeser di bilah status</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Bergetar saat disentuh</string>
+    <string name="quick_settings_vibrate_summary">Bergetar saat menyentuh ubin Setelan Cepat</string>
+    <!-- Tiles animation style  -->
+    <string name="qs_tile_animation_title">Animasi</string>
+    <string name="qs_tile_animation_style_title">Gaya animasi</string>
+    <string name="qs_tile_animation_duration_title">Durasi animasi</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolator animasi ubin</string>
+    <string name="qs_tile_animation_style_off">Tidak ada animasi</string>
+    <string name="qs_tile_animation_style_flip">Membalik</string>
+    <string name="qs_tile_animation_style_rotate">Memutar</string>
+    <string name="qs_tile_animation_duration_low">Rendah</string>
+    <string name="qs_tile_animation_duration_default">Bawaan</string>
+    <string name="qs_tile_animation_duration_fast">Cepat</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linier</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Mempercepat</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Memperlambat</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Mempercepat memperlambat</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Melambung</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Melampaui</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Mengantisipasi</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Mengantisipasi melampaui</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+    <!-- Data usage info in QS footer -->
+    <string name="qs_footer_datausage_title">Penggunaan data</string>
+    <string name="qs_footer_datausage_summary">Tampilkan ringkasan penggunaan data di footer setelan cepat</string>
 </resources>
