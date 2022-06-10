@@ -29,6 +29,7 @@
     <string name="udfps_category">Udfps</string>
     <string name="general_category">Genel</string>
     <string name="flashlight_category">El feneri</string>
+    <string name="qs_category">Qs Customizations</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">Reklam engelleme</string>
     <string name="hosts_block_summary">Değiştirilmiş bir Hosts dosyası ile reklamları engelleyin. Üçüncü taraf reklam engelleme uygulaması kullanmak istiyorsanız veya başka sorunlara neden oluyor ise kapatın.</string>
@@ -48,8 +49,8 @@
     <!-- Notification light -->
     <string name="notification_light_settings">Bildirim ışığı</string>
     <!-- Gaming mode -->
-    <string name="gaming_mode_title">Oyun alanı</string>
-    <string name="gaming_mode_summary">Sürükleyici oyun deneyimi için ekstra özellikler</string>
+    <string name="game_space_title">Game Space</string>
+    <string name="game_space_summary">Enhance your gaming experience</string>
     <!-- Lockscreen battery info -->
     <string name="lockscreen_charging_info_title">Kilit ekranında şarj bilgisini göster</string>
     <string name="lockscreen_charging_info_summary">Şarj cihazı takılı iken, pil sıcaklığını, şarj akımını ve diğer bilgileri göster</string>
@@ -618,7 +619,7 @@
     <string name="use_wp_zoom_title">Duvarkağıdı yakınlaştırmayı etkinleştir</string>
     <string name="use_wp_zoom_summary">Değiştirdikten sonra yeniden başlat</string>
     <!-- OOS style material dismiss all button for notifications -->
-    <string name="notification_material_dismiss_button_title">Materyal reddetme tuşu</string>
+    <string name="notification_material_dismiss_button_title">Materyal Tümünü Temizle tuşu</string>
     <string name="notification_material_dismiss_button_summary">Tümünü temizle bildirim metnini kayan tuş ile değiştir</string>
     <string name="clearall_style_title">Materyal reddetme tuşu stili</string>
     <string name="clearall_bgstyle_title">Materyal reddetme tuşu arkaplanı</string>
@@ -663,4 +664,35 @@
     <!-- Qs Transparency -->
     <string name="qs_transparency_summary">Hızlı ayarlarınızın ne kadar şeffaf olmasını istediğinizi seçin (Kullanıcı Arayüzü\'nün yeniden başlatma gerekir)</string>
     <string name="qs_transparency_title">Şeffaf Hızlı Ayarlar</string>
+    <!-- Brightness control -->
+    <string name="status_bar_brightness_control_title">Brightness control</string>
+    <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across the status bar</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
+    <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
+    <!-- Tiles animation style  -->
+    <string name="qs_tile_animation_title">Animasyonlar</string>
+    <string name="qs_tile_animation_style_title">Animation style</string>
+    <string name="qs_tile_animation_duration_title">Animation duration</string>
+    <string name="qs_tile_animation_interpolator_title">Tiles animation interpolator</string>
+    <string name="qs_tile_animation_style_off">No animation</string>
+    <string name="qs_tile_animation_style_flip">Flip</string>
+    <string name="qs_tile_animation_style_rotate">Rotate</string>
+    <string name="qs_tile_animation_duration_low">Low</string>
+    <string name="qs_tile_animation_duration_default">Varsayılan</string>
+    <string name="qs_tile_animation_duration_fast">Fast</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+    <!-- Data usage info in QS footer -->
+    <string name="qs_footer_datausage_title">Data usage</string>
+    <string name="qs_footer_datausage_summary">Display data usage summary in quick settings footer</string>
 </resources>

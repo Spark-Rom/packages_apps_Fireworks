@@ -9,7 +9,7 @@
     <string name="confirm">Подтвердить</string>
     <!-- Categories -->
     <string name="themes_title">Темы</string>
-    <string name="qs_themes">Qs Settings</string>
+    <string name="qs_themes">Быстрые настройки</string>
     <string name="gestures_title">Жесты</string>
     <string name="aosp_setting_title">System settings</string>
     <string name="lockscreen_title">Экран блокировки</string>
@@ -20,7 +20,7 @@
     <string name="statusbar_items_category">Значки строки состояния</string>
     <string name="fingerprint_category">Отпечаток пальца</string>
     <string name="animations_category">Анимации</string>
-    <string name="charging_category">Ls Charging configurations</string>
+    <string name="charging_category">Настройки зарядки на заблокированном экране</string>
     <string name="notifications_category">Notification Settings</string>
     <string name="screenshot_category">Screenshot Settings</string>
     <string name="statusbar_clock_category_title">Status Bar Clock</string>
@@ -29,6 +29,7 @@
     <string name="udfps_category">UdFPS</string>
     <string name="general_category">Основные</string>
     <string name="flashlight_category">Фонарик</string>
+    <string name="qs_category">Qs Customizations</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">Ad-block</string>
     <string name="hosts_block_summary">Блокировать рекламу с измененным файлом hosts. Отключите, чтобы использовать сторонние решения или если приложения вызывают проблемы.</string>
@@ -48,11 +49,11 @@
     <!-- Notification light -->
     <string name="notification_light_settings">Индикатор уведомлений</string>
     <!-- Gaming mode -->
-    <string name="gaming_mode_title">Игровое пространство</string>
-    <string name="gaming_mode_summary">Дополнительные функции для захватывающего игрового процесса</string>
+    <string name="game_space_title">Game Space</string>
+    <string name="game_space_summary">Enhance your gaming experience</string>
     <!-- Lockscreen battery info -->
-    <string name="lockscreen_charging_info_title">Show charging info in lockscreen</string>
-    <string name="lockscreen_charging_info_summary">Shows temperature, charging current and more while plugged in</string>
+    <string name="lockscreen_charging_info_title">Показывать информацию о зарядке на экране блокировки</string>
+    <string name="lockscreen_charging_info_summary">Показывает температуру, ток зарядки и многое другое во время подключения</string>
     <!-- Heads up -->
     <string name="headsup_category">Настройки всплывающих уведомлений</string>
     <string name="heads_up_notifications">Всплывающие уведомления</string>
@@ -68,15 +69,15 @@
     <string name="torch_power_button_gesture_dt_toast">Жест перехода к камере теперь отключён</string>
     <string name="torch_power_button_gesture_lp">Долгое нажатие кнопки питания</string>
     <!-- Long press power for torch -->
-    <string name="torch_long_press_power_gesture_title">Long press for torch</string>
-    <string name="torch_long_press_power_gesture_desc">Activate the torch by long pressing the power button while the display is off</string>
-    <string name="torch_long_press_power_timeout_title">Automatically turn torch off</string>
-    <string name="torch_long_press_power_timeout_never">Never</string>
+    <string name="torch_long_press_power_gesture_title">Долгое нажатие для включения фонарика</string>
+    <string name="torch_long_press_power_gesture_desc">Включать фонарик долгим нажатием кнопки питания при выключенном экране</string>
+    <string name="torch_long_press_power_timeout_title">Выключать фонарик автоматически</string>
+    <string name="torch_long_press_power_timeout_never">Никогда</string>
     <string name="torch_long_press_power_timeout_1min">1 минута</string>
     <string name="torch_long_press_power_timeout_2min">2 минут</string>
     <string name="torch_long_press_power_timeout_5min">5 минут</string>
     <string name="torch_long_press_power_timeout_10min">10 минут</string>
-    <string name="aosp_gesture_summary">Stock gestures included with Android</string>
+    <string name="aosp_gesture_summary">Стоковые жесты Android</string>
     <!-- Double Tap Lock screen to Sleep -->
     <string name="double_tap_to_sleep_lockscreen_title">Tap on lock screen</string>
     <string name="double_tap_to_sleep_lockscreen_summary">Double-tap on the top third or bottom shortcut area of the lock screen to put the device to sleep</string>
@@ -84,7 +85,7 @@
     <string name="double_tap_to_sleep_title">Tap on status bar</string>
     <string name="double_tap_to_sleep_summary">Double-tap status bar to put the device to sleep</string>
     <!-- Double Tap on Doze to wake -->
-    <string name="double_tap_on_doze_to_wake_title">Tap to wake on doze</string>
+    <string name="double_tap_on_doze_to_wake_title">Коснитесь для пробуждения</string>
     <string name="double_tap_on_doze_to_wake_summary">Double-tap to wake when device is dreaming</string>
     <!-- Volume buttons category -->
     <string name="volume_category">Качелька регулировки громкости</string>
@@ -93,17 +94,17 @@
     <string name="click_partial_screenshot_title">Частичный скриншот</string>
     <string name="click_partial_screenshot_summary">Нажмите кнопку уменьшения громкости и кнопку питания, чтобы сделать частичный снимок экрана</string>
     <!-- Launch music player when headset is connected -->
-    <string name="headset_connect_player_title">Launch music app on headset connection</string>
-    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
+    <string name="headset_connect_player_title">Запускать музыкальный плеер при подключении наушников</string>
+    <string name="headset_connect_player_summary">Запускать стандартный плеер при подключении наушников</string>
     <!-- Network Traffic -->
     <string name="traffic_title">Traffic indicators</string>
     <string name="traffic_summary">Customize the traffic indicators</string>
     <string name="network_traffic_autohide_threshold_title">Auto-hide threshold</string>
-    <string name="network_traffic_location_title">Location</string>
+    <string name="network_traffic_location_title">Расположение</string>
     <string name="network_traffic_disabled">Отключено</string>
     <string name="network_traffic_statusbar">Строка состояния</string>
-    <string name="network_traffic_qs_header">QS header</string>
-    <string name="network_traffic_refresh_interval_title">Refresh interval</string>
+    <string name="network_traffic_qs_header">Заголовок быстрых настроек</string>
+    <string name="network_traffic_refresh_interval_title">Интервал обновления</string>
     <string name="network_traffic_mode_title">Display mode</string>
     <string name="network_traffic_dynamic">Dynamic</string>
     <string name="network_traffic_download">Download</string>
@@ -663,4 +664,35 @@
     <!-- Qs Transparency -->
     <string name="qs_transparency_summary">Choose how transparent you want your qs to be (Requires SystemUI Restart)</string>
     <string name="qs_transparency_title">Qs Transparency</string>
+    <!-- Brightness control -->
+    <string name="status_bar_brightness_control_title">Brightness control</string>
+    <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across the status bar</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
+    <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
+    <!-- Tiles animation style  -->
+    <string name="qs_tile_animation_title">Анимации</string>
+    <string name="qs_tile_animation_style_title">Animation style</string>
+    <string name="qs_tile_animation_duration_title">Animation duration</string>
+    <string name="qs_tile_animation_interpolator_title">Tiles animation interpolator</string>
+    <string name="qs_tile_animation_style_off">No animation</string>
+    <string name="qs_tile_animation_style_flip">Flip</string>
+    <string name="qs_tile_animation_style_rotate">Rotate</string>
+    <string name="qs_tile_animation_duration_low">Low</string>
+    <string name="qs_tile_animation_duration_default">По умолчанию</string>
+    <string name="qs_tile_animation_duration_fast">Fast</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+    <!-- Data usage info in QS footer -->
+    <string name="qs_footer_datausage_title">Data usage</string>
+    <string name="qs_footer_datausage_summary">Display data usage summary in quick settings footer</string>
 </resources>

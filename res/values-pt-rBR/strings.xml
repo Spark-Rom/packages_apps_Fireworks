@@ -29,6 +29,7 @@
     <string name="udfps_category">Impressão digital na tela</string>
     <string name="general_category">Geral</string>
     <string name="flashlight_category">Lanterna</string>
+    <string name="qs_category">Personalização das configurações rápidas</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">Bloquear anúncios</string>
     <string name="hosts_block_summary">Bloqueie anúncios através de um arquivo host modificado. Desative para usar soluções de terceiros ou se enfrentar algum problema.</string>
@@ -48,8 +49,8 @@
     <!-- Notification light -->
     <string name="notification_light_settings">Led de notificações</string>
     <!-- Gaming mode -->
-    <string name="gaming_mode_title">Espaço de jogo</string>
-    <string name="gaming_mode_summary">Recursos extras para uma experiência envolvente nos jogos</string>
+    <string name="game_space_title">Modo Gamer</string>
+    <string name="game_space_summary">Melhore sua experiência em jogos</string>
     <!-- Lockscreen battery info -->
     <string name="lockscreen_charging_info_title">Mostrar informações de carregamento na tela de bloqueio</string>
     <string name="lockscreen_charging_info_summary">Mostra temperatura, corrente e tensão de carga enquanto estiver conectado</string>
@@ -663,4 +664,35 @@
     <!-- Qs Transparency -->
     <string name="qs_transparency_summary">Defina a transparência do painel de configurações rápidas (Necessário reiniciar a interface do sistema)</string>
     <string name="qs_transparency_title">Transparência das configurações rápidas</string>
+    <!-- Brightness control -->
+    <string name="status_bar_brightness_control_title">Controle de brilho</string>
+    <string name="status_bar_brightness_control_summary">Ajuste o brilho deslizando sobre a barra de status</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrar ao tocar</string>
+    <string name="quick_settings_vibrate_summary">Vibrar ao tocar nos blocos QS</string>
+    <!-- Tiles animation style  -->
+    <string name="qs_tile_animation_title">Animações</string>
+    <string name="qs_tile_animation_style_title">Estilo da animação</string>
+    <string name="qs_tile_animation_duration_title">Duração da animação</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolador de animação dos blocos</string>
+    <string name="qs_tile_animation_style_off">Sem animação</string>
+    <string name="qs_tile_animation_style_flip">Girar</string>
+    <string name="qs_tile_animation_style_rotate">Rotacionar</string>
+    <string name="qs_tile_animation_duration_low">Lento</string>
+    <string name="qs_tile_animation_duration_default">Padrão</string>
+    <string name="qs_tile_animation_duration_fast">Rápido</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Acelerar</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Desacelerar</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Acelerar/desacelerar</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Pular</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Ultrapassar</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Antecipar</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Antecipar e ultrapassar</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+    <!-- Data usage info in QS footer -->
+    <string name="qs_footer_datausage_title">Uso de dados</string>
+    <string name="qs_footer_datausage_summary">Mostrar resumo de uso de dados no rodapé das configurações rápidas</string>
 </resources>
