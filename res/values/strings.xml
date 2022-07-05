@@ -389,7 +389,6 @@
     <string name="combined_status_bar_signal_icons_summary">Show single combined icon for WiFi and mobile signal</string>
 
     <!-- QS footer text -->
-    <string name="qs_footer_category">Qs Footer Customization</string>
     <string name="qs_footer_text_show_title">Show QS footer text</string>
     <string name="qs_footer_text_string_title">Customize footer text</string>
     <string name="qs_footer_text_string_summary">Set to empty for default Spark</string>
@@ -815,4 +814,8 @@
     <string name="smart_pixels_percent">Percent of pixels to disable</string>
     <string name="smart_pixels_shift_title">Burn-in protection</string>
     <string name="smart_pixels_shift_summary">Prevents burn-in on OLED devices by shifting pixels every so often</string>
+
+    <!-- Qs Morphing-->
+    <string name="qs_enable_morphing">Enable Morphing on qs tiles</string>
+    <string name="qs_invert_morphing">Swap Morphing on qs tiles</string>  
 </resources>
