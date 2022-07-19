@@ -825,4 +825,17 @@
     <string name="sensor_block_app_picker_title">Block sensors for these apps</string>
     <string name="add_sensor_block_package_title">Add apps for Sensor block</string>
     <string name="add_sensor_block_package_summary">Significant motion, accelerometer, linear acceleration sensors will be blocked for these apps</string>
+
+    <!-- Status Bar Ticker -->
+    <string name="ticker_title">Ticker</string>
+    <string name="ticker_summary">Show notifications ticker-style in status bar</string>
+    <string name="ticker_screen_footer">Ticker is visible only when notification heads-up is not shown. Devices with center notch should hide cutout under User Interface settings or under Developer options.</string>
+    <string name="ticker_screen_title">Status bar ticker</string>
+    <string name="ticker_disabled">No ticker</string>
+    <string name="ticker_enabled">Notification ticker</string>
+    <string name="ticker_media_enabled">Notifications and music ticker</string>
+    <string name="ticker_animation_mode_title">Ticker animation style</string>
+    <string name="ticker_animation_mode_alpha_fade">Fade</string>
+    <string name="ticker_animation_mode_scroll">Scroll</string>
+    <string name="ticker_tick_duration_title">Ticker duration</string>
 </resources>
