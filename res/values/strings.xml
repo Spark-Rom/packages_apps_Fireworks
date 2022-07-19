@@ -6,6 +6,8 @@
     <string name="search_apps">Search apps</string>
     <string name="cancel">Cancel</string>
     <string name="confirm">Confirm</string>
+    <string name="unit_ms">ms</string>
+
     <!-- Categories -->
     <string name="themes_title">Themes</string>
     <string name="qs_themes">Qs Settings</string>
@@ -825,6 +827,9 @@
     <string name="sensor_block_app_picker_title">Block sensors for these apps</string>
     <string name="add_sensor_block_package_title">Add apps for Sensor block</string>
     <string name="add_sensor_block_package_summary">Significant motion, accelerometer, linear acceleration sensors will be blocked for these apps</string>
+    <string name="profile_choose_app">Choose app</string>
+    <string name="dialog_delete_title">Delete</string>
+    <string name="dialog_delete_message">Remove selected item?</string>
 
     <!-- Status Bar Ticker -->
     <string name="ticker_title">Ticker</string>
