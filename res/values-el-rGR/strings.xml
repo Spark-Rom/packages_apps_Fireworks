@@ -7,6 +7,7 @@
     <string name="search_apps">Search apps</string>
     <string name="cancel">Ακύρωση</string>
     <string name="confirm">Επιβεβαίωση</string>
+    <string name="unit_ms">ms</string>
     <!-- Categories -->
     <string name="themes_title">Θέματα</string>
     <string name="qs_themes">Qs Settings</string>
@@ -30,6 +31,7 @@
     <string name="general_category">Γενικά</string>
     <string name="flashlight_category">Φακός</string>
     <string name="qs_category">Qs Customizations</string>
+    <string name="battery_category">Energy saving Configurations</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">Ad-block</string>
     <string name="hosts_block_summary">Block ads with a modified hosts file. Turn off to use third party solutions or if apps cause issues.</string>
@@ -341,7 +343,6 @@
     <string name="combined_status_bar_signal_icons_title">Συνδυασμένα εικονίδια σήματος</string>
     <string name="combined_status_bar_signal_icons_summary">Ενεργοποίηση συνδυασμένων εικονιδίων σήματος στη γραμμή κατάστασης.\nΑπαιτεί επανεκκίνηση του SystemUI</string>
     <!-- QS footer text -->
-    <string name="qs_footer_category">Qs Footer Customization</string>
     <string name="qs_footer_text_show_title">Show QS footer text</string>
     <string name="qs_footer_text_string_title">Προσαρμογή κειμένου υποσέλιδου</string>
     <string name="qs_footer_text_string_summary">Ορίστε σε κενό για προεπιλογή</string>
@@ -695,4 +696,54 @@
     <!-- Data usage info in QS footer -->
     <string name="qs_footer_datausage_title">Data usage</string>
     <string name="qs_footer_datausage_summary">Display data usage summary in quick settings footer</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Landscape R Style A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Landscape L Style A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Landscape R Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Landscape L Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Portrait Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Landscape Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Portrait IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Landscape Airoo</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Landscape Capsule</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_warning_text">Smart pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see improvement in battery life. Note that in some cases it can result in unresponsive areas on touch screen</string>
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Save battery by shutting off extra pixels</string>
+    <string name="smart_pixels_enable_title">Enable Smart Pixels</string>
+    <string name="smart_pixels_enable_summary">Shut off pixels to reduce power consumption</string>
+    <string name="smart_pixels_on_power_save_title">Auto-enable on battery saver</string>
+    <string name="smart_pixels_on_power_save_summary">Enable Smart Pixels when battery saver is enabled</string>
+    <string name="smart_pixels_percent">Percent of pixels to disable</string>
+    <string name="smart_pixels_shift_title">Burn-in protection</string>
+    <string name="smart_pixels_shift_summary">Prevents burn-in on OLED devices by shifting pixels every so often</string>
+    <!-- Qs Morphing-->
+    <string name="qs_enable_morphing">Enable Morphing on qs tiles</string>
+    <string name="qs_invert_morphing">Swap Morphing on qs tiles</string>
+    <!-- Sensor block per-package -->
+    <string name="sensor_block_title">Sensor block per-package</string>
+    <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery</string>
+    <string name="sensor_block_app_picker_title">Block sensors for these apps</string>
+    <string name="add_sensor_block_package_title">Add apps for Sensor block</string>
+    <string name="add_sensor_block_package_summary">Significant motion, accelerometer, linear acceleration sensors will be blocked for these apps</string>
+    <string name="profile_choose_app">Choose app</string>
+    <string name="dialog_delete_title">Διαγραφή</string>
+    <string name="dialog_delete_message">Remove selected item?</string>
+    <!-- Status Bar Ticker -->
+    <string name="ticker_title">Ticker</string>
+    <string name="ticker_summary">Show notifications ticker-style in status bar</string>
+    <string name="ticker_screen_footer">Ticker is visible only when notification heads-up is not shown. Devices with center notch should hide cutout under User Interface settings or under Developer options.</string>
+    <string name="ticker_screen_title">Status bar ticker</string>
+    <string name="ticker_disabled">No ticker</string>
+    <string name="ticker_enabled">Notification ticker</string>
+    <string name="ticker_media_enabled">Notifications and music ticker</string>
+    <string name="ticker_animation_mode_title">Ticker animation style</string>
+    <string name="ticker_animation_mode_alpha_fade">Fade</string>
+    <string name="ticker_animation_mode_scroll">Scroll</string>
+    <string name="ticker_tick_duration_title">Ticker duration</string>
+    <!-- Laboratory - Strict standby -->
+    <string name="strict_standby_policy_title">Strict standby policy</string>
+    <string name="strict_standby_policy_summary">When dismissing from recents, this will force stop apps with restricted battery usage and impose stronger restrictions to them. Also, all app standby restrictions will be imposed even when device is charging.</string>
+    <!-- Force background freezer -->
+    <string name="force_background_freezer_title">Background tasks freezer</string>
+    <string name="force_background_freezer_summary">Freeze tasks with restricted battery usage when moving them to background and unfreeze them when moving to foreground. This could save battery slightly but may lead to crashes and background ANR.</string>
 </resources>

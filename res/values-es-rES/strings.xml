@@ -7,6 +7,7 @@
     <string name="search_apps">Buscar aplicaciones</string>
     <string name="cancel">Cancelar</string>
     <string name="confirm">Confirmar</string>
+    <string name="unit_ms">ms</string>
     <!-- Categories -->
     <string name="themes_title">Temas</string>
     <string name="qs_themes">Ajustes rápidos</string>
@@ -30,6 +31,7 @@
     <string name="general_category">General</string>
     <string name="flashlight_category">Linterna</string>
     <string name="qs_category">Personalizar QS</string>
+    <string name="battery_category">Energy saving Configurations</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">Bloqueo de anuncios</string>
     <string name="hosts_block_summary">Bloquear anuncios con un archivo de hosts modificado. Desactívalo para usar soluciones de terceros o si las aplicaciones causan problemas.</string>
@@ -341,7 +343,6 @@
     <string name="combined_status_bar_signal_icons_title">Iconos de señal combinados</string>
     <string name="combined_status_bar_signal_icons_summary">Activar iconos de señal combinados en la barra de estado. Requiere reiniciar SystemUI o reiniciar</string>
     <!-- QS footer text -->
-    <string name="qs_footer_category">Personalización del pie de página Qs</string>
     <string name="qs_footer_text_show_title">Mostrar texto de los Ajustes Rápidos</string>
     <string name="qs_footer_text_string_title">Personalizar texto abajo de los Ajustes Rápidos</string>
     <string name="qs_footer_text_string_summary">Dejar en blanco para \"Spark\" predeterminado</string>
@@ -695,4 +696,54 @@
     <!-- Data usage info in QS footer -->
     <string name="qs_footer_datausage_title">Uso de datos</string>
     <string name="qs_footer_datausage_summary">Resumen de uso de datos al pie del panel de ajustes rápidos</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Apaisado D Estilo A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Apaisado I Estilo A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Apaisado D Estilo B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Apaisado I Estilo B</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Vertical Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Apaisado Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Vertical iOS</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Apaisado Airoo</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Apaisado Cápsula</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_warning_text">Píxeles Inteligentes es una característica de ahorro de energía. Dependiendo de cuántos píxeles decidas desactivar, podrías ver mejoras en la vida útil de la batería. Ten en cuenta que en algunos casos puede resultar en zonas no receptivas en la pantalla táctil</string>
+    <string name="smart_pixels_title">Píxeles Inteligentes</string>
+    <string name="smart_pixels_summary">Ahorra batería apagando píxeles adicionales</string>
+    <string name="smart_pixels_enable_title">Activar Píxeles Inteligentes</string>
+    <string name="smart_pixels_enable_summary">Apaga píxeles para reducir el consumo de energía</string>
+    <string name="smart_pixels_on_power_save_title">Activar automáticamente en modo ahorro de batería</string>
+    <string name="smart_pixels_on_power_save_summary">Habilitar Píxeles Inteligentes cuando se active el ahorro de batería</string>
+    <string name="smart_pixels_percent">Porcentaje de píxeles a desactivar</string>
+    <string name="smart_pixels_shift_title">Protección anti-quemado</string>
+    <string name="smart_pixels_shift_summary">Previene el quemado en pantallas OLED alternando píxeles de vez en cuando</string>
+    <!-- Qs Morphing-->
+    <string name="qs_enable_morphing">Activar Morphing en los cuadros QS</string>
+    <string name="qs_invert_morphing">Alternar Morphing en los cuadros QS</string>
+    <!-- Sensor block per-package -->
+    <string name="sensor_block_title">Sensor block per-package</string>
+    <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery</string>
+    <string name="sensor_block_app_picker_title">Block sensors for these apps</string>
+    <string name="add_sensor_block_package_title">Add apps for Sensor block</string>
+    <string name="add_sensor_block_package_summary">Significant motion, accelerometer, linear acceleration sensors will be blocked for these apps</string>
+    <string name="profile_choose_app">Choose app</string>
+    <string name="dialog_delete_title">Eliminar</string>
+    <string name="dialog_delete_message">Remove selected item?</string>
+    <!-- Status Bar Ticker -->
+    <string name="ticker_title">Ticker</string>
+    <string name="ticker_summary">Show notifications ticker-style in status bar</string>
+    <string name="ticker_screen_footer">Ticker is visible only when notification heads-up is not shown. Devices with center notch should hide cutout under User Interface settings or under Developer options.</string>
+    <string name="ticker_screen_title">Status bar ticker</string>
+    <string name="ticker_disabled">No ticker</string>
+    <string name="ticker_enabled">Notification ticker</string>
+    <string name="ticker_media_enabled">Notifications and music ticker</string>
+    <string name="ticker_animation_mode_title">Ticker animation style</string>
+    <string name="ticker_animation_mode_alpha_fade">Fade</string>
+    <string name="ticker_animation_mode_scroll">Scroll</string>
+    <string name="ticker_tick_duration_title">Ticker duration</string>
+    <!-- Laboratory - Strict standby -->
+    <string name="strict_standby_policy_title">Strict standby policy</string>
+    <string name="strict_standby_policy_summary">When dismissing from recents, this will force stop apps with restricted battery usage and impose stronger restrictions to them. Also, all app standby restrictions will be imposed even when device is charging.</string>
+    <!-- Force background freezer -->
+    <string name="force_background_freezer_title">Background tasks freezer</string>
+    <string name="force_background_freezer_summary">Freeze tasks with restricted battery usage when moving them to background and unfreeze them when moving to foreground. This could save battery slightly but may lead to crashes and background ANR.</string>
 </resources>
