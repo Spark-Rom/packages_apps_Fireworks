@@ -7,6 +7,7 @@
     <string name="search_apps">アプリを検索</string>
     <string name="cancel">中止</string>
     <string name="confirm">確認</string>
+    <string name="unit_ms">ms</string>
     <!-- Categories -->
     <string name="themes_title">テーマ</string>
     <string name="qs_themes">クイック設定の編集</string>
@@ -29,7 +30,8 @@
     <string name="udfps_category">画面内指紋認証</string>
     <string name="general_category">一般</string>
     <string name="flashlight_category">フラッシュライト</string>
-    <string name="qs_category">Qs Customizations</string>
+    <string name="qs_category">クイック設定の編集</string>
+    <string name="battery_category">Energy saving Configurations</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">広告ブロック</string>
     <string name="hosts_block_summary">編集されたホストファイルで広告をブロックします。別途ブロックアプリを使用していたり問題が発生する場合は無効化して下さい。</string>
@@ -49,8 +51,8 @@
     <!-- Notification light -->
     <string name="notification_light_settings">通知ライト</string>
     <!-- Gaming mode -->
-    <string name="game_space_title">Game Space</string>
-    <string name="game_space_summary">Enhance your gaming experience</string>
+    <string name="game_space_title">ゲームスペース</string>
+    <string name="game_space_summary">ゲーム体験を向上させる</string>
     <!-- Lockscreen battery info -->
     <string name="lockscreen_charging_info_title">ロック画面に充電情報を表示する</string>
     <string name="lockscreen_charging_info_summary">充電中に温度や充電電流などを表示する</string>
@@ -341,7 +343,6 @@
     <string name="combined_status_bar_signal_icons_title">結合シグナルアイコン</string>
     <string name="combined_status_bar_signal_icons_summary">ステータスバーで結合された電波アイコンを有効化する。\nシステム UI の再起動が必要です</string>
     <!-- QS footer text -->
-    <string name="qs_footer_category">クイック設定フッターの編集</string>
     <string name="qs_footer_text_show_title">クイック設定フッターの文字を表示</string>
     <string name="qs_footer_text_string_title">フッターのテキストを編集</string>
     <string name="qs_footer_text_string_summary">空白に設定すると Spark が既定値として表示されます</string>
@@ -665,34 +666,84 @@
     <string name="qs_transparency_summary">クイック設定をどの程度透明にするかを選択する (システム UI の再起動が必要です)</string>
     <string name="qs_transparency_title">クイック設定の透明度</string>
     <!-- Brightness control -->
-    <string name="status_bar_brightness_control_title">Brightness control</string>
-    <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across the status bar</string>
+    <string name="status_bar_brightness_control_title">明るさコントロール</string>
+    <string name="status_bar_brightness_control_summary">ステータスバーの上をスライドして明るさを調整する</string>
     <!-- QuickSettings haptic feedback -->
-    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
-    <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
+    <string name="quick_settings_vibrate_title">タッチで振動</string>
+    <string name="quick_settings_vibrate_summary">タイルに触れた時に振動させる</string>
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">アニメーション</string>
-    <string name="qs_tile_animation_style_title">Animation style</string>
-    <string name="qs_tile_animation_duration_title">Animation duration</string>
-    <string name="qs_tile_animation_interpolator_title">Tiles animation interpolator</string>
-    <string name="qs_tile_animation_style_off">No animation</string>
-    <string name="qs_tile_animation_style_flip">Flip</string>
-    <string name="qs_tile_animation_style_rotate">Rotate</string>
-    <string name="qs_tile_animation_duration_low">Low</string>
+    <string name="qs_tile_animation_style_title">アニメーションスタイル</string>
+    <string name="qs_tile_animation_duration_title">アニメーション速度</string>
+    <string name="qs_tile_animation_interpolator_title">タイルアニメーションの補間</string>
+    <string name="qs_tile_animation_style_off">なし</string>
+    <string name="qs_tile_animation_style_flip">反転</string>
+    <string name="qs_tile_animation_style_rotate">回転</string>
+    <string name="qs_tile_animation_duration_low">低速</string>
     <string name="qs_tile_animation_duration_default">既定</string>
-    <string name="qs_tile_animation_duration_fast">Fast</string>
-    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
-    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
-    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
-    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
-    <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
-    <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
-    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
-    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+    <string name="qs_tile_animation_duration_fast">高速</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">等速</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">加速</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">減速</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">加速と減速</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">弾む</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">通過</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">先取り</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">先取りと通過</string>
     <string name="qs_set_animation_style">%1$s</string>
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
     <!-- Data usage info in QS footer -->
-    <string name="qs_footer_datausage_title">Data usage</string>
-    <string name="qs_footer_datausage_summary">Display data usage summary in quick settings footer</string>
+    <string name="qs_footer_datausage_title">データ使用量</string>
+    <string name="qs_footer_datausage_summary">クイック設定のフッターにデータ使用量を表示する</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">右横向きスタイル A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">左横向きスタイル A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">右横向きスタイル B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">左横向きスタイル B</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">縦向き Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_line">横向き Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">縦向き IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">横向き Airoo</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">横向き Capsule</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_warning_text">スマートピクセルはバッテリー節約機能です。ピクセルを遮断する数によってはバッテリー持続時間を改善できることがあります。タッチ画面に反応しない範囲が発生する可能性があることに注意して下さい。</string>
+    <string name="smart_pixels_title">スマートピクセル</string>
+    <string name="smart_pixels_summary">余分な画素を停止させてバッテリーを節約する</string>
+    <string name="smart_pixels_enable_title">スマートピクセルを有効化</string>
+    <string name="smart_pixels_enable_summary">消費電力を削減するため画素を遮断する</string>
+    <string name="smart_pixels_on_power_save_title">自動有効</string>
+    <string name="smart_pixels_on_power_save_summary">バッテリーセーバー起動時は自動的に有効にする</string>
+    <string name="smart_pixels_percent">無効にする画素の割合</string>
+    <string name="smart_pixels_shift_title">焼き付き保護</string>
+    <string name="smart_pixels_shift_summary">使う画素を遷移させ有機 EL 画面の焼付きを避ける</string>
+    <!-- Qs Morphing-->
+    <string name="qs_enable_morphing">クイック設定タイルのモーフィング有効化</string>
+    <string name="qs_invert_morphing">クイック設定タイルのモーフィングを入れ替える</string>
+    <!-- Sensor block per-package -->
+    <string name="sensor_block_title">Sensor block per-package</string>
+    <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery</string>
+    <string name="sensor_block_app_picker_title">Block sensors for these apps</string>
+    <string name="add_sensor_block_package_title">Add apps for Sensor block</string>
+    <string name="add_sensor_block_package_summary">Significant motion, accelerometer, linear acceleration sensors will be blocked for these apps</string>
+    <string name="profile_choose_app">Choose app</string>
+    <string name="dialog_delete_title">削除</string>
+    <string name="dialog_delete_message">Remove selected item?</string>
+    <!-- Status Bar Ticker -->
+    <string name="ticker_title">Ticker</string>
+    <string name="ticker_summary">Show notifications ticker-style in status bar</string>
+    <string name="ticker_screen_footer">Ticker is visible only when notification heads-up is not shown. Devices with center notch should hide cutout under User Interface settings or under Developer options.</string>
+    <string name="ticker_screen_title">Status bar ticker</string>
+    <string name="ticker_disabled">No ticker</string>
+    <string name="ticker_enabled">Notification ticker</string>
+    <string name="ticker_media_enabled">Notifications and music ticker</string>
+    <string name="ticker_animation_mode_title">Ticker animation style</string>
+    <string name="ticker_animation_mode_alpha_fade">Fade</string>
+    <string name="ticker_animation_mode_scroll">Scroll</string>
+    <string name="ticker_tick_duration_title">Ticker duration</string>
+    <!-- Laboratory - Strict standby -->
+    <string name="strict_standby_policy_title">Strict standby policy</string>
+    <string name="strict_standby_policy_summary">When dismissing from recents, this will force stop apps with restricted battery usage and impose stronger restrictions to them. Also, all app standby restrictions will be imposed even when device is charging.</string>
+    <!-- Force background freezer -->
+    <string name="force_background_freezer_title">Background tasks freezer</string>
+    <string name="force_background_freezer_summary">Freeze tasks with restricted battery usage when moving them to background and unfreeze them when moving to foreground. This could save battery slightly but may lead to crashes and background ANR.</string>
 </resources>

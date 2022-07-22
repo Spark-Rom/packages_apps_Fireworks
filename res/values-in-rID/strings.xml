@@ -7,6 +7,7 @@
     <string name="search_apps">Cari aplikasi</string>
     <string name="cancel">Batal</string>
     <string name="confirm">Konfirmasi</string>
+    <string name="unit_ms">ms</string>
     <!-- Categories -->
     <string name="themes_title">Tema</string>
     <string name="qs_themes">Pengaturan Setelan Cepat</string>
@@ -30,6 +31,7 @@
     <string name="general_category">Umum</string>
     <string name="flashlight_category">Lampu Senter</string>
     <string name="qs_category">Kustomisasi Setelan Cepat</string>
+    <string name="battery_category">Energy saving Configurations</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">Pemblokir Iklan</string>
     <string name="hosts_block_summary">Blokir iklan dengan file host yang dimodifikasi. Matikan untuk menggunakan solusi pihak ketiga atau jika aplikasi menyebabkan masalah.</string>
@@ -341,7 +343,6 @@
     <string name="combined_status_bar_signal_icons_title">Ikon sinyal gabungan</string>
     <string name="combined_status_bar_signal_icons_summary">Tampilkan ikon gabungan tunggal untuk WiFi dan sinyal seluler</string>
     <!-- QS footer text -->
-    <string name="qs_footer_category">Kustomisasi Footer Setelan Cepat</string>
     <string name="qs_footer_text_show_title">Tampilkan teks footer Setelan Cepat</string>
     <string name="qs_footer_text_string_title">Kustomisasi teks footer</string>
     <string name="qs_footer_text_string_summary">Setel ke kosong sebagai Spark</string>
@@ -695,4 +696,54 @@
     <!-- Data usage info in QS footer -->
     <string name="qs_footer_datausage_title">Penggunaan data</string>
     <string name="qs_footer_datausage_summary">Tampilkan ringkasan penggunaan data di footer setelan cepat</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Mendatar kanan Gaya A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Mendatar kiri Gaya A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Mendatar kanan Gaya B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Mendatar kiri Gaya B</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Portrait Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Landscape Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Portrait IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Landscape Airoo</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Landscape Capsule</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_warning_text">Piksel Cerdas adalah fitur hemat daya. Bergantung pada berapa banyak piksel yang Anda putuskan untuk dimatikan, Anda dapat melihat peningkatan dalam masa pakai baterai. Perhatikan bahwa dalam beberapa kasus dapat mengakibatkan area yang tidak responsif pada layar sentuh</string>
+    <string name="smart_pixels_title">Piksel Cerdas</string>
+    <string name="smart_pixels_summary">Menghemat baterai dengan mematikan beberapa piksel</string>
+    <string name="smart_pixels_enable_title">Aktifkan Piksel Cerdas</string>
+    <string name="smart_pixels_enable_summary">Mematikan beberapa piksel untuk mengurangi konsumsi daya</string>
+    <string name="smart_pixels_on_power_save_title">Aktifkan otomatis pada penghemat baterai</string>
+    <string name="smart_pixels_on_power_save_summary">Aktifkan Piksel Cerdas saat penghemat baterai diaktifkan</string>
+    <string name="smart_pixels_percent">Persentase piksel untuk dimatikan</string>
+    <string name="smart_pixels_shift_title">Perlindungan burn-in</string>
+    <string name="smart_pixels_shift_summary">Mencegah burn-in pada perangkat OLED dengan sering menggeser piksel</string>
+    <!-- Qs Morphing-->
+    <string name="qs_enable_morphing">Aktifkan Morphing pada ubin setelan cepat</string>
+    <string name="qs_invert_morphing">Tukar Morphing pada ubin setelan cepat</string>
+    <!-- Sensor block per-package -->
+    <string name="sensor_block_title">Sensor block per-package</string>
+    <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery</string>
+    <string name="sensor_block_app_picker_title">Block sensors for these apps</string>
+    <string name="add_sensor_block_package_title">Add apps for Sensor block</string>
+    <string name="add_sensor_block_package_summary">Significant motion, accelerometer, linear acceleration sensors will be blocked for these apps</string>
+    <string name="profile_choose_app">Choose app</string>
+    <string name="dialog_delete_title">Hapus</string>
+    <string name="dialog_delete_message">Remove selected item?</string>
+    <!-- Status Bar Ticker -->
+    <string name="ticker_title">Ticker</string>
+    <string name="ticker_summary">Show notifications ticker-style in status bar</string>
+    <string name="ticker_screen_footer">Ticker is visible only when notification heads-up is not shown. Devices with center notch should hide cutout under User Interface settings or under Developer options.</string>
+    <string name="ticker_screen_title">Status bar ticker</string>
+    <string name="ticker_disabled">No ticker</string>
+    <string name="ticker_enabled">Notification ticker</string>
+    <string name="ticker_media_enabled">Notifications and music ticker</string>
+    <string name="ticker_animation_mode_title">Ticker animation style</string>
+    <string name="ticker_animation_mode_alpha_fade">Fade</string>
+    <string name="ticker_animation_mode_scroll">Scroll</string>
+    <string name="ticker_tick_duration_title">Ticker duration</string>
+    <!-- Laboratory - Strict standby -->
+    <string name="strict_standby_policy_title">Strict standby policy</string>
+    <string name="strict_standby_policy_summary">When dismissing from recents, this will force stop apps with restricted battery usage and impose stronger restrictions to them. Also, all app standby restrictions will be imposed even when device is charging.</string>
+    <!-- Force background freezer -->
+    <string name="force_background_freezer_title">Background tasks freezer</string>
+    <string name="force_background_freezer_summary">Freeze tasks with restricted battery usage when moving them to background and unfreeze them when moving to foreground. This could save battery slightly but may lead to crashes and background ANR.</string>
 </resources>
