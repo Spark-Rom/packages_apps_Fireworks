@@ -858,4 +858,8 @@
     <!-- Wi-Fi Standard icon -->
     <string name="show_wifi_standard_icon_title">Show Wi-Fi Standard icon</string>
     <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
+
+    <!-- Clock Size -->
+    <string name="status_bar_clock_font_size_title">Statusbar Clock font size</string>
+    <string name="qs_clock_font_size_title">QS Header Clock font size</string>
 </resources>
