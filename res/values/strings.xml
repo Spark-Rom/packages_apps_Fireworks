@@ -612,19 +612,19 @@
     <string name="lock_screen_custom_clock_face_spark_circle">Spark Circle</string>
 
     <!-- Custom settings dashboard style -->
-    <string name="settings_dashboard_style_title">Settings layout</string>
+    <string name="settings_dashboard_style_title">Main menu layout</string>
     <string name="settings_dashboard_style_aosp">Aosp</string>
     <string name="settings_dashboard_style_oos11">OxygenOS 11</string>
     <string name="settings_dashboard_style_oos12">OxygenOS 12</string>
     <string name="settings_dashboard_style_spark">Spark</string>
     <string name="settings_dashboard_style_spark_clean">Spark Clean</string>
     <string name="settings_layout_category_title">Settings UI interface</string>
-    <string name="settings_base_style_title">Settings Base layout</string>
-    <string name="settings_base_style_summary">Use an alternative layout for setting menus</string>
-    <string name="settings_home_style_title">Settings Home layout</string>
-    <string name="settings_home_style_summary">Use stock aosp layout for homepage</string>
-    <string name="disable_usercard_title">Settings UserCard</string>
-    <string name="disable_usercard_summary">Toggle in order not to show the usercard on main settings page</string>
+    <string name="settings_base_style_title">Sub-menus header</string>
+    <string name="settings_base_style_summary">Use an alternative layout for the header in the sub-menus of Settings</string>
+    <string name="settings_home_style_title">Main menu header</string>
+    <string name="settings_home_style_summary">Use stock aosp layout for the header in the main menu of Settings</string>
+    <string name="disable_usercard_title">UserCard</string>
+    <string name="disable_usercard_summary">Toggle in order not to show the usercard on main menu of Settings</string>
 
     <!-- Ignore window secure -->
     <string name="ignore_window_secure_title">Ignore window secure flags</string>
