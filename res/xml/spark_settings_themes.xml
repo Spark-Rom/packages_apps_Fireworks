@@ -165,6 +165,13 @@
             settings:interval="1"
             android:defaultValue="2" />
 
+        <com.spark.support.preferences.SystemSettingSeekBarPreference
+            android:key="qs_layout_columns_landscape"
+            android:title="@string/qs_columns_landscape_title"
+            android:max="6"
+            android:min="4"
+            settings:interval="1"
+            android:defaultValue="4" />
     </PreferenceCategory>
 
     <PreferenceCategory
