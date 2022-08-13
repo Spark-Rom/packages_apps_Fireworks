@@ -199,17 +199,6 @@
      <PreferenceCategory
         android:title="@string/qs_category">
 
-    <com.spark.support.preferences.SystemSettingSwitchPreference
-        android:key="qs_enable_morphing"
-        android:title="@string/qs_enable_morphing"
-        android:defaultValue="true" />
-
-    <com.spark.support.preferences.SystemSettingSwitchPreference
-        android:key="qs_invert_morphing"
-        android:title="@string/qs_invert_morphing"
-        android:dependency="qs_enable_morphing"
-        android:defaultValue="false" />
-
     <com.spark.support.preferences.SystemSettingSeekBarPreference
         android:key="qs_transparency"
         android:title="@string/qs_transparency_title"
