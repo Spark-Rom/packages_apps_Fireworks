@@ -878,4 +878,9 @@
     <!-- Clock Size -->
     <string name="status_bar_clock_font_size_title">Statusbar Clock font size</string>
     <string name="qs_clock_font_size_title">QS Header Clock font size</string>
+
+    <!-- Status bar padding -->
+    <string name="statusbar_padding">Status bar padding</string>
+    <string name="statusbar_left_padding">Left padding</string>
+    <string name="statusbar_right_padding">Right padding</string>
 </resources>
