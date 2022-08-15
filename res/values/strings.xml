@@ -704,4 +704,7 @@
     <string name="qs_tile_layout_summary">Show label below icon instead next to icon</string>
     <string name="qs_columns_portrait_title">Columns (portrait)</string>
     <string name="qs_columns_landscape_title">Columns (landscape)</string>
+
+    <!-- Sb clock bg -->
+    <string name="status_bar_show_clock_bg">Show clock background chip</string>
 </resources>
