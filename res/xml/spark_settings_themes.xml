@@ -32,9 +32,8 @@
 
         <Preference
             android:key="android.theme.customization.fonts"
-            android:title="@string/theme_customization_font_title"
-            android:summary="@string/theme_customization_font_summary"
-            android:fragment="com.spark.settings.fragments.FontsPicker" />
+            android:title="@string/font_settings"
+            android:fragment="com.spark.settings.fragments.FontsFragment" />
 
         <Preference
             android:key="android.theme.customization.icon_pack"
