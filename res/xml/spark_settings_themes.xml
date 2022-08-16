@@ -33,6 +33,7 @@
         <Preference
             android:key="android.theme.customization.fonts"
             android:title="@string/font_settings"
+            android:summary="@string/font_settings_summary"
             android:fragment="com.spark.settings.fragments.FontsFragment" />
 
         <Preference
