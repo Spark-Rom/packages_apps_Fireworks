@@ -7,7 +7,7 @@
     <string name="search_apps">Cari aplikasi</string>
     <string name="cancel">Batal</string>
     <string name="confirm">Konfirmasi</string>
-    <string name="unit_ms">ms</string>
+    <string name="unit_ms">md</string>
     <!-- Categories -->
     <string name="themes_title">Tema</string>
     <string name="qs_themes">Pengaturan Setelan Cepat</string>
@@ -31,7 +31,7 @@
     <string name="general_category">Umum</string>
     <string name="flashlight_category">Lampu Senter</string>
     <string name="qs_category">Kustomisasi Setelan Cepat</string>
-    <string name="battery_category">Energy saving Configurations</string>
+    <string name="battery_category">Konfigurasi hemat energi</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">Pemblokir Iklan</string>
     <string name="hosts_block_summary">Blokir iklan dengan file host yang dimodifikasi. Matikan untuk menggunakan solusi pihak ketiga atau jika aplikasi menyebabkan masalah.</string>
@@ -369,9 +369,6 @@
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
     <string name="theme_customization_icon_shape_title">Bentuk ikon</string>
     <string name="theme_customization_icon_shape_summary">Setel gaya bentuk ikon sistem</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
-    <string name="theme_customization_font_title">Font Judul / Isi</string>
-    <string name="theme_customization_font_summary">Setel gaya font sistem</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
     <string name="theme_customization_icon_pack_title">Paket ikon</string>
     <string name="theme_customization_icon_pack_summary">Setel gaya paket ikon kustom</string>
@@ -558,6 +555,7 @@
     <string name="artwork_media_background_summary">Tetapkan media karya seni sebagai latar belakang media notifikasi</string>
     <string name="artwork_media_background_enable_blur_title">Blur latar belakang karya seni media</string>
     <string name="artwork_media_background_blur_radius_title">Jumlah blur untuk karya seni media</string>
+    <string name="artwork_media_background_fade_filter_title">Jumlah memudar untuk karya seni media</string>
     <string name="artwork_media_background_alpha_title">Transparansi karya seni media</string>
     <!-- Lock screen album art filter -->
     <string name="lockscreen_albumart_filter_title">Filter seni sampul media</string>
@@ -640,19 +638,19 @@
     <string name="lock_screen_custom_clock_face_spark">Spark</string>
     <string name="lock_screen_custom_clock_face_spark_circle">Spark Circle</string>
     <!-- Custom settings dashboard style -->
-    <string name="settings_dashboard_style_title">Tata letak Setelan</string>
+    <string name="settings_dashboard_style_title">Tata letak menu utama</string>
     <string name="settings_dashboard_style_aosp">AOSP</string>
     <string name="settings_dashboard_style_oos11">OxygenOS 11</string>
     <string name="settings_dashboard_style_oos12">OxygenOS 12</string>
     <string name="settings_dashboard_style_spark">Spark</string>
     <string name="settings_dashboard_style_spark_clean">Spark Clean</string>
     <string name="settings_layout_category_title">Atur Antarmuka Setelan</string>
-    <string name="settings_base_style_title">Tata letak Basis Setelan</string>
-    <string name="settings_base_style_summary">Gunakan tata letak alternatif untuk mengatur menu</string>
-    <string name="settings_home_style_title">Tata letak Beranda Setelan</string>
-    <string name="settings_home_style_summary">Gunakan tata letak bawaan aosp untuk beranda</string>
-    <string name="disable_usercard_title">Kartu Pengguna Setelan</string>
-    <string name="disable_usercard_summary">Tombol agar tidak menampilkan kartu pengguna di halaman setelan utama</string>
+    <string name="settings_base_style_title">Tajuk sub-menu</string>
+    <string name="settings_base_style_summary">Gunakan tata letak alternatif untuk tajuk di sub-menu Setelan</string>
+    <string name="settings_home_style_title">Tajuk menu utama</string>
+    <string name="settings_home_style_summary">Gunakan tata letak bawaan aosp untuk tajuk di menu utama Setelan</string>
+    <string name="disable_usercard_title">Kartu Pengguna</string>
+    <string name="disable_usercard_summary">Tombol agar tidak menampilkan kartu pengguna di menu utama Setelan</string>
     <!-- Application downgrade -->
     <string name="app_downgrade_title">Izinkan penurunan versi aplikasi</string>
     <string name="app_downgrade_summary">Ini memungkinkan Anda untuk menurunkan versi aplikasi. Perhatikan bahwa ini dapat menyebabkan crash dan kerusakan data.</string>
@@ -720,30 +718,64 @@
     <string name="qs_enable_morphing">Aktifkan Morphing pada ubin setelan cepat</string>
     <string name="qs_invert_morphing">Tukar Morphing pada ubin setelan cepat</string>
     <!-- Sensor block per-package -->
-    <string name="sensor_block_title">Sensor block per-package</string>
-    <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery</string>
-    <string name="sensor_block_app_picker_title">Block sensors for these apps</string>
-    <string name="add_sensor_block_package_title">Add apps for Sensor block</string>
-    <string name="add_sensor_block_package_summary">Significant motion, accelerometer, linear acceleration sensors will be blocked for these apps</string>
-    <string name="profile_choose_app">Choose app</string>
+    <string name="sensor_block_title">Blokir sensor per-paket</string>
+    <string name="sensor_block_summary">Blokir akses ke sensor tertentu untuk beberapa aplikasi untuk menghemat baterai</string>
+    <string name="sensor_block_app_picker_title">Blokir sensor untuk aplikasi ini</string>
+    <string name="add_sensor_block_package_title">Tambahkan aplikasi untuk blokir sensor</string>
+    <string name="add_sensor_block_package_summary">Gerakan signifikan, akselerometer, sensor percepatan linier akan diblokir untuk aplikasi ini</string>
+    <string name="profile_choose_app">Pilih aplikasi</string>
     <string name="dialog_delete_title">Hapus</string>
-    <string name="dialog_delete_message">Remove selected item?</string>
+    <string name="dialog_delete_message">Hapus item yang dipilih?</string>
     <!-- Status Bar Ticker -->
     <string name="ticker_title">Ticker</string>
-    <string name="ticker_summary">Show notifications ticker-style in status bar</string>
-    <string name="ticker_screen_footer">Ticker is visible only when notification heads-up is not shown. Devices with center notch should hide cutout under User Interface settings or under Developer options.</string>
-    <string name="ticker_screen_title">Status bar ticker</string>
-    <string name="ticker_disabled">No ticker</string>
-    <string name="ticker_enabled">Notification ticker</string>
-    <string name="ticker_media_enabled">Notifications and music ticker</string>
-    <string name="ticker_animation_mode_title">Ticker animation style</string>
-    <string name="ticker_animation_mode_alpha_fade">Fade</string>
-    <string name="ticker_animation_mode_scroll">Scroll</string>
-    <string name="ticker_tick_duration_title">Ticker duration</string>
+    <string name="ticker_summary">Tampilkan notifikasi gaya ticker di bilah status</string>
+    <string name="ticker_screen_footer">Ticker hanya terlihat ketika notifikasi mengambang tidak ditampilkan. Perangkat dengan notch harus menyembunyikan potongan di bawah pengaturan Antarmuka Pengguna atau di bawah Opsi Pengembang.</string>
+    <string name="ticker_screen_title">Ticker bilah status</string>
+    <string name="ticker_disabled">Tanpa ticker</string>
+    <string name="ticker_enabled">Notifikasi ticker</string>
+    <string name="ticker_media_enabled">Notifikasi dan ticker musik</string>
+    <string name="ticker_animation_mode_title">Gaya animasi ticker</string>
+    <string name="ticker_animation_mode_alpha_fade">Memudar</string>
+    <string name="ticker_animation_mode_scroll">Menggulir</string>
+    <string name="ticker_tick_duration_title">Durasi ticker</string>
     <!-- Laboratory - Strict standby -->
-    <string name="strict_standby_policy_title">Strict standby policy</string>
-    <string name="strict_standby_policy_summary">When dismissing from recents, this will force stop apps with restricted battery usage and impose stronger restrictions to them. Also, all app standby restrictions will be imposed even when device is charging.</string>
+    <string name="strict_standby_policy_title">Kebijakan siaga yang ketat</string>
+    <string name="strict_standby_policy_summary">Saat menutup dari yang terbaru, ini akan memaksa menghentikan aplikasi dengan penggunaan baterai terbatas dan memberlakukan pembatasan yang lebih kuat kepada mereka. Selain itu, semua batasan siaga aplikasi akan diberlakukan bahkan saat perangkat sedang diisi daya.</string>
+    <!-- QS tiles layout direction: vertical or horizontal -->
+    <string name="qs_tile_layout_category_title">Tile layout</string>
+    <string name="qs_tile_layout_title">Vertical layout</string>
+    <string name="qs_tile_layout_summary">Enable for vertical layout. Default is horizontal</string>
+    <!-- QS rows and columns -->
+    <string name="qs_layout_category_title">QS Layout</string>
+    <string name="qs_rows_portrait_title">Tile rows on portrait</string>
+    <string name="qs_rows_landscape_title">Tile rows on landscape</string>
+    <string name="qs_columns_portrait_title">Tile columns on portrait</string>
+    <string name="qs_columns_landscape_title">Tile columns on landscape</string>
+    <!-- QS tiles title visibility -->
+    <string name="qs_tile_title_visibility_title">Hide tile titles</string>
+    <string name="qs_tile_title_visibility_summary">Toggle to hide tile titles</string>
     <!-- Force background freezer -->
-    <string name="force_background_freezer_title">Background tasks freezer</string>
-    <string name="force_background_freezer_summary">Freeze tasks with restricted battery usage when moving them to background and unfreeze them when moving to foreground. This could save battery slightly but may lead to crashes and background ANR.</string>
+    <string name="force_background_freezer_title">Bekukan tugas latar belakang</string>
+    <string name="force_background_freezer_summary">Membekukan tugas dengan penggunaan baterai terbatas saat memindahkannya ke latar belakang dan mencairkan saat memindahkannya ke latar depan. Ini dapat menghemat baterai sedikit tetapi dapat menyebabkan crash dan ANR latar belakang.</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Show Wi-Fi Standard icon</string>
+    <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
+    <!-- Clock Size -->
+    <string name="status_bar_clock_font_size_title">Statusbar Clock font size</string>
+    <string name="qs_clock_font_size_title">QS Header Clock font size</string>
+    <!-- Status bar padding -->
+    <string name="statusbar_padding">Status bar padding</string>
+    <string name="statusbar_left_padding">Left padding</string>
+    <string name="statusbar_right_padding">Right padding</string>
+    <string name="status_bar_show_clock_bg">Show clock background chip</string>
+    <!-- Font -->
+    <string name="font_settings">Font Settings</string>
+    <string name="font_settings_summary">Set system font style</string>
+    <string name="font_preference_title">Headline / Body font</string>
+    <string name="custom_font_preference_title">Custom Headline / Body font</string>
+    <string name="custom_font_preference_footer_message">Reboot after selecting a font to take effect</string>
+    <string name="cannot_resolve_activity">Unable to find a suitable activity to perform this action!</string>
+    <string name="invalid_font_file">Font file does not have valid postscript table</string>
+    <string name="failed_to_update_font">Failed to update font</string>
+    <string name="failed_to_copy_file_to_cache">Failed to copy font to cache</string>
 </resources>

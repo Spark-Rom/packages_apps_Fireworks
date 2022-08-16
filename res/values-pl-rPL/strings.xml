@@ -54,8 +54,8 @@
     <string name="game_space_title">Game Space</string>
     <string name="game_space_summary">Enhance your gaming experience</string>
     <!-- Lockscreen battery info -->
-    <string name="lockscreen_charging_info_title">Show charging info in lockscreen</string>
-    <string name="lockscreen_charging_info_summary">Shows temperature, charging current and more while plugged in</string>
+    <string name="lockscreen_charging_info_title">Pokaż informacje o ładowaniu na ekranie blokady</string>
+    <string name="lockscreen_charging_info_summary">Pokazuje temperaturę, prąd ładowania i wiele innych informacji, gdy jest podłączony do ładowania</string>
     <!-- Heads up -->
     <string name="headsup_category">Ustawienia wyskakujących powiadomień</string>
     <string name="heads_up_notifications">Wyskakujące powiadomienia \"Heads up\"</string>
@@ -72,7 +72,7 @@
     <string name="torch_power_button_gesture_lp">Przytrzymanie przycisku zasilania</string>
     <!-- Long press power for torch -->
     <string name="torch_long_press_power_gesture_title">Long press for torch</string>
-    <string name="torch_long_press_power_gesture_desc">Activate the torch by long pressing the power button while the display is off</string>
+    <string name="torch_long_press_power_gesture_desc">Aktywuj latarkę poprzez długie naciśnięcie przycisku zasilania, gdy wyświetlacz jest wyłączony</string>
     <string name="torch_long_press_power_timeout_title">Automatically turn torch off</string>
     <string name="torch_long_press_power_timeout_never">Never</string>
     <string name="torch_long_press_power_timeout_1min">1 minuta</string>
@@ -85,7 +85,7 @@
     <string name="double_tap_to_sleep_lockscreen_summary">Double-tap on the top third or bottom shortcut area of the lock screen to put the device to sleep</string>
     <!-- Double tap status bar to sleep -->
     <string name="double_tap_to_sleep_title">Tap on status bar</string>
-    <string name="double_tap_to_sleep_summary">Double-tap status bar to put the device to sleep</string>
+    <string name="double_tap_to_sleep_summary">Stuknij dwukrotnie w pasek stanu, aby uśpić urządzenie</string>
     <!-- Double Tap on Doze to wake -->
     <string name="double_tap_on_doze_to_wake_title">Tap to wake on doze</string>
     <string name="double_tap_on_doze_to_wake_summary">Double-tap to wake when device is dreaming</string>
@@ -102,14 +102,14 @@
     <string name="traffic_title">Traffic indicators</string>
     <string name="traffic_summary">Customize the traffic indicators</string>
     <string name="network_traffic_autohide_threshold_title">Auto-hide threshold</string>
-    <string name="network_traffic_location_title">Location</string>
+    <string name="network_traffic_location_title">Lokalizacja</string>
     <string name="network_traffic_disabled">Wyłączone</string>
     <string name="network_traffic_statusbar">Belka powiadomień</string>
     <string name="network_traffic_qs_header">QS header</string>
     <string name="network_traffic_refresh_interval_title">Refresh interval</string>
-    <string name="network_traffic_mode_title">Display mode</string>
+    <string name="network_traffic_mode_title">Tryb wyświetlania</string>
     <string name="network_traffic_dynamic">Dynamic</string>
-    <string name="network_traffic_download">Download</string>
+    <string name="network_traffic_download">Pobierz</string>
     <string name="network_traffic_upload">Upload</string>
     <!-- Statusbar categories -->
     <string name="status_bar_icons_category_title">Ikony</string>
@@ -129,7 +129,7 @@
     <string name="vowifi_icon_title">Ikona VoWiFi</string>
     <string name="vowifi_icon_summary">Wyświetl ikonę VoWiFi, gdy jest dostępna</string>
     <string name="volte_vowifi_override_title">VoWiFi override</string>
-    <string name="volte_vowifi_override_summary">Hide VoLTE when VoWiFi is available</string>
+    <string name="volte_vowifi_override_summary">Ukryj VoLTE, gdy VoWiFi jest dostępne</string>
     <!-- Power Menu -->
     <string name="power_menu_title">Menu zasilania</string>
     <string name="power_menu_title_summary">Wyświetl lub zmień elementy menu zasilania</string>
@@ -174,7 +174,7 @@
     <string name="system_black_theme_title">Użyj czarnego motywu</string>
     <string name="system_black_theme_summary">Wymuś czarne kolory tła</string>
     <!-- Statusbar colored icons -->
-    <string name="statusbar_colored_icons_title">Colored icons</string>
+    <string name="statusbar_colored_icons_title">Kolorowe Ikony</string>
     <string name="statusbar_colored_icons_summary">Use app icons for notification icons in statusbar</string>
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Secure QS tiles require unlocking</string>
@@ -202,7 +202,7 @@
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Ustawienia zegara i daty</string>
     <string name="status_bar_clock_summary">Customize clock &amp; date</string>
-    <string name="status_bar_clock_seconds_title">Clock seconds</string>
+    <string name="status_bar_clock_seconds_title">Pokaż sekundy</string>
     <string name="status_bar_clock_seconds_summary">Display seconds next to clock in status bar</string>
     <string name="status_bar_clock_position_title">Clock style</string>
     <string name="status_bar_clock_position_right">Z prawej</string>
@@ -369,9 +369,6 @@
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
     <string name="theme_customization_icon_shape_title">Kształt ikon</string>
     <string name="theme_customization_icon_shape_summary">Set system icon shape style</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
-    <string name="theme_customization_font_title">Nagłówek / Czcionka treści</string>
-    <string name="theme_customization_font_summary">Set system font style</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
     <string name="theme_customization_icon_pack_title">Zestaw ikon</string>
     <string name="theme_customization_icon_pack_summary">Set custom icon pack style</string>
@@ -558,6 +555,7 @@
     <string name="artwork_media_background_summary">Ustaw okładkę multimediów jako tło powiadomienia mediów</string>
     <string name="artwork_media_background_enable_blur_title">Rozmyj tło okładki multimediów</string>
     <string name="artwork_media_background_blur_radius_title">Siła rozmycia tła okładki multimediów</string>
+    <string name="artwork_media_background_fade_filter_title">Fade amount for media artwork</string>
     <string name="artwork_media_background_alpha_title">Przezroczystość tła okładki multimediów</string>
     <!-- Lock screen album art filter -->
     <string name="lockscreen_albumart_filter_title">Media cover art filter</string>
@@ -640,19 +638,19 @@
     <string name="lock_screen_custom_clock_face_spark">Spark</string>
     <string name="lock_screen_custom_clock_face_spark_circle">Okrąg Spark</string>
     <!-- Custom settings dashboard style -->
-    <string name="settings_dashboard_style_title">Settings layout</string>
+    <string name="settings_dashboard_style_title">Main menu layout</string>
     <string name="settings_dashboard_style_aosp">Aosp</string>
     <string name="settings_dashboard_style_oos11">OxygenOS 11</string>
     <string name="settings_dashboard_style_oos12">OxygenOS 12</string>
     <string name="settings_dashboard_style_spark">Spark</string>
     <string name="settings_dashboard_style_spark_clean">Spark Clean</string>
     <string name="settings_layout_category_title">Settings UI interface</string>
-    <string name="settings_base_style_title">Settings Base layout</string>
-    <string name="settings_base_style_summary">Use an alternative layout for setting menus</string>
-    <string name="settings_home_style_title">Settings Home layout</string>
-    <string name="settings_home_style_summary">Use stock aosp layout for homepage</string>
-    <string name="disable_usercard_title">Settings UserCard</string>
-    <string name="disable_usercard_summary">Toggle in order not to show the usercard on main settings page</string>
+    <string name="settings_base_style_title">Sub-menus header</string>
+    <string name="settings_base_style_summary">Use an alternative layout for the header in the sub-menus of Settings</string>
+    <string name="settings_home_style_title">Main menu header</string>
+    <string name="settings_home_style_summary">Use stock aosp layout for the header in the main menu of Settings</string>
+    <string name="disable_usercard_title">UserCard</string>
+    <string name="disable_usercard_summary">Toggle in order not to show the usercard on main menu of Settings</string>
     <!-- Application downgrade -->
     <string name="app_downgrade_title">Allow application downgrade</string>
     <string name="app_downgrade_summary">This allows you to downgrade applications. Note that this may lead to crashes and data corruption.</string>
@@ -743,7 +741,41 @@
     <!-- Laboratory - Strict standby -->
     <string name="strict_standby_policy_title">Strict standby policy</string>
     <string name="strict_standby_policy_summary">When dismissing from recents, this will force stop apps with restricted battery usage and impose stronger restrictions to them. Also, all app standby restrictions will be imposed even when device is charging.</string>
+    <!-- QS tiles layout direction: vertical or horizontal -->
+    <string name="qs_tile_layout_category_title">Tile layout</string>
+    <string name="qs_tile_layout_title">Vertical layout</string>
+    <string name="qs_tile_layout_summary">Enable for vertical layout. Default is horizontal</string>
+    <!-- QS rows and columns -->
+    <string name="qs_layout_category_title">QS Layout</string>
+    <string name="qs_rows_portrait_title">Tile rows on portrait</string>
+    <string name="qs_rows_landscape_title">Tile rows on landscape</string>
+    <string name="qs_columns_portrait_title">Tile columns on portrait</string>
+    <string name="qs_columns_landscape_title">Tile columns on landscape</string>
+    <!-- QS tiles title visibility -->
+    <string name="qs_tile_title_visibility_title">Hide tile titles</string>
+    <string name="qs_tile_title_visibility_summary">Toggle to hide tile titles</string>
     <!-- Force background freezer -->
     <string name="force_background_freezer_title">Background tasks freezer</string>
     <string name="force_background_freezer_summary">Freeze tasks with restricted battery usage when moving them to background and unfreeze them when moving to foreground. This could save battery slightly but may lead to crashes and background ANR.</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Show Wi-Fi Standard icon</string>
+    <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
+    <!-- Clock Size -->
+    <string name="status_bar_clock_font_size_title">Statusbar Clock font size</string>
+    <string name="qs_clock_font_size_title">QS Header Clock font size</string>
+    <!-- Status bar padding -->
+    <string name="statusbar_padding">Status bar padding</string>
+    <string name="statusbar_left_padding">Left padding</string>
+    <string name="statusbar_right_padding">Right padding</string>
+    <string name="status_bar_show_clock_bg">Show clock background chip</string>
+    <!-- Font -->
+    <string name="font_settings">Font Settings</string>
+    <string name="font_settings_summary">Set system font style</string>
+    <string name="font_preference_title">Headline / Body font</string>
+    <string name="custom_font_preference_title">Custom Headline / Body font</string>
+    <string name="custom_font_preference_footer_message">Reboot after selecting a font to take effect</string>
+    <string name="cannot_resolve_activity">Unable to find a suitable activity to perform this action!</string>
+    <string name="invalid_font_file">Font file does not have valid postscript table</string>
+    <string name="failed_to_update_font">Failed to update font</string>
+    <string name="failed_to_copy_file_to_cache">Failed to copy font to cache</string>
 </resources>

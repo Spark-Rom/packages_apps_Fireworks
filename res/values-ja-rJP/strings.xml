@@ -31,7 +31,7 @@
     <string name="general_category">一般</string>
     <string name="flashlight_category">フラッシュライト</string>
     <string name="qs_category">クイック設定の編集</string>
-    <string name="battery_category">Energy saving Configurations</string>
+    <string name="battery_category">省電力設定</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">広告ブロック</string>
     <string name="hosts_block_summary">編集されたホストファイルで広告をブロックします。別途ブロックアプリを使用していたり問題が発生する場合は無効化して下さい。</string>
@@ -369,9 +369,6 @@
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
     <string name="theme_customization_icon_shape_title">アイコンの形状</string>
     <string name="theme_customization_icon_shape_summary">システムアイコン形状のスタイルを設定する</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
-    <string name="theme_customization_font_title">見出し / 説明フォント</string>
-    <string name="theme_customization_font_summary">システムフォントのスタイルを設定する</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
     <string name="theme_customization_icon_pack_title">アイコンパック</string>
     <string name="theme_customization_icon_pack_summary">カスタムアイコンパックのスタイルを設定する</string>
@@ -558,6 +555,7 @@
     <string name="artwork_media_background_summary">メディアアートワークをメディア通知の背景に設定する</string>
     <string name="artwork_media_background_enable_blur_title">メディアアートワークの背景をぼかす</string>
     <string name="artwork_media_background_blur_radius_title">メディアアートワークのぼかし量</string>
+    <string name="artwork_media_background_fade_filter_title">メディアアートワークのフェード量</string>
     <string name="artwork_media_background_alpha_title">メディアアートワークの透明度</string>
     <!-- Lock screen album art filter -->
     <string name="lockscreen_albumart_filter_title">メディアカバーアートフィルター</string>
@@ -640,19 +638,19 @@
     <string name="lock_screen_custom_clock_face_spark">Spark</string>
     <string name="lock_screen_custom_clock_face_spark_circle">Spark Circle</string>
     <!-- Custom settings dashboard style -->
-    <string name="settings_dashboard_style_title">設定のレイアウト</string>
+    <string name="settings_dashboard_style_title">メインメニューのレイアウト</string>
     <string name="settings_dashboard_style_aosp">AOSP</string>
     <string name="settings_dashboard_style_oos11">OxygenOS 11</string>
     <string name="settings_dashboard_style_oos12">OxygenOS 12</string>
     <string name="settings_dashboard_style_spark">Spark</string>
     <string name="settings_dashboard_style_spark_clean">Spark Clean</string>
     <string name="settings_layout_category_title">設定 UI のインターフェース</string>
-    <string name="settings_base_style_title">設定の基本レイアウト</string>
-    <string name="settings_base_style_summary">設定メニューに別のレイアウトを使用する</string>
-    <string name="settings_home_style_title">設定のホームレイアウト</string>
-    <string name="settings_home_style_summary">ホームページに標準の AOPS レイアウトを使用する</string>
-    <string name="disable_usercard_title">設定のユーザーカード</string>
-    <string name="disable_usercard_summary">メイン設定ページにユーザーカードを表示しないように切り替える</string>
+    <string name="settings_base_style_title">サブメニューのヘッダー</string>
+    <string name="settings_base_style_summary">設定のサブメニューで代替のヘッダーレイアウトを使用する</string>
+    <string name="settings_home_style_title">メインメニューのヘッダー</string>
+    <string name="settings_home_style_summary">設定のメインメニューで標準 AOSP のヘッダーレイアウトを使用する</string>
+    <string name="disable_usercard_title">ユーザーカード</string>
+    <string name="disable_usercard_summary">設定アプリのメインメニューにユーザーカードを表示しないように切り替える</string>
     <!-- Application downgrade -->
     <string name="app_downgrade_title">アプリのダウングレードを許可</string>
     <string name="app_downgrade_summary">アプリのダウングレードを許可します。クラッシュやデータの破損に繋がる可能性があることに注意して下さい。</string>
@@ -720,30 +718,64 @@
     <string name="qs_enable_morphing">クイック設定タイルのモーフィング有効化</string>
     <string name="qs_invert_morphing">クイック設定タイルのモーフィングを入れ替える</string>
     <!-- Sensor block per-package -->
-    <string name="sensor_block_title">Sensor block per-package</string>
-    <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery</string>
-    <string name="sensor_block_app_picker_title">Block sensors for these apps</string>
-    <string name="add_sensor_block_package_title">Add apps for Sensor block</string>
-    <string name="add_sensor_block_package_summary">Significant motion, accelerometer, linear acceleration sensors will be blocked for these apps</string>
-    <string name="profile_choose_app">Choose app</string>
+    <string name="sensor_block_title">パッケージごとにセンサー無効化</string>
+    <string name="sensor_block_summary">バッテリーを節約するためにアプリから特定のセンサーへのアクセスを無効化する</string>
+    <string name="sensor_block_app_picker_title">アプリへのセンサーをブロック</string>
+    <string name="add_sensor_block_package_title">センサーをブロックするアプリを追加</string>
+    <string name="add_sensor_block_package_summary">大きな動き、加速度センサー、線形加速度センサーがこれらのアプリでブロックされます。</string>
+    <string name="profile_choose_app">アプリを選択</string>
     <string name="dialog_delete_title">削除</string>
-    <string name="dialog_delete_message">Remove selected item?</string>
+    <string name="dialog_delete_message">選択した項目を削除しますか?</string>
     <!-- Status Bar Ticker -->
-    <string name="ticker_title">Ticker</string>
-    <string name="ticker_summary">Show notifications ticker-style in status bar</string>
-    <string name="ticker_screen_footer">Ticker is visible only when notification heads-up is not shown. Devices with center notch should hide cutout under User Interface settings or under Developer options.</string>
-    <string name="ticker_screen_title">Status bar ticker</string>
-    <string name="ticker_disabled">No ticker</string>
-    <string name="ticker_enabled">Notification ticker</string>
-    <string name="ticker_media_enabled">Notifications and music ticker</string>
-    <string name="ticker_animation_mode_title">Ticker animation style</string>
-    <string name="ticker_animation_mode_alpha_fade">Fade</string>
-    <string name="ticker_animation_mode_scroll">Scroll</string>
-    <string name="ticker_tick_duration_title">Ticker duration</string>
+    <string name="ticker_title">ティッカー</string>
+    <string name="ticker_summary">ステータスバーに通知ティッカーを表示する</string>
+    <string name="ticker_screen_footer">通知のヘッドアップが表示されていないときのみ、ティッカーが表示されます。センターノッチのあるデバイスでは、ユーザーインターフェース設定または開発者向けオプションでカットアウトを隠す必要があります。</string>
+    <string name="ticker_screen_title">ステータスバーのティッカー</string>
+    <string name="ticker_disabled">ティッカーなし</string>
+    <string name="ticker_enabled">通知ティッカー</string>
+    <string name="ticker_media_enabled">通知と音楽ティッカー</string>
+    <string name="ticker_animation_mode_title">ティッカーアニメーションのスタイル</string>
+    <string name="ticker_animation_mode_alpha_fade">フェード</string>
+    <string name="ticker_animation_mode_scroll">スクロール</string>
+    <string name="ticker_tick_duration_title">ティッカーの動作時間</string>
     <!-- Laboratory - Strict standby -->
-    <string name="strict_standby_policy_title">Strict standby policy</string>
-    <string name="strict_standby_policy_summary">When dismissing from recents, this will force stop apps with restricted battery usage and impose stronger restrictions to them. Also, all app standby restrictions will be imposed even when device is charging.</string>
+    <string name="strict_standby_policy_title">厳格なスタンバイポリシー</string>
+    <string name="strict_standby_policy_summary">アプリ履歴から消去した時、バッテリー使用の制限を設定されたアプリの場合は強制終了され、より厳格な制限を与えます。また、アプリのスタンバイ制限は端末が充電中の時でも発生します。</string>
+    <!-- QS tiles layout direction: vertical or horizontal -->
+    <string name="qs_tile_layout_category_title">Tile layout</string>
+    <string name="qs_tile_layout_title">Vertical layout</string>
+    <string name="qs_tile_layout_summary">Enable for vertical layout. Default is horizontal</string>
+    <!-- QS rows and columns -->
+    <string name="qs_layout_category_title">QS Layout</string>
+    <string name="qs_rows_portrait_title">Tile rows on portrait</string>
+    <string name="qs_rows_landscape_title">Tile rows on landscape</string>
+    <string name="qs_columns_portrait_title">Tile columns on portrait</string>
+    <string name="qs_columns_landscape_title">Tile columns on landscape</string>
+    <!-- QS tiles title visibility -->
+    <string name="qs_tile_title_visibility_title">Hide tile titles</string>
+    <string name="qs_tile_title_visibility_summary">Toggle to hide tile titles</string>
     <!-- Force background freezer -->
-    <string name="force_background_freezer_title">Background tasks freezer</string>
-    <string name="force_background_freezer_summary">Freeze tasks with restricted battery usage when moving them to background and unfreeze them when moving to foreground. This could save battery slightly but may lead to crashes and background ANR.</string>
+    <string name="force_background_freezer_title">バックグラウンドタスク停止</string>
+    <string name="force_background_freezer_summary">バックグラウンドに移動させる時はバッテリー使用制限によってタスクを停止し、フォアグラウンドに移動させる時はタスクの停止を解除します。これによりバッテリー消費を少し節約できますが、クラッシュやアプリケーション応答なしエラー (ANR) が発生する可能性があります。</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Show Wi-Fi Standard icon</string>
+    <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
+    <!-- Clock Size -->
+    <string name="status_bar_clock_font_size_title">Statusbar Clock font size</string>
+    <string name="qs_clock_font_size_title">QS Header Clock font size</string>
+    <!-- Status bar padding -->
+    <string name="statusbar_padding">Status bar padding</string>
+    <string name="statusbar_left_padding">Left padding</string>
+    <string name="statusbar_right_padding">Right padding</string>
+    <string name="status_bar_show_clock_bg">Show clock background chip</string>
+    <!-- Font -->
+    <string name="font_settings">Font Settings</string>
+    <string name="font_settings_summary">Set system font style</string>
+    <string name="font_preference_title">Headline / Body font</string>
+    <string name="custom_font_preference_title">Custom Headline / Body font</string>
+    <string name="custom_font_preference_footer_message">Reboot after selecting a font to take effect</string>
+    <string name="cannot_resolve_activity">Unable to find a suitable activity to perform this action!</string>
+    <string name="invalid_font_file">Font file does not have valid postscript table</string>
+    <string name="failed_to_update_font">Failed to update font</string>
+    <string name="failed_to_copy_file_to_cache">Failed to copy font to cache</string>
 </resources>

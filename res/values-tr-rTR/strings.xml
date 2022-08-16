@@ -21,17 +21,17 @@
     <string name="statusbar_items_category">Durum çubuğu simgeleri</string>
     <string name="fingerprint_category">Parmak izi</string>
     <string name="animations_category">Animasyonlar</string>
-    <string name="charging_category">Kilit ekranı şarj konfigürasyonları</string>
-    <string name="notifications_category">Bildirim Ayarları</string>
-    <string name="screenshot_category">Ekran Resmi Ayarları</string>
-    <string name="statusbar_clock_category_title">Durum Çubuğu Saati</string>
+    <string name="charging_category">Kilit ekranı şarj yapılandırmaları</string>
+    <string name="notifications_category">Bildirim ayarları</string>
+    <string name="screenshot_category">Ekran görüntüsü ayarları</string>
+    <string name="statusbar_clock_category_title">Durum çubuğu saati</string>
     <string name="powermenu_items_title">Güç menüsü öğeleri</string>
     <string name="monet_category">Monet ayarları</string>
     <string name="udfps_category">Udfps</string>
     <string name="general_category">Genel</string>
     <string name="flashlight_category">El feneri</string>
     <string name="qs_category">Hızlı ayarlar özelleştirmeleri</string>
-    <string name="battery_category">Energy saving Configurations</string>
+    <string name="battery_category">Enerji tasarruflu yapılandırmaları</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">Reklam engelleme</string>
     <string name="hosts_block_summary">Değiştirilmiş bir Hosts dosyası ile reklamları engelleyin. Üçüncü taraf reklam engelleme uygulaması kullanmak istiyorsanız veya başka sorunlara neden oluyor ise kapatın.</string>
@@ -369,9 +369,6 @@
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
     <string name="theme_customization_icon_shape_title">Simge şekli</string>
     <string name="theme_customization_icon_shape_summary">Sistem simge şeklini ayarlayın</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
-    <string name="theme_customization_font_title">Başlık / Gövde yazı tipi</string>
-    <string name="theme_customization_font_summary">Sistem yazı tipi stili ayarlayın</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
     <string name="theme_customization_icon_pack_title">Simge paketi</string>
     <string name="theme_customization_icon_pack_summary">Özel simge paketi stili ayarlayın</string>
@@ -501,7 +498,7 @@
     <string name="status_bar_logo_position_right">Sağ</string>
     <string name="status_bar_logo_position_left">Sol</string>
     <string name="status_bar_logo_position_right_quick">Hızlı ayarlar panelinin sağında</string>
-    <string name="status_bar_logo_position_left_quick">Hızlı ayarlar panelin solunda</string>
+    <string name="status_bar_logo_position_left_quick">Hızlı ayarlar panelinin solunda</string>
     <string name="status_bar_logo_style_title">Stil</string>
     <string name="status_bar_logo_style_spark">Spark</string>
     <string name="status_bar_logo_style_android">Android</string>
@@ -558,6 +555,7 @@
     <string name="artwork_media_background_summary">Medya resmini bildirim medyası arka planı olarak ayarla</string>
     <string name="artwork_media_background_enable_blur_title">Medya resmi arka planını bulanıklaştırın</string>
     <string name="artwork_media_background_blur_radius_title">Medya resmi için bulanıklık miktarı</string>
+    <string name="artwork_media_background_fade_filter_title">Medya resmi için karartma miktarı</string>
     <string name="artwork_media_background_alpha_title">Medya resmi şeffaflığı</string>
     <!-- Lock screen album art filter -->
     <string name="lockscreen_albumart_filter_title">Medya kapak resmi filtresi</string>
@@ -640,19 +638,19 @@
     <string name="lock_screen_custom_clock_face_spark">Spark</string>
     <string name="lock_screen_custom_clock_face_spark_circle">Spark çemberi</string>
     <!-- Custom settings dashboard style -->
-    <string name="settings_dashboard_style_title">Ayarlar düzeni</string>
+    <string name="settings_dashboard_style_title">Ana menü düzeni</string>
     <string name="settings_dashboard_style_aosp">Aosp</string>
     <string name="settings_dashboard_style_oos11">OxygenOS 11</string>
     <string name="settings_dashboard_style_oos12">OxygenOS 12</string>
     <string name="settings_dashboard_style_spark">Spark</string>
     <string name="settings_dashboard_style_spark_clean">Spark Clean</string>
     <string name="settings_layout_category_title">Ayarlar kullanıcı arayüzü</string>
-    <string name="settings_base_style_title">Ayarlar temel düzeni</string>
-    <string name="settings_base_style_summary">Menüleri ayarlamak için alternatif bir düzen kullanın</string>
-    <string name="settings_home_style_title">Ayarlar ana sayfa düzeni</string>
-    <string name="settings_home_style_summary">Ana sayfa için varsayılan Aosp düzenini kullan</string>
-    <string name="disable_usercard_title">Ayarlarda kullanıcı kartı</string>
-    <string name="disable_usercard_summary">Ayarlar ana sayfasında kullanıcı kartının gösterilmemesi için aktif edin</string>
+    <string name="settings_base_style_title">Alt menü başlığı</string>
+    <string name="settings_base_style_summary">Ayarlar\'ın alt menülerinde başlık için alternatif bir düzen kullanın</string>
+    <string name="settings_home_style_title">Ana menü başlığı</string>
+    <string name="settings_home_style_summary">Ayarlar ana menüsündeki başlık için stok aosp düzenini kullanın</string>
+    <string name="disable_usercard_title">Kullanıcı Kartı</string>
+    <string name="disable_usercard_summary">Ayarlar ana menüsünde kullanıcı kartının gösterilmemesi için geçiş yapın</string>
     <!-- Application downgrade -->
     <string name="app_downgrade_title">Uygulamanın eski sürüme geçirilmesine izin ver</string>
     <string name="app_downgrade_summary">Uygulamaların düşük sürümlerini kurabilmek için aktif edin. Bu bozulmalara ve çökmelere sebep olabilir.</string>
@@ -717,33 +715,67 @@
     <string name="smart_pixels_shift_title">Yanma koruması</string>
     <string name="smart_pixels_shift_summary">Amoled cihazlarda yanmaları önler ve sık sık pikselleri kaydırır</string>
     <!-- Qs Morphing-->
-    <string name="qs_enable_morphing">Enable Morphing on qs tiles</string>
-    <string name="qs_invert_morphing">Swap Morphing on qs tiles</string>
+    <string name="qs_enable_morphing">Hızlı ayarlar karelerinde Dönüşümü etkinleştir</string>
+    <string name="qs_invert_morphing">Hızlı ayarlar karelerini Dönüşüm ile değiştir</string>
     <!-- Sensor block per-package -->
-    <string name="sensor_block_title">Sensor block per-package</string>
-    <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery</string>
-    <string name="sensor_block_app_picker_title">Block sensors for these apps</string>
-    <string name="add_sensor_block_package_title">Add apps for Sensor block</string>
-    <string name="add_sensor_block_package_summary">Significant motion, accelerometer, linear acceleration sensors will be blocked for these apps</string>
-    <string name="profile_choose_app">Choose app</string>
+    <string name="sensor_block_title">Paket başına sensör engelleme</string>
+    <string name="sensor_block_summary">Pil tasarrufu için bazı uygulamaların belirli sensörlere erişimini engelleyin</string>
+    <string name="sensor_block_app_picker_title">Uygulamalar için sensör engelleme</string>
+    <string name="add_sensor_block_package_title">Sensör engellemesi için uygulamalar ekle</string>
+    <string name="add_sensor_block_package_summary">Bu uygulamalar için önemli hareket, ivmeölçer, doğrusal ivme sensörleri engellenecektir</string>
+    <string name="profile_choose_app">Uygulama seç</string>
     <string name="dialog_delete_title">Sil</string>
-    <string name="dialog_delete_message">Remove selected item?</string>
+    <string name="dialog_delete_message">Seçili öğe kaldırılsın mı?</string>
     <!-- Status Bar Ticker -->
-    <string name="ticker_title">Ticker</string>
-    <string name="ticker_summary">Show notifications ticker-style in status bar</string>
-    <string name="ticker_screen_footer">Ticker is visible only when notification heads-up is not shown. Devices with center notch should hide cutout under User Interface settings or under Developer options.</string>
-    <string name="ticker_screen_title">Status bar ticker</string>
-    <string name="ticker_disabled">No ticker</string>
-    <string name="ticker_enabled">Notification ticker</string>
-    <string name="ticker_media_enabled">Notifications and music ticker</string>
-    <string name="ticker_animation_mode_title">Ticker animation style</string>
-    <string name="ticker_animation_mode_alpha_fade">Fade</string>
-    <string name="ticker_animation_mode_scroll">Scroll</string>
-    <string name="ticker_tick_duration_title">Ticker duration</string>
+    <string name="ticker_title">Şerit</string>
+    <string name="ticker_summary">Durum çubuğunda bildirim şeridi stilini göster</string>
+    <string name="ticker_screen_footer">Kayan yazı yalnızca bildirim uyarısı gösterilmediğinde görünür. Çentiği ortada bulunan cihazlarda, çentik kullanıcı arayüzünden veya geliştirici seçeneklerinden gizlenmelidir.</string>
+    <string name="ticker_screen_title">Durum çubuğu şeridi</string>
+    <string name="ticker_disabled">Şerit yok</string>
+    <string name="ticker_enabled">Bildirim şeridi</string>
+    <string name="ticker_media_enabled">Bildirim ve müzik şeridi</string>
+    <string name="ticker_animation_mode_title">Şerit animasyonu stili</string>
+    <string name="ticker_animation_mode_alpha_fade">Karart</string>
+    <string name="ticker_animation_mode_scroll">Kaydır</string>
+    <string name="ticker_tick_duration_title">Şerit süresi</string>
     <!-- Laboratory - Strict standby -->
-    <string name="strict_standby_policy_title">Strict standby policy</string>
-    <string name="strict_standby_policy_summary">When dismissing from recents, this will force stop apps with restricted battery usage and impose stronger restrictions to them. Also, all app standby restrictions will be imposed even when device is charging.</string>
+    <string name="strict_standby_policy_title">Sıkı bekleme politikası</string>
+    <string name="strict_standby_policy_summary">Son kullanılardan çıkarken, bu kısıtlı pil kullanımına sahip uygulamaları durdurmaya zorlayacak ve bunlara daha güçlü kısıtlamalar getirecektir. Ayrıca, cihaz şarj olurken bile tüm uygulama bekleme kısıtlamaları uygulanacaktır.</string>
+    <!-- QS tiles layout direction: vertical or horizontal -->
+    <string name="qs_tile_layout_category_title">Tile layout</string>
+    <string name="qs_tile_layout_title">Vertical layout</string>
+    <string name="qs_tile_layout_summary">Enable for vertical layout. Default is horizontal</string>
+    <!-- QS rows and columns -->
+    <string name="qs_layout_category_title">QS Layout</string>
+    <string name="qs_rows_portrait_title">Tile rows on portrait</string>
+    <string name="qs_rows_landscape_title">Tile rows on landscape</string>
+    <string name="qs_columns_portrait_title">Tile columns on portrait</string>
+    <string name="qs_columns_landscape_title">Tile columns on landscape</string>
+    <!-- QS tiles title visibility -->
+    <string name="qs_tile_title_visibility_title">Hide tile titles</string>
+    <string name="qs_tile_title_visibility_summary">Toggle to hide tile titles</string>
     <!-- Force background freezer -->
-    <string name="force_background_freezer_title">Background tasks freezer</string>
-    <string name="force_background_freezer_summary">Freeze tasks with restricted battery usage when moving them to background and unfreeze them when moving to foreground. This could save battery slightly but may lead to crashes and background ANR.</string>
+    <string name="force_background_freezer_title">Arkaplan görev durdurucusu</string>
+    <string name="force_background_freezer_summary">Sınırlı pil kullanımına sahip görevleri arka plana taşırken durdurun ve ön plana taşırken bunları çözün. Bu, pilden biraz tasarruf sağlayabilir ancak çökmelere ve arka planda ANR\'ye neden olabilir.</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Show Wi-Fi Standard icon</string>
+    <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
+    <!-- Clock Size -->
+    <string name="status_bar_clock_font_size_title">Statusbar Clock font size</string>
+    <string name="qs_clock_font_size_title">QS Header Clock font size</string>
+    <!-- Status bar padding -->
+    <string name="statusbar_padding">Status bar padding</string>
+    <string name="statusbar_left_padding">Left padding</string>
+    <string name="statusbar_right_padding">Right padding</string>
+    <string name="status_bar_show_clock_bg">Show clock background chip</string>
+    <!-- Font -->
+    <string name="font_settings">Font Settings</string>
+    <string name="font_settings_summary">Set system font style</string>
+    <string name="font_preference_title">Headline / Body font</string>
+    <string name="custom_font_preference_title">Custom Headline / Body font</string>
+    <string name="custom_font_preference_footer_message">Reboot after selecting a font to take effect</string>
+    <string name="cannot_resolve_activity">Unable to find a suitable activity to perform this action!</string>
+    <string name="invalid_font_file">Font file does not have valid postscript table</string>
+    <string name="failed_to_update_font">Failed to update font</string>
+    <string name="failed_to_copy_file_to_cache">Failed to copy font to cache</string>
 </resources>
