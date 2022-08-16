@@ -706,7 +706,8 @@
     <string name="status_bar_show_clock_bg">Show clock background chip</string>
 
     <!-- Font -->
-    <string name="font_settings">Font Customizations</string>
+    <string name="font_settings">Font Settings</string>
+    <string name="font_settings_summary">Set system font style</string>
     <string name="font_preference_title">Headline / Body font</string>
     <string name="custom_font_preference_title">Custom Headline / Body font</string>
     <string name="custom_font_preference_footer_message">Reboot after selecting a font to take effect</string>
