@@ -11,6 +11,7 @@
     <!-- Categories -->
     <string name="themes_title">Themes</string>
     <string name="qs_themes">Qs Settings</string>
+    <string name="spoof_title">Spoofing</string>
     <string name="gestures_title">Gestures</string>
     <string name="aosp_setting_title">System settings</string>
     <string name="lockscreen_title">Lock screen</string>
@@ -53,4 +54,12 @@
 
     <!-- Notification light -->
     <string name="notification_light_settings">Notification light</string>
+
+    <!-- Unlimited g00gle ph0t0s st0rage -->
+    <string name="use_photos_spoof_title">Unlimited Photos storage</string>
+    <string name="use_photos_spoof_summary">Spoof your device as Pixel XL for Google Photos app only to provide unlimited storage for backup</string>
+
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
+    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
 </resources>
