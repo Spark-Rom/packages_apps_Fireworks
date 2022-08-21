@@ -72,9 +72,11 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     private static final String CHARGING_LIGHTS_PREF = "charging_light";
     private static final String LED_CATEGORY = "led";
     private static final String NOTIFICATION_LIGHTS_PREF = "notification_light";
+    private static final String ALERT_SLIDER_PREF = "alert_slider_notifications";
 
     private Preference mChargingLeds;
     private Preference mNotLights;
+    private Preference mAlertSlider;
     private PreferenceCategory mLedCategory;
 
     private Handler mHandler = new Handler();
@@ -89,6 +91,12 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         final Context mContext = getActivity().getApplicationContext();
         final PreferenceScreen prefSet = getPreferenceScreen();
         final Resources res = mContext.getResources();
+
+        mAlertSlider = (Preference) prefSet.findPreference(ALERT_SLIDER_PREF);
+        boolean mAlertSliderAvailable = res.getBoolean(
+                com.android.internal.R.bool.config_hasAlertSlider);
+        if (!mAlertSliderAvailable)
+            prefSet.removePreference(mAlertSlider);
 
         findPreference(PREF_ADBLOCK).setOnPreferenceChangeListener(this);
 
