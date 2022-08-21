@@ -23,7 +23,6 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 import android.provider.Settings;
-import com.spark.settings.preferences.SystemSettingEditTextPreference;
 import com.spark.support.preferences.SystemSettingMasterSwitchPreference;
 import com.spark.support.preferences.SystemSettingSwitchPreference;
 import com.spark.support.preferences.SystemSettingListPreference;

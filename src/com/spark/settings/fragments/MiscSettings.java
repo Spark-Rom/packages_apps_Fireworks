@@ -38,7 +38,6 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 
-import com.android.internal.lineage.hardware.LineageHardwareManager;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.android.settings.SettingsPreferenceFragment;
@@ -46,7 +45,6 @@ import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.spark.settings.preferences.ActionFragment;
 import com.spark.support.preferences.CustomSeekBarPreference;
 import com.spark.support.preferences.SystemSettingSwitchPreference;
 import com.spark.support.preferences.SystemSettingListPreference;
@@ -68,9 +66,8 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
-public class MiscSettings extends ActionFragment implements
+public class MiscSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
-
     private static final String PREF_ADBLOCK = "persist.spark.hosts_block";
     private static final String CHARGING_LIGHTS_PREF = "charging_light";
     private static final String LED_CATEGORY = "led";
@@ -144,5 +141,5 @@ public class MiscSettings extends ActionFragment implements
      * For Search.
      */
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.spark_settings_misc) {
+            new BaseSearchIndexProvider(R.xml.spark_settings_misc);
 }
