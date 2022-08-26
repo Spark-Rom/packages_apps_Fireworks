@@ -45,6 +45,10 @@ import java.util.Collections;
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
+    private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
+
+    private SystemSettingListPreference mStatusBarClock;
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -54,6 +58,14 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
+        mStatusBarClock =
+                (SystemSettingListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
+
+        // Adjust status bar preferences for RTL
+        if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
+            mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_rtl);
+            mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_rtl);
+        }
     }
 
     @Override
