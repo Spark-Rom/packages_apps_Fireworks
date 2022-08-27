@@ -27,7 +27,7 @@
         android:defaultValue="2"
         android:max="4"
         settings:min="1"
-        settings:units="@string/unit_pixels"
+        settings:units="px"
         android:dependency="statusbar_battery_bar" />
 
     <com.spark.support.preferences.SystemSettingListPreference
