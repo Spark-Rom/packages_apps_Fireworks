@@ -526,10 +526,6 @@
     <string name="udfps_pressed_color_title">Udfps pressed color</string>
     <string name="udfps_pressed_color_summary">Choose your favorite udfps pressed color</string> 
 
-    <!-- Notification headers -->
-    <string name="notification_headers_title">Notification headers</string>
-    <string name="notification_headers_summary">Show headers in the notification shade</string>
-
     <!-- reTicker -->
     <string name="reticker_category" translatable="false">reTicker</string>
     <string name="reticker_title">reTicker</string>
