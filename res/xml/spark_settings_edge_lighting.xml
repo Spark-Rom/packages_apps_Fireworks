@@ -51,7 +51,7 @@
         android:max="5"
         settings:min="1"
         settings:defaultValue="2"
-        settings:units="@string/unit_seconds" />
+        settings:units="sec" />
 
     <com.spark.support.preferences.CustomSeekBarPreference
         android:key="ambient_notification_light_repeats"
