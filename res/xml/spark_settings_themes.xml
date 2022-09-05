@@ -103,7 +103,7 @@
             android:key="qs_tile_label_size"
             android:title="@string/qs_tile_label_size_title"
             android:max="15"
-            settings:min="10"
+            android:min="10"
             settings:interval="1"
             settings:units="sp"
             android:defaultValue="14" />
@@ -118,7 +118,7 @@
             android:key="qs_layout_columns"
             android:title="@string/qs_columns_portrait_title"
             android:max="5"
-            settings:min="2"
+            android:min="2"
             settings:interval="1"
             android:defaultValue="2" />
 
@@ -126,7 +126,7 @@
             android:key="qs_layout_columns_landscape"
             android:title="@string/qs_columns_landscape_title"
             android:max="6"
-            settings:min="2"
+            android:min="2"
             settings:interval="1"
             android:defaultValue="4" />
 
