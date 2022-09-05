@@ -20,15 +20,27 @@ import androidx.preference.Preference
 
 import com.android.internal.logging.nano.MetricsProto
 import com.android.settings.dashboard.DashboardFragment
+import com.spark.settings.fragments.ColorPickerFragment
+import com.spark.settings.preferences.ColorPickerPreference
 
 abstract class SparkDashboardFragment: DashboardFragment() {
     override fun getMetricsCategory(): Int = MetricsProto.MetricsEvent.SPARK_SETTINGS
 
     override fun onDisplayPreferenceDialog(preference: Preference) {
-        super.onDisplayPreferenceDialog(preference)
+        if (preference is ColorPickerPreference) {
+            ColorPickerFragment(preference.color).apply {
+                setOnConfirmListener {
+                    preference.setColor(it)
+                }
+            }.show(childFragmentManager, COLOR_PICKER_DIALOG_KEY)
+        } else {
+            super.onDisplayPreferenceDialog(preference)
+        }
     }
 
     companion object {
         const val REQUEST_KEY = "SparkDashboardFragment#RequestKey"
+        const val COLOR_PICKER_DIALOG_KEY = "color_picker_dialog"
     }
 }
+
