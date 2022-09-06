@@ -742,40 +742,40 @@
     <string name="strict_standby_policy_title">Kebijakan siaga yang ketat</string>
     <string name="strict_standby_policy_summary">Saat menutup dari yang terbaru, ini akan memaksa menghentikan aplikasi dengan penggunaan baterai terbatas dan memberlakukan pembatasan yang lebih kuat kepada mereka. Selain itu, semua batasan siaga aplikasi akan diberlakukan bahkan saat perangkat sedang diisi daya.</string>
     <!-- QS tiles layout direction: vertical or horizontal -->
-    <string name="qs_tile_layout_category_title">Tile layout</string>
-    <string name="qs_tile_layout_title">Vertical layout</string>
-    <string name="qs_tile_layout_summary">Enable for vertical layout. Default is horizontal</string>
+    <string name="qs_tile_layout_category_title">Tata letak ubin</string>
+    <string name="qs_tile_layout_title">Tata letak vertikal</string>
+    <string name="qs_tile_layout_summary">Aktifkan untuk tata letak vertikal. Defaultnya adalah horizontal</string>
     <!-- QS rows and columns -->
-    <string name="qs_layout_category_title">QS Layout</string>
-    <string name="qs_rows_portrait_title">Tile rows on portrait</string>
-    <string name="qs_rows_landscape_title">Tile rows on landscape</string>
-    <string name="qs_columns_portrait_title">Tile columns on portrait</string>
-    <string name="qs_columns_landscape_title">Tile columns on landscape</string>
+    <string name="qs_layout_category_title">Tata Letak Setelan Cepat</string>
+    <string name="qs_rows_portrait_title">Baris ubin pada tampilan potret</string>
+    <string name="qs_rows_landscape_title">Baris ubin pada tampilan mendatar</string>
+    <string name="qs_columns_portrait_title">Kolom ubin pada tampilan potret</string>
+    <string name="qs_columns_landscape_title">Kolom ubin pada tampian mendatar</string>
     <!-- QS tiles title visibility -->
-    <string name="qs_tile_title_visibility_title">Hide tile titles</string>
-    <string name="qs_tile_title_visibility_summary">Toggle to hide tile titles</string>
+    <string name="qs_tile_title_visibility_title">Sembunyikan judul ubin</string>
+    <string name="qs_tile_title_visibility_summary">Tombol untuk menyembunyikan judul ubin</string>
     <!-- Force background freezer -->
     <string name="force_background_freezer_title">Bekukan tugas latar belakang</string>
     <string name="force_background_freezer_summary">Membekukan tugas dengan penggunaan baterai terbatas saat memindahkannya ke latar belakang dan mencairkan saat memindahkannya ke latar depan. Ini dapat menghemat baterai sedikit tetapi dapat menyebabkan crash dan ANR latar belakang.</string>
     <!-- Wi-Fi Standard icon -->
-    <string name="show_wifi_standard_icon_title">Show Wi-Fi Standard icon</string>
-    <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
+    <string name="show_wifi_standard_icon_title">Tampilkan ikon Standar Wi-Fi</string>
+    <string name="show_wifi_standard_icon_summary">Tampilkan tipe Wi-Fi di indikator sinyal Wi-Fi</string>
     <!-- Clock Size -->
-    <string name="status_bar_clock_font_size_title">Statusbar Clock font size</string>
-    <string name="qs_clock_font_size_title">QS Header Clock font size</string>
+    <string name="status_bar_clock_font_size_title">Ukuran font Jam Bilah Status</string>
+    <string name="qs_clock_font_size_title">Ukuran font Jam Header Setelan Cepat</string>
     <!-- Status bar padding -->
-    <string name="statusbar_padding">Status bar padding</string>
-    <string name="statusbar_left_padding">Left padding</string>
-    <string name="statusbar_right_padding">Right padding</string>
-    <string name="status_bar_show_clock_bg">Show clock background chip</string>
+    <string name="statusbar_padding">Lapisan bilah status</string>
+    <string name="statusbar_left_padding">Lapisan kiri</string>
+    <string name="statusbar_right_padding">Lapisan kanan</string>
+    <string name="status_bar_show_clock_bg">Tampilkan keping latar belakang jam</string>
     <!-- Font -->
-    <string name="font_settings">Font Settings</string>
-    <string name="font_settings_summary">Set system font style</string>
-    <string name="font_preference_title">Headline / Body font</string>
-    <string name="custom_font_preference_title">Custom Headline / Body font</string>
-    <string name="custom_font_preference_footer_message">Reboot after selecting a font to take effect</string>
-    <string name="cannot_resolve_activity">Unable to find a suitable activity to perform this action!</string>
-    <string name="invalid_font_file">Font file does not have valid postscript table</string>
-    <string name="failed_to_update_font">Failed to update font</string>
-    <string name="failed_to_copy_file_to_cache">Failed to copy font to cache</string>
+    <string name="font_settings">Setelan Font</string>
+    <string name="font_settings_summary">Setel gaya font sistem</string>
+    <string name="font_preference_title">Font Judul/Isi</string>
+    <string name="custom_font_preference_title">Font Kustom Judul/Isi</string>
+    <string name="custom_font_preference_footer_message">Mulai ulang setelah memilih font untuk diterapkan</string>
+    <string name="cannot_resolve_activity">Tidak dapat menemukan aktivitas yang cocok untuk melakukan tindakan ini!</string>
+    <string name="invalid_font_file">File font tidak memiliki tabel postscript yang valid</string>
+    <string name="failed_to_update_font">Gagal memperbarui font</string>
+    <string name="failed_to_copy_file_to_cache">Gagal menyalin font ke cache</string>
 </resources>

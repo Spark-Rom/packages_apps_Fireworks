@@ -154,7 +154,7 @@
     <string name="quick_pulldown_none">Desactivado</string>
     <string name="quick_pulldown_right">Desde la derecha</string>
     <string name="quick_pulldown_left">Desde la izquierda</string>
-    <string name="quick_pulldown_always">Mostrar siempre Ajustes Rápidos al desplegar la barra de estado</string>
+    <string name="quick_pulldown_always">Desde ambos lados</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_error_vib_title">Vibración de huella</string>
     <string name="fprint_error_vib_summary">Vibrar al autenticar erróneamente la huella</string>
@@ -767,7 +767,7 @@
     <string name="statusbar_padding">Espaciado en barra de estado</string>
     <string name="statusbar_left_padding">Margen izquierdo</string>
     <string name="statusbar_right_padding">Margen derecho</string>
-    <string name="status_bar_show_clock_bg">Show clock background chip</string>
+    <string name="status_bar_show_clock_bg">Mostrar fondo en reloj</string>
     <!-- Font -->
     <string name="font_settings">Ajustes de fuentes</string>
     <string name="font_settings_summary">Elegir estilo de fuente de sistema</string>

@@ -31,7 +31,7 @@
     <string name="general_category">Geral</string>
     <string name="flashlight_category">Lanterna</string>
     <string name="qs_category">Personalização das configurações rápidas</string>
-    <string name="battery_category">Energy saving Configurations</string>
+    <string name="battery_category">Configurações de economia de energia</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">Bloquear anúncios</string>
     <string name="hosts_block_summary">Bloqueie anúncios através de um arquivo host modificado. Desative para usar soluções de terceiros ou se enfrentar algum problema.</string>
@@ -555,7 +555,7 @@
     <string name="artwork_media_background_summary">Definir a capa do álbum como fundo do player de mídia</string>
     <string name="artwork_media_background_enable_blur_title">Desfocar o fundo do player de mídia</string>
     <string name="artwork_media_background_blur_radius_title">Nível de desfoque do player de mídia</string>
-    <string name="artwork_media_background_fade_filter_title">Fade amount for media artwork</string>
+    <string name="artwork_media_background_fade_filter_title">Nível de desfoque do player de mídia</string>
     <string name="artwork_media_background_alpha_title">Transparência do player de mídia</string>
     <!-- Lock screen album art filter -->
     <string name="lockscreen_albumart_filter_title">Filtro de capa do álbum</string>
@@ -694,26 +694,26 @@
     <!-- Data usage info in QS footer -->
     <string name="qs_footer_datausage_title">Uso de dados</string>
     <string name="qs_footer_datausage_summary">Mostrar resumo de uso de dados no rodapé das configurações rápidas</string>
-    <string name="status_bar_battery_style_icon_rlandscape_style_a">Landscape R Style A</string>
-    <string name="status_bar_battery_style_icon_landscape_style_a">Landscape L Style A</string>
-    <string name="status_bar_battery_style_icon_rlandscape_style_b">Landscape R Style B</string>
-    <string name="status_bar_battery_style_icon_landscape_style_b">Landscape L Style B</string>
-    <string name="status_bar_battery_style_icon_landscape_pill">Portrait Mx</string>
-    <string name="status_bar_battery_style_icon_landscape_line">Landscape Lorn</string>
-    <string name="status_bar_battery_style_icon_landscape_musku">Portrait IOS</string>
-    <string name="status_bar_battery_style_icon_landscape_signal">Landscape Airoo</string>
-    <string name="status_bar_battery_style_icon_landscape_buddy">Landscape Capsule</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Paisagem D Estilo A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Paisagem E Estilo A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Paisagem D Estilo B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Paisagem E Estilo B</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Ícone retrato (Mx)</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Ícone paisagem (Lorn)</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Ícone retrato (IOS)</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Ícone paisagem (Airoo)</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Ícone paisagem (Cápsula)</string>
     <!-- Smart Pixels -->
-    <string name="smart_pixels_warning_text">Smart pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see improvement in battery life. Note that in some cases it can result in unresponsive areas on touch screen</string>
-    <string name="smart_pixels_title">Smart Pixels</string>
-    <string name="smart_pixels_summary">Save battery by shutting off extra pixels</string>
-    <string name="smart_pixels_enable_title">Enable Smart Pixels</string>
-    <string name="smart_pixels_enable_summary">Shut off pixels to reduce power consumption</string>
-    <string name="smart_pixels_on_power_save_title">Auto-enable on battery saver</string>
-    <string name="smart_pixels_on_power_save_summary">Enable Smart Pixels when battery saver is enabled</string>
-    <string name="smart_pixels_percent">Percent of pixels to disable</string>
-    <string name="smart_pixels_shift_title">Burn-in protection</string>
-    <string name="smart_pixels_shift_summary">Prevents burn-in on OLED devices by shifting pixels every so often</string>
+    <string name="smart_pixels_warning_text">Pixels inteligentes é um recurso de economia de energia. Desligando alguns pixels da tela você perceberá a melhora no consumo de bateria</string>
+    <string name="smart_pixels_title">Pixels Inteligentes</string>
+    <string name="smart_pixels_summary">Poupa bateria ao desligar alguns píxeis</string>
+    <string name="smart_pixels_enable_title">Ativar Pixels Inteligentes</string>
+    <string name="smart_pixels_enable_summary">Desligar alguns pixels para reduzir o consumo de energia</string>
+    <string name="smart_pixels_on_power_save_title">Ativar automaticamente na economia de bateria</string>
+    <string name="smart_pixels_on_power_save_summary">Ativar os Pixels Inteligentes quando a economia de bateria estiver ativa</string>
+    <string name="smart_pixels_percent">Porcentagem de pixels a desativar</string>
+    <string name="smart_pixels_shift_title">Proteção contra Burn-in</string>
+    <string name="smart_pixels_shift_summary">Previne contra o efeito Burn-in em dispositivos com tela OLED</string>
     <!-- Qs Morphing-->
     <string name="qs_enable_morphing">Enable Morphing on qs tiles</string>
     <string name="qs_invert_morphing">Swap Morphing on qs tiles</string>
@@ -742,40 +742,40 @@
     <string name="strict_standby_policy_title">Strict standby policy</string>
     <string name="strict_standby_policy_summary">When dismissing from recents, this will force stop apps with restricted battery usage and impose stronger restrictions to them. Also, all app standby restrictions will be imposed even when device is charging.</string>
     <!-- QS tiles layout direction: vertical or horizontal -->
-    <string name="qs_tile_layout_category_title">Tile layout</string>
-    <string name="qs_tile_layout_title">Vertical layout</string>
-    <string name="qs_tile_layout_summary">Enable for vertical layout. Default is horizontal</string>
+    <string name="qs_tile_layout_category_title">Estilo dos blocos</string>
+    <string name="qs_tile_layout_title">Estilo vertical</string>
+    <string name="qs_tile_layout_summary">Mudar para o estilo vertical. O padrão é horizontal</string>
     <!-- QS rows and columns -->
-    <string name="qs_layout_category_title">QS Layout</string>
-    <string name="qs_rows_portrait_title">Tile rows on portrait</string>
-    <string name="qs_rows_landscape_title">Tile rows on landscape</string>
-    <string name="qs_columns_portrait_title">Tile columns on portrait</string>
-    <string name="qs_columns_landscape_title">Tile columns on landscape</string>
+    <string name="qs_layout_category_title">Estilo do painel de configurações rápidas</string>
+    <string name="qs_rows_portrait_title">Linhas em modo retrato</string>
+    <string name="qs_rows_landscape_title">Linhas em modo paisagem</string>
+    <string name="qs_columns_portrait_title">Colunas em modo retrato</string>
+    <string name="qs_columns_landscape_title">Colunas em modo paisagem</string>
     <!-- QS tiles title visibility -->
-    <string name="qs_tile_title_visibility_title">Hide tile titles</string>
-    <string name="qs_tile_title_visibility_summary">Toggle to hide tile titles</string>
+    <string name="qs_tile_title_visibility_title">Ocultar título dos blocos</string>
+    <string name="qs_tile_title_visibility_summary">Mude para ocultar os títulos dos blocos</string>
     <!-- Force background freezer -->
     <string name="force_background_freezer_title">Background tasks freezer</string>
     <string name="force_background_freezer_summary">Freeze tasks with restricted battery usage when moving them to background and unfreeze them when moving to foreground. This could save battery slightly but may lead to crashes and background ANR.</string>
     <!-- Wi-Fi Standard icon -->
-    <string name="show_wifi_standard_icon_title">Show Wi-Fi Standard icon</string>
-    <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
+    <string name="show_wifi_standard_icon_title">Mostrar ícone de frequência do Wi-Fi</string>
+    <string name="show_wifi_standard_icon_summary">Mostrar a frequência da rede conectada no ícone de Wi-Fi</string>
     <!-- Clock Size -->
-    <string name="status_bar_clock_font_size_title">Statusbar Clock font size</string>
-    <string name="qs_clock_font_size_title">QS Header Clock font size</string>
+    <string name="status_bar_clock_font_size_title">Tamanho do relógio na barra de status</string>
+    <string name="qs_clock_font_size_title">Tamanho do relógio no cabeçalho das configurações rápidas</string>
     <!-- Status bar padding -->
-    <string name="statusbar_padding">Status bar padding</string>
-    <string name="statusbar_left_padding">Left padding</string>
-    <string name="statusbar_right_padding">Right padding</string>
+    <string name="statusbar_padding">Espaçamento da barra de status</string>
+    <string name="statusbar_left_padding">Preenchimento esquerdo</string>
+    <string name="statusbar_right_padding">Preenchimento direito</string>
     <string name="status_bar_show_clock_bg">Show clock background chip</string>
     <!-- Font -->
-    <string name="font_settings">Font Settings</string>
-    <string name="font_settings_summary">Set system font style</string>
-    <string name="font_preference_title">Headline / Body font</string>
-    <string name="custom_font_preference_title">Custom Headline / Body font</string>
-    <string name="custom_font_preference_footer_message">Reboot after selecting a font to take effect</string>
-    <string name="cannot_resolve_activity">Unable to find a suitable activity to perform this action!</string>
-    <string name="invalid_font_file">Font file does not have valid postscript table</string>
-    <string name="failed_to_update_font">Failed to update font</string>
-    <string name="failed_to_copy_file_to_cache">Failed to copy font to cache</string>
+    <string name="font_settings">Configurações de fonte</string>
+    <string name="font_settings_summary">Definir estilo da fonte do sistema</string>
+    <string name="font_preference_title">Fontes</string>
+    <string name="custom_font_preference_title">Fontes</string>
+    <string name="custom_font_preference_footer_message">Reinicie após selecionar uma fonte para ter efeito</string>
+    <string name="cannot_resolve_activity">Não é possível encontrar uma atividade adequada para executar esta ação!</string>
+    <string name="invalid_font_file">O arquivo de fonte não possui uma tabela postscript válida</string>
+    <string name="failed_to_update_font">Falha ao atualizar a fonte</string>
+    <string name="failed_to_copy_file_to_cache">Falha ao copiar fonte para o cache</string>
 </resources>

@@ -742,40 +742,40 @@
     <string name="strict_standby_policy_title">Politica di standby rigorosa</string>
     <string name="strict_standby_policy_summary">Quando eliminate dai recenti, questo forzerà la chiusura delle app con un uso limitato della batteria e imporrà loro restrizioni più forti. Inoltre, tutte le restrizioni saranno imposte anche quando il dispositivo è in carica.</string>
     <!-- QS tiles layout direction: vertical or horizontal -->
-    <string name="qs_tile_layout_category_title">Tile layout</string>
-    <string name="qs_tile_layout_title">Vertical layout</string>
-    <string name="qs_tile_layout_summary">Enable for vertical layout. Default is horizontal</string>
+    <string name="qs_tile_layout_category_title">Layout tile</string>
+    <string name="qs_tile_layout_title">Layout verticale</string>
+    <string name="qs_tile_layout_summary">Abilita per la disposizione verticale. Il valore predefinito è orizzontale</string>
     <!-- QS rows and columns -->
-    <string name="qs_layout_category_title">QS Layout</string>
-    <string name="qs_rows_portrait_title">Tile rows on portrait</string>
-    <string name="qs_rows_landscape_title">Tile rows on landscape</string>
-    <string name="qs_columns_portrait_title">Tile columns on portrait</string>
-    <string name="qs_columns_landscape_title">Tile columns on landscape</string>
+    <string name="qs_layout_category_title">Layout dei QS</string>
+    <string name="qs_rows_portrait_title">Righe dei tile in verticale</string>
+    <string name="qs_rows_landscape_title">Righe dei tiles in orizzontale</string>
+    <string name="qs_columns_portrait_title">Colonne dei tiles in verticale</string>
+    <string name="qs_columns_landscape_title">Colonne dei tiles in orizzontale</string>
     <!-- QS tiles title visibility -->
-    <string name="qs_tile_title_visibility_title">Hide tile titles</string>
-    <string name="qs_tile_title_visibility_summary">Toggle to hide tile titles</string>
+    <string name="qs_tile_title_visibility_title">Nasacondi i titoli dei tile</string>
+    <string name="qs_tile_title_visibility_summary">Attiva per nascondere i titoli dei tile</string>
     <!-- Force background freezer -->
     <string name="force_background_freezer_title">Congelatore attività in background</string>
     <string name="force_background_freezer_summary">Congela le attività con un uso ristretto della batteria quando spostate in background e le sblocca quando spostate in primo piano. Questo può far risparmiare un po\' di batteria ma può portare a crash e ANR in background.</string>
     <!-- Wi-Fi Standard icon -->
-    <string name="show_wifi_standard_icon_title">Show Wi-Fi Standard icon</string>
-    <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
+    <string name="show_wifi_standard_icon_title">Mostra l\'icona Wi-Fi Standard</string>
+    <string name="show_wifi_standard_icon_summary">Mostra il tipo di Wi-Fi nell\'indicatore del segnale Wi-Fi</string>
     <!-- Clock Size -->
-    <string name="status_bar_clock_font_size_title">Statusbar Clock font size</string>
-    <string name="qs_clock_font_size_title">QS Header Clock font size</string>
+    <string name="status_bar_clock_font_size_title">Dimensione font orologio nella barra di stato</string>
+    <string name="qs_clock_font_size_title">Dimensione font orologio nell\'intestazione dei QS</string>
     <!-- Status bar padding -->
-    <string name="statusbar_padding">Status bar padding</string>
-    <string name="statusbar_left_padding">Left padding</string>
-    <string name="statusbar_right_padding">Right padding</string>
-    <string name="status_bar_show_clock_bg">Show clock background chip</string>
+    <string name="statusbar_padding">Padding barra di stato</string>
+    <string name="statusbar_left_padding">Spaziatura sinistra</string>
+    <string name="statusbar_right_padding">Spaziatura destra</string>
+    <string name="status_bar_show_clock_bg">Mostra chip di sfondo orologio</string>
     <!-- Font -->
-    <string name="font_settings">Font Settings</string>
-    <string name="font_settings_summary">Set system font style</string>
-    <string name="font_preference_title">Headline / Body font</string>
-    <string name="custom_font_preference_title">Custom Headline / Body font</string>
-    <string name="custom_font_preference_footer_message">Reboot after selecting a font to take effect</string>
-    <string name="cannot_resolve_activity">Unable to find a suitable activity to perform this action!</string>
-    <string name="invalid_font_file">Font file does not have valid postscript table</string>
-    <string name="failed_to_update_font">Failed to update font</string>
-    <string name="failed_to_copy_file_to_cache">Failed to copy font to cache</string>
+    <string name="font_settings">Impostazioni font</string>
+    <string name="font_settings_summary">Imposta lo stile del font di sistema</string>
+    <string name="font_preference_title">Carattere titoli / paragrafi</string>
+    <string name="custom_font_preference_title">Personalizza carattere titoli / paragrafi</string>
+    <string name="custom_font_preference_footer_message">Riavvia dopo aver selezionato un tipo di carattere per applicarlo</string>
+    <string name="cannot_resolve_activity">Impossibile trovare un\'attività adatta per eseguire questa azione!</string>
+    <string name="invalid_font_file">Il file di carattere non ha una tabella postscript valida</string>
+    <string name="failed_to_update_font">Impossibile aggiornare il carattere</string>
+    <string name="failed_to_copy_file_to_cache">Impossibile copiare il carattere nella cache</string>
 </resources>

@@ -742,40 +742,40 @@
     <string name="strict_standby_policy_title">Sıkı bekleme politikası</string>
     <string name="strict_standby_policy_summary">Son kullanılardan çıkarken, bu kısıtlı pil kullanımına sahip uygulamaları durdurmaya zorlayacak ve bunlara daha güçlü kısıtlamalar getirecektir. Ayrıca, cihaz şarj olurken bile tüm uygulama bekleme kısıtlamaları uygulanacaktır.</string>
     <!-- QS tiles layout direction: vertical or horizontal -->
-    <string name="qs_tile_layout_category_title">Tile layout</string>
-    <string name="qs_tile_layout_title">Vertical layout</string>
-    <string name="qs_tile_layout_summary">Enable for vertical layout. Default is horizontal</string>
+    <string name="qs_tile_layout_category_title">Kare düzeni</string>
+    <string name="qs_tile_layout_title">Dikey düzen</string>
+    <string name="qs_tile_layout_summary">Dikey düzen için etkinleştirin. Varsayılan yatay</string>
     <!-- QS rows and columns -->
-    <string name="qs_layout_category_title">QS Layout</string>
-    <string name="qs_rows_portrait_title">Tile rows on portrait</string>
-    <string name="qs_rows_landscape_title">Tile rows on landscape</string>
-    <string name="qs_columns_portrait_title">Tile columns on portrait</string>
-    <string name="qs_columns_landscape_title">Tile columns on landscape</string>
+    <string name="qs_layout_category_title">Hızlı ayarlar düzeni</string>
+    <string name="qs_rows_portrait_title">Dikey modda satırlar</string>
+    <string name="qs_rows_landscape_title">Yatay modda satırlar</string>
+    <string name="qs_columns_portrait_title">Dikey modda sütunlar</string>
+    <string name="qs_columns_landscape_title">Yatay modda sütunlar</string>
     <!-- QS tiles title visibility -->
-    <string name="qs_tile_title_visibility_title">Hide tile titles</string>
-    <string name="qs_tile_title_visibility_summary">Toggle to hide tile titles</string>
+    <string name="qs_tile_title_visibility_title">Kare başlıklarını gizle</string>
+    <string name="qs_tile_title_visibility_summary">Kare başlıklarını gizle veya göster</string>
     <!-- Force background freezer -->
     <string name="force_background_freezer_title">Arkaplan görev durdurucusu</string>
     <string name="force_background_freezer_summary">Sınırlı pil kullanımına sahip görevleri arka plana taşırken durdurun ve ön plana taşırken bunları çözün. Bu, pilden biraz tasarruf sağlayabilir ancak çökmelere ve arka planda ANR\'ye neden olabilir.</string>
     <!-- Wi-Fi Standard icon -->
-    <string name="show_wifi_standard_icon_title">Show Wi-Fi Standard icon</string>
-    <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
+    <string name="show_wifi_standard_icon_title">Standart Wi-Fi simgesini göster</string>
+    <string name="show_wifi_standard_icon_summary">Wi-Fi sinyali göstergesinde Wi-Fi türünü göster</string>
     <!-- Clock Size -->
-    <string name="status_bar_clock_font_size_title">Statusbar Clock font size</string>
-    <string name="qs_clock_font_size_title">QS Header Clock font size</string>
+    <string name="status_bar_clock_font_size_title">Durum çubuğu Saat yazı tipi boyutu</string>
+    <string name="qs_clock_font_size_title">Hızlı ayarlar başlığı Saat yazı tipi boyutu</string>
     <!-- Status bar padding -->
-    <string name="statusbar_padding">Status bar padding</string>
-    <string name="statusbar_left_padding">Left padding</string>
-    <string name="statusbar_right_padding">Right padding</string>
-    <string name="status_bar_show_clock_bg">Show clock background chip</string>
+    <string name="statusbar_padding">Durum çubuğu dolgusu</string>
+    <string name="statusbar_left_padding">Sol dolgu</string>
+    <string name="statusbar_right_padding">Sağ dolgu</string>
+    <string name="status_bar_show_clock_bg">Saat arka plan çipini göster</string>
     <!-- Font -->
-    <string name="font_settings">Font Settings</string>
-    <string name="font_settings_summary">Set system font style</string>
-    <string name="font_preference_title">Headline / Body font</string>
-    <string name="custom_font_preference_title">Custom Headline / Body font</string>
-    <string name="custom_font_preference_footer_message">Reboot after selecting a font to take effect</string>
-    <string name="cannot_resolve_activity">Unable to find a suitable activity to perform this action!</string>
-    <string name="invalid_font_file">Font file does not have valid postscript table</string>
-    <string name="failed_to_update_font">Failed to update font</string>
-    <string name="failed_to_copy_file_to_cache">Failed to copy font to cache</string>
+    <string name="font_settings">Yazı tipi ayarları</string>
+    <string name="font_settings_summary">Sistem yazı tipi stili ayarlayın</string>
+    <string name="font_preference_title">Başlık / Gövde yazı tipi</string>
+    <string name="custom_font_preference_title">Özel başlık / Gövde yazı tipi</string>
+    <string name="custom_font_preference_footer_message">Etkin olması için bir yazı tipi seçtikten sonra yeniden başlatın</string>
+    <string name="cannot_resolve_activity">Bu eylemi gerçekleştirmek için uygun bir etkinlik bulunamadı!</string>
+    <string name="invalid_font_file">Yazı tipi dosyasında geçerli bir postscript tablosu yok</string>
+    <string name="failed_to_update_font">Yazı tipi güncellenemedi</string>
+    <string name="failed_to_copy_file_to_cache">Yazı tipi önbelleğe kopyalanamadı</string>
 </resources>

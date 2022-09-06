@@ -7,12 +7,12 @@
     <string name="search_apps">搜索应用</string>
     <string name="cancel">取消</string>
     <string name="confirm">确认</string>
-    <string name="unit_ms">ms</string>
+    <string name="unit_ms">毫秒</string>
     <!-- Categories -->
     <string name="themes_title">主题</string>
     <string name="qs_themes">Qs Settings</string>
     <string name="gestures_title">手势</string>
-    <string name="aosp_setting_title">System settings</string>
+    <string name="aosp_setting_title">系统设置</string>
     <string name="lockscreen_title">锁屏界面</string>
     <string name="misc_title">杂项</string>
     <string name="powermenu_title">电源菜单</string>
@@ -109,8 +109,8 @@
     <string name="network_traffic_refresh_interval_title">Refresh interval</string>
     <string name="network_traffic_mode_title">Display mode</string>
     <string name="network_traffic_dynamic">Dynamic</string>
-    <string name="network_traffic_download">Download</string>
-    <string name="network_traffic_upload">Upload</string>
+    <string name="network_traffic_download">下载</string>
+    <string name="network_traffic_upload">上传</string>
     <!-- Statusbar categories -->
     <string name="status_bar_icons_category_title">图标</string>
     <!-- VoLTE icon -->

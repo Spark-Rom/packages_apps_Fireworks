@@ -23,7 +23,7 @@
     <string name="animations_category">Анимации</string>
     <string name="charging_category">Настройки зарядки на заблокированном экране</string>
     <string name="notifications_category">Параметры уведомлений</string>
-    <string name="screenshot_category">Настройки снимков экрана</string>
+    <string name="screenshot_category">Настройки снимка экрана</string>
     <string name="statusbar_clock_category_title">Часы в строке состояния</string>
     <string name="powermenu_items_title">Элементы меню питания</string>
     <string name="monet_category">Движок Монет</string>
@@ -742,40 +742,40 @@
     <string name="strict_standby_policy_title">Строгая политика в режиме ожидания</string>
     <string name="strict_standby_policy_summary">При отключении от недавних приложений, это приведёт к остановке приложений с ограниченным потреблением заряда батареи и к более жестким ограничениям для них. Кроме того, все резервные ограничения будут введены даже при зарядке.</string>
     <!-- QS tiles layout direction: vertical or horizontal -->
-    <string name="qs_tile_layout_category_title">Tile layout</string>
-    <string name="qs_tile_layout_title">Vertical layout</string>
-    <string name="qs_tile_layout_summary">Enable for vertical layout. Default is horizontal</string>
+    <string name="qs_tile_layout_category_title">Расположение плиток</string>
+    <string name="qs_tile_layout_title">Вертикальное расположение</string>
+    <string name="qs_tile_layout_summary">Включите для вертикального отображения. По умолчанию горизонтально</string>
     <!-- QS rows and columns -->
-    <string name="qs_layout_category_title">QS Layout</string>
-    <string name="qs_rows_portrait_title">Tile rows on portrait</string>
-    <string name="qs_rows_landscape_title">Tile rows on landscape</string>
-    <string name="qs_columns_portrait_title">Tile columns on portrait</string>
-    <string name="qs_columns_landscape_title">Tile columns on landscape</string>
+    <string name="qs_layout_category_title">Разметка быстрых настроек</string>
+    <string name="qs_rows_portrait_title">Строки в портретной ориентации</string>
+    <string name="qs_rows_landscape_title">Строки в ландшафтной ориентации</string>
+    <string name="qs_columns_portrait_title">Столбцы плиток в портретной ориентации</string>
+    <string name="qs_columns_landscape_title">Столбцы плиток в альбомной ориентации</string>
     <!-- QS tiles title visibility -->
-    <string name="qs_tile_title_visibility_title">Hide tile titles</string>
-    <string name="qs_tile_title_visibility_summary">Toggle to hide tile titles</string>
+    <string name="qs_tile_title_visibility_title">Скрыть названия плиток</string>
+    <string name="qs_tile_title_visibility_summary">Скрыть названия плиток</string>
     <!-- Force background freezer -->
     <string name="force_background_freezer_title">Заморозка фоновых задач</string>
     <string name="force_background_freezer_summary">Заморозить задачи с ограниченным потреблением батареи при перемещении их в фоновый режим и разморозить их при переходе на передний план. Это может немного сэкономить заряд батареи, но может привести к сбоям и сбоям в фоновом режиме ANR.</string>
     <!-- Wi-Fi Standard icon -->
-    <string name="show_wifi_standard_icon_title">Show Wi-Fi Standard icon</string>
-    <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
+    <string name="show_wifi_standard_icon_title">Показать значок стандарта Wi-Fi</string>
+    <string name="show_wifi_standard_icon_summary">Показывать тип Wi-Fi в иконке Wi-Fi</string>
     <!-- Clock Size -->
-    <string name="status_bar_clock_font_size_title">Statusbar Clock font size</string>
-    <string name="qs_clock_font_size_title">QS Header Clock font size</string>
+    <string name="status_bar_clock_font_size_title">Размер шрифта часов в строке состояния</string>
+    <string name="qs_clock_font_size_title">Размер шрифта часов в заголовке быстрых настроек</string>
     <!-- Status bar padding -->
-    <string name="statusbar_padding">Status bar padding</string>
-    <string name="statusbar_left_padding">Left padding</string>
-    <string name="statusbar_right_padding">Right padding</string>
-    <string name="status_bar_show_clock_bg">Show clock background chip</string>
+    <string name="statusbar_padding">Отступы строки состояния</string>
+    <string name="statusbar_left_padding">Левый отступ</string>
+    <string name="statusbar_right_padding">Правый отступ</string>
+    <string name="status_bar_show_clock_bg">Показывать фон часов в строке состояния</string>
     <!-- Font -->
-    <string name="font_settings">Font Settings</string>
-    <string name="font_settings_summary">Set system font style</string>
-    <string name="font_preference_title">Headline / Body font</string>
-    <string name="custom_font_preference_title">Custom Headline / Body font</string>
-    <string name="custom_font_preference_footer_message">Reboot after selecting a font to take effect</string>
-    <string name="cannot_resolve_activity">Unable to find a suitable activity to perform this action!</string>
-    <string name="invalid_font_file">Font file does not have valid postscript table</string>
-    <string name="failed_to_update_font">Failed to update font</string>
-    <string name="failed_to_copy_file_to_cache">Failed to copy font to cache</string>
+    <string name="font_settings">Настройки шрифта</string>
+    <string name="font_settings_summary">Выберите системный шрифт</string>
+    <string name="font_preference_title">Заголовок / Основной шрифт</string>
+    <string name="custom_font_preference_title">Заголовок / Основной шрифт</string>
+    <string name="custom_font_preference_footer_message">Перезагрузитесь после выбора шрифта, чтобы изменения вступили в силу</string>
+    <string name="cannot_resolve_activity">Не удалось найти подходящее действие для выполнения этого действия!</string>
+    <string name="invalid_font_file">Файл шрифта не имеет допустимой таблицы постскриптума</string>
+    <string name="failed_to_update_font">Не удалось обновить шрифт</string>
+    <string name="failed_to_copy_file_to_cache">Не удалось скопировать шрифт в кэш</string>
 </resources>
