@@ -165,10 +165,11 @@
 
     </PreferenceCategory>
 
-     <PreferenceCategory
-        android:title="@string/qs_footer_category">
+    <PreferenceCategory
+            android:key="qs_styling"
+            android:title="@string/qs_styling">
 
-    <com.spark.support.preferences.SystemSettingSeekBarPreference
+     <com.spark.support.preferences.SystemSettingSeekBarPreference
         android:key="qs_transparency"
         android:title="@string/qs_transparency_title"
         android:summary="@string/qs_transparency_summary"
@@ -177,6 +178,21 @@
         android:max="100"
         settings:units="%"         
         android:min="1" />
+
+        <com.spark.support.preferences.SystemSettingListPreference
+            android:key="qs_panel_style"
+            android:title="@string/qs_styles_title"
+            android:summary="%s"
+            android:dialogTitle="@string/qs_styles_title"
+            android:entries="@array/qs_styles_entries"
+            android:entryValues="@array/qs_styles_values"
+            android:defaultValue="0" />
+
+        </PreferenceCategory>
+
+
+     <PreferenceCategory
+        android:title="@string/qs_footer_category">
 
     <!-- QS footer text toggle -->
     <com.spark.support.preferences.SystemSettingSwitchPreference
