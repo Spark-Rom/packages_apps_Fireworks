@@ -28,6 +28,16 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:title="@string/weather_title">
+
+       <Preference
+            android:title="@string/weather_title"
+            android:key="weather_option"
+            android:summary="@string/weather_config_title"
+            android:fragment="com.spark.settings.fragments.Weather" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
          android:title="@string/charging_category">
 
     <com.spark.support.preferences.SystemSettingSwitchPreference
