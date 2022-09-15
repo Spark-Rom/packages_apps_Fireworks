@@ -544,6 +544,7 @@
     <string name="lockscreen_albumart_filter_blur">Blur</string>
     <string name="lockscreen_albumart_filter_grayblur">Grayscale and blurred</string>
     <string name="lockscreen_media_blur_title">Media art blur level</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Blur amount for lockscreen media artwork</string>
 
     <!-- Pulse notifications lighting -->
     <string name="pulse_ambient_light_title">Ambient edge lighting</string>
