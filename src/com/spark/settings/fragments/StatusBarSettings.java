@@ -52,6 +52,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private static final String KEY_STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String KEY_STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String KEY_STATUS_BAR_BATTERY_TEXT_CHARGING = "status_bar_battery_text_charging";
+    private static final String TEXT_CHARGING_SYMBOL = "text_charging_symbol";
 
     private static final int BATTERY_STYLE_PORTRAIT = 0;
     private static final int BATTERY_STYLE_TEXT = 4;
@@ -60,6 +61,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private SystemSettingListPreference mBatteryPercent;
     private SystemSettingListPreference mBatteryStyle;
     private SwitchPreference mBatteryTextCharging;
+    private SystemSettingListPreference mChargingSymbol;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -96,6 +98,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mBatteryTextCharging.setEnabled(batterystyle == BATTERY_STYLE_HIDDEN ||
                 (batterystyle != BATTERY_STYLE_TEXT && batterypercent != 2));
 
+        mChargingSymbol = (SystemSettingListPreference) findPreference("text_charging_symbol");
+        mChargingSymbol.setEnabled(batterystyle == BATTERY_STYLE_TEXT);
+
     }
 
     @Override
@@ -109,6 +114,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                     value != BATTERY_STYLE_TEXT && value != BATTERY_STYLE_HIDDEN);
             mBatteryTextCharging.setEnabled(value == BATTERY_STYLE_HIDDEN ||
                     (value != BATTERY_STYLE_TEXT && batterypercent != 2));
+            mChargingSymbol.setEnabled(batterystyle == BATTERY_STYLE_TEXT);
             return true;
         } else if (preference == mBatteryPercent) {
             int value = Integer.parseInt((String) newValue);
