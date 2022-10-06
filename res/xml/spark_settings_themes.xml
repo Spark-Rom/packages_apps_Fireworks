@@ -217,6 +217,25 @@
     </PreferenceCategory>
 
      <PreferenceCategory
+        android:title="@string/media_category">
+
+    <com.spark.support.preferences.SystemSettingSwitchPreference
+        android:key="media_artwork_blur_enabled"
+        android:title="@string/artwork_media_background_enable_blur_title"
+        android:defaultValue="false" />
+
+    <com.spark.support.preferences.SystemSettingSeekBarPreference
+        android:key="media_artwork_blur_radius"
+        android:title="@string/artwork_media_background_blur_radius_title"
+        android:dependency="media_artwork_blur_enabled" 
+        android:defaultValue="1"
+        android:max="25"
+        android:min="1" />
+
+    </PreferenceCategory>
+
+
+     <PreferenceCategory
         android:key="themes_qs_category"
         android:title="@string/qs_category">
 
