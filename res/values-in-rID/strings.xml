@@ -11,7 +11,7 @@
     <!-- Categories -->
     <string name="themes_title">Tema</string>
     <string name="qs_themes">Pengaturan Setelan Cepat</string>
-    <string name="spoof_title">Spoofing</string>
+    <string name="spoof_title">Pemalsuan</string>
     <string name="gestures_title">Gestur</string>
     <string name="aosp_setting_title">Setelan sistem</string>
     <string name="lockscreen_title">Layar kunci</string>
@@ -37,7 +37,7 @@
     <string name="rgb">RGB</string>
     <string name="hsl">HSL</string>
     <string name="hsv">HSV</string>
-    <string name="invalid_color">Invalid color!</string>
+    <string name="invalid_color">Warna tidak valid!</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">Pemblokir Iklan</string>
     <string name="hosts_block_summary">Blokir iklan dengan file host yang dimodifikasi. Matikan untuk menggunakan solusi pihak ketiga atau jika aplikasi menyebabkan masalah.</string>
@@ -57,14 +57,14 @@
     <!-- Notification light -->
     <string name="notification_light_settings">Lampu notifikasi</string>
     <!-- Unlimited g00gle ph0t0s st0rage -->
-    <string name="use_photos_spoof_title">Unlimited Photos storage</string>
-    <string name="use_photos_spoof_summary">Spoof your device as Pixel XL for Google Photos app only to provide unlimited storage for backup</string>
+    <string name="use_photos_spoof_title">Penyimpanan Google Foto tanpa batas</string>
+    <string name="use_photos_spoof_summary">Palsukan perangkat Anda sebagai Pixel XL untuk aplikasi Google Foto hanya untuk menyediakan penyimpanan tidak terbatas untuk cadangan</string>
     <!-- Unlock FPS for specific games -->
-    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
-    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+    <string name="use_games_spoof_title">Buka kunci FPS yang lebih tinggi dalam game</string>
+    <string name="use_games_spoof_summary">Palsukan perangkat Anda sebagai model yang berbeda untuk game tertentu agar dapat membuka FPS yang lebih tinggi</string>
     <!-- Alert Slider Notifications (OnePlus devices) -->
-    <string name="alert_slider_notifications_title">Alert slider notifications</string>
-    <string name="alert_slider_notifications_summary">Display notification when changing alert slider position</string>
+    <string name="alert_slider_notifications_title">Notifikasi slider peringatan</string>
+    <string name="alert_slider_notifications_summary">Tampilan notifikasi ketika mengubah posisi slider peringatan</string>
     <!-- Heads up -->
     <string name="headsup_category">Setelan notifikasi mengambang</string>
     <string name="heads_up_notifications">Notifikasi mengambang</string>
@@ -265,7 +265,7 @@
     <string name="charging_animation_title">Animasi pengisian daya</string>
     <string name="charging_animation_summary">Tampilkan animasi saat perangkat diisi daya</string>
     <!-- QS footer text -->
-    <string name="qs_footer_category">Qs Footer Customization</string>
+    <string name="qs_footer_category">Kustomisasi Footer Setelan Cepat</string>
     <string name="qs_footer_text_show_title">Tampilkan teks footer Setelan Cepat</string>
     <string name="qs_footer_text_string_title">Kustomisasi teks footer</string>
     <string name="qs_footer_text_string_summary">Setel ke kosong sebagai Spark</string>
@@ -472,6 +472,7 @@
     <string name="lockscreen_albumart_filter_blur">Buram</string>
     <string name="lockscreen_albumart_filter_grayblur">Skala abu-abu dan buram</string>
     <string name="lockscreen_media_blur_title">Tingkat keburaman seni media</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Blur amount for lockscreen media artwork</string>
     <!-- Pulse notifications lighting -->
     <string name="pulse_ambient_light_title">Pencahayaan tepi ambien</string>
     <string name="pulse_ambient_light_summary">Cahaya tepi ambien untuk mendorong notifikasi</string>
@@ -511,13 +512,13 @@
     <string name="pulse_light_top_bottom">Hanya Atas-Bawah</string>
     <string name="pulse_light_left_right">Hanya Kiri-Kanan</string>
     <!-- Quick Settings brightness slider -->
-    <string name="qs_show_brightness_slider_title">Brightness slider</string>
-    <string name="qs_show_brightness_slider_never">Never show</string>
-    <string name="qs_show_brightness_slider_expanded">Show when expanded</string>
+    <string name="qs_show_brightness_slider_title">Slider kecerahan</string>
+    <string name="qs_show_brightness_slider_never">Jangan tampilkan</string>
+    <string name="qs_show_brightness_slider_expanded">Tampilkan ketika diperluas</string>
     <string name="qs_show_brightness_slider_always">Selalu tampilkan</string>
-    <string name="qs_show_brightness_slider_not_expanded">Show when not expanded</string>
+    <string name="qs_show_brightness_slider_not_expanded">Tampilkan ketika tidak diperluas</string>
     <string name="qs_brightness_slider_position_title">Posisi</string>
-    <string name="qs_brightness_slider_position_top">Top</string>
+    <string name="qs_brightness_slider_position_top">Atas</string>
     <string name="qs_brightness_slider_position_bottom">Bawah</string>
     <!-- Quick Settings brightness icon -->
     <string name="qs_show_auto_brightness_title">Ikon Kecerahan Otomatis</string>
@@ -611,14 +612,14 @@
     <string name="status_bar_clock_font_size_title">Ukuran font Jam Bilah Status</string>
     <string name="qs_clock_font_size_title">Ukuran font Jam Header Setelan Cepat</string>
     <!-- QS tiles layout  -->
-    <string name="qs_layout_category_title">Tiles layout</string>
-    <string name="qs_tile_label_hide_title">Hide label</string>
-    <string name="qs_tile_label_size_title">Label text size</string>
-    <string name="qs_tile_label_hide_summary">Only show icon in tile</string>
+    <string name="qs_layout_category_title">Tata letak ubin</string>
+    <string name="qs_tile_label_hide_title">Sembunyikan label</string>
+    <string name="qs_tile_label_size_title">Ukuran teks label</string>
+    <string name="qs_tile_label_hide_summary">Hanya tampilkan ikon di ubin</string>
     <string name="qs_tile_layout_title">Tata letak vertikal</string>
-    <string name="qs_tile_layout_summary">Show label below icon instead next to icon</string>
-    <string name="qs_columns_portrait_title">Columns (portrait)</string>
-    <string name="qs_columns_landscape_title">Columns (landscape)</string>
+    <string name="qs_tile_layout_summary">Tampilkan label di bawah ikon alih-alih di sebelah ikon</string>
+    <string name="qs_columns_portrait_title">Kolom (potret)</string>
+    <string name="qs_columns_landscape_title">Kolom (lanskap)</string>
     <!-- Sb clock bg -->
     <string name="status_bar_show_clock_bg">Tampilkan keping latar belakang jam</string>
     <!-- Font -->
@@ -632,69 +633,107 @@
     <string name="failed_to_update_font">Gagal memperbarui font</string>
     <string name="failed_to_copy_file_to_cache">Gagal menyalin font ke cache</string>
     <!-- Network traffic -->
-    <string name="network_traffic_category_title">Network traffic</string>
-    <string name="network_traffic_intro_text">        Shows current network traffic speed in statusbar.
-        The monitor shows the speed dynamically such that it alternates between
-        upload and download speed each second
+    <string name="network_traffic_category_title">Lalu lintas jaringan</string>
+    <string name="network_traffic_intro_text">        Menunjukkan kecepatan lalu lintas jaringan saat ini di bilah status.
+        Monitor menunjukkan kecepatan secara dinamis sehingga bergantian antara
+        kecepatan unggah dan unduh setiap detik
     </string>
-    <string name="enable_network_traffic">Enable network traffic monitor</string>
-    <string name="statusbar_network_traffic_threshold_tx_title">Auto hide threshold for upload</string>
-    <string name="statusbar_network_traffic_threshold_rx_title">Auto hide threshold for download</string>
-    <string name="statusbar_network_traffic_unit_text_size_title">Network traffic unit text size</string>
-    <string name="statusbar_network_traffic_rate_text_scale_factor_title">Network traffic rate text scale factor</string>
-    <string name="statusbar_network_traffic_rate_text_scale_factor_dialog_title">Scale factor</string>
+    <string name="enable_network_traffic">Aktifkan monitor lalu lintas jaringan</string>
+    <string name="statusbar_network_traffic_threshold_tx_title">Sembunyikan ambang batas otomatis untuk mengunggah</string>
+    <string name="statusbar_network_traffic_threshold_rx_title">Sembunyikan ambang batas otomatis untuk mengunduh</string>
+    <string name="statusbar_network_traffic_unit_text_size_title">Ukuran teks unit lalu lintas jaringan</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_title">Faktor skala teks tingkat lalu lintas jaringan</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_dialog_title">Faktor skala</string>
     <!-- Monet engine -->
-    <string name="monet_engine_settings_title">Monet engine</string>
-    <string name="monet_engine_settings_summary">Custom color, colorfulness, brightness</string>
-    <string name="accurate_shades_title">Use accurate shades</string>
-    <string name="color_override_title">Custom color picker</string>
-    <string name="color_override_default_summary">Using wallpaper color</string>
-    <string name="custom_color_override_summary_placeholder">        Choosen color: <xliff:g example="#FF0000" id="Color">%1$s</xliff:g>. Set an empty value to use wallpaper color.
+    <string name="monet_engine_settings_title">Mesin Monet</string>
+    <string name="monet_engine_settings_summary">Warna kustom, penuh warna, kecerahan</string>
+    <string name="accurate_shades_title">Gunakan nuansa yang akurat</string>
+    <string name="color_override_title">Pilihan warna kustom</string>
+    <string name="color_override_default_summary">Gunakan warna Wallpaper</string>
+    <string name="custom_color_override_summary_placeholder">        Warna yang dipilih: <xliff:g example="#FF0000" id="Color">%1$s</xliff:g>. Tetapkan nilai kosong untuk menggunakan warna wallpaper.
     </string>
-    <string name="invalid_color_input">Invalid color input!</string>
-    <string name="chroma_factor_title">Colorfulness</string>
-    <string name="linear_lightness_title">Use custom lightness scale</string>
-    <string name="white_luminance_title">Brightness</string>
+    <string name="invalid_color_input">Masukan warna tidak valid!</string>
+    <string name="chroma_factor_title">Penuh warna</string>
+    <string name="linear_lightness_title">Gunakan skala ringan khusus</string>
+    <string name="white_luminance_title">Kecerahan</string>
     <!-- Weather - OmniJaws Settings -->
-    <string name="weather_title">Weather</string>
-    <string name="weather_config_title">Service settings</string>
+    <string name="weather_title">Cuaca</string>
+    <string name="weather_config_title">Setelan layanan</string>
     <string name="weather_config_summary"></string>
-    <string name="header_weather_title">Header view weather</string>
-    <string name="header_weather_summary">Enable notification panel header weather display</string>
-    <string name="weather_icon_pack_title">Condition icon pack</string>
-    <string name="weather_icon_pack_note">Note\u003a you can install new icon packs from play store by searching for \"Chronus icons\"</string>
+    <string name="header_weather_title">Tampilan cuaca header</string>
+    <string name="header_weather_summary">Aktifkan tampilan cuaca header panel notifikasi</string>
+    <string name="weather_icon_pack_title">Paket ikon kondisi</string>
+    <string name="weather_icon_pack_note">Catatan\u003a Anda dapat menginstal paket ikon baru dari Play Store dengan mencari \"Chronus ikon\"</string>
     <!-- Lockscreen Weather -->
-    <string name="lock_screen_weather_category_title">Lockscreen</string>
-    <string name="lock_screen_show_weather_title">Weather display</string>
-    <string name="lock_screen_show_weather_summaryOn">Weather is shown on Lockscreen</string>
-    <string name="lock_screen_show_weather_summaryOff">Weather is hidden on Lockscreen</string>
-    <string name="lock_screen_weather_style_title">Weather style</string>
-    <string name="lock_screen_weather_style_summaryOff">Show separate from date slice with location</string>
-    <string name="lock_screen_weather_style_summaryOn">Show added to date slice with no location</string>
-    <string name="lock_screen_weather_style_footer">Dedicated weather line is not available for Android S clock or clocks providing their own weather line such as DividedLines clock. For those clocks, toggling this behaves exactly as toggling weather display meaning no weather will be displayed if toggled off.</string>
-    <string name="lock_screen_show_location_title">Location display</string>
-    <string name="lock_screen_show_location_summaryOn">Location is shown on Lockscreen</string>
-    <string name="lock_screen_show_location_summaryOff">Location is hidden on Lockscreen</string>
-    <string name="lock_screen_weather_condition_icon_title">Condition icon display</string>
-    <string name="lock_screen_weather_condition_icon_summaryOn">Condition icon is shown on Lockscreen</string>
-    <string name="lock_screen_weather_condition_icon_summaryOff">Condition icon is hidden on Lockscreen</string>
+    <string name="lock_screen_weather_category_title">Layar kunci</string>
+    <string name="lock_screen_show_weather_title">Tampilan cuaca</string>
+    <string name="lock_screen_show_weather_summaryOn">Cuaca ditampilkan di layar kunci</string>
+    <string name="lock_screen_show_weather_summaryOff">Cuaca disembunyikan di layar kunci</string>
+    <string name="lock_screen_weather_style_title">Gaya Cuaca</string>
+    <string name="lock_screen_weather_style_summaryOff">Cuaca ditampilkan di bawah garis tanggal dengan lokasi</string>
+    <string name="lock_screen_weather_style_summaryOn">Cuaca ditampilkan di bawah garis tanggal tanpa lokasi</string>
+    <string name="lock_screen_weather_style_footer">Garis cuaca khusus tidak tersedia untuk jam Android S atau jam yang menyediakan garis cuacanya sendiri seperti jam DividedLines. Untuk jam tersebut, tombol ini berperilaku persis seperti tombol tampilan cuaca yang berarti tidak ada cuaca yang akan ditampilkan jika dimatikan.</string>
+    <string name="lock_screen_show_location_title">Tampilan lokasi</string>
+    <string name="lock_screen_show_location_summaryOn">Lokasi ditampilkan di layar kunci</string>
+    <string name="lock_screen_show_location_summaryOff">Lokasi disembunyikan di layar kunci</string>
+    <string name="lock_screen_weather_condition_icon_title">Tampilan ikon kondisi</string>
+    <string name="lock_screen_weather_condition_icon_summaryOn">Ikon kondisi ditampilkan di layar kunci</string>
+    <string name="lock_screen_weather_condition_icon_summaryOff">Ikon kondisi disembunyikan di layar kunci</string>
     <!-- QS Weather Options -->
-    <string name="qs_weather_title">QS weather</string>
-    <string name="qs_weather_summary">Configure QS Weather</string>
-    <string name="qs_weather_dialog_title">QS weather style</string>
-    <string name="qs_weather_hidden">Hide weather</string>
-    <string name="qs_temperature_image_show_scale">Show temp with scale and image</string>
-    <string name="qs_temperature_image_hide_scale">Show temp with image without scale</string>
-    <string name="qs_temperature_show_scale_hide_image">Show temp with scale</string>
-    <string name="qs_temperature_hide_scale_hide_image">Show temp without scale</string>
-    <string name="qs_show_image">Show image</string>
-    <string name="qs_weather_settings_title">Setup weather options</string>
-    <string name="qs_weather_settings_summary">Setup icon pack and weather service</string>
+    <string name="qs_weather_title">Cuaca Setelan Cepat</string>
+    <string name="qs_weather_summary">Konfigurasikan Cuaca Setelan Cepat</string>
+    <string name="qs_weather_dialog_title">Gaya Cuaca Setelan Cepat</string>
+    <string name="qs_weather_hidden">Sembunyikan cuaca</string>
+    <string name="qs_temperature_image_show_scale">Tampilkan suhu dengan skala dan gambar</string>
+    <string name="qs_temperature_image_hide_scale">Tampilkan suhu dengan gambar tanpa skala</string>
+    <string name="qs_temperature_show_scale_hide_image">Tampilkan suhu dengan skala</string>
+    <string name="qs_temperature_hide_scale_hide_image">Tampilkan suhu tanpa skala</string>
+    <string name="qs_show_image">Tampilkan gambar</string>
+    <string name="qs_weather_settings_title">Atur setelan cuaca</string>
+    <string name="qs_weather_settings_summary">Atur paket ikon dan layanan cuaca</string>
     <!-- Quick settings styling -->
-    <string name="qs_styling">Quick Settings Styling</string>
-    <string name="qs_styles_title">QS Panel Styles</string>
-    <string name="qs_rounded_rectangle">QS Rounded Rectangle</string>
-    <string name="qs_outline">QS Outline Style</string>
-    <string name="qs_two_tone">QS Two-Tone Accent</string>
-    <string name="qs_color_pop">QS Color Pop</string>
+    <string name="qs_styling">Penataan Gaya Setelan Cepat</string>
+    <string name="qs_styles_title">Gaya Setelan Cepat</string>
+    <string name="qs_rounded_rectangle">Persegi Panjang Bulat</string>
+    <string name="qs_outline">Gaya Garis Besar</string>
+    <string name="qs_two_tone">Aksen Dua Nada</string>
+    <string name="qs_color_pop">Warna Pop</string>
+    <!-- Status bar - Battery custom charging symbol -->
+    <string name="text_charging_symbol_title">Custom charging symbol for text style</string>
+    <string name="text_charging_symbol_dialog">Custom charging symbol near battery percentage text</string>
+    <string name="text_charging_symbol_default">Dinonaktifkan</string>
+    <string name="text_charging_symbol_flash">Flash</string>
+    <string name="text_charging_symbol_tilde">Tilde</string>
+    <string name="text_charging_symbol_plus">Plus</string>
+    <string name="text_charging_symbol_star">Star</string>
+    <string name="text_charging_symbol_rupee">Rupee</string>
+    <string name="text_charging_symbol_dollar">Dollar</string>
+    <string name="text_charging_symbol_euro">Euro</string>
+    <string name="text_charging_symbol_cent">Cent</string>
+    <!-- Power menu Animations  -->
+    <string name="power_menu_anim_cat">Power UI Animation Option</string>
+    <string name="power_menu_animation_title">Power menu animation</string>
+    <string name="power_menu_animation_dialog_title">Select power menu animation</string>
+    <string name="power_menu_animation_aosp">AOSP (default)</string>
+    <string name="power_menu_animation_bottom">Bawah</string>
+    <string name="power_menu_animation_top">Atas</string>
+    <string name="power_menu_animation_xylon">Fly</string>
+    <string name="power_menu_animation_slide">Slide</string>
+    <string name="power_menu_animation_turn">Turn</string>
+    <string name="power_menu_animation_fly">Glow</string>
+    <string name="power_menu_animation_card">3D</string>
+    <string name="power_menu_animation_translucent_top">Translucent (top)</string>
+    <string name="power_menu_animation_translucent_bottom">Translucent (bottom)</string>
+    <string name="power_menu_animation_rotate">Memutar</string>
+    <!-- Media artwork -->
+    <string name="media_category">Media notification</string>
+    <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
+    <string name="artwork_media_background_blur_radius_title">Blur amount for media notification artwork</string>
+    <!-- Black theme -->
+    <string name="custom_theme_title">Use Custom theme</string>
+    <string name="custom_theme_summary">Force custom background colors</string>
+    <string name="custom_theme_default">Bawaan</string>
+    <string name="custom_theme_black">Black</string>
+    <string name="custom_theme_clear">Clear (BETA)</string>
+    <string name="custom_theme_vivid">Vivid(Monet)</string>
 </resources>

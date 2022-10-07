@@ -11,7 +11,7 @@
     <!-- Categories -->
     <string name="themes_title">テーマ</string>
     <string name="qs_themes">クイック設定の編集</string>
-    <string name="spoof_title">Spoofing</string>
+    <string name="spoof_title">偽装</string>
     <string name="gestures_title">ジェスチャー</string>
     <string name="aosp_setting_title">システム設定</string>
     <string name="lockscreen_title">ロック画面</string>
@@ -37,7 +37,7 @@
     <string name="rgb">RGB</string>
     <string name="hsl">HSL</string>
     <string name="hsv">HSV</string>
-    <string name="invalid_color">Invalid color!</string>
+    <string name="invalid_color">無効な色です!</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">広告ブロック</string>
     <string name="hosts_block_summary">編集されたホストファイルで広告をブロックします。別途ブロックアプリを使用していたり問題が発生する場合は無効化して下さい。</string>
@@ -57,14 +57,14 @@
     <!-- Notification light -->
     <string name="notification_light_settings">通知ライト</string>
     <!-- Unlimited g00gle ph0t0s st0rage -->
-    <string name="use_photos_spoof_title">Unlimited Photos storage</string>
-    <string name="use_photos_spoof_summary">Spoof your device as Pixel XL for Google Photos app only to provide unlimited storage for backup</string>
+    <string name="use_photos_spoof_title">無制限のフォトストレージ</string>
+    <string name="use_photos_spoof_summary">お使いの端末は Pixel XL として写真アプリに認識され、無劣化で無制限のフォトストレージを利用できます。</string>
     <!-- Unlock FPS for specific games -->
-    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
-    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+    <string name="use_games_spoof_title">ゲーム時の FPS の向上</string>
+    <string name="use_games_spoof_summary">より高い FPS 設定を表示させるために一部のゲームで異なるモデルとして端末を偽装する</string>
     <!-- Alert Slider Notifications (OnePlus devices) -->
-    <string name="alert_slider_notifications_title">Alert slider notifications</string>
-    <string name="alert_slider_notifications_summary">Display notification when changing alert slider position</string>
+    <string name="alert_slider_notifications_title">Alert Slider 通知</string>
+    <string name="alert_slider_notifications_summary">充電中に Alert Slider の位置に通知を表示する</string>
     <!-- Heads up -->
     <string name="headsup_category">Heads Up の設定</string>
     <string name="heads_up_notifications">Heads Up</string>
@@ -265,7 +265,7 @@
     <string name="charging_animation_title">充電アニメーション</string>
     <string name="charging_animation_summary">電源接続時にアニメーションを表示する</string>
     <!-- QS footer text -->
-    <string name="qs_footer_category">Qs Footer Customization</string>
+    <string name="qs_footer_category">クイック設定フッターの編集</string>
     <string name="qs_footer_text_show_title">クイック設定フッターの文字を表示</string>
     <string name="qs_footer_text_string_title">フッターのテキストを編集</string>
     <string name="qs_footer_text_string_summary">空白に設定すると Spark が既定値として表示されます</string>
@@ -472,6 +472,7 @@
     <string name="lockscreen_albumart_filter_blur">ぼかし</string>
     <string name="lockscreen_albumart_filter_grayblur">グレースケールとぼかし</string>
     <string name="lockscreen_media_blur_title">メディアアートのぼかしレベル</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Blur amount for lockscreen media artwork</string>
     <!-- Pulse notifications lighting -->
     <string name="pulse_ambient_light_title">アンビエントエッジライト</string>
     <string name="pulse_ambient_light_summary">通知のパルスにアンビエントライトエッジを使用する</string>
@@ -511,13 +512,13 @@
     <string name="pulse_light_top_bottom">上部と下部のみ</string>
     <string name="pulse_light_left_right">左右のみ</string>
     <!-- Quick Settings brightness slider -->
-    <string name="qs_show_brightness_slider_title">Brightness slider</string>
-    <string name="qs_show_brightness_slider_never">Never show</string>
-    <string name="qs_show_brightness_slider_expanded">Show when expanded</string>
+    <string name="qs_show_brightness_slider_title">明るさスライダー</string>
+    <string name="qs_show_brightness_slider_never">非表示</string>
+    <string name="qs_show_brightness_slider_expanded">展開時に表示</string>
     <string name="qs_show_brightness_slider_always">常に表示</string>
-    <string name="qs_show_brightness_slider_not_expanded">Show when not expanded</string>
+    <string name="qs_show_brightness_slider_not_expanded">未展開時に表示</string>
     <string name="qs_brightness_slider_position_title">位置</string>
-    <string name="qs_brightness_slider_position_top">Top</string>
+    <string name="qs_brightness_slider_position_top">上部</string>
     <string name="qs_brightness_slider_position_bottom">下部</string>
     <!-- Quick Settings brightness icon -->
     <string name="qs_show_auto_brightness_title">自動明るさ調整アイコン</string>
@@ -611,14 +612,14 @@
     <string name="status_bar_clock_font_size_title">ステータスバーの時計フォントサイズ</string>
     <string name="qs_clock_font_size_title">クイック設定ヘッダーの時計フォントサイズ</string>
     <!-- QS tiles layout  -->
-    <string name="qs_layout_category_title">Tiles layout</string>
-    <string name="qs_tile_label_hide_title">Hide label</string>
-    <string name="qs_tile_label_size_title">Label text size</string>
-    <string name="qs_tile_label_hide_summary">Only show icon in tile</string>
+    <string name="qs_layout_category_title">タイルのレイアウト</string>
+    <string name="qs_tile_label_hide_title">ラベルを非表示にする</string>
+    <string name="qs_tile_label_size_title">ラベルのテキストサイズ</string>
+    <string name="qs_tile_label_hide_summary">タイルにアイコンのみ表示する</string>
     <string name="qs_tile_layout_title">縦方向レイアウト</string>
-    <string name="qs_tile_layout_summary">Show label below icon instead next to icon</string>
-    <string name="qs_columns_portrait_title">Columns (portrait)</string>
-    <string name="qs_columns_landscape_title">Columns (landscape)</string>
+    <string name="qs_tile_layout_summary">アイコンの横にラベルを表示する</string>
+    <string name="qs_columns_portrait_title">列数 (縦向き)</string>
+    <string name="qs_columns_landscape_title">列数 (横向き)</string>
     <!-- Sb clock bg -->
     <string name="status_bar_show_clock_bg">時計の背景チップを表示</string>
     <!-- Font -->
@@ -632,7 +633,7 @@
     <string name="failed_to_update_font">フォントの更新に失敗しました</string>
     <string name="failed_to_copy_file_to_cache">フォントをキャッシュにコピーできませんでした</string>
     <!-- Network traffic -->
-    <string name="network_traffic_category_title">Network traffic</string>
+    <string name="network_traffic_category_title">通信速度</string>
     <string name="network_traffic_intro_text">        Shows current network traffic speed in statusbar.
         The monitor shows the speed dynamically such that it alternates between
         upload and download speed each second
@@ -697,4 +698,42 @@
     <string name="qs_outline">QS Outline Style</string>
     <string name="qs_two_tone">QS Two-Tone Accent</string>
     <string name="qs_color_pop">QS Color Pop</string>
+    <!-- Status bar - Battery custom charging symbol -->
+    <string name="text_charging_symbol_title">Custom charging symbol for text style</string>
+    <string name="text_charging_symbol_dialog">Custom charging symbol near battery percentage text</string>
+    <string name="text_charging_symbol_default">無効</string>
+    <string name="text_charging_symbol_flash">Flash</string>
+    <string name="text_charging_symbol_tilde">Tilde</string>
+    <string name="text_charging_symbol_plus">Plus</string>
+    <string name="text_charging_symbol_star">Star</string>
+    <string name="text_charging_symbol_rupee">Rupee</string>
+    <string name="text_charging_symbol_dollar">Dollar</string>
+    <string name="text_charging_symbol_euro">Euro</string>
+    <string name="text_charging_symbol_cent">Cent</string>
+    <!-- Power menu Animations  -->
+    <string name="power_menu_anim_cat">Power UI Animation Option</string>
+    <string name="power_menu_animation_title">Power menu animation</string>
+    <string name="power_menu_animation_dialog_title">Select power menu animation</string>
+    <string name="power_menu_animation_aosp">AOSP (default)</string>
+    <string name="power_menu_animation_bottom">下部</string>
+    <string name="power_menu_animation_top">上部</string>
+    <string name="power_menu_animation_xylon">Fly</string>
+    <string name="power_menu_animation_slide">Slide</string>
+    <string name="power_menu_animation_turn">Turn</string>
+    <string name="power_menu_animation_fly">Glow</string>
+    <string name="power_menu_animation_card">3D</string>
+    <string name="power_menu_animation_translucent_top">Translucent (top)</string>
+    <string name="power_menu_animation_translucent_bottom">Translucent (bottom)</string>
+    <string name="power_menu_animation_rotate">回転</string>
+    <!-- Media artwork -->
+    <string name="media_category">Media notification</string>
+    <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
+    <string name="artwork_media_background_blur_radius_title">Blur amount for media notification artwork</string>
+    <!-- Black theme -->
+    <string name="custom_theme_title">Use Custom theme</string>
+    <string name="custom_theme_summary">Force custom background colors</string>
+    <string name="custom_theme_default">既定</string>
+    <string name="custom_theme_black">Black</string>
+    <string name="custom_theme_clear">Clear (BETA)</string>
+    <string name="custom_theme_vivid">Vivid(Monet)</string>
 </resources>

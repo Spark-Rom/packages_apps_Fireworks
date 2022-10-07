@@ -11,7 +11,7 @@
     <!-- Categories -->
     <string name="themes_title">Temas</string>
     <string name="qs_themes">Configurações rápidas</string>
-    <string name="spoof_title">Spoofing</string>
+    <string name="spoof_title">Mascarar dispositivo</string>
     <string name="gestures_title">Gestos</string>
     <string name="aosp_setting_title">Configurações do sistema</string>
     <string name="lockscreen_title">Tela de bloqueio</string>
@@ -37,7 +37,7 @@
     <string name="rgb">RGB</string>
     <string name="hsl">HSL</string>
     <string name="hsv">HSV</string>
-    <string name="invalid_color">Invalid color!</string>
+    <string name="invalid_color">Cor inválida!</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">Bloquear anúncios</string>
     <string name="hosts_block_summary">Bloqueie anúncios através de um arquivo host modificado. Desative para usar soluções de terceiros ou se enfrentar algum problema.</string>
@@ -57,14 +57,14 @@
     <!-- Notification light -->
     <string name="notification_light_settings">Led de notificações</string>
     <!-- Unlimited g00gle ph0t0s st0rage -->
-    <string name="use_photos_spoof_title">Unlimited Photos storage</string>
-    <string name="use_photos_spoof_summary">Spoof your device as Pixel XL for Google Photos app only to provide unlimited storage for backup</string>
+    <string name="use_photos_spoof_title">Armazenamento de fotos ilimitado</string>
+    <string name="use_photos_spoof_summary">Mascarar seu dispositivo como Pixel XL para ter acesso ilimitado ao armazenamento de backup no Google Fotos</string>
     <!-- Unlock FPS for specific games -->
-    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
-    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+    <string name="use_games_spoof_title">Desbloquear máximo de FPS nos jogos</string>
+    <string name="use_games_spoof_summary">Mascarar seu dispositivo como um modelo diferente para desbloquear mais FPS nos jogos</string>
     <!-- Alert Slider Notifications (OnePlus devices) -->
-    <string name="alert_slider_notifications_title">Alert slider notifications</string>
-    <string name="alert_slider_notifications_summary">Display notification when changing alert slider position</string>
+    <string name="alert_slider_notifications_title">Notificações do controle deslizante de alerta</string>
+    <string name="alert_slider_notifications_summary">Exibe uma notificação ao alterar a posição do controle deslizante de alerta</string>
     <!-- Heads up -->
     <string name="headsup_category">Configurações das notificações flutuantes</string>
     <string name="heads_up_notifications">Notificações flutuantes</string>
@@ -265,7 +265,7 @@
     <string name="charging_animation_title">Animação de carregamento</string>
     <string name="charging_animation_summary">Mostrar uma animação quando o dispositivo for conectado</string>
     <!-- QS footer text -->
-    <string name="qs_footer_category">Qs Footer Customization</string>
+    <string name="qs_footer_category">Personalizar rodapé das configurações rápidas</string>
     <string name="qs_footer_text_show_title">Texto do rodapé das configurações rápidas</string>
     <string name="qs_footer_text_string_title">Personalizar texto do rodapé</string>
     <string name="qs_footer_text_string_summary">Definir como vazio para o padrão Spark</string>
@@ -472,6 +472,7 @@
     <string name="lockscreen_albumart_filter_blur">Desfocar</string>
     <string name="lockscreen_albumart_filter_grayblur">Tons de cinza e desfocado</string>
     <string name="lockscreen_media_blur_title">Nível de desfoque da capa do álbum</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Blur amount for lockscreen media artwork</string>
     <!-- Pulse notifications lighting -->
     <string name="pulse_ambient_light_title">Iluminação nas bordas da tela</string>
     <string name="pulse_ambient_light_summary">Iluminar as bordas laterais da tela ao receber notificações</string>
@@ -511,13 +512,13 @@
     <string name="pulse_light_top_bottom">Apenas nas partes inferior e superior</string>
     <string name="pulse_light_left_right">Apenas nos lados esquerdo e direito</string>
     <!-- Quick Settings brightness slider -->
-    <string name="qs_show_brightness_slider_title">Brightness slider</string>
-    <string name="qs_show_brightness_slider_never">Never show</string>
-    <string name="qs_show_brightness_slider_expanded">Show when expanded</string>
+    <string name="qs_show_brightness_slider_title">Controle de brilho</string>
+    <string name="qs_show_brightness_slider_never">Nunca mostrar</string>
+    <string name="qs_show_brightness_slider_expanded">Mostrar quando expandido</string>
     <string name="qs_show_brightness_slider_always">Sempre mostrar</string>
-    <string name="qs_show_brightness_slider_not_expanded">Show when not expanded</string>
+    <string name="qs_show_brightness_slider_not_expanded">Mostrar no painel de acesso rápido</string>
     <string name="qs_brightness_slider_position_title">Posição</string>
-    <string name="qs_brightness_slider_position_top">Top</string>
+    <string name="qs_brightness_slider_position_top">Topo</string>
     <string name="qs_brightness_slider_position_bottom">Embaixo</string>
     <!-- Quick Settings brightness icon -->
     <string name="qs_show_auto_brightness_title">Ícone de brilho automático</string>
@@ -611,16 +612,16 @@
     <string name="status_bar_clock_font_size_title">Tamanho do relógio na barra de status</string>
     <string name="qs_clock_font_size_title">Tamanho do relógio no cabeçalho das configurações rápidas</string>
     <!-- QS tiles layout  -->
-    <string name="qs_layout_category_title">Tiles layout</string>
-    <string name="qs_tile_label_hide_title">Hide label</string>
-    <string name="qs_tile_label_size_title">Label text size</string>
-    <string name="qs_tile_label_hide_summary">Only show icon in tile</string>
+    <string name="qs_layout_category_title">Estilo dos blocos</string>
+    <string name="qs_tile_label_hide_title">Ocultar rótulo</string>
+    <string name="qs_tile_label_size_title">Tamanho do rótulo</string>
+    <string name="qs_tile_label_hide_summary">Mostrar somente o ícone no bloco</string>
     <string name="qs_tile_layout_title">Estilo vertical</string>
-    <string name="qs_tile_layout_summary">Show label below icon instead next to icon</string>
-    <string name="qs_columns_portrait_title">Columns (portrait)</string>
-    <string name="qs_columns_landscape_title">Columns (landscape)</string>
+    <string name="qs_tile_layout_summary">Inverter a ordem dos blocos para o padrão vertical</string>
+    <string name="qs_columns_portrait_title">Colunas (retrato)</string>
+    <string name="qs_columns_landscape_title">Colunas (paisagem)</string>
     <!-- Sb clock bg -->
-    <string name="status_bar_show_clock_bg">Show clock background chip</string>
+    <string name="status_bar_show_clock_bg">Colorir fundo do relógio</string>
     <!-- Font -->
     <string name="font_settings">Configurações de fonte</string>
     <string name="font_settings_summary">Definir estilo da fonte do sistema</string>
@@ -632,49 +633,49 @@
     <string name="failed_to_update_font">Falha ao atualizar a fonte</string>
     <string name="failed_to_copy_file_to_cache">Falha ao copiar fonte para o cache</string>
     <!-- Network traffic -->
-    <string name="network_traffic_category_title">Network traffic</string>
-    <string name="network_traffic_intro_text">        Shows current network traffic speed in statusbar.
-        The monitor shows the speed dynamically such that it alternates between
-        upload and download speed each second
+    <string name="network_traffic_category_title">Tráfego de rede</string>
+    <string name="network_traffic_intro_text">        Mostra a velocidade de tráfego de rede atual na barra de status.
+        O monitor mostra a velocidade dinamicamente de forma que alterne entre
+        velocidade de download e upload a cada segundo
     </string>
-    <string name="enable_network_traffic">Enable network traffic monitor</string>
-    <string name="statusbar_network_traffic_threshold_tx_title">Auto hide threshold for upload</string>
-    <string name="statusbar_network_traffic_threshold_rx_title">Auto hide threshold for download</string>
-    <string name="statusbar_network_traffic_unit_text_size_title">Network traffic unit text size</string>
-    <string name="statusbar_network_traffic_rate_text_scale_factor_title">Network traffic rate text scale factor</string>
-    <string name="statusbar_network_traffic_rate_text_scale_factor_dialog_title">Scale factor</string>
+    <string name="enable_network_traffic">Ativar o monitor de tráfego de rede</string>
+    <string name="statusbar_network_traffic_threshold_tx_title">Limite de upload para ocultar automaticamente</string>
+    <string name="statusbar_network_traffic_threshold_rx_title">Limite de download para ocultar automaticamente</string>
+    <string name="statusbar_network_traffic_unit_text_size_title">Tamanho do texto da unidade de tráfego de rede</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_title">Escala do texto da taxa de tráfego da rede</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_dialog_title">Fator de escala</string>
     <!-- Monet engine -->
-    <string name="monet_engine_settings_title">Monet engine</string>
-    <string name="monet_engine_settings_summary">Custom color, colorfulness, brightness</string>
-    <string name="accurate_shades_title">Use accurate shades</string>
-    <string name="color_override_title">Custom color picker</string>
-    <string name="color_override_default_summary">Using wallpaper color</string>
-    <string name="custom_color_override_summary_placeholder">        Choosen color: <xliff:g example="#FF0000" id="Color">%1$s</xliff:g>. Set an empty value to use wallpaper color.
+    <string name="monet_engine_settings_title">Tema Monet</string>
+    <string name="monet_engine_settings_summary">Cor personalizada, cor e brilho</string>
+    <string name="accurate_shades_title">Usar tons precisos</string>
+    <string name="color_override_title">Selecionar cor personalizada</string>
+    <string name="color_override_default_summary">Usar cores do papel de parede</string>
+    <string name="custom_color_override_summary_placeholder">        Cor escolhida: <xliff:g example="#FF0000" id="Color">%1$s</xliff:g>. Defina um valor vazio para usar a cor do papel de parede.
     </string>
-    <string name="invalid_color_input">Invalid color input!</string>
-    <string name="chroma_factor_title">Colorfulness</string>
-    <string name="linear_lightness_title">Use custom lightness scale</string>
-    <string name="white_luminance_title">Brightness</string>
+    <string name="invalid_color_input">Cor inválida!</string>
+    <string name="chroma_factor_title">Coloração</string>
+    <string name="linear_lightness_title">Usar escala de luz personalizada</string>
+    <string name="white_luminance_title">Brilho</string>
     <!-- Weather - OmniJaws Settings -->
-    <string name="weather_title">Weather</string>
-    <string name="weather_config_title">Service settings</string>
+    <string name="weather_title">Tempo</string>
+    <string name="weather_config_title">Configurações do serviço</string>
     <string name="weather_config_summary"></string>
-    <string name="header_weather_title">Header view weather</string>
-    <string name="header_weather_summary">Enable notification panel header weather display</string>
-    <string name="weather_icon_pack_title">Condition icon pack</string>
-    <string name="weather_icon_pack_note">Note\u003a you can install new icon packs from play store by searching for \"Chronus icons\"</string>
+    <string name="header_weather_title">Previsão do tempo no cabeçalho</string>
+    <string name="header_weather_summary">Ativar notificação de clima no cabeçalho do painel de configurações rápidas</string>
+    <string name="weather_icon_pack_title">Pacote de ícones climáticos</string>
+    <string name="weather_icon_pack_note">Nota\u003a Você pode instalar novos pacotes de ícones da play store procurando por \"Chronus icons\"</string>
     <!-- Lockscreen Weather -->
-    <string name="lock_screen_weather_category_title">Lockscreen</string>
-    <string name="lock_screen_show_weather_title">Weather display</string>
-    <string name="lock_screen_show_weather_summaryOn">Weather is shown on Lockscreen</string>
-    <string name="lock_screen_show_weather_summaryOff">Weather is hidden on Lockscreen</string>
-    <string name="lock_screen_weather_style_title">Weather style</string>
-    <string name="lock_screen_weather_style_summaryOff">Show separate from date slice with location</string>
-    <string name="lock_screen_weather_style_summaryOn">Show added to date slice with no location</string>
-    <string name="lock_screen_weather_style_footer">Dedicated weather line is not available for Android S clock or clocks providing their own weather line such as DividedLines clock. For those clocks, toggling this behaves exactly as toggling weather display meaning no weather will be displayed if toggled off.</string>
-    <string name="lock_screen_show_location_title">Location display</string>
-    <string name="lock_screen_show_location_summaryOn">Location is shown on Lockscreen</string>
-    <string name="lock_screen_show_location_summaryOff">Location is hidden on Lockscreen</string>
+    <string name="lock_screen_weather_category_title">Tela de bloqueio</string>
+    <string name="lock_screen_show_weather_title">Mostrar clima</string>
+    <string name="lock_screen_show_weather_summaryOn">Mostrar informações de clima na tela de bloqueio</string>
+    <string name="lock_screen_show_weather_summaryOff">Ocultar informações de clima na tela de bloqueio</string>
+    <string name="lock_screen_weather_style_title">Estilo do clima</string>
+    <string name="lock_screen_weather_style_summaryOff">Mostrar clima abaixo da data e localização</string>
+    <string name="lock_screen_weather_style_summaryOn">Mostrar junto a data sem localização</string>
+    <string name="lock_screen_weather_style_footer">As informações de clima não está disponível para o relógio Android S ou relógios que fornecem seu próprio ícone de clima, como DividedLines clock. Para esses relógios, alternar isso se comporta exatamente como alternar a exibição do clima, o que significa que nenhum clima será exibido se estiver desativado.</string>
+    <string name="lock_screen_show_location_title">Mostrar localização</string>
+    <string name="lock_screen_show_location_summaryOn">A localização é mostrada na tela de bloqueio</string>
+    <string name="lock_screen_show_location_summaryOff">A localização está oculta na tela de bloqueio</string>
     <string name="lock_screen_weather_condition_icon_title">Condition icon display</string>
     <string name="lock_screen_weather_condition_icon_summaryOn">Condition icon is shown on Lockscreen</string>
     <string name="lock_screen_weather_condition_icon_summaryOff">Condition icon is hidden on Lockscreen</string>
@@ -682,14 +683,14 @@
     <string name="qs_weather_title">QS weather</string>
     <string name="qs_weather_summary">Configure QS Weather</string>
     <string name="qs_weather_dialog_title">QS weather style</string>
-    <string name="qs_weather_hidden">Hide weather</string>
-    <string name="qs_temperature_image_show_scale">Show temp with scale and image</string>
-    <string name="qs_temperature_image_hide_scale">Show temp with image without scale</string>
-    <string name="qs_temperature_show_scale_hide_image">Show temp with scale</string>
-    <string name="qs_temperature_hide_scale_hide_image">Show temp without scale</string>
-    <string name="qs_show_image">Show image</string>
-    <string name="qs_weather_settings_title">Setup weather options</string>
-    <string name="qs_weather_settings_summary">Setup icon pack and weather service</string>
+    <string name="qs_weather_hidden">Ocultar clima</string>
+    <string name="qs_temperature_image_show_scale">Exibir temperatura com escala e imagem</string>
+    <string name="qs_temperature_image_hide_scale">Exibir temperatura com imagem sem escala</string>
+    <string name="qs_temperature_show_scale_hide_image">Exibir temperatura com escala</string>
+    <string name="qs_temperature_hide_scale_hide_image">Exibir temperatura sem escala</string>
+    <string name="qs_show_image">Exibir imagem</string>
+    <string name="qs_weather_settings_title">Configurar opções do clima</string>
+    <string name="qs_weather_settings_summary">Configurar pacote de ícones e serviço de clima</string>
     <!-- Quick settings styling -->
     <string name="qs_styling">Quick Settings Styling</string>
     <string name="qs_styles_title">QS Panel Styles</string>
@@ -697,4 +698,42 @@
     <string name="qs_outline">QS Outline Style</string>
     <string name="qs_two_tone">QS Two-Tone Accent</string>
     <string name="qs_color_pop">QS Color Pop</string>
+    <!-- Status bar - Battery custom charging symbol -->
+    <string name="text_charging_symbol_title">Custom charging symbol for text style</string>
+    <string name="text_charging_symbol_dialog">Custom charging symbol near battery percentage text</string>
+    <string name="text_charging_symbol_default">Desativado</string>
+    <string name="text_charging_symbol_flash">Flash</string>
+    <string name="text_charging_symbol_tilde">Tilde</string>
+    <string name="text_charging_symbol_plus">Plus</string>
+    <string name="text_charging_symbol_star">Star</string>
+    <string name="text_charging_symbol_rupee">Rupee</string>
+    <string name="text_charging_symbol_dollar">Dollar</string>
+    <string name="text_charging_symbol_euro">Euro</string>
+    <string name="text_charging_symbol_cent">Cent</string>
+    <!-- Power menu Animations  -->
+    <string name="power_menu_anim_cat">Power UI Animation Option</string>
+    <string name="power_menu_animation_title">Power menu animation</string>
+    <string name="power_menu_animation_dialog_title">Select power menu animation</string>
+    <string name="power_menu_animation_aosp">AOSP (default)</string>
+    <string name="power_menu_animation_bottom">Embaixo</string>
+    <string name="power_menu_animation_top">Topo</string>
+    <string name="power_menu_animation_xylon">Fly</string>
+    <string name="power_menu_animation_slide">Slide</string>
+    <string name="power_menu_animation_turn">Turn</string>
+    <string name="power_menu_animation_fly">Glow</string>
+    <string name="power_menu_animation_card">3D</string>
+    <string name="power_menu_animation_translucent_top">Translucent (top)</string>
+    <string name="power_menu_animation_translucent_bottom">Translucent (bottom)</string>
+    <string name="power_menu_animation_rotate">Rotacionar</string>
+    <!-- Media artwork -->
+    <string name="media_category">Media notification</string>
+    <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
+    <string name="artwork_media_background_blur_radius_title">Blur amount for media notification artwork</string>
+    <!-- Black theme -->
+    <string name="custom_theme_title">Use Custom theme</string>
+    <string name="custom_theme_summary">Force custom background colors</string>
+    <string name="custom_theme_default">Padrão</string>
+    <string name="custom_theme_black">Black</string>
+    <string name="custom_theme_clear">Clear (BETA)</string>
+    <string name="custom_theme_vivid">Vivid(Monet)</string>
 </resources>

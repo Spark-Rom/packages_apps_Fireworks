@@ -32,12 +32,12 @@
     <string name="general_category">Allgemein</string>
     <string name="flashlight_category">Taschenlampe</string>
     <string name="qs_category">Qs Customizations</string>
-    <string name="battery_category">Energy saving Configurations</string>
+    <string name="battery_category">Energiespareinstellungen</string>
     <!-- Color picker -->
     <string name="rgb">RGB</string>
     <string name="hsl">HSL</string>
     <string name="hsv">HSV</string>
-    <string name="invalid_color">Invalid color!</string>
+    <string name="invalid_color">Ungültige Farbe!</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">Adblock</string>
     <string name="hosts_block_summary">Werbung mittels einer modifizierten \"hosts\"-Datei blockieren. Deaktivieren um andere Apps hierfür zu verwenden oder wenn Probleme mit Apps auftreten.</string>
@@ -57,14 +57,14 @@
     <!-- Notification light -->
     <string name="notification_light_settings">Benachrichtigungs-LED</string>
     <!-- Unlimited g00gle ph0t0s st0rage -->
-    <string name="use_photos_spoof_title">Unlimited Photos storage</string>
-    <string name="use_photos_spoof_summary">Spoof your device as Pixel XL for Google Photos app only to provide unlimited storage for backup</string>
+    <string name="use_photos_spoof_title">Unbegrenzter Fotospeicher</string>
+    <string name="use_photos_spoof_summary">Das Gerät als Pixel XL ausgeben (nur für die Google-Fotos-App), um unbegrenzt Fotos sichern zu können</string>
     <!-- Unlock FPS for specific games -->
-    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
-    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+    <string name="use_games_spoof_title">Höhere FPS in bestimmten Spielen freischalten</string>
+    <string name="use_games_spoof_summary">Das Gerät als ein anderes Modell ausgeben (nur für ausgewählte Spiele), um höhere FPS freizuschalten</string>
     <!-- Alert Slider Notifications (OnePlus devices) -->
-    <string name="alert_slider_notifications_title">Alert slider notifications</string>
-    <string name="alert_slider_notifications_summary">Display notification when changing alert slider position</string>
+    <string name="alert_slider_notifications_title">Benachrichtigungs-Slider</string>
+    <string name="alert_slider_notifications_summary">Benachrichtigung bei Positionsänderung des Alert-Sliders anzeigen</string>
     <!-- Heads up -->
     <string name="headsup_category">Heads-Up-Einstellungen</string>
     <string name="heads_up_notifications">Pop-up-Benachrichtigungen</string>
@@ -156,7 +156,7 @@
     <string name="fprint_success_vib_summary">Bei erfolgreicher Fingerabdruck-Erkennung vibrieren</string>
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Sichere QS-Kacheln erfordern Entsperren</string>
-    <string name="qstile_requires_unlocking_summary">The following QS tiles require unlocking before you can acccess them from lock screen:\nAirplane, Cellular, NFC, Hotspot, USB tethering and Location</string>
+    <string name="qstile_requires_unlocking_summary">Um auf die folgenden QS-Kacheln vom Sperrbildschirm aus zuzugreifen, muss das Gerät entsperrt werden:\nFlugzeug, Mobiltelefon, NFC, Hotspot, USB-Tethering und Standort</string>
     <!-- Statusbar colored icons -->
     <string name="statusbar_colored_icons_title">Farbige Symbole</string>
     <string name="statusbar_colored_icons_summary">App-Symbole für Benachrichtigungssymbole in der Statusleiste verwenden</string>
@@ -175,7 +175,7 @@
     <string name="notification_guts_kill_app_button_summary">Eine \"App beenden\"-Taste anzeigen, wenn eine Benachrichtigung lange gedrückt wird</string>
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Uhrzeit &amp; Datum Einstellungen</string>
-    <string name="status_bar_clock_summary">Customize clock &amp; date</string>
+    <string name="status_bar_clock_summary">Uhr &amp; Datum anpassen</string>
     <string name="status_bar_clock_seconds_title">Sekundenanzeige</string>
     <string name="status_bar_clock_seconds_summary">Sekunden neben der Uhr in der Statusleiste anzeigen</string>
     <string name="status_bar_clock_position_title">Uhrenstil</string>
@@ -193,11 +193,11 @@
     <string name="status_bar_am_pm_title">AM/PM-Format</string>
     <string name="status_bar_am_pm_info">24-Stunden-Format ist aktiviert</string>
     <string name="status_bar_am_pm_normal">Normal</string>
-    <string name="status_bar_am_pm_small">Small</string>
+    <string name="status_bar_am_pm_small">Klein</string>
     <string name="status_bar_am_pm_hidden">Ausgeblendet</string>
     <string name="status_bar_date_title">Datum</string>
     <string name="status_bar_date_none">Ausgeblendet</string>
-    <string name="status_bar_date_small">Small</string>
+    <string name="status_bar_date_small">Klein</string>
     <string name="status_bar_date_normal">Normal</string>
     <string name="status_bar_date_format_title">Datumsformat</string>
     <string name="status_bar_date_style">Datums-Stil</string>
@@ -211,11 +211,11 @@
     <string name="clock_date_right">Rechts neben der Uhr</string>
     <string name="clock_date_left">Links neben der Uhr</string>
     <!-- QS clock -->
-    <string name="qs_clock_title">Clock</string>
-    <string name="qs_clock_summary">Display clock in quick status bar header</string>
+    <string name="qs_clock_title">Uhr</string>
+    <string name="qs_clock_summary">Uhr in der Kopfzeile der Schnelleinstellungen anzeigen</string>
     <!-- QS date -->
     <string name="qs_date_title">Datum</string>
-    <string name="qs_date_summary">Display date in quick status bar header</string>
+    <string name="qs_date_summary">Datum in der Kopfzeile der Schnelleinstellungen anzeigen</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_category_title">StatusBar Battery customizations</string>
     <string name="status_bar_battery_style_title">Stil des Akkusymbols</string>
@@ -230,10 +230,10 @@
     <string name="status_bar_battery_percent_title">Akkuanzeige in Prozent</string>
     <string name="status_bar_battery_percent_hidden">Ausgeblendet</string>
     <string name="status_bar_battery_percent_text_inside">Innerhalb des Symbols</string>
-    <string name="status_bar_battery_percent_text_next_right">Next to the icon (right)</string>
-    <string name="status_bar_battery_percent_text_next_left">Next to the icon (left)</string>
-    <string name="status_bar_battery_text_charging_title">Battery percentage when charging</string>
-    <string name="status_bar_battery_text_charging_summary">Always display battery percentage when charging</string>
+    <string name="status_bar_battery_percent_text_next_right">Neben dem Symbol (rechts)</string>
+    <string name="status_bar_battery_percent_text_next_left">Neben dem Symbol (links)</string>
+    <string name="status_bar_battery_text_charging_title">Akkuanzeige in Prozent beim Aufladen</string>
+    <string name="status_bar_battery_text_charging_summary">Akkustand immer anzeigen beim Laden</string>
     <!-- QS battery -->
     <string name="qs_battery_category_title">Qs Battery customizations</string>
     <string name="qs_use_status_bar_battery_style">Follow status bar style</string>
@@ -241,31 +241,31 @@
     <string name="battery_estimate_title">Akku-Schätzung</string>
     <string name="battery_estimate_summary">Geschätzte verbleibende Akkulaufzeit anzeigen, wenn verfügbar</string>
     <!-- Status bar - Battery Bar -->
-    <string name="battery_bar_title">Battery bar</string>
-    <string name="battery_bar_summary">Display and customize battery bar above status bar</string>
-    <string name="battery_bar_color">Color</string>
-    <string name="battery_bar_charging_color">Charging color</string>
-    <string name="battery_bar_battery_low_color">Low battery color</string>
-    <string name="battery_bar_style_title">Alignment</string>
-    <string name="battery_bar_thickness_title">Thickness</string>
+    <string name="battery_bar_title">Akkuleiste</string>
+    <string name="battery_bar_summary">Anpassen der Anzeige der Akkuleiste über der Statusleiste</string>
+    <string name="battery_bar_color">Farbe</string>
+    <string name="battery_bar_charging_color">Farbe beim Aufladen</string>
+    <string name="battery_bar_battery_low_color">Farbe bei niedrigem Akkustand</string>
+    <string name="battery_bar_style_title">Ausrichtung</string>
+    <string name="battery_bar_thickness_title">Stärke</string>
     <string name="battery_bar_animate_title">Ladeanimation</string>
-    <string name="battery_bar_style_regular">Regular</string>
-    <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
-    <string name="battery_bar_style_reversed">Reversed</string>
-    <string name="battery_bar_use_charging_color">Custom charging color</string>
+    <string name="battery_bar_style_regular">Standard</string>
+    <string name="battery_bar_style_center_mirrored">Mittig gespiegelt</string>
+    <string name="battery_bar_style_reversed">umgekehrt</string>
+    <string name="battery_bar_use_charging_color">Benutzerdefinierte Farbe beim Laden</string>
     <string name="battery_bar_blend_color_title">Blend colors</string>
     <string name="battery_bar_blend_color_summary">Blend full/empty colors corresponding to battery percentage</string>
     <string name="battery_bar_blend_color_reverse_title">Reverse color direction</string>
-    <string name="battery_bar_blend_color_reverse_summary_off">Full &#8594; empty: red &#8592; green &#8592; blue &#8592; red</string>
-    <string name="battery_bar_blend_color_reverse_summary_on">Full &#8594; empty: red &#8594; green &#8594; blue &#8594; red</string>
+    <string name="battery_bar_blend_color_reverse_summary_off">Voll &#8594; leer: Rot &#8592; Grün &#8592; Blau &#8592; Rot</string>
+    <string name="battery_bar_blend_color_reverse_summary_on">Voll &#8594; leer: Rot &#8594; Grün &#8594; Blau &#8594; Rot</string>
     <!-- Fingerprint Ripple Effect -->
-    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
-    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
+    <string name="enable_fingerprint_ripple_effect_title">Welleneffekt</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Welleneffekt beim Entsperren mit Fingerabdruck anzeigen</string>
     <!-- Charging animation -->
     <string name="charging_animation_title">Ladeanimation</string>
     <string name="charging_animation_summary">Animation anzeigen, wenn das Gerät angeschlossen wird</string>
     <!-- QS footer text -->
-    <string name="qs_footer_category">Qs Footer Customization</string>
+    <string name="qs_footer_category">Qs Fußzeile Anpassung</string>
     <string name="qs_footer_text_show_title">Show QS footer text</string>
     <string name="qs_footer_text_string_title">Text der Fußzeile anpassen</string>
     <string name="qs_footer_text_string_summary">Standardmäßig leer setzen</string>
@@ -273,7 +273,7 @@
     <string name="udfps_haptic_feedback_title">Haptisches Feedback des FOD</string>
     <string name="udfps_haptic_feedback_summary">Vibrieren bei Berührung des FOD-Symbols</string>
     <!-- UDFPS Recog Animation -->
-    <string name="udfps_customization">UDFPS customization</string>
+    <string name="udfps_customization">Animation des In-Display-Fingerabdrucks</string>
     <string name="udfps_recog_animation">Udfps animation</string>
     <string name="udfps_recog_animation_summary">Shows an animation while reading your finger</string>
     <string name="udfps_recog_animation_effect_title">Udfps animation effect</string>
@@ -411,7 +411,7 @@
     <string name="status_bar_logo_title">Logo</string>
     <string name="status_bar_logo_summary">Enable to display logo in the status bar</string>
     <string name="status_bar_logo_position_title">Position</string>
-    <string name="status_bar_logo_position_summary">Choose which side to display the logo on, left or right</string>
+    <string name="status_bar_logo_position_summary">Wählen, auf welcher Seite das Logo angezeigt werden soll, links oder rechts</string>
     <string name="status_bar_logo_position_right">Rechts</string>
     <string name="status_bar_logo_position_left">Links</string>
     <string name="status_bar_logo_position_right_quick">Right with QS Panel</string>
@@ -421,9 +421,9 @@
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_apple">Apple</string>
     <string name="status_bar_logo_style_ios">iOS</string>
-    <string name="status_bar_logo_style_emoticon">Emoticon</string>
-    <string name="status_bar_logo_style_emoticon_cool">Emoticon cool</string>
-    <string name="status_bar_logo_style_emoticon_dead">Emoticon dead</string>
+    <string name="status_bar_logo_style_emoticon">Smiley</string>
+    <string name="status_bar_logo_style_emoticon_cool">Smiley (cool)</string>
+    <string name="status_bar_logo_style_emoticon_dead">Smiley (Tod)</string>
     <string name="status_bar_logo_style_emoticon_devil">Emoticon devil</string>
     <string name="status_bar_logo_style_emoticon_happy">Emoticon happy</string>
     <string name="status_bar_logo_style_emoticon_neutral">Emoticon neutral</string>
@@ -446,9 +446,9 @@
     <string name="status_bar_logo_style_human_male">Man</string>
     <string name="status_bar_logo_style_human_female">Woman</string>
     <string name="status_bar_logo_style_human_male_female">Man &amp; woman</string>
-    <string name="status_bar_logo_style_gender_male">Male</string>
-    <string name="status_bar_logo_style_gender_female">Female</string>
-    <string name="status_bar_logo_style_gender_male_female">Male &amp; female</string>
+    <string name="status_bar_logo_style_gender_male">männlich</string>
+    <string name="status_bar_logo_style_gender_female">weiblich</string>
+    <string name="status_bar_logo_style_gender_male_female">männlich &amp; weiblich</string>
     <string name="status_bar_logo_style_amogus">AmongUs</string>
     <string name="status_bar_logo_style_guitar_electric">Electric guitar</string>
     <!-- Custom FOD Icon -->
@@ -472,6 +472,7 @@
     <string name="lockscreen_albumart_filter_blur">Blur</string>
     <string name="lockscreen_albumart_filter_grayblur">Grayscale and blurred</string>
     <string name="lockscreen_media_blur_title">Unschärfegrad für Mediencover</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Blur amount for lockscreen media artwork</string>
     <!-- Pulse notifications lighting -->
     <string name="pulse_ambient_light_title">Ambient edge lighting</string>
     <string name="pulse_ambient_light_summary">Leuchtende Bildschirmkanten für pulsierende Benachrichtigungen</string>
@@ -697,4 +698,42 @@
     <string name="qs_outline">QS Outline Style</string>
     <string name="qs_two_tone">QS Two-Tone Accent</string>
     <string name="qs_color_pop">QS Color Pop</string>
+    <!-- Status bar - Battery custom charging symbol -->
+    <string name="text_charging_symbol_title">Custom charging symbol for text style</string>
+    <string name="text_charging_symbol_dialog">Custom charging symbol near battery percentage text</string>
+    <string name="text_charging_symbol_default">Deaktiviert</string>
+    <string name="text_charging_symbol_flash">Flash</string>
+    <string name="text_charging_symbol_tilde">Tilde</string>
+    <string name="text_charging_symbol_plus">Plus</string>
+    <string name="text_charging_symbol_star">Star</string>
+    <string name="text_charging_symbol_rupee">Rupee</string>
+    <string name="text_charging_symbol_dollar">Dollar</string>
+    <string name="text_charging_symbol_euro">Euro</string>
+    <string name="text_charging_symbol_cent">Cent</string>
+    <!-- Power menu Animations  -->
+    <string name="power_menu_anim_cat">Power UI Animation Option</string>
+    <string name="power_menu_animation_title">Power menu animation</string>
+    <string name="power_menu_animation_dialog_title">Select power menu animation</string>
+    <string name="power_menu_animation_aosp">AOSP (default)</string>
+    <string name="power_menu_animation_bottom">Bottom</string>
+    <string name="power_menu_animation_top">Top</string>
+    <string name="power_menu_animation_xylon">Fly</string>
+    <string name="power_menu_animation_slide">Slide</string>
+    <string name="power_menu_animation_turn">Turn</string>
+    <string name="power_menu_animation_fly">Glow</string>
+    <string name="power_menu_animation_card">3D</string>
+    <string name="power_menu_animation_translucent_top">Translucent (top)</string>
+    <string name="power_menu_animation_translucent_bottom">Translucent (bottom)</string>
+    <string name="power_menu_animation_rotate">Rotate</string>
+    <!-- Media artwork -->
+    <string name="media_category">Media notification</string>
+    <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
+    <string name="artwork_media_background_blur_radius_title">Blur amount for media notification artwork</string>
+    <!-- Black theme -->
+    <string name="custom_theme_title">Use Custom theme</string>
+    <string name="custom_theme_summary">Force custom background colors</string>
+    <string name="custom_theme_default">Standard</string>
+    <string name="custom_theme_black">Black</string>
+    <string name="custom_theme_clear">Clear (BETA)</string>
+    <string name="custom_theme_vivid">Vivid(Monet)</string>
 </resources>

@@ -11,7 +11,7 @@
     <!-- Categories -->
     <string name="themes_title">Темы</string>
     <string name="qs_themes">Быстрые настройки</string>
-    <string name="spoof_title">Spoofing</string>
+    <string name="spoof_title">Подмена</string>
     <string name="gestures_title">Жесты</string>
     <string name="aosp_setting_title">Системные настройки</string>
     <string name="lockscreen_title">Экран блокировки</string>
@@ -37,7 +37,7 @@
     <string name="rgb">RGB</string>
     <string name="hsl">HSL</string>
     <string name="hsv">HSV</string>
-    <string name="invalid_color">Invalid color!</string>
+    <string name="invalid_color">Неправильный цвет!</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">Блокировщик рекламы</string>
     <string name="hosts_block_summary">Блокировать рекламу с изменённым файлом hosts. Отключите, чтобы использовать сторонние решения или если возникают проблемы с приложениями.</string>
@@ -57,14 +57,14 @@
     <!-- Notification light -->
     <string name="notification_light_settings">Индикатор уведомлений</string>
     <!-- Unlimited g00gle ph0t0s st0rage -->
-    <string name="use_photos_spoof_title">Unlimited Photos storage</string>
-    <string name="use_photos_spoof_summary">Spoof your device as Pixel XL for Google Photos app only to provide unlimited storage for backup</string>
+    <string name="use_photos_spoof_title">Безлимитное хранилище в Google Фото</string>
+    <string name="use_photos_spoof_summary">Маскировка устройства под Pixel XL для Google Фото, чтобы предоставить неограниченное хранилище для резервного копирования фотографий</string>
     <!-- Unlock FPS for specific games -->
-    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
-    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+    <string name="use_games_spoof_title">Разблокировать более высокий FPS в играх</string>
+    <string name="use_games_spoof_summary">Маскировка устройства под другую модель для определенных игр, чтобы разблокировать более высокий FPS</string>
     <!-- Alert Slider Notifications (OnePlus devices) -->
-    <string name="alert_slider_notifications_title">Alert slider notifications</string>
-    <string name="alert_slider_notifications_summary">Display notification when changing alert slider position</string>
+    <string name="alert_slider_notifications_title">Уведомления ползунка оповещений</string>
+    <string name="alert_slider_notifications_summary">Показывать уведомление при изменении положения слайдера предупреждений</string>
     <!-- Heads up -->
     <string name="headsup_category">Настройки всплывающих уведомлений</string>
     <string name="heads_up_notifications">Всплывающие уведомления</string>
@@ -265,7 +265,7 @@
     <string name="charging_animation_title">Анимация зарядки</string>
     <string name="charging_animation_summary">Показывать анимацию при подключенном зарядном устройстве</string>
     <!-- QS footer text -->
-    <string name="qs_footer_category">Qs Footer Customization</string>
+    <string name="qs_footer_category">Настройка колонтитула быстрых настроек</string>
     <string name="qs_footer_text_show_title">Показать текст нижней панели быстрых настроек</string>
     <string name="qs_footer_text_string_title">Пользовательский текст нижнего колонтитула</string>
     <string name="qs_footer_text_string_summary">Оставьте пустым для значения по умолчанию</string>
@@ -449,7 +449,7 @@
     <string name="status_bar_logo_style_gender_male">Мужской</string>
     <string name="status_bar_logo_style_gender_female">Женский</string>
     <string name="status_bar_logo_style_gender_male_female">Мужской и&amp; женский</string>
-    <string name="status_bar_logo_style_amogus">AmongUs</string>
+    <string name="status_bar_logo_style_amogus">Among Us</string>
     <string name="status_bar_logo_style_guitar_electric">Электрогитара</string>
     <!-- Custom FOD Icon -->
     <string name="custom_fp_icon_title">Собственный значок отпечатка пальца</string>
@@ -472,6 +472,7 @@
     <string name="lockscreen_albumart_filter_blur">Размытие</string>
     <string name="lockscreen_albumart_filter_grayblur">Оттенки серого и размытие</string>
     <string name="lockscreen_media_blur_title">Уровень размытия обложки</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Blur amount for lockscreen media artwork</string>
     <!-- Pulse notifications lighting -->
     <string name="pulse_ambient_light_title">Свечение по краям экрана</string>
     <string name="pulse_ambient_light_summary">Подсвечивать края экрана для пульсирующих уведомлений</string>
@@ -511,13 +512,13 @@
     <string name="pulse_light_top_bottom">Только сверху внизу</string>
     <string name="pulse_light_left_right">Только слева направо</string>
     <!-- Quick Settings brightness slider -->
-    <string name="qs_show_brightness_slider_title">Brightness slider</string>
-    <string name="qs_show_brightness_slider_never">Never show</string>
-    <string name="qs_show_brightness_slider_expanded">Show when expanded</string>
+    <string name="qs_show_brightness_slider_title">Ползунок яркости</string>
+    <string name="qs_show_brightness_slider_never">Никогда не показывать</string>
+    <string name="qs_show_brightness_slider_expanded">Показать при раскрытии</string>
     <string name="qs_show_brightness_slider_always">Показать Always</string>
-    <string name="qs_show_brightness_slider_not_expanded">Show when not expanded</string>
+    <string name="qs_show_brightness_slider_not_expanded">Показывать в свёрнутом виде</string>
     <string name="qs_brightness_slider_position_title">Позиция</string>
-    <string name="qs_brightness_slider_position_top">Top</string>
+    <string name="qs_brightness_slider_position_top">Сверху</string>
     <string name="qs_brightness_slider_position_bottom">Внизу</string>
     <!-- Quick Settings brightness icon -->
     <string name="qs_show_auto_brightness_title">Значок автоматической яркости</string>
@@ -611,14 +612,14 @@
     <string name="status_bar_clock_font_size_title">Размер шрифта часов в строке состояния</string>
     <string name="qs_clock_font_size_title">Размер шрифта часов в заголовке быстрых настроек</string>
     <!-- QS tiles layout  -->
-    <string name="qs_layout_category_title">Tiles layout</string>
-    <string name="qs_tile_label_hide_title">Hide label</string>
-    <string name="qs_tile_label_size_title">Label text size</string>
-    <string name="qs_tile_label_hide_summary">Only show icon in tile</string>
+    <string name="qs_layout_category_title">Расположение плиток</string>
+    <string name="qs_tile_label_hide_title">Скрыть подпись</string>
+    <string name="qs_tile_label_size_title">Размер шрифта подписи</string>
+    <string name="qs_tile_label_hide_summary">Показывать только иконку в плитке</string>
     <string name="qs_tile_layout_title">Вертикальное расположение</string>
-    <string name="qs_tile_layout_summary">Show label below icon instead next to icon</string>
-    <string name="qs_columns_portrait_title">Columns (portrait)</string>
-    <string name="qs_columns_landscape_title">Columns (landscape)</string>
+    <string name="qs_tile_layout_summary">Показывать подпись под значком, а не сбоку</string>
+    <string name="qs_columns_portrait_title">Столбцы (портрет)</string>
+    <string name="qs_columns_landscape_title">Столбцы (ландшафт)</string>
     <!-- Sb clock bg -->
     <string name="status_bar_show_clock_bg">Показывать фон часов в строке состояния</string>
     <!-- Font -->
@@ -632,69 +633,107 @@
     <string name="failed_to_update_font">Не удалось обновить шрифт</string>
     <string name="failed_to_copy_file_to_cache">Не удалось скопировать шрифт в кэш</string>
     <!-- Network traffic -->
-    <string name="network_traffic_category_title">Network traffic</string>
-    <string name="network_traffic_intro_text">        Shows current network traffic speed in statusbar.
-        The monitor shows the speed dynamically such that it alternates between
-        upload and download speed each second
+    <string name="network_traffic_category_title">Индикатор трафика</string>
+    <string name="network_traffic_intro_text">        Показывает текущую скорость сетевого трафика в строке состояния.
+        Скорость монитора динамически меняется между
+        скоростью раздачи и скоростью загрузки
     </string>
-    <string name="enable_network_traffic">Enable network traffic monitor</string>
-    <string name="statusbar_network_traffic_threshold_tx_title">Auto hide threshold for upload</string>
-    <string name="statusbar_network_traffic_threshold_rx_title">Auto hide threshold for download</string>
-    <string name="statusbar_network_traffic_unit_text_size_title">Network traffic unit text size</string>
-    <string name="statusbar_network_traffic_rate_text_scale_factor_title">Network traffic rate text scale factor</string>
-    <string name="statusbar_network_traffic_rate_text_scale_factor_dialog_title">Scale factor</string>
+    <string name="enable_network_traffic">Включить мониторинг трафика</string>
+    <string name="statusbar_network_traffic_threshold_tx_title">Порог активности загрузки для автоматического скрытия</string>
+    <string name="statusbar_network_traffic_threshold_rx_title">Порог активности скачивания для автоматического скрытия</string>
+    <string name="statusbar_network_traffic_unit_text_size_title">Размер индикатора сетевого трафика</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_title">Размер текста индикатора сетевого трафика</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_dialog_title">Масштабирование</string>
     <!-- Monet engine -->
-    <string name="monet_engine_settings_title">Monet engine</string>
-    <string name="monet_engine_settings_summary">Custom color, colorfulness, brightness</string>
-    <string name="accurate_shades_title">Use accurate shades</string>
-    <string name="color_override_title">Custom color picker</string>
-    <string name="color_override_default_summary">Using wallpaper color</string>
-    <string name="custom_color_override_summary_placeholder">        Choosen color: <xliff:g example="#FF0000" id="Color">%1$s</xliff:g>. Set an empty value to use wallpaper color.
+    <string name="monet_engine_settings_title">Движок Монет</string>
+    <string name="monet_engine_settings_summary">Пользовательский цвет, цветность, яркость</string>
+    <string name="accurate_shades_title">Использовать точные оттенки</string>
+    <string name="color_override_title">Выбор пользовательского цвета</string>
+    <string name="color_override_default_summary">Использовать цвета обоев</string>
+    <string name="custom_color_override_summary_placeholder">        Выберите цвет: <xliff:g example="#FF0000" id="Color">%1$s</xliff:g>. Установите пустое значение для использования цвета обоев.
     </string>
-    <string name="invalid_color_input">Invalid color input!</string>
-    <string name="chroma_factor_title">Colorfulness</string>
-    <string name="linear_lightness_title">Use custom lightness scale</string>
-    <string name="white_luminance_title">Brightness</string>
+    <string name="invalid_color_input">Неправильно введён цвет!</string>
+    <string name="chroma_factor_title">Цветность</string>
+    <string name="linear_lightness_title">Использовать пользовательскую шкалу яркости</string>
+    <string name="white_luminance_title">Яркость</string>
     <!-- Weather - OmniJaws Settings -->
-    <string name="weather_title">Weather</string>
-    <string name="weather_config_title">Service settings</string>
+    <string name="weather_title">Погода</string>
+    <string name="weather_config_title">Настройки поставщика погоды</string>
     <string name="weather_config_summary"></string>
-    <string name="header_weather_title">Header view weather</string>
-    <string name="header_weather_summary">Enable notification panel header weather display</string>
-    <string name="weather_icon_pack_title">Condition icon pack</string>
-    <string name="weather_icon_pack_note">Note\u003a you can install new icon packs from play store by searching for \"Chronus icons\"</string>
+    <string name="header_weather_title">Погода в заголовке панели уведомлений</string>
+    <string name="header_weather_summary">Включить отображение погоды в заголовке панели уведомлений</string>
+    <string name="weather_icon_pack_title">Набор значков погоды</string>
+    <string name="weather_icon_pack_note">Примечание\u003a Вы можете установить новые наборы значков из Google Play путём поиска «Chromous icons»</string>
     <!-- Lockscreen Weather -->
-    <string name="lock_screen_weather_category_title">Lockscreen</string>
-    <string name="lock_screen_show_weather_title">Weather display</string>
-    <string name="lock_screen_show_weather_summaryOn">Weather is shown on Lockscreen</string>
-    <string name="lock_screen_show_weather_summaryOff">Weather is hidden on Lockscreen</string>
-    <string name="lock_screen_weather_style_title">Weather style</string>
-    <string name="lock_screen_weather_style_summaryOff">Show separate from date slice with location</string>
-    <string name="lock_screen_weather_style_summaryOn">Show added to date slice with no location</string>
-    <string name="lock_screen_weather_style_footer">Dedicated weather line is not available for Android S clock or clocks providing their own weather line such as DividedLines clock. For those clocks, toggling this behaves exactly as toggling weather display meaning no weather will be displayed if toggled off.</string>
-    <string name="lock_screen_show_location_title">Location display</string>
-    <string name="lock_screen_show_location_summaryOn">Location is shown on Lockscreen</string>
-    <string name="lock_screen_show_location_summaryOff">Location is hidden on Lockscreen</string>
-    <string name="lock_screen_weather_condition_icon_title">Condition icon display</string>
-    <string name="lock_screen_weather_condition_icon_summaryOn">Condition icon is shown on Lockscreen</string>
-    <string name="lock_screen_weather_condition_icon_summaryOff">Condition icon is hidden on Lockscreen</string>
+    <string name="lock_screen_weather_category_title">Экран блокировки</string>
+    <string name="lock_screen_show_weather_title">Отображение погоды</string>
+    <string name="lock_screen_show_weather_summaryOn">Отображать погоду на экране блокировки</string>
+    <string name="lock_screen_show_weather_summaryOff">Не отображать погоду на экране блокировки</string>
+    <string name="lock_screen_weather_style_title">Стиль погоды</string>
+    <string name="lock_screen_weather_style_summaryOff">Показывать погоду вместе с местоположением под строкой даты</string>
+    <string name="lock_screen_weather_style_summaryOn">Показывать погоду без местоположения на строке даты</string>
+    <string name="lock_screen_weather_style_footer">Выделенная линия погоды не доступна для часов Android S или часов, обеспечивающих свою собственную линию погоды, такую как часы DividedLines. Для этих часов это ведет себя точно так же как переключение отображения погоды, что означает, что погода не будет отображаться, если выключена.</string>
+    <string name="lock_screen_show_location_title">Отображение местоположения</string>
+    <string name="lock_screen_show_location_summaryOn">Отображать местоположение на экране блокировки</string>
+    <string name="lock_screen_show_location_summaryOff">Не отображать местоположение на экране блокировки</string>
+    <string name="lock_screen_weather_condition_icon_title">Отображение значка погоды</string>
+    <string name="lock_screen_weather_condition_icon_summaryOn">Отображать значок погоды на экране блокировки</string>
+    <string name="lock_screen_weather_condition_icon_summaryOff">Не отображать значок погоды на экране блокировки</string>
     <!-- QS Weather Options -->
-    <string name="qs_weather_title">QS weather</string>
-    <string name="qs_weather_summary">Configure QS Weather</string>
-    <string name="qs_weather_dialog_title">QS weather style</string>
-    <string name="qs_weather_hidden">Hide weather</string>
-    <string name="qs_temperature_image_show_scale">Show temp with scale and image</string>
-    <string name="qs_temperature_image_hide_scale">Show temp with image without scale</string>
-    <string name="qs_temperature_show_scale_hide_image">Show temp with scale</string>
-    <string name="qs_temperature_hide_scale_hide_image">Show temp without scale</string>
-    <string name="qs_show_image">Show image</string>
-    <string name="qs_weather_settings_title">Setup weather options</string>
-    <string name="qs_weather_settings_summary">Setup icon pack and weather service</string>
+    <string name="qs_weather_title">Погода в быстрых настройках</string>
+    <string name="qs_weather_summary">Настроить погоду в быстрых настройках</string>
+    <string name="qs_weather_dialog_title">Стиль погоды в быстрых настройках</string>
+    <string name="qs_weather_hidden">Скрыть погоду</string>
+    <string name="qs_temperature_image_show_scale">Показывать температуру с единицами измерения и иконкой</string>
+    <string name="qs_temperature_image_hide_scale">Показывать температуру без единиц измерения и иконки</string>
+    <string name="qs_temperature_show_scale_hide_image">Показывать температуру с единицами измерения</string>
+    <string name="qs_temperature_hide_scale_hide_image">Показывать температуру без единиц измерения</string>
+    <string name="qs_show_image">Показать изображение</string>
+    <string name="qs_weather_settings_title">Настройка параметров погоды</string>
+    <string name="qs_weather_settings_summary">Настройка пакетов иконок и поставщика погоды</string>
     <!-- Quick settings styling -->
-    <string name="qs_styling">Quick Settings Styling</string>
-    <string name="qs_styles_title">QS Panel Styles</string>
-    <string name="qs_rounded_rectangle">QS Rounded Rectangle</string>
-    <string name="qs_outline">QS Outline Style</string>
-    <string name="qs_two_tone">QS Two-Tone Accent</string>
-    <string name="qs_color_pop">QS Color Pop</string>
+    <string name="qs_styling">Стиль панели быстрых настроек</string>
+    <string name="qs_styles_title">Стили панели быстрых настроек</string>
+    <string name="qs_rounded_rectangle">Скруглённый прямоугольник</string>
+    <string name="qs_outline">Стиль контура быстрых настроек</string>
+    <string name="qs_two_tone">Двухцветовой акцент быстрых настроек</string>
+    <string name="qs_color_pop">Цвета быстрых настроек</string>
+    <!-- Status bar - Battery custom charging symbol -->
+    <string name="text_charging_symbol_title">Custom charging symbol for text style</string>
+    <string name="text_charging_symbol_dialog">Custom charging symbol near battery percentage text</string>
+    <string name="text_charging_symbol_default">Отключено</string>
+    <string name="text_charging_symbol_flash">Flash</string>
+    <string name="text_charging_symbol_tilde">Tilde</string>
+    <string name="text_charging_symbol_plus">Plus</string>
+    <string name="text_charging_symbol_star">Star</string>
+    <string name="text_charging_symbol_rupee">Rupee</string>
+    <string name="text_charging_symbol_dollar">Dollar</string>
+    <string name="text_charging_symbol_euro">Euro</string>
+    <string name="text_charging_symbol_cent">Cent</string>
+    <!-- Power menu Animations  -->
+    <string name="power_menu_anim_cat">Power UI Animation Option</string>
+    <string name="power_menu_animation_title">Power menu animation</string>
+    <string name="power_menu_animation_dialog_title">Select power menu animation</string>
+    <string name="power_menu_animation_aosp">AOSP (default)</string>
+    <string name="power_menu_animation_bottom">Внизу</string>
+    <string name="power_menu_animation_top">Сверху</string>
+    <string name="power_menu_animation_xylon">Fly</string>
+    <string name="power_menu_animation_slide">Slide</string>
+    <string name="power_menu_animation_turn">Turn</string>
+    <string name="power_menu_animation_fly">Glow</string>
+    <string name="power_menu_animation_card">3D</string>
+    <string name="power_menu_animation_translucent_top">Translucent (top)</string>
+    <string name="power_menu_animation_translucent_bottom">Translucent (bottom)</string>
+    <string name="power_menu_animation_rotate">Вращение</string>
+    <!-- Media artwork -->
+    <string name="media_category">Media notification</string>
+    <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
+    <string name="artwork_media_background_blur_radius_title">Blur amount for media notification artwork</string>
+    <!-- Black theme -->
+    <string name="custom_theme_title">Use Custom theme</string>
+    <string name="custom_theme_summary">Force custom background colors</string>
+    <string name="custom_theme_default">По умолчанию</string>
+    <string name="custom_theme_black">Black</string>
+    <string name="custom_theme_clear">Clear (BETA)</string>
+    <string name="custom_theme_vivid">Vivid(Monet)</string>
 </resources>
