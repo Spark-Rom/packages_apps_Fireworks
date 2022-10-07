@@ -10,8 +10,8 @@
     <string name="unit_ms">毫秒</string>
     <!-- Categories -->
     <string name="themes_title">主题</string>
-    <string name="qs_themes">Qs Settings</string>
-    <string name="spoof_title">Spoofing</string>
+    <string name="qs_themes">Qs设置</string>
+    <string name="spoof_title">欺骗性的</string>
     <string name="gestures_title">手势</string>
     <string name="aosp_setting_title">系统设置</string>
     <string name="lockscreen_title">锁屏界面</string>
@@ -22,22 +22,22 @@
     <string name="statusbar_items_category">状态栏图标</string>
     <string name="fingerprint_category">指纹</string>
     <string name="animations_category">动画</string>
-    <string name="charging_category">Ls Charging configurations</string>
-    <string name="notifications_category">Notification Settings</string>
-    <string name="screenshot_category">Screenshot Settings</string>
-    <string name="statusbar_clock_category_title">Status Bar Clock</string>
-    <string name="powermenu_items_title">Power menu items</string>
+    <string name="charging_category">Ls 充电配置</string>
+    <string name="notifications_category">通知设置</string>
+    <string name="screenshot_category">屏幕截图设置</string>
+    <string name="statusbar_clock_category_title">状态栏时钟</string>
+    <string name="powermenu_items_title">电源菜单项目</string>
     <string name="monet_category">Monet</string>
     <string name="udfps_category">屏幕指纹</string>
     <string name="general_category">常规</string>
     <string name="flashlight_category">闪光灯</string>
-    <string name="qs_category">Qs Customizations</string>
-    <string name="battery_category">Energy saving Configurations</string>
+    <string name="qs_category">Qs 自定义</string>
+    <string name="battery_category">节能设置</string>
     <!-- Color picker -->
     <string name="rgb">RGB</string>
     <string name="hsl">HSL</string>
     <string name="hsv">HSV</string>
-    <string name="invalid_color">Invalid color!</string>
+    <string name="invalid_color">无效的颜色！</string>
     <!-- AdBlock -->
     <string name="hosts_block_title">广告屏蔽</string>
     <string name="hosts_block_summary">使用修改后的 hosts 文件阻止广告。如果使用第三方解决方案或应用程序导致问题，请关闭。</string>
@@ -57,14 +57,14 @@
     <!-- Notification light -->
     <string name="notification_light_settings">通知灯</string>
     <!-- Unlimited g00gle ph0t0s st0rage -->
-    <string name="use_photos_spoof_title">Unlimited Photos storage</string>
-    <string name="use_photos_spoof_summary">Spoof your device as Pixel XL for Google Photos app only to provide unlimited storage for backup</string>
+    <string name="use_photos_spoof_title">无限的照片存储</string>
+    <string name="use_photos_spoof_summary">将您的设备在谷歌相册中伪装成 Pixel XL，以提供无限存储空间进行备份</string>
     <!-- Unlock FPS for specific games -->
-    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
-    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+    <string name="use_games_spoof_title">在游戏中解锁更高的 FPS</string>
+    <string name="use_games_spoof_summary">将您的设备伪装成特定游戏所需的不同型号以解锁更高的 FPS</string>
     <!-- Alert Slider Notifications (OnePlus devices) -->
-    <string name="alert_slider_notifications_title">Alert slider notifications</string>
-    <string name="alert_slider_notifications_summary">Display notification when changing alert slider position</string>
+    <string name="alert_slider_notifications_title">三段式开关通知</string>
+    <string name="alert_slider_notifications_summary">更改三段式按键位置时显示通知</string>
     <!-- Heads up -->
     <string name="headsup_category">浮动通知设置</string>
     <string name="heads_up_notifications">悬浮通知</string>
@@ -80,31 +80,31 @@
     <string name="torch_power_button_gesture_dt_toast">快速打开相机手势已禁用</string>
     <string name="torch_power_button_gesture_lp">长按电源键</string>
     <!-- Long press power for torch -->
-    <string name="torch_long_press_power_gesture_title">Long press for torch</string>
-    <string name="torch_long_press_power_gesture_desc">Activate the torch by long pressing the power button while the display is off</string>
-    <string name="torch_long_press_power_timeout_title">Automatically turn torch off</string>
-    <string name="torch_long_press_power_timeout_never">Never</string>
+    <string name="torch_long_press_power_gesture_title">长按开启手电筒</string>
+    <string name="torch_long_press_power_gesture_desc">息屏状态下长按电源键以启动手电筒</string>
+    <string name="torch_long_press_power_timeout_title">自动关闭手电筒</string>
+    <string name="torch_long_press_power_timeout_never">一律不</string>
     <string name="torch_long_press_power_timeout_1min">1分钟</string>
     <string name="torch_long_press_power_timeout_2min">2 分钟</string>
     <string name="torch_long_press_power_timeout_5min">5分钟</string>
     <string name="torch_long_press_power_timeout_10min">10 分钟</string>
-    <string name="aosp_gesture_summary">Stock gestures included with Android</string>
+    <string name="aosp_gesture_summary">原生安卓中包含的手势</string>
     <!-- Double Tap Lock screen to Sleep -->
-    <string name="double_tap_to_sleep_lockscreen_title">Tap on lock screen</string>
-    <string name="double_tap_to_sleep_lockscreen_summary">Double-tap on the top third or bottom shortcut area of the lock screen to put the device to sleep</string>
+    <string name="double_tap_to_sleep_lockscreen_title">点按锁定屏幕</string>
+    <string name="double_tap_to_sleep_lockscreen_summary">双击锁屏界面顶部或底部快捷键区域使设备休眠</string>
     <!-- Double tap status bar to sleep -->
-    <string name="double_tap_to_sleep_title">Tap on status bar</string>
-    <string name="double_tap_to_sleep_summary">Double-tap status bar to put the device to sleep</string>
+    <string name="double_tap_to_sleep_title">点击状态栏</string>
+    <string name="double_tap_to_sleep_summary">双击状态栏使设备休眠</string>
     <!-- Double Tap on Doze to wake -->
-    <string name="double_tap_on_doze_to_wake_title">Tap to wake on doze</string>
-    <string name="double_tap_on_doze_to_wake_summary">Double-tap to wake when device is dreaming</string>
+    <string name="double_tap_on_doze_to_wake_title">点按以唤醒熄屏显示</string>
+    <string name="double_tap_on_doze_to_wake_summary">当设备正在睡眠时双击唤醒</string>
     <!-- Volume buttons category -->
     <string name="volume_category">音量键唤醒</string>
     <string name="volume_rocker_wake_title">通过音量键唤醒设备</string>
     <string name="volume_rocker_wake_summary">按下音量键将唤醒手机</string>
     <!-- Launch music player when headset is connected -->
-    <string name="headset_connect_player_title">Launch music app on headset connection</string>
-    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
+    <string name="headset_connect_player_title">耳机连接时开启音乐应用</string>
+    <string name="headset_connect_player_summary">连接耳机时启动默认音乐应用程序</string>
     <!-- Statusbar categories -->
     <string name="status_bar_icons_category_title">图标</string>
     <!-- VoLTE icon -->
@@ -122,8 +122,8 @@
     <!-- VoWiFi icon -->
     <string name="vowifi_icon_title">VoWiFi 图标</string>
     <string name="vowifi_icon_summary">当 VoWiFi 可用时显示图标</string>
-    <string name="volte_vowifi_override_title">VoWiFi override</string>
-    <string name="volte_vowifi_override_summary">Hide VoLTE when VoWiFi is available</string>
+    <string name="volte_vowifi_override_title">VoWiFi 覆盖</string>
+    <string name="volte_vowifi_override_summary">当 VoWiFi 可用时隐藏 VoLTE 图标</string>
     <!-- Power Menu -->
     <string name="power_menu_title">电源菜单</string>
     <string name="power_menu_title_summary">查看或更改电源菜单项目</string>
@@ -155,18 +155,18 @@
     <string name="fprint_success_vib_title">验证指纹时振动</string>
     <string name="fprint_success_vib_summary">验证指纹身份成功时振动</string>
     <!-- QSTile requires unlocking before being accessible -->
-    <string name="qstile_requires_unlocking_title">Secure QS tiles require unlocking</string>
-    <string name="qstile_requires_unlocking_summary">The following QS tiles require unlocking before you can acccess them from lock screen:\nAirplane, Cellular, NFC, Hotspot, USB tethering and Location</string>
+    <string name="qstile_requires_unlocking_title">设置控制中心磁贴时需要解锁</string>
+    <string name="qstile_requires_unlocking_summary">以下的控制中心磁贴需要解锁，然后您可以从锁定屏幕中启用：\n飞行模式，移动数据，NFC，热点，USB 网络共享和位置</string>
     <!-- Statusbar colored icons -->
-    <string name="statusbar_colored_icons_title">Colored icons</string>
-    <string name="statusbar_colored_icons_summary">Use app icons for notification icons in statusbar</string>
+    <string name="statusbar_colored_icons_title">彩色图标</string>
+    <string name="statusbar_colored_icons_summary">在状态栏使用应用图标作为通知图标</string>
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">屏幕关闭动画</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">缩放</string>
     <!-- Notification count -->
-    <string name="status_bar_notif_count_title">Show notification count</string>
-    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+    <string name="status_bar_notif_count_title">显示通知计数</string>
+    <string name="status_bar_notif_count_summary">显示待处理的通知的数量</string>
     <!-- Show old style mobile data icon -->
     <string name="use_old_mobiletype_title">使用旧式移动数据图标</string>
     <string name="use_old_mobiletype_summary">在信号图标上方显示网络类型</string>
@@ -175,8 +175,8 @@
     <string name="notification_guts_kill_app_button_summary">在通知长按菜单中显示强制关闭应用按键</string>
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">时钟和日期设置</string>
-    <string name="status_bar_clock_summary">Customize clock &amp; date</string>
-    <string name="status_bar_clock_seconds_title">Clock seconds</string>
+    <string name="status_bar_clock_summary">自定义时钟和日期</string>
+    <string name="status_bar_clock_seconds_title">时间显秒</string>
     <string name="status_bar_clock_seconds_summary">Display seconds next to clock in status bar</string>
     <string name="status_bar_clock_position_title">Clock style</string>
     <string name="status_bar_clock_position_right">右侧</string>
@@ -472,6 +472,7 @@
     <string name="lockscreen_albumart_filter_blur">Blur</string>
     <string name="lockscreen_albumart_filter_grayblur">Grayscale and blurred</string>
     <string name="lockscreen_media_blur_title">专辑封面模糊度</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Blur amount for lockscreen media artwork</string>
     <!-- Pulse notifications lighting -->
     <string name="pulse_ambient_light_title">Ambient edge lighting</string>
     <string name="pulse_ambient_light_summary">当收到通知时在屏幕边缘显示光效</string>
@@ -697,4 +698,42 @@
     <string name="qs_outline">QS Outline Style</string>
     <string name="qs_two_tone">QS Two-Tone Accent</string>
     <string name="qs_color_pop">QS Color Pop</string>
+    <!-- Status bar - Battery custom charging symbol -->
+    <string name="text_charging_symbol_title">Custom charging symbol for text style</string>
+    <string name="text_charging_symbol_dialog">Custom charging symbol near battery percentage text</string>
+    <string name="text_charging_symbol_default">停用</string>
+    <string name="text_charging_symbol_flash">Flash</string>
+    <string name="text_charging_symbol_tilde">Tilde</string>
+    <string name="text_charging_symbol_plus">Plus</string>
+    <string name="text_charging_symbol_star">Star</string>
+    <string name="text_charging_symbol_rupee">Rupee</string>
+    <string name="text_charging_symbol_dollar">Dollar</string>
+    <string name="text_charging_symbol_euro">Euro</string>
+    <string name="text_charging_symbol_cent">Cent</string>
+    <!-- Power menu Animations  -->
+    <string name="power_menu_anim_cat">Power UI Animation Option</string>
+    <string name="power_menu_animation_title">Power menu animation</string>
+    <string name="power_menu_animation_dialog_title">Select power menu animation</string>
+    <string name="power_menu_animation_aosp">AOSP (default)</string>
+    <string name="power_menu_animation_bottom">底部</string>
+    <string name="power_menu_animation_top">Top</string>
+    <string name="power_menu_animation_xylon">Fly</string>
+    <string name="power_menu_animation_slide">Slide</string>
+    <string name="power_menu_animation_turn">Turn</string>
+    <string name="power_menu_animation_fly">Glow</string>
+    <string name="power_menu_animation_card">3D</string>
+    <string name="power_menu_animation_translucent_top">Translucent (top)</string>
+    <string name="power_menu_animation_translucent_bottom">Translucent (bottom)</string>
+    <string name="power_menu_animation_rotate">Rotate</string>
+    <!-- Media artwork -->
+    <string name="media_category">Media notification</string>
+    <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
+    <string name="artwork_media_background_blur_radius_title">Blur amount for media notification artwork</string>
+    <!-- Black theme -->
+    <string name="custom_theme_title">Use Custom theme</string>
+    <string name="custom_theme_summary">Force custom background colors</string>
+    <string name="custom_theme_default">默认</string>
+    <string name="custom_theme_black">Black</string>
+    <string name="custom_theme_clear">Clear (BETA)</string>
+    <string name="custom_theme_vivid">Vivid(Monet)</string>
 </resources>
