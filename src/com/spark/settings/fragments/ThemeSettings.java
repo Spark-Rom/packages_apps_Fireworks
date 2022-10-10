@@ -68,7 +68,9 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     private static final String USE_STOCK_LAYOUT = "use_stock_layout";
     private static final String ABOUT_PHONE_STYLE = "about_card_style";
     private static final String HIDE_USER_CARD = "hide_user_card";
-    
+    private static final String KEY_SYS_INFO = "qs_system_info";
+    private static final String KEY_SYS_INFO_ICON = "qs_system_info_icon";
+
     private ThemeUtils mThemeUtils;
     private Handler mHandler;
     private SystemSettingListPreference mSettingsDashBoardStyle;
@@ -87,6 +89,8 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     private ListPreference mBrightnessSliderPosition;
     private SwitchPreference mShowAutoBrightness;
     private SwitchPreference mBatteryEstimate;
+    private ListPreference mSystemInfo;
+    private SwitchPreference mSystemInfoIcon;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -156,6 +160,18 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
         mBatteryEstimate = findPreference(KEY_PREF_BATTERY_ESTIMATE);
         if (!turboInstalled)
             prefScreen.removePreference(mBatteryEstimate);
+
+        mSystemInfo = (ListPreference) findPreference(KEY_SYS_INFO);
+	mSystemInfoIcon = (SwitchPreference) findPreference(KEY_SYS_INFO_ICON);
+        boolean mSystemInfoSupported = mContext.getResources().getBoolean(
+                com.android.internal.R.bool.config_supportSystemInfo);
+        if (!mSystemInfoSupported) {
+            prefScreen.removePreference(mSystemInfo);
+            prefScreen.removePreference(mSystemInfoIcon);
+        } else {
+            mSystemInfo.setOnPreferenceChangeListener(this);
+            mSystemInfoIcon.setOnPreferenceChangeListener(this);
+        }
     }
 
     private static boolean isAudioPanelOnLeftSide(Context context) {
@@ -214,7 +230,13 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
             Settings.Secure.putIntForUser(getContentResolver(),
                 Settings.Secure.ENABLE_COMBINED_QS_HEADERS, value ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
-         }
+        } else if (preference == mSystemInfo) {
+            SparkUtils.showSystemUiRestartDialog(getContext());
+            return true;
+        } else if (preference == mSystemInfoIcon) {
+            SparkUtils.showSystemUiRestartDialog(getContext());
+            return true;
+        }
          return false;
     }
 
@@ -305,13 +327,19 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
-
+                    final Resources res = context.getResources();
                     boolean turboInstalled = SparkUtils.isPackageInstalled(context,
                             "com.google.android.apps.turbo");
+                    boolean mSystemInfoSupported = res.getBoolean(
+                            com.android.internal.R.bool.config_supportSystemInfo);
+
 
                     if (!turboInstalled)
                         keys.add(KEY_PREF_BATTERY_ESTIMATE);
-
+                    if (!mSystemInfoSupported) {
+                        keys.add(KEY_SYS_INFO);
+                        keys.add(KEY_SYS_INFO_ICON);
+                    }
                     return keys;
                 }
             };
