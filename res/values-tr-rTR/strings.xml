@@ -472,7 +472,7 @@
     <string name="lockscreen_albumart_filter_blur">Bulanıklık</string>
     <string name="lockscreen_albumart_filter_grayblur">Gri tonlama ve bulanık</string>
     <string name="lockscreen_media_blur_title">Medya resmi bulanıklık seviyesi</string>
-    <string name="lockscreen_albumart_filter_blur_radius_title">Blur amount for lockscreen media artwork</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Kilit ekranı medya resmi için bulanıklık miktarı</string>
     <!-- Pulse notifications lighting -->
     <string name="pulse_ambient_light_title">Ortam ekranı kenarı aydınlatması</string>
     <string name="pulse_ambient_light_summary">Bildirimler için ortam ekranı kenarlarını aydınlat</string>
@@ -699,41 +699,41 @@
     <string name="qs_two_tone">Hızlı ayarlar iki tonlu vurgu rengi</string>
     <string name="qs_color_pop">Hızlı ayarlar renk popu</string>
     <!-- Status bar - Battery custom charging symbol -->
-    <string name="text_charging_symbol_title">Custom charging symbol for text style</string>
-    <string name="text_charging_symbol_dialog">Custom charging symbol near battery percentage text</string>
+    <string name="text_charging_symbol_title">Metin stili için özel şarj sembolü</string>
+    <string name="text_charging_symbol_dialog">Pil yüzdesi metninin yanında özel şarj sembolü</string>
     <string name="text_charging_symbol_default">Devre dışı</string>
-    <string name="text_charging_symbol_flash">Flash</string>
+    <string name="text_charging_symbol_flash">Flaş</string>
     <string name="text_charging_symbol_tilde">Tilde</string>
-    <string name="text_charging_symbol_plus">Plus</string>
-    <string name="text_charging_symbol_star">Star</string>
-    <string name="text_charging_symbol_rupee">Rupee</string>
-    <string name="text_charging_symbol_dollar">Dollar</string>
+    <string name="text_charging_symbol_plus">Artı</string>
+    <string name="text_charging_symbol_star">Yıldız</string>
+    <string name="text_charging_symbol_rupee">Rupi</string>
+    <string name="text_charging_symbol_dollar">Dolar</string>
     <string name="text_charging_symbol_euro">Euro</string>
-    <string name="text_charging_symbol_cent">Cent</string>
+    <string name="text_charging_symbol_cent">Sent</string>
     <!-- Power menu Animations  -->
-    <string name="power_menu_anim_cat">Power UI Animation Option</string>
-    <string name="power_menu_animation_title">Power menu animation</string>
-    <string name="power_menu_animation_dialog_title">Select power menu animation</string>
-    <string name="power_menu_animation_aosp">AOSP (default)</string>
+    <string name="power_menu_anim_cat">Güç menüsü animasyon seçenekleri</string>
+    <string name="power_menu_animation_title">Güç menüsü animasyonu</string>
+    <string name="power_menu_animation_dialog_title">Güç menüsü animasyonu seçin</string>
+    <string name="power_menu_animation_aosp">AOSP (varsayılan)</string>
     <string name="power_menu_animation_bottom">Alt</string>
     <string name="power_menu_animation_top">Üst</string>
-    <string name="power_menu_animation_xylon">Fly</string>
-    <string name="power_menu_animation_slide">Slide</string>
-    <string name="power_menu_animation_turn">Turn</string>
-    <string name="power_menu_animation_fly">Glow</string>
+    <string name="power_menu_animation_xylon">Uçur</string>
+    <string name="power_menu_animation_slide">Kaydır</string>
+    <string name="power_menu_animation_turn">Döndür</string>
+    <string name="power_menu_animation_fly">Parıltı</string>
     <string name="power_menu_animation_card">3D</string>
-    <string name="power_menu_animation_translucent_top">Translucent (top)</string>
-    <string name="power_menu_animation_translucent_bottom">Translucent (bottom)</string>
+    <string name="power_menu_animation_translucent_top">Şeffaf (üst)</string>
+    <string name="power_menu_animation_translucent_bottom">Şeffaf (alt)</string>
     <string name="power_menu_animation_rotate">Döndür</string>
     <!-- Media artwork -->
-    <string name="media_category">Media notification</string>
-    <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
-    <string name="artwork_media_background_blur_radius_title">Blur amount for media notification artwork</string>
+    <string name="media_category">Medya bildirimi</string>
+    <string name="artwork_media_background_enable_blur_title">Medya bildirim resmi arka planını bulanıklaştır</string>
+    <string name="artwork_media_background_blur_radius_title">Medya bildirim resmi için bulanıklık miktarı</string>
     <!-- Black theme -->
-    <string name="custom_theme_title">Use Custom theme</string>
-    <string name="custom_theme_summary">Force custom background colors</string>
+    <string name="custom_theme_title">Özel tema kullan</string>
+    <string name="custom_theme_summary">Özel arkaplan renklerini zorla</string>
     <string name="custom_theme_default">Varsayılan</string>
-    <string name="custom_theme_black">Black</string>
-    <string name="custom_theme_clear">Clear (BETA)</string>
-    <string name="custom_theme_vivid">Vivid(Monet)</string>
+    <string name="custom_theme_black">Siyah</string>
+    <string name="custom_theme_clear">Temiz (BETA)</string>
+    <string name="custom_theme_vivid">Canlı(Monet)</string>
 </resources>
