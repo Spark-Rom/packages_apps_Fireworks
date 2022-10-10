@@ -188,6 +188,14 @@
             android:entryValues="@array/qs_styles_values"
             android:defaultValue="0" />
 
+        <com.spark.support.preferences.SystemSettingListPreference
+            android:key="qs_system_info"
+            android:title="@string/qs_system_info_title"
+            android:entries="@array/qs_system_info_entries"
+            android:entryValues="@array/qs_system_info_values"
+            android:defaultValue="0" />
+
+
         </PreferenceCategory>
 
 

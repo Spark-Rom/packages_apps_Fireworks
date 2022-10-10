@@ -73,6 +73,7 @@ public class ThemeSettings extends DashboardFragment implements
     private static final String PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
     private static final String PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
     private static final String QS_PANEL_STYLE  = "qs_panel_style";
+    private static final String KEY_SYS_INFO = "qs_system_info";
 
     private Handler mHandler;
     private IOverlayManager mOverlayManager;
@@ -86,6 +87,7 @@ public class ThemeSettings extends DashboardFragment implements
     private ListPreference mTileAnimationInterpolator;
     private SystemSettingSwitchPreference mUseStockLayout;
     private SystemSettingSwitchPreference mDisableUserCard;
+    private ListPreference mSystemInfo;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -143,6 +145,12 @@ public class ThemeSettings extends DashboardFragment implements
 
         mQsStyle = (SystemSettingListPreference) findPreference(QS_PANEL_STYLE);
         mCustomSettingsObserver.observe();
+
+        mSystemInfo = (ListPreference) findPreference(KEY_SYS_INFO);
+        boolean mSystemInfoSupported = mContext.getResources().getBoolean(
+                com.android.internal.R.bool.config_supportSystemInfo);
+        if (!mSystemInfoSupported)
+            prefScreen.removePreference(mSystemInfo);
     }
 
     private CustomSettingsObserver mCustomSettingsObserver = new CustomSettingsObserver(mHandler);
