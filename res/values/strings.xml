@@ -839,6 +839,8 @@
     <string name="custom_theme_black">Black</string>
     <string name="custom_theme_clear">Clear (BETA)</string>
     <string name="custom_theme_vivid">Vivid(Monet)</string>
+    <string name="custom_theme_espresso">Espresso</string>
+    <string name="custom_theme_snowpaintdrop">Snowpaintdrop</string>
 
     <!-- Pulse music visualizer -->
     <string name="pulse_help_policy_notice_title">About Pulse</string>
