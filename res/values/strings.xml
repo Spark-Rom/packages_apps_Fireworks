@@ -890,4 +890,8 @@
     <!-- Bluetooth status -->
     <string name="bluetooth_battery_title">Bluetooth battery status</string>
     <string name="bluetooth_battery_summary">Display battery status for the connected bluetooth device, if available</string>
+
+    <!-- Lockscreen shortcuts -->
+    <string name="lockscreen_shortcuts_title">Lockscreen shortcuts</string>
+    <string name="lockscreen_shortcuts_summary">Customize which shortcuts are displayed</string>
 </resources>

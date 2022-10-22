@@ -16,6 +16,17 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceCategory
+        android:title="@string/lockscreen_shortcuts_title">
+
+       <Preference
+            android:key="lockscreen_shortcuts"
+            android:title="@string/lockscreen_shortcuts_title"
+            android:summary="@string/lockscreen_shortcuts_summary" >
+            <intent android:action="com.android.settings.action.LOCKSCREEN_TUNER" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/lock_screen_custom_clock_face_category">
 
         <ListPreference
