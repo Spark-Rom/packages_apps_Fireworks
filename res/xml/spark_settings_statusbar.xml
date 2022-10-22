@@ -104,6 +104,12 @@
             android:summary="@string/roaming_indicator_icon_summary"
             android:defaultValue="true"/>
 
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="bluetooth_show_battery"
+            android:title="@string/bluetooth_battery_title"
+            android:summary="@string/bluetooth_battery_summary"
+            android:defaultValue="true"/>
+
         <com.spark.support.preferences.SystemSettingSeekBarPreference
             android:key="volte_icon_style"
             android:title="@string/volte_icon_title"
