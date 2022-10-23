@@ -62,7 +62,6 @@ public class ThemeSettings extends DashboardFragment implements
         OnPreferenceChangeListener {
 
     public static final String TAG = "ThemeSettings";
-    private Context mContext;
 
     private static final String QS_FOOTER_TEXT_STRING = "qs_footer_text_string";
     private static final String ALT_SETTINGS_LAYOUT = "alt_settings_layout";
@@ -74,6 +73,7 @@ public class ThemeSettings extends DashboardFragment implements
     private static final String PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
     private static final String QS_PANEL_STYLE  = "qs_panel_style";
     private static final String KEY_SYS_INFO = "qs_system_info";
+    private static final String KEY_SYS_INFO_ICON = "qs_system_info_icon";
 
     private Handler mHandler;
     private IOverlayManager mOverlayManager;
@@ -88,11 +88,13 @@ public class ThemeSettings extends DashboardFragment implements
     private SystemSettingSwitchPreference mUseStockLayout;
     private SystemSettingSwitchPreference mDisableUserCard;
     private ListPreference mSystemInfo;
+    private SwitchPreference mSystemInfoIcon;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
+	Context mContext = getActivity().getApplicationContext();
 
         final ContentResolver resolver = getActivity().getContentResolver();
 
@@ -149,8 +151,10 @@ public class ThemeSettings extends DashboardFragment implements
         mSystemInfo = (ListPreference) findPreference(KEY_SYS_INFO);
         boolean mSystemInfoSupported = mContext.getResources().getBoolean(
                 com.android.internal.R.bool.config_supportSystemInfo);
-        if (!mSystemInfoSupported)
-            prefScreen.removePreference(mSystemInfo);
+        if (!mSystemInfoSupported) {
+            prefSet.removePreference(mSystemInfo);
+            prefSet.removePreference(mSystemInfoIcon);
+        }
     }
 
     private CustomSettingsObserver mCustomSettingsObserver = new CustomSettingsObserver(mHandler);

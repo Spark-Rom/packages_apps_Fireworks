@@ -195,6 +195,11 @@
             android:entryValues="@array/qs_system_info_values"
             android:defaultValue="0" />
 
+       <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="qs_system_info_icon"
+            android:title="@string/qs_system_info_icon_title"
+            android:summary="@string/qs_system_info_icon_summary"
+            android:defaultValue="true" />
 
         </PreferenceCategory>
 
