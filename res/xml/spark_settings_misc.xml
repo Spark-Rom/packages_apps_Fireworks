@@ -166,6 +166,13 @@
         android:summary="@string/headset_connect_player_summary"
         android:defaultValue="false" />
 
+    <!-- Squiggle animation -->
+    <com.spark.support.preferences.SecureSettingSwitchPreference
+        android:key="hide_media_squiggle_animation"
+        android:title="@string/hide_squiggle_animation_title"
+        android:summary="@string/hide_squiggle_animation_summary"
+        android:defaultValue="false" />
+
     <com.spark.support.preferences.SystemPropSwitchPreference
         android:key="persist.spark.hosts_block"
         android:title="@string/hosts_block_title"

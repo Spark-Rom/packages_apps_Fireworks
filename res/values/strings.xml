@@ -949,4 +949,9 @@
     <string name="text_sample">AaBbCc</string>
     <string name="theme_customization_clock_font_title">Clock Font style</string>
     <string name="theme_customization_clock_font_summary">Set lockscreen clock font style</string>
+  
+    <!-- Squiggle animation -->
+    <string name="hide_squiggle_animation_title">Hide squiggle animation</string>
+    <string name="hide_squiggle_animation_summary">Hide media panel squiggle animation, after changing you need to switch music, pause music or move the progress bar to apply</string>
+
 </resources>
