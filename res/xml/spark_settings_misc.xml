@@ -113,6 +113,13 @@
         android:key="misc_general_category"
         android:title="@string/general_category">
 
+    <!-- Squiggle animation -->
+    <com.spark.settings.preferences.SecureSettingSwitchPreference
+        android:key="hide_media_squiggle_animation"
+        android:title="@string/hide_squiggle_animation_title"
+        android:summary="@string/hide_squiggle_animation_summary"
+        android:defaultValue="false" />
+
     <com.spark.settings.preferences.SystemPropertySwitchPreference
         android:key="persist.spark.hosts_block"
         android:title="@string/hosts_block_title"
