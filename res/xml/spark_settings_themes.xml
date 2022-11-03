@@ -201,6 +201,13 @@
             android:summary="@string/qs_system_info_icon_summary"
             android:defaultValue="true" />
 
+       <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="qs_data_usage_panel"
+            android:title="@string/qs_data_usage_panel_title"
+            android:summary="@string/qs_data_usage_panel_summary"
+            android:defaultValue="false" />
+
+
         </PreferenceCategory>
 
 

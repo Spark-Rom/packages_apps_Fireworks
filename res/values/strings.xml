@@ -912,4 +912,8 @@
     <string name="location_privacy_indicator_summary">Show indicator when any app uses location</string>
     <string name="projection_privacy_indicator_title">Media projection privacy indicator</string>
     <string name="projection_privacy_indicator_summary">Show indicator when device screen is projected</string>
+
+    <!-- QS Data Usage -->
+    <string name="qs_data_usage_panel_title">Show Data Usage</string>
+    <string name="qs_data_usage_panel_summary">Display a dialog with data usage details on expanded qs panel</string>
 </resources>
