@@ -82,6 +82,20 @@
             android:defaultValue="false" />
 
         <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="new_reticker"
+            android:dependency="reticker_status"
+            android:title="@string/new_reticker_title"
+            android:summary="@string/new_reticker_summary"
+            android:defaultValue="false" />
+
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="new_reticker_animation"
+            android:dependency="reticker_status"
+            android:title="@string/new_reticker_animation_title"
+            android:summary="@string/new_reticker_animation_summary"
+            android:defaultValue="false" />
+
+        <com.spark.support.preferences.SystemSettingSwitchPreference
             android:key="notification_guts_kill_app_button"
             android:title="@string/notification_guts_kill_app_button_title"
             android:summary="@string/notification_guts_kill_app_button_summary"
