@@ -835,4 +835,8 @@
     <string name="ambient_icons_size_title">AOD icons size</string>
     <string name="ambient_icons_color_title">AOD icons color</string>
     <string name="ambient_icons_intro_text">Requires a SystemUI restart</string>
+
+    <!-- QS Data Usage -->
+    <string name="qs_data_usage_panel_title">Show alternative Data Usage </string>
+    <string name="qs_data_usage_panel_summary">Display a dialog with data usage details on expanded qs panel</string>
 </resources>

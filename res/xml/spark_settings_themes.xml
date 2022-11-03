@@ -182,6 +182,12 @@
             android:title="@string/qs_footer_datausage_title"
             android:summary="@string/qs_footer_datausage_summary" />
 
+       <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_data_usage_panel"
+            android:title="@string/qs_data_usage_panel_title"
+            android:summary="@string/qs_data_usage_panel_summary"
+            android:defaultValue="false" />
+
         <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="notification_material_dismiss"
             android:title="@string/notification_material_dismiss_title"
