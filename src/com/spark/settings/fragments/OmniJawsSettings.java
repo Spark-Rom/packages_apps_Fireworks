@@ -1,24 +1,23 @@
 /*
- * Copyright (C) 2017-2019 AICP
+ *  Copyright (C) 2017 The OmniROM Project
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+*/
 
 package com.spark.settings.fragments;
 
-import com.android.internal.logging.nano.MetricsProto;
-
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -26,71 +25,84 @@ import android.content.pm.ResolveInfo;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.Settings;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.Preference.OnPreferenceChangeListener;
+import android.provider.SearchIndexableResource;
+import android.provider.Settings;
+import android.util.Log;
+
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settingslib.search.SearchIndexable;
-import android.provider.SearchIndexableResource;
+import com.android.settingslib.search.Indexable;
 
 import java.util.List;
 import java.util.ArrayList;
 
-public class Weather extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
-
+public class OmniJawsSettings extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "OmniJawsSettings";
+    private static final String CATEGORY_WEATHER = "weather_category";
     private static final String WEATHER_ICON_PACK = "weather_icon_pack";
     private static final String DEFAULT_WEATHER_ICON_PACKAGE = "org.omnirom.omnijaws";
     private static final String DEFAULT_WEATHER_ICON_PREFIX = "outline";
+    private static final String WEATHER_SERVICE_PACKAGE = "org.omnirom.omnijaws";
     private static final String CHRONUS_ICON_PACK_INTENT = "com.dvtonder.chronus.ICON_PACK";
 
+    private PreferenceCategory mWeatherCategory;
     private ListPreference mWeatherIconPack;
+
+    @Override
+    public int getMetricsCategory() {
+        return MetricsEvent.SPARK_SETTINGS;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.weather);
+        addPreferencesFromResource(R.xml.omnijaws_settings);
         final PreferenceScreen prefScreen = getPreferenceScreen();
-        final ContentResolver resolver = getActivity().getContentResolver();
 
-        String settingsJaws = Settings.System.getString(resolver,
-                Settings.System.OMNIJAWS_WEATHER_ICON_PACK);
-        if (settingsJaws == null) {
-            settingsJaws = DEFAULT_WEATHER_ICON_PACKAGE + "." + DEFAULT_WEATHER_ICON_PREFIX;
+        mWeatherCategory = (PreferenceCategory) prefScreen.findPreference(CATEGORY_WEATHER);
+        if (mWeatherCategory != null) {
+            prefScreen.removePreference(mWeatherCategory);
+        } else {
+            String settingHeaderPackage = Settings.System.getString(getContentResolver(),
+                    Settings.System.OMNIJAWS_WEATHER_ICON_PACK);
+            if (settingHeaderPackage == null) {
+                settingHeaderPackage = DEFAULT_WEATHER_ICON_PACKAGE + "." + DEFAULT_WEATHER_ICON_PREFIX;
+            }
+            mWeatherIconPack = (ListPreference) findPreference(WEATHER_ICON_PACK);
+
+            List<String> entries = new ArrayList<String>();
+            List<String> values = new ArrayList<String>();
+            getAvailableWeatherIconPacks(entries, values);
+            mWeatherIconPack.setEntries(entries.toArray(new String[entries.size()]));
+            mWeatherIconPack.setEntryValues(values.toArray(new String[values.size()]));
+
+            int valueIndex = mWeatherIconPack.findIndexOfValue(settingHeaderPackage);
+            if (valueIndex == -1) {
+                // no longer found
+                settingHeaderPackage = DEFAULT_WEATHER_ICON_PACKAGE + "." + DEFAULT_WEATHER_ICON_PREFIX;
+                Settings.System.putString(getContentResolver(),
+                        Settings.System.OMNIJAWS_WEATHER_ICON_PACK, settingHeaderPackage);
+                valueIndex = mWeatherIconPack.findIndexOfValue(settingHeaderPackage);
+            }
+            mWeatherIconPack.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
+            mWeatherIconPack.setSummary(mWeatherIconPack.getEntry());
+            mWeatherIconPack.setOnPreferenceChangeListener(this);
         }
-        mWeatherIconPack = (ListPreference) findPreference(WEATHER_ICON_PACK);
-
-        List<String> entries = new ArrayList<String>();
-        List<String> values = new ArrayList<String>();
-        getAvailableWeatherIconPacks(entries, values);
-        mWeatherIconPack.setEntries(entries.toArray(new String[entries.size()]));
-        mWeatherIconPack.setEntryValues(values.toArray(new String[values.size()]));
-
-        int valueJawsIndex = mWeatherIconPack.findIndexOfValue(settingsJaws);
-        if (valueJawsIndex == -1) {
-            // no longer found
-            settingsJaws = DEFAULT_WEATHER_ICON_PACKAGE + "." + DEFAULT_WEATHER_ICON_PREFIX;
-            Settings.System.putString(resolver,
-                    Settings.System.OMNIJAWS_WEATHER_ICON_PACK, settingsJaws);
-            valueJawsIndex = mWeatherIconPack.findIndexOfValue(settingsJaws);
-        }
-        mWeatherIconPack.setValueIndex(valueJawsIndex >= 0 ? valueJawsIndex : 0);
-        mWeatherIconPack.setSummary(mWeatherIconPack.getEntry());
-        mWeatherIconPack.setOnPreferenceChangeListener(this);
     }
 
-    @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mWeatherIconPack) {
             String value = (String) objValue;
-            Settings.System.putString(getActivity().getContentResolver(),
+            Settings.System.putString(getContentResolver(),
                     Settings.System.OMNIJAWS_WEATHER_ICON_PACK, value);
             int valueIndex = mWeatherIconPack.findIndexOfValue(value);
             mWeatherIconPack.setSummary(mWeatherIconPack.getEntries()[valueIndex]);
@@ -100,7 +112,7 @@ public class Weather extends SettingsPreferenceFragment implements
 
     private void getAvailableWeatherIconPacks(List<String> entries, List<String> values) {
         Intent i = new Intent();
-        PackageManager packageManager = getActivity().getPackageManager();
+        PackageManager packageManager = getPackageManager();
         i.setAction("org.omnirom.WeatherIconPack");
         for (ResolveInfo r : packageManager.queryIntentActivities(i, 0)) {
             String packageName = r.activityInfo.packageName;
@@ -109,7 +121,7 @@ public class Weather extends SettingsPreferenceFragment implements
             } else {
                 values.add(r.activityInfo.name);
             }
-            String label = r.activityInfo.loadLabel(getActivity().getPackageManager()).toString();
+            String label = r.activityInfo.loadLabel(getPackageManager()).toString();
             if (label == null) {
                 label = r.activityInfo.packageName;
             }
@@ -124,7 +136,7 @@ public class Weather extends SettingsPreferenceFragment implements
         for (ResolveInfo r : packageManager.queryIntentActivities(i, 0)) {
             String packageName = r.activityInfo.packageName;
             values.add(packageName + ".weather");
-            String label = r.activityInfo.loadLabel(getActivity().getPackageManager()).toString();
+            String label = r.activityInfo.loadLabel(getPackageManager()).toString();
             if (label == null) {
                 label = r.activityInfo.packageName;
             }
@@ -140,7 +152,7 @@ public class Weather extends SettingsPreferenceFragment implements
             "enabled"
         };
 
-        final Cursor c = getActivity().getContentResolver().query(SETTINGS_URI, SETTINGS_PROJECTION,
+        final Cursor c = getContentResolver().query(SETTINGS_URI, SETTINGS_PROJECTION,
                 null, null, null);
         if (c != null) {
             int count = c.getCount();
@@ -153,34 +165,25 @@ public class Weather extends SettingsPreferenceFragment implements
         return true;
     }
 
-    @Override
-    public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SPARK_SETTINGS;
-    }
-
-	/**
-     * For Search.
-     */
-
-    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
-
                 @Override
                 public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
                         boolean enabled) {
                     ArrayList<SearchIndexableResource> result =
                             new ArrayList<SearchIndexableResource>();
+
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.spark_settings_statusbar;
+                    sir.xmlResId = R.xml.omnijaws_settings;
                     result.add(sir);
+
                     return result;
                 }
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
-                    List<String> keys = super.getNonIndexableKeys(context);
-                    return keys;
+                    ArrayList<String> result = new ArrayList<String>();
+                    return result;
                 }
     };
-
 }

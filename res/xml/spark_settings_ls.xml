@@ -42,10 +42,10 @@
         android:title="@string/weather_title">
 
        <Preference
-            android:title="@string/weather_title"
-            android:key="weather_option"
-            android:summary="@string/weather_config_title"
-            android:fragment="com.spark.settings.fragments.Weather" />
+            android:key="omnijaws_settings"
+            android:title="@string/qs_weather_settings_title"
+            android:summary="@string/qs_weather_settings_summary"
+            android:fragment="com.spark.settings.fragments.OmniJawsSettings" />
     </PreferenceCategory>
 
     <PreferenceCategory
