@@ -68,6 +68,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private static final String UDFPS_CATEGORY = "udfps_category";
     private static final String CUSTOM_CLOCK_FACE = Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK_FACE;
     private static final String DEFAULT_CLOCK = "com.android.keyguard.clock.DefaultClockController";
+    private static final String KG_CUSTOM_CLOCK_COLOR_ENABLED = "kg_custom_clock_color_enabled";
 
     private ListPreference mLockClockStyles;
     private FingerprintManager mFingerprintManager;
@@ -75,6 +76,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mFingerprintErrorVib;
     private PreferenceCategory mUdfpsCategory;
     private ListPreference mQuickPulldown;
+    private SwitchPreference mKGCustomClockColor;
 
     private Context mContext;
 
@@ -123,6 +125,11 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         mLockClockStyles.setValue(mLockClockStylesValue);
         mLockClockStyles.setSummary(mLockClockStyles.getEntry());
         mLockClockStyles.setOnPreferenceChangeListener(this);
+        mKGCustomClockColor = (SwitchPreference) findPreference(KG_CUSTOM_CLOCK_COLOR_ENABLED);
+        boolean mKGCustomClockColorEnabled = Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.KG_CUSTOM_CLOCK_COLOR_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
+        mKGCustomClockColor.setChecked(mKGCustomClockColorEnabled);
+        mKGCustomClockColor.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -156,6 +163,11 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
             setLockScreenCustomClockFace((String) newValue);
             int index = mLockClockStyles.findIndexOfValue((String) newValue);
             mLockClockStyles.setSummary(mLockClockStyles.getEntries()[index]);
+            return true;
+        } else if (preference == mKGCustomClockColor) {
+            boolean val = (Boolean) newValue;
+            Settings.Secure.putIntForUser(resolver,
+                Settings.Secure.KG_CUSTOM_CLOCK_COLOR_ENABLED, val ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
          }
         return false;

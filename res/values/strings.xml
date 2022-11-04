@@ -916,4 +916,14 @@
     <!-- QS Data Usage -->
     <string name="qs_data_usage_panel_title">Show Data Usage</string>
     <string name="qs_data_usage_panel_summary">Display a dialog with data usage details on expanded qs panel</string>
+
+    <!-- Lockscreen interface -->
+    <string name="lockscreen_interface_title">Lockscreen User Interface</string>
+    <string name="lockscreen_clock_color_title">Custom lockscreen clock color</string>
+    <string name="lockscreen_clock_color_summary">Use custom color instead of wallpaper accent</string>
+    <string name="kg_custom_clock_color_title">Choose lockscreen clock color</string>
+    <string name="kg_custom_clock_font_title">Custom lockscreen clock font</string>
+    <string name="kg_custom_date_font_title">Custom lockscreen date font</string>
+    <string name="small_clock_doubleline_title">Double-line Lockscreen clock format</string>
+    <string name="small_clock_doubleline_summary">Use double-line clock instead of single line style for lockscreen clock</string>
 </resources>
