@@ -926,4 +926,10 @@
     <string name="kg_custom_date_font_title">Custom lockscreen date font</string>
     <string name="small_clock_doubleline_title">Double-line Lockscreen clock format</string>
     <string name="small_clock_doubleline_summary">Use double-line clock instead of single line style for lockscreen clock</string>
+
+    <!-- Volume Styles -->
+    <string name="volume_style_title">Volume panel styles</string>
+    <string name="rui_style">Realme UI style</string>
+    <string name="rice_style">Rice style</string>
+    <string name="volume_customizations_title">Volume panel customizations</string>
 </resources>
