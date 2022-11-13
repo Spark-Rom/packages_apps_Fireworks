@@ -472,7 +472,7 @@
     <string name="lockscreen_albumart_filter_blur">Buram</string>
     <string name="lockscreen_albumart_filter_grayblur">Skala abu-abu dan buram</string>
     <string name="lockscreen_media_blur_title">Tingkat keburaman seni media</string>
-    <string name="lockscreen_albumart_filter_blur_radius_title">Blur amount for lockscreen media artwork</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Jumlah blur untuk karya seni media layar kunci</string>
     <!-- Pulse notifications lighting -->
     <string name="pulse_ambient_light_title">Pencahayaan tepi ambien</string>
     <string name="pulse_ambient_light_summary">Cahaya tepi ambien untuk mendorong notifikasi</string>
@@ -699,41 +699,41 @@
     <string name="qs_two_tone">Aksen Dua Nada</string>
     <string name="qs_color_pop">Warna Pop</string>
     <!-- Status bar - Battery custom charging symbol -->
-    <string name="text_charging_symbol_title">Custom charging symbol for text style</string>
-    <string name="text_charging_symbol_dialog">Custom charging symbol near battery percentage text</string>
+    <string name="text_charging_symbol_title">Simbol pengisian khusus untuk gaya teks</string>
+    <string name="text_charging_symbol_dialog">Simbol pengisian khusus di dekat teks persentase baterai</string>
     <string name="text_charging_symbol_default">Dinonaktifkan</string>
-    <string name="text_charging_symbol_flash">Flash</string>
+    <string name="text_charging_symbol_flash">Lampu kilat</string>
     <string name="text_charging_symbol_tilde">Tilde</string>
-    <string name="text_charging_symbol_plus">Plus</string>
-    <string name="text_charging_symbol_star">Star</string>
+    <string name="text_charging_symbol_plus">Tanda tambah</string>
+    <string name="text_charging_symbol_star">Bintang</string>
     <string name="text_charging_symbol_rupee">Rupee</string>
-    <string name="text_charging_symbol_dollar">Dollar</string>
+    <string name="text_charging_symbol_dollar">Dolar</string>
     <string name="text_charging_symbol_euro">Euro</string>
-    <string name="text_charging_symbol_cent">Cent</string>
+    <string name="text_charging_symbol_cent">Sen</string>
     <!-- Power menu Animations  -->
-    <string name="power_menu_anim_cat">Power UI Animation Option</string>
-    <string name="power_menu_animation_title">Power menu animation</string>
-    <string name="power_menu_animation_dialog_title">Select power menu animation</string>
+    <string name="power_menu_anim_cat">Opsi Animasi Antarmuka Daya</string>
+    <string name="power_menu_animation_title">Animasi menu daya</string>
+    <string name="power_menu_animation_dialog_title">Pilih animasi menu daya</string>
     <string name="power_menu_animation_aosp">AOSP (default)</string>
     <string name="power_menu_animation_bottom">Bawah</string>
     <string name="power_menu_animation_top">Atas</string>
-    <string name="power_menu_animation_xylon">Fly</string>
+    <string name="power_menu_animation_xylon">Terbang</string>
     <string name="power_menu_animation_slide">Slide</string>
-    <string name="power_menu_animation_turn">Turn</string>
-    <string name="power_menu_animation_fly">Glow</string>
+    <string name="power_menu_animation_turn">Belok</string>
+    <string name="power_menu_animation_fly">Menyala</string>
     <string name="power_menu_animation_card">3D</string>
-    <string name="power_menu_animation_translucent_top">Translucent (top)</string>
-    <string name="power_menu_animation_translucent_bottom">Translucent (bottom)</string>
+    <string name="power_menu_animation_translucent_top">Tembus (atas)</string>
+    <string name="power_menu_animation_translucent_bottom">Tembus (bawah)</string>
     <string name="power_menu_animation_rotate">Memutar</string>
     <!-- Media artwork -->
-    <string name="media_category">Media notification</string>
-    <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
-    <string name="artwork_media_background_blur_radius_title">Blur amount for media notification artwork</string>
+    <string name="media_category">Notifikasi Media</string>
+    <string name="artwork_media_background_enable_blur_title">Blur latar belakang karya seni notifikasi media</string>
+    <string name="artwork_media_background_blur_radius_title">Jumlah blur untuk karya seni notifikasi media</string>
     <!-- Black theme -->
-    <string name="custom_theme_title">Use Custom theme</string>
-    <string name="custom_theme_summary">Force custom background colors</string>
+    <string name="custom_theme_title">Gunakan Tema Kustom</string>
+    <string name="custom_theme_summary">Paksa warna latar belakang kustom</string>
     <string name="custom_theme_default">Bawaan</string>
-    <string name="custom_theme_black">Black</string>
+    <string name="custom_theme_black">Hitam</string>
     <string name="custom_theme_clear">Clear (BETA)</string>
-    <string name="custom_theme_vivid">Vivid(Monet)</string>
+    <string name="custom_theme_vivid">Vivid (Monet)</string>
 </resources>
