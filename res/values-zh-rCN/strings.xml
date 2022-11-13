@@ -177,17 +177,17 @@
     <string name="status_bar_clock_title">时钟和日期设置</string>
     <string name="status_bar_clock_summary">自定义时钟和日期</string>
     <string name="status_bar_clock_seconds_title">时间显秒</string>
-    <string name="status_bar_clock_seconds_summary">Display seconds next to clock in status bar</string>
-    <string name="status_bar_clock_position_title">Clock style</string>
+    <string name="status_bar_clock_seconds_summary">在状态栏时钟后面显示秒数</string>
+    <string name="status_bar_clock_position_title">时钟样式</string>
     <string name="status_bar_clock_position_right">右侧</string>
     <string name="status_bar_clock_position_left">左</string>
     <string name="status_bar_clock_position_center">居中</string>
     <string name="status_bar_clock_position_hidden">隐藏</string>
     <string name="status_bar_clock_auto_hide_title">自动隐藏时间</string>
-    <string name="status_bar_clock_auto_hide_launcher_summary">Hide clock if launcher is visible</string>
+    <string name="status_bar_clock_auto_hide_launcher_summary">如果启动器可见，则隐藏时钟</string>
     <string name="status_bar_clock_auto_hide_summary">定期隐藏和显示时钟以节省状态栏空间</string>
     <string name="status_bar_clock_auto_hide_hdur_title">隐藏持续时间</string>
-    <string name="status_bar_clock_auto_hide_hdur_summary">Number of seconds to hide clock</string>
+    <string name="status_bar_clock_auto_hide_hdur_summary">隐藏时钟的秒数</string>
     <string name="status_bar_clock_auto_hide_sdur_title">显示持续时间</string>
     <string name="status_bar_clock_auto_hide_sdur_summary">Number of seconds to wait before hiding clock</string>
     <string name="status_bar_am_pm_title">上午/下午</string>
@@ -204,14 +204,14 @@
     <string name="status_bar_date_style_normal">正常</string>
     <string name="status_bar_date_style_lowercase">小写</string>
     <string name="status_bar_date_style_uppercase">大写</string>
-    <string name="status_bar_date_format_custom">Custom java format</string>
+    <string name="status_bar_date_format_custom">自定义java格式</string>
     <string name="status_bar_date_string_edittext_title">必须是日期格式，例如 MM/dd/yy</string>
     <string name="status_bar_date_string_edittext_summary">输入字符</string>
     <string name="clock_date_position">日期位置</string>
     <string name="clock_date_right">位于时间右侧</string>
     <string name="clock_date_left">位于时间左侧</string>
     <!-- QS clock -->
-    <string name="qs_clock_title">Clock</string>
+    <string name="qs_clock_title">时钟</string>
     <string name="qs_clock_summary">Display clock in quick status bar header</string>
     <!-- QS date -->
     <string name="qs_date_title">日期</string>
@@ -236,24 +236,24 @@
     <string name="status_bar_battery_text_charging_summary">Always display battery percentage when charging</string>
     <!-- QS battery -->
     <string name="qs_battery_category_title">Qs Battery customizations</string>
-    <string name="qs_use_status_bar_battery_style">Follow status bar style</string>
+    <string name="qs_use_status_bar_battery_style">跟随状态栏样式</string>
     <!-- Battery estimate -->
     <string name="battery_estimate_title">电量预估</string>
     <string name="battery_estimate_summary">显示电量可用时间</string>
     <!-- Status bar - Battery Bar -->
-    <string name="battery_bar_title">Battery bar</string>
+    <string name="battery_bar_title">电量条</string>
     <string name="battery_bar_summary">Display and customize battery bar above status bar</string>
     <string name="battery_bar_color">颜色</string>
-    <string name="battery_bar_charging_color">Charging color</string>
-    <string name="battery_bar_battery_low_color">Low battery color</string>
+    <string name="battery_bar_charging_color">充电时颜色</string>
+    <string name="battery_bar_battery_low_color">低电量颜色</string>
     <string name="battery_bar_style_title">Alignment</string>
     <string name="battery_bar_thickness_title">Thickness</string>
     <string name="battery_bar_animate_title">充电动画</string>
     <string name="battery_bar_style_regular">Regular</string>
     <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
     <string name="battery_bar_style_reversed">Reversed</string>
-    <string name="battery_bar_use_charging_color">Custom charging color</string>
-    <string name="battery_bar_blend_color_title">Blend colors</string>
+    <string name="battery_bar_use_charging_color">自定义充电时颜色</string>
+    <string name="battery_bar_blend_color_title">渐变色</string>
     <string name="battery_bar_blend_color_summary">Blend full/empty colors corresponding to battery percentage</string>
     <string name="battery_bar_blend_color_reverse_title">Reverse color direction</string>
     <string name="battery_bar_blend_color_reverse_summary_off">Full &#8594; empty: red &#8592; green &#8592; blue &#8592; red</string>
@@ -291,18 +291,18 @@
     <string name="theme_customization_category">主题</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
     <string name="theme_customization_icon_shape_title">图标形状</string>
-    <string name="theme_customization_icon_shape_summary">Set system icon shape style</string>
+    <string name="theme_customization_icon_shape_summary">设置系统图标形状样式</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
     <string name="theme_customization_icon_pack_title">图标包</string>
-    <string name="theme_customization_icon_pack_summary">Set custom icon pack style</string>
+    <string name="theme_customization_icon_pack_summary">设置自定义图标包样式</string>
     <!-- Custom Signal bar icons -->
-    <string name="theme_customization_signal_icon_title">Signal icon style</string>
-    <string name="theme_customization_signal_icon_summary">Set custom signal icon style</string>
+    <string name="theme_customization_signal_icon_title">信号图标样式</string>
+    <string name="theme_customization_signal_icon_summary">设置自定义信号图标样式</string>
     <!-- Custom Wi-Fi bar icons -->
-    <string name="theme_customization_wifi_icon_title">WiFi icon style</string>
-    <string name="theme_customization_wifi_icon_summary">Set custom wifi icon style</string>
-    <string name="theme_customization_navbar_title">Navbar style</string>
-    <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
+    <string name="theme_customization_wifi_icon_title">WiFi 图标样式</string>
+    <string name="theme_customization_wifi_icon_summary">设置自定义 WiFi 图标样式</string>
+    <string name="theme_customization_navbar_title">导航栏样式</string>
+    <string name="theme_customization_navbar_summary">设置自定义导航栏样式</string>
     <!-- Button settings -->
     <string name="button_pref_title">按钮</string>
     <!-- Hardware button navigation -->
@@ -358,15 +358,15 @@
     <string name="hardware_keys_category">实体导航键</string>
     <string name="hardware_keys_disable_title">禁用实体按键</string>
     <!-- Navigation bar -->
-    <string name="navigation_bar_category">Navigation bar</string>
-    <string name="navigation_bar_title">On-screen navigation bar</string>
+    <string name="navigation_bar_category">导航栏</string>
+    <string name="navigation_bar_title">屏幕导航栏</string>
     <string name="navigation_bar_summary">Enable on-screen navigation keys</string>
-    <string name="navigation_bar_layout_title">Layout</string>
-    <string name="navigation_bar_layout_summary">Customize the layout of the navigation bar</string>
+    <string name="navigation_bar_layout_title">布局</string>
+    <string name="navigation_bar_layout_summary">自定义导航栏布局</string>
     <string name="navigation_bar_arrow_keys_title">Show arrow keys while typing</string>
     <string name="navigation_bar_arrow_keys_summary">Display left and right cursor buttons in navigation bar while typing</string>
     <string name="navigation_bar_help_text">These settings mainly relate to the 3-button navigation bar. If you use gesture navigation and want to customize it, e.g. hide the gesture handle, please visit: Settings &gt; System &gt; Gestures.</string>
-    <string name="navigation_title">Navigation</string>
+    <string name="navigation_title">导航栏</string>
     <!-- Button brightness -->
     <string name="button_backlight_options_category">背光选项</string>
     <string name="button_backlight_enable_title">启用按键背光灯</string>
@@ -384,8 +384,8 @@
     <string name="swap_capacitive_keys_summary">交换最近使用与后退按钮的顺序</string>
     <!-- Media art -->
     <string name="lockscreen_media_art_options_title">锁屏专辑封面</string>
-    <string name="media_art_title">Media cover art</string>
-    <string name="media_art_summary">Display media cover art when available</string>
+    <string name="media_art_title">媒体封面</string>
+    <string name="media_art_summary">可用时显示媒体封面</string>
     <!-- Disable QS -->
     <string name="disable_qs_title">Hide QS in secure lock screen</string>
     <string name="disable_qs_summary">Hides QS if device is locked. Does not disable notification shade</string>
@@ -393,19 +393,19 @@
     <string name="qs_footer_warnings_title">快速设置面板页脚警告</string>
     <string name="qs_footer_warnings_summary">在外部应用程序或 vpn 监视网络时, 显示 QS 面板底部的警告</string>
     <!-- Lockscreen battery info -->
-    <string name="lockscreen_charging_info_title">Show charging info in lockscreen</string>
+    <string name="lockscreen_charging_info_title">在锁屏界面显示充电信息</string>
     <string name="lockscreen_charging_info_summary">Shows temperature, charging current and more while plugged in</string>
     <!-- Blink flashlight for incoming calls -->
     <string name="flashlight_on_call_title">Blink Flashlight for incoming call</string>
     <string name="flashlight_on_call_disabled">停用</string>
-    <string name="flashlight_on_call_ringer">When ringing</string>
-    <string name="flashlight_on_call_no_ringer">When ringer is silent</string>
+    <string name="flashlight_on_call_ringer">响铃时</string>
+    <string name="flashlight_on_call_no_ringer">当铃声静音时</string>
     <string name="flashlight_on_call_silent">When entirely silent (no ringer or vibrator)</string>
     <string name="flashlight_on_call_always">Always</string>
     <string name="flashlight_on_call_ignore_dnd_title">Ignore DND</string>
     <string name="flashlight_on_call_ignore_dnd_summary">Whether to flash when in Do Not Disturb mode</string>
     <string name="flashlight_on_call_rate_title">Rate</string>
-    <string name="flashlight_on_call_rate_summary">Flashlight on call blink rate</string>
+    <string name="flashlight_on_call_rate_summary">呼入时闪光灯闪光速率</string>
     <!-- Statusbar logo -->
     <string name="status_bar_logo_category_title">Logo</string>
     <string name="status_bar_logo_title">Logo</string>
@@ -416,9 +416,9 @@
     <string name="status_bar_logo_position_left">左</string>
     <string name="status_bar_logo_position_right_quick">Right with QS Panel</string>
     <string name="status_bar_logo_position_left_quick">Left with QS Panel</string>
-    <string name="status_bar_logo_style_title">Style</string>
+    <string name="status_bar_logo_style_title">样式</string>
     <string name="status_bar_logo_style_spark">Spark</string>
-    <string name="status_bar_logo_style_android">Android</string>
+    <string name="status_bar_logo_style_android">安卓</string>
     <string name="status_bar_logo_style_apple">Apple</string>
     <string name="status_bar_logo_style_ios">iOS</string>
     <string name="status_bar_logo_style_emoticon">Emoticon</string>
@@ -442,7 +442,7 @@
     <string name="status_bar_logo_style_heart">Heart</string>
     <string name="status_bar_logo_style_flower">Flower</string>
     <string name="status_bar_logo_style_ghost">Ghost</string>
-    <string name="status_bar_logo_style_google">Google</string>
+    <string name="status_bar_logo_style_google">谷歌</string>
     <string name="status_bar_logo_style_human_male">Man</string>
     <string name="status_bar_logo_style_human_female">Woman</string>
     <string name="status_bar_logo_style_human_male_female">Man &amp; woman</string>
@@ -462,7 +462,7 @@
     <!-- reTicker -->
     <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">Replace your notifications with a redesigned version of tickers. \nSlim and less invasive than a standard notification</string>
-    <string name="reticker_colored_title">Use app colored background</string>
+    <string name="reticker_colored_title">使用应用程序颜色作为背景</string>
     <string name="reticker_colored_summary">Replace reTicker background color using notification app main color</string>
     <!-- Lock screen album art filter -->
     <string name="lockscreen_albumart_filter_title">Media cover art filter</string>
@@ -512,16 +512,16 @@
     <string name="pulse_light_top_bottom">Only Top-Bottom</string>
     <string name="pulse_light_left_right">Only Left-Right</string>
     <!-- Quick Settings brightness slider -->
-    <string name="qs_show_brightness_slider_title">Brightness slider</string>
-    <string name="qs_show_brightness_slider_never">Never show</string>
-    <string name="qs_show_brightness_slider_expanded">Show when expanded</string>
+    <string name="qs_show_brightness_slider_title">亮度滑块</string>
+    <string name="qs_show_brightness_slider_never">从不显示</string>
+    <string name="qs_show_brightness_slider_expanded">展开时显示</string>
     <string name="qs_show_brightness_slider_always">始终显示</string>
-    <string name="qs_show_brightness_slider_not_expanded">Show when not expanded</string>
-    <string name="qs_brightness_slider_position_title">Position</string>
+    <string name="qs_show_brightness_slider_not_expanded">未展开时显示</string>
+    <string name="qs_brightness_slider_position_title">位置</string>
     <string name="qs_brightness_slider_position_top">Top</string>
     <string name="qs_brightness_slider_position_bottom">底部</string>
     <!-- Quick Settings brightness icon -->
-    <string name="qs_show_auto_brightness_title">Auto brightness icon</string>
+    <string name="qs_show_auto_brightness_title">自动亮度图标</string>
     <string name="qs_show_auto_brightness_summary">Show toggle for adaptive brightness near the slider</string>
     <!-- OOS style material dismiss all button for notifications -->
     <string name="notification_material_dismiss_button_title">清除通知按钮</string>
@@ -538,16 +538,16 @@
     <string name="lock_screen_custom_clock_face_spark">Spark</string>
     <string name="lock_screen_custom_clock_face_spark_circle">Spark 圆形</string>
     <!-- Custom settings dashboard style -->
-    <string name="settings_dashboard_style_title">Main menu layout</string>
+    <string name="settings_dashboard_style_title">主菜单布局</string>
     <string name="settings_dashboard_style_aosp">Aosp</string>
-    <string name="settings_dashboard_style_oos11">OxygenOS 11</string>
-    <string name="settings_dashboard_style_oos12">OxygenOS 12</string>
+    <string name="settings_dashboard_style_oos11">氧OS11</string>
+    <string name="settings_dashboard_style_oos12">氧OS12</string>
     <string name="settings_dashboard_style_spark">Spark</string>
     <string name="settings_dashboard_style_spark_clean">Spark Clean</string>
-    <string name="settings_layout_category_title">Settings UI interface</string>
+    <string name="settings_layout_category_title">设置 UI 界面</string>
     <string name="settings_base_style_title">Sub-menus header</string>
     <string name="settings_base_style_summary">Use an alternative layout for the header in the sub-menus of Settings</string>
-    <string name="settings_home_style_title">Main menu header</string>
+    <string name="settings_home_style_title">主菜单头</string>
     <string name="settings_home_style_summary">Use stock aosp layout for the header in the main menu of Settings</string>
     <string name="disable_usercard_title">UserCard</string>
     <string name="disable_usercard_summary">Toggle in order not to show the usercard on main menu of Settings</string>
@@ -561,20 +561,20 @@
     <string name="qs_transparency_summary">Choose how transparent you want your qs to be (Requires SystemUI Restart)</string>
     <string name="qs_transparency_title">Qs Transparency</string>
     <!-- QuickSettings haptic feedback -->
-    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
-    <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
+    <string name="quick_settings_vibrate_title">触摸时振动</string>
+    <string name="quick_settings_vibrate_summary">触摸快速设置磁贴时震动</string>
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">动画</string>
-    <string name="qs_tile_animation_style_title">Animation style</string>
-    <string name="qs_tile_animation_duration_title">Animation duration</string>
+    <string name="qs_tile_animation_style_title">动画样式</string>
+    <string name="qs_tile_animation_duration_title">动画时长</string>
     <string name="qs_tile_animation_interpolator_title">Tiles animation interpolator</string>
-    <string name="qs_tile_animation_style_off">No animation</string>
+    <string name="qs_tile_animation_style_off">无动画</string>
     <string name="qs_tile_animation_style_flip">Flip</string>
     <string name="qs_tile_animation_style_rotate">Rotate</string>
-    <string name="qs_tile_animation_duration_low">Low</string>
+    <string name="qs_tile_animation_duration_low">低</string>
     <string name="qs_tile_animation_duration_default">默认</string>
-    <string name="qs_tile_animation_duration_fast">Fast</string>
-    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
+    <string name="qs_tile_animation_duration_fast">快</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">线性</string>
     <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
     <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
     <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
@@ -594,7 +594,7 @@
     <string name="smart_pixels_on_power_save_title">Auto-enable on battery saver</string>
     <string name="smart_pixels_on_power_save_summary">Enable Smart Pixels when battery saver is enabled</string>
     <string name="smart_pixels_percent">Percent of pixels to disable</string>
-    <string name="smart_pixels_shift_title">Burn-in protection</string>
+    <string name="smart_pixels_shift_title">烧屏保护</string>
     <string name="smart_pixels_shift_summary">Prevents burn-in on OLED devices by shifting pixels every so often</string>
     <!-- Sensor block per-package -->
     <string name="sensor_block_title">Sensor block per-package</string>
@@ -602,12 +602,12 @@
     <string name="sensor_block_app_picker_title">Block sensors for these apps</string>
     <string name="add_sensor_block_package_title">Add apps for Sensor block</string>
     <string name="add_sensor_block_package_summary">Significant motion, accelerometer, linear acceleration sensors will be blocked for these apps</string>
-    <string name="profile_choose_app">Choose app</string>
+    <string name="profile_choose_app">选择应用</string>
     <string name="dialog_delete_title">删除</string>
-    <string name="dialog_delete_message">Remove selected item?</string>
+    <string name="dialog_delete_message">删除选中项？</string>
     <!-- Wi-Fi Standard icon -->
-    <string name="show_wifi_standard_icon_title">Show Wi-Fi Standard icon</string>
-    <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
+    <string name="show_wifi_standard_icon_title">显示 Wi-Fi 标准图标</string>
+    <string name="show_wifi_standard_icon_summary">在 Wi-Fi 信号指示器中显示 Wi-Fi 类型</string>
     <!-- Clock Size -->
     <string name="status_bar_clock_font_size_title">Statusbar Clock font size</string>
     <string name="qs_clock_font_size_title">QS Header Clock font size</string>
@@ -623,7 +623,7 @@
     <!-- Sb clock bg -->
     <string name="status_bar_show_clock_bg">Show clock background chip</string>
     <!-- Font -->
-    <string name="font_settings">Font Settings</string>
+    <string name="font_settings">字体设置</string>
     <string name="font_settings_summary">Set system font style</string>
     <string name="font_preference_title">Headline / Body font</string>
     <string name="custom_font_preference_title">Custom Headline / Body font</string>
@@ -676,16 +676,16 @@
     <string name="lock_screen_show_location_title">Location display</string>
     <string name="lock_screen_show_location_summaryOn">Location is shown on Lockscreen</string>
     <string name="lock_screen_show_location_summaryOff">Location is hidden on Lockscreen</string>
-    <string name="lock_screen_weather_condition_icon_title">Condition icon display</string>
-    <string name="lock_screen_weather_condition_icon_summaryOn">Condition icon is shown on Lockscreen</string>
-    <string name="lock_screen_weather_condition_icon_summaryOff">Condition icon is hidden on Lockscreen</string>
+    <string name="lock_screen_weather_condition_icon_title">显示天气状况图标</string>
+    <string name="lock_screen_weather_condition_icon_summaryOn">在锁屏中显示天气状况图标</string>
+    <string name="lock_screen_weather_condition_icon_summaryOff">在锁屏中隐藏天气状况图标</string>
     <!-- QS Weather Options -->
     <string name="qs_weather_title">QS weather</string>
     <string name="qs_weather_summary">Configure QS Weather</string>
     <string name="qs_weather_dialog_title">QS weather style</string>
-    <string name="qs_weather_hidden">Hide weather</string>
-    <string name="qs_temperature_image_show_scale">Show temp with scale and image</string>
-    <string name="qs_temperature_image_hide_scale">Show temp with image without scale</string>
+    <string name="qs_weather_hidden">隐藏天气信息</string>
+    <string name="qs_temperature_image_show_scale">显示带有单位和图像的温度</string>
+    <string name="qs_temperature_image_hide_scale">显示带有图像的温度（不带单位）</string>
     <string name="qs_temperature_show_scale_hide_image">Show temp with scale</string>
     <string name="qs_temperature_hide_scale_hide_image">Show temp without scale</string>
     <string name="qs_show_image">Show image</string>
@@ -733,7 +733,7 @@
     <string name="custom_theme_title">Use Custom theme</string>
     <string name="custom_theme_summary">Force custom background colors</string>
     <string name="custom_theme_default">默认</string>
-    <string name="custom_theme_black">Black</string>
+    <string name="custom_theme_black">黑色</string>
     <string name="custom_theme_clear">Clear (BETA)</string>
     <string name="custom_theme_vivid">Vivid(Monet)</string>
 </resources>
