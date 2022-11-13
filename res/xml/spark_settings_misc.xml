@@ -370,6 +370,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="flashlight_category"
         android:title="@string/flashlight_category">
 
         <com.spark.support.preferences.SystemSettingListPreference
