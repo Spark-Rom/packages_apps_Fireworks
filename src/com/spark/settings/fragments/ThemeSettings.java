@@ -149,6 +149,7 @@ public class ThemeSettings extends DashboardFragment implements
         mCustomSettingsObserver.observe();
 
         mSystemInfo = (ListPreference) findPreference(KEY_SYS_INFO);
+	mSystemInfoIcon = (SwitchPreference) findPreference(KEY_SYS_INFO_ICON);
         boolean mSystemInfoSupported = mContext.getResources().getBoolean(
                 com.android.internal.R.bool.config_supportSystemInfo);
         if (!mSystemInfoSupported) {
