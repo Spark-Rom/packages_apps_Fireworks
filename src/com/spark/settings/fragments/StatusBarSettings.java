@@ -25,6 +25,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
 import java.util.Locale;
+import android.os.SystemProperties;
 import android.text.TextUtils;
 import android.view.View;
 import com.spark.support.preferences.SystemSettingSwitchPreference;
@@ -32,6 +33,7 @@ import com.spark.support.preferences.SystemSettingSeekBarPreference;
 import com.spark.support.preferences.SecureSettingSwitchPreference;
 import com.spark.support.preferences.SystemSettingListPreference;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settingslib.development.SystemPropPoker;
 import com.spark.support.preferences.SystemSettingSeekBarPreference;
 import com.android.settings.Utils;
 import android.util.Log;
@@ -53,6 +55,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private static final String KEY_STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String KEY_STATUS_BAR_BATTERY_TEXT_CHARGING = "status_bar_battery_text_charging";
     private static final String TEXT_CHARGING_SYMBOL = "text_charging_symbol";
+    private static final String KEY_COMBINED_SIGNAL_ICONS = "enable_combined_signal_icons";
+    private static final String SYS_COMBINED_SIGNAL_ICONS = "persist.sys.enable.combined_signal_icons";
 
     private static final int BATTERY_STYLE_PORTRAIT = 0;
     private static final int BATTERY_STYLE_TEXT = 4;
@@ -62,6 +66,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private SystemSettingListPreference mBatteryStyle;
     private SwitchPreference mBatteryTextCharging;
     private SystemSettingListPreference mChargingSymbol;
+    private SwitchPreference mCombinedSignalIcons;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -101,6 +106,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mChargingSymbol = (SystemSettingListPreference) findPreference("text_charging_symbol");
         mChargingSymbol.setEnabled(batterystyle == BATTERY_STYLE_TEXT);
 
+        mCombinedSignalIcons = (SwitchPreference) findPreference(KEY_COMBINED_SIGNAL_ICONS);
+        mCombinedSignalIcons.setChecked(SystemProperties.getBoolean(SYS_COMBINED_SIGNAL_ICONS, false));
+        mCombinedSignalIcons.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -123,7 +131,14 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             mBatteryTextCharging.setEnabled(batterystyle == BATTERY_STYLE_HIDDEN ||
                     (batterystyle != BATTERY_STYLE_TEXT && value != 2));
             return true;
-        }
+          } else if (preference == mCombinedSignalIcons) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putIntForUser(getContentResolver(),
+                Settings.Secure.ENABLE_COMBINED_SIGNAL_ICONS, value ? 1 : 0, UserHandle.USER_CURRENT);
+            SystemProperties.set(SYS_COMBINED_SIGNAL_ICONS, value ? "true" : "false");
+            SystemPropPoker.getInstance().poke();
+            return true;
+         }
         return false;
     }
 

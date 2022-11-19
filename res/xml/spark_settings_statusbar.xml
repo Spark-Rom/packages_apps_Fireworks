@@ -92,6 +92,12 @@
             android:summary="@string/data_disabled_icon_summary"
             android:defaultValue="true"/>
 
+    <SwitchPreference
+        android:key="enable_combined_signal_icons"
+        android:title="@string/combined_status_bar_signal_icons_title"
+        android:summary="@string/combined_status_bar_signal_icons_summary"
+        android:defaultValue="false" />
+
         <com.spark.support.preferences.SystemSettingSwitchPreference
             android:key="show_fourg_icon"
             android:title="@string/show_fourg_icon_title"
