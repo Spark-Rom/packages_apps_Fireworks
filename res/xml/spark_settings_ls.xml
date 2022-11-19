@@ -71,6 +71,17 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:title="@string/ambient_text_category_title">
+
+    <Preference
+         android:key="ambient_customization"
+         android:title="@string/ambient_text_category_title"
+         android:summary="@string/ambient_text_category_summary"
+         android:fragment="com.spark.settings.fragments.AmbientCustomizations" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/weather_title">
 
        <Preference
