@@ -35,6 +35,13 @@
             android:defaultValue="false"
             android:disableDependentsState="true" />
 
+    <!-- Brightness control -->
+    <com.spark.support.preferences.SystemSettingSwitchPreference
+        android:key="status_bar_brightness_control"
+        android:title="@string/status_bar_brightness_control_title"
+        android:summary="@string/status_bar_brightness_control_summary"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:key="lockscreen_ui_gestures_category"
         android:title="@string/gestures_title">
