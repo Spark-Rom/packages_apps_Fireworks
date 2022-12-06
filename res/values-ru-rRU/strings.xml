@@ -61,7 +61,7 @@
     <string name="use_photos_spoof_summary">Маскировка устройства под Pixel XL для Google Фото, чтобы предоставить неограниченное хранилище для резервного копирования фотографий</string>
     <!-- Unlock FPS for specific games -->
     <string name="use_games_spoof_title">Разблокировать более высокий FPS в играх</string>
-    <string name="use_games_spoof_summary">Маскировка устройства под другую модель для определенных игр, чтобы разблокировать более высокий FPS</string>
+    <string name="use_games_spoof_summary">Маскировка устройства под другую модель для определённых игр, чтобы разблокировать более высокий FPS</string>
     <!-- Alert Slider Notifications (OnePlus devices) -->
     <string name="alert_slider_notifications_title">Уведомления ползунка оповещений</string>
     <string name="alert_slider_notifications_summary">Показывать уведомление при изменении положения слайдера предупреждений</string>
@@ -117,8 +117,8 @@
     <string name="show_fourg_icon_title">Отображать 4G вместо LTE</string>
     <string name="show_fourg_icon_summary">Заменить значок LTE в строке состояния на 4G</string>
     <!-- Data disabled indicator -->
-    <string name="data_disabled_icon_title">Индикатор выключенной передачи данных (крестик в иконке уровня сети)</string>
-    <string name="data_disabled_icon_summary">Отображать крестик в иконке уровня сети когда передача данных выключена</string>
+    <string name="data_disabled_icon_title">Индикатор выключенной передачи данных («!» в иконке уровня сети)</string>
+    <string name="data_disabled_icon_summary">Отображать восклицательный знак в иконке уровня сети когда передача данных выключена</string>
     <!-- VoWiFi icon -->
     <string name="vowifi_icon_title">Значок VoWiFi</string>
     <string name="vowifi_icon_summary">Отображать значок VoWiFi, когда он доступен</string>
@@ -128,7 +128,7 @@
     <string name="power_menu_title">Меню питания</string>
     <string name="power_menu_title_summary">Просмотр или изменение пунктов меню питания</string>
     <string name="powermenu_screenshot">Снимок экрана</string>
-    <string name="powermenu_onthego">On-The-Go мод</string>
+    <string name="powermenu_onthego">Режим «На ходу»</string>
     <string name="powermenu_power">Выключить</string>
     <string name="powermenu_advanced">Расширенное меню перезагрузки</string>
     <string name="powermenu_restart">Перезагрузка</string>
@@ -163,7 +163,7 @@
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">Анимация выключения экрана</string>
     <string name="screen_off_animation_crt">Эффект старого телевизора</string>
-    <string name="screen_off_animation_scale">Шкала</string>
+    <string name="screen_off_animation_scale">Масштаб</string>
     <!-- Notification count -->
     <string name="status_bar_notif_count_title">Показать счётчик уведомлений</string>
     <string name="status_bar_notif_count_summary">Показывать количество непросмотренных уведомлений</string>
@@ -178,7 +178,7 @@
     <string name="status_bar_clock_summary">Изменить вид часов и даты</string>
     <string name="status_bar_clock_seconds_title">Показывать секунды</string>
     <string name="status_bar_clock_seconds_summary">Отображать секунды рядом с часами в строке состояния</string>
-    <string name="status_bar_clock_position_title">Стиль часов</string>
+    <string name="status_bar_clock_position_title">Расположение часов</string>
     <string name="status_bar_clock_position_right">Справа</string>
     <string name="status_bar_clock_position_left">Слева</string>
     <string name="status_bar_clock_position_center">По центру</string>
@@ -196,9 +196,9 @@
     <string name="status_bar_am_pm_small">Маленький</string>
     <string name="status_bar_am_pm_hidden">Скрыт</string>
     <string name="status_bar_date_title">Дата</string>
-    <string name="status_bar_date_none">Скрыт</string>
-    <string name="status_bar_date_small">Маленький</string>
-    <string name="status_bar_date_normal">Обычный</string>
+    <string name="status_bar_date_none">Скрыта</string>
+    <string name="status_bar_date_small">Маленькая</string>
+    <string name="status_bar_date_normal">Обычная</string>
     <string name="status_bar_date_format_title">Формат даты</string>
     <string name="status_bar_date_style">Стиль даты</string>
     <string name="status_bar_date_style_normal">Обычный</string>
@@ -256,8 +256,8 @@
     <string name="battery_bar_blend_color_title">Смешать цвета</string>
     <string name="battery_bar_blend_color_summary">Смешать цвета в соответствии с зарядом батареи</string>
     <string name="battery_bar_blend_color_reverse_title">Обратное направление цветов</string>
-    <string name="battery_bar_blend_color_reverse_summary_off">Полный &#8594; пустой: красный &#8592; зеленый &#8592; синий &#8592; красный</string>
-    <string name="battery_bar_blend_color_reverse_summary_on">Полный &#8594; пустой: красный &#8594; зеленый &#8594; синий &#8594; красный</string>
+    <string name="battery_bar_blend_color_reverse_summary_off">Полный &#8594; пустой: красный &#8592; зелёный &#8592; синий &#8592; красный</string>
+    <string name="battery_bar_blend_color_reverse_summary_on">Полный &#8594; пустой: красный &#8594; зелёный &#8594; синий &#8594; красный</string>
     <!-- Fingerprint Ripple Effect -->
     <string name="enable_fingerprint_ripple_effect_title">Эффект волны</string>
     <string name="enable_fingerprint_ripple_effect_summary">Показывать эффект волны при разблокировке с помощью отпечатка пальца</string>
@@ -365,7 +365,7 @@
     <string name="navigation_bar_layout_summary">Настройка разметки панели навигации</string>
     <string name="navigation_bar_arrow_keys_title">Показать стрелки при вводе текста</string>
     <string name="navigation_bar_arrow_keys_summary">Показывать левую и правую кнопку курсора в панели навигации при наборе</string>
-    <string name="navigation_bar_help_text">Эти настройки относятся в основном к 3-кнопочной панели навигации. Если вы используете жест навигации и хотите настроить его.. скрыть обработчик жеста, пожалуйста посетите Настройки &gt; Система &gt; Жеста.</string>
+    <string name="navigation_bar_help_text">Эти настройки относятся в основном к 3-кнопочной панели навигации. Если вы используете жесты навигации и хотите настроить их, пожалуйста посетите Настройки → Система → Жесты → Навигация в системе.</string>
     <string name="navigation_title">Навигация</string>
     <!-- Button brightness -->
     <string name="button_backlight_options_category">Настройки подсветки</string>
@@ -385,7 +385,7 @@
     <!-- Media art -->
     <string name="lockscreen_media_art_options_title">Обложка медиа на экране блокировки</string>
     <string name="media_art_title">Отображение обложки песни</string>
-    <string name="media_art_summary">Показывать обложку мультимедиа, если доступно</string>
+    <string name="media_art_summary">Показывать обложку мультимедиа на весь экран, если доступна</string>
     <!-- Disable QS -->
     <string name="disable_qs_title">Скрыть быстрые настройки на экране блокировки</string>
     <string name="disable_qs_summary">Скрывать быстрые настройки, если устройство заблокировано. Не отключает уведомления</string>
@@ -420,7 +420,7 @@
     <string name="status_bar_logo_style_spark">Spark</string>
     <string name="status_bar_logo_style_android">Андроид</string>
     <string name="status_bar_logo_style_apple">Яблоко</string>
-    <string name="status_bar_logo_style_ios">iOS яблоко</string>
+    <string name="status_bar_logo_style_ios">iOS</string>
     <string name="status_bar_logo_style_emoticon">Смайлик</string>
     <string name="status_bar_logo_style_emoticon_cool">Смайлик крутой</string>
     <string name="status_bar_logo_style_emoticon_dead">Смайлик смерть</string>
@@ -445,10 +445,10 @@
     <string name="status_bar_logo_style_google">Гугл</string>
     <string name="status_bar_logo_style_human_male">Мужчина</string>
     <string name="status_bar_logo_style_human_female">Женщина</string>
-    <string name="status_bar_logo_style_human_male_female">Мужчина и&amp; женщина</string>
+    <string name="status_bar_logo_style_human_male_female">Мужчина и женщина</string>
     <string name="status_bar_logo_style_gender_male">Мужской</string>
     <string name="status_bar_logo_style_gender_female">Женский</string>
-    <string name="status_bar_logo_style_gender_male_female">Мужской и&amp; женский</string>
+    <string name="status_bar_logo_style_gender_male_female">Мужской и женский</string>
     <string name="status_bar_logo_style_amogus">Among Us</string>
     <string name="status_bar_logo_style_guitar_electric">Электрогитара</string>
     <!-- Custom FOD Icon -->
@@ -498,7 +498,7 @@
     <string name="ambient_notification_color_mode_notification">Цвет значков уведомлений</string>
     <string name="ambient_notification_color_mode_custom">@string/ambient_notification_light_color_title</string>
     <string name="ambient_notification_light_color_title">Пользовательский цвет</string>
-    <string name="pulse_ambient_light_show_always_title">Показать Always</string>
+    <string name="pulse_ambient_light_show_always_title">Показывать всегда</string>
     <string name="pulse_ambient_light_show_always_summary">Показывать свет для всех событий Doze, а не только для уведомлений</string>
     <string name="pulse_ambient_light_repeat_direction_title">Лёгкий режим повторения</string>
     <string name="pulse_ambient_light_repeat_direction_restart">Перезагрузка</string>
@@ -515,31 +515,31 @@
     <string name="qs_show_brightness_slider_title">Ползунок яркости</string>
     <string name="qs_show_brightness_slider_never">Никогда не показывать</string>
     <string name="qs_show_brightness_slider_expanded">Показать при раскрытии</string>
-    <string name="qs_show_brightness_slider_always">Показать Always</string>
+    <string name="qs_show_brightness_slider_always">Показывать всегда</string>
     <string name="qs_show_brightness_slider_not_expanded">Показывать в свёрнутом виде</string>
     <string name="qs_brightness_slider_position_title">Позиция</string>
     <string name="qs_brightness_slider_position_top">Сверху</string>
-    <string name="qs_brightness_slider_position_bottom">Внизу</string>
+    <string name="qs_brightness_slider_position_bottom">Снизу</string>
     <!-- Quick Settings brightness icon -->
     <string name="qs_show_auto_brightness_title">Значок автоматической яркости</string>
     <string name="qs_show_auto_brightness_summary">Показывать переключатель для адаптивной регулировки яркости</string>
     <!-- OOS style material dismiss all button for notifications -->
-    <string name="notification_material_dismiss_button_title">Material-style кнопка очистки уведомлений</string>
+    <string name="notification_material_dismiss_button_title">Плавающая кнопка очистки уведомлений</string>
     <string name="notification_material_dismiss_button_summary">Заменить «Очистить все» на плавающую кнопку</string>
-    <string name="clearall_style_title">Кнопка очистки уведомлений</string>
-    <string name="clearall_bgstyle_title">Кнопка очистки уведомлений</string>
+    <string name="clearall_style_title">Стиль кнопки очистки уведомлений</string>
+    <string name="clearall_bgstyle_title">Стиль фона кнопки очистки уведомлений</string>
     <!-- Lockscreen Clocks -->
     <string name="lock_screen_custom_clock_face_category">Часы на экране блокировки</string>
     <string name="lock_screen_custom_clock_face_title">Стиль часов на экране блокировки</string>
     <string name="lock_screen_custom_clock_face_default">По умолчанию</string>
     <string name="lock_screen_custom_clock_face_sfunny">Sfuny</string>
     <string name="lock_screen_custom_clock_face_oos">OOS</string>
-    <string name="lock_screen_custom_clock_face_clockertino">Clockertino</string>
+    <string name="lock_screen_custom_clock_face_clockertino">Квадратные</string>
     <string name="lock_screen_custom_clock_face_spark">Spark</string>
     <string name="lock_screen_custom_clock_face_spark_circle">Spark Круг</string>
     <!-- Custom settings dashboard style -->
     <string name="settings_dashboard_style_title">Макет главного меню настроек</string>
-    <string name="settings_dashboard_style_aosp">AOSP</string>
+    <string name="settings_dashboard_style_aosp">Стандартный</string>
     <string name="settings_dashboard_style_oos11">Oxygen OS 11</string>
     <string name="settings_dashboard_style_oos12">Oxygen OS 12</string>
     <string name="settings_dashboard_style_spark">Spark</string>
@@ -553,7 +553,7 @@
     <string name="disable_usercard_summary">Включите, чтобы не показывать карточку пользователя в главном меню настроек</string>
     <!-- Ignore window secure -->
     <string name="ignore_window_secure_title">Игнорировать флаги безопасности окна</string>
-    <string name="ignore_window_secure_summary">Убирает границы скриншотов и записей для всех приложений. Обычно специальные приложения заменяются чёрными областями в записях. Это может быть удобным в некоторых случаях, но может привести к утечке конфиденциальности. После изменения этого переключателя вам может потребоваться перезапустить приложения, чтобы изменения вступили в силу.</string>
+    <string name="ignore_window_secure_summary">Убирает ограничения снимков и записей экрана для всех приложений. Обычно специальные приложения заменяют их чёрными областями. Это может быть удобным иногда, но может привести к утечке данных. После изменения этого параметра вам может потребоваться перезапустить приложения, чтобы изменения вступили в силу.</string>
     <!-- Colorful battery icon -->
     <string name="battery_level_colors_title">Вкл/Выкл цветной значок батареи</string>
     <string name="battery_level_colors_summary">Каждое понижение уровня заряда батареи кодируется цветом</string>
@@ -669,9 +669,9 @@
     <string name="lock_screen_show_weather_title">Отображение погоды</string>
     <string name="lock_screen_show_weather_summaryOn">Отображать погоду на экране блокировки</string>
     <string name="lock_screen_show_weather_summaryOff">Не отображать погоду на экране блокировки</string>
-    <string name="lock_screen_weather_style_title">Стиль погоды</string>
-    <string name="lock_screen_weather_style_summaryOff">Показывать погоду вместе с местоположением под строкой даты</string>
-    <string name="lock_screen_weather_style_summaryOn">Показывать погоду без местоположения на строке даты</string>
+    <string name="lock_screen_weather_style_title">Вид погоды</string>
+    <string name="lock_screen_weather_style_summaryOff">Показывать погоду вместе с местоположением над строкой даты</string>
+    <string name="lock_screen_weather_style_summaryOn">Показывать погоду без местоположения в строке с датой</string>
     <string name="lock_screen_weather_style_footer">Выделенная линия погоды не доступна для часов Android S или часов, обеспечивающих свою собственную линию погоды, такую как часы DividedLines. Для этих часов это ведет себя точно так же как переключение отображения погоды, что означает, что погода не будет отображаться, если выключена.</string>
     <string name="lock_screen_show_location_title">Отображение местоположения</string>
     <string name="lock_screen_show_location_summaryOn">Отображать местоположение на экране блокировки</string>
@@ -688,7 +688,7 @@
     <string name="qs_temperature_image_hide_scale">Показывать температуру без единиц измерения и иконки</string>
     <string name="qs_temperature_show_scale_hide_image">Показывать температуру с единицами измерения</string>
     <string name="qs_temperature_hide_scale_hide_image">Показывать температуру без единиц измерения</string>
-    <string name="qs_show_image">Показать изображение</string>
+    <string name="qs_show_image">Показать иконку</string>
     <string name="qs_weather_settings_title">Настройка параметров погоды</string>
     <string name="qs_weather_settings_summary">Настройка пакетов иконок и поставщика погоды</string>
     <!-- Quick settings styling -->
@@ -706,12 +706,12 @@
     <string name="text_charging_symbol_tilde">Тильда</string>
     <string name="text_charging_symbol_plus">Плюс</string>
     <string name="text_charging_symbol_star">Звезда</string>
-    <string name="text_charging_symbol_rupee">Rupee</string>
+    <string name="text_charging_symbol_rupee">Рупий</string>
     <string name="text_charging_symbol_dollar">Доллар</string>
     <string name="text_charging_symbol_euro">Евро</string>
     <string name="text_charging_symbol_cent">Цент</string>
     <!-- Power menu Animations  -->
-    <string name="power_menu_anim_cat">Power UI Animation Option</string>
+    <string name="power_menu_anim_cat">Настройка анимации меню питания</string>
     <string name="power_menu_animation_title">Анимация меню кнопки питания</string>
     <string name="power_menu_animation_dialog_title">Анимация меню кнопки питания</string>
     <string name="power_menu_animation_aosp">По умолчанию</string>
@@ -719,7 +719,7 @@
     <string name="power_menu_animation_top">Сверху</string>
     <string name="power_menu_animation_xylon">Полёт</string>
     <string name="power_menu_animation_slide">Сдвиг</string>
-    <string name="power_menu_animation_turn">Turn</string>
+    <string name="power_menu_animation_turn">Поворот</string>
     <string name="power_menu_animation_fly">Свечение</string>
     <string name="power_menu_animation_card">3D</string>
     <string name="power_menu_animation_translucent_top">Полупрозрачность (сверху)</string>
@@ -734,6 +734,6 @@
     <string name="custom_theme_summary">Принудительный чёрный цвет фона</string>
     <string name="custom_theme_default">По умолчанию</string>
     <string name="custom_theme_black">Чёрный</string>
-    <string name="custom_theme_clear">Очистить (Бета)</string>
-    <string name="custom_theme_vivid">Vivid(Monet)</string>
+    <string name="custom_theme_clear">Прозрачный (Бета)</string>
+    <string name="custom_theme_vivid">Красочная (Монет)</string>
 </resources>
