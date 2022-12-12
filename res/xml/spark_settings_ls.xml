@@ -15,6 +15,7 @@
     android:title="@string/lockscreen_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+<!--
     <PreferenceCategory
         android:title="@string/lockscreen_shortcuts_title">
 
@@ -69,7 +70,7 @@
         android:defaultValue="false" />
 
     </PreferenceCategory>
-
+-->
     <PreferenceCategory
         android:title="@string/ambient_text_category_title">
 
@@ -80,7 +81,7 @@
          android:fragment="com.spark.settings.fragments.AmbientCustomizations" />
 
     </PreferenceCategory>
-
+<!--
     <PreferenceCategory
         android:title="@string/weather_title">
 
@@ -90,7 +91,7 @@
             android:summary="@string/qs_weather_settings_summary"
             android:fragment="com.spark.settings.fragments.OmniJawsSettings" />
     </PreferenceCategory>
-
+-->
     <PreferenceCategory
          android:title="@string/charging_category">
 

@@ -103,8 +103,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mBatteryTextCharging.setEnabled(batterystyle == BATTERY_STYLE_HIDDEN ||
                 (batterystyle != BATTERY_STYLE_TEXT && batterypercent != 2));
 
-        mChargingSymbol = (SystemSettingListPreference) findPreference("text_charging_symbol");
-        mChargingSymbol.setEnabled(batterystyle == BATTERY_STYLE_TEXT);
+
+//        mChargingSymbol = (SystemSettingListPreference) findPreference("text_charging_symbol");
+//        mChargingSymbol.setEnabled(batterystyle == BATTERY_STYLE_TEXT);
 
         mCombinedSignalIcons = (SwitchPreference) findPreference(KEY_COMBINED_SIGNAL_ICONS);
         mCombinedSignalIcons.setChecked(SystemProperties.getBoolean(SYS_COMBINED_SIGNAL_ICONS, false));

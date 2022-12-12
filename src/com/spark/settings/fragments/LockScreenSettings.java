@@ -120,6 +120,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         if (!UdfpsUtils.hasUdfpsSupport(getContext())) {
             prefSet.removePreference(mUdfpsCategory);
         }
+/*
         mLockClockStyles = (ListPreference) findPreference(CUSTOM_CLOCK_FACE);
         String mLockClockStylesValue = getLockScreenCustomClockFace();
         mLockClockStyles.setValue(mLockClockStylesValue);
@@ -130,6 +131,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
                 Settings.Secure.KG_CUSTOM_CLOCK_COLOR_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
         mKGCustomClockColor.setChecked(mKGCustomClockColorEnabled);
         mKGCustomClockColor.setOnPreferenceChangeListener(this);
+*/
     }
 
     @Override
@@ -159,7 +161,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
             mQuickPulldown.setSummary(
                     mQuickPulldown.getEntries()[index]);
             return true;
-         } else if (preference == mLockClockStyles) {
+/*         } else if (preference == mLockClockStyles) {
             setLockScreenCustomClockFace((String) newValue);
             int index = mLockClockStyles.findIndexOfValue((String) newValue);
             mLockClockStyles.setSummary(mLockClockStyles.getEntries()[index]);
@@ -169,10 +171,11 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
             Settings.Secure.putIntForUser(resolver,
                 Settings.Secure.KG_CUSTOM_CLOCK_COLOR_ENABLED, val ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
+*/
          }
         return false;
     }
-
+/*
     private String getLockScreenCustomClockFace() {
         mContext = getActivity();
         String value = Settings.Secure.getStringForUser(mContext.getContentResolver(),
@@ -197,7 +200,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         } catch (JSONException ex) {
         }
     }
-
+*/
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.SPARK_SETTINGS;
