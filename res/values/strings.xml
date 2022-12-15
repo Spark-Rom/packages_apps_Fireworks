@@ -261,8 +261,6 @@
     <string name="status_bar_battery_style_circle">Circle</string>
     <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
     <string name="status_bar_battery_style_filled_circle">Filled circle</string>
-    <string name="status_bar_battery_style_big_circle">Big circle</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Big dotted circle</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Hidden</string>
     <string name="status_bar_battery_percent_title">Battery percent</string>
@@ -272,15 +270,6 @@
     <string name="status_bar_battery_percent_text_next_left">Next to the icon (left)</string> 
     <string name="status_bar_battery_text_charging_title">Battery percentage when charging</string>
     <string name="status_bar_battery_text_charging_summary">Always display battery percentage when charging</string>
-    <string name="status_bar_battery_style_icon_rlandscape_style_a">Landscape R Style A</string>
-    <string name="status_bar_battery_style_icon_landscape_style_a">Landscape L Style A</string>
-    <string name="status_bar_battery_style_icon_rlandscape_style_b">Landscape R Style B</string>
-    <string name="status_bar_battery_style_icon_landscape_style_b">Landscape L Style B</string>
-    <string name="status_bar_battery_style_icon_landscape_pill">Portrait Mx</string>
-    <string name="status_bar_battery_style_icon_landscape_line">Landscape Lorn</string>
-    <string name="status_bar_battery_style_icon_landscape_musku">Portrait IOS</string>
-    <string name="status_bar_battery_style_icon_landscape_signal">Landscape Airoo</string>
-    <string name="status_bar_battery_style_icon_landscape_buddy">Landscape Capsule</string>
 
     <!-- QS battery -->
     <string name="qs_battery_category_title">Qs Battery customizations</string>
@@ -485,51 +474,11 @@
     <string name="flashlight_on_call_rate_title">Rate</string>
     <string name="flashlight_on_call_rate_summary">Flashlight on call blink rate</string>
 
-    <!-- Statusbar logo -->
-    <string name="status_bar_logo_category_title">Logo</string>
+    <!-- Custom logo -->
     <string name="status_bar_logo_title">Logo</string>
-    <string name="status_bar_logo_summary">Enable to display logo in the status bar</string>
-    <string name="status_bar_logo_position_title">Position</string>
-    <string name="status_bar_logo_position_summary">Choose which side to display the logo on, left or right</string>
-    <string name="status_bar_logo_position_right">Right</string>
-    <string name="status_bar_logo_position_left">Left</string>
-    <string name="status_bar_logo_position_right_quick">Right with QS Panel</string>
-    <string name="status_bar_logo_position_left_quick">Left with QS Panel</string>
-    <string name="status_bar_logo_style_title">Style</string>
-    <string name="status_bar_logo_style_spark">Spark</string>
-    <string name="status_bar_logo_style_android">Android</string>
-    <string name="status_bar_logo_style_apple">Apple</string>
-    <string name="status_bar_logo_style_ios">iOS</string>
-    <string name="status_bar_logo_style_emoticon">Emoticon</string>
-    <string name="status_bar_logo_style_emoticon_cool">Emoticon cool</string>
-    <string name="status_bar_logo_style_emoticon_dead">Emoticon dead</string>
-    <string name="status_bar_logo_style_emoticon_devil">Emoticon devil</string>
-    <string name="status_bar_logo_style_emoticon_happy">Emoticon happy</string>
-    <string name="status_bar_logo_style_emoticon_neutral">Emoticon neutral</string>
-    <string name="status_bar_logo_style_emoticon_poop">Emoticon poop</string>
-    <string name="status_bar_logo_style_emoticon_sad">Emoticon sad</string>
-    <string name="status_bar_logo_style_emoticon_tongue">Emoticon tongue</string>
-    <string name="status_bar_logo_style_blackberry">Blackberry</string>
-    <string name="status_bar_logo_style_cake">Cake</string>
-    <string name="status_bar_logo_style_blogger">Blogger</string>
-    <string name="status_bar_logo_style_biohazard">Biohazard</string>
-    <string name="status_bar_logo_style_linux">Linux</string>
-    <string name="status_bar_logo_style_yin_yang">Yin-Yang</string>
-    <string name="status_bar_logo_style_windows">Windows</string>
-    <string name="status_bar_logo_style_robot">Robot</string>
-    <string name="status_bar_logo_style_ninja">Ninja</string>
-    <string name="status_bar_logo_style_heart">Heart</string>
-    <string name="status_bar_logo_style_flower">Flower</string>
-    <string name="status_bar_logo_style_ghost">Ghost</string>
-    <string name="status_bar_logo_style_google">Google</string>
-    <string name="status_bar_logo_style_human_male">Man</string>
-    <string name="status_bar_logo_style_human_female">Woman</string>
-    <string name="status_bar_logo_style_human_male_female">Man &amp; woman</string>
-    <string name="status_bar_logo_style_gender_male">Male</string>
-    <string name="status_bar_logo_style_gender_female">Female</string>
-    <string name="status_bar_logo_style_gender_male_female">Male &amp; female</string>
-    <string name="status_bar_logo_style_amogus">AmongUs</string>
-    <string name="status_bar_logo_style_guitar_electric">Electric guitar</string>
+    <string name="status_bar_logo_summary">Display a custom logo on left or right of the status bar</string>
+    <string name="status_bar_logo_position_title">Logo position</string>
+    <string name="status_bar_logo_style_title">Logo style</string>
 
     <!-- Custom FOD Icon -->
     <string name="custom_fp_icon_title">Custom UDFPS Icon</string>

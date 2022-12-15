@@ -25,7 +25,7 @@
         android:summary="@string/status_bar_logo_summary"
         android:defaultValue="false" />
 
-    <com.spark.support.preferences.SystemSettingIntListPreference
+    <com.spark.support.preferences.SystemSettingListPreference
         android:key="status_bar_logo_position"
         android:title="@string/status_bar_logo_position_title"
         android:entries="@array/status_bar_logo_position_entries"
@@ -33,11 +33,12 @@
         android:dependency="status_bar_logo"
         android:defaultValue="0" />
 
-    <com.spark.support.preferences.SystemSettingIntListPreference
+    <com.spark.support.preferences.SystemSettingSeekBarPreference
         android:key="status_bar_logo_style"
         android:title="@string/status_bar_logo_style_title"
-        android:entries="@array/status_bar_logo_style_entries"
-        android:entryValues="@array/status_bar_logo_style_values"
-        android:dependency="status_bar_logo"
-        android:defaultValue="1" />
+        android:defaultValue="0"
+        settings:interval="1"
+        android:max="28"
+        android:min="0"
+        android:dependency="status_bar_logo" />
 </PreferenceScreen>
