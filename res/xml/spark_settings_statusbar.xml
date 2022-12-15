@@ -49,11 +49,12 @@
         android:summary="@string/battery_bar_summary"
         android:fragment="com.spark.settings.fragments.BatteryBar" />
 
-    <com.spark.support.preferences.SystemSettingMasterSwitchPreference
+    <com.spark.settings.preferences.SystemSettingPrimarySwitchPreference
         android:key="network_traffic_enabled"
         android:title="@string/network_traffic_category_title"
         android:defaultValue="false"
-        android:fragment="com.spark.settings.fragments.NetworkTrafficMonitorSettings" />
+        android:fragment="com.spark.settings.fragments.NetworkTrafficMonitorSettings"
+        settings:observe="true" />
 
     <!-- Show logo on Statusbar -->
     <Preference
