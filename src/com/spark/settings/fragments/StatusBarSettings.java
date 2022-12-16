@@ -123,7 +123,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                     value != BATTERY_STYLE_TEXT && value != BATTERY_STYLE_HIDDEN);
             mBatteryTextCharging.setEnabled(value == BATTERY_STYLE_HIDDEN ||
                     (value != BATTERY_STYLE_TEXT && batterypercent != 2));
-            mChargingSymbol.setEnabled(value == BATTERY_STYLE_TEXT);
+           // mChargingSymbol.setEnabled(value == BATTERY_STYLE_TEXT);
             return true;
         } else if (preference == mBatteryPercent) {
             int value = Integer.parseInt((String) newValue);
