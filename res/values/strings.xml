@@ -1,5 +1,4 @@
-
-urces xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Fireworks</string>
     <string name="default_string">Default</string>
     <string name="disabled">Disabled</string>
