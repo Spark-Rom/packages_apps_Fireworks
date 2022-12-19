@@ -28,6 +28,7 @@
     <string name="statusbar_clock_category_title">Reloj de la barra de estado</string>
     <string name="powermenu_items_title">Elementos del menú de energía</string>
     <string name="monet_category">Ajustes de Monet</string>
+    <string name="pulse_category">Pulse</string>
     <string name="udfps_category">Huella en Pantalla</string>
     <string name="general_category">General</string>
     <string name="flashlight_category">Linterna</string>
@@ -406,51 +407,13 @@
     <string name="flashlight_on_call_ignore_dnd_summary">Destellear cuando el modo No molestar está activo</string>
     <string name="flashlight_on_call_rate_title">Frecuencia</string>
     <string name="flashlight_on_call_rate_summary">Frecuencia de parpadeo de linterna en llamada</string>
-    <!-- Statusbar logo -->
-    <string name="status_bar_logo_category_title">Logo</string>
+    <!-- Custom logo -->
     <string name="status_bar_logo_title">Logo</string>
-    <string name="status_bar_logo_summary">Activar para mostrar logo en la barra de estado</string>
-    <string name="status_bar_logo_position_title">Posición</string>
-    <string name="status_bar_logo_position_summary">Elige en qué lado quieres ver el logo</string>
-    <string name="status_bar_logo_position_right">Derecha</string>
-    <string name="status_bar_logo_position_left">Izquierda</string>
-    <string name="status_bar_logo_position_right_quick">Derecha con Panel de Ajustes Rápidos</string>
-    <string name="status_bar_logo_position_left_quick">Izquierda con Panel de Ajustes Rápidos</string>
-    <string name="status_bar_logo_style_title">Estilo</string>
-    <string name="status_bar_logo_style_spark">Spark</string>
-    <string name="status_bar_logo_style_android">Android</string>
-    <string name="status_bar_logo_style_apple">Apple</string>
-    <string name="status_bar_logo_style_ios">iOS</string>
-    <string name="status_bar_logo_style_emoticon">Emoticono</string>
-    <string name="status_bar_logo_style_emoticon_cool">Emoticono con gafas</string>
-    <string name="status_bar_logo_style_emoticon_dead">Emoticono muerte</string>
-    <string name="status_bar_logo_style_emoticon_devil">Emoticono diablo</string>
-    <string name="status_bar_logo_style_emoticon_happy">Emoticono feliz</string>
-    <string name="status_bar_logo_style_emoticon_neutral">Emoticono neutral</string>
-    <string name="status_bar_logo_style_emoticon_poop">Emoticono poop</string>
-    <string name="status_bar_logo_style_emoticon_sad">Emoticono triste</string>
-    <string name="status_bar_logo_style_emoticon_tongue">Emoticono lengua</string>
-    <string name="status_bar_logo_style_blackberry">Blackberry</string>
-    <string name="status_bar_logo_style_cake">Pastel</string>
-    <string name="status_bar_logo_style_blogger">Blogger</string>
-    <string name="status_bar_logo_style_biohazard">Riesgo biológico</string>
-    <string name="status_bar_logo_style_linux">Linux</string>
-    <string name="status_bar_logo_style_yin_yang">Yin- Yang</string>
-    <string name="status_bar_logo_style_windows">Windows</string>
-    <string name="status_bar_logo_style_robot">Robot</string>
-    <string name="status_bar_logo_style_ninja">Ninja</string>
-    <string name="status_bar_logo_style_heart">Corazón</string>
-    <string name="status_bar_logo_style_flower">Flor</string>
-    <string name="status_bar_logo_style_ghost">Fantasma</string>
-    <string name="status_bar_logo_style_google">Google</string>
-    <string name="status_bar_logo_style_human_male">Hombre</string>
-    <string name="status_bar_logo_style_human_female">Mujer</string>
-    <string name="status_bar_logo_style_human_male_female">Hombre &amp; mujer</string>
-    <string name="status_bar_logo_style_gender_male">Masculino</string>
-    <string name="status_bar_logo_style_gender_female">Femenino</string>
-    <string name="status_bar_logo_style_gender_male_female">Masculino &amp; femenino</string>
-    <string name="status_bar_logo_style_amogus">AmongUs</string>
-    <string name="status_bar_logo_style_guitar_electric">Guitarra eléctrica</string>
+    <string name="status_bar_logo_summary">Mostrar un logo personalizado en la barra de estado</string>
+    <string name="status_bar_logo_position_title">Posición del logo</string>
+    <string name="status_bar_logo_style_title">Estilo del logo</string>
+    <string name="status_bar_quick_qs_pulldown_left">Izquierda</string>
+    <string name="status_bar_quick_qs_pulldown_right">Derecha</string>
     <!-- Custom FOD Icon -->
     <string name="custom_fp_icon_title">Icono personalizado de huella</string>
     <string name="custom_fp_icon_summary">Activar icono personalizado desde archivos de Huella en Pantalla</string>
@@ -462,6 +425,10 @@
     <!-- reTicker -->
     <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">¡Reemplaza las notificaciones con una versión rediseñada de los tickers! \nDelgada y menos invasiva que la notificación estándar</string>
+    <string name="new_reticker_title">reTicker alternativo</string>
+    <string name="new_reticker_summary">Usar un diseño alternativo para reticker inspirado en iOS</string>
+    <string name="new_reticker_animation_title">Animación alternativa de reTicker</string>
+    <string name="new_reticker_animation_summary">Usar una animación diferente para reTicker (habilitada por defecto en reTicker alternativo)</string>
     <string name="reticker_colored_title">Usar fondo de color de la aplicación</string>
     <string name="reticker_colored_summary">Reemplazar el color de fondo del reTicker usando el color principal de notificación de la aplicación</string>
     <!-- Lock screen album art filter -->
@@ -656,41 +623,35 @@
     <string name="chroma_factor_title">Colorido</string>
     <string name="linear_lightness_title">Usar escala de luz personalizada</string>
     <string name="white_luminance_title">Brillo</string>
-    <!-- Weather - OmniJaws Settings -->
-    <string name="weather_title">Clima</string>
-    <string name="weather_config_title">Ajustes del servicio</string>
-    <string name="weather_config_summary"></string>
-    <string name="header_weather_title">Clima en la cabecera</string>
-    <string name="header_weather_summary">Activar clima en la cabecera del panel de notificaciones</string>
-    <string name="weather_icon_pack_title">Iconos de clima</string>
-    <string name="weather_icon_pack_note">Nota\u003a puedes instalar nuevos iconos desde Play Store buscando \"Chronus icons\"</string>
-    <!-- Lockscreen Weather -->
-    <string name="lock_screen_weather_category_title">Pantalla de bloqueo</string>
-    <string name="lock_screen_show_weather_title">Mostrar el clima</string>
-    <string name="lock_screen_show_weather_summaryOn">El clima se mostrará en la pantalla de bloqueo</string>
-    <string name="lock_screen_show_weather_summaryOff">El clima no se mostrará en la pantalla de bloqueo</string>
-    <string name="lock_screen_weather_style_title">Estilo de clima</string>
-    <string name="lock_screen_weather_style_summaryOff">Mostrar ubicación en una línea diferente de la fecha</string>
-    <string name="lock_screen_weather_style_summaryOn">Se muestra el clima en la fecha sin ubicación</string>
-    <string name="lock_screen_weather_style_footer">La línea de clima no está disponible para el reloj Android S o relojes con línea propia de clima como el reloj DividedLines. Para tales relojes, activar esta función es como activar mostrar clima, al desactivar no se mostrará el clima.</string>
-    <string name="lock_screen_show_location_title">Mostrar ubicación</string>
-    <string name="lock_screen_show_location_summaryOn">Se muestra la ubicación en la pantalla de bloqueo</string>
-    <string name="lock_screen_show_location_summaryOff">La localización se oculta en la pantalla de bloqueo</string>
-    <string name="lock_screen_weather_condition_icon_title">Icono de condición del clima</string>
-    <string name="lock_screen_weather_condition_icon_summaryOn">El icono del clima se mostrará en la pantalla de bloqueo</string>
-    <string name="lock_screen_weather_condition_icon_summaryOff">El icono del clima no se mostrará en la pantalla de bloqueo</string>
     <!-- QS Weather Options -->
-    <string name="qs_weather_title">Clima en Ajustes Rápidos</string>
-    <string name="qs_weather_summary">Configurar clima en Ajustes Rápidos</string>
-    <string name="qs_weather_dialog_title">Estilo del clima en Ajustes Rápidos</string>
+    <string name="qs_weather_title">Estilo de clima en Ajustes Rápidos </string>
+    <string name="qs_weather_summary">Configurar el clima del sistema</string>
+    <string name="qsweather_dialog_title">Ubicación del clima en Ajustes Rápidos</string>
     <string name="qs_weather_hidden">Ocultar el clima</string>
     <string name="qs_temperature_image_show_scale">Mostrar temperatura con escala e imagen</string>
     <string name="qs_temperature_image_hide_scale">Mostrar temperatura con imagen sin escala</string>
     <string name="qs_temperature_show_scale_hide_image">Mostrar temperatura con escala</string>
     <string name="qs_temperature_hide_scale_hide_image">Mostrar temperatura sin escala</string>
     <string name="qs_show_image">Mostrar imagen</string>
-    <string name="qs_weather_settings_title">Configurar opciones de clima</string>
+    <string name="weather_show_all_condition">Mostrar temperatura con escala, imagen y estado del clima</string>
+    <string name="qsweather_position_qqs">Ajustes Rápidos</string>
+    <string name="qsweather_position_qsb">Ajustes rápidos contraídos</string>
+    <string name="qsweather_position_both">Ambos</string>
+    <!-- Launcher Weather Options -->
+    <string name="launcher_weather_title">Estilo de clima del launcher</string>
+    <!-- Launcher Weather Options -->
+    <string name="kg_weather_title">Estilo de clima en pantalla de bloqueo</string>
+    <!-- Omni weather -->
+    <string name="qs_weather_settings_title">Ajustes de clima</string>
     <string name="qs_weather_settings_summary">Configurar iconos y servicio de clima</string>
+    <string name="weather_title">Ajustes de clima</string>
+    <string name="weather_config_title">Servicio de clima</string>
+    <string name="weather_config_summary">Ajustes del servicio de clima</string>
+    <string name="weather_icon_pack_title">Iconos de clima</string>
+    <string name="weather_icon_pack_note">Nota\u003a puedes instalar nuevos iconos desde Play Store buscando \"Chronus icons\"</string>
+    <string name="weather_icon_pack_info_title">Consejos\u003a \n\n1. Los usuarios pueden instalar nuevos paquetes de iconos desde Play Store buscando \"Chronus icons\".\n\n2. El paquete de iconos de condición se utiliza para los iconos del tiempo en los ajustes rápidos y el De Un Vistazo del launcher.\n\n3. Mantenga pulsado la vista del tiempo/logo/temperatura de Ajustes Rápidos para acceder a la configuración del tiempo con facilidad.</string>
+    <string name="qsweather_settings_title">Clima en Ajustes Rápidos</string>
+    <string name="qsweather_settings_summary">Configurar vista del clima en Ajustes Rápidos</string>
     <!-- Quick settings styling -->
     <string name="qs_styling">Estilo de Ajustes Rápidos</string>
     <string name="qs_styles_title">Estilos del Panel de Ajustes Rápidos</string>
@@ -736,4 +697,128 @@
     <string name="custom_theme_black">Negro</string>
     <string name="custom_theme_clear">Limpio (BETA)</string>
     <string name="custom_theme_vivid">Vivo (Monet)</string>
+    <string name="custom_theme_espresso">Espresso</string>
+    <string name="custom_theme_snowpaintdrop">Gota de pintura nieve</string>
+    <!-- Pulse music visualizer -->
+    <string name="pulse_help_policy_notice_title">Acerca de Pulse</string>
+    <string name="pulse_help_policy_notice_summary">Pulse es un brillante ecualizador gráfico para la reproducción musical</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Ecualizador gráfico de audio en barra de navegación y pantalla de bloqueo</string>
+    <string name="show_navbar_pulse_title">Pulse Navbar</string>
+    <string name="show_navbar_pulse_summary">Ecualizador gráfico de audio en la barra de navegación</string>
+    <string name="show_lockscreen_pulse_title">Pulse en pantalla de bloqueo</string>
+    <string name="show_lockscreen_pulse_summary">Ecualizador gráfico de audio en la pantalla de bloqueo</string>
+    <string name="show_ambient_pulse_title">Pulse ambiente</string>
+    <string name="show_ambient_pulse_summary">Ecualizador gráfico de audio en la pantalla ambiente</string>
+    <string name="pulse_render_mode_title">Modo de renderizado</string>
+    <string name="pulse_render_mode_fading_bars">Desvanecimiento de bloques</string>
+    <string name="pulse_render_mode_solid_lines">Líneas sólidas</string>
+    <string name="pulse_legacy_mode_advanced_category">Ajustes del modo de bloques</string>
+    <string name="pulse_custom_fudge_factor">Nivel de sensibilidad (tamaño)</string>
+    <string name="pulse_lavalamp_speed_title">Velocidad de la lámpara de lava</string>
+    <string name="pulse_color_auto">Álbum</string>
+    <string name="pulse_solid_units_count">Cantidad de líneas sólidas</string>
+    <string name="pulse_solid_units_opacity">Opacidad de líneas sólidas</string>
+    <string name="pulse_solid_units_rounded_title">Esquinas redondeadas</string>
+    <string name="pulse_solid_units_rounded_summary">Líneas sólidas con punta redondeada</string>
+    <string name="pulse_solid_dimen_category">Ajustes del modo de lineas solidas</string>
+    <string name="pulse_color_mode_title">Color</string>
+    <string name="pulse_color_accent">Acento</string>
+    <string name="pulse_color_custom">Personalizado</string>
+    <string name="pulse_color_lava_lamp">Lámpara de lava</string>
+    <string name="pulse_color_user_title">Elegir color</string>
+    <string name="pulse_smoothing_enabled_title">Activar suavizado</string>
+    <string name="pulse_smoothing_enabled_summary">Animación de las barras más suave</string>
+    <string name="pulse_custom_dimen">Ancho de las barras</string>
+    <string name="pulse_custom_div">Espacio entre barras</string>
+    <string name="pulse_filled_block_size">Tamaño de los bloques</string>
+    <string name="pulse_empty_block_size">Espacio entre bloques</string>
+    <!-- Pulse Gravity n Mirror Options -->
+    <string name="pulse_custom_gravity_title">Gravedad</string>
+    <string name="pulse_custom_gravity_bottom">Abajo</string>
+    <string name="pulse_custom_gravity_top">Arriba</string>
+    <string name="pulse_custom_gravity_center">Centro</string>
+    <string name="visualizer_center_mirrored_title">Centro-reflejado</string>
+    <string name="visualizer_center_mirrored_summary">Visualizador con efecto de espejo respecto al centro</string>
+    <string name="pulse_vertical_mirror_title">Reflejado vertical</string>
+    <string name="pulse_vertical_mirror_summary">Crear otro pulso y voltear verticalmente</string>
+    <!-- Bluetooth status -->
+    <string name="bluetooth_battery_title">Estado de bateria de bluetooth</string>
+    <string name="bluetooth_battery_summary">Mostrar el estado de batería de los dispositivos bluetooth si está disponible</string>
+    <!-- Lockscreen shortcuts -->
+    <string name="lockscreen_shortcuts_title">Accesos directos en pantalla de bloqueo</string>
+    <string name="lockscreen_shortcuts_summary">Personalizar los accesos directos que se muestran</string>
+    <!-- QS SystemInfo -->
+    <string name="qs_system_info_title">Información del sistema</string>
+    <string name="qs_system_info_off">Apagado</string>
+    <string name="qs_system_info_icon_title">Icono de información del sistema</string>
+    <string name="qs_system_info_icon_summary">Mostrar icono de información del sistema en Qs</string>
+    <string name="qs_system_info_cpu_temp">Temperatura de la CPU</string>
+    <string name="qs_system_info_battery_temp">Temperatura de la batería</string>
+    <string name="qs_system_info_gpu_clock">Frecuencia de la GPU</string>
+    <string name="qs_system_info_gpu_busy">Uso de la GPU</string>
+    <!-- Privacy Indicator -->
+    <string name="mic_camera_privacy_indicator_title">Indicadores de micrófono y cámara</string>
+    <string name="mic_camera_privacy_indicator_summary">Mostrar indicador cuando una aplicación utiliza el micrófono o la cámara</string>
+    <string name="location_privacy_indicator_title">Indicador de privacidad de ubicación</string>
+    <string name="location_privacy_indicator_summary">Mostrar indicador cuando una aplicación use la localización</string>
+    <string name="projection_privacy_indicator_title">Indicador de privacidad de proyección de medios</string>
+    <string name="projection_privacy_indicator_summary">Mostrar indicador cuando se proyecta la pantalla del dispositivo</string>
+    <!-- QS Data Usage -->
+    <string name="qs_data_usage_panel_title">Mostrar Uso de Datos</string>
+    <string name="qs_data_usage_panel_summary">Mostrar detalles de uso de datos en Ajustes Rápidos expandidos</string>
+    <!-- Lockscreen interface -->
+    <string name="lockscreen_interface_title">Interfaz de la pantalla de bloqueo</string>
+    <string name="lockscreen_clock_color_title">Color del reloj de la pantalla de bloqueo</string>
+    <string name="lockscreen_clock_color_summary">Color personalizado en lugar de colores del fondo de pantalla</string>
+    <string name="kg_custom_clock_color_title">Color del reloj de la pantalla de bloqueo</string>
+    <string name="kg_custom_clock_font_title">Fuente del reloj de la pantalla de bloqueo</string>
+    <string name="kg_custom_date_font_title">Fuente de la fecha en pantalla de bloqueo</string>
+    <string name="small_clock_doubleline_title">Reloj de dos líneas en pantalla de bloqueo</string>
+    <string name="small_clock_doubleline_summary">Usar dos líneas en lugar de una sola para el reloj de la pantalla de bloqueo</string>
+    <!-- Volume Styles -->
+    <string name="volume_style_title">Estilo del panel de volumen</string>
+    <string name="rui_style">Estilo Realme</string>
+    <string name="rice_style">Estilo Rice</string>
+    <string name="volume_customizations_title">Personalizaciones del panel de volumen</string>
+    <!-- Ambient Customization -->
+    <string name="ambient_text_category">Personalizar texto</string>
+    <string name="ambient_image_category">Personalizar imagen</string>
+    <string name="ambient_text_category_title">Personalizar Ambiente-AOD</string>
+    <string name="ambient_text_category_summary">Personalizar el aspecto del AOD-ambiental</string>
+    <string name="ambient_text_title">Texto Ambiente</string>
+    <string name="ambient_text_summary">Mostrar texto ambiente en AoD</string>
+    <string name="ambient_text_animation_title">Animación del texto ambiente</string>
+    <string name="ambient_text_animation_summary">Mostrar una animación cuando se muestre AoD</string>
+    <string name="ambient_text_size_title">Tamaño de texto ambiente</string>
+    <string name="ambient_text_font_title">Fuente de texto ambiente</string>
+    <string name="ambient_text_string_title">Definir texto ambiente</string>
+    <string name="ambient_text_align_title">Alineación de texto ambiente</string>
+    <string name="ambient_text_align_start_top">Arriba a la derecha</string>
+    <string name="ambient_text_align_start_center">Centro Derecha</string>
+    <string name="ambient_text_align_start_bottom">Abajo a la derecha</string>
+    <string name="ambient_text_align_center">Centro</string>
+    <string name="ambient_text_align_end_top">Arriba a la izquierda</string>
+    <string name="ambient_text_align_end_center">Centro izquierda</string>
+    <string name="ambient_text_align_end_bottom">Abajo a la izquierda</string>
+    <string name="ambient_text_type_color_title">Color del tipo de texto ambiente</string>
+    <string name="ambient_text_color_title">Color del texto ambiente</string>
+    <string name="ambient_notification_light_color_mode_accent">Color de acento del sistema</string>
+    <string name="ambient_notification_light_color_mode_custom">Color personalizado</string>
+    <string name="ambient_notification_light_color_mode_wall">Color del fondo de pantalla</string>
+    <string name="ambient_image_title">Imagen Ambiental</string>
+    <string name="file_header_select_title">Seleccionar una imagen local</string>
+    <string name="file_header_select_summary">Seleccionar una imagen desde almacenamiento</string>
+    <!-- Combined signal icons in status bar -->
+    <string name="combined_status_bar_signal_icons_title">Iconos de señal combinados</string>
+    <string name="combined_status_bar_signal_icons_summary">Habilitar iconos de señal combinados\n(ADVERTENCIA: se producirá un reinicio suave al activarlo)</string>
+    <!-- Statusbar lyric -->
+    <string name="status_bar_lyric_title">Letras en la barra de estado</string>
+    <string name="status_bar_lyric_summary">Mostrar letras en la barra de estado (necesita soporte de la app)</string>
+    <string name="status_bar_show_lyric_title">Mostrar letras en la barra de estado</string>
+    <string name="disguise_props_for_music_app_title">Disfrazar dispositivo para aplicaciones de música</string>
+    <string name="disguise_props_for_music_app_summary">Disfrazar dispositivo en algunas aplicaciones de música para soportar letras en la barra de estado. Después de cambiar este interruptor, debes reiniciar las aplicaciones para que surta efecto.</string>
+    <!-- Brightness control -->
+    <string name="status_bar_brightness_control_title">Control de brillo</string>
+    <string name="status_bar_brightness_control_summary">Ajusta el brillo deslizando sobre la barra de estado</string>
 </resources>

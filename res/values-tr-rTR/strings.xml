@@ -28,6 +28,7 @@
     <string name="statusbar_clock_category_title">Durum çubuğu saati</string>
     <string name="powermenu_items_title">Güç menüsü öğeleri</string>
     <string name="monet_category">Monet ayarları</string>
+    <string name="pulse_category">Pulse</string>
     <string name="udfps_category">Udfps</string>
     <string name="general_category">Genel</string>
     <string name="flashlight_category">El feneri</string>
@@ -406,51 +407,13 @@
     <string name="flashlight_on_call_ignore_dnd_summary">Rahatsız etmeyin modu etkinken yanıp sön</string>
     <string name="flashlight_on_call_rate_title">Oran</string>
     <string name="flashlight_on_call_rate_summary">Çağrı sırasında flaş yanıp sönme hızı</string>
-    <!-- Statusbar logo -->
-    <string name="status_bar_logo_category_title">Logo</string>
+    <!-- Custom logo -->
     <string name="status_bar_logo_title">Logo</string>
-    <string name="status_bar_logo_summary">Durum çubuğunda logo göstermeyi etkinleştir</string>
-    <string name="status_bar_logo_position_title">Konum</string>
-    <string name="status_bar_logo_position_summary">Logonun hangi tarafta görüntüleneceğini seçin, sağ veya sol</string>
-    <string name="status_bar_logo_position_right">Sağ</string>
-    <string name="status_bar_logo_position_left">Sol</string>
-    <string name="status_bar_logo_position_right_quick">Hızlı ayarlar panelinin sağında</string>
-    <string name="status_bar_logo_position_left_quick">Hızlı ayarlar panelinin solunda</string>
-    <string name="status_bar_logo_style_title">Stil</string>
-    <string name="status_bar_logo_style_spark">Spark</string>
-    <string name="status_bar_logo_style_android">Android</string>
-    <string name="status_bar_logo_style_apple">Apple</string>
-    <string name="status_bar_logo_style_ios">iOS</string>
-    <string name="status_bar_logo_style_emoticon">Simge</string>
-    <string name="status_bar_logo_style_emoticon_cool">Havalı ifadesi</string>
-    <string name="status_bar_logo_style_emoticon_dead">Ölü ifadesi</string>
-    <string name="status_bar_logo_style_emoticon_devil">Şeytan ifadesi</string>
-    <string name="status_bar_logo_style_emoticon_happy">Mutlu ifadesi</string>
-    <string name="status_bar_logo_style_emoticon_neutral">Nötr ifadesi</string>
-    <string name="status_bar_logo_style_emoticon_poop">Kaka ifadesi</string>
-    <string name="status_bar_logo_style_emoticon_sad">Üzüntü ifadesi</string>
-    <string name="status_bar_logo_style_emoticon_tongue">Dil ifadesi</string>
-    <string name="status_bar_logo_style_blackberry">Blackberry</string>
-    <string name="status_bar_logo_style_cake">Kek</string>
-    <string name="status_bar_logo_style_blogger">Blogger</string>
-    <string name="status_bar_logo_style_biohazard">Radyasyon</string>
-    <string name="status_bar_logo_style_linux">Linux</string>
-    <string name="status_bar_logo_style_yin_yang">Yin-Yang</string>
-    <string name="status_bar_logo_style_windows">Windows</string>
-    <string name="status_bar_logo_style_robot">Robot</string>
-    <string name="status_bar_logo_style_ninja">Ninja</string>
-    <string name="status_bar_logo_style_heart">Kalp</string>
-    <string name="status_bar_logo_style_flower">Çiçek</string>
-    <string name="status_bar_logo_style_ghost">Hayalet</string>
-    <string name="status_bar_logo_style_google">Google</string>
-    <string name="status_bar_logo_style_human_male">Erkek</string>
-    <string name="status_bar_logo_style_human_female">Kadın</string>
-    <string name="status_bar_logo_style_human_male_female">Erkek &amp; kadın</string>
-    <string name="status_bar_logo_style_gender_male">Erkek İşareti</string>
-    <string name="status_bar_logo_style_gender_female">Kadın İşareti</string>
-    <string name="status_bar_logo_style_gender_male_female">Erkek İşareti &amp; Kadın İşareti</string>
-    <string name="status_bar_logo_style_amogus">AmongUs</string>
-    <string name="status_bar_logo_style_guitar_electric">Elektro gitar</string>
+    <string name="status_bar_logo_summary">Durum çubuğunun solunda veya sağında özel bir logo görüntüleyin</string>
+    <string name="status_bar_logo_position_title">Logo konumu</string>
+    <string name="status_bar_logo_style_title">Logo şekli</string>
+    <string name="status_bar_quick_qs_pulldown_left">Sol</string>
+    <string name="status_bar_quick_qs_pulldown_right">Sağ</string>
     <!-- Custom FOD Icon -->
     <string name="custom_fp_icon_title">Özel UDFPS simgesi</string>
     <string name="custom_fp_icon_summary">Dosyalardan özel UDFPS simgesini etkinleştir</string>
@@ -462,6 +425,10 @@
     <!-- reTicker -->
     <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">Bildirimlerinizi, bildirim çubuğu yazılarının yeniden tasarlanmış haliyle değiştirin!\nStandart bildirimlerden daha zarif ve daha az dikkat dağıtıcıdır</string>
+    <string name="new_reticker_title">Alternatif reTicker</string>
+    <string name="new_reticker_summary">ReTicker için ios\'tan ilham alan alternatif bir düzen kullanın</string>
+    <string name="new_reticker_animation_title">Alternatif reTicker animasyonu</string>
+    <string name="new_reticker_animation_summary">Reticker için farklı bir animasyon kullanın (alternatif reTicker\'da varsayılan olarak etkindir)</string>
     <string name="reticker_colored_title">Uygulama rengine göre arkaplan</string>
     <string name="reticker_colored_summary">reTicker arkaplan rengini uygulamanın ana rengine göre değiştir</string>
     <!-- Lock screen album art filter -->
@@ -656,41 +623,35 @@
     <string name="chroma_factor_title">Renklilik</string>
     <string name="linear_lightness_title">Özel parlaklık ölçeği kullan</string>
     <string name="white_luminance_title">Parlaklık</string>
-    <!-- Weather - OmniJaws Settings -->
-    <string name="weather_title">Hava durumu</string>
-    <string name="weather_config_title">Servis ayarları</string>
-    <string name="weather_config_summary"></string>
-    <string name="header_weather_title">Başlık görünümünde hava durumu</string>
-    <string name="header_weather_summary">Bildirim paneli başlığında hava durumu görüntüsünü etkinleştir</string>
-    <string name="weather_icon_pack_title">Durum simge paketi</string>
-    <string name="weather_icon_pack_note">Not\u003a Play Store\'den \"Chronus icons\" araması yaparak yeni simge paketleri yükleyebilirsiniz</string>
-    <!-- Lockscreen Weather -->
-    <string name="lock_screen_weather_category_title">Kilit ekranı</string>
-    <string name="lock_screen_show_weather_title">Hava durumunu göster</string>
-    <string name="lock_screen_show_weather_summaryOn">Hava durumu kilit ekranında gösteriliyor</string>
-    <string name="lock_screen_show_weather_summaryOff">Hava durumu kilit ekranında gösterilmiyor</string>
-    <string name="lock_screen_weather_style_title">Hava durumu stili</string>
-    <string name="lock_screen_weather_style_summaryOff">Konumla birlikte tarih diliminden ayrı göster</string>
-    <string name="lock_screen_weather_style_summaryOn">Konum içermeyen tarih dilimine eklenenleri göster</string>
-    <string name="lock_screen_weather_style_footer">Android S saati veya DividedLines saati gibi kendi hava durumu sağlayan saatler için özel hava durumu kullanılamaz. Bu saatler için, bunu değiştirmek, tam olarak hava durumunu değiştirmek gibi davranır, yani kapatılırsa hiçbir hava durumu görüntülenmez.</string>
-    <string name="lock_screen_show_location_title">Konumu görüntüle</string>
-    <string name="lock_screen_show_location_summaryOn">Konum kilit ekranında gösteriliyor</string>
-    <string name="lock_screen_show_location_summaryOff">Konum kilit ekranında gösterilmiyor</string>
-    <string name="lock_screen_weather_condition_icon_title">Durum simgesini göster</string>
-    <string name="lock_screen_weather_condition_icon_summaryOn">Durum simgesi kilit ekranında gösteriliyor</string>
-    <string name="lock_screen_weather_condition_icon_summaryOff">Durum simgesi kilit ekranında gösterilmiyor</string>
     <!-- QS Weather Options -->
-    <string name="qs_weather_title">Hızlı ayarlar hava durumu</string>
-    <string name="qs_weather_summary">Hızlı ayarlar hava durumunu yapılandırın</string>
-    <string name="qs_weather_dialog_title">Hızlı ayarlar hava durumu stili</string>
+    <string name="qs_weather_title">QS Sistemi hava durumu stili</string>
+    <string name="qs_weather_summary">Sistem hava durumunu yapılandırın</string>
+    <string name="qsweather_dialog_title">Hızlı ayarlar hava durumu konumu</string>
     <string name="qs_weather_hidden">Hava durumunu gizle</string>
     <string name="qs_temperature_image_show_scale">Sıcaklığı ölçek ve görüntüyle göster</string>
     <string name="qs_temperature_image_hide_scale">Sıcaklığı ölçek olmadan görüntüyle göster</string>
     <string name="qs_temperature_show_scale_hide_image">Sıcaklığı dereceyle beraber göster</string>
     <string name="qs_temperature_hide_scale_hide_image">Sıcaklığı derece olmadan göster</string>
     <string name="qs_show_image">Görüntüyü göster</string>
-    <string name="qs_weather_settings_title">Hava durumu seçeneklerini ayarla</string>
+    <string name="weather_show_all_condition">Ölçek, resim ve hava durumu ile sıcaklığı göster</string>
+    <string name="qsweather_position_qqs">Hızlı ayarlar</string>
+    <string name="qsweather_position_qsb">Hızlı durum çubuğu</string>
+    <string name="qsweather_position_both">Her ikisi de</string>
+    <!-- Launcher Weather Options -->
+    <string name="launcher_weather_title">Başlatıcı Sistemi hava durumu stili</string>
+    <!-- Launcher Weather Options -->
+    <string name="kg_weather_title">Kilit ekranı Sistemi hava durumu stili</string>
+    <!-- Omni weather -->
+    <string name="qs_weather_settings_title">Hava durumu ayarları</string>
     <string name="qs_weather_settings_summary">Simge paketini ve hava durumu servis sağlayıcısını ayarlayın</string>
+    <string name="weather_title">Hava durumu ayarları</string>
+    <string name="weather_config_title">Hava durumu servisi</string>
+    <string name="weather_config_summary">Sistem servisi ayarları</string>
+    <string name="weather_icon_pack_title">Durum simge paketi</string>
+    <string name="weather_icon_pack_note">Not\u003a Play Store\'den \"Chronus icons\" araması yaparak yeni simge paketleri yükleyebilirsiniz</string>
+    <string name="weather_icon_pack_info_title">İpuçları\u003a \n\n1. Kullanıcılar \"Chronus simgeleri\"ni arayarak Play Store\'dan yeni simge paketleri yükleyebilir.\n\n2. Durum simge paketi, hızlı ayarlardaki hava durumu simgeleri ve bir bakışta suşi başlatıcı için kullanılır.\n\n3. Hava durumu ayarlarına kolayca erişmek için Hızlı ayarlar hava durumu görünümü/logosu/sıcaklık düğmesine uzun basın.</string>
+    <string name="qsweather_settings_title">Hızlı ayarlar Hava durumu</string>
+    <string name="qsweather_settings_summary">Hızlı ayarlar hava durumu görünümlerini ayarlayın</string>
     <!-- Quick settings styling -->
     <string name="qs_styling">Hızlı ayarlar stili</string>
     <string name="qs_styles_title">Hızlı ayarlar paneli stili</string>
@@ -736,4 +697,128 @@
     <string name="custom_theme_black">Siyah</string>
     <string name="custom_theme_clear">Temiz (BETA)</string>
     <string name="custom_theme_vivid">Canlı(Monet)</string>
+    <string name="custom_theme_espresso">Espresso</string>
+    <string name="custom_theme_snowpaintdrop">Snowpaintdrop</string>
+    <!-- Pulse music visualizer -->
+    <string name="pulse_help_policy_notice_title">Pulse hakkında</string>
+    <string name="pulse_help_policy_notice_summary">Müzik çalarken kilit ekranında görünen akıllı bir ses grafik görselleştirmesidir</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Gezinme çubuğu ve kilit ekranı için ses grafik ekolayzırı</string>
+    <string name="show_navbar_pulse_title">Gezinme çubuğunda Pulse</string>
+    <string name="show_navbar_pulse_summary">Gezinme çubuğunda ses görselleştirmesi</string>
+    <string name="show_lockscreen_pulse_title">Kilit ekranında Pulse</string>
+    <string name="show_lockscreen_pulse_summary">Kilit ekranında ses görselleştirmesini gösterir</string>
+    <string name="show_ambient_pulse_title">Ortam ekranında Pulse</string>
+    <string name="show_ambient_pulse_summary">Ortam ekranında ses görselleştirmesini gösterir</string>
+    <string name="pulse_render_mode_title">İşleme modu</string>
+    <string name="pulse_render_mode_fading_bars">Fading bloklar</string>
+    <string name="pulse_render_mode_solid_lines">Düz çizgiler</string>
+    <string name="pulse_legacy_mode_advanced_category">Fading blokları modu ayarları</string>
+    <string name="pulse_custom_fudge_factor">Davranış seviyesi</string>
+    <string name="pulse_lavalamp_speed_title">Lava lamba hızı</string>
+    <string name="pulse_color_auto">Albüm</string>
+    <string name="pulse_solid_units_count">Düz çizgi sayısı</string>
+    <string name="pulse_solid_units_opacity">Düz çizgi şeffaflığı</string>
+    <string name="pulse_solid_units_rounded_title">Yuvarlak köşeler</string>
+    <string name="pulse_solid_units_rounded_summary">Yuvarlak köşeli düz çizgiler</string>
+    <string name="pulse_solid_dimen_category">Düz çizgi modu ayarları</string>
+    <string name="pulse_color_mode_title">Renk</string>
+    <string name="pulse_color_accent">Vurgu</string>
+    <string name="pulse_color_custom">Özel</string>
+    <string name="pulse_color_lava_lamp">Lava lambası</string>
+    <string name="pulse_color_user_title">Renk seçin</string>
+    <string name="pulse_smoothing_enabled_title">Pürüzsüzlüğü aç</string>
+    <string name="pulse_smoothing_enabled_summary">Her çubuk daha pürüzsüz animasyonlu</string>
+    <string name="pulse_custom_dimen">Çubuk genişliği</string>
+    <string name="pulse_custom_div">Çubuk aralığı</string>
+    <string name="pulse_filled_block_size">Blok boyutu</string>
+    <string name="pulse_empty_block_size">Blok aralığı</string>
+    <!-- Pulse Gravity n Mirror Options -->
+    <string name="pulse_custom_gravity_title">Gravity</string>
+    <string name="pulse_custom_gravity_bottom">Alt</string>
+    <string name="pulse_custom_gravity_top">Üst</string>
+    <string name="pulse_custom_gravity_center">Orta</string>
+    <string name="visualizer_center_mirrored_title">Ortalı</string>
+    <string name="visualizer_center_mirrored_summary">Görselleştiriciyi ortalanmış moda ayarlayın</string>
+    <string name="pulse_vertical_mirror_title">Dikey</string>
+    <string name="pulse_vertical_mirror_summary">Başka bir pulse oluşturun ve dikey olarak çevirin</string>
+    <!-- Bluetooth status -->
+    <string name="bluetooth_battery_title">Bluetooth pil durumu</string>
+    <string name="bluetooth_battery_summary">Eğer mümkün ise bağlı olan bluetooth cihazının pil durumunu göster</string>
+    <!-- Lockscreen shortcuts -->
+    <string name="lockscreen_shortcuts_title">Kilit ekranı kısayolları</string>
+    <string name="lockscreen_shortcuts_summary">Hangi kısayolların görüntüleneceğini özelleştirin</string>
+    <!-- QS SystemInfo -->
+    <string name="qs_system_info_title">Sistem bilgisi</string>
+    <string name="qs_system_info_off">Kapalı</string>
+    <string name="qs_system_info_icon_title">Sistem bilgisi simgesi</string>
+    <string name="qs_system_info_icon_summary">Hızlı ayarlarda sistem bilgisi simgesini göster</string>
+    <string name="qs_system_info_cpu_temp">CPU sıcaklığı</string>
+    <string name="qs_system_info_battery_temp">Pil sıcaklığı</string>
+    <string name="qs_system_info_gpu_clock">GPU frekansı</string>
+    <string name="qs_system_info_gpu_busy">GPU kullanımı</string>
+    <!-- Privacy Indicator -->
+    <string name="mic_camera_privacy_indicator_title">Mikrofon ve kamera gizlilik göstergesi</string>
+    <string name="mic_camera_privacy_indicator_summary">Herhangi bir uygulama mikrofon veya kamera kullandığında ayrı gösterge göster</string>
+    <string name="location_privacy_indicator_title">Konum gizlilik göstergesi</string>
+    <string name="location_privacy_indicator_summary">Herhangi bir uygulama konum kullandığında ayrı gösterge göster</string>
+    <string name="projection_privacy_indicator_title">Medya projeksiyonu gizlilik göstergesi</string>
+    <string name="projection_privacy_indicator_summary">Cihaz ekranı yansıtıldığında gösterge göster</string>
+    <!-- QS Data Usage -->
+    <string name="qs_data_usage_panel_title">Veri kullanımını göster</string>
+    <string name="qs_data_usage_panel_summary">Genişletilmiş hızlı ayarlar panelinde veri kullanım ayrıntılarını içeren bir iletişim kutusu görüntüleyin</string>
+    <!-- Lockscreen interface -->
+    <string name="lockscreen_interface_title">Kilit ekranı kullanıcı arayüzü</string>
+    <string name="lockscreen_clock_color_title">Özel kilit ekranı saat rengi</string>
+    <string name="lockscreen_clock_color_summary">Duvar kağıdı vurgusu yerine özel renk kullanın</string>
+    <string name="kg_custom_clock_color_title">Kilit ekranı saat rengini seçin</string>
+    <string name="kg_custom_clock_font_title">Özel kilit ekranı saat yazı tipi</string>
+    <string name="kg_custom_date_font_title">Özel kilit ekranı tarih yazı tipi</string>
+    <string name="small_clock_doubleline_title">Çift satırlı Kilit ekranı saat formatı</string>
+    <string name="small_clock_doubleline_summary">Kilit ekranı saati için tek satır stili yerine çift satır saati kullanın</string>
+    <!-- Volume Styles -->
+    <string name="volume_style_title">Ses paneli stilleri</string>
+    <string name="rui_style">Realme arayüzü stili</string>
+    <string name="rice_style">Rice stili</string>
+    <string name="volume_customizations_title">Ses paneli özelleştirmeleri</string>
+    <!-- Ambient Customization -->
+    <string name="ambient_text_category">Metin özelleştirmeleri</string>
+    <string name="ambient_image_category">Görüntü özelleştirmeleri</string>
+    <string name="ambient_text_category_title">Ortam ekranı-AOD özelleştirmesi</string>
+    <string name="ambient_text_category_summary">Ortam ekranı-aod\'un görünümünü özelleştirin</string>
+    <string name="ambient_text_title">Ortam ekranı metni</string>
+    <string name="ambient_text_summary">Ortam ekranı metnini AoD\'de göster</string>
+    <string name="ambient_text_animation_title">Ortam ekrani metni animasyonu</string>
+    <string name="ambient_text_animation_summary">AoD\'yi gösterirken bir Animasyon göster</string>
+    <string name="ambient_text_size_title">Ortam ekranı metin boyutu</string>
+    <string name="ambient_text_font_title">Ortam ekranı metin yazı tipi</string>
+    <string name="ambient_text_string_title">Ortam ekranı metni ayarla</string>
+    <string name="ambient_text_align_title">Ortam ekranı metni hizala</string>
+    <string name="ambient_text_align_start_top">Sağ n üst</string>
+    <string name="ambient_text_align_start_center">Sağ n orta</string>
+    <string name="ambient_text_align_start_bottom">Sağ n alt</string>
+    <string name="ambient_text_align_center">Orta</string>
+    <string name="ambient_text_align_end_top">Sol n üst</string>
+    <string name="ambient_text_align_end_center">Sol n orta</string>
+    <string name="ambient_text_align_end_bottom">Sol n alt</string>
+    <string name="ambient_text_type_color_title">Ortam ekranı metin türü rengi</string>
+    <string name="ambient_text_color_title">Ortam ekranı metin rengi</string>
+    <string name="ambient_notification_light_color_mode_accent">Sistem vurgu rengi</string>
+    <string name="ambient_notification_light_color_mode_custom">Özel renk</string>
+    <string name="ambient_notification_light_color_mode_wall">Duvar kağıdı rengi</string>
+    <string name="ambient_image_title">Ortam ekranı görüntüsü</string>
+    <string name="file_header_select_title">Yerel görüntü seçin</string>
+    <string name="file_header_select_summary">Depolamadan bir görüntü seçin</string>
+    <!-- Combined signal icons in status bar -->
+    <string name="combined_status_bar_signal_icons_title">Birleşik sinyal simgeleri</string>
+    <string name="combined_status_bar_signal_icons_summary">Birleşik sinyal simgelerini etkinleştir\n(UYARI: birleşik sinyal simgeleri etkinleştirildiğinde kısa bir yeniden başlatma gerçekleşir)</string>
+    <!-- Statusbar lyric -->
+    <string name="status_bar_lyric_title">Durum çubuğu şarkı sözü</string>
+    <string name="status_bar_lyric_summary">Durum çubuğunda şarkı sözlerini göster (uygulama desteği gerekli)</string>
+    <string name="status_bar_show_lyric_title">Durum çubuğu şarkı sözlerini etkinleştir</string>
+    <string name="disguise_props_for_music_app_title">Müzik uygulamaları için cihazı gizleyin</string>
+    <string name="disguise_props_for_music_app_summary">Durum çubuğubda şarkı sözlerini desteklemesi için bazı müzik uygulamalarında cihazı gizleyin. Değişikliklerin etkili olması için uygulamaları yeniden başlatmanız gerekir.</string>
+    <!-- Brightness control -->
+    <string name="status_bar_brightness_control_title">Parlaklık kontrolü</string>
+    <string name="status_bar_brightness_control_summary">Durum çubuğu üzerinde kaydırarak parlaklığı ayarlayın</string>
 </resources>
