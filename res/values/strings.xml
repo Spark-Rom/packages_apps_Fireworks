@@ -958,4 +958,7 @@
     <string name="hide_notification_icons_title">Hide notification icons</string>
     <string name="hide_notification_icons_summary">Hide notification icons on StatusBar</string>
 
+    <!-- Ambient Ticker -->
+    <string name="pulse_on_new_tracks_title">Music ticker</string>
+    <string name="pulse_on_new_tracks_summary">Show music ticker on Ambient Display during track change</string>
 </resources>
