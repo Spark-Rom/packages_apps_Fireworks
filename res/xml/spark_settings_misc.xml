@@ -50,6 +50,13 @@
 
     </PreferenceCategory>
 
+    <!-- Weather -->
+    <Preference
+        android:key="omnijaws_settings"
+        android:title="@string/qs_weather_settings_title"
+        android:summary="@string/qs_weather_settings_summary"
+        android:fragment="com.spark.settings.fragments.OmniJawsSettings" />
+
     <PreferenceCategory
         android:key="headsup_notifications_category"
         android:title="@string/notifications_category">
