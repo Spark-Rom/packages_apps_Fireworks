@@ -26,10 +26,10 @@
             <intent android:action="com.android.settings.action.LOCKSCREEN_TUNER" />
         </Preference>
     </PreferenceCategory>
-
+-->
     <PreferenceCategory
         android:title="@string/lock_screen_custom_clock_face_category">
-
+<!--
         <ListPreference
             android:key="lock_screen_custom_clock_face"
             android:summary="%s"
@@ -48,29 +48,17 @@
         android:title="@string/kg_custom_clock_color_title"
         android:defaultValue="0x92FFFFFF"
         android:dependency="kg_custom_clock_color_enabled"/>
-        
-    <com.spark.support.preferences.SecureSettingListPreference
-        android:key="kg_custom_clock_font"
-        android:title="@string/kg_custom_clock_font_title"
-        android:entries="@array/kg_custom_clock_font_entries"
-        android:entryValues="@array/kg_custom_clock_font_values"
-        android:defaultValue="0"/>
+-->        
 
-    <com.spark.support.preferences.SecureSettingListPreference
-        android:key="kg_custom_date_font"
-        android:title="@string/kg_custom_date_font_title"
-        android:entries="@array/kg_custom_clock_font_entries"
-        android:entryValues="@array/kg_custom_clock_font_values"
-        android:defaultValue="0"/>
-          
-    <com.spark.support.preferences.SystemSettingSwitchPreference
-        android:key="small_clock_double_line"
-        android:title="@string/small_clock_doubleline_title"
-        android:summary="@string/small_clock_doubleline_summary"
-        android:defaultValue="false" />
+    <!-- Clock Font style -->
+    <Preference
+        android:key="android.theme.customization.clock.fonts"
+        android:title="@string/theme_customization_clock_font_title"
+        android:summary="@string/theme_customization_clock_font_summary"
+        android:fragment="com.spark.settings.fragments.ClockFontsPicker"/>
 
     </PreferenceCategory>
--->
+
     <PreferenceCategory
         android:title="@string/ambient_text_category_title">
 
