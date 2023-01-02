@@ -839,4 +839,9 @@
     <!-- QS Data Usage -->
     <string name="qs_data_usage_panel_title">Show alternative Data Usage </string>
     <string name="qs_data_usage_panel_summary">Display a dialog with data usage details on expanded qs panel</string>
+
+    <!-- Notification Icons -->
+    <string name="hide_notification_icons_title">Hide notification icons</string>
+    <string name="hide_notification_icons_summary">Hide notification icons on StatusBar</string>
+
 </resources>
