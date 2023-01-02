@@ -36,19 +36,19 @@
             android:title="@string/lock_screen_custom_clock_face_title"
             android:entries="@array/lock_screen_custom_clock_face_entries"
             android:entryValues="@array/lock_screen_custom_clock_face_values" />
+-->
 
-    <SwitchPreference
+    <com.spark.support.preferences.SystemSettingSwitchPreference
         android:key="kg_custom_clock_color_enabled"
         android:title="@string/lockscreen_clock_color_title"
         android:summary="@string/lockscreen_clock_color_summary"
         android:defaultValue="false" />
 
-    <net.margaritov.preference.colorpicker.SecureSettingColorPickerPreference
+    <net.margaritov.preference.colorpicker.SystemSettingColorPickerPreference
         android:key="kg_custom_clock_color"
         android:title="@string/kg_custom_clock_color_title"
         android:defaultValue="0x92FFFFFF"
         android:dependency="kg_custom_clock_color_enabled"/>
--->        
 
     <!-- Clock Font style -->
     <Preference
@@ -69,17 +69,7 @@
          android:fragment="com.spark.settings.fragments.AmbientCustomizations" />
 
     </PreferenceCategory>
-<!--
-    <PreferenceCategory
-        android:title="@string/weather_title">
 
-       <Preference
-            android:key="omnijaws_settings"
-            android:title="@string/qs_weather_settings_title"
-            android:summary="@string/qs_weather_settings_summary"
-            android:fragment="com.spark.settings.fragments.OmniJawsSettings" />
-    </PreferenceCategory>
--->
     <PreferenceCategory
          android:title="@string/charging_category">
 
