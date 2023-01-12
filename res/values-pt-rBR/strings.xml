@@ -427,7 +427,7 @@
     <string name="reticker_summary">Substitua suas notificações por uma versão redesenhada de tickers. \nSlim e menos invasivo do que uma notificação padrão</string>
     <string name="new_reticker_title">ReTicker alternativo</string>
     <string name="new_reticker_summary">Usar um layout alternativo inspirado no ios para o reticker</string>
-    <string name="new_reticker_animation_title">Alternative reTicker animation</string>
+    <string name="new_reticker_animation_title">Animação alternativa reTicker</string>
     <string name="new_reticker_animation_summary">Usar uma animação diferente para o reTicker (ativado por padrão no reTicker alternativo)</string>
     <string name="reticker_colored_title">Fundo na cor do aplicativo</string>
     <string name="reticker_colored_summary">Substitua a cor de fundo do reTicker pela cor principal do aplicativo</string>
@@ -623,35 +623,6 @@
     <string name="chroma_factor_title">Coloração</string>
     <string name="linear_lightness_title">Usar escala de luz personalizada</string>
     <string name="white_luminance_title">Brilho</string>
-    <!-- QS Weather Options -->
-    <string name="qs_weather_title">QS System weather style</string>
-    <string name="qs_weather_summary">Configure system weather</string>
-    <string name="qsweather_dialog_title">QuickSettings weather location</string>
-    <string name="qs_weather_hidden">Ocultar clima</string>
-    <string name="qs_temperature_image_show_scale">Exibir temperatura com escala e imagem</string>
-    <string name="qs_temperature_image_hide_scale">Exibir temperatura com imagem sem escala</string>
-    <string name="qs_temperature_show_scale_hide_image">Exibir temperatura com escala</string>
-    <string name="qs_temperature_hide_scale_hide_image">Exibir temperatura sem escala</string>
-    <string name="qs_show_image">Exibir imagem</string>
-    <string name="weather_show_all_condition">Show temp with scale,image and weather condition</string>
-    <string name="qsweather_position_qqs">QuickSettings</string>
-    <string name="qsweather_position_qsb">QuickStatusbar</string>
-    <string name="qsweather_position_both">Both</string>
-    <!-- Launcher Weather Options -->
-    <string name="launcher_weather_title">Launcher System weather style</string>
-    <!-- Launcher Weather Options -->
-    <string name="kg_weather_title">Lockscreen System weather style</string>
-    <!-- Omni weather -->
-    <string name="qs_weather_settings_title">Weather Settings</string>
-    <string name="qs_weather_settings_summary">Configurar pacote de ícones e serviço de clima</string>
-    <string name="weather_title">Weather Settings</string>
-    <string name="weather_config_title">Weather service</string>
-    <string name="weather_config_summary">System service settings</string>
-    <string name="weather_icon_pack_title">Pacote de ícones climáticos</string>
-    <string name="weather_icon_pack_note">Nota\u003a Você pode instalar novos pacotes de ícones da play store procurando por \"Chronus icons\"</string>
-    <string name="weather_icon_pack_info_title">Tips\u003a \n\n1. Users can install new icon packs from play store by searching for \"Chronus icons\".\n\n2. Condition icon pack is used for weather icons on quick settings and sushi launcher at a glance.\n\n3. Long press the QuickSettings weather view/logo/temperature to access weather settings with ease.</string>
-    <string name="qsweather_settings_title">QuickSettings Weather</string>
-    <string name="qsweather_settings_summary">Setup quicksettings weather views</string>
     <!-- Quick settings styling -->
     <string name="qs_styling">Estilo das configurações rápidas</string>
     <string name="qs_styles_title">Estilo do painel de configurações rápidas</string>
@@ -821,4 +792,50 @@
     <!-- Brightness control -->
     <string name="status_bar_brightness_control_title">Brightness control</string>
     <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across the status bar</string>
+    <!-- Weather -->
+    <string name="weather_settings_title">Configurações de Clima</string>
+    <string name="weather_settings_summary">Configurar pacote de ícones e serviço de clima</string>
+    <string name="lockscreen_weather_title">Condição climática</string>
+    <string name="lockscreen_weather_summary">Mostrar a condição atual do clima e temperatura</string>
+    <string name="lockscreen_weather_enabled_info">Requer que o serviço de clima esteja habilitado</string>
+    <string name="lockscreen_weather_location_title">Clima local</string>
+    <string name="lockscreen_weather_location_summary">Mostrar localização do clima</string>
+    <!-- QS Weather Options -->
+    <string name="qs_weather_title">QS System weather style</string>
+    <string name="qs_weather_summary">Configure system weather</string>
+    <string name="qsweather_dialog_title">QuickSettings weather location</string>
+    <string name="qs_weather_hidden">Ocultar clima</string>
+    <string name="qs_temperature_image_show_scale">Exibir temperatura com escala e imagem</string>
+    <string name="qs_temperature_image_hide_scale">Exibir temperatura com imagem sem escala</string>
+    <string name="qs_temperature_show_scale_hide_image">Exibir temperatura com escala</string>
+    <string name="qs_temperature_hide_scale_hide_image">Exibir temperatura sem escala</string>
+    <string name="qs_show_image">Exibir imagem</string>
+    <string name="weather_show_all_condition">Show temp with scale,image and weather condition</string>
+    <string name="qsweather_position_qqs">QuickSettings</string>
+    <string name="qsweather_position_qsb">QuickStatusbar</string>
+    <string name="qsweather_position_both">Both</string>
+    <string name="launcher_weather_title">Launcher System weather style</string>
+    <string name="kg_weather_title">Lockscreen System weather style</string>
+    <!-- Omni weather -->
+    <string name="qs_weather_settings_title">Weather Settings</string>
+    <string name="qs_weather_settings_summary">Configurar pacote de ícones e serviço de clima</string>
+    <string name="weather_title">Weather Settings</string>
+    <string name="weather_config_title">Weather service</string>
+    <string name="weather_config_summary">System service settings</string>
+    <string name="weather_icon_pack_title">Pacote de ícones climáticos</string>
+    <string name="weather_icon_pack_note">Nota\u003a Você pode instalar novos pacotes de ícones da play store procurando por \"Chronus icons\"</string>
+    <string name="weather_icon_pack_info_title">Tips\u003a \n\n1. Users can install new icon packs from play store by searching for \"Chronus icons\".\n\n2. Condition icon pack is used for weather icons on quick settings and sushi launcher at a glance.\n\n3. Long press the QuickSettings weather view/logo/temperature to access weather settings with ease.</string>
+    <string name="qsweather_settings_title">QuickSettings Weather</string>
+    <string name="qsweather_settings_summary">Setup quicksettings weather views</string>
+    <!-- Clock picker format -->
+    <string name="clock_format">12\n26</string>
+    <string name="text_sample">AaBbCc</string>
+    <string name="theme_customization_clock_font_title">Estilo de fonte do relógio</string>
+    <string name="theme_customization_clock_font_summary">Definir estilo da fonte do relógio na tela de bloqueio</string>
+    <!-- Squiggle animation -->
+    <string name="hide_squiggle_animation_title">Mostrar animação de linha ondulada</string>
+    <string name="hide_squiggle_animation_summary">Mostrar animação de linha ondulada no player de mídia, após a alteração é necessário alternar a música, pausar ou mover a barra de progresso para aplicar</string>
+    <!-- Notification Icons -->
+    <string name="hide_notification_icons_title">Ocultar ícones de notificação</string>
+    <string name="hide_notification_icons_summary">Ocultar ícones de notificação na barra de status</string>
 </resources>
