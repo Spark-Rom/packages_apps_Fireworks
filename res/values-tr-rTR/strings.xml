@@ -623,35 +623,6 @@
     <string name="chroma_factor_title">Renklilik</string>
     <string name="linear_lightness_title">Özel parlaklık ölçeği kullan</string>
     <string name="white_luminance_title">Parlaklık</string>
-    <!-- QS Weather Options -->
-    <string name="qs_weather_title">QS Sistemi hava durumu stili</string>
-    <string name="qs_weather_summary">Sistem hava durumunu yapılandırın</string>
-    <string name="qsweather_dialog_title">Hızlı ayarlar hava durumu konumu</string>
-    <string name="qs_weather_hidden">Hava durumunu gizle</string>
-    <string name="qs_temperature_image_show_scale">Sıcaklığı ölçek ve görüntüyle göster</string>
-    <string name="qs_temperature_image_hide_scale">Sıcaklığı ölçek olmadan görüntüyle göster</string>
-    <string name="qs_temperature_show_scale_hide_image">Sıcaklığı dereceyle beraber göster</string>
-    <string name="qs_temperature_hide_scale_hide_image">Sıcaklığı derece olmadan göster</string>
-    <string name="qs_show_image">Görüntüyü göster</string>
-    <string name="weather_show_all_condition">Ölçek, resim ve hava durumu ile sıcaklığı göster</string>
-    <string name="qsweather_position_qqs">Hızlı ayarlar</string>
-    <string name="qsweather_position_qsb">Hızlı durum çubuğu</string>
-    <string name="qsweather_position_both">Her ikisi de</string>
-    <!-- Launcher Weather Options -->
-    <string name="launcher_weather_title">Başlatıcı Sistemi hava durumu stili</string>
-    <!-- Launcher Weather Options -->
-    <string name="kg_weather_title">Kilit ekranı Sistemi hava durumu stili</string>
-    <!-- Omni weather -->
-    <string name="qs_weather_settings_title">Hava durumu ayarları</string>
-    <string name="qs_weather_settings_summary">Simge paketini ve hava durumu servis sağlayıcısını ayarlayın</string>
-    <string name="weather_title">Hava durumu ayarları</string>
-    <string name="weather_config_title">Hava durumu servisi</string>
-    <string name="weather_config_summary">Sistem servisi ayarları</string>
-    <string name="weather_icon_pack_title">Durum simge paketi</string>
-    <string name="weather_icon_pack_note">Not\u003a Play Store\'den \"Chronus icons\" araması yaparak yeni simge paketleri yükleyebilirsiniz</string>
-    <string name="weather_icon_pack_info_title">İpuçları\u003a \n\n1. Kullanıcılar \"Chronus simgeleri\"ni arayarak Play Store\'dan yeni simge paketleri yükleyebilir.\n\n2. Durum simge paketi, hızlı ayarlardaki hava durumu simgeleri ve bir bakışta suşi başlatıcı için kullanılır.\n\n3. Hava durumu ayarlarına kolayca erişmek için Hızlı ayarlar hava durumu görünümü/logosu/sıcaklık düğmesine uzun basın.</string>
-    <string name="qsweather_settings_title">Hızlı ayarlar Hava durumu</string>
-    <string name="qsweather_settings_summary">Hızlı ayarlar hava durumu görünümlerini ayarlayın</string>
     <!-- Quick settings styling -->
     <string name="qs_styling">Hızlı ayarlar stili</string>
     <string name="qs_styles_title">Hızlı ayarlar paneli stili</string>
@@ -821,4 +792,50 @@
     <!-- Brightness control -->
     <string name="status_bar_brightness_control_title">Parlaklık kontrolü</string>
     <string name="status_bar_brightness_control_summary">Durum çubuğu üzerinde kaydırarak parlaklığı ayarlayın</string>
+    <!-- Weather -->
+    <string name="weather_settings_title">Hava durumu ayarları</string>
+    <string name="weather_settings_summary">Simge paketini ve hava durumu servis sağlayıcısını ayarlayın</string>
+    <string name="lockscreen_weather_title">Hava durumu</string>
+    <string name="lockscreen_weather_summary">Mevcut hava durumunu ve sıcaklığı göster</string>
+    <string name="lockscreen_weather_enabled_info">Hava durumu hizmetinin etkinleştirilmesi gerekir</string>
+    <string name="lockscreen_weather_location_title">Hava durumu konumu</string>
+    <string name="lockscreen_weather_location_summary">Mevcut hava durumu konumunu göster</string>
+    <!-- QS Weather Options -->
+    <string name="qs_weather_title">QS Sistemi hava durumu stili</string>
+    <string name="qs_weather_summary">Sistem hava durumunu yapılandırın</string>
+    <string name="qsweather_dialog_title">Hızlı ayarlar hava durumu konumu</string>
+    <string name="qs_weather_hidden">Hava durumunu gizle</string>
+    <string name="qs_temperature_image_show_scale">Sıcaklığı ölçek ve görüntüyle göster</string>
+    <string name="qs_temperature_image_hide_scale">Sıcaklığı ölçek olmadan görüntüyle göster</string>
+    <string name="qs_temperature_show_scale_hide_image">Sıcaklığı dereceyle beraber göster</string>
+    <string name="qs_temperature_hide_scale_hide_image">Sıcaklığı derece olmadan göster</string>
+    <string name="qs_show_image">Görüntüyü göster</string>
+    <string name="weather_show_all_condition">Ölçek, resim ve hava durumu ile sıcaklığı göster</string>
+    <string name="qsweather_position_qqs">Hızlı ayarlar</string>
+    <string name="qsweather_position_qsb">Hızlı durum çubuğu</string>
+    <string name="qsweather_position_both">Her ikisi de</string>
+    <string name="launcher_weather_title">Başlatıcı Sistemi hava durumu stili</string>
+    <string name="kg_weather_title">Kilit ekranı Sistemi hava durumu stili</string>
+    <!-- Omni weather -->
+    <string name="qs_weather_settings_title">Hava durumu ayarları</string>
+    <string name="qs_weather_settings_summary">Simge paketini ve hava durumu servis sağlayıcısını ayarlayın</string>
+    <string name="weather_title">Hava durumu ayarları</string>
+    <string name="weather_config_title">Hava durumu servisi</string>
+    <string name="weather_config_summary">Sistem servisi ayarları</string>
+    <string name="weather_icon_pack_title">Durum simge paketi</string>
+    <string name="weather_icon_pack_note">Not\u003a Play Store\'den \"Chronus icons\" araması yaparak yeni simge paketleri yükleyebilirsiniz</string>
+    <string name="weather_icon_pack_info_title">İpuçları\u003a \n\n1. Kullanıcılar \"Chronus simgeleri\"ni arayarak Play Store\'dan yeni simge paketleri yükleyebilir.\n\n2. Durum simge paketi, hızlı ayarlardaki hava durumu simgeleri ve bir bakışta suşi başlatıcı için kullanılır.\n\n3. Hava durumu ayarlarına kolayca erişmek için Hızlı ayarlar hava durumu görünümü/logosu/sıcaklık düğmesine uzun basın.</string>
+    <string name="qsweather_settings_title">Hızlı ayarlar Hava durumu</string>
+    <string name="qsweather_settings_summary">Hızlı ayarlar hava durumu görünümlerini ayarlayın</string>
+    <!-- Clock picker format -->
+    <string name="clock_format">12\n26</string>
+    <string name="text_sample">AaBbCc</string>
+    <string name="theme_customization_clock_font_title">Saat yazı tipi stili</string>
+    <string name="theme_customization_clock_font_summary">Kilit ekranı saat yazı tipi stilini ayarlayın</string>
+    <!-- Squiggle animation -->
+    <string name="hide_squiggle_animation_title">Dalgalanma animasyonunu gizle</string>
+    <string name="hide_squiggle_animation_summary">Medya paneli dalgalanma animasyonunu gizleyin, değiştirdikten sonra müziği değiştirmeniz, müziği duraklatmanız veya uygulamak için ilerleme çubuğunu hareket ettirmeniz gerekir</string>
+    <!-- Notification Icons -->
+    <string name="hide_notification_icons_title">Bildirim simgelerini gizle</string>
+    <string name="hide_notification_icons_summary">Durum çubuğunda bildirim simgelerini gizle</string>
 </resources>

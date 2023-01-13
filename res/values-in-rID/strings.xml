@@ -623,35 +623,6 @@
     <string name="chroma_factor_title">Penuh warna</string>
     <string name="linear_lightness_title">Gunakan skala ringan khusus</string>
     <string name="white_luminance_title">Kecerahan</string>
-    <!-- QS Weather Options -->
-    <string name="qs_weather_title">Gaya cuaca sistem Setelan Cepat</string>
-    <string name="qs_weather_summary">Konfigurasi cuaca sistem</string>
-    <string name="qsweather_dialog_title">Lokasi cuaca Setelan Cepat</string>
-    <string name="qs_weather_hidden">Sembunyikan cuaca</string>
-    <string name="qs_temperature_image_show_scale">Tampilkan suhu dengan skala dan gambar</string>
-    <string name="qs_temperature_image_hide_scale">Tampilkan suhu dengan gambar tanpa skala</string>
-    <string name="qs_temperature_show_scale_hide_image">Tampilkan suhu dengan skala</string>
-    <string name="qs_temperature_hide_scale_hide_image">Tampilkan suhu tanpa skala</string>
-    <string name="qs_show_image">Tampilkan gambar</string>
-    <string name="weather_show_all_condition">Tampilkan suhu dengan skala, gambar, dan kondisi cuaca</string>
-    <string name="qsweather_position_qqs">Setelan Cepat</string>
-    <string name="qsweather_position_qsb">Bilah Status Cepat</string>
-    <string name="qsweather_position_both">Keduanya</string>
-    <!-- Launcher Weather Options -->
-    <string name="launcher_weather_title">Gaya cuaca sistem Peluncur</string>
-    <!-- Launcher Weather Options -->
-    <string name="kg_weather_title">Gaya cuaca sistem Layar Kunci</string>
-    <!-- Omni weather -->
-    <string name="qs_weather_settings_title">Pengaturan Cuaca</string>
-    <string name="qs_weather_settings_summary">Atur paket ikon dan layanan cuaca</string>
-    <string name="weather_title">Pengaturan Cuaca</string>
-    <string name="weather_config_title">Layanan cuaca</string>
-    <string name="weather_config_summary">Pengaturan layanan sistem</string>
-    <string name="weather_icon_pack_title">Paket ikon kondisi</string>
-    <string name="weather_icon_pack_note">Catatan\u003a Anda dapat menginstal paket ikon baru dari Play Store dengan mencari \"Chronus ikon\"</string>
-    <string name="weather_icon_pack_info_title">Kiat\u003a \n\n1. Pengguna dapat menginstal paket ikon baru dari Play Store dengan menelusuri \"ikon Chronus\".\n\n2. Paket ikon kondisi digunakan untuk ikon cuaca pada setelan cepat dan peluncur sushi secara sekilas.\n\n3. Tekan lama tampilan cuaca/logo/suhu Setelan Cepat untuk mengakses setelan cuaca dengan mudah.</string>
-    <string name="qsweather_settings_title">Cuaca Setelan Cepat</string>
-    <string name="qsweather_settings_summary">Atur tampilan cuaca setelan cepat</string>
     <!-- Quick settings styling -->
     <string name="qs_styling">Penataan Gaya Setelan Cepat</string>
     <string name="qs_styles_title">Gaya Setelan Cepat</string>
@@ -821,4 +792,50 @@
     <!-- Brightness control -->
     <string name="status_bar_brightness_control_title">Kontrol kecerahan</string>
     <string name="status_bar_brightness_control_summary">Sesuaikan kecerahan dengan menggeser di bilah status</string>
+    <!-- Weather -->
+    <string name="weather_settings_title">Setelan cuaca</string>
+    <string name="weather_settings_summary">Atur paket ikon dan layanan cuaca</string>
+    <string name="lockscreen_weather_title">Kondisi cuaca</string>
+    <string name="lockscreen_weather_summary">Tampilkan kondisi cuaca dan suhu saat ini</string>
+    <string name="lockscreen_weather_enabled_info">Membutuhkan layanan cuaca untuk diaktifkan</string>
+    <string name="lockscreen_weather_location_title">Lokasi cuaca</string>
+    <string name="lockscreen_weather_location_summary">Tampilkan cuaca saat ini menurut lokasi</string>
+    <!-- QS Weather Options -->
+    <string name="qs_weather_title">Gaya cuaca sistem Setelan Cepat</string>
+    <string name="qs_weather_summary">Konfigurasi cuaca sistem</string>
+    <string name="qsweather_dialog_title">Lokasi cuaca Setelan Cepat</string>
+    <string name="qs_weather_hidden">Sembunyikan cuaca</string>
+    <string name="qs_temperature_image_show_scale">Tampilkan suhu dengan skala dan gambar</string>
+    <string name="qs_temperature_image_hide_scale">Tampilkan suhu dengan gambar tanpa skala</string>
+    <string name="qs_temperature_show_scale_hide_image">Tampilkan suhu dengan skala</string>
+    <string name="qs_temperature_hide_scale_hide_image">Tampilkan suhu tanpa skala</string>
+    <string name="qs_show_image">Tampilkan gambar</string>
+    <string name="weather_show_all_condition">Tampilkan suhu dengan skala, gambar, dan kondisi cuaca</string>
+    <string name="qsweather_position_qqs">Setelan Cepat</string>
+    <string name="qsweather_position_qsb">Bilah Status Cepat</string>
+    <string name="qsweather_position_both">Keduanya</string>
+    <string name="launcher_weather_title">Gaya cuaca sistem Peluncur</string>
+    <string name="kg_weather_title">Gaya cuaca sistem Layar Kunci</string>
+    <!-- Omni weather -->
+    <string name="qs_weather_settings_title">Pengaturan Cuaca</string>
+    <string name="qs_weather_settings_summary">Atur paket ikon dan layanan cuaca</string>
+    <string name="weather_title">Pengaturan Cuaca</string>
+    <string name="weather_config_title">Layanan cuaca</string>
+    <string name="weather_config_summary">Pengaturan layanan sistem</string>
+    <string name="weather_icon_pack_title">Paket ikon kondisi</string>
+    <string name="weather_icon_pack_note">Catatan\u003a Anda dapat menginstal paket ikon baru dari Play Store dengan mencari \"Chronus ikon\"</string>
+    <string name="weather_icon_pack_info_title">Kiat\u003a \n\n1. Pengguna dapat menginstal paket ikon baru dari Play Store dengan menelusuri \"ikon Chronus\".\n\n2. Paket ikon kondisi digunakan untuk ikon cuaca pada setelan cepat dan peluncur sushi secara sekilas.\n\n3. Tekan lama tampilan cuaca/logo/suhu Setelan Cepat untuk mengakses setelan cuaca dengan mudah.</string>
+    <string name="qsweather_settings_title">Cuaca Setelan Cepat</string>
+    <string name="qsweather_settings_summary">Atur tampilan cuaca setelan cepat</string>
+    <!-- Clock picker format -->
+    <string name="clock_format">12\n26</string>
+    <string name="text_sample">AaBbCc</string>
+    <string name="theme_customization_clock_font_title">Gaya font jam</string>
+    <string name="theme_customization_clock_font_summary">Setel gaya font jam layar kunci</string>
+    <!-- Squiggle animation -->
+    <string name="hide_squiggle_animation_title">Sembunyikan animasi coretan</string>
+    <string name="hide_squiggle_animation_summary">Sembunyikan animasi coretan panel media, setelah mengubah Anda perlu mengganti musik, menjeda musik, atau memindahkan bilah kemajuan untuk diterapkan</string>
+    <!-- Notification Icons -->
+    <string name="hide_notification_icons_title">Sembunyikan ikon notifikasi</string>
+    <string name="hide_notification_icons_summary">Sembuntikan ikon notifikasi pada bilah status</string>
 </resources>

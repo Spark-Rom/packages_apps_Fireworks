@@ -623,35 +623,6 @@
     <string name="chroma_factor_title">Vivacità</string>
     <string name="linear_lightness_title">Usa scala di luminosità personalizzata</string>
     <string name="white_luminance_title">Luminosità</string>
-    <!-- QS Weather Options -->
-    <string name="qs_weather_title">Stile meteo nei QS di sistema</string>
-    <string name="qs_weather_summary">Configura il meteo di sistema</string>
-    <string name="qsweather_dialog_title">Posizione meteo nelle impostazioni rapide</string>
-    <string name="qs_weather_hidden">Nascondi meteo</string>
-    <string name="qs_temperature_image_show_scale">Mostra la temperatura con scala e immagine</string>
-    <string name="qs_temperature_image_hide_scale">Mostra la temperatura con immagine e senza scala</string>
-    <string name="qs_temperature_show_scale_hide_image">Mostra la temperatura con scala</string>
-    <string name="qs_temperature_hide_scale_hide_image">Mostra la temperatura senza scala</string>
-    <string name="qs_show_image">Mostra immagine</string>
-    <string name="weather_show_all_condition">Mostra temperatura con scala, immagine e condizioni meteorologiche</string>
-    <string name="qsweather_position_qqs">Impostazioni Rapide</string>
-    <string name="qsweather_position_qsb">Barra di stato</string>
-    <string name="qsweather_position_both">Entrambe</string>
-    <!-- Launcher Weather Options -->
-    <string name="launcher_weather_title">Stile meteo nel launcher di sistema</string>
-    <!-- Launcher Weather Options -->
-    <string name="kg_weather_title">Stile meteo nel blocco schermo di sistema</string>
-    <!-- Omni weather -->
-    <string name="qs_weather_settings_title">Impostazioni Meteo</string>
-    <string name="qs_weather_settings_summary">Configura pacchetto icone e servizio meteo</string>
-    <string name="weather_title">Impostazioni Meteo</string>
-    <string name="weather_config_title">Servizio meteo</string>
-    <string name="weather_config_summary">Impostazioni del servizio di sistema</string>
-    <string name="weather_icon_pack_title">Pacchetto icone condizioni meteo</string>
-    <string name="weather_icon_pack_note">Nota\u003a puoi installare nuovi pacchetti icone dal play store cercando \"Chronus icons\"</string>
-    <string name="weather_icon_pack_info_title">Suggerimenti\u003a \n\n1. Gli utenti possono installare nuovi pacchetti di icone dal Play Store cercando \"Chronus icons\".\n\n2. Il pacchetto icone delle condizioni meteo è utilizzato per le icone meteo sulle impostazioni rapide e sushi launcher a colpo d\'occhio.\n\n3. Premi a lungo sul meteo/logo/temperatura nei QuickSettings per accedere alle impostazioni meteo con facilità.</string>
-    <string name="qsweather_settings_title">Meteo QuickSettings</string>
-    <string name="qsweather_settings_summary">Configura la vista meteo nei QS</string>
     <!-- Quick settings styling -->
     <string name="qs_styling">Stile impostazioni rapide</string>
     <string name="qs_styles_title">Stile pannelli QS</string>
@@ -821,4 +792,50 @@
     <!-- Brightness control -->
     <string name="status_bar_brightness_control_title">Controllo luminosità</string>
     <string name="status_bar_brightness_control_summary">Regola la luminosità scorrendo sulla barra di stato</string>
+    <!-- Weather -->
+    <string name="weather_settings_title">Impostazioni meteo</string>
+    <string name="weather_settings_summary">Configura pacchetto icone e servizio meteo</string>
+    <string name="lockscreen_weather_title">Condizioni meteo</string>
+    <string name="lockscreen_weather_summary">Mostra le condizioni meteorologiche e la temperatura attuali</string>
+    <string name="lockscreen_weather_enabled_info">Richiede l\'attivazione del servizio meteo</string>
+    <string name="lockscreen_weather_location_title">Posizione meteo</string>
+    <string name="lockscreen_weather_location_summary">Visualizza il meteo della posizione attuale</string>
+    <!-- QS Weather Options -->
+    <string name="qs_weather_title">Stile meteo nei QS di sistema</string>
+    <string name="qs_weather_summary">Configura il meteo di sistema</string>
+    <string name="qsweather_dialog_title">Posizione meteo nelle impostazioni rapide</string>
+    <string name="qs_weather_hidden">Nascondi meteo</string>
+    <string name="qs_temperature_image_show_scale">Mostra la temperatura con scala e immagine</string>
+    <string name="qs_temperature_image_hide_scale">Mostra la temperatura con immagine e senza scala</string>
+    <string name="qs_temperature_show_scale_hide_image">Mostra la temperatura con scala</string>
+    <string name="qs_temperature_hide_scale_hide_image">Mostra la temperatura senza scala</string>
+    <string name="qs_show_image">Mostra immagine</string>
+    <string name="weather_show_all_condition">Mostra temperatura con scala, immagine e condizioni meteorologiche</string>
+    <string name="qsweather_position_qqs">Impostazioni Rapide</string>
+    <string name="qsweather_position_qsb">Barra di stato</string>
+    <string name="qsweather_position_both">Entrambe</string>
+    <string name="launcher_weather_title">Stile meteo nel launcher di sistema</string>
+    <string name="kg_weather_title">Stile meteo nel blocco schermo di sistema</string>
+    <!-- Omni weather -->
+    <string name="qs_weather_settings_title">Impostazioni Meteo</string>
+    <string name="qs_weather_settings_summary">Configura pacchetto icone e servizio meteo</string>
+    <string name="weather_title">Impostazioni Meteo</string>
+    <string name="weather_config_title">Servizio meteo</string>
+    <string name="weather_config_summary">Impostazioni del servizio di sistema</string>
+    <string name="weather_icon_pack_title">Pacchetto icone condizioni meteo</string>
+    <string name="weather_icon_pack_note">Nota\u003a puoi installare nuovi pacchetti icone dal play store cercando \"Chronus icons\"</string>
+    <string name="weather_icon_pack_info_title">Suggerimenti\u003a \n\n1. Gli utenti possono installare nuovi pacchetti di icone dal Play Store cercando \"Chronus icons\".\n\n2. Il pacchetto icone delle condizioni meteo è utilizzato per le icone meteo sulle impostazioni rapide e sushi launcher a colpo d\'occhio.\n\n3. Premi a lungo sul meteo/logo/temperatura nei QuickSettings per accedere alle impostazioni meteo con facilità.</string>
+    <string name="qsweather_settings_title">Meteo QuickSettings</string>
+    <string name="qsweather_settings_summary">Configura la vista meteo nei QS</string>
+    <!-- Clock picker format -->
+    <string name="clock_format">12\n26</string>
+    <string name="text_sample">AaBbCc</string>
+    <string name="theme_customization_clock_font_title">Stile font dell\'orologio</string>
+    <string name="theme_customization_clock_font_summary">Imposta il font dell\'orologio sulla lockscreen</string>
+    <!-- Squiggle animation -->
+    <string name="hide_squiggle_animation_title">Nascondi animazione ondulatoria</string>
+    <string name="hide_squiggle_animation_summary">Nasconde l\'animazione ondulatoria del pannello multimediale, dopo la modifica è necessario cambiare musica, mettere in pausa o spostare la barra di avanzamento per applicarla</string>
+    <!-- Notification Icons -->
+    <string name="hide_notification_icons_title">Nascondi le icone di notifica</string>
+    <string name="hide_notification_icons_summary">Nasconde le icone di notifica dalla barra di stato</string>
 </resources>
