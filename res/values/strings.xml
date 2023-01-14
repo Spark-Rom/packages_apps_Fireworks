@@ -978,4 +978,9 @@
     <!-- Android P animation style -->
     <string name="pie_animation_style_title">Android P animation style</string>
     <string name="pie_animation_style_summary">Enable Android P \"Default\" animations</string>
+
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Force expand notifications</string>
+    <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+    
 </resources>
