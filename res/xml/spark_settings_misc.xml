@@ -198,6 +198,16 @@
 
    </PreferenceCategory>
 
+    <PreferenceCategory
+        android:title="@string/haptic_feedback_category">
+
+        <com.spark.support.preferences.SystemSettingSwitchPreference
+            android:key="volume_panel_haptic_feedback"
+            android:title="@string/volume_panel_haptic_feedback_title"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
     <SwitchPreference
         android:key="navbar_visibility"
         android:title="@string/navigation_bar_title"
