@@ -965,4 +965,13 @@
     <!-- Haptic feedback settings -->
     <string name="haptic_feedback_category">Haptic Feedback Settings</string>
     <string name="volume_panel_haptic_feedback_title">Vibrate on changing volume</string>
+
+    <!-- HeadsUp notifications importance threshold -->
+    <!--string name="hun_importance_none">None</string-->
+    <string name="hun_importance_title">Importance threshold</string>
+    <string name="hun_importance_min">Minimum</string>
+    <string name="hun_importance_low">Low</string>
+    <string name="hun_importance_default">Default</string>
+    <string name="hun_importance_high">High</string>
+    <string name="hun_importance_max">Maxiumum</string>
 </resources>
