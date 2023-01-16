@@ -15,18 +15,33 @@
     android:title="@string/lockscreen_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-<!--
     <PreferenceCategory
         android:title="@string/lockscreen_shortcuts_title">
 
-       <Preference
-            android:key="lockscreen_shortcuts"
-            android:title="@string/lockscreen_shortcuts_title"
-            android:summary="@string/lockscreen_shortcuts_summary" >
-            <intent android:action="com.android.settings.action.LOCKSCREEN_TUNER" />
-        </Preference>
+        <com.spark.support.preferences.SystemSettingListPreference
+            android:key="lockscreen_shortcut_start"
+            android:title="@string/lockscreen_shortcut_start_title"
+            android:summary="%s"
+            android:entries="@array/lockscreen_shortcut_entries"
+            android:entryValues="@array/lockscreen_shortcut_values"
+            android:defaultValue="1" />
+
+        <com.spark.support.preferences.SystemSettingListPreference
+            android:key="lockscreen_shortcut_end"
+            android:title="@string/lockscreen_shortcut_end_title"
+            android:summary="%s"
+            android:entries="@array/lockscreen_shortcut_entries"
+            android:entryValues="@array/lockscreen_shortcut_values"
+            android:defaultValue="0" />
+
+        <SwitchPreference
+            android:key="lockscreen_shortcut_enforce"
+            android:title="@string/lockscreen_shortcut_enforce_title"
+            android:summary="@string/lockscreen_shortcut_enforce_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
--->
+
     <PreferenceCategory
         android:title="@string/lock_screen_custom_clock_face_category">
 <!--

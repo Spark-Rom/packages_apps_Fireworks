@@ -28,7 +28,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.app.Activity;
 import android.net.Uri;
-import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.Utils;
 import android.util.Log;
 import android.graphics.Bitmap;
@@ -45,6 +45,7 @@ import android.text.TextUtils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 import com.spark.support.preferences.SystemSettingSwitchPreference;
+import com.spark.support.preferences.SystemSettingListPreference;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
@@ -60,14 +61,22 @@ import android.os.ServiceManager;
 import static android.os.UserHandle.USER_CURRENT;
 
 @SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
-public class LockScreenSettings extends SettingsPreferenceFragment implements
+public class LockScreenSettings extends DashboardFragment implements
         OnPreferenceChangeListener {
+
+    private static final String TAG = "LockScreenSettings";
 
     private static final String FINGERPRINT_SUCCESS_VIB = "fingerprint_success_vib";
     private static final String FINGERPRINT_ERROR_VIB = "fingerprint_error_vib";
     private static final String UDFPS_CATEGORY = "udfps_category";
     private static final String CUSTOM_CLOCK_FACE = Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK_FACE;
     private static final String DEFAULT_CLOCK = "com.android.keyguard.clock.DefaultClockController";
+    private static final String SHORTCUT_START_KEY = "lockscreen_shortcut_start";
+    private static final String SHORTCUT_END_KEY = "lockscreen_shortcut_end";
+    private static final String SHORTCUT_ENFORCE_KEY = "lockscreen_shortcut_enforce";
+
+    private static final String[] DEFAULT_START_SHORTCUT = new String[] { "home", "flashlight" };
+    private static final String[] DEFAULT_END_SHORTCUT = new String[] { "wallet", "qr", "camera" };
 
     private ListPreference mLockClockStyles;
     private FingerprintManager mFingerprintManager;
@@ -75,14 +84,15 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mFingerprintErrorVib;
     private PreferenceCategory mUdfpsCategory;
     private ListPreference mQuickPulldown;
+    private SystemSettingListPreference mStartShortcut;
+    private SystemSettingListPreference mEndShortcut;
+    private SwitchPreference mEnforceShortcut;
 
     private Context mContext;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-
-        addPreferencesFromResource(R.xml.spark_settings_ls);
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
         final PackageManager mPm = getActivity().getPackageManager();
@@ -125,11 +135,84 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         mLockClockStyles.setSummary(mLockClockStyles.getEntry());
         mLockClockStyles.setOnPreferenceChangeListener(this);
 */
+
+        mStartShortcut = findPreference(SHORTCUT_START_KEY);
+        mEndShortcut = findPreference(SHORTCUT_END_KEY);
+        mEnforceShortcut = findPreference(SHORTCUT_ENFORCE_KEY);
+        updateShortcutSelection();
+        mStartShortcut.setOnPreferenceChangeListener(this);
+        mEndShortcut.setOnPreferenceChangeListener(this);
+        mEnforceShortcut.setOnPreferenceChangeListener(this);
+    }
+
+    protected int getPreferenceScreenResId() {
+        return R.xml.spark_settings_ls;
     }
 
     @Override
     public void onResume() {
         super.onResume();
+        updateShortcutSelection();
+    }
+
+    private String getSettingsShortcutValue() {
+        String value = Settings.System.getString(getActivity().getContentResolver(),
+                Settings.System.KEYGUARD_QUICK_TOGGLES);
+        if (value == null || value.isEmpty()) {
+            StringBuilder sb = new StringBuilder(DEFAULT_START_SHORTCUT[0]);
+            for (int i = 1; i < DEFAULT_START_SHORTCUT.length; i++) {
+                sb.append(",").append(DEFAULT_START_SHORTCUT[i]);
+            }
+            sb.append(";" + DEFAULT_END_SHORTCUT[0]);
+            for (int i = 1; i < DEFAULT_END_SHORTCUT.length; i++) {
+                sb.append(",").append(DEFAULT_END_SHORTCUT[i]);
+            }
+            value = sb.toString();
+        }
+        return value;
+    }
+
+    private void updateShortcutSelection() {
+        final String value = getSettingsShortcutValue();
+        final String[] split = value.split(";");
+        final String[] start = split[0].split(",");
+        final String[] end = split[1].split(",");
+        mStartShortcut.setValue(start[0]);
+        mStartShortcut.setSummary(mStartShortcut.getEntry());
+        mEndShortcut.setValue(end[0]);
+        mEndShortcut.setSummary(mEndShortcut.getEntry());
+        mEnforceShortcut.setChecked(start.length == 1 && end.length == 1);
+    }
+
+    private void setShortcutSelection(String value, boolean start) {
+        setShortcutSelection(value, start, mEnforceShortcut.isChecked());
+    }
+
+    private void setShortcutSelection(String value, boolean start, boolean single) {
+        final String oldValue = getSettingsShortcutValue();
+        final int splitIndex = start ? 0 : 1;
+        String[] split = oldValue.split(";");
+        if (value.equals("none") || single) {
+            split[splitIndex] = value;
+        } else {
+            StringBuilder sb = new StringBuilder(value);
+            final String[] def = start ? DEFAULT_START_SHORTCUT : DEFAULT_END_SHORTCUT;
+            for (String str : def) {
+                if (str.equals(value)) continue;
+                sb.append(",").append(str);
+            }
+            split[splitIndex] = sb.toString();
+        }
+        Settings.System.putString(getActivity().getContentResolver(),
+                Settings.System.KEYGUARD_QUICK_TOGGLES, split[0] + ";" + split[1]);
+
+        if (start) {
+            mStartShortcut.setValue(value);
+            mStartShortcut.setSummary(mStartShortcut.getEntry());
+        } else {
+            mEndShortcut.setValue(value);
+            mEndShortcut.setSummary(mEndShortcut.getEntry());
+        }
     }
 
     @Override
@@ -154,13 +237,24 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
             mQuickPulldown.setSummary(
                     mQuickPulldown.getEntries()[index]);
             return true;
+         } else if (preference == mStartShortcut) {
+            setShortcutSelection((String) newValue, true);
+            return true;
+        } else if (preference == mEndShortcut) {
+            setShortcutSelection((String) newValue, false);
+            return true;
+        } else if (preference == mEnforceShortcut) {
+            final boolean value = (Boolean) newValue;
+            setShortcutSelection(mStartShortcut.getValue(), true, value);
+            setShortcutSelection(mEndShortcut.getValue(), false, value);
+            return true;
+        }
 /*         } else if (preference == mLockClockStyles) {
             setLockScreenCustomClockFace((String) newValue);
             int index = mLockClockStyles.findIndexOfValue((String) newValue);
             mLockClockStyles.setSummary(mLockClockStyles.getEntries()[index]);
             return true;
 */
-         }
         return false;
     }
 /*
@@ -192,6 +286,11 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.SPARK_SETTINGS;
+    }
+
+    @Override
+    protected String getLogTag() {
+        return TAG;
     }
 
     /**

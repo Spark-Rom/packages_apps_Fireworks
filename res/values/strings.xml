@@ -985,4 +985,17 @@
     <string name="force_expanded_notifications_title">Force expand notifications</string>
     <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
 
+    <!-- Lock screen bottom shortcuts -->
+    <string name="lockscreen_shortcut_category">Bottom shortcuts</string>
+    <string name="lockscreen_shortcut_start_title">Left shortcut</string>
+    <string name="lockscreen_shortcut_end_title">Right shortcut</string>
+    <string name="lockscreen_shortcut_wallet">Wallet</string>
+    <string name="lockscreen_shortcut_home">Home</string>
+    <string name="lockscreen_shortcut_flashlight">Flashlight</string>
+    <string name="lockscreen_shortcut_qr">QR</string>
+    <string name="lockscreen_shortcut_camera">Camera</string>
+    <string name="lockscreen_shortcut_remote">Google TV Remote Controls</string>
+    <string name="lockscreen_shortcut_none">None</string>
+    <string name="lockscreen_shortcut_enforce_title">Single shortcut</string>
+    <string name="lockscreen_shortcut_enforce_summary">Enforce chosen shortcut to be the only existing priority\nWill show nothing until the specific chosen shortcut is available</string>
 </resources>
