@@ -1161,4 +1161,8 @@
     <!-- 5G icon -->
     <string name="show_fiveg_icon_summary">Show 5G instead of LTE &amp; 4G</string>
     <string name="show_fiveg_icon_title">Display 5G Indicator</string>
+
+    <!-- Custom Data icons -->
+    <string name="theme_customization_data_title">Data icon style</string>
+    <string name="theme_customization_data_summary">Set custom data icon style</string>
 </resources>
