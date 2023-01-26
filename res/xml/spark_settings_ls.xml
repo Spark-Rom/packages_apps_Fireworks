@@ -91,6 +91,14 @@
         android:defaultValue="180"
         settings:units="dp" />
 
+    <com.spark.support.preferences.SystemSettingListPreference
+        android:key="clock_use_custom_format"
+        android:title="@string/clock_use_single_line_title"
+        android:entries="@array/clock_use_single_line_entries"
+        android:entryValues="@array/clock_use_single_line_values"
+        android:summary="%s"
+        android:defaultValue="0" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
