@@ -68,6 +68,17 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:title="@string/spark_system_manager_title">
+
+    <!-- Weather -->
+    <Preference
+        android:key="spark_manager_settings"
+        android:title="@string/spark_system_manager_settings_title"
+        android:summary="@string/spark_system_manager_settings_summary"
+        android:fragment="com.spark.settings.fragments.SparkManagerSettings" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="headsup_notifications_category"
         android:title="@string/notifications_category">
 
