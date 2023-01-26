@@ -1046,4 +1046,8 @@
     <string name="qs_transitions_zoom_out">Zoom out</string>
     <string name="qs_transitions_zoom_out_slide">Zoom out slide</string>
 
+    <!-- Max visible notification icons -->
+    <string name="max_visible_notification_icons_title">Notification icons</string>
+    <string name="max_visible_notification_icons_summary">Max. notification icons visible on statusbar</string>
+
 </resources>
