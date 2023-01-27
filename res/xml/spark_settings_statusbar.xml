@@ -15,7 +15,6 @@
     android:title="@string/statusbar_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <!-- Status bar icons customizations -->
     <PreferenceCategory
         android:title="@string/status_bar_icons_category_title">
 
@@ -243,6 +242,30 @@
             android:key="qs_show_battery_estimate"
             android:title="@string/battery_estimate_title"
             android:summary="@string/battery_estimate_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="statusbar_padding"
+        android:title="@string/statusbar_padding">
+
+        <com.spark.support.preferences.SystemSettingSeekBarPreference
+            android:key="statusbar_top_padding"
+            android:max="10"
+            android:title="@string/statusbar_top_padding"
+            settings:min="-1" />
+
+        <com.spark.support.preferences.SystemSettingSeekBarPreference
+            android:key="statusbar_left_padding"
+            android:title="@string/statusbar_left_padding"
+            android:max="100"
+            android:min="0" />
+
+        <com.spark.support.preferences.SystemSettingSeekBarPreference
+            android:key="statusbar_right_padding"
+            android:title="@string/statusbar_right_padding"
+            android:max="100"
+            android:min="0" />
 
     </PreferenceCategory>
 </PreferenceScreen>

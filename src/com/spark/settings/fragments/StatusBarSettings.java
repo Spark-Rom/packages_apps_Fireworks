@@ -32,6 +32,7 @@ import com.spark.support.preferences.SystemSettingSwitchPreference;
 import com.spark.support.preferences.SystemSettingSeekBarPreference;
 import com.spark.support.preferences.SecureSettingSwitchPreference;
 import com.spark.support.preferences.SystemSettingListPreference;
+import com.spark.support.preferences.CustomSeekBarPreference;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.development.SystemPropPoker;
 import com.spark.support.preferences.SystemSettingSeekBarPreference;
@@ -57,6 +58,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private static final String TEXT_CHARGING_SYMBOL = "text_charging_symbol";
     private static final String KEY_COMBINED_SIGNAL_ICONS = "enable_combined_signal_icons";
     private static final String SYS_COMBINED_SIGNAL_ICONS = "persist.sys.enable.combined_signal_icons";
+    private static final String KEY_STATUSBAR_TOP_PADDING = "statusbar_top_padding";
+    private static final String KEY_STATUSBAR_LEFT_PADDING = "statusbar_left_padding";
+    private static final String KEY_STATUSBAR_RIGHT_PADDING = "statusbar_right_padding";
 
     private static final int BATTERY_STYLE_PORTRAIT = 0;
     private static final int BATTERY_STYLE_TEXT = 4;
@@ -110,6 +114,18 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mCombinedSignalIcons = (SwitchPreference) findPreference(KEY_COMBINED_SIGNAL_ICONS);
         mCombinedSignalIcons.setChecked(SystemProperties.getBoolean(SYS_COMBINED_SIGNAL_ICONS, false));
         mCombinedSignalIcons.setOnPreferenceChangeListener(this);
+
+        ((CustomSeekBarPreference) findPreference(KEY_STATUSBAR_LEFT_PADDING)).setDefaultValue(
+                getResources().getDimensionPixelSize(com.android.internal.R.dimen.status_bar_padding_start),
+                true);
+
+        ((CustomSeekBarPreference) findPreference(KEY_STATUSBAR_RIGHT_PADDING)).setDefaultValue(
+                getResources().getDimensionPixelSize(com.android.internal.R.dimen.status_bar_padding_end),
+                true);
+
+        ((CustomSeekBarPreference) findPreference(KEY_STATUSBAR_TOP_PADDING)).setDefaultValue(
+                getResources().getDimensionPixelSize(com.android.internal.R.dimen.status_bar_padding_top),
+                true);
     }
 
     @Override
