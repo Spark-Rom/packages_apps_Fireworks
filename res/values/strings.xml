@@ -843,4 +843,7 @@
     <string name="udfps_icon_picker_title">UDFPS icon picker</string>
     <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
 
+    <!-- UDFPS pressed color -->
+    <string name="udfps_pressed_color_title">Udfps pressed color</string>
+    <string name="udfps_pressed_color_summary">Choose your favorite udfps pressed color</string> 
 </resources>

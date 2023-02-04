@@ -63,20 +63,20 @@ import java.util.List;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class UdfpsIconPicker extends SettingsPreferenceFragment {
+public class UdfpsPressedIconPicker extends SettingsPreferenceFragment {
 
     private RecyclerView mRecyclerView;
 
     private Resources udfpsRes;
 
-    private String mPkg = "com.spark.udfps.icons";
+    private String mPkg = "com.spark.udfps.pressedicons";
 
     private String[] mIcons;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActivity().setTitle(R.string.udfps_icon_picker_title);
+        getActivity().setTitle(R.string.udfps_pressed_color_title);
 
         loadResources();
     }
@@ -89,7 +89,7 @@ public class UdfpsIconPicker extends SettingsPreferenceFragment {
             e.printStackTrace();
         }
 
-        mIcons = udfpsRes.getStringArray(udfpsRes.getIdentifier("udfps_icons",
+        mIcons = udfpsRes.getStringArray(udfpsRes.getIdentifier("udfps_pressedicons",
                 "array", mPkg));
     }
 
@@ -102,8 +102,8 @@ public class UdfpsIconPicker extends SettingsPreferenceFragment {
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 3);
         mRecyclerView.setLayoutManager(gridLayoutManager);
-        UdfpsIconAdapter mUdfpsIconAdapter = new UdfpsIconAdapter(getActivity());
-        mRecyclerView.setAdapter(mUdfpsIconAdapter);
+        UdfpsPressedIconAdapter mUdfpsPressedIconAdapter = new UdfpsPressedIconAdapter(getActivity());
+        mRecyclerView.setAdapter(mUdfpsPressedIconAdapter);
 
         return view;
     }
@@ -118,24 +118,24 @@ public class UdfpsIconPicker extends SettingsPreferenceFragment {
         super.onResume();
     }
 
-    public class UdfpsIconAdapter extends RecyclerView.Adapter<UdfpsIconAdapter.UdfpsIconViewHolder> {
+    public class UdfpsPressedIconAdapter extends RecyclerView.Adapter<UdfpsPressedIconAdapter.UdfpsPressedIconViewHolder> {
         Context context;
         String mSelectedIcon;
         String mAppliedIcon;
 
-        public UdfpsIconAdapter(Context context) {
+        public UdfpsPressedIconAdapter(Context context) {
             this.context = context;
         }
 
         @Override
-        public UdfpsIconViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        public UdfpsPressedIconViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_option, parent, false);
-            UdfpsIconViewHolder vh = new UdfpsIconViewHolder(v);
+            UdfpsPressedIconViewHolder vh = new UdfpsPressedIconViewHolder(v);
             return vh;
         }
 
         @Override
-        public void onBindViewHolder(UdfpsIconViewHolder holder, final int position) {
+        public void onBindViewHolder(UdfpsPressedIconViewHolder holder, final int position) {
             String iconRes = mIcons[position];
 
             Glide.with(holder.image.getContext())
@@ -148,7 +148,7 @@ public class UdfpsIconPicker extends SettingsPreferenceFragment {
             holder.name.setVisibility(View.GONE);
 
             if (position == Settings.System.getInt(context.getContentResolver(),
-                Settings.System.UDFPS_ICON, 0)) {
+                Settings.System.UDFPS_COLOR, 0)) {
                 mAppliedIcon = iconRes;
                 if (mSelectedIcon == null) {
                     mSelectedIcon = iconRes;
@@ -162,7 +162,7 @@ public class UdfpsIconPicker extends SettingsPreferenceFragment {
                     updateActivatedStatus(iconRes, true);
                     mSelectedIcon = iconRes;
                     Settings.System.putInt(getActivity().getContentResolver(),
-                            Settings.System.UDFPS_ICON, position);
+                            Settings.System.UDFPS_COLOR, position);
                 }
             });
         }
@@ -172,10 +172,10 @@ public class UdfpsIconPicker extends SettingsPreferenceFragment {
             return mIcons.length;
         }
 
-        public class UdfpsIconViewHolder extends RecyclerView.ViewHolder {
+        public class UdfpsPressedIconViewHolder extends RecyclerView.ViewHolder {
             TextView name;
             ImageView image;
-            public UdfpsIconViewHolder(View itemView) {
+            public UdfpsPressedIconViewHolder(View itemView) {
                 super(itemView);
                 name = (TextView) itemView.findViewById(R.id.option_label);
                 image = (ImageView) itemView.findViewById(R.id.option_thumbnail);

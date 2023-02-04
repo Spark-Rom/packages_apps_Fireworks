@@ -49,6 +49,7 @@ public class Udfps extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String UDFPS_CUSTOMIZATION = "udfps_customization";
+    private PreferenceCategory mUdfpsCustomization;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -59,8 +60,8 @@ public class Udfps extends SettingsPreferenceFragment implements
         Resources resources = getResources();
 
         final boolean udfpsResPkgInstalled = SparkUtils.isPackageInstalled(getContext(),
-                "com.spark.udfps.resources");
-	mUdfpsCustomization = (PreferenceCategory) findPreference(UDFPS_CUSTOMIZATION);
+                "com.spark.udfps.icons");
+        mUdfpsCustomization = (PreferenceCategory) prefSet.findPreference(UDFPS_CUSTOMIZATION);
         if (!udfpsResPkgInstalled) {
             prefSet.removePreference(mUdfpsCustomization);
         }
