@@ -966,10 +966,6 @@
     <string name="hide_notification_icons_title">Hide notification icons</string>
     <string name="hide_notification_icons_summary">Hide notification icons on StatusBar</string>
 
-    <!-- Ambient Ticker -->
-    <string name="pulse_on_new_tracks_title">Music ticker</string>
-    <string name="pulse_on_new_tracks_summary">Show music ticker on Ambient Display during track change</string>
-
     <!-- Haptic feedback settings -->
     <string name="haptic_feedback_category">Haptic Feedback Settings</string>
     <string name="volume_panel_haptic_feedback_title">Vibrate on changing volume</string>
