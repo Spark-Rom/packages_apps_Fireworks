@@ -725,6 +725,12 @@
     <string name="qs_outline">QS Outline Style</string>
     <string name="qs_two_tone">QS Two-Tone Accent</string>
     <string name="qs_color_pop">QS Color Pop</string>
+    <string name="qs_shaded">QS Shaded</string>
+    <string name="qs_cyberpunk">QS Cyberpunk</string>
+    <string name="qs_neumorph">QS Neumorph</string>
+    <string name="qs_reflected">QS Reflected</string>
+    <string name="qs_surround">QS Surround</string>
+    <string name="qs_thin">QS ThinLine</string>
 
     <!-- Status bar - Battery custom charging symbol -->
     <string name="text_charging_symbol_title">Custom charging symbol for text style</string>
