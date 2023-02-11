@@ -630,6 +630,12 @@
     <string name="qs_outline">Línea exterior</string>
     <string name="qs_two_tone">Doble tono</string>
     <string name="qs_color_pop">Color Pop</string>
+    <string name="qs_shaded">QS Sombreado</string>
+    <string name="qs_cyberpunk">QS Cyberpunk</string>
+    <string name="qs_neumorph">QS Neumorph</string>
+    <string name="qs_reflected">QS Reflejado</string>
+    <string name="qs_surround">QS Envolvente</string>
+    <string name="qs_thin">QS LíneaFina</string>
     <!-- Status bar - Battery custom charging symbol -->
     <string name="text_charging_symbol_title">Símbolo personalizado de carga para estilo texto</string>
     <string name="text_charging_symbol_dialog">Símbolo personalizado de carga junto al porcentaje de batería</string>
@@ -744,9 +750,13 @@
     <string name="lockscreen_clock_color_summary">Color personalizado en lugar de colores del fondo de pantalla</string>
     <string name="kg_custom_clock_color_title">Color del reloj de la pantalla de bloqueo</string>
     <string name="kg_custom_clock_font_title">Fuente del reloj de la pantalla de bloqueo</string>
-    <string name="kg_custom_date_font_title">Fuente de la fecha en pantalla de bloqueo</string>
-    <string name="small_clock_doubleline_title">Reloj de dos líneas en pantalla de bloqueo</string>
-    <string name="small_clock_doubleline_summary">Usar dos líneas en lugar de una sola para el reloj de la pantalla de bloqueo</string>
+    <string name="theme_customization_date_font_title">Fuente de la fecha en pantalla de bloqueo</string>
+    <string name="theme_customization_date_font_summary">Elige el tipo de letra para la fecha en pantalla de bloqueo</string>
+    <string name="kg_custom_clock_top_margin_title">Estrecho inferior del reloj</string>
+    <string name="clock_use_single_line_title">Formato de hora personalizado</string>
+    <string name="single_line">Una sola línea</string>
+    <string name="double_line">Doble línea</string>
+    <string name="kg_big_clock_text_size_title">Tamaño del reloj grande</string>
     <!-- Volume Styles -->
     <string name="volume_style_title">Estilo del panel de volumen</string>
     <string name="rui_style">Estilo Realme</string>
@@ -780,6 +790,9 @@
     <string name="ambient_image_title">Imagen Ambiental</string>
     <string name="file_header_select_title">Seleccionar una imagen local</string>
     <string name="file_header_select_summary">Seleccionar una imagen desde almacenamiento</string>
+    <!-- Notification headers -->
+    <string name="notification_headers_title">Encabezado de notificaciones</string>
+    <string name="notification_headers_summary">Mostrar encabezados en las notificaciones</string>
     <!-- Combined signal icons in status bar -->
     <string name="combined_status_bar_signal_icons_title">Iconos de señal combinados</string>
     <string name="combined_status_bar_signal_icons_summary">Habilitar iconos de señal combinados\n(ADVERTENCIA: se producirá un reinicio suave al activarlo)</string>
@@ -838,4 +851,85 @@
     <!-- Notification Icons -->
     <string name="hide_notification_icons_title">Ocultar iconos de notificación</string>
     <string name="hide_notification_icons_summary">Ocultar iconos de notificación en la barra de estado</string>
+    <!-- Haptic feedback settings -->
+    <string name="haptic_feedback_category">Ajustes de respuesta háptica</string>
+    <string name="volume_panel_haptic_feedback_title">Vibrar al cambiar el volumen</string>
+    <!-- HeadsUp notifications importance threshold -->
+    <!--string name="hun_importance_none">None</string-->
+    <string name="hun_importance_title">Nivel de importancia</string>
+    <string name="hun_importance_min">Mínimo</string>
+    <string name="hun_importance_low">Lenta</string>
+    <string name="hun_importance_default">Predeterminado</string>
+    <string name="hun_importance_high">Alto</string>
+    <string name="hun_importance_max">Máximo</string>
+    <!-- Android P animation style -->
+    <string name="pie_animation_style_title">Animaciones estilo Android P</string>
+    <string name="pie_animation_style_summary">Activar animaciones predeterminadas de Android P</string>
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Forzar notificaciones expandidas</string>
+    <string name="force_expanded_notifications_summary">Disponible sólo para aplicaciones que admiten ser expandidas</string>
+    <!-- Lock screen bottom shortcuts -->
+    <string name="lockscreen_shortcut_category">Accesos directos inferiores</string>
+    <string name="lockscreen_shortcut_start_title">Acceso directo izquierdo</string>
+    <string name="lockscreen_shortcut_end_title">Acceso directo derecho</string>
+    <string name="lockscreen_shortcut_wallet">Wallet</string>
+    <string name="lockscreen_shortcut_home">Inicio</string>
+    <string name="lockscreen_shortcut_flashlight">Linterna</string>
+    <string name="lockscreen_shortcut_qr">QR</string>
+    <string name="lockscreen_shortcut_camera">Cámara</string>
+    <string name="lockscreen_shortcut_remote">Control remoto de Google TV</string>
+    <string name="lockscreen_shortcut_none">Ninguno</string>
+    <string name="lockscreen_shortcut_enforce_title">Acceso directo único</string>
+    <string name="lockscreen_shortcut_enforce_summary">Forzar que el atajo elegido sea la única prioridad existente\nNo mostrará nada hasta que el atajo elegido esté disponible</string>
+    <!-- Spark Manager -->
+    <string name="spark_system_manager_settings_title">Gestor de sistema Spark</string>
+    <string name="spark_system_manager_settings_summary">Configuraciones para optimizar su dispositivo</string>
+    <string name="spark_system_manager_title">Gestor de sistema Spark</string>
+    <string name="spark_system_manager_summary">Optimizar el consumo de energía y el rendimiento mientras el dispositivo está inactivo</string>
+    <string name="spark_system_boost_title">Mejora del sistema Spark</string>
+    <string name="spark_system_boost_summary">Impulsar los recursos del sistema para una experiencia fluida</string>
+    <string name="spark_aggressive_idle_mode_title">Modo agresivo de reposo Spark</string>
+    <string name="spark_aggressive_idle_mode_summary">Activar características de modo agresivo de reposo</string>
+    <string name="spark_aggressive_idle_mode_ringer_title">Modo de timbre de pantalla apagada</string>
+    <string name="spark_aggressive_idle_mode_ringer_off_title">No cambiar</string>
+    <string name="spark_aggressive_idle_mode_ringer_vibrate_title">Vibrar</string>
+    <string name="spark_aggressive_idle_mode_ringer_dnd_title">No Molestar</string>
+    <string name="spark_aggressive_idle_mode_ringer_silent_title">Silencio</string>
+    <string name="spark_aggressive_idle_mode_ringer_normal">Modo de timbre</string>
+    <string name="spark_aggressive_idle_mode_wifi_toggle_title">Apagar Wi-Fi</string>
+    <string name="spark_aggressive_idle_mode_wifi_toggle_summary">Desactivar Wi-Fi al apagar la pantalla cuando el modo de inactividad agresivo Spark está activado</string>
+    <string name="spark_aggressive_idle_mode_bluetooth_toggle_title">Apagar Bluetooth</string>
+    <string name="spark_aggressive_idle_mode_bluetooth_toggle_summary">Desactivar Bluetooth al apagar la pantalla cuando el modo de inactividad agresivo Spark está activado</string>
+    <string name="spark_aggressive_idle_mode_cellular_toggle_title">Desactivar Datos móviles</string>
+    <string name="spark_aggressive_idle_mode_cellular_toggle_summary">Desactivar datos móviles al apagar la pantalla cuando el modo agresivo de reposo Spark está activado</string>
+    <string name="spark_aggressive_idle_mode_location_toggle_title">Desactivar ubicación</string>
+    <string name="spark_aggressive_idle_mode_location_toggle_summary">Desactivar ubicación cuando el modo de reposo agresivo Spark está activado</string>
+    <!-- QS Page Transitions -->
+    <string name="qs_transitions_title">Transiciones entre páginas de QS</string>
+    <string name="qs_transitions_default">Predeterminado</string>
+    <string name="qs_transitions_cube_in">Cubo entrante</string>
+    <string name="qs_transitions_cube_out">Cubo saliente</string>
+    <string name="qs_transitions_accordion">Acordeón</string>
+    <string name="qs_transitions_background_to_foreground">De fondo a primer plano</string>
+    <string name="qs_transitions_depth_page">Página Profunda</string>
+    <string name="qs_transitions_fade">Desvanecer</string>
+    <string name="qs_transitions_foreground_to_background">De primer plano a fondo</string>
+    <string name="qs_transitions_rotate_down">Rotar hacia abajo</string>
+    <string name="qs_transitions_rotate_up">Rotar hacia arriba</string>
+    <string name="qs_transitions_stack">Apilar</string>
+    <string name="qs_transitions_tablet">Tableta</string>
+    <string name="qs_transitions_zoom_in">Ampliar zoom</string>
+    <string name="qs_transitions_zoom_out">Alejar zoom</string>
+    <string name="qs_transitions_zoom_out_slide">Alejar zoom deslizando</string>
+    <!-- Max visible notification icons -->
+    <string name="max_visible_notification_icons_title">Iconos de Notificaciones</string>
+    <string name="max_visible_notification_icons_summary">Máximos iconos de notificación en la barra de estado</string>
+    <!-- Status bar padding -->
+    <string name="statusbar_padding">Espaciado en barra de estado</string>
+    <string name="statusbar_top_padding">Margen superior</string>
+    <string name="statusbar_left_padding">Margen izquierdo</string>
+    <string name="statusbar_right_padding">Margen derecho</string>
+    <!-- QS footer data usage -->
+    <string name="qs_show_data_usage_title">Mostrar uso de datos</string>
+    <string name="qs_show_data_usage_summary">Mostrar uso diario de datos/Wi-Fi al pie de ajustes rápidos</string>
 </resources>
