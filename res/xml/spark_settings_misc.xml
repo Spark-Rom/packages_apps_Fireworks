@@ -186,6 +186,13 @@
             android:summary="@string/sensor_block_summary"
             android:fragment="com.spark.settings.fragments.SensorBlockSettings"/>
 
+    <!-- Google services -->
+    <Preference
+        android:key="gms_enabled_settings"
+        android:title="@string/gms_enabled_title"
+        android:summary="@string/gms_enabled_summary"
+        android:fragment="com.spark.settings.fragments.GmsSwitch"/>
+
     <!-- Smart Pixels -->
     <Preference
         android:key="smart_pixels"
