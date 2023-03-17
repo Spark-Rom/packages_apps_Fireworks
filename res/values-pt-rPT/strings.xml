@@ -125,22 +125,28 @@
     <string name="vowifi_icon_summary">Exibir o ícone VoWiFi quando disponível</string>
     <string name="volte_vowifi_override_title">Sobreposição VoWiFi</string>
     <string name="volte_vowifi_override_summary">Ocultar VoLTE quando VoWiFi estiver disponível</string>
-    <!-- Power Menu -->
+    <!-- Power menu -->
     <string name="power_menu_title">Menu de energia</string>
-    <string name="power_menu_title_summary">Ver ou alterar os itens exibidos no menu de energia</string>
-    <string name="powermenu_screenshot">Capturar ecrã</string>
-    <string name="powermenu_onthego">Modo On-The-Go</string>
-    <string name="powermenu_power">Desligar</string>
-    <string name="powermenu_advanced">Reinício avançado</string>
-    <string name="powermenu_restart">Reiniciar</string>
-    <string name="powermenu_airplane">Modo de avião</string>
-    <string name="powermenu_torch">Lanterna</string>
-    <string name="powermenu_settings">Definições</string>
-    <string name="powermenu_lockdown">Bloquear</string>
-    <string name="powermenu_soundpanel">Painel de som</string>
-    <string name="powermenu_users">Utilizadores</string>
-    <string name="powermenu_logout">Terminar sessão</string>
-    <string name="powermenu_emergency">Emergência</string>
+    <string name="power_menu_summary">Customize power menu options</string>
+    <string name="power_menu_actions_title">Actions</string>
+    <string name="power_menu_screenshot_title">Screenshot</string>
+    <string name="power_menu_screenshot_summary">Long-press for partial screenshot</string>
+    <string name="power_menu_onthego_title">On-The-Go mode</string>
+    <string name="power_menu_advanced_title">Advanced reboot options</string>
+    <string name="power_menu_airplane_title">Airplane</string>
+    <string name="power_menu_torch_title">Lanterna</string>
+    <string name="power_menu_settings_title">Settings</string>
+    <string name="power_menu_lockdown_title">Lockdown</string>
+    <string name="power_menu_lockdown_unavailable">Lockdown is disabled as keyguard isn\'t secure</string>
+    <string name="power_menu_soundpanel_title">Sound panel</string>
+    <string name="power_menu_users_title">Users</string>
+    <string name="power_menu_logout_title">Logout</string>
+    <string name="power_menu_emergency_title">Emergency</string>
+    <string name="power_menu_devicecontrols_title">Device controls</string>
+    <string name="power_menu_restart_systemui_title">Restart SystemUI</string>
+    <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Advanced restart</string>
+    <string name="advanced_reboot_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
     <!-- Power menu on lockscreen -->
     <string name="lockscreen_power_menu_disabled_title">Desativar o menu de energia no ecrã de bloqueio</string>
     <string name="lockscreen_power_menu_disabled_summary">Esta opção só desativará o menu de energia em ecrãs de bloqueio seguros</string>
@@ -339,7 +345,7 @@
     <string name="hardware_keys_action_split_screen">Dividir ecrã</string>
     <string name="hardware_keys_action_close_app">Terminar aplicação</string>
     <string name="hardware_keys_action_torch">Lanterna</string>
-    <string name="hardware_keys_action_screenshot">Capturar ecrã</string>
+    <string name="hardware_keys_action_screenshot">Screenshot</string>
     <string name="hardware_keys_action_volume_panel">Alternar painel de volume</string>
     <string name="hardware_keys_action_clear_all_notifications">Limpar todas as notificações</string>
     <string name="hardware_keys_action_notifications_panel">Alternar painel de notificações</string>
@@ -649,7 +655,7 @@
     <string name="text_charging_symbol_euro">Euro</string>
     <string name="text_charging_symbol_cent">Centavo</string>
     <!-- Power menu Animations  -->
-    <string name="power_menu_anim_cat">Animação da Interface do Menu de Energia</string>
+    <string name="power_menu_styles_cat">Power Menu Customizations</string>
     <string name="power_menu_animation_title">Animação do menu de energia</string>
     <string name="power_menu_animation_dialog_title">Selecione a animação do menu de energia</string>
     <string name="power_menu_animation_aosp">AOSP (padrão)</string>
@@ -663,6 +669,13 @@
     <string name="power_menu_animation_translucent_top">Translúcido (superior)</string>
     <string name="power_menu_animation_translucent_bottom">Translúcido (inferior)</string>
     <string name="power_menu_animation_rotate">Rodar</string>
+    <!-- Power Menu Styles -->
+    <string name="power_menu_type_title">Power menu style</string>
+    <string name="power_menu_type_lite">Lite (A12)</string>
+    <string name="power_menu_type_full">Full (A11)</string>
+    <string name="power_menu_type_classic">Classic (A8)</string>
+    <string name="power_menu_type_grid">Grid</string>
+    <string name="power_menu_type_legacy">Legacy (A7)</string>
     <!-- Media artwork -->
     <string name="media_category">Notificação de multimédia</string>
     <string name="artwork_media_background_enable_blur_title">Desfocar o fundo da notificação multimédia</string>
@@ -852,55 +865,55 @@
     <string name="hide_notification_icons_title">Ocultar ícones de notificação</string>
     <string name="hide_notification_icons_summary">Ocultar ícones de notificação na barra de estado</string>
     <!-- Haptic feedback settings -->
-    <string name="haptic_feedback_category">Haptic Feedback Settings</string>
+    <string name="haptic_feedback_category">Definições do feedback tátil</string>
     <string name="volume_panel_haptic_feedback_title">Vibrar ao alterar o volume</string>
     <!-- HeadsUp notifications importance threshold -->
     <!--string name="hun_importance_none">None</string-->
-    <string name="hun_importance_title">Importance threshold</string>
-    <string name="hun_importance_min">Minimum</string>
+    <string name="hun_importance_title">Nível de importância</string>
+    <string name="hun_importance_min">Mínima</string>
     <string name="hun_importance_low">Lenta</string>
     <string name="hun_importance_default">Padrão</string>
-    <string name="hun_importance_high">High</string>
-    <string name="hun_importance_max">Maxiumum</string>
+    <string name="hun_importance_high">Alta</string>
+    <string name="hun_importance_max">Máxima</string>
     <!-- Android P animation style -->
-    <string name="pie_animation_style_title">Android P animation style</string>
-    <string name="pie_animation_style_summary">Enable Android P \"Default\" animations</string>
+    <string name="pie_animation_style_title">Animação estilo Android P</string>
+    <string name="pie_animation_style_summary">Ativar as animações \"padrão\" do Android P</string>
     <!-- Force expanded notifications -->
-    <string name="force_expanded_notifications_title">Force expand notifications</string>
-    <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+    <string name="force_expanded_notifications_title">Forçar notificações expandidas</string>
+    <string name="force_expanded_notifications_summary">Disponível apenas para apps que suportam notificações expandidas</string>
     <!-- Lock screen bottom shortcuts -->
-    <string name="lockscreen_shortcut_category">Bottom shortcuts</string>
-    <string name="lockscreen_shortcut_start_title">Left shortcut</string>
-    <string name="lockscreen_shortcut_end_title">Right shortcut</string>
+    <string name="lockscreen_shortcut_category">Atalhos inferiores</string>
+    <string name="lockscreen_shortcut_start_title">Atalho esquerdo</string>
+    <string name="lockscreen_shortcut_end_title">Atalho direito</string>
     <string name="lockscreen_shortcut_wallet">Wallet</string>
     <string name="lockscreen_shortcut_home">Início</string>
     <string name="lockscreen_shortcut_flashlight">Lanterna</string>
     <string name="lockscreen_shortcut_qr">QR</string>
     <string name="lockscreen_shortcut_camera">Câmara</string>
-    <string name="lockscreen_shortcut_remote">Google TV Remote Controls</string>
+    <string name="lockscreen_shortcut_remote">Controles Remotos Google TV</string>
     <string name="lockscreen_shortcut_none">Nenhum</string>
-    <string name="lockscreen_shortcut_enforce_title">Single shortcut</string>
-    <string name="lockscreen_shortcut_enforce_summary">Enforce chosen shortcut to be the only existing priority\nWill show nothing until the specific chosen shortcut is available</string>
+    <string name="lockscreen_shortcut_enforce_title">Atalho único</string>
+    <string name="lockscreen_shortcut_enforce_summary">Força o atalho escolhido a ser a única prioridade existente\nNão mostrará nada até que o atalho específico escolhido esteja disponível</string>
     <!-- Spark Manager -->
-    <string name="spark_system_manager_settings_title">Spark system manager</string>
-    <string name="spark_system_manager_settings_summary">Configurations to optimize your device</string>
-    <string name="spark_system_manager_title">Spark system manager</string>
-    <string name="spark_system_manager_summary">Optimize device power consumption and performance while device is idle</string>
-    <string name="spark_system_boost_title">Spark system boost</string>
-    <string name="spark_system_boost_summary">Boost system resources for a fluid experience</string>
-    <string name="spark_aggressive_idle_mode_title">Spark aggressive idle mode</string>
-    <string name="spark_aggressive_idle_mode_summary">Enable aggressive idle mode features</string>
-    <string name="spark_aggressive_idle_mode_ringer_title">Screen off ringer mode</string>
-    <string name="spark_aggressive_idle_mode_ringer_off_title">Do not change</string>
+    <string name="spark_system_manager_settings_title">Gerenciador de sistema Spark</string>
+    <string name="spark_system_manager_settings_summary">Configurações para otimizar o seu dispositivo</string>
+    <string name="spark_system_manager_title">Gerenciador de sistema Spark</string>
+    <string name="spark_system_manager_summary">Otimizar o consumo de energia e o desempenho do dispositivo enquanto estiver inativo</string>
+    <string name="spark_system_boost_title">Impulsionador de sistema Spark</string>
+    <string name="spark_system_boost_summary">Otimizar os recursos do sistema para uma experiência fluída</string>
+    <string name="spark_aggressive_idle_mode_title">Modo ocioso agressivo Spark</string>
+    <string name="spark_aggressive_idle_mode_summary">Ativar recursos agressivos do modo ocioso</string>
+    <string name="spark_aggressive_idle_mode_ringer_title">Modo de toque com ecrã desligado</string>
+    <string name="spark_aggressive_idle_mode_ringer_off_title">Não alterar</string>
     <string name="spark_aggressive_idle_mode_ringer_vibrate_title">Vibrar</string>
-    <string name="spark_aggressive_idle_mode_ringer_dnd_title">Do Not Disturb</string>
-    <string name="spark_aggressive_idle_mode_ringer_silent_title">Silent</string>
-    <string name="spark_aggressive_idle_mode_ringer_normal">Ring Mode</string>
-    <string name="spark_aggressive_idle_mode_wifi_toggle_title">Turn off Wi-Fi</string>
+    <string name="spark_aggressive_idle_mode_ringer_dnd_title">Não Incomodar</string>
+    <string name="spark_aggressive_idle_mode_ringer_silent_title">Silêncio</string>
+    <string name="spark_aggressive_idle_mode_ringer_normal">Modo de Toque</string>
+    <string name="spark_aggressive_idle_mode_wifi_toggle_title">Desligar Wi-Fi</string>
     <string name="spark_aggressive_idle_mode_wifi_toggle_summary">Disable Wi-Fi on screen off when Spark aggressive idle mode is enabled</string>
-    <string name="spark_aggressive_idle_mode_bluetooth_toggle_title">Turn off Bluetooth</string>
+    <string name="spark_aggressive_idle_mode_bluetooth_toggle_title">Desligar Bluetooth</string>
     <string name="spark_aggressive_idle_mode_bluetooth_toggle_summary">Disable Bluetooth on screen off when Spark aggressive idle mode is enabled</string>
-    <string name="spark_aggressive_idle_mode_cellular_toggle_title">Turn off Mobile data</string>
+    <string name="spark_aggressive_idle_mode_cellular_toggle_title">Desligar dados móveis</string>
     <string name="spark_aggressive_idle_mode_cellular_toggle_summary">Disable Mobile data on screen off when Spark aggressive idle mode is enabled</string>
     <string name="spark_aggressive_idle_mode_location_toggle_title">Turn off Location</string>
     <string name="spark_aggressive_idle_mode_location_toggle_summary">Disable Location on screen off when Spark aggressive idle mode is enabled</string>
@@ -910,26 +923,31 @@
     <string name="qs_transitions_cube_in">Cube In</string>
     <string name="qs_transitions_cube_out">Cube Out</string>
     <string name="qs_transitions_accordion">Accordion</string>
-    <string name="qs_transitions_background_to_foreground">Background to Foreground</string>
-    <string name="qs_transitions_depth_page">Depth page</string>
-    <string name="qs_transitions_fade">Fade</string>
-    <string name="qs_transitions_foreground_to_background">Foreground to Background</string>
-    <string name="qs_transitions_rotate_down">Rotate down</string>
-    <string name="qs_transitions_rotate_up">Rotate up</string>
-    <string name="qs_transitions_stack">Stack</string>
+    <string name="qs_transitions_background_to_foreground">De fundo para primeiro plano</string>
+    <string name="qs_transitions_depth_page">Página de profundidade</string>
+    <string name="qs_transitions_fade">Desvanecer</string>
+    <string name="qs_transitions_foreground_to_background">De primeiro plano para fundo</string>
+    <string name="qs_transitions_rotate_down">Rodar para baixo</string>
+    <string name="qs_transitions_rotate_up">Rodar para cima</string>
+    <string name="qs_transitions_stack">Empilhar</string>
     <string name="qs_transitions_tablet">Tablet</string>
-    <string name="qs_transitions_zoom_in">Zoom in</string>
-    <string name="qs_transitions_zoom_out">Zoom out</string>
-    <string name="qs_transitions_zoom_out_slide">Zoom out slide</string>
+    <string name="qs_transitions_zoom_in">Aumentar zoom</string>
+    <string name="qs_transitions_zoom_out">Diminuir zoom</string>
+    <string name="qs_transitions_zoom_out_slide">Diminuir zoom deslizando</string>
     <!-- Max visible notification icons -->
-    <string name="max_visible_notification_icons_title">Notification icons</string>
-    <string name="max_visible_notification_icons_summary">Max. notification icons visible on statusbar</string>
+    <string name="max_visible_notification_icons_title">Ícones de notificação</string>
+    <string name="max_visible_notification_icons_summary">Máximo de ícones de notificação visíveis na barra de estado</string>
     <!-- Status bar padding -->
-    <string name="statusbar_padding">Status bar padding</string>
-    <string name="statusbar_top_padding">Top padding</string>
-    <string name="statusbar_left_padding">Left padding</string>
-    <string name="statusbar_right_padding">Right padding</string>
+    <string name="statusbar_padding">Preenchimento da barra de estado</string>
+    <string name="statusbar_top_padding">Margem superior</string>
+    <string name="statusbar_left_padding">Margem esquerda</string>
+    <string name="statusbar_right_padding">Margem direita</string>
     <!-- QS footer data usage -->
-    <string name="qs_show_data_usage_title">Show data usage</string>
-    <string name="qs_show_data_usage_summary">Show daily cellular/Wi-Fi data usage in QS footer</string>
+    <string name="qs_show_data_usage_title">Mostrar uso de dados</string>
+    <string name="qs_show_data_usage_summary">Mostrar uso de dados móveis/Wi-Fi no rodapé das definições rápidas</string>
+    <!-- Google services -->
+    <string name="gms_enabled_title">Google services</string>
+    <string name="gms_enabled_summary">Control Google services and core apps</string>
+    <string name="enable">Enable</string>
+    <string name="gms_enabled_footer">Before disabling Google services and core apps, you should disable \"Find My Device\" and 2-step verification on your Google account. It is strongly recommended to keep this setting enabled else apps dependent on Google components will be affected. If you run into any issues after changing this setting, perform a factory reset.</string>
 </resources>
