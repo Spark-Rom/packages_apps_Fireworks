@@ -125,22 +125,28 @@
     <string name="vowifi_icon_summary">إظهار أيقونة VoLTE عند توفرها</string>
     <string name="volte_vowifi_override_title">تجاوز المحادثة عبر الواي فاي</string>
     <string name="volte_vowifi_override_summary">إخفاء VoLTE عندما يتوفر VoWiFi</string>
-    <!-- Power Menu -->
+    <!-- Power menu -->
     <string name="power_menu_title">قائمة التشغيل</string>
-    <string name="power_menu_title_summary">View or change power menu entries</string>
-    <string name="powermenu_screenshot">لقطة الشاشة</string>
-    <string name="powermenu_onthego">وضع On-the-Go</string>
-    <string name="powermenu_power">Power</string>
-    <string name="powermenu_advanced">Advanced reboot options</string>
-    <string name="powermenu_restart">Restart</string>
-    <string name="powermenu_airplane">Airplane</string>
-    <string name="powermenu_torch">تسجيل الخروج</string>
-    <string name="powermenu_settings">Settings</string>
-    <string name="powermenu_lockdown">تأمين</string>
-    <string name="powermenu_soundpanel">لوحة الصوت</string>
-    <string name="powermenu_users">Users</string>
-    <string name="powermenu_logout">Logout</string>
-    <string name="powermenu_emergency">Emergency</string>
+    <string name="power_menu_summary">Customize power menu options</string>
+    <string name="power_menu_actions_title">Actions</string>
+    <string name="power_menu_screenshot_title">Screenshot</string>
+    <string name="power_menu_screenshot_summary">Long-press for partial screenshot</string>
+    <string name="power_menu_onthego_title">On-The-Go mode</string>
+    <string name="power_menu_advanced_title">Advanced reboot options</string>
+    <string name="power_menu_airplane_title">Airplane</string>
+    <string name="power_menu_torch_title">تسجيل الخروج</string>
+    <string name="power_menu_settings_title">Settings</string>
+    <string name="power_menu_lockdown_title">Lockdown</string>
+    <string name="power_menu_lockdown_unavailable">Lockdown is disabled as keyguard isn\'t secure</string>
+    <string name="power_menu_soundpanel_title">Sound panel</string>
+    <string name="power_menu_users_title">Users</string>
+    <string name="power_menu_logout_title">Logout</string>
+    <string name="power_menu_emergency_title">Emergency</string>
+    <string name="power_menu_devicecontrols_title">Device controls</string>
+    <string name="power_menu_restart_systemui_title">Restart SystemUI</string>
+    <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Advanced restart</string>
+    <string name="advanced_reboot_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
     <!-- Power menu on lockscreen -->
     <string name="lockscreen_power_menu_disabled_title">Disable power menu on lock screen</string>
     <string name="lockscreen_power_menu_disabled_summary">This will only disable the power menu on secure lock screens</string>
@@ -648,7 +654,7 @@
     <string name="text_charging_symbol_euro">Euro</string>
     <string name="text_charging_symbol_cent">Cent</string>
     <!-- Power menu Animations  -->
-    <string name="power_menu_anim_cat">Power UI Animation Option</string>
+    <string name="power_menu_styles_cat">Power Menu Customizations</string>
     <string name="power_menu_animation_title">Power menu animation</string>
     <string name="power_menu_animation_dialog_title">Select power menu animation</string>
     <string name="power_menu_animation_aosp">AOSP (default)</string>
@@ -662,6 +668,13 @@
     <string name="power_menu_animation_translucent_top">Translucent (top)</string>
     <string name="power_menu_animation_translucent_bottom">Translucent (bottom)</string>
     <string name="power_menu_animation_rotate">تدوير</string>
+    <!-- Power Menu Styles -->
+    <string name="power_menu_type_title">Power menu style</string>
+    <string name="power_menu_type_lite">Lite (A12)</string>
+    <string name="power_menu_type_full">Full (A11)</string>
+    <string name="power_menu_type_classic">Classic (A8)</string>
+    <string name="power_menu_type_grid">Grid</string>
+    <string name="power_menu_type_legacy">Legacy (A7)</string>
     <!-- Media artwork -->
     <string name="media_category">Media notification</string>
     <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
@@ -931,4 +944,9 @@
     <!-- QS footer data usage -->
     <string name="qs_show_data_usage_title">Show data usage</string>
     <string name="qs_show_data_usage_summary">Show daily cellular/Wi-Fi data usage in QS footer</string>
+    <!-- Google services -->
+    <string name="gms_enabled_title">Google services</string>
+    <string name="gms_enabled_summary">Control Google services and core apps</string>
+    <string name="enable">Enable</string>
+    <string name="gms_enabled_footer">Before disabling Google services and core apps, you should disable \"Find My Device\" and 2-step verification on your Google account. It is strongly recommended to keep this setting enabled else apps dependent on Google components will be affected. If you run into any issues after changing this setting, perform a factory reset.</string>
 </resources>

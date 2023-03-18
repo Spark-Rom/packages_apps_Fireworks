@@ -45,10 +45,10 @@
     <!-- Battery light -->
     <string name="light_settings_header">ライトの設定</string>
     <string name="battery_light_settings">充電時のライト</string>
-    <string name="battery_light_summary">残量低下時とマナーモード時のライトの有無を設定する</string>
+    <string name="battery_light_summary">バッテリー残量低下時とおやすみモード時のバッテリーライトを設定する</string>
     <string name="battery_light_enable">バッテリーライト</string>
     <string name="battery_full_light_enabled">フル充電時のバッテリーライト</string>
-    <string name="battery_light_allow_on_dnd_title">Do Not Disturb 中のライト</string>
+    <string name="battery_light_allow_on_dnd_title">おやすみモード時のバッテリーライト</string>
     <string name="battery_light_low_blinking_title">残量低下時の点滅</string>
     <string name="battery_light_cat">充電中のライトの色</string>
     <string name="battery_light_low_color">残量低下</string>
@@ -77,7 +77,7 @@
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">画面消灯時ライトを切り替え</string>
     <string name="torch_power_button_gesture_none">無効</string>
-    <string name="torch_power_button_gesture_dt">電源ボタンを2回押し (1回押しの反応が遅れます)。電源ボタンをを2回押してカメラ起動は無効になります。</string>
+    <string name="torch_power_button_gesture_dt">電源ボタンを2回押す</string>
     <string name="torch_power_button_gesture_dt_toast">カメラ起動ジェスチャーは現在無効です</string>
     <string name="torch_power_button_gesture_lp">電源ボタンを長押し</string>
     <!-- Long press power for torch -->
@@ -125,22 +125,28 @@
     <string name="vowifi_icon_summary">利用可能な場合は VoWiFi アイコンを表示する</string>
     <string name="volte_vowifi_override_title">VoWiFi の上書き</string>
     <string name="volte_vowifi_override_summary">VoWiFi が利用可能な場合は VoLTE を非表示にする</string>
-    <!-- Power Menu -->
+    <!-- Power menu -->
     <string name="power_menu_title">電源メニュー</string>
-    <string name="power_menu_title_summary">電源メニューの表示項目を変更する</string>
-    <string name="powermenu_screenshot">スクリーンショット</string>
-    <string name="powermenu_onthego">On-The-Go モード</string>
-    <string name="powermenu_power">電源</string>
-    <string name="powermenu_advanced">高度な再起動オプション</string>
-    <string name="powermenu_restart">再起動</string>
-    <string name="powermenu_airplane">機内モード</string>
-    <string name="powermenu_torch">フラッシュライト</string>
-    <string name="powermenu_settings">設定</string>
-    <string name="powermenu_lockdown">画面ロック</string>
-    <string name="powermenu_soundpanel">音量パネル</string>
-    <string name="powermenu_users">ユーザー</string>
-    <string name="powermenu_logout">ログアウト</string>
-    <string name="powermenu_emergency">緊急通報</string>
+    <string name="power_menu_summary">Customize power menu options</string>
+    <string name="power_menu_actions_title">Actions</string>
+    <string name="power_menu_screenshot_title">Screenshot</string>
+    <string name="power_menu_screenshot_summary">Long-press for partial screenshot</string>
+    <string name="power_menu_onthego_title">On-The-Go mode</string>
+    <string name="power_menu_advanced_title">Advanced reboot options</string>
+    <string name="power_menu_airplane_title">Airplane</string>
+    <string name="power_menu_torch_title">フラッシュライト</string>
+    <string name="power_menu_settings_title">Settings</string>
+    <string name="power_menu_lockdown_title">Lockdown</string>
+    <string name="power_menu_lockdown_unavailable">Lockdown is disabled as keyguard isn\'t secure</string>
+    <string name="power_menu_soundpanel_title">Sound panel</string>
+    <string name="power_menu_users_title">Users</string>
+    <string name="power_menu_logout_title">Logout</string>
+    <string name="power_menu_emergency_title">Emergency</string>
+    <string name="power_menu_devicecontrols_title">Device controls</string>
+    <string name="power_menu_restart_systemui_title">Restart SystemUI</string>
+    <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Advanced restart</string>
+    <string name="advanced_reboot_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
     <!-- Power menu on lockscreen -->
     <string name="lockscreen_power_menu_disabled_title">保護時は無効化</string>
     <string name="lockscreen_power_menu_disabled_summary">保護されたロック画面で電源メニューを非表示にする</string>
@@ -163,8 +169,8 @@
     <string name="statusbar_colored_icons_summary">ステータスバーの通知アイコンにアプリアイコンを使用する</string>
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">画面消灯時のアニメーション</string>
-    <string name="screen_off_animation_crt">ブラウン管</string>
-    <string name="screen_off_animation_scale">縮小</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
     <!-- Notification count -->
     <string name="status_bar_notif_count_title">通知の数を表示</string>
     <string name="status_bar_notif_count_summary">保留中の通知の数を表示する</string>
@@ -360,12 +366,12 @@
     <string name="hardware_keys_disable_title">ハードウェアボタンを無効化</string>
     <!-- Navigation bar -->
     <string name="navigation_bar_category">ナビゲーションバー</string>
-    <string name="navigation_bar_title">画面内ナビゲーションバー</string>
-    <string name="navigation_bar_summary">画面上にナビゲーションバーを表示する</string>
+    <string name="navigation_bar_title">画面内のナビゲーション操作</string>
+    <string name="navigation_bar_summary">画面内のナビゲーション操作を有効にする</string>
     <string name="navigation_bar_layout_title">レイアウト</string>
     <string name="navigation_bar_layout_summary">ナビゲーションバーのレイアウトを編集する</string>
     <string name="navigation_bar_arrow_keys_title">入力中に矢印キーを表示</string>
-    <string name="navigation_bar_arrow_keys_summary">入力中は左右のカーソルボタンをナビゲーションバーに表示する</string>
+    <string name="navigation_bar_arrow_keys_summary">入力中に左右のカーソルボタンをナビゲーションバーに表示する</string>
     <string name="navigation_bar_help_text">これらは主に3ボタンナビゲーションバーに関係する設定です。ジェスチャーナビゲーションを使用していて、それをカスタマイズ (例: ジェスチャーハンドルを隠す) しようとする場合は、「設定&gt;システム&gt;ジェスチャー」に移動して下さい。</string>
     <string name="navigation_title">ナビゲーション</string>
     <!-- Button brightness -->
@@ -403,8 +409,8 @@
     <string name="flashlight_on_call_no_ringer">着信音がサイレントの時</string>
     <string name="flashlight_on_call_silent">完全サイレント時 (着信音やバイブなし)</string>
     <string name="flashlight_on_call_always">常時</string>
-    <string name="flashlight_on_call_ignore_dnd_title">DND を無視</string>
-    <string name="flashlight_on_call_ignore_dnd_summary">Do Not Disturb 中でもフラッシュさせるか決める</string>
+    <string name="flashlight_on_call_ignore_dnd_title">おやすみモードを無視</string>
+    <string name="flashlight_on_call_ignore_dnd_summary">おやすみモード時にフラッシュさせるか選択します</string>
     <string name="flashlight_on_call_rate_title">比率</string>
     <string name="flashlight_on_call_rate_summary">着信時のフラッシュライトの点滅割合を決める</string>
     <!-- Custom logo -->
@@ -438,8 +444,8 @@
     <string name="lockscreen_albumart_filter_tint">アクセントの色</string>
     <string name="lockscreen_albumart_filter_blur">ぼかし</string>
     <string name="lockscreen_albumart_filter_grayblur">グレースケールとぼかし</string>
-    <string name="lockscreen_media_blur_title">メディアアートのぼかしレベル</string>
-    <string name="lockscreen_albumart_filter_blur_radius_title">ロック画面でのメディアアートワークのぼかし量</string>
+    <string name="lockscreen_media_blur_title">メディアアートをぼかす度合い</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">ロック画面でのメディアアートワークをぼかす度合い</string>
     <!-- Pulse notifications lighting -->
     <string name="pulse_ambient_light_title">アンビエントエッジライト</string>
     <string name="pulse_ambient_light_summary">通知のパルスにアンビエントライトエッジを使用する</string>
@@ -520,12 +526,12 @@
     <string name="disable_usercard_summary">設定アプリのメインメニューにユーザーカードを表示しないように切り替える</string>
     <!-- Ignore window secure -->
     <string name="ignore_window_secure_title">ウィンドウのセキュアフラグを無視</string>
-    <string name="ignore_window_secure_summary">全てのアプリへのスクリーンショットや画面録画の制限を解除します。基本的に録画では特別なアプリは黒く領域が塗り潰されます。いくつかの場合で便利になることがありますが、プライバシー保護が脆弱になる可能性があります。この設定切り替えの後、効果を反映させるにはアプリの再起動が必要になる可能性があります。</string>
+    <string name="ignore_window_secure_summary">通常、特別なアプリでスクリーンショットや画面録画をすると黒く塗りつぶされますが、すべてのアプリでこの制限を解除します。この機能はプライバシーの漏洩につながる可能性があります。設定を変更したあとは、アプリの再起動が必要になる場合があります。</string>
     <!-- Colorful battery icon -->
     <string name="battery_level_colors_title">バッテリーアイコンの色</string>
     <string name="battery_level_colors_summary">バッテリー残量に応じて色が変化します</string>
     <!-- Qs Transparency -->
-    <string name="qs_transparency_summary">クイック設定をどの程度透明にするかを選択する (システム UI の再起動が必要です)</string>
+    <string name="qs_transparency_summary">クイック設定の透明度を設定する (システム UI の再起動が必要です)</string>
     <string name="qs_transparency_title">クイック設定の透明度</string>
     <!-- QuickSettings haptic feedback -->
     <string name="quick_settings_vibrate_title">タッチで振動</string>
@@ -637,8 +643,8 @@
     <string name="qs_surround">QS Surround</string>
     <string name="qs_thin">QS ThinLine</string>
     <!-- Status bar - Battery custom charging symbol -->
-    <string name="text_charging_symbol_title">Custom charging symbol for text style</string>
-    <string name="text_charging_symbol_dialog">Custom charging symbol near battery percentage text</string>
+    <string name="text_charging_symbol_title">充電アイコン(パーセンテージ)を編集</string>
+    <string name="text_charging_symbol_dialog">バッテリー残量(パーセンテージ)の横の充電アイコンを編集</string>
     <string name="text_charging_symbol_default">無効</string>
     <string name="text_charging_symbol_flash">Flash</string>
     <string name="text_charging_symbol_tilde">Tilde</string>
@@ -649,12 +655,12 @@
     <string name="text_charging_symbol_euro">Euro</string>
     <string name="text_charging_symbol_cent">Cent</string>
     <!-- Power menu Animations  -->
-    <string name="power_menu_anim_cat">電源メニューUIアニメーション設定</string>
+    <string name="power_menu_styles_cat">Power Menu Customizations</string>
     <string name="power_menu_animation_title">電源メニューのアニメーション</string>
     <string name="power_menu_animation_dialog_title">電源メニューのアニメーションを選択</string>
     <string name="power_menu_animation_aosp">AOSP (既定)</string>
-    <string name="power_menu_animation_bottom">下部</string>
-    <string name="power_menu_animation_top">上部</string>
+    <string name="power_menu_animation_bottom">Bottom</string>
+    <string name="power_menu_animation_top">Top</string>
     <string name="power_menu_animation_xylon">Fly</string>
     <string name="power_menu_animation_slide">Slide</string>
     <string name="power_menu_animation_turn">Turn</string>
@@ -662,11 +668,18 @@
     <string name="power_menu_animation_card">3D</string>
     <string name="power_menu_animation_translucent_top">Translucent (top)</string>
     <string name="power_menu_animation_translucent_bottom">Translucent (bottom)</string>
-    <string name="power_menu_animation_rotate">回転</string>
+    <string name="power_menu_animation_rotate">Rotate</string>
+    <!-- Power Menu Styles -->
+    <string name="power_menu_type_title">Power menu style</string>
+    <string name="power_menu_type_lite">Lite (A12)</string>
+    <string name="power_menu_type_full">Full (A11)</string>
+    <string name="power_menu_type_classic">Classic (A8)</string>
+    <string name="power_menu_type_grid">Grid</string>
+    <string name="power_menu_type_legacy">Legacy (A7)</string>
     <!-- Media artwork -->
-    <string name="media_category">Media notification</string>
-    <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
-    <string name="artwork_media_background_blur_radius_title">Blur amount for media notification artwork</string>
+    <string name="media_category">メディア通知</string>
+    <string name="artwork_media_background_enable_blur_title">メディアアートワークの背景をぼかす</string>
+    <string name="artwork_media_background_blur_radius_title">メディアアートワークをぼかす度合い</string>
     <!-- Black theme -->
     <string name="custom_theme_title">カスタムテーマを使用</string>
     <string name="custom_theme_summary">強制的に黒い背景を使用します</string>
@@ -678,16 +691,16 @@
     <string name="custom_theme_snowpaintdrop">Snowpaintdrop</string>
     <!-- Pulse music visualizer -->
     <string name="pulse_help_policy_notice_title">Pulse について</string>
-    <string name="pulse_help_policy_notice_summary">Pulse は端末上で音楽を再生した時に表示されるグラフィックイコライザーです</string>
+    <string name="pulse_help_policy_notice_summary">Pulse は端末で音楽を再生した時に表示されるオーディオグラフィックイコライザーです</string>
     <string name="pulse_settings">Pulse</string>
-    <string name="pulse_settings_summary">Audio graphic equalizer for navigation bar and lockscreen</string>
+    <string name="pulse_settings_summary">ナビゲーションバーやロック画面に表示するオーディオグラフィックイコライザー</string>
     <string name="show_navbar_pulse_title">ナビゲーションバーの Pulse</string>
-    <string name="show_navbar_pulse_summary">Audio graphic equalizer on the navigation bar</string>
-    <string name="show_lockscreen_pulse_title">Lockscreen Pulse</string>
-    <string name="show_lockscreen_pulse_summary">Audio graphic equalizer on the lockscreen</string>
-    <string name="show_ambient_pulse_title">Ambient Pulse</string>
-    <string name="show_ambient_pulse_summary">Audio graphic equalizer on the ambient screen</string>
-    <string name="pulse_render_mode_title">Render mode</string>
+    <string name="show_navbar_pulse_summary">ナビゲーションバー上にオーディオグラフィックイコライザーを表示します</string>
+    <string name="show_lockscreen_pulse_title">ロック画面での Pulse</string>
+    <string name="show_lockscreen_pulse_summary">ロック画面でオーディオグラフィックイコライザーを表示します</string>
+    <string name="show_ambient_pulse_title">アンビエント Pulse</string>
+    <string name="show_ambient_pulse_summary">アンビエント画面でオーディオグラフィックイコライザーを表示します</string>
+    <string name="pulse_render_mode_title">レンダリングモード</string>
     <string name="pulse_render_mode_fading_bars">ドットライン</string>
     <string name="pulse_render_mode_solid_lines">ソリッドライン</string>
     <string name="pulse_legacy_mode_advanced_category">ドットラインモードの設定</string>
@@ -750,8 +763,8 @@
     <string name="lockscreen_clock_color_summary">カスタムカラーを使用する</string>
     <string name="kg_custom_clock_color_title">ロック画面の時計の色を選択</string>
     <string name="kg_custom_clock_font_title">ロック画面の時計のフォント</string>
-    <string name="theme_customization_date_font_title">Lockscreen date font style</string>
-    <string name="theme_customization_date_font_summary">Set lockscreen date font style</string>
+    <string name="theme_customization_date_font_title">ロック画面での日付のフォント</string>
+    <string name="theme_customization_date_font_summary">ロック画面での日付のフォントを設定します</string>
     <string name="kg_custom_clock_top_margin_title">Clock bottom spacing</string>
     <string name="clock_use_single_line_title">Custom clock format</string>
     <string name="single_line">Single-line</string>
@@ -806,9 +819,9 @@
     <string name="status_bar_brightness_control_title">画面の明るさ調節</string>
     <string name="status_bar_brightness_control_summary">ステータスバーをスライドして明るさを調整する</string>
     <!-- Weather -->
-    <string name="weather_settings_title">天気の設定</string>
+    <string name="weather_settings_title">天気</string>
     <string name="weather_settings_summary">アイコンパックと天気サービスを設定します</string>
-    <string name="lockscreen_weather_title">天気情報</string>
+    <string name="lockscreen_weather_title">天気の状態</string>
     <string name="lockscreen_weather_summary">現在の天気と気温を表示します</string>
     <string name="lockscreen_weather_enabled_info">天気サービスを有効にする必要があります</string>
     <string name="lockscreen_weather_location_title">表示する天気の位置</string>
@@ -817,27 +830,27 @@
     <string name="qs_weather_title">QS System weather style</string>
     <string name="qs_weather_summary">Configure system weather</string>
     <string name="qsweather_dialog_title">QuickSettings weather location</string>
-    <string name="qs_weather_hidden">Hide weather</string>
+    <string name="qs_weather_hidden">天気を非表示</string>
     <string name="qs_temperature_image_show_scale">Show temp with scale and image</string>
     <string name="qs_temperature_image_hide_scale">Show temp with image without scale</string>
     <string name="qs_temperature_show_scale_hide_image">Show temp with scale</string>
     <string name="qs_temperature_hide_scale_hide_image">Show temp without scale</string>
     <string name="qs_show_image">Show image</string>
-    <string name="weather_show_all_condition">Show temp with scale,image and weather condition</string>
+    <string name="weather_show_all_condition">温度をスケール、画像、天気の状態で表示する</string>
     <string name="qsweather_position_qqs">QuickSettings</string>
     <string name="qsweather_position_qsb">QuickStatusbar</string>
     <string name="qsweather_position_both">Both</string>
     <string name="launcher_weather_title">Launcher System weather style</string>
-    <string name="kg_weather_title">Lockscreen System weather style</string>
+    <string name="kg_weather_title">ロック画面での天気の表示</string>
     <!-- Omni weather -->
-    <string name="qs_weather_settings_title">Weather Settings</string>
-    <string name="qs_weather_settings_summary">Setup icon pack and weather service</string>
+    <string name="qs_weather_settings_title">天気の設定</string>
+    <string name="qs_weather_settings_summary">アイコンパックと天気サービスを設定します</string>
     <string name="weather_title">天気の設定</string>
     <string name="weather_config_title">天気情報サービス</string>
     <string name="weather_config_summary">System service settings</string>
-    <string name="weather_icon_pack_title">Condition icon pack</string>
-    <string name="weather_icon_pack_note">Note\u003a you can install new icon packs from play store by searching for \"Chronus icons\"</string>
-    <string name="weather_icon_pack_info_title">Tips\u003a \n\n1. Users can install new icon packs from play store by searching for \"Chronus icons\".\n\n2. Condition icon pack is used for weather icons on quick settings and sushi launcher at a glance.\n\n3. Long press the QuickSettings weather view/logo/temperature to access weather settings with ease.</string>
+    <string name="weather_icon_pack_title">天気アイコンパック</string>
+    <string name="weather_icon_pack_note">備考\u003a プレイストアで「Chronus icons」と検索して新しいアイコンパックをインストールすることができます</string>
+    <string name="weather_icon_pack_info_title">ヒント\u003a \n\n1. Playストアから「Chronus icons」を検索して、新しいアイコンパックをインストールすることができます。\n\n2. 天気アイコンパックは、クイック設定の天気アイコンやAt A Glanceのsushi ランチャーに使用されます。\n\n3. クイック設定の天気の表示/ロゴ/気温を長押しすると簡単に天気の設定にアクセスできます。</string>
     <string name="qsweather_settings_title">QuickSettings Weather</string>
     <string name="qsweather_settings_summary">Setup quicksettings weather views</string>
     <!-- Clock picker format -->
@@ -852,60 +865,60 @@
     <string name="hide_notification_icons_title">通知アイコンを非表示</string>
     <string name="hide_notification_icons_summary">ステータスバーの通知アイコンを非表示にする</string>
     <!-- Haptic feedback settings -->
-    <string name="haptic_feedback_category">Haptic Feedback Settings</string>
+    <string name="haptic_feedback_category">触覚フィードバックの設定</string>
     <string name="volume_panel_haptic_feedback_title">音量の変更時に振動させる</string>
     <!-- HeadsUp notifications importance threshold -->
     <!--string name="hun_importance_none">None</string-->
-    <string name="hun_importance_title">Importance threshold</string>
-    <string name="hun_importance_min">Minimum</string>
-    <string name="hun_importance_low">低速</string>
+    <string name="hun_importance_title">重要度</string>
+    <string name="hun_importance_min">最低</string>
+    <string name="hun_importance_low">低</string>
     <string name="hun_importance_default">既定</string>
-    <string name="hun_importance_high">High</string>
-    <string name="hun_importance_max">Maxiumum</string>
+    <string name="hun_importance_high">高</string>
+    <string name="hun_importance_max">最高</string>
     <!-- Android P animation style -->
-    <string name="pie_animation_style_title">Android P animation style</string>
-    <string name="pie_animation_style_summary">Enable Android P \"Default\" animations</string>
+    <string name="pie_animation_style_title">Android P アニメーションスタイル</string>
+    <string name="pie_animation_style_summary">Android P のデフォルトアニメーションを有効にする</string>
     <!-- Force expanded notifications -->
-    <string name="force_expanded_notifications_title">Force expand notifications</string>
-    <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+    <string name="force_expanded_notifications_title">強制的に通知を展開させる</string>
+    <string name="force_expanded_notifications_summary">通知の展開をサポートしているアプリでのみ有効です</string>
     <!-- Lock screen bottom shortcuts -->
-    <string name="lockscreen_shortcut_category">Bottom shortcuts</string>
-    <string name="lockscreen_shortcut_start_title">Left shortcut</string>
-    <string name="lockscreen_shortcut_end_title">Right shortcut</string>
-    <string name="lockscreen_shortcut_wallet">Wallet</string>
+    <string name="lockscreen_shortcut_category">下部のショートカット</string>
+    <string name="lockscreen_shortcut_start_title">左側のショートカット</string>
+    <string name="lockscreen_shortcut_end_title">右側のショートカット</string>
+    <string name="lockscreen_shortcut_wallet">ウォレット</string>
     <string name="lockscreen_shortcut_home">ホーム</string>
     <string name="lockscreen_shortcut_flashlight">フラッシュライト</string>
-    <string name="lockscreen_shortcut_qr">QR</string>
+    <string name="lockscreen_shortcut_qr">QR コード</string>
     <string name="lockscreen_shortcut_camera">カメラ</string>
-    <string name="lockscreen_shortcut_remote">Google TV Remote Controls</string>
+    <string name="lockscreen_shortcut_remote">Google TV リモートコントロール</string>
     <string name="lockscreen_shortcut_none">なし</string>
-    <string name="lockscreen_shortcut_enforce_title">Single shortcut</string>
-    <string name="lockscreen_shortcut_enforce_summary">Enforce chosen shortcut to be the only existing priority\nWill show nothing until the specific chosen shortcut is available</string>
+    <string name="lockscreen_shortcut_enforce_title">シングルショートカット</string>
+    <string name="lockscreen_shortcut_enforce_summary">選択したショートカットが優先されている場合のみに使用できるようにする\n選択したショートカットが有効になるまで表示されません</string>
     <!-- Spark Manager -->
-    <string name="spark_system_manager_settings_title">Spark system manager</string>
-    <string name="spark_system_manager_settings_summary">Configurations to optimize your device</string>
-    <string name="spark_system_manager_title">Spark system manager</string>
-    <string name="spark_system_manager_summary">Optimize device power consumption and performance while device is idle</string>
-    <string name="spark_system_boost_title">Spark system boost</string>
-    <string name="spark_system_boost_summary">Boost system resources for a fluid experience</string>
-    <string name="spark_aggressive_idle_mode_title">Spark aggressive idle mode</string>
-    <string name="spark_aggressive_idle_mode_summary">Enable aggressive idle mode features</string>
-    <string name="spark_aggressive_idle_mode_ringer_title">Screen off ringer mode</string>
-    <string name="spark_aggressive_idle_mode_ringer_off_title">Do not change</string>
-    <string name="spark_aggressive_idle_mode_ringer_vibrate_title">振動</string>
-    <string name="spark_aggressive_idle_mode_ringer_dnd_title">Do Not Disturb</string>
-    <string name="spark_aggressive_idle_mode_ringer_silent_title">Silent</string>
-    <string name="spark_aggressive_idle_mode_ringer_normal">Ring Mode</string>
-    <string name="spark_aggressive_idle_mode_wifi_toggle_title">Turn off Wi-Fi</string>
-    <string name="spark_aggressive_idle_mode_wifi_toggle_summary">Disable Wi-Fi on screen off when Spark aggressive idle mode is enabled</string>
-    <string name="spark_aggressive_idle_mode_bluetooth_toggle_title">Turn off Bluetooth</string>
-    <string name="spark_aggressive_idle_mode_bluetooth_toggle_summary">Disable Bluetooth on screen off when Spark aggressive idle mode is enabled</string>
-    <string name="spark_aggressive_idle_mode_cellular_toggle_title">Turn off Mobile data</string>
-    <string name="spark_aggressive_idle_mode_cellular_toggle_summary">Disable Mobile data on screen off when Spark aggressive idle mode is enabled</string>
-    <string name="spark_aggressive_idle_mode_location_toggle_title">Turn off Location</string>
-    <string name="spark_aggressive_idle_mode_location_toggle_summary">Disable Location on screen off when Spark aggressive idle mode is enabled</string>
+    <string name="spark_system_manager_settings_title">Spark システムマネージャー</string>
+    <string name="spark_system_manager_settings_summary">端末を最適化する設定</string>
+    <string name="spark_system_manager_title">Spark システムマネージャー</string>
+    <string name="spark_system_manager_summary">アイドル状態の時に端末の消費電力とパフォーマンスを最適化する</string>
+    <string name="spark_system_boost_title">Spark システムブースト</string>
+    <string name="spark_system_boost_summary">システムリソースをブーストさせ、動作をなめらかにします</string>
+    <string name="spark_aggressive_idle_mode_title">Spark アグレッシブアイドルモード</string>
+    <string name="spark_aggressive_idle_mode_summary">アイドルモード時のパフォーマンスを強化します</string>
+    <string name="spark_aggressive_idle_mode_ringer_title">画面オフ時の着信モード</string>
+    <string name="spark_aggressive_idle_mode_ringer_off_title">変更しない</string>
+    <string name="spark_aggressive_idle_mode_ringer_vibrate_title">バイブレーション</string>
+    <string name="spark_aggressive_idle_mode_ringer_dnd_title">おやすみモード</string>
+    <string name="spark_aggressive_idle_mode_ringer_silent_title">消音</string>
+    <string name="spark_aggressive_idle_mode_ringer_normal">着信</string>
+    <string name="spark_aggressive_idle_mode_wifi_toggle_title">Wi-Fi をオフにする</string>
+    <string name="spark_aggressive_idle_mode_wifi_toggle_summary">Spark アグレッシブアイドルモードが有効になっているときは Wi-Fi を OFF にする</string>
+    <string name="spark_aggressive_idle_mode_bluetooth_toggle_title">Bluetooth をオフにする</string>
+    <string name="spark_aggressive_idle_mode_bluetooth_toggle_summary">Spark アグレッシブアイドルモードが有効になっているときは Bluetooth を OFF にする</string>
+    <string name="spark_aggressive_idle_mode_cellular_toggle_title">モバイルデータ通信をオフにする</string>
+    <string name="spark_aggressive_idle_mode_cellular_toggle_summary">Spark アグレッシブアイドルモードが有効になっているときはモバイルデータ通信を OFF にする</string>
+    <string name="spark_aggressive_idle_mode_location_toggle_title">位置情報をオフにする</string>
+    <string name="spark_aggressive_idle_mode_location_toggle_summary">Spark アグレッシブアイドルモードが有効になっているときは位置情報を OFF にする</string>
     <!-- QS Page Transitions -->
-    <string name="qs_transitions_title">QS Page Transitions</string>
+    <string name="qs_transitions_title">クイック設定のページ切り替え</string>
     <string name="qs_transitions_default">既定</string>
     <string name="qs_transitions_cube_in">Cube In</string>
     <string name="qs_transitions_cube_out">Cube Out</string>
@@ -922,14 +935,19 @@
     <string name="qs_transitions_zoom_out">Zoom out</string>
     <string name="qs_transitions_zoom_out_slide">Zoom out slide</string>
     <!-- Max visible notification icons -->
-    <string name="max_visible_notification_icons_title">Notification icons</string>
-    <string name="max_visible_notification_icons_summary">Max. notification icons visible on statusbar</string>
+    <string name="max_visible_notification_icons_title">通知アイコン</string>
+    <string name="max_visible_notification_icons_summary">ステータスバーに表示する通知アイコンの最大数</string>
     <!-- Status bar padding -->
-    <string name="statusbar_padding">Status bar padding</string>
-    <string name="statusbar_top_padding">Top padding</string>
-    <string name="statusbar_left_padding">Left padding</string>
-    <string name="statusbar_right_padding">Right padding</string>
+    <string name="statusbar_padding">ステータスバーの余白</string>
+    <string name="statusbar_top_padding">上側の余白</string>
+    <string name="statusbar_left_padding">左側の余白</string>
+    <string name="statusbar_right_padding">右側の余白</string>
     <!-- QS footer data usage -->
-    <string name="qs_show_data_usage_title">Show data usage</string>
-    <string name="qs_show_data_usage_summary">Show daily cellular/Wi-Fi data usage in QS footer</string>
+    <string name="qs_show_data_usage_title">データ使用量の表示</string>
+    <string name="qs_show_data_usage_summary">当日のモバイル/Wi-Fi データ使用量をクイック設定フッターに表示する</string>
+    <!-- Google services -->
+    <string name="gms_enabled_title">Google services</string>
+    <string name="gms_enabled_summary">Control Google services and core apps</string>
+    <string name="enable">Enable</string>
+    <string name="gms_enabled_footer">Before disabling Google services and core apps, you should disable \"Find My Device\" and 2-step verification on your Google account. It is strongly recommended to keep this setting enabled else apps dependent on Google components will be affected. If you run into any issues after changing this setting, perform a factory reset.</string>
 </resources>

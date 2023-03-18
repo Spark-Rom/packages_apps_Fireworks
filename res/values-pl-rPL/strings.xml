@@ -125,22 +125,28 @@
     <string name="vowifi_icon_summary">Wyświetl ikonę VoWiFi, gdy jest dostępna</string>
     <string name="volte_vowifi_override_title">Zastąp VoWiFi</string>
     <string name="volte_vowifi_override_summary">Ukryj VoLTE, gdy VoWiFi jest dostępne</string>
-    <!-- Power Menu -->
+    <!-- Power menu -->
     <string name="power_menu_title">Menu zasilania</string>
-    <string name="power_menu_title_summary">Wyświetl lub zmień elementy menu zasilania</string>
-    <string name="powermenu_screenshot">Zrzut ekranu</string>
-    <string name="powermenu_onthego">Tryb \"w ruchu\"</string>
-    <string name="powermenu_power">Zasilanie</string>
-    <string name="powermenu_advanced">Zaawansowany restart</string>
-    <string name="powermenu_restart">Uruchom ponownie</string>
-    <string name="powermenu_airplane">Tryb samolotowy</string>
-    <string name="powermenu_torch">Latarka</string>
-    <string name="powermenu_settings">Ustawienia</string>
-    <string name="powermenu_lockdown">Zablokuj</string>
-    <string name="powermenu_soundpanel">Panel dźwięku</string>
-    <string name="powermenu_users">Użytkownicy</string>
-    <string name="powermenu_logout">Wyloguj</string>
-    <string name="powermenu_emergency">Alarmowe</string>
+    <string name="power_menu_summary">Customize power menu options</string>
+    <string name="power_menu_actions_title">Actions</string>
+    <string name="power_menu_screenshot_title">Screenshot</string>
+    <string name="power_menu_screenshot_summary">Long-press for partial screenshot</string>
+    <string name="power_menu_onthego_title">On-The-Go mode</string>
+    <string name="power_menu_advanced_title">Advanced reboot options</string>
+    <string name="power_menu_airplane_title">Airplane</string>
+    <string name="power_menu_torch_title">Latarka</string>
+    <string name="power_menu_settings_title">Settings</string>
+    <string name="power_menu_lockdown_title">Lockdown</string>
+    <string name="power_menu_lockdown_unavailable">Lockdown is disabled as keyguard isn\'t secure</string>
+    <string name="power_menu_soundpanel_title">Sound panel</string>
+    <string name="power_menu_users_title">Users</string>
+    <string name="power_menu_logout_title">Logout</string>
+    <string name="power_menu_emergency_title">Emergency</string>
+    <string name="power_menu_devicecontrols_title">Device controls</string>
+    <string name="power_menu_restart_systemui_title">Restart SystemUI</string>
+    <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Advanced restart</string>
+    <string name="advanced_reboot_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
     <!-- Power menu on lockscreen -->
     <string name="lockscreen_power_menu_disabled_title">Wyłącz menu zasilania, gdy telefon jest zablokowany</string>
     <string name="lockscreen_power_menu_disabled_summary">Ta opcja spowoduje wyłączenie menu zasilania tylko na zabezpieczonym ekranie blokady</string>
@@ -633,9 +639,9 @@
     <string name="qs_shaded">Zacieniowane Szybkie Ustawienia</string>
     <string name="qs_cyberpunk">QS Cyberpunk</string>
     <string name="qs_neumorph">QS Neumorph</string>
-    <string name="qs_reflected">QS Reflected</string>
+    <string name="qs_reflected">QS Odbicie</string>
     <string name="qs_surround">Zaokrąglenie szybkich ustawień</string>
-    <string name="qs_thin">QS ThinLine</string>
+    <string name="qs_thin">QS Cienka linia</string>
     <!-- Status bar - Battery custom charging symbol -->
     <string name="text_charging_symbol_title">Własny symbol ładowania dla stylu tekstowego</string>
     <string name="text_charging_symbol_dialog">Własny symbol ładowania obok tekstu procentowego baterii</string>
@@ -649,7 +655,7 @@
     <string name="text_charging_symbol_euro">Euro</string>
     <string name="text_charging_symbol_cent">Cent</string>
     <!-- Power menu Animations  -->
-    <string name="power_menu_anim_cat">Opcja animacji Power UI</string>
+    <string name="power_menu_styles_cat">Power Menu Customizations</string>
     <string name="power_menu_animation_title">Animacja menu zasilania</string>
     <string name="power_menu_animation_dialog_title">Wybierz animację menu zasilania</string>
     <string name="power_menu_animation_aosp">AOSP (domyślnie)</string>
@@ -663,6 +669,13 @@
     <string name="power_menu_animation_translucent_top">Przezroczystość (góra)</string>
     <string name="power_menu_animation_translucent_bottom">Przezroczystość (dół)</string>
     <string name="power_menu_animation_rotate">Obrót</string>
+    <!-- Power Menu Styles -->
+    <string name="power_menu_type_title">Power menu style</string>
+    <string name="power_menu_type_lite">Lite (A12)</string>
+    <string name="power_menu_type_full">Full (A11)</string>
+    <string name="power_menu_type_classic">Classic (A8)</string>
+    <string name="power_menu_type_grid">Grid</string>
+    <string name="power_menu_type_legacy">Legacy (A7)</string>
     <!-- Media artwork -->
     <string name="media_category">Powiadomienie o mediach</string>
     <string name="artwork_media_background_enable_blur_title">Rozmyj tło okładki multimediów</string>
@@ -925,11 +938,16 @@
     <string name="max_visible_notification_icons_title">Ikony powiadomień</string>
     <string name="max_visible_notification_icons_summary">Max. ikony powiadomień widoczne na pasku stanu</string>
     <!-- Status bar padding -->
-    <string name="statusbar_padding">Status bar padding</string>
+    <string name="statusbar_padding">Wypełnienie paska stanu</string>
     <string name="statusbar_top_padding">Top padding</string>
-    <string name="statusbar_left_padding">Left padding</string>
-    <string name="statusbar_right_padding">Right padding</string>
+    <string name="statusbar_left_padding">Lewy odstęp</string>
+    <string name="statusbar_right_padding">Prawy odstęp</string>
     <!-- QS footer data usage -->
     <string name="qs_show_data_usage_title">Pokaż użycie danych</string>
     <string name="qs_show_data_usage_summary">Pokaż dzienne wykorzystanie danych komórkowych/Wi-Fi w stopce QS</string>
+    <!-- Google services -->
+    <string name="gms_enabled_title">Google services</string>
+    <string name="gms_enabled_summary">Control Google services and core apps</string>
+    <string name="enable">Enable</string>
+    <string name="gms_enabled_footer">Before disabling Google services and core apps, you should disable \"Find My Device\" and 2-step verification on your Google account. It is strongly recommended to keep this setting enabled else apps dependent on Google components will be affected. If you run into any issues after changing this setting, perform a factory reset.</string>
 </resources>
