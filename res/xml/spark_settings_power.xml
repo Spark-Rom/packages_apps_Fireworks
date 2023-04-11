@@ -15,4 +15,61 @@
     android:title="@string/powermenu_title"
     xmlns:settings="http://schemas.android.com/apk/res-auto">
 
+    <PreferenceCategory
+            android:key="power_menu_items"
+            android:title="@string/power_menu_actions_title">
+
+        <SwitchPreference
+            android:key="screenshot"
+            android:title="@string/power_menu_screenshot_title"
+            android:summary="@string/power_menu_screenshot_summary"
+            android:defaultValue="false" />
+
+        <SwitchPreference
+            android:key="airplane"
+            android:title="@string/power_menu_airplane_title"
+            android:defaultValue="false" />
+
+        <SwitchPreference
+            android:key="users"
+            android:title="@string/power_menu_users_title"
+            android:defaultValue="false" />
+
+        <SwitchPreference
+            android:key="lockdown"
+            android:title="@string/power_menu_lockdown_title"
+            android:defaultValue="false" />
+
+        <SwitchPreference
+            android:key="emergency"
+            android:title="@string/power_menu_emergency_title"
+            android:defaultValue="false" />
+
+        <SwitchPreference
+            android:key="devicecontrols"
+            android:title="@string/power_menu_devicecontrols_title"
+            android:defaultValue="false"
+            android:enabled="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="advanced_reboot_key"
+        android:title="@string/power_menu_advanced_title" >
+
+        <lineageos.preference.LineageSecureSettingSwitchPreference
+            android:key="advanced_reboot"
+            android:title="@string/advanced_reboot_title"
+            android:summary="@string/advanced_reboot_summary"
+            android:defaultValue="true" />
+
+        <lineageos.preference.LineageSecureSettingSwitchPreference
+            android:key="advanced_reboot_secured"
+            android:title="@string/advanced_reboot_secured_title"
+            android:summary="@string/advanced_reboot_secured_summary"
+            android:dependency="advanced_reboot"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
