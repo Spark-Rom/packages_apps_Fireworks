@@ -34,6 +34,7 @@
     <string name="flashlight_category">Flashlight</string>
     <string name="qs_category">Qs Customizations</string>
     <string name="battery_category">Energy saving Configurations</string>
+    <string name="lockscreen_interface_category">LockScreen Interface</string>
 
     <!-- Color picker -->
     <string name="rgb">RGB</string>
@@ -70,4 +71,7 @@
     <string name="advanced_reboot_secured_title">Secured lockscreen</string>
     <string name="advanced_reboot_secured_summary">Display advanced restart options on secured lockscreen</string>
 
+    <!-- Media art -->
+    <string name="media_art_title">Media cover art</string>
+    <string name="media_art_summary">Display media cover art when available</string>
 </resources>
