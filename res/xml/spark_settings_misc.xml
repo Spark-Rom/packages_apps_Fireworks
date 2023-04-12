@@ -34,4 +34,16 @@
             android:fragment="com.spark.settings.fragments.NotificationLightSettings" />
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="buttons"
+        android:title="@string/buttons_category">
+
+        <!-- Button Settings -->
+        <Preference
+            android:key="buttonsettings"
+            android:title="@string/buttons_title"
+            android:summary="@string/buttons_summary"
+            android:fragment="com.spark.settings.fragments.Buttons" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
