@@ -38,7 +38,7 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.util.spark.SparkUtils;
-
+import lineageos.preference.LineageSystemSettingListPreference;
 import lineageos.providers.LineageSettings;
 
 import static org.lineageos.internal.util.DeviceKeysConstants.*;
@@ -61,7 +61,14 @@ public class GestureSettings extends SettingsPreferenceFragment implements
     private static final String KEY_NAVIGATION_APP_SWITCH_DOUBLE_TAP =
             "navigation_app_switch_double_tap";
     private static final String KEY_EDGE_LONG_SWIPE = "navigation_bar_edge_long_swipe";
+    private static final String QUICK_PULLDOWN = "qs_quick_pulldown";
 
+    private static final int PULLDOWN_DIR_NONE = 0;
+    private static final int PULLDOWN_DIR_RIGHT = 1;
+    private static final int PULLDOWN_DIR_LEFT = 2;
+    private static final int PULLDOWN_DIR_ALWAYS = 3;
+
+    private LineageSystemSettingListPreference mQuickPulldown;
     private SwitchPreference mNavbarVisibility;
     private ListPreference mNavigationBackLongPressAction;
     private ListPreference mNavigationBackDoubleTapAction;
@@ -153,6 +160,17 @@ public class GestureSettings extends SettingsPreferenceFragment implements
 
         // Edge long swipe gesture
         mEdgeLongSwipeAction = initList(KEY_EDGE_LONG_SWIPE, edgeLongSwipeAction);
+
+        mQuickPulldown =
+                (LineageSystemSettingListPreference) findPreference(QUICK_PULLDOWN);
+        mQuickPulldown.setOnPreferenceChangeListener(this);
+        updateQuickPulldownSummary(mQuickPulldown.getIntValue(0));
+
+        // Adjust status bar preferences for RTL
+        if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
+            mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
+            mQuickPulldown.setEntryValues(R.array.status_bar_quick_qs_pulldown_values_rtl);
+        }
     }
 
     private ListPreference initList(String key, Action value) {
@@ -231,8 +249,35 @@ public class GestureSettings extends SettingsPreferenceFragment implements
             handleListChange((ListPreference) preference, newValue,
                     LineageSettings.System.KEY_EDGE_LONG_SWIPE_ACTION);
             return true;
+        } else if (preference == mQuickPulldown) {
+            int value = Integer.parseInt((String) newValue);
+            updateQuickPulldownSummary(value);
+            return true;
         }
         return false;
+    }
+
+    private void updateQuickPulldownSummary(int value) {
+        String summary="";
+        switch (value) {
+            case PULLDOWN_DIR_NONE:
+                summary = getResources().getString(
+                    R.string.status_bar_quick_qs_pulldown_off);
+                break;
+            case PULLDOWN_DIR_ALWAYS:
+                summary = getResources().getString(
+                    R.string.status_bar_quick_qs_pulldown_always);
+                break;
+            case PULLDOWN_DIR_LEFT:
+            case PULLDOWN_DIR_RIGHT:
+                summary = getResources().getString(
+                    R.string.status_bar_quick_qs_pulldown_summary,
+                    getResources().getString(value == PULLDOWN_DIR_LEFT
+                        ? R.string.status_bar_quick_qs_pulldown_summary_left
+                        : R.string.status_bar_quick_qs_pulldown_summary_right));
+                break;
+        }
+        mQuickPulldown.setSummary(summary);
     }
 
     @Override

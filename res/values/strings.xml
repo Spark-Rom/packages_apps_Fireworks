@@ -39,6 +39,7 @@
     <string name="themes_title">Themes</string>
     <string name="buttons_category">Buttons</string>
     <string name="qs_themes">Qs Settings</string>
+    <string name="sb_gestures_title">Gestures for StatusBar</string>
     <string name="spoof_title">Spoofing</string>
     <string name="gestures_title">Gestures</string>
     <string name="aosp_setting_title">System settings</string>
@@ -350,4 +351,17 @@
     <string name="clock_date_left">Left of time</string>
     <string name="clock_font_size_title">Clock font size</string>
 
+    <!-- Tap to sleep on status bar -->
+    <string name="statusbar_doubletap_sleep_title">Tap to sleep</string>
+    <string name="statusbar_doubletap_sleep_summary">Double-tap on the status bar to put device asleep</string>
+
+    <!-- Status bar - Quick pulldown -->
+    <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
+    <string name="status_bar_quick_qs_pulldown_summary">%1$s edge of the status bar pulls down quick settings</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left">Left</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right">Right</string>
+    <string name="status_bar_quick_qs_pulldown_off">Off</string>
+    <string name="status_bar_quick_qs_pulldown_left">Left</string>
+    <string name="status_bar_quick_qs_pulldown_right">Right</string>
+    <string name="status_bar_quick_qs_pulldown_always">Always show quick settings on status bar pull down</string>
 </resources>

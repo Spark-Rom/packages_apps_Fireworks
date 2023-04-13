@@ -17,6 +17,29 @@
     android:title="@string/gestures_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+        android:title="@string/sb_gestures_title">
+
+        <lineageos.preference.LineageSystemSettingSwitchPreference
+            android:key="double_tap_sleep_gesture"
+            android:title="@string/statusbar_doubletap_sleep_title"
+            android:summary="@string/statusbar_doubletap_sleep_summary"
+            android:defaultValue="true" />
+
+        <lineageos.preference.LineageSystemSettingListPreference
+            android:key="qs_quick_pulldown"
+            android:title="@string/status_bar_quick_qs_pulldown_title"
+            android:entries="@array/status_bar_quick_qs_pulldown_entries"
+            android:entryValues="@array/status_bar_quick_qs_pulldown_values"
+            android:defaultValue="0" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="navbar_layout_category"
+        android:title="@string/navbar_layout_category_title"
+        android:dependency="navbar_visibility">
+
     <SwitchPreference
         android:key="navbar_visibility"
         android:title="@string/navbar_visibility_title"
@@ -29,10 +52,6 @@
         android:defaultValue="true"
         android:dependency="navbar_visibility" />
 
-    <PreferenceCategory
-        android:key="navbar_layout_category"
-        android:title="@string/navbar_layout_category_title"
-        android:dependency="navbar_visibility">
 
         <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="navigation_bar_menu_arrow_keys"
