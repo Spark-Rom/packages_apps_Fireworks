@@ -25,11 +25,11 @@ import android.content.Context;
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
-
+import java.net.InetAddress;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import android.util.Log;
-
+import android.os.Handler;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
@@ -42,10 +42,12 @@ public class MiscSettings extends SettingsPreferenceFragment implements
 
     private static final String BATTERY_LIGHTS_PREF = "battery_lights";
     private static final String NOTIFICATION_LIGHTS_PREF = "notification_lights";
+    private static final String PREF_ADBLOCK = "persist.spark.hosts_block";
 
     private Preference mBatLights;
     private Preference mNotLights;
     private PreferenceCategory lightsCategory;
+    private Handler mHandler = new Handler();
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -73,12 +75,25 @@ public class MiscSettings extends SettingsPreferenceFragment implements
             lightsCategory = (PreferenceCategory) prefScreen.findPreference("light_brightness");
             prefScreen.removePreference(lightsCategory);
         }
+
+        findPreference(PREF_ADBLOCK).setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-
-        return false;
+        if (PREF_ADBLOCK.equals(preference.getKey())) {
+            // Flush the java VM DNS cache to re-read the hosts file.
+            // Delay to ensure the value is persisted before we refresh
+            mHandler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        InetAddress.clearDnsCache();
+                    }
+            }, 1000);
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override

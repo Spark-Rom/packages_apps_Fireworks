@@ -35,6 +35,18 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="misc_general_category"
+        android:title="@string/general_category">
+
+    <com.spark.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.spark.hosts_block"
+        android:title="@string/hosts_block_title"
+        android:summary="@string/hosts_block_summary"
+        android:defaultValue="false" />
+
+   </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="buttons"
         android:title="@string/buttons_category">
 
