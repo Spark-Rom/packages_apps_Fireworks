@@ -47,6 +47,33 @@
    </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="spoof_category"
+        android:title="@string/spoof_title">
+
+    <!-- Unlock FPS for specific games -->
+    <com.spark.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.games"
+        android:title="@string/use_games_spoof_title"
+        android:summary="@string/use_games_spoof_summary"
+        android:defaultValue="false" />
+
+    <!-- Unlimited google photos storage -->
+    <com.spark.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.gphotos"
+        android:title="@string/use_photos_spoof_title"
+        android:summary="@string/use_photos_spoof_summary"
+        android:defaultValue="true" />
+
+    <!-- Netflix -->
+    <com.spark.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.netflix"
+        android:title="@string/netflix_spoof_title"
+        android:summary="@string/netflix_spoof_summary"
+        android:defaultValue="false" />
+
+   </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="buttons"
         android:title="@string/buttons_category">
 
