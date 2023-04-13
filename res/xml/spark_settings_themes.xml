@@ -15,6 +15,55 @@
     android:title="@string/themes_title"
     xmlns:settings="http://schemas.android.com/apk/res-auto">
 
+     <PreferenceCategory
+        android:key="theme_customization_category"
+        android:title="@string/theme_customization_category">
+
+    <!-- Navbar Style -->
+    <Preference
+        android:key="android.theme.customization.navbar"
+        android:title="@string/theme_customization_navbar_title"
+        android:summary="@string/theme_customization_navbar_summary"
+        android:fragment="com.spark.settings.fragments.NavbarStyles"/>
+
+    <!-- Font style -->
+    <Preference
+        android:key="android.theme.customization.fonts"
+        android:title="@string/theme_customization_font_title"
+        android:summary="@string/theme_customization_font_summary"
+        android:fragment="com.spark.settings.fragments.FontsPicker"/>
+
+    <!-- Icon pack -->
+    <Preference
+        android:key="android.theme.customization.icon_pack"
+        android:title="@string/theme_customization_icon_pack_title"
+        android:summary="@string/theme_customization_icon_pack_summary"
+        android:fragment="com.spark.settings.fragments.StatusbarIcons"/>
+
+    <!-- Signal icon style -->
+    <Preference
+        android:key="android.theme.customization.signal_icon"
+        android:title="@string/theme_customization_signal_icon_title"
+        android:summary="@string/theme_customization_signal_icon_summary"
+        android:fragment="com.spark.settings.fragments.SignalIcons"/>
+
+    <!-- Wifi icon style -->
+    <Preference
+        android:key="android.theme.customization.wifi_icon"
+        android:title="@string/theme_customization_wifi_icon_title"
+        android:summary="@string/theme_customization_wifi_icon_summary"
+        android:fragment="com.spark.settings.fragments.WifiIcons"/>
+
+    <!-- Adaptive icon pack -->
+    <Preference
+        android:key="android.theme.customization.adaptive_icon_shape"
+        android:title="@string/theme_customization_icon_shape_title"
+        android:summary="@string/theme_customization_icon_shape_summary"
+        android:fragment="com.spark.settings.fragments.IconShapes"/>
+
+    </PreferenceCategory>
+
+
     <PreferenceCategory 
          android:title="@string/brightness_slider_category">
 

@@ -364,4 +364,20 @@
     <string name="status_bar_quick_qs_pulldown_left">Left</string>
     <string name="status_bar_quick_qs_pulldown_right">Right</string>
     <string name="status_bar_quick_qs_pulldown_always">Always show quick settings on status bar pull down</string>
+
+    <!-- Font style / Icon pack -->
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Theming</string>
+    <string name="theme_customization_font_title">Font style</string>
+    <string name="theme_customization_font_summary">Set system font style</string>
+    <string name="theme_customization_icon_pack_title">Icon pack</string>
+    <string name="theme_customization_icon_pack_summary">Set custom icon pack style</string>
+    <string name="theme_customization_icon_shape_title">Icon shape</string>
+    <string name="theme_customization_icon_shape_summary">Set system icon shape style</string>
+    <string name="theme_customization_signal_icon_title">Signal icon style</string>
+    <string name="theme_customization_signal_icon_summary">Set custom signal icon style</string>
+    <string name="theme_customization_wifi_icon_title">WiFi icon style</string>
+    <string name="theme_customization_wifi_icon_summary">Set custom wifi icon style</string>
+    <string name="theme_customization_navbar_title">Navbar style</string>
+    <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
 </resources>
