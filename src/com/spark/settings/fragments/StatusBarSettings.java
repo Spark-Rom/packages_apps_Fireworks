@@ -24,10 +24,13 @@ import com.android.settings.R;
 import lineageos.preference.LineageSystemSettingListPreference;
 import lineageos.providers.LineageSettings;
 import com.spark.settings.utils.DeviceUtils;
+import com.spark.settings.preferences.SystemSettingSeekBarPreference;
+import com.spark.settings.utils.TelephonyUtils;
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
-
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settingslib.search.SearchIndexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import android.util.Log;
@@ -38,6 +41,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 
+@SearchIndexable
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
@@ -45,6 +49,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private static final String KEY_STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String KEY_STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String KEY_STATUS_BAR_BATTERY_TEXT_CHARGING = "status_bar_battery_text_charging";
+    private static final String KEY_SHOW_ROAMING = "roaming_indicator_icon";
+    private static final String KEY_SHOW_FOURG = "show_fourg_icon";
+    private static final String KEY_SHOW_DATA_DISABLED = "data_disabled_icon";
+    private static final String KEY_USE_OLD_MOBILETYPE = "use_old_mobiletype";
 
     private static final int BATTERY_STYLE_PORTRAIT = 0;
     private static final int BATTERY_STYLE_TEXT = 4;
@@ -54,6 +62,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private SystemSettingListPreference mBatteryStyle;
     private SwitchPreference mBatteryTextCharging;
     private LineageSystemSettingListPreference mStatusBarClock;
+    private SwitchPreference mShowRoaming;
+    private SwitchPreference mShowFourg;
+    private SwitchPreference mDataDisabled;
+    private SwitchPreference mOldMobileType;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -98,6 +110,25 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mBatteryTextCharging = (SwitchPreference) findPreference(KEY_STATUS_BAR_BATTERY_TEXT_CHARGING);
         mBatteryTextCharging.setEnabled(batterystyle == BATTERY_STYLE_HIDDEN ||
                 (batterystyle != BATTERY_STYLE_TEXT && batterypercent != 2));
+
+        mShowRoaming = (SwitchPreference) findPreference(KEY_SHOW_ROAMING);
+        mShowFourg = (SwitchPreference) findPreference(KEY_SHOW_FOURG);
+        mDataDisabled = (SwitchPreference) findPreference(KEY_SHOW_DATA_DISABLED);
+        mOldMobileType = (SwitchPreference) findPreference(KEY_USE_OLD_MOBILETYPE);
+
+        if (!TelephonyUtils.isVoiceCapable(getActivity())) {
+            prefScreen.removePreference(mShowRoaming);
+            prefScreen.removePreference(mShowFourg);
+            prefScreen.removePreference(mDataDisabled);
+            prefScreen.removePreference(mOldMobileType);
+        } else {
+            boolean mConfigUseOldMobileType = mContext.getResources().getBoolean(
+                    com.android.internal.R.bool.config_useOldMobileIcons);
+            boolean showing = Settings.System.getIntForUser(resolver,
+                    Settings.System.USE_OLD_MOBILETYPE,
+                    mConfigUseOldMobileType ? 1 : 0, UserHandle.USER_CURRENT) != 0;
+            mOldMobileType.setChecked(showing);
+        }
     }
 
     @Override
@@ -127,4 +158,24 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         return MetricsProto.MetricsEvent.SPARK_SETTINGS;
     }
 
+    /**
+     * For search
+     */
+    public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider(R.xml.spark_settings_statusbar) {
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    List<String> keys = super.getNonIndexableKeys(context);
+
+                    if (!TelephonyUtils.isVoiceCapable(context)) {
+                        keys.add(KEY_SHOW_ROAMING);
+                        keys.add(KEY_SHOW_FOURG);
+                        keys.add(KEY_SHOW_DATA_DISABLED);
+                        keys.add(KEY_USE_OLD_MOBILETYPE);
+                    }
+
+                    return keys;
+                }
+            };
 }
