@@ -41,6 +41,18 @@
             android:summary="@string/status_bar_clock_summary"
             android:fragment="com.spark.settings.fragments.Clock" />
 
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="statusbar_colored_icons"
+            android:title="@string/statusbar_colored_icons_title"
+            android:summary="@string/statusbar_colored_icons_summary"
+            android:defaultValue="false" />
+
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+	        android:key="statusbar_notif_count"
+	        android:title="@string/statusbar_notif_count_title"
+	        android:summary="@string/statusbar_notif_count_summary"
+	        android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <!-- Status bar battery customizations -->
