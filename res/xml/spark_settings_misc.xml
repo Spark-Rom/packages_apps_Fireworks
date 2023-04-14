@@ -74,6 +74,33 @@
    </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="flashlight_category"
+        android:title="@string/power_menu_torch_title">
+
+        <com.spark.settings.preferences.SystemSettingListPreference
+            android:key="flashlight_on_call"
+            android:title="@string/flashlight_on_call_title"
+            android:entries="@array/flashlight_on_call_entries"
+            android:entryValues="@array/flashlight_on_call_values"
+            android:defaultValue="0" />
+
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="flashlight_on_call_ignore_dnd"
+            android:title="@string/flashlight_on_call_ignore_dnd_title"
+            android:summary="@string/flashlight_on_call_ignore_dnd_summary"
+            android:defaultValue="false" /> 
+
+        <com.spark.settings.preferences.SystemSettingSeekBarPreference
+            android:key="flashlight_on_call_rate"
+            android:title="@string/flashlight_on_call_rate_title"
+            android:defaultValue="1"
+            android:max="5"
+            settings:min="1"
+            settings:units="@string/unit_hz" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="buttons"
         android:title="@string/buttons_category">
 
