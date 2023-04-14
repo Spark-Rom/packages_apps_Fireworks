@@ -27,4 +27,15 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+         android:title="@string/charging_category">
+
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_battery_info"
+            android:title="@string/lockscreen_battery_info_title"
+            android:summary="@string/lockscreen_battery_info_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
