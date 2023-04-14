@@ -91,6 +91,19 @@
     <PreferenceCategory 
          android:title="@string/notification_category">
 
+    <com.spark.settings.preferences.SystemSettingSwitchPreference
+        android:key="reticker_status"
+        android:defaultValue="false"
+        android:title="@string/reticker_title"
+        android:summary="@string/reticker_summary" />
+
+    <com.spark.settings.preferences.SystemSettingSwitchPreference
+        android:key="reticker_colored"
+        android:title="@string/reticker_colored_title"
+        android:defaultValue="false"
+        android:summary="@string/reticker_colored_summary"
+        android:dependency="reticker_status" />
+
      <com.spark.settings.preferences.SystemSettingSwitchPreference
         android:key="qs_colored_icons"
         android:title="@string/qs_colored_icons_title"
