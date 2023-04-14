@@ -38,4 +38,16 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="lockscreen_misc_category"
+        android:title="@string/misc_title">
+
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="secure_lockscreen_qs_disabled"
+            android:title="@string/disable_qs_title"
+            android:defaultValue="false"
+            android:summary="@string/disable_qs_summary"/>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
