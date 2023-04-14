@@ -63,7 +63,6 @@
 
     </PreferenceCategory>
 
-
     <PreferenceCategory 
          android:title="@string/brightness_slider_category">
 
@@ -87,6 +86,17 @@
             android:title="@string/qs_show_auto_brightness_title"
             android:summary="@string/qs_show_auto_brightness_summary"
             android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+         android:title="@string/notification_category">
+
+     <com.spark.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_colored_icons"
+        android:title="@string/qs_colored_icons_title"
+        android:summary="@string/qs_colored_icons_summary"
+        android:defaultValue="false" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

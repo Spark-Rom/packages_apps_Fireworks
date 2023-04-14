@@ -53,7 +53,7 @@
     <string name="fingerprint_category">Fingerprint</string>
     <string name="animations_category">Animations</string>
     <string name="charging_category">Ls Charging configurations</string>
-    <string name="notifications_category">Notification Settings</string>
+    <string name="notification_category">Notification Settings</string>
     <string name="screenshot_category">Screenshot Settings</string>
     <string name="status_bar_icons_category_title">StatusBar Icons</string>
     <string name="powermenu_items_title">Power menu items</string>
@@ -424,4 +424,8 @@
     <!-- Notification count -->
     <string name="statusbar_notif_count_title">Show notification count</string>
     <string name="statusbar_notif_count_summary">Display the number of pending notifications</string>
+
+    <!-- Colored QS notification icons -->  
+    <string name="qs_colored_icons_title">Colored QS notification icons</string>
+    <string name="qs_colored_icons_summary">Show colored app icon instead of monochrome icons</string>
 </resources>
