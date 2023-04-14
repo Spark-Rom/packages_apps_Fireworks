@@ -48,6 +48,7 @@
     <string name="misc_title">Miscellaneous</string>
     <string name="powermenu_title">Power menu</string>
     <string name="statusbar_title">Status bar</string>
+    <string name="statusbar_indicators">Status bar Indicators</string>
     <string name="statusbar_items_category">Status bar items</string>
     <string name="status_bar_battery_category_title">Battery customizations</string>
     <string name="fingerprint_category">Fingerprint</string>
@@ -483,4 +484,11 @@
     <string name="battery_bar_blend_color_reverse_summary_off">Full &#8594; empty: red &#8592; green &#8592; blue &#8592; red</string>
     <string name="battery_bar_blend_color_reverse_summary_on">Full &#8594; empty: red &#8594; green &#8594; blue &#8594; red</string>
 
+    <!-- Privacy Indicator -->
+    <string name="mic_camera_privacy_indicator_title">Mic and camera privacy indicator</string>
+    <string name="mic_camera_privacy_indicator_summary">Show indicator when any app uses mic or camera</string>
+    <string name="location_privacy_indicator_title">Location privacy indicator</string>
+    <string name="location_privacy_indicator_summary">Show indicator when any app uses location</string>
+    <string name="projection_privacy_indicator_title">Media projection privacy indicator</string>
+    <string name="projection_privacy_indicator_summary">Show indicator when device screen is projected</string>
 </resources>
