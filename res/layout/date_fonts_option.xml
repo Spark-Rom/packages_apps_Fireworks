@@ -34,9 +34,9 @@
         <TextClock android:id="@+id/option_title"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:format12Hour="hh\nmm"
-            android:format24Hour="kk\nmm"
-            android:fontFamily="@*android:string/config_clockFontFamily"
+            android:format12Hour="EEE, MMM d"
+            android:format24Hour="EEE, MMM d"
+            android:fontFamily="@*android:string/config_dateFontFamily"
             android:gravity="center"
             android:textAppearance="@style/OptionTitleTextAppearance"/>
 

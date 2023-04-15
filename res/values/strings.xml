@@ -371,6 +371,10 @@
     <!-- Font style / Icon pack -->
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
     <string name="theme_customization_category">Theming</string>
+    <string name="theme_customization_clock_font_title">Lockscreen clock font style</string>
+    <string name="theme_customization_clock_font_summary">Set lockscreen clock font style</string>
+    <string name="theme_customization_date_font_title">Lockscreen date font style</string>
+    <string name="theme_customization_date_font_summary">Set lockscreen date font style</string>
     <string name="theme_customization_font_title">Font style</string>
     <string name="theme_customization_font_summary">Set system font style</string>
     <string name="theme_customization_icon_pack_title">Icon pack</string>
