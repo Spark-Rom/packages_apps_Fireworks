@@ -53,6 +53,19 @@
 
     </PreferenceCategory>
 
+   <PreferenceCategory
+      android:title="@string/power_menu_styles_cat">
+
+    <com.spark.settings.preferences.SecureSettingListPreference
+        android:key="power_menu_type"
+        android:summary="%s"
+        android:title="@string/power_menu_type_title"
+        android:entries="@array/power_menu_type_entries"
+        android:entryValues="@array/power_menu_type_values"
+        android:defaultValue="0"/>
+
+   </PreferenceCategory>
+
     <PreferenceCategory
         android:key="advanced_reboot_key"
         android:title="@string/power_menu_advanced_title" >
