@@ -63,6 +63,22 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+            android:key="qs_styling"
+            android:title="@string/qs_styling">
+
+        <com.spark.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_transparency"
+            android:title="@string/qs_transparency_title"
+            android:summary="@string/qs_transparency_summary"
+            android:defaultValue="100"
+            settings:interval="1"
+            settings:units="%"
+            android:max="100"
+            android:min="1" />
+
+    </PreferenceCategory>
+
     <PreferenceCategory 
          android:title="@string/brightness_slider_category">
 
