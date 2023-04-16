@@ -41,6 +41,8 @@
     <string name="qs_themes">Qs Settings</string>
     <string name="sb_gestures_title">Gestures for StatusBar</string>
     <string name="ls_gestures_title">Gestures for LockScreen</string>
+    <string name="lock_screen_custom_clock_face_category">Lockscreen Clock Tweaks</string>
+    <string name="qs_styling">Quick Settings Styling</string>
     <string name="spoof_title">Spoofing</string>
     <string name="gestures_title">Gestures</string>
     <string name="aosp_setting_title">System settings</string>
