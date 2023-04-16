@@ -105,6 +105,16 @@
     </PreferenceCategory>
 
     <PreferenceCategory 
+         android:title="@string/qs_footer_category">
+
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_data_usage"
+            android:title="@string/qs_footer_datausage_title"
+            android:summary="@string/qs_footer_datausage_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
          android:title="@string/notification_category">
 
     <com.spark.settings.preferences.SystemSettingSwitchPreference

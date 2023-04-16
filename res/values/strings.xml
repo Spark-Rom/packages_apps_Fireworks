@@ -40,6 +40,7 @@
     <string name="buttons_category">Buttons</string>
     <string name="qs_themes">Qs Settings</string>
     <string name="sb_gestures_title">Gestures for StatusBar</string>
+    <string name="qs_footer_category">Footer</string>
     <string name="ls_gestures_title">Gestures for LockScreen</string>
     <string name="lock_screen_custom_clock_face_category">Lockscreen Clock Tweaks</string>
     <string name="qs_styling">Quick Settings Styling</string>
@@ -524,4 +525,9 @@
     <string name="power_menu_type_classic">Classic (A8)</string>
     <string name="power_menu_type_grid">Grid</string>
     <string name="power_menu_type_legacy">Legacy (A7)</string>
+
+    <!-- Data usage info in QS footer -->
+    <string name="qs_footer_datausage_title">Data usage</string>
+    <string name="qs_footer_datausage_summary">Display data usage summary in quick settings footer</string>
+
 </resources>
