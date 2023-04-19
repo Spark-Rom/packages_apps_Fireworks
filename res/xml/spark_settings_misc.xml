@@ -15,6 +15,10 @@
     android:title="@string/misc_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+        android:key="misc_general_category"
+        android:title="@string/general_category">
+
     <!-- Gaming mode -->
     <Preference
         android:key="gaming_mode"
@@ -26,6 +30,40 @@
             android:targetPackage="io.chaldeaprjkt.gamespace"
             android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
     </Preference>
+
+    <!-- Display Cutout -->
+    <Preference
+        android:key="display_cutout_force_fullscreen_settings"
+        android:title="@string/display_cutout_force_fullscreen_title"
+        android:summary="@string/display_cutout_force_fullscreen_summary">
+        <intent android:action="android.intent.action.MAIN"
+             android:targetPackage="com.android.settings"
+             android:targetClass="com.spark.settings.fragments.DisplayCutoutForceFullscreenActivity"/>
+    </Preference>
+
+    <!-- Smart Pixels -->
+    <Preference
+        android:key="smart_pixels"
+        android:title="@string/smart_pixels_title" 
+        android:summary="@string/smart_pixels_summary" 
+        android:fragment="com.spark.settings.fragments.SmartPixels" />
+
+   </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="animations_category"
+        android:title="@string/animations_category">
+
+    <!-- Screen Off animation -->
+    <com.spark.settings.preferences.SystemSettingListPreference
+        android:key="screen_off_animation"
+        android:title="@string/screen_off_animation_title"
+        android:dialogTitle="@string/screen_off_animation_title"
+        android:entries="@array/screen_off_animation_entries"
+        android:entryValues="@array/screen_off_animation_values"
+        android:defaultValue="0" />
+
+   </PreferenceCategory>
 
     <PreferenceCategory
         android:key="light_brightness"

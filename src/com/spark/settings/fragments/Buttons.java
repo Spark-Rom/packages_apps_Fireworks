@@ -39,6 +39,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
 import com.spark.settings.fragments.ButtonBacklightBrightness;
+import com.spark.settings.preferences.SystemSettingSwitchPreference;
 import com.spark.settings.preferences.LineageSystemSettingSeekBarPreference;
 import com.spark.settings.utils.DeviceUtils;
 import com.spark.settings.utils.TelephonyUtils;
@@ -56,6 +57,7 @@ public class Buttons extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "Buttons";
 
+    private static final String ALERT_SLIDER_PREF = "alert_slider_notifications";
     private static final String HWKEYS_DISABLED = "hardware_keys_disable";
     private static final String KEY_SWAP_CAPACITIVE_KEYS = "swap_capacitive_keys";
     private static final String KEY_ANBI = "anbi_enabled";
@@ -106,6 +108,7 @@ public class Buttons extends SettingsPreferenceFragment implements
     private static final String CATEGORY_VOLUME = "volume_keys";
     private static final String CATEGORY_EXTRAS = "extras_category";
 
+    private SystemSettingSwitchPreference mAlertSlider;
     private SwitchPreference mHardwareKeysDisable;
     private SwitchPreference mSwapCapacitiveKeys;
     private SwitchPreference mAnbi;
@@ -413,6 +416,12 @@ public class Buttons extends SettingsPreferenceFragment implements
         if (extrasCategory.getPreferenceCount() == 0) {
             prefScreen.removePreference(extrasCategory);
         }
+
+        mAlertSlider = (SystemSettingSwitchPreference) prefScreen.findPreference(ALERT_SLIDER_PREF);
+        boolean mAlertSliderAvailable = res.getBoolean(
+                com.android.internal.R.bool.config_hasAlertSlider);
+        if (!mAlertSliderAvailable)
+            prefScreen.removePreference(mAlertSlider);
     }
 
     @Override
@@ -605,7 +614,7 @@ public class Buttons extends SettingsPreferenceFragment implements
                     List<String> keys = super.getNonIndexableKeys(context);
 
                     LineageHardwareManager mLineageHardware = LineageHardwareManager.getInstance(context);
-
+                    final Resources res = context.getResources();
                     final boolean hasHomeKey = DeviceUtils.hasHomeKey(context);
                     final boolean hasBackKey = DeviceUtils.hasBackKey(context);
                     final boolean hasMenuKey = DeviceUtils.hasMenuKey(context);
@@ -686,6 +695,11 @@ public class Buttons extends SettingsPreferenceFragment implements
                     }
 
                     keys.add(KEY_ADDITIONAL_BUTTONS);
+
+                   boolean mAlertSliderAvailable = res.getBoolean(
+                            com.android.internal.R.bool.config_hasAlertSlider);
+                    if (!mAlertSliderAvailable)
+                        keys.add(ALERT_SLIDER_PREF);
 
                     return keys;
                 }

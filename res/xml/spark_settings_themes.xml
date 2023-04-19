@@ -158,6 +158,51 @@
         android:summary="@string/qs_colored_icons_summary"
         android:defaultValue="false" />
 
+    <!-- Notification guts kill app button -->
+    <com.spark.settings.preferences.SystemSettingSwitchPreference
+        android:key="notification_guts_kill_app_button"
+        android:title="@string/notification_guts_kill_app_button_title"
+        android:summary="@string/notification_guts_kill_app_button_summary" />
+
+    <Preference
+        android:key="edge_light_settings"
+        android:title="@string/edge_light_title"
+        android:summary="@string/edge_light_summary"
+        android:fragment="com.spark.settings.fragments.EdgeLightSettings" />
+
+    <com.spark.settings.preferences.SecureSettingSwitchPreference
+        android:key="pulse_on_new_tracks"
+        android:title="@string/pulse_on_new_tracks_title"
+        android:summary="@string/pulse_on_new_tracks_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="heads_up"
+        android:title="@string/notification_heads_up_title">
+
+        <com.spark.settings.preferences.GlobalSettingSwitchPreference
+            android:key="heads_up_notifications_enabled"
+            android:title="@string/notification_heads_up_title"
+            android:summary="@string/notification_heads_up_summary"
+            android:defaultValue="true" />
+
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="less_boring_heads_up"
+            android:title="@string/less_boring_heads_up_title"
+            android:summary="@string/less_boring_heads_up_summary"
+            android:defaultValue="false"
+            android:dependency="heads_up_notifications_enabled" />
+
+        <com.spark.settings.preferences.SystemSettingSeekBarPreference
+            android:key="heads_up_timeout"
+            android:title="@string/notification_heads_up_timeout_title"
+            android:summary="@string/notification_heads_up_timeout_summary"
+            settings:units="@string/unit_seconds"
+            android:defaultValue="5"
+            settings:min="1"
+            android:max="10"
+            android:dependency="heads_up_notifications_enabled" />
     </PreferenceCategory>
 
 </PreferenceScreen>
