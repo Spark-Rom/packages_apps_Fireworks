@@ -46,7 +46,9 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     private static final String KEY_BRIGHTNESS_SLIDER_POSITION = "qs_brightness_slider_position";
     private static final String KEY_SHOW_AUTO_BRIGHTNESS = "qs_show_auto_brightness";
     private static final String HEADS_UP_TIMEOUT_PREF = "heads_up_timeout";
+    private static final String KEY_VOLUME_PANEL_LEFT = "volume_panel_on_left";
 
+    private SwitchPreference mVolumePanelLeft;
     private CustomSeekBarPreference mHeadsUpTimeOut;
     private ListPreference mShowBrightnessSlider;
     private ListPreference mBrightnessSliderPosition;
@@ -81,7 +83,28 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
         mHeadsUpTimeOut = (CustomSeekBarPreference)
                             prefScreen.findPreference(HEADS_UP_TIMEOUT_PREF);
         mHeadsUpTimeOut.setDefaultValue(getDefaultDecay(mContext));
+
+
+        boolean isAudioPanelOnLeft = LineageSettings.Secure.getIntForUser(resolver,
+                LineageSettings.Secure.VOLUME_PANEL_ON_LEFT, isAudioPanelOnLeftSide(getActivity()) ? 1 : 0,
+                UserHandle.USER_CURRENT) != 0;
+
+        mVolumePanelLeft = (SwitchPreference) prefScreen.findPreference(KEY_VOLUME_PANEL_LEFT);
+        mVolumePanelLeft.setChecked(isAudioPanelOnLeft);
+
     }
+
+    private static boolean isAudioPanelOnLeftSide(Context context) {
+        try {
+            Context con = context.createPackageContext("org.lineageos.lineagesettings", 0);
+            int id = con.getResources().getIdentifier("def_volume_panel_on_left",
+                    "bool", "org.lineageos.lineagesettings");
+            return con.getResources().getBoolean(id);
+        } catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
+    }
+
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
