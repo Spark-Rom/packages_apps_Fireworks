@@ -21,7 +21,7 @@ import androidx.preference.SwitchPreference;
 import android.provider.Settings;
 import com.android.settings.R;
 import lineageos.providers.LineageSettings;
-
+import com.spark.settings.preferences.CustomSeekBarPreference;
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
@@ -45,7 +45,9 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     private static final String KEY_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
     private static final String KEY_BRIGHTNESS_SLIDER_POSITION = "qs_brightness_slider_position";
     private static final String KEY_SHOW_AUTO_BRIGHTNESS = "qs_show_auto_brightness";
+    private static final String HEADS_UP_TIMEOUT_PREF = "heads_up_timeout";
 
+    private CustomSeekBarPreference mHeadsUpTimeOut;
     private ListPreference mShowBrightnessSlider;
     private ListPreference mBrightnessSliderPosition;
     private SwitchPreference mShowAutoBrightness;
@@ -75,6 +77,10 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
         } else {
             prefScreen.removePreference(mShowAutoBrightness);
         }
+
+        mHeadsUpTimeOut = (CustomSeekBarPreference)
+                            prefScreen.findPreference(HEADS_UP_TIMEOUT_PREF);
+        mHeadsUpTimeOut.setDefaultValue(getDefaultDecay(mContext));
     }
 
     @Override
@@ -88,6 +94,19 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
          }
          return false;
     }
+
+    private static int getDefaultDecay(Context context) {
+        int defaultHeadsUpTimeOut = 5;
+        Resources systemUiResources;
+        try {
+            systemUiResources = context.getPackageManager().getResourcesForApplication("com.android.systemui");
+            defaultHeadsUpTimeOut = systemUiResources.getInteger(systemUiResources.getIdentifier(
+                    "com.android.systemui:integer/heads_up_notification_decay", null, null)) / 1000;
+        } catch (Exception e) {
+        }
+        return defaultHeadsUpTimeOut;
+    }
+
 
     @Override
     public int getMetricsCategory() {

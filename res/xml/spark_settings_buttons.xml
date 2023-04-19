@@ -22,6 +22,12 @@
         android:key="extras_category"
         android:title="@string/extras_title" >
 
+    <com.spark.settings.preferences.SystemSettingSwitchPreference
+        android:key="alert_slider_notifications"
+        android:title="@string/alert_slider_notifications_title"
+        android:summary="@string/alert_slider_notifications_summary"
+        android:defaultValue="true" />
+
         <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="hardware_keys_disable"
             android:title="@string/hwkeys_disabled_title"
