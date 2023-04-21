@@ -48,6 +48,14 @@
         android:summary="@string/smart_pixels_summary" 
         android:fragment="com.spark.settings.fragments.SmartPixels" />
 
+    <!-- Sensor block per package -->
+    <Preference
+        android:key="sensor_block_settings"
+        android:title="@string/sensor_block_title"
+        android:summary="@string/sensor_block_summary"
+        android:fragment="com.spark.settings.fragments.SensorBlock"/>
+
+
    </PreferenceCategory>
 
     <PreferenceCategory
