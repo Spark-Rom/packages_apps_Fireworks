@@ -19,6 +19,13 @@
         android:key="theme_customization_category"
         android:title="@string/theme_customization_category">
 
+    <!-- Monet Theme Engine -->
+    <Preference
+        android:key="monet_engine"
+        android:title="@string/monet_title"
+        android:summary="@string/monet_summary"
+        android:fragment="com.spark.settings.fragments.MonetSettings" />
+
     <!-- Navbar Style -->
     <Preference
         android:key="android.theme.customization.navbar"
