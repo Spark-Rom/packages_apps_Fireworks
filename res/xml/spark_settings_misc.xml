@@ -31,6 +31,13 @@
             android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
     </Preference>
 
+    <!-- System Manager Services -->
+    <Preference
+        android:key="system_manager_settings"
+        android:title="@string/system_manager_services_title"
+        android:summary="@string/system_manager_services_summary"
+        android:fragment="com.spark.settings.fragments.SystemManagerSettings"/> 
+
     <!-- Display Cutout -->
     <Preference
         android:key="display_cutout_force_fullscreen_settings"
