@@ -66,6 +66,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mShowFourg;
     private SwitchPreference mDataDisabled;
     private SwitchPreference mOldMobileType;
+    private Preference mCombinedSignalIcons;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -129,6 +130,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                     mConfigUseOldMobileType ? 1 : 0, UserHandle.USER_CURRENT) != 0;
             mOldMobileType.setChecked(showing);
         }
+        mCombinedSignalIcons = findPreference("persist.sys.flags.combined_signal_icons");
+        mCombinedSignalIcons.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -148,6 +151,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                     Settings.System.STATUS_BAR_BATTERY_STYLE, BATTERY_STYLE_PORTRAIT, UserHandle.USER_CURRENT);
             mBatteryTextCharging.setEnabled(batterystyle == BATTERY_STYLE_HIDDEN ||
                     (batterystyle != BATTERY_STYLE_TEXT && value != 2));
+            return true;
+         } else if (preference == mCombinedSignalIcons) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putIntForUser(getContentResolver(),
+                Settings.Secure.ENABLE_COMBINED_SIGNAL_ICONS, value ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
         }
         return false;
