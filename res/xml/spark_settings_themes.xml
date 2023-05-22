@@ -93,6 +93,12 @@
             android:max="74"
             android:min="0" />
 
+        <com.spark.settings.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.flags.combined_qs_headers"
+            android:title="@string/combined_qs_headers_title"
+            android:summary="@string/combined_qs_headers_summary" 
+            android:defaultValue="true"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory 

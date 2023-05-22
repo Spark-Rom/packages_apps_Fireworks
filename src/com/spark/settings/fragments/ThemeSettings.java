@@ -80,12 +80,13 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     private Preference mSettingsMessage;
     private SystemSettingEditTextPreference mSettingsHeaderText;
     private SystemSettingSwitchPreference mSettingsHeaderTextEnabled;
-
+    private Preference mCombinedQsHeaders;
     private SwitchPreference mVolumePanelLeft;
     private CustomSeekBarPreference mHeadsUpTimeOut;
     private ListPreference mShowBrightnessSlider;
     private ListPreference mBrightnessSliderPosition;
     private SwitchPreference mShowAutoBrightness;
+
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -146,6 +147,9 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
         mSettingsHeaderText.setOnPreferenceChangeListener(this);
         mSettingsHeaderTextEnabled = (SystemSettingSwitchPreference) findPreference(SETTINGS_HEADER_TEXT_ENABLED);
         mSettingsHeaderTextEnabled.setOnPreferenceChangeListener(this);
+
+        mCombinedQsHeaders = findPreference("persist.sys.flags.combined_qs_headers");
+        mCombinedQsHeaders.setOnPreferenceChangeListener(this);
     }
 
     private static boolean isAudioPanelOnLeftSide(Context context) {
@@ -198,6 +202,11 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
             String value = (String) newValue;
             SystemProperties.set("persist.sys.settings.header_text", value);
             SparkUtils.showSettingsRestartDialog(getContext());
+            return true;
+        } else if (preference == mCombinedQsHeaders) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putIntForUser(getContentResolver(),
+                Settings.Secure.ENABLE_COMBINED_QS_HEADERS, value ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
          }
          return false;
