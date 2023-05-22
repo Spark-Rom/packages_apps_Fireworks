@@ -8,9 +8,43 @@
     <string name="cancel">റദ്ദാക്കുക</string>
     <string name="confirm">സ്ഥിരീകരിക്കുന്നു</string>
     <string name="unit_ms">ms</string>
+    <string name="delete">ഡിലീറ്റ്</string>
+    <string name="enable">Enable</string>
+    <string name="delete_message">Remove selected item?</string>
+    <string name="choose_app">Choose app</string>
+    <string name="reset">Reset</string>
+    <string name="never">Never</string>
+    <string name="accent_color">Accent color (Default)</string>
+    <string name="notification_color">Notification color</string>
+    <string name="wallpaper_color">Wallpaper color</string>
+    <string name="custom_color">Custom color</string>
+    <!-- Units -->
+    <string name="unit_seconds">seconds</string>
+    <string name="unit_milliseconds">milliseconds</string>
+    <string name="unit_pixels">dp</string>
+    <string name="unit_hz">hz</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">വെടിക്കെട്ട്</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">by default</string>
+    <string name="custom_seekbar_default_value_to_set">Default value: <xliff:g id="v">%s</xliff:g>\nLong tap to set</string>
+    <string name="custom_seekbar_default_value_is_set">Default value is set</string>
     <!-- Categories -->
     <string name="themes_title">തീമുകൾ</string>
+    <string name="buttons_category">Buttons</string>
     <string name="qs_themes">Qs ക്രമീകരണങ്ങൾ</string>
+    <string name="sb_gestures_title">Gestures for StatusBar</string>
+    <string name="qs_footer_category">Qs അടിക്കുറിപ്പ് ഇഷ്ടാനുസൃതമാക്കൽ</string>
+    <string name="ls_gestures_title">Gestures for LockScreen</string>
+    <string name="lock_screen_custom_clock_face_category">ലോക്ക്സ്ക്രീൻ ക്ലോക്ക്</string>
+    <string name="qs_styling">ദ്രുത ക്രമീകരണങ്ങൾ സ്റ്റൈലിംഗ്</string>
+    <string name="weather_category">കാലാവസ്ഥ ക്രമീകരണങ്ങൾ</string>
     <string name="spoof_title">കബളിപ്പിക്കൽ</string>
     <string name="gestures_title">ആംഗ്യങ്ങൾ</string>
     <string name="aosp_setting_title">സിസ്റ്റം ക്രമീകരണങ്ങള്‍</string>
@@ -18,14 +52,15 @@
     <string name="misc_title">പലവക</string>
     <string name="powermenu_title">പവർ മെനു</string>
     <string name="statusbar_title">സ്റ്റാറ്റസ് ബാർ</string>
-    <string name="buttons_title">ബട്ടണുകള്‍</string>
+    <string name="statusbar_indicators">Status bar Indicators</string>
     <string name="statusbar_items_category">സ്റ്റാറ്റസ് ബാർ ഇനങ്ങൾ</string>
+    <string name="status_bar_battery_category_title">സ്റ്റാറ്റസ്ബാർ ബാറ്ററി കസ്റ്റമൈസേഷനുകൾ</string>
     <string name="fingerprint_category">ഫിംഗർപ്രിന്റ്</string>
     <string name="animations_category">ആനിമേഷനുകൾ</string>
     <string name="charging_category">Ls ചാർജിംഗ് കോൺഫിഗറേഷനുകൾ</string>
-    <string name="notifications_category">അറിയിപ്പ് ക്രമീകരണങ്ങൾ</string>
+    <string name="notification_category">Notification Settings</string>
     <string name="screenshot_category">സ്ക്രീൻഷോട്ട് ക്രമീകരണങ്ങൾ</string>
-    <string name="statusbar_clock_category_title">സ്റ്റാറ്റസ് ബാർ ക്ലോക്ക്</string>
+    <string name="status_bar_icons_category_title">ഐക്കണുകൾ</string>
     <string name="powermenu_items_title">പവർ മെനു ഇനങ്ങൾ</string>
     <string name="monet_category">മോനെറ്റ് ക്രമീകരണങ്ങൾ</string>
     <string name="pulse_category">പൾസ്</string>
@@ -34,6 +69,8 @@
     <string name="flashlight_category">ഫ്ലാഷ്‌ലൈറ്റ്</string>
     <string name="qs_category">Qs ഇഷ്ടാനുസൃതമാക്കലുകൾ</string>
     <string name="battery_category">ഊർജ്ജ സംരക്ഷണ കോൺഫിഗറേഷനുകൾ</string>
+    <string name="brightness_slider_category">Brightness Slider Customizations</string>
+    <string name="lockscreen_interface_category">LockScreen Interface</string>
     <!-- Color picker -->
     <string name="rgb">RGB</string>
     <string name="hsl">HSL</string>
@@ -42,144 +79,229 @@
     <!-- AdBlock -->
     <string name="hosts_block_title">പരസ്യ ബ്ലോക്ക്</string>
     <string name="hosts_block_summary">പരിഷ്കരിച്ച ഹോസ്റ്റ് ഫയൽ ഉപയോഗിച്ച് പരസ്യങ്ങൾ തടയുക. തേർഡ് പാർട്ടി സൊല്യൂഷനുകൾ ഉപയോഗിക്കാൻ അല്ലെങ്കിൽ ആപ്പുകൾ പ്രശ്‌നങ്ങൾ ഉണ്ടാക്കുകയാണെങ്കിൽ ഓഫാക്കുക.</string>
-    <!-- Battery light -->
-    <string name="light_settings_header">പ്രകാശ ക്രമീകരണങ്ങള്‍</string>
-    <string name="battery_light_settings">ബാറ്ററി വെളിച്ചം</string>
+    <!-- Power menu -->
+    <string name="power_menu_title">പവർ മെനു</string>
+    <string name="power_menu_summary">പവർ മെനു ഓപ്ഷനുകൾ ഇഷ്ടാനുസൃതമാക്കുക</string>
+    <string name="power_menu_actions_title">പ്രവർത്തനങ്ങൾ</string>
+    <string name="power_menu_screenshot_title">സ്ക്രീൻഷോട്ട്</string>
+    <string name="power_menu_screenshot_summary">ഭാഗിക സ്ക്രീൻഷോട്ടിനായി അൽപനേരം അമർത്തുക</string>
+    <string name="power_menu_onthego_title">ഓണ്‍-ദി-ഗോ മോഡ്</string>
+    <string name="power_menu_advanced_title">വിപുലമായ റീബൂട്ട് ഓപ്ഷനുകൾ</string>
+    <string name="power_menu_airplane_title">ഫ്ലൈറ്റ് മോഡ്</string>
+    <string name="power_menu_torch_title">ഫ്ലാഷ്‌ലൈറ്റ്</string>
+    <string name="power_menu_settings_title">ക്രമീകരണങ്ങള്‍</string>
+    <string name="power_menu_lockdown_title">ലോക്ക്ഡൌൺ</string>
+    <string name="power_menu_lockdown_unavailable">ലോക്ക്ഡൗൺ പ്രാപ്തമല്ല കാരണം ഫോൺ ലോക്ക് സുരക്ഷിതമല്ല</string>
+    <string name="power_menu_soundpanel_title">സൗണ്ട് പാനൽ</string>
+    <string name="power_menu_users_title">ഉപയോക്താക്കൾ</string>
+    <string name="power_menu_logout_title">ലോഗൗട്ട്</string>
+    <string name="power_menu_emergency_title">എമർജൻസി</string>
+    <string name="power_menu_devicecontrols_title">ഉപകരണ നിയന്ത്രണങ്ങൾ</string>
+    <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">വിപുലമായ റീസ്റ്റാർട്ട്</string>
+    <string name="advanced_reboot_summary">ഫോൺ ലോക്ക് അല്ല എങ്കിൽ, പവർ മെനുവിൽ recovery- യിലേക്കും, bootloader - ലേക്കും പോകുവാനുള്ള ഓപ്ഷൻസ്‌ കാണിക്കുക</string>
+    <string name="advanced_reboot_secured_title">Secured lockscreen</string>
+    <string name="advanced_reboot_secured_summary">Display advanced restart options on secured lockscreen</string>
+    <!-- Media art -->
+    <string name="media_art_title">മാധ്യമ കവർ ആർട്ട്</string>
+    <string name="media_art_summary">ലഭ്യമാകുമ്പോൾ മീഡിയ കവർ ആർട്ട് പ്രദർശിപ്പിക്കുക</string>
+    <!-- Lockscreen album art filter -->
+    <string name="lockscreen_albumart_filter_title">മീഡിയ കവർ ആർട്ട് ഫിൽട്ടർ</string>
+    <string name="lockscreen_albumart_filter_none">None</string>
+    <string name="lockscreen_albumart_filter_grayscale">ഗ്രേസ്കെയിൽ</string>
+    <string name="lockscreen_albumart_filter_tint">ആക്സന്റ് ചായം പൂശി</string>
+    <string name="lockscreen_albumart_filter_blur">മങ്ങിക്കുക</string>
+    <string name="lockscreen_albumart_filter_grayblur">ഗ്രേസ്കെയിലും, മങ്ങിയതും</string>
+    <!-- Media artwork -->
+    <string name="artwork_media_background_enable_blur_title">മീഡിയ അറിയിപ്പ് കലാസൃഷ്ടി പശ്ചാത്തലം മങ്ങിക്കുക</string>
+    <string name="artwork_media_background_blur_radius_title">മീഡിയ നോട്ടിഫിക്കേഷൻ ആർട്ട്‌വർക്കിനുള്ള മങ്ങിക്കൽ</string>
+    <string name="media_artwork_fade_percent_title">Fade percent for media notification artwork</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">ലോക്ക്‌സ്‌ക്രീൻ മീഡിയ ആർട്ട്‌വർക്കിനുള്ള തുക മങ്ങിക്കുക</string>
+    <string name="ls_media_artwork_fade_percent_title">Fade amount for lockscreen media artwork</string>
+    <!-- Notification channels -->
+    <string name="channel_light_settings_name">Light settings preview</string>
+    <!-- Notification light dialogs -->
+    <string name="edit_light_settings">Edit light settings</string>
+    <string name="pulse_speed_title">Pulse length and speed</string>
+    <string name="default_time">സാധാരണ</string>
+    <string name="custom_time">കസ്റ്റം</string>
+    <string name="brightness">Brightness level</string>
+    <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_always_on">Always on</string>
+    <string name="pulse_length_very_short">Very short</string>
+    <string name="pulse_length_short">Short</string>
+    <string name="pulse_length_normal">സാധാരണ</string>
+    <string name="pulse_length_long">Long</string>
+    <string name="pulse_length_very_long">Very long</string>
+    <string name="pulse_speed_very_fast">Very fast</string>
+    <string name="pulse_speed_fast">Fast</string>
+    <string name="pulse_speed_normal">സാധാരണ</string>
+    <string name="pulse_speed_slow">Slow</string>
+    <string name="pulse_speed_very_slow">Very slow</string>
+    <!-- Common light settings strings -->
+    <string name="light_brightness_title">Brightness levels</string>
+    <string name="light_brightness_normal">സാധാരണ</string>
+    <string name="light_brightness_zen">Do Not Disturb</string>
+    <!-- Battery light settings -->
+    <string name="light_brightness_category">Light brightness settings</string>
+    <string name="battery_light_title">Battery light</string>
+    <string name="battery_light_enable_title">Enable battery light</string>
     <string name="battery_light_summary">DND, കുറഞ്ഞ ബാറ്ററി ഉള്ളപ്പോൾ ബാറ്ററി ലൈറ്റ് പ്രവർത്തനക്ഷമമാക്കുക അല്ലെങ്കിൽ പ്രവർത്തനരഹിതമാക്കുക</string>
-    <string name="battery_light_enable">ബാറ്ററി വെളിച്ചം</string>
-    <string name="battery_full_light_enabled">പൂർണ്ണമായി ചാർജ്ജായാൽ ബാറ്ററി ലൈറ്റ്</string>
-    <string name="battery_light_allow_on_dnd_title">ശല്യപ്പെടുത്തരുത് മോഡിൽ ലൈറ്റുകൾ</string>
-    <string name="battery_light_low_blinking_title">ബാറ്ററി കുറവാണെങ്കിൽ മിന്നുക</string>
-    <string name="battery_light_cat">ചാർജ്ജ് ചെയ്യുമ്പോൾ ബാറ്ററി വെളിച്ചത്തിന്റെ നിറം</string>
-    <string name="battery_light_low_color">ബാറ്ററി കുറവാണ്</string>
-    <string name="battery_light_medium_color">ചാർജ്ജുചെയ്യുന്നു</string>
-    <string name="battery_light_full_color">ഏകദേശം ചാർജായി</string>
-    <string name="battery_light_reallyfull_color">ചാർജ് ചെയ്തു</string>
-    <!-- Notification light -->
-    <string name="notification_light_settings">നോട്ടിഫിക്കേഷൻ ലൈറ്റ്</string>
-    <!-- Unlimited g00gle ph0t0s st0rage -->
-    <string name="use_photos_spoof_title">അൺലിമിറ്റഡ് ഫോട്ടോസ് സ്‌റ്റോറേജ്</string>
-    <string name="use_photos_spoof_summary">ബാക്കപ്പിനായി അൺലിമിറ്റഡ് സ്‌റ്റോറേജ് നൽകാൻ മാത്രം Google ഫോട്ടോസ് ആപ്പിനായി നിങ്ങളുടെ ഉപകരണം Pixel XL ആയി കബളിപ്പിക്കുക</string>
-    <!-- Unlock FPS for specific games -->
-    <string name="use_games_spoof_title">ഗെയിമുകളിൽ ഉയർന്ന FPS അൺലോക്ക് ചെയ്യുക</string>
-    <string name="use_games_spoof_summary">ഉയർന്ന എഫ്പിഎസ് അൺലോക്ക് ചെയ്യുന്നതിന് നിർദ്ദിഷ്‌ട ഗെയിമുകൾക്കായി നിങ്ങളുടെ ഉപകരണം മറ്റൊരു മോഡലായി കബളിപ്പിക്കുക</string>
-    <!-- Alert Slider Notifications (OnePlus devices) -->
-    <string name="alert_slider_notifications_title">അലേർട്ട് സ്ലൈഡർ അറിയിപ്പുകൾ</string>
-    <string name="alert_slider_notifications_summary">അലേർട്ട് സ്ലൈഡർ സ്ഥാനം മാറ്റുമ്പോൾ അറിയിപ്പ് പ്രദർശിപ്പിക്കുക</string>
-    <!-- Heads up -->
-    <string name="headsup_category">ഹെഡ് അപ്പ് ക്രമീകരണങ്ങൾ</string>
-    <string name="heads_up_notifications">ഹെഡ്സ് അപ്പ്</string>
-    <string name="heads_up_notifications_summary">പോപ്പ് അപ്പ് സ്റ്റാറ്റസ് ബാർ അറിയിപ്പുകൾ</string>
-    <string name="summary_heads_up_enabled">പോപ്പ്-അപ്പ് അറിയിപ്പുകൾ പ്രവർത്തനക്ഷമമാക്കി</string>
-    <string name="summary_heads_up_disabled">പോപ്പ്-അപ്പ് അറിയിപ്പുകൾ പ്രവർത്തനരഹിതമാക്കി</string>
-    <string name="less_boring_heads_up_title">Less boring heads up</string>
-    <string name="less_boring_heads_up_summary">ഡയലർ, സന്ദേശമയയ്‌ക്കൽ, അലാറം ആപ്പ് എന്നിവയ്‌ക്കായി മാത്രം ഹെഡ്‌അപ്പ് കാണിക്കുക</string>
-    <!-- Torch Power button gestures -->
-    <string name="torch_power_button_gesture_title">സ്‌ക്രീൻ ഓഫായിരിക്കുമ്പോൾ ടോർച്ച് ടോഗിൾ ചെയ്യുക</string>
-    <string name="torch_power_button_gesture_none">അപ്രാപ്‌തമാക്കി</string>
-    <string name="torch_power_button_gesture_dt">പവർ ബട്ടൺ ഡബിൾ ടാപ്പ് ചെയ്യുക (മന്ദഗതിയിലുള്ള ഒറ്റ ടാപ്പ് പ്രതികരണം), ക്യാമറയ്ക്കുള്ള ഇരട്ട പവർ ടാപ്പ് പ്രവർത്തനരഹിതമാക്കുന്നു.</string>
-    <string name="torch_power_button_gesture_dt_toast">ക്യാമറ ആംഗ്യത്തിലേക്ക് പോകുക എന്നത് ഇപ്പോൾ പ്രവർത്തനരഹിതമാണ്</string>
-    <string name="torch_power_button_gesture_lp">പവർ ബട്ടൺ ദീർഘനേരം അമർത്തുക</string>
-    <!-- Long press power for torch -->
+    <string name="battery_low_pulse_title">Pulse if battery low</string>
+    <string name="battery_light_full_charge_disabled_title">Turn off when fully charged</string>
+    <string name="battery_light_list_title">Colors</string>
+    <string name="battery_light_low_color_title">Battery low</string>
+    <string name="battery_light_medium_color_title">Charging</string>
+    <string name="battery_light_full_color_title">Nearly Charged (&gt;90%)</string>
+    <string name="battery_light_really_full_color_title">Fully Charged (100%)</string>
+    <!-- Lights settings screen, notification light settings -->
+    <string name="notification_light_title">Notification light</string>
+    <string name="notification_light_enable_title">Enable notification light</string>
+    <string name="notification_light_summary">Configure led color for notifications</string>
+    <string name="notification_light_general_title">പൊതുവായ</string>
+    <string name="notification_light_advanced_title">Advanced</string>
+    <string name="notification_light_applist_title">Apps</string>
+    <string name="notification_light_phonelist_title">Phone</string>
+    <string name="notification_light_use_custom">Use custom values</string>
+    <string name="notification_light_default_value">വെടിക്കെട്ട്</string>
+    <string name="notification_light_missed_call_title">Missed call</string>
+    <string name="notification_light_voicemail_title">Voicemail</string>
+    <string name="notification_light_screen_on">Lights with screen on</string>
+    <string name="notification_light_zen_mode">Lights in Do Not Disturb mode</string>
+    <string name="notification_light_automagic">Choose colors automatically</string>
+    <string name="notification_light_automagic_summary">Choosing colors automatically</string>
+    <string name="notification_light_override">Override all apps</string>
+    <!-- Lights settings, LED notification -->
+    <string name="led_notification_title">Light settings</string>
+    <string name="led_notification_text">LED light enabled by settings</string>
+    <string name="notification_light_add_apps_empty_summary">To add per app control, activate \'%1$s\' and press \'Add\'</string>
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_show_brightness_slider_title">ബ്രൈറ്റ്‌നസ്സ് സ്ലൈഡർ</string>
+    <string name="qs_show_brightness_slider_never">ഒരിക്കലും കാണിക്കരുത്</string>
+    <string name="qs_show_brightness_slider_expanded">വികസിപ്പിക്കുമ്പോൾ കാണിക്കുക</string>
+    <string name="qs_show_brightness_slider_always">എല്ലായ്പ്പോഴും കാണിക്കുക</string>
+    <string name="qs_show_brightness_slider_not_expanded">വിപുലീകരിക്കാത്തപ്പോൾ കാണിക്കുക</string>
+    <string name="qs_brightness_slider_position_title">സ്ഥാനം</string>
+    <string name="qs_brightness_slider_position_top">മുകളില്‍</string>
+    <string name="qs_brightness_slider_position_bottom">താഴെ</string>
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">യാന്ത്രിക തെളിച്ചം ഐക്കൺ</string>
+    <string name="qs_show_auto_brightness_summary">സ്ലൈഡറിന് സമീപം അഡാപ്റ്റീവ് തെളിച്ചത്തിനായി ടോഗിൾ കാണിക്കുക</string>
+    <!-- Button settings -->
+    <string name="extras_title">Extras</string>
+    <string name="additional_buttons_title">Additional buttons</string>
+    <string name="hardware_keys_power_key_title">Power button</string>
+    <string name="hardware_keys_home_key_title">ഹോം ബട്ടൺ</string>
+    <string name="hardware_keys_back_key_title">ബാക്ക് ബട്ടൺ</string>
+    <string name="hardware_keys_menu_key_title">മെനു ബട്ടൺ</string>
+    <string name="hardware_keys_assist_key_title">സെർച്ച് ബട്ടൺ</string>
+    <string name="hardware_keys_appswitch_key_title">റീസന്റ് ബട്ടൺ</string>
+    <string name="buttons_title">ബട്ടണുകള്‍</string>
+    <string name="buttons_summary">Power,volume keys and more </string>
+    <string name="hardware_keys_camera_key_title">ക്യാമറ ബട്ടൺ</string>
+    <string name="hardware_keys_volume_keys_title">Volume buttons</string>
+    <string name="hardware_keys_short_press_title">ഹ്രസ്വ അമർത്തല്‍ നടപടി</string>
+    <string name="hardware_keys_long_press_title">ദീര്‍ഘ അമർത്തല്‍ നടപടി</string>
+    <string name="hardware_keys_double_tap_title">ഇരട്ട അമർത്തല്‍ നടപടി</string>
+    <string name="hardware_keys_action_nothing">നോ ആക്ഷൻ</string>
+    <string name="hardware_keys_action_menu">തുറക്കൽ/അടയ്ക്കൽ മെനു</string>
+    <string name="hardware_keys_action_app_switch">റീസെന്റ് ആപ്പ് സ്വിച്ചർ</string>
+    <string name="hardware_keys_action_search">സെർച്ച് അസിസ്റ്റന്റ്</string>
+    <string name="hardware_keys_action_voice_search">ശബ്‌ദം ഉപയോഗിച്ചുള്ള തിരയൽ</string>
+    <string name="hardware_keys_action_in_app_search">ഇൻ-ആപ്പ് തിരയൽ</string>
+    <string name="hardware_keys_action_launch_camera">ക്യാമറ തുറക്കുക</string>
+    <string name="hardware_keys_action_sleep">സ്ക്രീൻ ഓഫ് ചെയ്യുക</string>
+    <string name="hardware_keys_action_last_app">Last app</string>
+    <string name="hardware_keys_action_split_screen">Split Screen</string>
+    <string name="hardware_keys_action_close_app">ആപ്പ് നശിപ്പിക്കുക</string>
+    <string name="hardware_keys_action_torch">ടോർച്ച്</string>
+    <string name="hardware_keys_action_screenshot">Screenshot</string>
+    <string name="hardware_keys_action_volume_panel">വോളിയം പാനൽ ടോഗിൾ ചെയ്യുക</string>
+    <string name="hardware_keys_action_clear_all_notifications">എല്ലാ അറിയിപ്പുകളും മായ്ക്കുക</string>
+    <string name="hardware_keys_action_notifications_panel">അറിയിപ്പ് പാനൽ ടോഗിൾ ചെയ്യുക</string>
+    <string name="hardware_keys_action_expand_qs_panel">Expand QS panel</string>
+    <string name="hardware_keys_action_ringer_modes">റിംഗർ മോഡുകൾ</string>
+    <string name="home_answer_call_title">Answer call</string>
+    <string name="home_answer_call_summary">Answer incoming calls by pressing the home button</string>
+    <string name="camera_sleep_on_release_title">സ്‌ക്രീൻ പീക്ക്</string>
+    <string name="camera_sleep_on_release_summary">ബട്ടൺ അമർത്തിപ്പിടിച്ചിരിക്കുമ്പോൾ മാത്രം പകുതി അമർത്തിയാൽ സ്‌ക്രീൻ ഓണാക്കും</string>
+    <string name="camera_launch_title">ക്യാമറ തുറക്കുക</string>
+    <string name="camera_launch_summary">നീണ്ട നേരം അമര്‍ത്തി സ്വതന്ത്രമാക്കുന്നതിലൂടെ ക്യാമറ ആരംഭിക്കുന്നതാണ്</string>
     <string name="torch_long_press_power_gesture_title">ടോർച്ച് പ്രവർത്തിപ്പിക്കാൻ നീണ്ട പ്രസ്സ് ചെയ്യുക</string>
     <string name="torch_long_press_power_gesture_desc">ഡിസ്‌പ്ലേ ഓഫായിരിക്കുമ്പോൾ പവർ ബട്ടൺ ദീർഘനേരം അമർത്തി ടോർച്ച് സജീവമാക്കുക</string>
     <string name="torch_long_press_power_timeout_title">ടോർച്ച് തനിയെ അണയ്ക്കുക</string>
-    <string name="torch_long_press_power_timeout_never">വേണ്ട</string>
-    <string name="torch_long_press_power_timeout_1min">1 മിനിറ്റ്</string>
-    <string name="torch_long_press_power_timeout_2min">2 മിനിറ്റ്</string>
-    <string name="torch_long_press_power_timeout_5min">5 മിനിറ്റ്</string>
-    <string name="torch_long_press_power_timeout_10min">10 മിനിറ്റ്</string>
-    <string name="aosp_gesture_summary">Android-ൽ ഉൾപ്പെടുത്തിയിരിക്കുന്ന സ്റ്റോക്ക് ആംഗ്യങ്ങൾ</string>
-    <!-- Double Tap Lock screen to Sleep -->
-    <string name="double_tap_to_sleep_lockscreen_title">ലോക്ക് സ്ക്രീനിൽ ടാപ്പ് ചെയ്യുക</string>
-    <string name="double_tap_to_sleep_lockscreen_summary">ഉപകരണം ഉറങ്ങാൻ ലോക്ക് സ്ക്രീനിന്റെ മുകളിലെ മൂന്നാമത്തെയോ താഴെയോ ഉള്ള കുറുക്കുവഴി ഏരിയയിൽ രണ്ടുതവണ ടാപ്പ് ചെയ്യുക</string>
-    <!-- Double tap status bar to sleep -->
-    <string name="double_tap_to_sleep_title">സ്റ്റാറ്റസ് ബാറിൽ ടാപ്പ് ചെയ്യുക</string>
-    <string name="double_tap_to_sleep_summary">സ്‌ക്രീൻ ഓഫ് ചെയ്യാൻ സ്റ്റാറ്റസ് ബാറിൽ രണ്ടുതവണ ടാപ്പ് ചെയ്യുക</string>
-    <!-- Double Tap on Doze to wake -->
-    <string name="double_tap_on_doze_to_wake_title">ഉറക്കത്തിൽ ഉണർത്താൻ ടാപ്പ് ചെയ്യുക</string>
-    <string name="double_tap_on_doze_to_wake_summary">ഉപകരണം സ്വപ്നം കാണുമ്പോൾ ഉണർത്താൻ രണ്ടുതവണ ടാപ്പ് ചെയ്യുക</string>
-    <!-- Volume buttons category -->
-    <string name="volume_category">ശബ്ദ ബട്ടൺ</string>
-    <string name="volume_rocker_wake_title">വോളിയം റോക്കർ വേക്ക്</string>
-    <string name="volume_rocker_wake_summary">നിങ്ങളുടെ ഉപകരണം ഉണർത്താൻ വോളിയം കീകൾ അമർത്തുക</string>
-    <!-- Launch music player when headset is connected -->
-    <string name="headset_connect_player_title">ഹെഡ്‌സെറ്റ് കണക്ഷനിൽ സംഗീത ആപ്പ് സമാരംഭിക്കുക</string>
-    <string name="headset_connect_player_summary">ഹെഡ്‌സെറ്റ് കണക്റ്റ് ചെയ്യുമ്പോൾ ഡിഫോൾട്ട് മ്യൂസിക് ആപ്പ് ലോഞ്ച് ചെയ്യുക</string>
-    <!-- Statusbar categories -->
-    <string name="status_bar_icons_category_title">ഐക്കണുകൾ</string>
-    <!-- VoLTE icon -->
-    <string name="volte_icon_title">VoLTE ഐക്കൺ</string>
-    <string name="volte_icon_summary">ലഭ്യമാകുമ്പോൾ VoLTE ഐക്കൺ പ്രദർശിപ്പിക്കുക</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">റോമിംഗ് സൂചകം</string>
-    <string name="roaming_indicator_icon_summary">റോമിംഗ് മോഡിലായിരിക്കുമ്പോൾ സിഗ്നൽ ഐക്കണിൽ റോമിംഗ് ഇൻഡിക്കേറ്റർ പ്രദർശിപ്പിക്കുക</string>
-    <!-- 4G icon -->
-    <string name="show_fourg_icon_title">4G ഐക്കൺ</string>
-    <string name="show_fourg_icon_summary">സ്റ്റാറ്റസ് ബാറിൽ LTE എന്നതിനുപകരം 4G ഐക്കൺ പ്രദർശിപ്പിക്കുക</string>
-    <!-- Data disabled indicator -->
-    <string name="data_disabled_icon_title">ഡാറ്റ പ്രവർത്തനരഹിതമാക്കിയ സൂചകം</string>
-    <string name="data_disabled_icon_summary">ഡാറ്റ പ്രവർത്തനരഹിതമാകുമ്പോൾ സിഗ്നൽ ഐക്കണിന് അടുത്തായി ഒരു സൂചകം പ്രദർശിപ്പിക്കുക</string>
-    <!-- VoWiFi icon -->
-    <string name="vowifi_icon_title">VoWiFi ഐക്കൺ</string>
-    <string name="vowifi_icon_summary">ലഭ്യമാകുമ്പോൾ VoWiFi ഐക്കൺ പ്രദർശിപ്പിക്കുക</string>
-    <string name="volte_vowifi_override_title">VoWiFi അസാധുവാക്കുക</string>
-    <string name="volte_vowifi_override_summary">VoWiFi ലഭ്യമാകുമ്പോൾ VoLTE മറയ്ക്കുക</string>
-    <!-- Power menu -->
-    <string name="power_menu_title">പവർ മെനു</string>
-    <string name="power_menu_summary">Customize power menu options</string>
-    <string name="power_menu_actions_title">Actions</string>
-    <string name="power_menu_screenshot_title">Screenshot</string>
-    <string name="power_menu_screenshot_summary">Long-press for partial screenshot</string>
-    <string name="power_menu_onthego_title">On-The-Go mode</string>
-    <string name="power_menu_advanced_title">Advanced reboot options</string>
-    <string name="power_menu_airplane_title">Airplane</string>
-    <string name="power_menu_torch_title">ഫ്ലാഷ്‌ലൈറ്റ്</string>
-    <string name="power_menu_settings_title">Settings</string>
-    <string name="power_menu_lockdown_title">Lockdown</string>
-    <string name="power_menu_lockdown_unavailable">Lockdown is disabled as keyguard isn\'t secure</string>
-    <string name="power_menu_soundpanel_title">Sound panel</string>
-    <string name="power_menu_users_title">Users</string>
-    <string name="power_menu_logout_title">Logout</string>
-    <string name="power_menu_emergency_title">Emergency</string>
-    <string name="power_menu_devicecontrols_title">Device controls</string>
-    <string name="power_menu_restart_systemui_title">Restart SystemUI</string>
-    <!-- Advanced restart options -->
-    <string name="advanced_reboot_title">Advanced restart</string>
-    <string name="advanced_reboot_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
-    <!-- Power menu on lockscreen -->
-    <string name="lockscreen_power_menu_disabled_title">ലോക്ക് സ്ക്രീനിൽ പവർ മെനു പ്രവർത്തനരഹിതമാക്കുക</string>
-    <string name="lockscreen_power_menu_disabled_summary">ഇത് സുരക്ഷിത ലോക്ക് സ്‌ക്രീനുകളിലെ പവർ മെനു മാത്രമേ പ്രവർത്തനരഹിതമാക്കൂ</string>
-    <!-- QS advanced settings -->
-    <string name="status_bar_quick_qs_pulldown">ദ്രുത QS പിൻവലിക്കൽ</string>
-    <string name="quick_pulldown_none">അപ്രാപ്‌തമാക്കി</string>
-    <string name="quick_pulldown_right">വലതുവശത്ത് നിന്ന് സ്റ്റാറ്റസ് ബാർ പിൻവലിക്കൽ</string>
-    <string name="quick_pulldown_left">ഇടതുവശത്ത് നിന്ന് സ്റ്റാറ്റസ് ബാർ പിൻവലിക്കൽ</string>
-    <string name="quick_pulldown_always">സ്റ്റാറ്റസ് ബാറിൽ ദ്രുത ക്രമീകരണങ്ങൾ എല്ലായ്പ്പോഴും കാണിക്കുക</string>
-    <!-- Fingerprint authentication vibration -->
-    <string name="fprint_error_vib_title">വിരലടയാള പിശക് വൈബ്രേഷൻ</string>
-    <string name="fprint_error_vib_summary">വിരലടയാള പ്രാമാണീകരണ പിശകിൽ വൈബ്രേറ്റ് ചെയ്യുക</string>
-    <string name="fprint_success_vib_title">ഫിംഗർപ്രിന്റ് ആധികാരികത വൈബ്രേഷൻ</string>
-    <string name="fprint_success_vib_summary">വിജയകരമായ ഫിംഗർപ്രിന്റ് പ്രാമാണീകരണത്തിൽ വൈബ്രേറ്റ് ചെയ്യുക</string>
-    <!-- QSTile requires unlocking before being accessible -->
-    <string name="qstile_requires_unlocking_title">സുരക്ഷിത QS ടൈലുകൾക്ക് അൺലോക്ക് ചെയ്യേണ്ടതുണ്ട്</string>
-    <string name="qstile_requires_unlocking_summary">ലോക്ക് സ്‌ക്രീനിൽ നിന്ന് ആക്‌സസ്സുചെയ്യുന്നതിന് മുമ്പ് ഇനിപ്പറയുന്ന ക്യുഎസ് ടൈലുകൾ അൺലോക്ക് ചെയ്യേണ്ടതുണ്ട്:\വിമാനം, സെല്ലുലാർ, NFC, ഹോട്ട്‌സ്‌പോട്ട്, USB ടെതറിംഗ്, ലൊക്കേഷൻ</string>
-    <!-- Statusbar colored icons -->
-    <string name="statusbar_colored_icons_title">നിറമുള്ള ഐക്കണുകൾ</string>
-    <string name="statusbar_colored_icons_summary">സ്റ്റാറ്റസ് ബാറിലെ അറിയിപ്പ് ഐക്കണുകൾക്കായി ആപ്പ് ഐക്കണുകൾ ഉപയോഗിക്കുക</string>
-    <!-- Screen off animation -->
-    <string name="screen_off_animation_title">സ്‌ക്രീൻ ഓഫ് ആനിമേഷൻ</string>
-    <string name="screen_off_animation_crt">സി ആര്‍ റ്റി</string>
-    <string name="screen_off_animation_scale">സ്കെയിൽ</string>
-    <!-- Notification count -->
-    <string name="status_bar_notif_count_title">അറിയിപ്പുകളുടെ എണ്ണം കാണിക്കുക</string>
-    <string name="status_bar_notif_count_summary">തീർച്ചപ്പെടുത്താത്ത അറിയിപ്പുകളുടെ എണ്ണം പ്രദർശിപ്പിക്കുക</string>
-    <!-- Show old style mobile data icon -->
-    <string name="use_old_mobiletype_title">പഴയ രീതിയിലുള്ള മൊബൈൽ ഡാറ്റ ഐക്കണുകൾ ഉപയോഗിക്കുക</string>
-    <string name="use_old_mobiletype_summary">സിഗ്നൽ ഇൻഡിക്കേറ്ററിന് മുകളിൽ മൊബൈൽ തരം ഐക്കൺ കാണിക്കുക</string>
-    <!-- Notification guts kill app button -->
-    <string name="notification_guts_kill_app_button_title">കില്ല് അപ്ലിക്കേഷൻ ബട്ടൺ</string>
-    <string name="notification_guts_kill_app_button_summary">കില്ല് അപ്ലിക്കേഷൻ ബട്ടൺ അറിയിപ്പ് ലോംഗ് പ്രസ്സ് മെനുവിൽ കാണിക്കുക</string>
+    <string name="volbtn_music_controls_title">Control playback</string>
+    <string name="volbtn_music_controls_summary">Seek music tracks by long-pressing the volume keys while the display is off</string>
+    <string name="volbtn_cursor_control_title">Keyboard cursor control</string>
+    <string name="volbtn_cursor_control_off">അപ്രാപ്‌തമാക്കി</string>
+    <string name="volbtn_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volbtn_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="power_end_call_title">End call</string>
+    <string name="power_end_call_summary">End the current call by pressing the power button</string>
+    <string name="swap_volume_buttons_title">തല തിരിക്കുക</string>
+    <string name="swap_volume_buttons_summary">സ്‌ക്രീൻ റൊട്ടേറ്റിലെ വോളിയം ബട്ടണുകൾ സ്വാപ്പ് ചെയ്യുക</string>
+    <string name="button_wake_title">Wake device</string>
+    <string name="button_wake_summary">Wake device by pressing the button</string>
+    <string name="volume_answer_call_title">Answer call</string>
+    <string name="volume_answer_call_summary">Answer incoming calls by pressing the volume buttons</string>
+    <string name="click_partial_screenshot_title">Click to partial screenshot</string>
+    <string name="click_partial_screenshot_summary">Short click Volume Down and Power to take partial screenshot</string>
+    <!-- Key backlight -->
+    <string name="button_backlight_title">Backlight</string>
+    <string name="button_backlight_summary">Customize button backlight settings</string>
+    <string name="button_backlight_enabled">Illuminate buttons</string>
+    <string name="button_backlight_only_when_pressed_title">Illuminate buttons only when pressed</string>
+    <string name="keyboard_backlight_enabled">Illuminate keyboard</string>
+    <string name="button_backlight_seekbar_title">Button brightness</string>
+    <string name="keyboard_backlight_seekbar_title">Keyboard brightness</string>
+    <string name="backlight_timeout_title">Illumination timeout</string>
+    <string name="backlight_timeout_unlimited">Don\'t turn off</string>
+    <string name="backlight_summary_disabled">അപ്രാപ്‌തമാക്കി</string>
+    <string name="backlight_summary_enabled_with_timeout">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="backlight_summary_enabled">Enabled</string>
+    <plurals name="backlight_timeout_time">
+        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> second</item>
+        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> seconds</item>
+    </plurals>
+    <!-- Navigation Bar -->
+    <string name="navbar_visibility_title">Navigation bar</string>
+    <string name="navbar_visibility_summary">Display navigation bar at bottom of screen</string>
+    <string name="navbar_layout_category_title">Layout</string>
+    <string name="navbar_arrow_keys_title">Show arrow keys while typing</string>
+    <string name="navbar_arrow_keys_summary">Display left and right cursor buttons while typing. Overrides IME switcher.</string>
+    <string name="navbar_layout_title">Layout</string>
+    <string name="navbar_layout_normal">സാധാരണ</string>
+    <string name="navbar_layout_compact">Compact</string>
+    <string name="navbar_layout_leftleaning">Left-leaning</string>
+    <string name="navbar_layout_rightleaning">Right-leaning</string>
+    <string name="navbar_invert_layout_title">Invert layout</string>
+    <string name="navbar_invert_layout_summary">Inverts the layout of the navigation bar and other items, such as the IME switcher</string>
+    <string name="navbar_actions_category_title">പ്രവർത്തനങ്ങൾ</string>
+    <string name="navbar_back_long_press_title">Back long press</string>
+    <string name="navbar_back_double_tap_title">Back double tap</string>
+    <string name="navbar_home_long_press_title">Home long press</string>
+    <string name="navbar_home_double_tap_title">Home double tap</string>
+    <string name="navbar_app_switch_long_press_title">Recents long press</string>
+    <string name="navbar_app_switch_double_tap_title">Recents double tap</string>
+    <string name="navbar_edge_long_swipe_title">Edge long swipe</string>
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Pixel animation</string>
+    <string name="pixel_navbar_anim_summary">Enable pixel style animation for 2-button / 3-button navigation bar</string>
+    <!-- Disable HW keys -->
+    <string name="hwkeys_disabled_title">Disable HW keys</string>
+    <string name="hwkeys_disabled_summary">Enabling this will disable hardware keys for navigation</string>
+    <!-- Swap capacitive keys -->
+    <string name="swap_capacitive_keys_title">കപ്പാസിറ്റീവ് ബട്ടണുകൾ സ്വാപ്പ് ചെയ്യുക</string>
+    <string name="swap_capacitive_keys_summary">പിന്നോട്ട്, റീസെൻ്റ് ബട്ടണുകൾ പരസ്പരം വച്ചുമാറുക</string>
+    <!-- ANBI -->
+    <string name="anbi_title">Accidental touch</string>
+    <string name="anbi_summary">Prevent interaction with navigation buttons while the screen is being touched</string>
+    <!-- Status bar - icon blocklist -->
+    <string name="status_bar_icons_title">Status bar icons</string>
+    <string name="status_bar_icons_summary">Choose which status bar icons can be shown</string>
+    <!-- Statusbar Clock background chip -->
+    <string name="statusbar_clock_chip_title">Background chip</string>
+    <string name="statusbar_clock_chip_summary">Display accented chip behind clock</string>
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">ക്ലോക്കും തീയതിയും</string>
     <string name="status_bar_clock_summary">ക്ലോക്ക് &amp; തീയതി ക്രമീകരണങ്ങൾ ഇച്ഛാനുസൃതമാക്കുക</string>
@@ -217,14 +339,48 @@
     <string name="clock_date_position">തീയതി സ്ഥാനം</string>
     <string name="clock_date_right">സമയത്തിൻ്റെ വലതു വശം</string>
     <string name="clock_date_left">സമയത്തിൻ്റെ ഇടതു വശം</string>
-    <!-- QS clock -->
-    <string name="qs_clock_title">ക്ലോക്ക്</string>
-    <string name="qs_clock_summary">ക്വിക്ക് സ്റ്റാറ്റസ് ബാർ ഹെഡറിൽ ക്ലോക്ക് പ്രദർശിപ്പിക്കുക</string>
-    <!-- QS date -->
-    <string name="qs_date_title">തിയതി</string>
-    <string name="qs_date_summary">ദ്രുത സ്റ്റാറ്റസ് ബാർ തലക്കെട്ടിൽ തീയതി പ്രദർശിപ്പിക്കുക</string>
+    <string name="clock_font_size_title">Clock font size</string>
+    <!-- Tap to sleep on status bar -->
+    <string name="statusbar_doubletap_sleep_title">Tap to sleep</string>
+    <string name="statusbar_doubletap_sleep_summary">Double-tap on the status bar to put device asleep</string>
+    <!-- Status bar - Quick pulldown -->
+    <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
+    <string name="status_bar_quick_qs_pulldown_summary">%1$s edge of the status bar pulls down quick settings</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left">ഇടത്</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right">വലത്</string>
+    <string name="status_bar_quick_qs_pulldown_off">ഓഫ്</string>
+    <string name="status_bar_quick_qs_pulldown_left">ഇടത്</string>
+    <string name="status_bar_quick_qs_pulldown_right">വലത്</string>
+    <string name="status_bar_quick_qs_pulldown_always">Always show quick settings on status bar pull down</string>
+    <!-- Font style / Icon pack -->
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">തീമിംഗ്</string>
+    <string name="theme_customization_clock_font_title">ക്ലോക്ക് ഫോണ്ട് ശൈലി</string>
+    <string name="theme_customization_clock_font_summary">ലോക്ക്സ്ക്രീൻ ക്ലോക്ക് ഫോണ്ട് ശൈലി സജ്ജമാക്കുക</string>
+    <string name="theme_customization_date_font_title">ലോക്ക്സ്ക്രീൻ തീയതി ഫോണ്ട് ശൈലി</string>
+    <string name="theme_customization_date_font_summary">ലോക്ക്സ്ക്രീൻ തീയതി ഫോണ്ട് ശൈലി സജ്ജമാക്കുക</string>
+    <string name="theme_customization_font_title">Font style</string>
+    <string name="theme_customization_font_summary">Set system font style</string>
+    <string name="theme_customization_icon_pack_title">ഐക്കൺ പാക്കുകൾ</string>
+    <string name="theme_customization_icon_pack_summary">ഇഷ്‌ടാനുസൃത ഐക്കൺ പായ്ക്ക് ശൈലി സജ്ജീകരിക്കുക</string>
+    <string name="theme_customization_icon_shape_title">ഐക്കൺ ആക്യതി</string>
+    <string name="theme_customization_icon_shape_summary">സിസ്റ്റം ഐക്കൺ ആകൃതി ശൈലി സജ്ജമാക്കുക</string>
+    <string name="theme_customization_signal_icon_title">സിഗ്നൽ ഐക്കൺ ശൈലി</string>
+    <string name="theme_customization_signal_icon_summary">ഇഷ്‌ടാനുസൃത സിഗ്നൽ ഐക്കൺ ശൈലി സജ്ജമാക്കുക</string>
+    <string name="theme_customization_wifi_icon_title">Wifi സിഗ്നൽ ഐക്കൺ ശൈലി</string>
+    <string name="theme_customization_wifi_icon_summary">ഇഷ്‌ടാനുസൃത WiFi സിഗ്നൽ ഐക്കൺ ശൈലി സജ്ജമാക്കുക</string>
+    <string name="theme_customization_navbar_title">നാവിഗേഷൻ ബാർ ശൈലി</string>
+    <string name="theme_customization_navbar_summary">ഇഷ്‌ടാനുസൃത നാവിഗേഷൻ ബാർ ശൈലി സജ്ജമാക്കുക</string>
+    <!-- Netflix Spoof -->
+    <string name="netflix_spoof_title">Netflix spoof</string>
+    <string name="netflix_spoof_summary">Spoof your device as different model for Netflix</string>
+    <!-- Unlimited google photos storage -->
+    <string name="use_photos_spoof_title">അൺലിമിറ്റഡ് ഫോട്ടോസ് സ്‌റ്റോറേജ്</string>
+    <string name="use_photos_spoof_summary">ബാക്കപ്പിനായി അൺലിമിറ്റഡ് സ്‌റ്റോറേജ് നൽകാൻ മാത്രം Google ഫോട്ടോസ് ആപ്പിനായി നിങ്ങളുടെ ഉപകരണം Pixel XL ആയി കബളിപ്പിക്കുക</string>
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">ഗെയിമുകളിൽ ഉയർന്ന FPS അൺലോക്ക് ചെയ്യുക</string>
+    <string name="use_games_spoof_summary">ഉയർന്ന എഫ്പിഎസ് അൺലോക്ക് ചെയ്യുന്നതിന് നിർദ്ദിഷ്‌ട ഗെയിമുകൾക്കായി നിങ്ങളുടെ ഉപകരണം മറ്റൊരു മോഡലായി കബളിപ്പിക്കുക</string>
     <!-- Status bar - Battery -->
-    <string name="status_bar_battery_category_title">സ്റ്റാറ്റസ്ബാർ ബാറ്ററി കസ്റ്റമൈസേഷനുകൾ</string>
     <string name="status_bar_battery_style_title">ബാറ്ററി ശൈലി</string>
     <string name="status_bar_battery_style_icon_portrait">ഐക്കൺ പോർട്രെയ്റ്റ്</string>
     <string name="status_bar_battery_style_icon_rlandscape">ഐക്കൺ ലാൻഡ്‌സ്‌കേപ്പ് (വലത്)</string>
@@ -241,12 +397,46 @@
     <string name="status_bar_battery_percent_text_next_left">ഐക്കണിന് അടുത്തായി (ഇടത്)</string>
     <string name="status_bar_battery_text_charging_title">ചാർജ് ചെയ്യുമ്പോൾ ബാറ്ററി ശതമാനം</string>
     <string name="status_bar_battery_text_charging_summary">ചാർജ് ചെയ്യുമ്പോൾ എപ്പോഴും ബാറ്ററി ശതമാനം പ്രദർശിപ്പിക്കുക</string>
-    <!-- QS battery -->
-    <string name="qs_battery_category_title">Qs ബാറ്ററി കസ്റ്റമൈസേഷനുകൾ</string>
-    <string name="qs_use_status_bar_battery_style">സ്റ്റാറ്റസ് ബാർ ശൈലി പിന്തുടരുക</string>
-    <!-- Battery estimate -->
-    <string name="battery_estimate_title">ബാറ്ററി എസ്റ്റിമേറ്റ്</string>
-    <string name="battery_estimate_summary">ലഭ്യമാകുമ്പോൾ കണക്കാക്കിയ ശേഷിക്കുന്ന ബാറ്ററി ലൈഫ് പ്രദർശിപ്പിക്കുക</string>
+    <!-- Tap to sleep on status bar -->
+    <string name="lockscreen_doubletap_sleep_title">Tap to sleep</string>
+    <string name="lockscreen_doubletap_sleep_summary">Double-tap on the lock screen to put device asleep</string>
+    <!-- Statusbar colored icons -->
+    <string name="statusbar_colored_icons_title">നിറമുള്ള ഐക്കണുകൾ</string>
+    <string name="statusbar_colored_icons_summary">സ്റ്റാറ്റസ് ബാറിലെ അറിയിപ്പ് ഐക്കണുകൾക്കായി ആപ്പ് ഐക്കണുകൾ ഉപയോഗിക്കുക</string>
+    <!-- Notification count -->
+    <string name="statusbar_notif_count_title">Show notification count</string>
+    <string name="statusbar_notif_count_summary">Display the number of pending notifications</string>
+    <!-- Colored QS notification icons -->
+    <string name="qs_colored_icons_title">Colored QS notification icons</string>
+    <string name="qs_colored_icons_summary">Show colored app icon instead of monochrome icons</string>
+    <!-- Blink flashlight for incoming calls -->
+    <string name="flashlight_on_call_title">ഇൻകമിംഗ് കോളിനായി ബ്ലിങ്ക് ഫ്ലാഷ്ലൈറ്റ്</string>
+    <string name="flashlight_on_call_disabled">അപ്രാപ്‌തമാക്കി</string>
+    <string name="flashlight_on_call_ringer">റിംഗ് ചെയ്യുമ്പോൾ</string>
+    <string name="flashlight_on_call_no_ringer">റിംഗർ നിശബ്ദനായപ്പോൾ</string>
+    <string name="flashlight_on_call_silent">പൂർണ്ണമായും നിശബ്ദമായിരിക്കുമ്പോൾ (റിംഗറോ വൈബ്രേറ്ററോ ഇല്ല)</string>
+    <string name="flashlight_on_call_always">എപ്പോഴും</string>
+    <string name="flashlight_on_call_ignore_dnd_title">DND അവഗണിക്കുക</string>
+    <string name="flashlight_on_call_ignore_dnd_summary">ശല്യപ്പെടുത്തരുത് മോഡിൽ ആയിരിക്കുമ്പോൾ ഫ്ലാഷ് ചെയ്യണമോ എന്ന്</string>
+    <string name="flashlight_on_call_rate_title">നിരക്ക്</string>
+    <!-- Old mobiletype icon style -->
+    <string name="old_mobiletype_title">Old style signal icon</string>
+    <string name="old_mobiletype_summary">Merge signal and signal type icons</string>
+    <!-- Bluetooth status -->
+    <string name="bluetooth_battery_title">ബ്ലൂടൂത്ത് ബാറ്ററി നില</string>
+    <string name="bluetooth_battery_summary">കണക്റ്റുചെയ്‌ത ബ്ലൂടൂത്ത് ഉപകരണത്തിന്റെ ബാറ്ററി നില ലഭ്യമാണെങ്കിൽ പ്രദർശിപ്പിക്കുക</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">റോമിംഗ് സൂചകം</string>
+    <string name="roaming_indicator_icon_summary">റോമിംഗ് മോഡിലായിരിക്കുമ്പോൾ സിഗ്നൽ ഐക്കണിൽ റോമിംഗ് ഇൻഡിക്കേറ്റർ പ്രദർശിപ്പിക്കുക</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G ഐക്കൺ</string>
+    <string name="show_fourg_icon_summary">സ്റ്റാറ്റസ് ബാറിൽ LTE എന്നതിനുപകരം 4G ഐക്കൺ പ്രദർശിപ്പിക്കുക</string>
+    <!-- Data disabled indicator -->
+    <string name="data_disabled_icon_title">ഡാറ്റ പ്രവർത്തനരഹിതമാക്കിയ സൂചകം</string>
+    <string name="data_disabled_icon_summary">ഡാറ്റ പ്രവർത്തനരഹിതമാകുമ്പോൾ സിഗ്നൽ ഐക്കണിന് അടുത്തായി ഒരു സൂചകം പ്രദർശിപ്പിക്കുക</string>
+    <!-- Lockscreen battery info indicator -->
+    <string name="lockscreen_battery_info_title">Battery info</string>
+    <string name="lockscreen_battery_info_summary">Display battery info when charging</string>
     <!-- Status bar - Battery Bar -->
     <string name="battery_bar_title">ബാറ്ററി ബാർ</string>
     <string name="battery_bar_summary">സ്റ്റാറ്റസ് ബാറിന് മുകളിൽ ബാറ്ററി ബാർ പ്രദർശിപ്പിക്കുകയും ഇഷ്ടാനുസൃതമാക്കുകയും ചെയ്യുക</string>
@@ -265,299 +455,88 @@
     <string name="battery_bar_blend_color_reverse_title">വിപരീത വർണ്ണ ദിശ</string>
     <string name="battery_bar_blend_color_reverse_summary_off">പൂർണ്ണം &#8594; ശൂന്യം: ചുവപ്പ് &#8592; പച്ച &#8592; നീല &#8592; ചുവപ്പ്</string>
     <string name="battery_bar_blend_color_reverse_summary_on">പൂർണ്ണം &#8594; ശൂന്യം: ചുവപ്പ് &#8594; പച്ച &#8594; നീല &#8594; ചുവപ്പ്</string>
-    <!-- Fingerprint Ripple Effect -->
-    <string name="enable_fingerprint_ripple_effect_title">റിപ്പിൾ ഇഫക്റ്റ് </string>
-    <string name="enable_fingerprint_ripple_effect_summary">ഫിംഗർപ്രിന്റ് ഉപയോഗിച്ച് അൺലോക്കിൽ റിപ്പിൾ ഇഫക്റ്റ് കാണിക്കുക</string>
-    <!-- Charging animation -->
-    <string name="charging_animation_title">ചാർജിംഗ് ആനിമേഷൻ</string>
-    <string name="charging_animation_summary">ഉപകരണം പ്ലഗ് ഇൻ ചെയ്യുമ്പോൾ ഒരു ആനിമേഷൻ പ്രദർശിപ്പിക്കുക</string>
-    <!-- QS footer text -->
-    <string name="qs_footer_category">Qs അടിക്കുറിപ്പ് ഇഷ്ടാനുസൃതമാക്കൽ</string>
-    <string name="qs_footer_text_show_title">QS അടിക്കുറിപ്പ് വാചകം കാണിക്കുക</string>
-    <string name="qs_footer_text_string_title">അടിക്കുറിപ്പ് വാചകം ഇഷ്ടാനുസൃതമാക്കുക</string>
-    <string name="qs_footer_text_string_summary">ഡിഫോൾട്ട് സ്പാർക്കിനായി ശൂന്യമായി സജ്ജമാക്കുക</string>
-    <!-- UDFPS Haptic Feedback -->
-    <string name="udfps_haptic_feedback_title">UDFPS ഹപ്‌റ്റിക് ഫീഡ്‌ബാക്ക്</string>
-    <string name="udfps_haptic_feedback_summary">UDFPS ഐക്കണിൽ സ്പർശിക്കുമ്പോൾ വൈബ്രേറ്റ് ചെയ്യുക</string>
-    <!-- UDFPS Recog Animation -->
-    <string name="udfps_customization">UDFPS കസ്റ്റമൈസേഷൻ</string>
-    <string name="udfps_recog_animation">UDFPS ആനിമേഷൻ</string>
-    <string name="udfps_recog_animation_summary">നിങ്ങളുടെ വിരൽ വായിക്കുമ്പോൾ ഒരു ആനിമേഷൻ കാണിക്കുന്നു</string>
-    <string name="udfps_recog_animation_effect_title">UDFPS ഇഷ്‌ടാനുസൃത ആനിമേഷൻ</string>
-    <string name="udfps_recog_animation_effect_summary">ആനിമേഷൻ പ്രഭാവം തിരഞ്ഞെടുക്കുക</string>
-    <string name="udfps_settings_title">UDFPS ക്രമീകരണങ്ങൾ</string>
-    <string name="udfps_settings_summary">UDFPS ഇഷ്‌ടാനുസൃതമാക്കുന്നതിനുള്ള ക്രമീകരണങ്ങൾ</string>
-    <!-- UDFPS icon picker -->
-    <string name="udfps_icon_picker_title">UDFPS ഐക്കൺ പിക്കർ</string>
-    <string name="udfps_icon_picker_summary">നിങ്ങളുടെ പ്രിയപ്പെട്ട ഫിംഗർപ്രിന്റ് ഐക്കൺ തിരഞ്ഞെടുക്കുക</string>
-    <!-- Toast app icon -->
-    <string name="toast_icon_title">ടോസ്റ്റ് ആപ്പ് ഐക്കൺ</string>
-    <string name="toast_icon_summary">ടോസ്റ്റ് അനുസരിച്ച് ആപ്പ് ഐക്കൺ കാണിക്കുക</string>
-    <!-- Themes customization -->
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
-    <string name="theme_customization_category">തീമിംഗ്</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
-    <string name="theme_customization_icon_shape_title">ഐക്കൺ ആക്യതി</string>
-    <string name="theme_customization_icon_shape_summary">സിസ്റ്റം ഐക്കൺ ആകൃതി ശൈലി സജ്ജമാക്കുക</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
-    <string name="theme_customization_icon_pack_title">ഐക്കൺ പാക്കുകൾ</string>
-    <string name="theme_customization_icon_pack_summary">ഇഷ്‌ടാനുസൃത ഐക്കൺ പായ്ക്ക് ശൈലി സജ്ജീകരിക്കുക</string>
-    <!-- Custom Signal bar icons -->
-    <string name="theme_customization_signal_icon_title">സിഗ്നൽ ഐക്കൺ ശൈലി</string>
-    <string name="theme_customization_signal_icon_summary">ഇഷ്‌ടാനുസൃത സിഗ്നൽ ഐക്കൺ ശൈലി സജ്ജമാക്കുക</string>
-    <!-- Custom Wi-Fi bar icons -->
-    <string name="theme_customization_wifi_icon_title">Wifi സിഗ്നൽ ഐക്കൺ ശൈലി</string>
-    <string name="theme_customization_wifi_icon_summary">ഇഷ്‌ടാനുസൃത WiFi സിഗ്നൽ ഐക്കൺ ശൈലി സജ്ജമാക്കുക</string>
-    <string name="theme_customization_navbar_title">നാവിഗേഷൻ ബാർ ശൈലി</string>
-    <string name="theme_customization_navbar_summary">ഇഷ്‌ടാനുസൃത നാവിഗേഷൻ ബാർ ശൈലി സജ്ജമാക്കുക</string>
-    <!-- Button settings -->
-    <string name="button_pref_title">ബട്ടണുകള്‍</string>
-    <!-- Hardware button navigation -->
-    <string name="picker_activities">പ്രവർത്തനങ്ങൾ</string>
-    <string name="select_custom_app_title">ഇഷ്ടാനുസൃത ആപ്പ് തിരഞ്ഞെടുക്കുക</string>
-    <string name="select_custom_activity_title">ഇഷ്ടാനുസൃത പ്രവര്‍ത്തി തിരഞ്ഞെടുക്കുക</string>
-    <string name="profile_applist_title">ആപ്ലിക്കേഷനുകൾ</string>
-    <string name="choose_action_title">നടപടി തിരഞ്ഞെടുക്കുക</string>
-    <string name="action_entry_default_action">സ്ഥിരസ്ഥിതി ക്രമീകരണങ്ങൾ</string>
-    <string name="action_entry_select_app">ആപ്പ് തിരഞ്ഞെടുക്കൂ</string>
-    <string name="action_entry_custom_action">ഇഷ്ടാനുസ്രതം പ്രവർത്തി തിരഞ്ഞെടുക്കുക</string>
-    <string name="hardware_keys_home_key_title">ഹോം ബട്ടൺ</string>
-    <string name="hardware_keys_back_key_title">ബാക്ക് ബട്ടൺ</string>
-    <string name="hardware_keys_menu_key_title">മെനു ബട്ടൺ</string>
-    <string name="hardware_keys_assist_key_title">സെർച്ച് ബട്ടൺ</string>
-    <string name="hardware_keys_appswitch_key_title">റീസന്റ് ബട്ടൺ</string>
-    <string name="hardware_keys_camera_key_title">ക്യാമറ ബട്ടൺ</string>
-    <string name="hardware_keys_short_press_title">ഹ്രസ്വ അമർത്തല്‍ നടപടി</string>
-    <string name="hardware_keys_double_tap_summary">ഇരട്ട ടാപ്പ് പ്രവർത്തനം സജ്ജമാക്കുക</string>
-    <string name="hardware_keys_single_tap_summary">ഒറ്റ ടാപ്പ് പ്രവർത്തനം സജ്ജമാക്കുക</string>
-    <string name="hardware_keys_long_press_summary">ലോംഗ് പ്രസ്സ് പ്രവർത്തനം സജ്ജമാക്കുക</string>
-    <string name="hardware_keys_single_tap_title">ഒറ്റ ടാപ്പ് പ്രവർത്തനം</string>
-    <string name="hardware_keys_long_press_title">ദീര്‍ഘ അമർത്തല്‍ നടപടി</string>
-    <string name="hardware_keys_double_tap_title">ഇരട്ട അമർത്തല്‍ നടപടി</string>
-    <string name="hardware_keys_action_nothing">നോ ആക്ഷൻ</string>
-    <string name="hardware_keys_action_menu">തുറക്കൽ/അടയ്ക്കൽ മെനു</string>
-    <string name="hardware_keys_action_app_switch">റീസെന്റ് ആപ്പ് സ്വിച്ചർ</string>
-    <string name="hardware_keys_action_search">സെർച്ച് അസിസ്റ്റന്റ്</string>
-    <string name="hardware_keys_action_voice_search">ശബ്‌ദം ഉപയോഗിച്ചുള്ള തിരയൽ</string>
-    <string name="hardware_keys_action_in_app_search">ഇൻ-ആപ്പ് തിരയൽ</string>
-    <string name="hardware_keys_action_launch_camera">ക്യാമറ തുറക്കുക</string>
-    <string name="hardware_keys_action_sleep">സ്ക്രീൻ ഓഫ് ചെയ്യുക</string>
-    <string name="hardware_keys_action_split_screen">Split Screen</string>
-    <string name="hardware_keys_action_close_app">ആപ്പ് നശിപ്പിക്കുക</string>
-    <string name="hardware_keys_action_torch">ടോർച്ച്</string>
-    <string name="hardware_keys_action_screenshot">Screenshot</string>
-    <string name="hardware_keys_action_volume_panel">വോളിയം പാനൽ ടോഗിൾ ചെയ്യുക</string>
-    <string name="hardware_keys_action_clear_all_notifications">എല്ലാ അറിയിപ്പുകളും മായ്ക്കുക</string>
-    <string name="hardware_keys_action_notifications_panel">അറിയിപ്പ് പാനൽ ടോഗിൾ ചെയ്യുക</string>
-    <string name="hardware_keys_action_toggle_qs_panel">QS പാനൽ ടോഗിൾ ചെയ്യുക</string>
-    <string name="hardware_keys_action_ringer_modes">റിംഗർ മോഡുകൾ</string>
-    <string name="hardware_keys_swipe_right_key_title">വലത്തേക്ക് സ്വൈപ്പ് ചെയ്യുക</string>
-    <string name="hardware_keys_swipe_left_key_title">ഇടത്തേക്ക് സ്വൈപ് ചെയ്യുക</string>
-    <string name="hardware_keys_long_tap_key_title">നീണ്ട ടാപ്പ്</string>
-    <string name="hardware_keys_swipe_tap_title">സ്വൈപ്പ് പ്രവർത്തനം</string>
-    <string name="hardware_keys_long_tap_title">നീണ്ട ടാപ്പ് പ്രവർത്തനം</string>
-    <string name="camera_sleep_on_release_title">സ്‌ക്രീൻ പീക്ക്</string>
-    <string name="camera_sleep_on_release_summary">ബട്ടൺ അമർത്തിപ്പിടിച്ചിരിക്കുമ്പോൾ മാത്രം പകുതി അമർത്തിയാൽ സ്‌ക്രീൻ ഓണാക്കും</string>
-    <string name="camera_launch_title">ക്യാമറ തുറക്കുക</string>
-    <string name="camera_launch_summary">നീണ്ട നേരം അമര്‍ത്തി സ്വതന്ത്രമാക്കുന്നതിലൂടെ ക്യാമറ ആരംഭിക്കുന്നതാണ്</string>
-    <string name="swap_volume_buttons_title">തല തിരിക്കുക</string>
-    <string name="swap_volume_buttons_summary">സ്‌ക്രീൻ റൊട്ടേറ്റിലെ വോളിയം ബട്ടണുകൾ സ്വാപ്പ് ചെയ്യുക</string>
-    <string name="hardware_keys_category">ഹാർഡ്‌വെയർ നാവിഗേഷൻ ബട്ടണുകൾ</string>
-    <string name="hardware_keys_disable_title">ഹാർഡ്‌വെയർ ബട്ടണുകൾ പ്രവർത്തനരഹിതമാക്കുക</string>
-    <!-- Navigation bar -->
-    <string name="navigation_bar_category">നാവിഗേഷൻ ബാർ</string>
-    <string name="navigation_bar_title">ഓൺ-സ്ക്രീൻ നാവിഗേഷൻ ബാർ</string>
-    <string name="navigation_bar_summary">ഓൺ-സ്ക്രീൻ നാവിഗേഷന്‍ ബാർ പ്രാപ്തമാക്കുക</string>
-    <string name="navigation_bar_layout_title">ലേഔട്ട്</string>
-    <string name="navigation_bar_layout_summary">നാവിഗേഷൻ ബാറിന്റെ ലേഔട്ട് ഇഷ്ടാനുസൃതമാക്കുക</string>
-    <string name="navigation_bar_arrow_keys_title">ടൈപ്പ് ചെയ്യുമ്പോൾ അമ്പടയാള കീകള്‍ ദൃശ്യമാക്കുക</string>
-    <string name="navigation_bar_arrow_keys_summary">ടൈപ്പ് ചെയ്യുമ്പോൾ നാവിഗേഷൻ ബാറിൽ ഇടത് വലത് കഴ്‌സർ ബട്ടണുകൾ പ്രദർശിപ്പിക്കുക</string>
-    <string name="navigation_bar_help_text">ഈ ക്രമീകരണങ്ങൾ പ്രധാനമായും 3-ബട്ടൺ നാവിഗേഷൻ ബാറുമായി ബന്ധപ്പെട്ടിരിക്കുന്നു. നിങ്ങൾ ജെസ്റ്റർ നാവിഗേഷൻ ഉപയോഗിക്കുകയും അത് ഇഷ്ടാനുസൃതമാക്കാൻ ആഗ്രഹിക്കുകയും ചെയ്യുന്നുവെങ്കിൽ, ഉദാ. ജെസ്റ്റർ ഹാൻഡിൽ മറയ്ക്കുക, ദയവായി സന്ദർശിക്കുക: ക്രമീകരണങ്ങൾ > സിസ്റ്റം > ആംഗ്യങ്ങൾ.</string>
-    <string name="navigation_title">നാവിഗേഷൻ</string>
-    <!-- Button brightness -->
-    <string name="button_backlight_options_category">ബാക്ക്ലൈറ്റ് ഓപ്ഷനുകൾ</string>
-    <string name="button_backlight_enable_title">ബട്ടൺ ബാക്ക്ലൈറ്റ് അനുവദിക്കുക</string>
-    <string name="button_link_brightness">സ്‌ക്രീൻ തെളിച്ചത്തിലേക്കുള്ള ലിങ്ക്</string>
-    <string name="button_link_brightness_summary">നിലവിലെ സ്‌ക്രീൻ തെളിച്ച നിലയെ അടിസ്ഥാനമാക്കി ബട്ടൺ ബാക്ക്‌ലൈറ്റ് തെളിച്ചം ക്രമീകരിക്കും</string>
-    <string name="button_manual_brightness">തെളിച്ചനില</string>
-    <string name="button_timeout_title">ബാക്ക്‌ലൈറ്റ് കാലഹരണപ്പെട്ടു</string>
-    <string name="button_backlight_on_touch_only_title">ബട്ടൺ ബാക്ക്ലൈറ്റ് ടച്ച്</string>
-    <string name="button_backlight_on_touch_only_summary">എല്ലാ സമയത്തും ബട്ടണുകൾ അമർത്തിയാൽ മാത്രമേ ബട്ടൺ ബാക്ക്ലൈറ്റ് ദൃശ്യമാകൂ. കാലഹരണപ്പെടൽ ഇപ്പോഴും ഈ സവിശേഷതയെ ബാധിക്കുന്നു.</string>
-    <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">ഓൺ-സ്ക്രീൻ നാവിഗേഷന്‍ ബാർ പ്രാപ്തമാക്കുക</string>
-    <string name="disable_navkeys_summary">ഓൺ-സ്ക്രീൻ നാവിഗേഷൻ ബാർ ഓണ്ണാക്കുകയും ഹാർഡ്‌വെയർ ബട്ടണുകൾ ഓഫ് ചെയ്യുക</string>
-    <!-- Buttons - Swap capacitive keys -->
-    <string name="swap_capacitive_keys_title">കപ്പാസിറ്റീവ് ബട്ടണുകൾ സ്വാപ്പ് ചെയ്യുക</string>
-    <string name="swap_capacitive_keys_summary">പിന്നോട്ട്, റീസെൻ്റ് ബട്ടണുകൾ പരസ്പരം വച്ചുമാറുക</string>
-    <!-- Media art -->
-    <string name="lockscreen_media_art_options_title">ലോക്ക് സ്ക്രീൻ മീഡിയ ആർട്ട്</string>
-    <string name="media_art_title">മാധ്യമ കവർ ആർട്ട്</string>
-    <string name="media_art_summary">ലഭ്യമാകുമ്പോൾ മീഡിയ കവർ ആർട്ട് പ്രദർശിപ്പിക്കുക</string>
+    <!-- Privacy Indicator -->
+    <string name="mic_camera_privacy_indicator_title">മൈക്കും ക്യാമറയും സ്വകാര്യതാ സൂചകം</string>
+    <string name="mic_camera_privacy_indicator_summary">ഏതെങ്കിലും ആപ്പ് മൈക്കോ ക്യാമറയോ ഉപയോഗിക്കുമ്പോൾ ഇൻഡിക്കേറ്റർ കാണിക്കുക</string>
+    <string name="location_privacy_indicator_title">ലൊക്കേഷൻ സ്വകാര്യതാ സൂചകം</string>
+    <string name="location_privacy_indicator_summary">ഏതെങ്കിലും ആപ്പ് ലൊക്കേഷൻ ഉപയോഗിക്കുമ്പോൾ സൂചകം കാണിക്കുക</string>
+    <string name="projection_privacy_indicator_title">മീഡിയ പ്രൊജക്ഷൻ സ്വകാര്യതാ സൂചകം</string>
+    <string name="projection_privacy_indicator_summary">ഉപകരണ സ്ക്രീൻ പ്രൊജക്റ്റ് ചെയ്യുമ്പോൾ സൂചകം കാണിക്കുക</string>
     <!-- Disable QS -->
     <string name="disable_qs_title">സുരക്ഷിത ലോക്ക് സ്ക്രീനിൽ QS മറയ്ക്കുക</string>
     <string name="disable_qs_summary">ഉപകരണം ലോക്ക് ചെയ്തിട്ടുണ്ടെങ്കിൽ QS മറയ്ക്കുന്നു. അറിയിപ്പ് ഷേഡ് പ്രവർത്തനരഹിതമാക്കുന്നില്ല</string>
-    <!-- QS footer warnings -->
-    <string name="qs_footer_warnings_title">QS അടിക്കുറിപ്പ് മുന്നറിയിപ്പുകൾ</string>
-    <string name="qs_footer_warnings_summary">നെറ്റ്‌വർക്ക് ബാഹ്യ ആപ്പുകൾ അല്ലെങ്കിൽ vpn നിരീക്ഷിക്കുമ്പോൾ QS പാനലിന്റെ ചുവടെ ഒരു മുന്നറിയിപ്പ് പ്രദർശിപ്പിക്കുക</string>
-    <!-- Lockscreen battery info -->
-    <string name="lockscreen_charging_info_title">ലോക്ക് സ്‌ക്രീനിൽ ചാർജിംഗ് വിവരങ്ങൾ കാണിക്കുക</string>
-    <string name="lockscreen_charging_info_summary">പ്ലഗിൻ ചെയ്‌തിരിക്കുമ്പോൾ താപനിലയും ചാർജിംഗ് കറന്റും മറ്റും കാണിക്കുന്നു</string>
-    <!-- Blink flashlight for incoming calls -->
-    <string name="flashlight_on_call_title">ഇൻകമിംഗ് കോളിനായി ബ്ലിങ്ക് ഫ്ലാഷ്ലൈറ്റ്</string>
-    <string name="flashlight_on_call_disabled">അപ്രാപ്‌തമാക്കി</string>
-    <string name="flashlight_on_call_ringer">റിംഗ് ചെയ്യുമ്പോൾ</string>
-    <string name="flashlight_on_call_no_ringer">റിംഗർ നിശബ്ദനായപ്പോൾ</string>
-    <string name="flashlight_on_call_silent">പൂർണ്ണമായും നിശബ്ദമായിരിക്കുമ്പോൾ (റിംഗറോ വൈബ്രേറ്ററോ ഇല്ല)</string>
-    <string name="flashlight_on_call_always">എപ്പോഴും</string>
-    <string name="flashlight_on_call_ignore_dnd_title">DND അവഗണിക്കുക</string>
-    <string name="flashlight_on_call_ignore_dnd_summary">ശല്യപ്പെടുത്തരുത് മോഡിൽ ആയിരിക്കുമ്പോൾ ഫ്ലാഷ് ചെയ്യണമോ എന്ന്</string>
-    <string name="flashlight_on_call_rate_title">നിരക്ക്</string>
-    <string name="flashlight_on_call_rate_summary">കോൾ ബ്ലിങ്ക് നിരക്കിൽ ഫ്ലാഷ്‌ലൈറ്റ്</string>
-    <!-- Custom logo -->
-    <string name="status_bar_logo_title">ലോഗോ</string>
-    <string name="status_bar_logo_summary">സ്റ്റാറ്റസ് ബാറിന്റെ ഇടത്തോ വലത്തോ ഒരു ഇഷ്‌ടാനുസൃത ലോഗോ പ്രദർശിപ്പിക്കുക</string>
-    <string name="status_bar_logo_position_title">ലോഗോ സ്ഥാനം</string>
-    <string name="status_bar_logo_style_title">ലോഗോ ശൈലി</string>
-    <string name="status_bar_quick_qs_pulldown_left">ഇടത്</string>
-    <string name="status_bar_quick_qs_pulldown_right">വലത്</string>
-    <!-- Custom FOD Icon -->
-    <string name="custom_fp_icon_title">ഇഷ്‌ടാനുസൃത UDFPS ഐക്കൺ</string>
-    <string name="custom_fp_icon_summary">ഫയലുകളിൽ നിന്ന് ഇഷ്‌ടാനുസൃത UDFPS ഐക്കൺ പ്രവർത്തനക്ഷമമാക്കുക</string>
-    <string name="custom_fp_select_title">ഇഷ്‌ടാനുസൃത UDFPS ഐക്കൺ തിരഞ്ഞെടുക്കുക</string>
-    <string name="custom_fp_select_summary">നിങ്ങളുടെ സംരക്ഷിച്ച ഫയലുകളിൽ നിന്നോ ഗാലറിയിൽ നിന്നോ ഇഷ്ടാനുസൃത ചിത്രം തിരഞ്ഞെടുക്കുക</string>
-    <!-- UDFPS pressed color -->
-    <string name="udfps_pressed_color_title">Udfps അമർത്തിയ നിറം</string>
-    <string name="udfps_pressed_color_summary">നിങ്ങളുടെ പ്രിയപ്പെട്ട udfps അമർത്തിയ നിറം തിരഞ്ഞെടുക്കുക</string>
     <!-- reTicker -->
     <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">ടിക്കറിന്റെ പുനർരൂപകൽപ്പന ചെയ്ത പതിപ്പ് ഉപയോഗിച്ച് നിങ്ങളുടെ അറിയിപ്പുകൾ മാറ്റിസ്ഥാപിക്കുക. ഒരു സാധാരണ അറിയിപ്പിനേക്കാൾ മെലിഞ്ഞതും ആക്രമണാത്മകവും കുറവാണ്</string>
-    <string name="new_reticker_title">ഇതര റീടിക്കർ</string>
-    <string name="new_reticker_summary">Ios-ൽ നിന്ന് പ്രചോദനം ഉൾക്കൊണ്ട് reticer-നായി ഒരു ഇതര ലേഔട്ട് ഉപയോഗിക്കുക</string>
-    <string name="new_reticker_animation_title">ഇതര റീടിക്കർ ആനിമേഷൻ</string>
-    <string name="new_reticker_animation_summary">റെറ്റിക്കറിനായി മറ്റൊരു ആനിമേഷൻ ഉപയോഗിക്കുക (ഇതര റീടിക്കറിൽ സ്ഥിരസ്ഥിതിയായി പ്രവർത്തനക്ഷമമാക്കി)</string>
     <string name="reticker_colored_title">ആപ്പ് നിറമുള്ള പശ്ചാത്തലം ഉപയോഗിക്കുക</string>
     <string name="reticker_colored_summary">അറിയിപ്പ് ആപ്പ് പ്രധാന നിറം ഉപയോഗിച്ച് reTicker പശ്ചാത്തല നിറം മാറ്റിസ്ഥാപിക്കുക</string>
-    <!-- Lock screen album art filter -->
-    <string name="lockscreen_albumart_filter_title">മീഡിയ കവർ ആർട്ട് ഫിൽട്ടർ</string>
-    <string name="none_string">ഒന്നുമില്ല</string>
-    <string name="lockscreen_albumart_filter_grayscale">ഗ്രേസ്കെയിൽ</string>
-    <string name="lockscreen_albumart_filter_tint">ആക്സന്റ് ചായം പൂശി</string>
-    <string name="lockscreen_albumart_filter_blur">മങ്ങിക്കുക</string>
-    <string name="lockscreen_albumart_filter_grayblur">ഗ്രേസ്കെയിലും, മങ്ങിയതും</string>
-    <string name="lockscreen_media_blur_title">മീഡിയ ആർട്ട് ബ്ലർ ലെവൽ</string>
-    <string name="lockscreen_albumart_filter_blur_radius_title">ലോക്ക്‌സ്‌ക്രീൻ മീഡിയ ആർട്ട്‌വർക്കിനുള്ള തുക മങ്ങിക്കുക</string>
-    <!-- Pulse notifications lighting -->
-    <string name="pulse_ambient_light_title">ആംബിയന്റ് എഡ്ജ് ലൈറ്റിംഗ്</string>
-    <string name="pulse_ambient_light_summary">പൾസിംഗ് അറിയിപ്പുകൾക്കായി ഇളം ആംബിയന്റ് അരികുകൾ</string>
-    <string name="ambient_notification_light_enabled_title">AOD-ൽ കാണിക്കുക</string>
-    <string name="ambient_notification_light_enabled_summary">AOD-യിൽ എഡ്ജ് ലൈറ്റിംഗ് കാണിക്കുന്നത് തുടരുക</string>
-    <string name="ambient_notification_light_hide_aod_title">AOD ഉള്ളടക്കം മറയ്ക്കുക</string>
-    <string name="ambient_notification_light_hide_aod_summary">അരികുകൾ പ്രകാശിക്കുമ്പോൾ AOD ഉള്ളടക്കം മറയ്ക്കുക</string>
-    <string name="ambient_notification_light_duration_title">ദൈർഘ്യം</string>
-    <string name="ambient_notification_light_duration_summary">ഓരോ ആനിമേഷനും പൂർത്തിയാക്കാൻ എടുക്കുന്ന സമയം</string>
-    <string name="ambient_notification_light_repeats_title">ആവർത്തിക്കുന്നു</string>
-    <string name="ambient_notification_light_repeats_summary">അനന്തമായി ആനിമേഷൻ\n0 കാണിക്കേണ്ട സമയം</string>
-    <string name="ambient_notification_light_timeout_title">ടൈം ഔട്ട്</string>
-    <string name="ambient_notification_light_timeout_forever">എന്നേക്കും</string>
-    <string name="ambient_notification_light_timeout_half_minute">30 സെക്കൻഡ്</string>
-    <string name="ambient_notification_light_timeout_minute">1 മിനിറ്റ്</string>
-    <string name="ambient_notification_light_timeout_three_minutes">3 മിനിറ്റ്</string>
-    <string name="ambient_notification_light_timeout_five_minutes">5 മിനിറ്റ്</string>
-    <string name="ambient_notification_light_timeout_ten_minutes">10 മിനിറ്റ്</string>
-    <string name="set_to_zero">പ്രവർത്തനക്ഷമമാക്കാൻ ആവർത്തനങ്ങൾ 0 ആയി സജ്ജമാക്കുക</string>
-    <string name="ambient_notification_color_mode_title">കളർ മോഡ്</string>
-    <string name="ambient_notification_color_mode_accent">ആക്സന്റ് നിറം</string>
-    <string name="ambient_notification_color_mode_wall">വാൾപേപ്പറിന്റെ പ്രബലമായ നിറം</string>
-    <string name="ambient_notification_color_mode_notification">അറിയിപ്പ് ഐക്കൺ നിറം</string>
-    <string name="ambient_notification_color_mode_custom">@string/ambient_notification_light_color_title</string>
-    <string name="ambient_notification_light_color_title">ഇഷ്ടാനുസൃത നിറം</string>
-    <string name="pulse_ambient_light_show_always_title">എല്ലായ്പ്പോഴും കാണിക്കുക</string>
-    <string name="pulse_ambient_light_show_always_summary">അറിയിപ്പുകൾ മാത്രമല്ല, എല്ലാ ഡോസ് ഇവന്റുകൾക്കും ലൈറ്റുകൾ കാണിക്കുക</string>
-    <string name="pulse_ambient_light_repeat_direction_title">ലൈറ്റ് റിപ്പീറ്റ് മോഡ്</string>
-    <string name="pulse_ambient_light_repeat_direction_restart">Restart</string>
-    <string name="pulse_ambient_light_repeat_direction_reverse">വിപരീതമായി</string>
-    <string name="pulse_ambient_light_layout_title">നേരിയ കാഴ്ച</string>
-    <string name="pulse_ambient_light_layout_solid">കട്ടിയായി</string>
-    <string name="pulse_ambient_light_layout_faded">മങ്ങുക</string>
-    <string name="pulse_ambient_light_width_title">ലൈറ്റ് വീതി</string>
-    <string name="pulse_light_layout_style_title">ലൈറ്റ് ലേഔട്ട് ശൈലി</string>
-    <string name="pulse_light_both">നാല് വശങ്ങളും</string>
-    <string name="pulse_light_top_bottom">മുകളിൽ-താഴെ മാത്രം</string>
-    <string name="pulse_light_left_right">ഇടത്-വലത് മാത്രം</string>
-    <!-- Quick Settings brightness slider -->
-    <string name="qs_show_brightness_slider_title">ബ്രൈറ്റ്‌നസ്സ് സ്ലൈഡർ</string>
-    <string name="qs_show_brightness_slider_never">ഒരിക്കലും കാണിക്കരുത്</string>
-    <string name="qs_show_brightness_slider_expanded">വികസിപ്പിക്കുമ്പോൾ കാണിക്കുക</string>
-    <string name="qs_show_brightness_slider_always">എല്ലായ്പ്പോഴും കാണിക്കുക</string>
-    <string name="qs_show_brightness_slider_not_expanded">വിപുലീകരിക്കാത്തപ്പോൾ കാണിക്കുക</string>
-    <string name="qs_brightness_slider_position_title">സ്ഥാനം</string>
-    <string name="qs_brightness_slider_position_top">മുകളില്‍</string>
-    <string name="qs_brightness_slider_position_bottom">താഴെ</string>
-    <!-- Quick Settings brightness icon -->
-    <string name="qs_show_auto_brightness_title">യാന്ത്രിക തെളിച്ചം ഐക്കൺ</string>
-    <string name="qs_show_auto_brightness_summary">സ്ലൈഡറിന് സമീപം അഡാപ്റ്റീവ് തെളിച്ചത്തിനായി ടോഗിൾ കാണിക്കുക</string>
-    <!-- OOS style material dismiss all button for notifications -->
-    <string name="notification_material_dismiss_button_title">മെറ്റീരിയൽ ഡിമിസ് ബട്ടൺ</string>
-    <string name="notification_material_dismiss_button_summary">ഫ്ലോട്ടിംഗ് ബട്ടൺ ഉപയോഗിച്ച് എല്ലാ അറിയിപ്പ് വാചകങ്ങളും മായ്‌ക്കുക</string>
-    <string name="clearall_style_title">മെറ്റീരിയൽ ഡിസ്മിസ് ബട്ടൺ ശൈലി</string>
-    <string name="clearall_bgstyle_title">മെറ്റീരിയൽ ഡിസ്മിസ് പശ്ചാത്തല ശൈലി</string>
-    <!-- Lockscreen Clocks -->
-    <string name="lock_screen_custom_clock_face_category">ലോക്ക്സ്ക്രീൻ ക്ലോക്ക്</string>
-    <string name="lock_screen_custom_clock_face_title">ലോക്ക്സ്ക്രീൻ ക്ലോക്ക് ശൈലി</string>
-    <string name="lock_screen_custom_clock_face_default">വെടിക്കെട്ട്</string>
-    <string name="lock_screen_custom_clock_face_sfunny">Sfuny</string>
-    <string name="lock_screen_custom_clock_face_oos">OOS</string>
-    <string name="lock_screen_custom_clock_face_clockertino">Clockertino</string>
-    <string name="lock_screen_custom_clock_face_spark">Spark</string>
-    <string name="lock_screen_custom_clock_face_spark_circle">Spark Circle</string>
-    <!-- Custom settings dashboard style -->
-    <string name="settings_dashboard_style_title">Main menu layout</string>
-    <string name="settings_dashboard_style_aosp">Aosp</string>
-    <string name="settings_dashboard_style_oos11">OxygenOS 11</string>
-    <string name="settings_dashboard_style_oos12">OxygenOS 12</string>
-    <string name="settings_dashboard_style_spark">Spark</string>
-    <string name="settings_dashboard_style_spark_clean">Spark Clean</string>
-    <string name="settings_layout_category_title">ക്രമീകരണങ്ങൾ UI ഇന്റർഫേസ്</string>
-    <string name="settings_base_style_title">ഉപമെനുകളുടെ തലക്കെട്ട്</string>
-    <string name="settings_base_style_summary">ക്രമീകരണങ്ങളുടെ ഉപമെനുകളിൽ തലക്കെട്ടിനായി ഒരു ഇതര ലേഔട്ട് ഉപയോഗിക്കുക</string>
-    <string name="settings_home_style_title">പ്രധാന മെനു തലക്കെട്ട്</string>
-    <string name="settings_home_style_summary">ക്രമീകരണങ്ങളുടെ പ്രധാന മെനുവിലെ ഹെഡറിനായി സ്റ്റോക്ക് aosp ലേഔട്ട് ഉപയോഗിക്കുക</string>
-    <string name="disable_usercard_title">യൂസർകാർഡ്</string>
-    <string name="disable_usercard_summary">ക്രമീകരണങ്ങളുടെ പ്രധാന മെനുവിൽ ഉപയോക്തൃ കാർഡ് കാണിക്കാതിരിക്കാൻ ടോഗിൾ ചെയ്യുക</string>
-    <!-- Ignore window secure -->
-    <string name="ignore_window_secure_title">വിൻഡോ സുരക്ഷിത ഫ്ലാഗുകൾ അവഗണിക്കുക</string>
-    <string name="ignore_window_secure_summary">ഇത് എല്ലാ ആപ്ലിക്കേഷനുകൾക്കുമുള്ള സ്ക്രീൻഷോട്ടുകളും സ്ക്രീൻ റെക്കോർഡ് പരിധികളും നീക്കംചെയ്യുന്നു. സാധാരണയായി, പ്രത്യേക ആപ്ലിക്കേഷനുകൾ റെക്കോർഡുകളിൽ കറുത്ത പ്രദേശങ്ങൾ ഉപയോഗിച്ച് മാറ്റിസ്ഥാപിക്കുന്നു. ഇത് ചില സന്ദർഭങ്ങളിൽ സൗകര്യപ്രദമാകുമെങ്കിലും സ്വകാര്യത ചോർച്ചയിലേക്ക് നയിച്ചേക്കാം. ഈ ടോഗിൾ മാറ്റിയ ശേഷം, മാറ്റം പ്രാബല്യത്തിൽ വരുന്നതിന് നിങ്ങൾ അപ്ലിക്കേഷനുകൾ പുനരാരംഭിക്കേണ്ടതുണ്ട്.</string>
-    <!-- Colorful battery icon -->
-    <string name="battery_level_colors_title">വർണ്ണാഭമായ ബാറ്ററി ഐക്കൺ ടോഗിൾ ചെയ്യുക</string>
-    <string name="battery_level_colors_summary">ഓരോ ബാറ്ററി ലെവൽ ഡ്രോപ്പും കളർ കോഡ് ചെയ്തിരിക്കുന്നു</string>
-    <!-- Qs Transparency -->
-    <string name="qs_transparency_summary">നിങ്ങളുടെ qs എത്ര സുതാര്യമാകണമെന്ന് നിങ്ങൾ ആഗ്രഹിക്കുന്നത് തിരഞ്ഞെടുക്കുക (സിസ്റ്റംയുഐ പുനരാരംഭിക്കേണ്ടതുണ്ട്)</string>
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">പവർ മെനു</string>
+    <string name="lockscreen_enable_power_menu_summary">Allow accessing power menu on secure lockscreen</string>
+    <!-- Gaming mode -->
+    <string name="gaming_mode_title">Game space</string>
+    <string name="gaming_mode_summary">Extra features for immersive gaming experience</string>
+    <!-- QS Weather Options -->
+    <string name="qs_weather_title">ക്യുഎസ് സിസ്റ്റം കാലാവസ്ഥാ ശൈലി</string>
+    <string name="qs_weather_summary">സിസ്റ്റം കാലാവസ്ഥ കോൺഫിഗർ ചെയ്യുക</string>
+    <string name="qs_weather_hidden">കാലാവസ്ഥ മറയ്ക്കുക</string>
+    <string name="qs_temperature_image_show_scale">സ്കെയിലും ചിത്രവും ഉപയോഗിച്ച് ടെമ്പ് കാണിക്കുക</string>
+    <string name="qs_temperature_image_hide_scale">സ്കെയിൽ ഇല്ലാതെ ചിത്രം ഉപയോഗിച്ച് ടെമ്പ് കാണിക്കുക</string>
+    <string name="qs_temperature_show_scale_hide_image">സ്കെയിൽ ഉപയോഗിച്ച് താപനില കാണിക്കുക</string>
+    <string name="qs_temperature_hide_scale_hide_image">സ്കെയിൽ ഇല്ലാതെ താപനില കാണിക്കുക</string>
+    <string name="qs_show_image">ചിത്രം കാണിക്കുക</string>
+    <string name="weather_show_all_condition">സ്കെയിൽ, ഇമേജ്, കാലാവസ്ഥ എന്നിവ ഉപയോഗിച്ച് താപനില കാണിക്കുക</string>
+    <string name="kg_weather_title">ലോക്ക്സ്ക്രീൻ സിസ്റ്റം കാലാവസ്ഥാ ശൈലി</string>
+    <!-- Omni weather -->
+    <string name="qs_weather_settings_title">കാലാവസ്ഥ ക്രമീകരണങ്ങൾ</string>
+    <string name="qs_weather_settings_summary">ഐക്കൺ പാക്കും കാലാവസ്ഥാ സേവനവും സജ്ജീകരിക്കുക</string>
+    <string name="weather_title">കാലാവസ്ഥ ക്രമീകരണങ്ങൾ</string>
+    <string name="weather_config_title">കാലാവസ്ഥാ സേവനം</string>
+    <string name="weather_config_summary">സിസ്റ്റം സേവന ക്രമീകരണങ്ങൾ</string>
+    <string name="weather_icon_pack_title">കണ്ടീഷൻ ഐക്കൺ പായ്ക്ക്</string>
+    <string name="weather_icon_pack_note">ശ്രദ്ധിക്കുക\u003a \"ക്രോണസ് ഐക്കണുകൾ\" തിരയുന്നതിലൂടെ നിങ്ങൾക്ക് പ്ലേ സ്റ്റോറിൽ നിന്ന് പുതിയ ഐക്കൺ പായ്ക്കുകൾ ഇൻസ്റ്റാൾ ചെയ്യാം</string>
+    <string name="weather_icon_pack_info_title">നുറുങ്ങുകൾ\u003a \n\n1. \"ക്രോണസ് ഐക്കണുകൾ\" തിരയുന്നതിലൂടെ ഉപയോക്താക്കൾക്ക് പ്ലേ സ്റ്റോറിൽ നിന്ന് പുതിയ ഐക്കൺ പായ്ക്കുകൾ ഇൻസ്റ്റാൾ ചെയ്യാൻ കഴിയും.\n\n2. ദ്രുത ക്രമീകരണങ്ങളിലെ കാലാവസ്ഥാ ഐക്കണുകൾക്കും ഒറ്റനോട്ടത്തിൽ സുഷി ലോഞ്ചറിനും കണ്ടീഷൻ ഐക്കൺ പായ്ക്ക് ഉപയോഗിക്കുന്നു</string>
+    <!-- QS Transparency -->
     <string name="qs_transparency_title">Qs സുതാര്യത</string>
-    <!-- QuickSettings haptic feedback -->
-    <string name="quick_settings_vibrate_title">സ്പർശിക്കുമ്പോൾ വൈബ്രേറ്റുചെയ്യുക</string>
-    <string name="quick_settings_vibrate_summary">QS ടൈലുകളിൽ സ്പർശിക്കുമ്പോൾ വൈബ്രേറ്റ് ചെയ്യുക</string>
-    <!-- Tiles animation style  -->
-    <string name="qs_tile_animation_title">ആനിമേഷനുകൾ</string>
-    <string name="qs_tile_animation_style_title">ആനിമേഷൻ ശൈലി</string>
-    <string name="qs_tile_animation_duration_title">ആനിമേഷൻ ദൈർഘ്യം</string>
-    <string name="qs_tile_animation_interpolator_title">ടൈൽസ് ആനിമേഷൻ ഇന്റർപോളേറ്റർ</string>
-    <string name="qs_tile_animation_style_off">ആനിമേഷൻ ഇല്ല</string>
-    <string name="qs_tile_animation_style_flip">ഫ്ലിപ്പ്</string>
-    <string name="qs_tile_animation_style_rotate">തിരിക്കുക</string>
-    <string name="qs_tile_animation_duration_low">കുറഞ്ഞത്</string>
-    <string name="qs_tile_animation_duration_default">വെടിക്കെട്ട്</string>
-    <string name="qs_tile_animation_duration_fast">വേഗം</string>
-    <string name="qs_tile_animation_interpolator_linearInterpolator">ലീനിയർ</string>
-    <string name="qs_tile_animation_interpolator_accelerateInterpolator">ത്വരിതപ്പെടുത്തുക</string>
-    <string name="qs_tile_animation_interpolator_decelerateInterpolator">വേഗത കുറയ്ക്കുക</string>
-    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">ത്വരിതപ്പെടുത്തുക വേഗത കുറയ്ക്കുക</string>
-    <string name="qs_tile_animation_interpolator_bounceInterpolator">ബൗൺസ്</string>
-    <string name="qs_tile_animation_interpolator_overshootInterpolator">ഓവർഷൂട്ട്</string>
-    <string name="qs_tile_animation_interpolator_anticipateInterpolator">മുൻകൂട്ടി കാണുക</string>
-    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">ഓവർഷൂട്ട് പ്രതീക്ഷിക്കുക</string>
-    <string name="qs_set_animation_style">%1$s</string>
-    <string name="qs_set_animation_duration">%1$s</string>
-    <string name="qs_set_animation_interpolator">%1$s</string>
+    <string name="qs_transparency_summary">നിങ്ങളുടെ qs എത്ര സുതാര്യമാകണമെന്ന് നിങ്ങൾ ആഗ്രഹിക്കുന്നത് തിരഞ്ഞെടുക്കുക (സിസ്റ്റംയുഐ പുനരാരംഭിക്കേണ്ടതുണ്ട്)</string>
+    <!-- Power Menu Styles -->
+    <string name="power_menu_styles_cat">പവർ മെനു കസ്റ്റമൈസേഷനുകൾ</string>
+    <string name="power_menu_type_title">പവർ മെനു ശൈലി</string>
+    <string name="power_menu_type_lite">ലൈറ്റ് (A12)</string>
+    <string name="power_menu_type_full">മുഴുവൻ (A11)</string>
+    <string name="power_menu_type_classic">ക്ലാസിക് (A8)</string>
+    <string name="power_menu_type_grid">ഗ്രിഡ്</string>
+    <string name="power_menu_type_legacy">ലെഗസി (A7)</string>
+    <!-- Data usage info in QS footer -->
+    <string name="qs_footer_datausage_title">Data usage</string>
+    <string name="qs_footer_datausage_summary">Display data usage summary in quick settings footer</string>
+    <!-- Material dismiss all button for notifications -->
+    <string name="notification_material_dismiss_title">Clear all notification button</string>
+    <string name="notification_material_dismiss_summary">Replace clear all notification text with material style floating button</string>
+    <string name="notification_material_dismiss_style_title">Button style</string>
+    <string name="notification_material_dismiss_bgstyle_title">Button background</string>
+    <!-- Alert Slider Notifications (OnePlus devices) -->
+    <string name="alert_slider_notifications_title">അലേർട്ട് സ്ലൈഡർ അറിയിപ്പുകൾ</string>
+    <string name="alert_slider_notifications_summary">അലേർട്ട് സ്ലൈഡർ സ്ഥാനം മാറ്റുമ്പോൾ അറിയിപ്പ് പ്രദർശിപ്പിക്കുക</string>
+    <!-- Charging animation -->
+    <string name="charging_animation_title">ചാർജിംഗ് ആനിമേഷൻ</string>
+    <string name="charging_animation_summary">ഉപകരണം പ്ലഗ് ഇൻ ചെയ്യുമ്പോൾ ഒരു ആനിമേഷൻ പ്രദർശിപ്പിക്കുക</string>
+    <!-- Edge light -->
+    <string name="edge_light_title">Edge light</string>
+    <string name="edge_light_summary">Light up the side edges of the screen on notification pulse</string>
+    <string name="edge_light_always_trigger_on_pulse_title">Always trigger on pulse</string>
+    <string name="edge_light_always_trigger_on_pulse_summary">Whether to show edge light whenever ambient display is shown and not just for notifications</string>
+    <string name="edge_light_repeat_animation_title">Repeat animation</string>
+    <string name="edge_light_repeat_animation_summary_on">Repeat until timeout</string>
+    <string name="edge_light_repeat_animation_summary_off">Show only once</string>
+    <string name="edge_light_color_mode_title">Edge light color mode</string>
+    <!-- Ambient Ticker -->
+    <string name="pulse_on_new_tracks_title">Music ticker</string>
+    <string name="pulse_on_new_tracks_summary">Show music ticker on Ambient Display during track change</string>
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
+    <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
+    <string name="display_cutout_force_fullscreen_no_apps">No apps</string>
     <!-- Smart Pixels -->
     <string name="smart_pixels_warning_text">സ്മാർട്ട് പിക്സലുകൾ ഒരു പവർ സേവിംഗ് ഫീച്ചറാണ്. എത്ര പിക്സലുകൾ ഓഫാക്കാൻ നിങ്ങൾ തീരുമാനിക്കുന്നു എന്നതിനെ ആശ്രയിച്ച്, ബാറ്ററി ലൈഫിൽ നിങ്ങൾക്ക് പുരോഗതി കാണാനാകും. ചില സന്ദർഭങ്ങളിൽ ഇത് ടച്ച് സ്ക്രീൻ പ്രതികരിക്കാത്ത മേഖലകളിലേക്ക് നയിച്ചേക്കാം എന്നത് ശ്രദ്ധിക്കുക</string>
     <string name="smart_pixels_title">സ്മാർട് പിക്സൽസ്</string>
@@ -569,125 +548,22 @@
     <string name="smart_pixels_percent">പ്രവർത്തനരഹിതമാക്കാനുള്ള പിക്സലുകളുടെ ശതമാനം</string>
     <string name="smart_pixels_shift_title">ബേൺ-ഇൻ സംരക്ഷണം</string>
     <string name="smart_pixels_shift_summary">പിക്സലുകൾ ഇടയ്ക്കിടെ മാറ്റി OLED ഉപകരണങ്ങളിൽ ബേൺ-ഇൻ ചെയ്യുന്നത് തടയുന്നു</string>
-    <!-- Sensor block per-package -->
-    <string name="sensor_block_title">ഓരോ പാക്കേജിനും സെൻസർ ബ്ലോക്ക്</string>
-    <string name="sensor_block_summary">ബാറ്ററി ലാഭിക്കാൻ ചില ആപ്പുകൾക്കായി ചില സെൻസറുകളിലേക്കുള്ള ആക്സസ് തടയുക</string>
-    <string name="sensor_block_app_picker_title">ഈ ആപ്പുകൾക്കായി സെൻസറുകൾ തടയുക</string>
-    <string name="add_sensor_block_package_title">സെൻസർ ബ്ലോക്കിനായി ആപ്പുകൾ ചേർക്കുക</string>
-    <string name="add_sensor_block_package_summary">ഈ ആപ്പുകൾക്ക് കാര്യമായ ചലനം, ആക്സിലറോമീറ്റർ, ലീനിയർ ആക്സിലറേഷൻ സെൻസറുകൾ എന്നിവ ബ്ലോക്ക് ചെയ്യപ്പെടും</string>
-    <string name="profile_choose_app">ആപ്പ് തിരഞ്ഞെടുക്കൂ</string>
-    <string name="dialog_delete_title">ഡിലീറ്റ്</string>
-    <string name="dialog_delete_message">തിരഞ്ഞെടുത്ത ഇനം നീക്കംചെയ്യണോ?</string>
-    <!-- Wi-Fi Standard icon -->
-    <string name="show_wifi_standard_icon_title">Wi-Fi സ്റ്റാൻഡേർഡ് ഐക്കൺ കാണിക്കുക</string>
-    <string name="show_wifi_standard_icon_summary">Wi-Fi സിഗ്നൽ സൂചകത്തിൽ Wi-Fi തരം കാണിക്കുക</string>
-    <!-- Clock Size -->
-    <string name="status_bar_clock_font_size_title">സ്റ്റാറ്റസ്ബാർ ക്ലോക്ക് ഫോണ്ട് വലുപ്പം</string>
-    <string name="qs_clock_font_size_title">QS ഹെഡർ ക്ലോക്ക് ഫോണ്ട് വലുപ്പം</string>
-    <!-- QS tiles layout  -->
-    <string name="qs_layout_category_title">ടൈൽസ് ലേഔട്ട്</string>
-    <string name="qs_tile_label_hide_title">ലേബൽ മറയ്ക്കുക</string>
-    <string name="qs_tile_label_size_title">ലാബേലിന്റെ ഫോണ്ട് വലുപ്പം</string>
-    <string name="qs_tile_label_hide_summary">ടൈലിൽ ഐക്കൺ മാത്രം കാണിക്കുക</string>
-    <string name="qs_tile_layout_title">ലംബ ലേഔട്ട്</string>
-    <string name="qs_tile_layout_summary">ഐക്കണിന് അടുത്തുള്ള ലേബൽ താഴെ കാണിക്കുക</string>
-    <string name="qs_columns_portrait_title">നിരകൾ (നിവർന്ന്)</string>
-    <string name="qs_columns_landscape_title">നിരകൾ(ലാന്റ്സ്കേപ്പ്)</string>
-    <!-- Sb clock bg -->
-    <string name="status_bar_show_clock_bg">ക്ലോക്ക് പശ്ചാത്തല ചിപ്പ് കാണിക്കുക</string>
-    <!-- Font -->
-    <string name="font_settings">ഫോണ്ട് ക്രമീകരണം</string>
-    <string name="font_settings_summary">സിസ്റ്റം ഫോണ്ട് ശൈലി സജ്ജമാക്കുക</string>
-    <string name="font_preference_title">തലക്കെട്ട് / ബോഡി ഫോണ്ട്</string>
-    <string name="custom_font_preference_title">ഇഷ്‌ടാനുസൃത തലക്കെട്ട് / ബോഡി ഫോണ്ട്</string>
-    <string name="custom_font_preference_footer_message">പ്രാബല്യത്തിൽ വരാൻ ഒരു ഫോണ്ട് തിരഞ്ഞെടുത്ത ശേഷം റീബൂട്ട് ചെയ്യുക</string>
-    <string name="cannot_resolve_activity">ഈ പ്രവർത്തനം നടത്താൻ അനുയോജ്യമായ ഒരു പ്രവർത്തനം കണ്ടെത്താനായില്ല!</string>
-    <string name="invalid_font_file">ഫോണ്ട് ഫയലിന് സാധുവായ പോസ്റ്റ്സ്ക്രിപ്റ്റ് പട്ടികയില്ല</string>
-    <string name="failed_to_update_font">ഫോണ്ട് അപ്ഡേറ്റ് ചെയ്യാനായില്ല</string>
-    <string name="failed_to_copy_file_to_cache">ഫോണ്ട് കാഷെയിലേക്ക് പകർത്തുന്നതിൽ പരാജയപ്പെട്ടു</string>
-    <!-- Network traffic -->
-    <string name="network_traffic_category_title">നെറ്റ്‌വർക്ക് ട്രാഫിക്</string>
-    <string name="network_traffic_intro_text">സ്റ്റാറ്റസ്ബാറിൽ നിലവിലെ നെറ്റ്‌വർക്ക് ട്രാഫിക് വേഗത കാണിക്കുന്നു.
-        മോണിറ്റർ വേഗത ചലനാത്മകമായി കാണിക്കുന്നു, അത് ഒന്നിടവിട്ട് മാറുന്നു
-        ഓരോ സെക്കൻഡിലും അപ്‌ലോഡ്, ഡൗൺലോഡ് വേഗത
-    </string>
-    <string name="enable_network_traffic">നെറ്റ്‌വർക്ക് ട്രാഫിക് മോണിറ്റർ പ്രവർത്തനക്ഷമമാക്കുക</string>
-    <string name="statusbar_network_traffic_threshold_tx_title">അപ്‌ലോഡിനായി സ്വയമേവ മറയ്ക്കുന്ന പരിധി</string>
-    <string name="statusbar_network_traffic_threshold_rx_title">ഡൗൺലോഡ് ചെയ്യാനുള്ള സ്വയമേവ മറയ്ക്കുക</string>
-    <string name="statusbar_network_traffic_unit_text_size_title">നെറ്റ്‌വർക്ക് ട്രാഫിക് യൂണിറ്റ് ടെക്‌സ്‌റ്റ് വലുപ്പം</string>
-    <string name="statusbar_network_traffic_rate_text_scale_factor_title">നെറ്റ്‌വർക്ക് ട്രാഫിക് നിരക്ക് ടെക്സ്റ്റ് സ്കെയിൽ ഘടകം</string>
-    <string name="statusbar_network_traffic_rate_text_scale_factor_dialog_title">സ്കെയിൽ ഘടകം</string>
-    <!-- Monet engine -->
-    <string name="monet_engine_settings_title">മോണറ്റ് എഞ്ചിൻ</string>
-    <string name="monet_engine_settings_summary">ഇഷ്‌ടാനുസൃത നിറം, വർണ്ണാഭം, തെളിച്ചം</string>
-    <string name="accurate_shades_title">കൃത്യമായ ഷേഡുകൾ ഉപയോഗിക്കുക</string>
-    <string name="color_override_title">ഇഷ്‌ടാനുസൃത വർണ്ണ പിക്കർ</string>
-    <string name="color_override_default_summary">വാൾപേപ്പർ നിറം ഉപയോഗിക്കുന്നു</string>
-    <string name="custom_color_override_summary_placeholder">നിറം തിരഞ്ഞെടുക്കുക: <xliff:g example="#FF0000" id="Color">%1$s</xliff:g>. വാൾപേപ്പർ നിറം ഉപയോഗിക്കുന്നതിന് ഒരു ശൂന്യമായ മൂല്യം സജ്ജമാക്കുക.    </string>
-    <string name="invalid_color_input">അസാധുവായ വർണ്ണ ഇൻപുട്ട്!</string>
-    <string name="chroma_factor_title">വർണ്ണാഭമായത്</string>
-    <string name="linear_lightness_title">ഇഷ്ടാനുസൃത ലൈറ്റ്നസ് സ്കെയിൽ ഉപയോഗിക്കുക</string>
-    <string name="white_luminance_title">തെളിച്ചം</string>
-    <!-- Quick settings styling -->
-    <string name="qs_styling">ദ്രുത ക്രമീകരണങ്ങൾ സ്റ്റൈലിംഗ്</string>
-    <string name="qs_styles_title">ക്യുഎസ് പാനൽ ശൈലികൾ</string>
-    <string name="qs_rounded_rectangle">QS വൃത്താകൃതിയിലുള്ള ദീർഘചതുരം</string>
-    <string name="qs_outline">QS ഔട്ട്‌ലൈൻ ശൈലി</string>
-    <string name="qs_two_tone">ക്യുഎസ് ടു-ടോൺ ആക്സന്റ്</string>
-    <string name="qs_color_pop">ക്യുഎസ് കളർ പോപ്പ്</string>
-    <string name="qs_shaded">ക്യുഎസ് ഷേഡഡ്</string>
-    <string name="qs_cyberpunk">ക്യുഎസ് സൈബർപങ്ക്</string>
-    <string name="qs_neumorph">ക്യുഎസ് ന്യൂമോർഫ്</string>
-    <string name="qs_reflected">ക്യുഎസ് പ്രതിഫലിപ്പിച്ചു</string>
-    <string name="qs_surround">ക്യുഎസ് സറൗണ്ട്</string>
-    <string name="qs_thin">ക്യുഎസ് തിൻലൈൻ</string>
-    <!-- Status bar - Battery custom charging symbol -->
-    <string name="text_charging_symbol_title">ടെക്സ്റ്റ് ശൈലിക്ക് ഇഷ്‌ടാനുസൃത ചാർജിംഗ് ചിഹ്നം</string>
-    <string name="text_charging_symbol_dialog">ബാറ്ററി ശതമാനം ടെക്‌സ്‌റ്റിന് സമീപമുള്ള ഇഷ്‌ടാനുസൃത ചാർജിംഗ് ചിഹ്നം</string>
-    <string name="text_charging_symbol_default">അപ്രാപ്‌തമാക്കി</string>
-    <string name="text_charging_symbol_flash">ഫ്ലാഷ്</string>
-    <string name="text_charging_symbol_tilde">ടിൽഡ്</string>
-    <string name="text_charging_symbol_plus">പ്ലസ്</string>
-    <string name="text_charging_symbol_star">നക്ഷത്രം</string>
-    <string name="text_charging_symbol_rupee">രൂപ</string>
-    <string name="text_charging_symbol_dollar">ഡോളർ</string>
-    <string name="text_charging_symbol_euro">യൂറോ</string>
-    <string name="text_charging_symbol_cent">സെൻറ്</string>
-    <!-- Power menu Animations  -->
-    <string name="power_menu_styles_cat">Power Menu Customizations</string>
-    <string name="power_menu_animation_title">പവർ മെനു ആനിമേഷൻ</string>
-    <string name="power_menu_animation_dialog_title">പവർ മെനു ആനിമേഷൻ തിരഞ്ഞെടുക്കുക</string>
-    <string name="power_menu_animation_aosp">AOSP (സ്ഥിരസ്ഥിതി)</string>
-    <string name="power_menu_animation_bottom">താഴെ</string>
-    <string name="power_menu_animation_top">മുകളില്‍</string>
-    <string name="power_menu_animation_xylon">പറക്കുക</string>
-    <string name="power_menu_animation_slide">സ്ലൈഡ്</string>
-    <string name="power_menu_animation_turn">വളവ്</string>
-    <string name="power_menu_animation_fly">തിളക്കം</string>
-    <string name="power_menu_animation_card">3ഡി</string>
-    <string name="power_menu_animation_translucent_top">അർദ്ധസുതാര്യം (മുകളിൽ)</string>
-    <string name="power_menu_animation_translucent_bottom">അർദ്ധസുതാര്യം (താഴെ)</string>
-    <string name="power_menu_animation_rotate">തിരിക്കുക</string>
-    <!-- Power Menu Styles -->
-    <string name="power_menu_type_title">Power menu style</string>
-    <string name="power_menu_type_lite">Lite (A12)</string>
-    <string name="power_menu_type_full">Full (A11)</string>
-    <string name="power_menu_type_classic">Classic (A8)</string>
-    <string name="power_menu_type_grid">Grid</string>
-    <string name="power_menu_type_legacy">Legacy (A7)</string>
-    <!-- Media artwork -->
-    <string name="media_category">മീഡിയ അറിയിപ്പ്</string>
-    <string name="artwork_media_background_enable_blur_title">മീഡിയ അറിയിപ്പ് കലാസൃഷ്ടി പശ്ചാത്തലം മങ്ങിക്കുക</string>
-    <string name="artwork_media_background_blur_radius_title">മീഡിയ നോട്ടിഫിക്കേഷൻ ആർട്ട്‌വർക്കിനുള്ള മങ്ങിക്കൽ</string>
-    <!-- Black theme -->
-    <string name="custom_theme_title">ഇഷ്ടാനുസൃത തീം ഉപയോഗിക്കുക</string>
-    <string name="custom_theme_summary">ഇഷ്‌ടാനുസൃത പശ്ചാത്തല വർണ്ണങ്ങൾ നിർബന്ധമാക്കുക</string>
-    <string name="custom_theme_default">വെടിക്കെട്ട്</string>
-    <string name="custom_theme_black">കറുപ്പ്</string>
-    <string name="custom_theme_clear">മായ്‌ക്കുക (ബീറ്റ)</string>
-    <string name="custom_theme_vivid">വിവിഡ്(മോനെ)</string>
-    <string name="custom_theme_espresso">എസ്പ്രെസോ</string>
-    <string name="custom_theme_snowpaintdrop">സ്നോ പെയിന്റ്ഡ്രോപ്പ്</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">കില്ല് അപ്ലിക്കേഷൻ ബട്ടൺ</string>
+    <string name="notification_guts_kill_app_button_summary">കില്ല് അപ്ലിക്കേഷൻ ബട്ടൺ അറിയിപ്പ് ലോംഗ് പ്രസ്സ് മെനുവിൽ കാണിക്കുക</string>
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">സ്‌ക്രീൻ ഓഫ് ആനിമേഷൻ</string>
+    <string name="screen_off_animation_default">വെടിക്കെട്ട്</string>
+    <string name="screen_off_animation_crt">സി ആര്‍ റ്റി</string>
+    <string name="screen_off_animation_scale">സ്കെയിൽ</string>
+    <!-- Heads up timeout -->
+    <string name="notification_heads_up_title">Heads up</string>
+    <string name="notification_heads_up_summary">Allow pop up notifications</string>
+    <string name="notification_heads_up_timeout_title">Time out</string>
+    <string name="notification_heads_up_timeout_summary">Time to display heads up notifications</string>
+    <!-- Less boring heads up -->
+    <string name="less_boring_heads_up_title">Less boring heads up</string>
+    <string name="less_boring_heads_up_summary">ഡയലർ, സന്ദേശമയയ്‌ക്കൽ, അലാറം ആപ്പ് എന്നിവയ്‌ക്കായി മാത്രം ഹെഡ്‌അപ്പ് കാണിക്കുക</string>
     <!-- Pulse music visualizer -->
     <string name="pulse_help_policy_notice_title">പൾസിനെ കുറിച്ച്</string>
     <string name="pulse_help_policy_notice_summary">ഉപകരണത്തിൽ സംഗീതം പ്ലേ ചെയ്യുമ്പോൾ പൾസ് ഒരു മികച്ച ഓഡിയോ ഗ്രാഫിക് ഇക്വലൈസർ ആണ്</string>
@@ -705,7 +581,6 @@
     <string name="pulse_legacy_mode_advanced_category">ഫേഡിംഗ് ബ്ലോക്ക് മോഡ് ക്രമീകരണങ്ങൾ</string>
     <string name="pulse_custom_fudge_factor">സാനിറ്റി ലെവൽ</string>
     <string name="pulse_lavalamp_speed_title">ലാവ വിളക്ക് വേഗത</string>
-    <string name="pulse_color_auto">ആൽബം</string>
     <string name="pulse_solid_units_count">സോളിഡ് ലൈനുകളുടെ എണ്ണം</string>
     <string name="pulse_solid_units_opacity">സോളിഡ് ലൈനുകളുടെ അതാര്യത</string>
     <string name="pulse_solid_units_rounded_title">വൃത്താകൃതിയിലുള്ള മൂല</string>
@@ -715,6 +590,7 @@
     <string name="pulse_color_accent">കളര്‍ ശൈലി</string>
     <string name="pulse_color_custom">കസ്റ്റം</string>
     <string name="pulse_color_lava_lamp">ലാവാ ലാംപ്</string>
+    <string name="pulse_color_auto">ആൽബം</string>
     <string name="pulse_color_user_title">നിറം തിരഞ്ഞെടുക്കുക</string>
     <string name="pulse_smoothing_enabled_title">മിനുസപ്പെടുത്തൽ ഓണാക്കുക</string>
     <string name="pulse_smoothing_enabled_summary">ഓരോ ബാറും കൂടുതൽ സുഗമമായി ആനിമേറ്റ് ചെയ്യുന്നു</string>
@@ -722,231 +598,137 @@
     <string name="pulse_custom_div">ബാർ സ്പെയ്സിംഗ്</string>
     <string name="pulse_filled_block_size">ബ്ലോക്ക് വലിപ്പം</string>
     <string name="pulse_empty_block_size">ബ്ലോക്ക് സ്പേസിംഗ്</string>
-    <!-- Pulse Gravity n Mirror Options -->
-    <string name="pulse_custom_gravity_title">ഗുരുത്വാകർഷണം</string>
-    <string name="pulse_custom_gravity_bottom">താഴെ</string>
-    <string name="pulse_custom_gravity_top">മുകളില്‍</string>
-    <string name="pulse_custom_gravity_center">മദ്ധ്യം</string>
-    <string name="visualizer_center_mirrored_title">സെന്റർ മിറർ ചെയ്തു</string>
-    <string name="visualizer_center_mirrored_summary">വിഷ്വലൈസർ സെന്റർ മിറർഡ് മോഡിൽ സജ്ജമാക്കുക</string>
-    <string name="pulse_vertical_mirror_title">ലംബ കണ്ണാടി</string>
-    <string name="pulse_vertical_mirror_summary">മറ്റ് പൾസ് സൃഷ്ടിച്ച് ലംബമായി ഫ്ലിപ്പുചെയ്യുക</string>
-    <!-- Bluetooth status -->
-    <string name="bluetooth_battery_title">ബ്ലൂടൂത്ത് ബാറ്ററി നില</string>
-    <string name="bluetooth_battery_summary">കണക്റ്റുചെയ്‌ത ബ്ലൂടൂത്ത് ഉപകരണത്തിന്റെ ബാറ്ററി നില ലഭ്യമാണെങ്കിൽ പ്രദർശിപ്പിക്കുക</string>
-    <!-- Lockscreen shortcuts -->
-    <string name="lockscreen_shortcuts_title">ലോക്ക്സ്ക്രീൻ കുറുക്കുവഴികൾ</string>
-    <string name="lockscreen_shortcuts_summary">ഏത് കുറുക്കുവഴികളാണ് പ്രദർശിപ്പിക്കേണ്ടതെന്ന് ഇഷ്ടാനുസൃതമാക്കുക</string>
-    <!-- QS SystemInfo -->
-    <string name="qs_system_info_title">സിസ്റ്റം വിവരം</string>
-    <string name="qs_system_info_off">ഓഫ്</string>
-    <string name="qs_system_info_icon_title">സിസ്റ്റം വിവര ഐക്കൺ</string>
-    <string name="qs_system_info_icon_summary">Qs-ൽ സിസ്റ്റം വിവര ഐക്കൺ കാണിക്കുക</string>
-    <string name="qs_system_info_cpu_temp">സിപിയു താപനില</string>
-    <string name="qs_system_info_battery_temp">ബാറ്ററി താപനില</string>
-    <string name="qs_system_info_gpu_clock">GPU ആവൃത്തി</string>
-    <string name="qs_system_info_gpu_busy">GPU ഉപയോഗം</string>
-    <!-- Privacy Indicator -->
-    <string name="mic_camera_privacy_indicator_title">മൈക്കും ക്യാമറയും സ്വകാര്യതാ സൂചകം</string>
-    <string name="mic_camera_privacy_indicator_summary">ഏതെങ്കിലും ആപ്പ് മൈക്കോ ക്യാമറയോ ഉപയോഗിക്കുമ്പോൾ ഇൻഡിക്കേറ്റർ കാണിക്കുക</string>
-    <string name="location_privacy_indicator_title">ലൊക്കേഷൻ സ്വകാര്യതാ സൂചകം</string>
-    <string name="location_privacy_indicator_summary">ഏതെങ്കിലും ആപ്പ് ലൊക്കേഷൻ ഉപയോഗിക്കുമ്പോൾ സൂചകം കാണിക്കുക</string>
-    <string name="projection_privacy_indicator_title">മീഡിയ പ്രൊജക്ഷൻ സ്വകാര്യതാ സൂചകം</string>
-    <string name="projection_privacy_indicator_summary">ഉപകരണ സ്ക്രീൻ പ്രൊജക്റ്റ് ചെയ്യുമ്പോൾ സൂചകം കാണിക്കുക</string>
-    <!-- QS Data Usage -->
-    <string name="qs_data_usage_panel_title">ഡാറ്റ ഉപയോഗം കാണിക്കുക</string>
-    <string name="qs_data_usage_panel_summary">വിപുലീകരിച്ച qs പാനലിൽ ഡാറ്റ ഉപയോഗ വിശദാംശങ്ങളുള്ള ഒരു ഡയലോഗ് പ്രദർശിപ്പിക്കുക</string>
-    <!-- Lockscreen interface -->
-    <string name="lockscreen_interface_title">ലോക്ക്സ്ക്രീൻ യൂസർ ഇന്റർഫേസ്</string>
-    <string name="lockscreen_clock_color_title">ഇഷ്‌ടാനുസൃത ലോക്ക് സ്‌ക്രീൻ ക്ലോക്ക് വർണ്ണം</string>
-    <string name="lockscreen_clock_color_summary">വാൾപേപ്പർ ഉച്ചാരണത്തിന് പകരം ഇഷ്‌ടാനുസൃത നിറം ഉപയോഗിക്കുക</string>
-    <string name="kg_custom_clock_color_title">ലോക്ക്സ്ക്രീൻ ക്ലോക്ക് നിറം തിരഞ്ഞെടുക്കുക</string>
-    <string name="kg_custom_clock_font_title">ഇഷ്‌ടാനുസൃത ലോക്ക് സ്‌ക്രീൻ ക്ലോക്ക് ഫോണ്ട്</string>
-    <string name="theme_customization_date_font_title">ലോക്ക്സ്ക്രീൻ തീയതി ഫോണ്ട് ശൈലി</string>
-    <string name="theme_customization_date_font_summary">ലോക്ക്സ്ക്രീൻ തീയതി ഫോണ്ട് ശൈലി സജ്ജമാക്കുക</string>
-    <string name="kg_custom_clock_top_margin_title">ക്ലോക്കിന് താഴെയുള്ള ഇടം</string>
-    <string name="clock_use_single_line_title">ഇഷ്‌ടാനുസൃത ക്ലോക്ക് ഫോർമാറ്റ്</string>
-    <string name="single_line">ഒറ്റ വരി</string>
-    <string name="double_line">ഇരട്ട വരി</string>
-    <string name="kg_big_clock_text_size_title">വലിയ ക്ലോക്ക് വലിപ്പം</string>
+    <!-- Volume panel -->
+    <string name="volume_panel_category">വോളിയം പാനൽ</string>
+    <string name="volume_dialog_timeout_title">Volume panel timeout</string>
+    <string name="volume_panel_on_left_title">Volume panel on left</string>
+    <!-- Volume Media Output Toggle -->
+    <string name="volume_media_output_toggle_title">Volume media output</string>
+    <string name="volume_media_output_toggle_summary">Show media output toggle when there is an active stream</string>
     <!-- Volume Styles -->
-    <string name="volume_style_title">വോളിയം പാനൽ ശൈലികൾ</string>
     <string name="rui_style">Realme UI ശൈലി</string>
-    <string name="rice_style">റൈസ് സ്റ്റൈൽ</string>
-    <string name="volume_customizations_title">വോളിയം പാനൽ കസ്റ്റമൈസേഷനുകൾ</string>
-    <!-- Ambient Customization -->
-    <string name="ambient_text_category">ടെക്സ്റ്റ് ഇഷ്‌ടാനുസൃതമാക്കൽ</string>
-    <string name="ambient_image_category">ഇമേജ് ഇഷ്‌ടാനുസൃതമാക്കൽ</string>
-    <string name="ambient_text_category_title">ആംബിയന്റ്-AOD ഇഷ്‌ടാനുസൃതമാക്കൽ</string>
-    <string name="ambient_text_category_summary">ആംബിയന്റ്-ഓഡിന്റെ രൂപം ഇഷ്‌ടാനുസൃതമാക്കുന്നു</string>
-    <string name="ambient_text_title">ആംബിയന്റ് ടെക്സ്റ്റ്</string>
-    <string name="ambient_text_summary">AoD-ൽ ആംബിയന്റ് ടെക്സ്റ്റ് കാണിക്കുക</string>
-    <string name="ambient_text_animation_title">ആംബിയന്റ് ടെക്സ്റ്റ് ആനിമേഷൻ</string>
-    <string name="ambient_text_animation_summary">AoD കാണിക്കുമ്പോൾ ഒരു ആനിമേഷൻ കാണിക്കുക</string>
-    <string name="ambient_text_size_title">ആംബിയന്റ് ടെക്‌സ്‌റ്റ് വലുപ്പം</string>
-    <string name="ambient_text_font_title">ആംബിയന്റ് ടെക്സ്റ്റ്</string>
-    <string name="ambient_text_string_title">ആംബിയന്റ് ടെക്സ്റ്റ് സജ്ജീകരിക്കുക</string>
-    <string name="ambient_text_align_title">ആംബിയന്റ് ടെക്സ്റ്റ്</string>
-    <string name="ambient_text_align_start_top">മുകളിൽ വലത്</string>
-    <string name="ambient_text_align_start_center">വലത് കേന്ദ്രം</string>
-    <string name="ambient_text_align_start_bottom">വലത്തും താഴെയും</string>
-    <string name="ambient_text_align_center">മദ്ധ്യം</string>
-    <string name="ambient_text_align_end_top">ഇടതും മുകളിലും</string>
-    <string name="ambient_text_align_end_center">ഇടതും നടുവിലും</string>
-    <string name="ambient_text_align_end_bottom">ഇടതും താഴെയും</string>
-    <string name="ambient_text_type_color_title">ആംബിയന്റ് ടെക്സ്റ്റ് തരം നിറം</string>
-    <string name="ambient_text_color_title">ആംബിയന്റ് ടെക്സ്റ്റ് നിറം</string>
-    <string name="ambient_notification_light_color_mode_accent">സിസ്റ്റം ആക്സന്റ് നിറം</string>
-    <string name="ambient_notification_light_color_mode_custom">ഇഷ്ടാനുസൃത നിറം</string>
-    <string name="ambient_notification_light_color_mode_wall">വാൾപേപ്പർ നിറങ്ങൾ</string>
-    <string name="ambient_image_title">ആംബിയന്റ് ചിത്രം</string>
-    <string name="file_header_select_title">പ്രാദേശിക ചിത്രം തിരഞ്ഞെടുക്കുക</string>
-    <string name="file_header_select_summary">സ്റ്റോറേജിൽ നിന്ന് ചിത്രം തിരഞ്ഞെടുക്കുക</string>
-    <!-- Notification headers -->
-    <string name="notification_headers_title">അറിയിപ്പ് തലക്കെട്ടുകൾ</string>
-    <string name="notification_headers_summary">അറിയിപ്പ് തണലിൽ തലക്കെട്ടുകൾ കാണിക്കുക</string>
-    <!-- Combined signal icons in status bar -->
-    <string name="combined_status_bar_signal_icons_title">സംയോജിത സിഗ്നൽ ഐക്കണുകൾ</string>
-    <string name="combined_status_bar_signal_icons_summary">സംയോജിത സിഗ്നൽ ഐക്കണുകൾ പ്രവർത്തനക്ഷമമാക്കുക\n(മുന്നറിയിപ്പ്: സംയുക്ത സിഗ്നൽ ഐക്കണുകൾ പ്രവർത്തനക്ഷമമാക്കുമ്പോൾ ഒരു സോഫ്റ്റ് റീബൂട്ട് സംഭവിക്കും)</string>
-    <!-- Statusbar lyric -->
-    <string name="status_bar_lyric_title">സ്റ്റാറ്റസ് ബാർ ഗാനരചന</string>
-    <string name="status_bar_lyric_summary">സ്റ്റാറ്റസ് ബാറിൽ ഗാനരചന കാണിക്കുക (ആപ്പ് പിന്തുണ ആവശ്യമാണ്)</string>
-    <string name="status_bar_show_lyric_title">സ്റ്റാറ്റസ് ബാർ ലിറിക്ക് പ്രവർത്തനക്ഷമമാക്കുക</string>
-    <string name="disguise_props_for_music_app_title">സംഗീത ആപ്പുകൾക്കായി വേഷംമാറി ഉപകരണം</string>
-    <string name="disguise_props_for_music_app_summary">പിന്തുണ സ്റ്റാറ്റസ് ബാർ ലിറിക്കിനായി ചില സംഗീത ആപ്ലിക്കേഷനുകളിൽ വേഷംമാറി ഉപകരണം. ഈ ടോഗിൾ മാറ്റിയ ശേഷം, മാറ്റം പ്രാബല്യത്തിൽ വരുന്നതിന് നിങ്ങൾ ആപ്ലിക്കേഷനുകൾ പുനരാരംഭിക്കേണ്ടതുണ്ട്.</string>
-    <!-- Brightness control -->
-    <string name="status_bar_brightness_control_title">തെളിച്ച നിയന്ത്രണം</string>
-    <string name="status_bar_brightness_control_summary">സ്റ്റാറ്റസ് ബാറിലുട സ്ലൈഡുചെയ്‌ത് തെളിച്ചം ക്രമീകരിക്കുക</string>
-    <!-- Weather -->
-    <string name="weather_settings_title">കാലാവസ്ഥ ക്രമീകരണങ്ങൾ</string>
-    <string name="weather_settings_summary">ഐക്കൺ പാക്കും കാലാവസ്ഥാ സേവനവും സജ്ജീകരിക്കുക</string>
-    <string name="lockscreen_weather_title">കാലാവസ്ഥാ അവസ്ഥ</string>
-    <string name="lockscreen_weather_summary">നിലവിലെ കാലാവസ്ഥയും താപനിലയും പ്രദർശിപ്പിക്കുക</string>
-    <string name="lockscreen_weather_enabled_info">കാലാവസ്ഥാ സേവനം പ്രവർത്തനക്ഷമമാക്കേണ്ടതുണ്ട്</string>
-    <string name="lockscreen_weather_location_title">കാലാവസ്ഥയുടെ ലൊക്കേഷൻ</string>
-    <string name="lockscreen_weather_location_summary">നിലവിലെ കാലാവസ്ഥ ലൊക്കേഷൻ പ്രദർശിപ്പിക്കുക</string>
-    <!-- QS Weather Options -->
-    <string name="qs_weather_title">ക്യുഎസ് സിസ്റ്റം കാലാവസ്ഥാ ശൈലി</string>
-    <string name="qs_weather_summary">സിസ്റ്റം കാലാവസ്ഥ കോൺഫിഗർ ചെയ്യുക</string>
-    <string name="qsweather_dialog_title">QuickSettings കാലാവസ്ഥ ലൊക്കേഷൻ</string>
-    <string name="qs_weather_hidden">കാലാവസ്ഥ മറയ്ക്കുക</string>
-    <string name="qs_temperature_image_show_scale">സ്കെയിലും ചിത്രവും ഉപയോഗിച്ച് ടെമ്പ് കാണിക്കുക</string>
-    <string name="qs_temperature_image_hide_scale">സ്കെയിൽ ഇല്ലാതെ ചിത്രം ഉപയോഗിച്ച് ടെമ്പ് കാണിക്കുക</string>
-    <string name="qs_temperature_show_scale_hide_image">സ്കെയിൽ ഉപയോഗിച്ച് താപനില കാണിക്കുക</string>
-    <string name="qs_temperature_hide_scale_hide_image">Show temp without scale</string>
-    <string name="qs_show_image">Show image</string>
-    <string name="weather_show_all_condition">Show temp with scale,image and weather condition</string>
-    <string name="qsweather_position_qqs">QuickSettings</string>
-    <string name="qsweather_position_qsb">QuickStatusbar</string>
-    <string name="qsweather_position_both">Both</string>
-    <string name="launcher_weather_title">ലോഞ്ചർ സിസ്റ്റം കാലാവസ്ഥാ ശൈലി</string>
-    <string name="kg_weather_title">ലോക്ക്സ്ക്രീൻ സിസ്റ്റം കാലാവസ്ഥാ ശൈലി</string>
-    <!-- Omni weather -->
-    <string name="qs_weather_settings_title">കാലാവസ്ഥ ക്രമീകരണങ്ങൾ</string>
-    <string name="qs_weather_settings_summary">ഐക്കൺ പാക്കും കാലാവസ്ഥാ സേവനവും സജ്ജീകരിക്കുക</string>
-    <string name="weather_title">കാലാവസ്ഥ ക്രമീകരണങ്ങൾ</string>
-    <string name="weather_config_title">കാലാവസ്ഥാ സേവനം</string>
-    <string name="weather_config_summary">സിസ്റ്റം സേവന ക്രമീകരണങ്ങൾ</string>
-    <string name="weather_icon_pack_title">കണ്ടീഷൻ ഐക്കൺ പായ്ക്ക്</string>
-    <string name="weather_icon_pack_note">ശ്രദ്ധിക്കുക\u003a \"ക്രോണസ് ഐക്കണുകൾ\" തിരയുന്നതിലൂടെ നിങ്ങൾക്ക് പ്ലേ സ്റ്റോറിൽ നിന്ന് പുതിയ ഐക്കൺ പായ്ക്കുകൾ ഇൻസ്റ്റാൾ ചെയ്യാം</string>
-    <string name="weather_icon_pack_info_title">നുറുങ്ങുകൾ\u003a \n\n1. \"ക്രോണസ് ഐക്കണുകൾ\" തിരയുന്നതിലൂടെ ഉപയോക്താക്കൾക്ക് പ്ലേ സ്റ്റോറിൽ നിന്ന് പുതിയ ഐക്കൺ പായ്ക്കുകൾ ഇൻസ്റ്റാൾ ചെയ്യാൻ കഴിയും.\n\n2. ദ്രുത ക്രമീകരണങ്ങളിലെ കാലാവസ്ഥാ ഐക്കണുകൾക്കും ഒറ്റനോട്ടത്തിൽ സുഷി ലോഞ്ചറിനും കണ്ടീഷൻ ഐക്കൺ പായ്ക്ക് ഉപയോഗിക്കുന്നു</string>
-    <string name="qsweather_settings_title">QuickSettings കാലാവസ്ഥ</string>
-    <string name="qsweather_settings_summary">ക്വിക്ക് സെറ്റിംഗ്സ് കാലാവസ്ഥ കാഴ്‌ചകൾ സജ്ജീകരിക്കുക</string>
-    <!-- Clock picker format -->
-    <string name="clock_format">12\n26</string>
-    <string name="text_sample">AaBbCc</string>
-    <string name="theme_customization_clock_font_title">ക്ലോക്ക് ഫോണ്ട് ശൈലി</string>
-    <string name="theme_customization_clock_font_summary">ലോക്ക്സ്ക്രീൻ ക്ലോക്ക് ഫോണ്ട് ശൈലി സജ്ജമാക്കുക</string>
-    <!-- Squiggle animation -->
-    <string name="hide_squiggle_animation_title">സ്ക്വിഗിൾ ആനിമേഷൻ മറയ്ക്കുക</string>
-    <string name="hide_squiggle_animation_summary">മീഡിയ പാനൽ സ്‌ക്വിഗിൾ ആനിമേഷൻ മറയ്‌ക്കുക, മാറ്റം വരുത്തിയ ശേഷം നിങ്ങൾ സംഗീതം മാറുകയോ സംഗീതം താൽക്കാലികമായി നിർത്തുകയോ പ്രോഗ്രസ് ബാർ നീക്കുകയോ ചെയ്യേണ്ടതുണ്ട്</string>
-    <!-- Notification Icons -->
-    <string name="hide_notification_icons_title">അറിയിപ്പ് ഐക്കണുകൾ മറയ്ക്കുക</string>
-    <string name="hide_notification_icons_summary">സ്റ്റാറ്റസ്ബാറിൽ അറിയിപ്പ് ഐക്കണുകൾ മറയ്ക്കുക</string>
-    <!-- Haptic feedback settings -->
-    <string name="haptic_feedback_category">ഹാപ്റ്റിക് ഫീഡ്ബാക്ക് ക്രമീകരണം</string>
-    <string name="volume_panel_haptic_feedback_title">വോളിയം മാറ്റുമ്പോൾ വൈബ്രേറ്റ് ചെയ്യുക</string>
-    <!-- HeadsUp notifications importance threshold -->
-    <!--string name="hun_importance_none">None</string-->
-    <string name="hun_importance_title">പ്രാധാന്യം പരിധി</string>
-    <string name="hun_importance_min">കുറഞ്ഞത്</string>
-    <string name="hun_importance_low">താഴ്ന്നത്</string>
-    <string name="hun_importance_default">വെടിക്കെട്ട്</string>
-    <string name="hun_importance_high">ഉയർന്ന</string>
-    <string name="hun_importance_max">പരമാവധി</string>
-    <!-- Android P animation style -->
-    <string name="pie_animation_style_title">ആൻഡ്രോയിഡ് പി ആനിമേഷൻ ശൈലി</string>
-    <string name="pie_animation_style_summary">Android P \"Default\" ആനിമേഷനുകൾ പ്രവർത്തനക്ഷമമാക്കുക</string>
-    <!-- Force expanded notifications -->
-    <string name="force_expanded_notifications_title">വിപുലീകരണ അറിയിപ്പുകൾ നിർബന്ധിക്കുക</string>
-    <string name="force_expanded_notifications_summary">വിപുലീകരിച്ച അറിയിപ്പുകൾ പിന്തുണയ്ക്കുന്ന ആപ്പുകൾക്ക് മാത്രം ലഭ്യം</string>
-    <!-- Lock screen bottom shortcuts -->
-    <string name="lockscreen_shortcut_category">താഴെയുള്ള കുറുക്കുവഴികൾ</string>
-    <string name="lockscreen_shortcut_start_title">ഇടത് കുറുക്കുവഴി</string>
-    <string name="lockscreen_shortcut_end_title">ശരിയായ കുറുക്കുവഴി</string>
-    <string name="lockscreen_shortcut_wallet">വാലറ്റ്</string>
-    <string name="lockscreen_shortcut_home">വീട്</string>
-    <string name="lockscreen_shortcut_flashlight">ഫ്ലാഷ്‌ലൈറ്റ്</string>
-    <string name="lockscreen_shortcut_qr">QR</string>
-    <string name="lockscreen_shortcut_camera">ക്യാമറ</string>
-    <string name="lockscreen_shortcut_remote">Google TV റിമോട്ട് കൺട്രോളുകൾ</string>
-    <string name="lockscreen_shortcut_none">ഒന്നുമില്ല</string>
-    <string name="lockscreen_shortcut_enforce_title">ഒറ്റ കുറുക്കുവഴി</string>
-    <string name="lockscreen_shortcut_enforce_summary">നിലവിലുള്ള ഏക മുൻഗണനയായി തിരഞ്ഞെടുത്ത കുറുക്കുവഴി നടപ്പിലാക്കുക\നിർദ്ദിഷ്‌ട തിരഞ്ഞെടുത്ത കുറുക്കുവഴി ലഭ്യമാകുന്നതുവരെ ഒന്നും കാണിക്കില്ല</string>
-    <!-- Spark Manager -->
-    <string name="spark_system_manager_settings_title">സ്പാർക്ക് സിസ്റ്റം മാനേജർ</string>
-    <string name="spark_system_manager_settings_summary">നിങ്ങളുടെ ഉപകരണം ഒപ്റ്റിമൈസ് ചെയ്യുന്നതിനുള്ള കോൺഫിഗറേഷനുകൾ</string>
-    <string name="spark_system_manager_title">സ്പാർക്ക് സിസ്റ്റം മാനേജർ</string>
-    <string name="spark_system_manager_summary">ഉപകരണം നിഷ്‌ക്രിയമായിരിക്കുമ്പോൾ ഉപകരണത്തിന്റെ ഊർജ്ജ ഉപഭോഗവും പ്രകടനവും ഒപ്റ്റിമൈസ് ചെയ്യുക</string>
-    <string name="spark_system_boost_title">സ്പാർക്ക് സിസ്റ്റം ബൂസ്റ്റ്</string>
-    <string name="spark_system_boost_summary">ഒരു ദ്രാവക അനുഭവത്തിനായി സിസ്റ്റം ഉറവിടങ്ങൾ വർദ്ധിപ്പിക്കുക</string>
-    <string name="spark_aggressive_idle_mode_title">സ്പാർക്ക് അഗ്രസീവ് ഐഡൽ മോഡ്</string>
-    <string name="spark_aggressive_idle_mode_summary">അഗ്രസീവ് ഐഡൽ മോഡ് ഫീച്ചറുകൾ പ്രവർത്തനക്ഷമമാക്കുക</string>
-    <string name="spark_aggressive_idle_mode_ringer_title">സ്‌ക്രീൻ ഓഫ് റിംഗർ മോഡ്</string>
-    <string name="spark_aggressive_idle_mode_ringer_off_title">Do not change</string>
-    <string name="spark_aggressive_idle_mode_ringer_vibrate_title">Vibrate</string>
-    <string name="spark_aggressive_idle_mode_ringer_dnd_title">Do Not Disturb</string>
-    <string name="spark_aggressive_idle_mode_ringer_silent_title">Silent</string>
-    <string name="spark_aggressive_idle_mode_ringer_normal">Ring Mode</string>
-    <string name="spark_aggressive_idle_mode_wifi_toggle_title">Turn off Wi-Fi</string>
-    <string name="spark_aggressive_idle_mode_wifi_toggle_summary">Disable Wi-Fi on screen off when Spark aggressive idle mode is enabled</string>
-    <string name="spark_aggressive_idle_mode_bluetooth_toggle_title">Turn off Bluetooth</string>
-    <string name="spark_aggressive_idle_mode_bluetooth_toggle_summary">Disable Bluetooth on screen off when Spark aggressive idle mode is enabled</string>
-    <string name="spark_aggressive_idle_mode_cellular_toggle_title">Turn off Mobile data</string>
-    <string name="spark_aggressive_idle_mode_cellular_toggle_summary">Disable Mobile data on screen off when Spark aggressive idle mode is enabled</string>
-    <string name="spark_aggressive_idle_mode_location_toggle_title">Turn off Location</string>
-    <string name="spark_aggressive_idle_mode_location_toggle_summary">Disable Location on screen off when Spark aggressive idle mode is enabled</string>
-    <!-- QS Page Transitions -->
-    <string name="qs_transitions_title">QS Page Transitions</string>
-    <string name="qs_transitions_default">വെടിക്കെട്ട്</string>
-    <string name="qs_transitions_cube_in">Cube In</string>
-    <string name="qs_transitions_cube_out">Cube Out</string>
-    <string name="qs_transitions_accordion">Accordion</string>
-    <string name="qs_transitions_background_to_foreground">Background to Foreground</string>
-    <string name="qs_transitions_depth_page">Depth page</string>
-    <string name="qs_transitions_fade">Fade</string>
-    <string name="qs_transitions_foreground_to_background">Foreground to Background</string>
-    <string name="qs_transitions_rotate_down">Rotate down</string>
-    <string name="qs_transitions_rotate_up">Rotate up</string>
-    <string name="qs_transitions_stack">Stack</string>
-    <string name="qs_transitions_tablet">Tablet</string>
-    <string name="qs_transitions_zoom_in">Zoom in</string>
-    <string name="qs_transitions_zoom_out">Zoom out</string>
-    <string name="qs_transitions_zoom_out_slide">സ്ലൈഡ് സൂം ഔട്ട് ചെയ്യുക</string>
-    <!-- Max visible notification icons -->
-    <string name="max_visible_notification_icons_title">അറിയിപ്പ് ഐക്കണുകൾ</string>
-    <string name="max_visible_notification_icons_summary">പരമാവധി. സ്റ്റാറ്റസ്ബാറിൽ അറിയിപ്പ് ഐക്കണുകൾ ദൃശ്യമാണ്</string>
-    <!-- Status bar padding -->
-    <string name="statusbar_padding">സ്റ്റാറ്റസ് ബാർ പാഡിംഗ്</string>
-    <string name="statusbar_top_padding">ടോപ്പ് പാഡിംഗ്</string>
-    <string name="statusbar_left_padding">ഇടത് പാഡിംഗ്</string>
-    <string name="statusbar_right_padding">ശരിയായ പാഡിംഗ്</string>
-    <!-- QS footer data usage -->
-    <string name="qs_show_data_usage_title">ഡാറ്റാ ഉപയോഗം കാണിക്കുക</string>
-    <string name="qs_show_data_usage_summary">QS അടിക്കുറിപ്പിൽ പ്രതിദിന സെല്ലുലാർ/വൈഫൈ ഡാറ്റ ഉപയോഗം കാണിക്കുക</string>
+    <string name="rising_style">Rice style</string>
+    <string name="volume_style_title">വോളിയം പാനൽ ശൈലികൾ</string>
+    <!-- Sensor block per-package -->
+    <string name="sensor_block_title">ഓരോ പാക്കേജിനും സെൻസർ ബ്ലോക്ക്</string>
+    <string name="sensor_block_summary">ബാറ്ററി ലാഭിക്കാൻ ചില ആപ്പുകൾക്കായി ചില സെൻസറുകളിലേക്കുള്ള ആക്സസ് തടയുക</string>
+    <string name="sensor_block_app_picker_title">ഈ ആപ്പുകൾക്കായി സെൻസറുകൾ തടയുക</string>
+    <string name="add_sensor_block_package_title">സെൻസർ ബ്ലോക്കിനായി ആപ്പുകൾ ചേർക്കുക</string>
+    <string name="add_sensor_block_package_summary">ഈ ആപ്പുകൾക്ക് കാര്യമായ ചലനം, ആക്സിലറോമീറ്റർ, ലീനിയർ ആക്സിലറേഷൻ സെൻസറുകൾ എന്നിവ ബ്ലോക്ക് ചെയ്യപ്പെടും</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Parallel space</string>
+    <string name="laboratory_parallel_space_summary">Allow running multiple instances of the same application in parallel</string>
     <!-- Google services -->
     <string name="gms_enabled_title">Google services</string>
     <string name="gms_enabled_summary">Control Google services and core apps</string>
-    <string name="enable">Enable</string>
     <string name="gms_enabled_footer">Before disabling Google services and core apps, you should disable \"Find My Device\" and 2-step verification on your Google account. It is strongly recommended to keep this setting enabled else apps dependent on Google components will be affected. If you run into any issues after changing this setting, perform a factory reset.</string>
+    <!-- Network traffic -->
+    <string name="network_traffic_settings_title">Network traffic monitor</string>
+    <string name="network_traffic_settings_summary">Display and customize current network traffic levels</string>
+    <string name="network_traffic_location_title">Location</string>
+    <string name="network_traffic_location_disable">അപ്രാപ്‌തമാക്കി</string>
+    <string name="network_traffic_location_statusbar">Statusbar</string>
+    <string name="network_traffic_location_quick_statusbar">Quick Statusbar</string>
+    <string name="network_traffic_mode_title">Display mode</string>
+    <string name="network_traffic_mode_up">Upload only</string>
+    <string name="network_traffic_mode_down">Download only</string>
+    <string name="network_traffic_mode_all">Upload and download</string>
+    <string name="network_traffic_autohide">തനിയെ മറയ്ക്കുക</string>
+    <string name="network_traffic_autohide_summary">Hide the traffic monitor when inactive</string>
+    <string name="network_traffic_autohide_kilobits">Kb/s</string>
+    <string name="network_traffic_autohide_kilobytes">KB/s</string>
+    <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
+    <string name="network_traffic_refresh_interval_title">Refresh interval</string>
+    <string name="network_traffic_refresh_interval_summary">Duration after which speed is remeasured</string>
+    <string name="network_traffic_units_title">Traffic measurement units</string>
+    <string name="network_traffic_units_bits">Bits per second (b/s)</string>
+    <string name="network_traffic_units_kilobits">Kilobits per second (kb/s)</string>
+    <string name="network_traffic_units_megabits">Megabits per second (Mb/s)</string>
+    <string name="network_traffic_units_bytes">Bytes per second (B/s)</string>
+    <string name="network_traffic_units_kilobytes">Kilobytes per second (kB/s)</string>
+    <string name="network_traffic_units_megabytes">Megabytes per second (MB/s)</string>
+    <string name="network_traffic_hidearrow">Hide arrows</string>
+    <string name="network_traffic_hidearrow_summary">Hide the network traffic indicator arrows</string>
+    <!-- WiFi Standard icon -->
+    <string name="wifi_standard_icon_title">WiFi standard</string>
+    <string name="wifi_standard_icon_summary">Display WiFi standard next to WiFi signal</string>
+    <!-- UI settings -->
+    <string name="monet_title">Monet settings</string>
+    <string name="monet_summary">Customize Monet theme engine</string>
+    <!-- Monet Engine -->
+    <string name="monet_engine_custom_color_title">Accent color</string>
+    <string name="monet_engine_custom_color_summary">Choose custom color for accent</string>
+    <string name="monet_engine_custom_bgcolor_title">Background color</string>
+    <string name="monet_engine_custom_bgcolor_summary">Choose custom color for background</string>
+    <string name="monet_engine_color_override_title">Custom color</string>
+    <string name="monet_engine_luminance_factor_title">Luminance</string>
+    <string name="monet_engine_luminance_factor_summary">Higher values produce brighter colors</string>
+    <string name="monet_engine_chroma_factor_title">Chroma factor</string>
+    <string name="monet_engine_chroma_factor_summary">Higher values produce stronger colors</string>
+    <string name="monet_engine_tint_background_title">Tint background</string>
+    <string name="monet_engine_tint_background_summary">Make luminance and chroma selection affect background colors as well</string>
+    <!-- QS Header -->
+    <string name="qs_header_image_title">Header image</string>
+    <!-- Custom settings dashboard style -->
+    <string name="settings_styles_title">Settings Interface</string>
+    <string name="settings_styles_summary">Customize settings user interface</string>
+    <string name="settings_dashboard_style_title">Main menu layout</string>
+    <string name="settings_dashboard_style_oos">Sushi(legacy OOS)</string>
+    <string name="settings_dashboard_style_rui">Oxygen/ColorOS</string>
+    <string name="settings_dashboard_style_arc">Arcane</string>
+    <string name="settings_dashboard_style_aosp">Aosp</string>
+    <string name="settings_dashboard_style_mt">Google material you</string>
+    <string name="settings_dashboard_style_card">Ayan\'s card ui</string>
+    <string name="settings_home_style_title">പ്രധാന മെനു തലക്കെട്ട്</string>
+    <string name="settings_home_style_summary">ക്രമീകരണങ്ങളുടെ പ്രധാന മെനുവിലെ ഹെഡറിനായി സ്റ്റോക്ക് aosp ലേഔട്ട് ഉപയോഗിക്കുക</string>
+    <string name="settings_user_card_title">Hide user card preference</string>
+    <string name="settings_user_card_summary">Hide the extra user profile card below the searchbar</string>
+    <string name="about_card_style_title">About phone style</string>
+    <string name="about_card_style_banner_one">Centered wallpaper banner</string>
+    <string name="about_card_style_banner_one_high">Centered wallpaper banner (big)</string>
+    <!-- Settings Greetings -->
+    <string name="settings_contextual_message_title">Settings contextual messages</string>
+    <string name="settings_contextual_message_summary">Enable settings homepage messages that changes base on current time of the day</string>
+    <!-- Settings Header -->
+    <string name="settings_header_image_title">Settings header image</string>
+    <string name="settings_header_text_title">Settings header text</string>
+    <string name="settings_header_text_enabled_title">Set settings header text</string>
+    <string name="settings_header_text_summary">Custom header text for settings homepage banner (Leave empty for blank header text)</string>
+    <string name="settings_header_image_random_title">Random Settings header image</string>
+    <string name="settings_header_image_random_summary">Enable random aesthetic settings dashboard banner/header images</string>
+    <!-- Lockscreen Clock -->
+    <string name="kg_custom_clock_color_enabled_title">Lockscreen clock color</string>
+    <string name="kg_custom_clock_color_title">ലോക്ക്സ്ക്രീൻ ക്ലോക്ക് നിറം തിരഞ്ഞെടുക്കുക</string>
+    <string name="clock_use_single_line_title">ഇഷ്‌ടാനുസൃത ക്ലോക്ക് ഫോർമാറ്റ്</string>
+    <string name="single_line">ഒറ്റ വരി</string>
+    <string name="double_line">ഇരട്ട വരി</string>
+    <!-- System Manager -->
+    <string name="system_manager_services_title">System Manager</string>
+    <string name="system_manager_services_summary">Optimize device power consumption and performance</string>
+    <string name="system_manager_game_boost_level_title">System Manager Game Boost Mode</string>
+    <string name="system_manager_runtime_power_mode_title">System Manager Power Mode</string>
+    <string name="system_manager_runtime_power_mode_summary">Configure default system power mode</string>
+    <string name="system_manager_aggressive_idle_sensor_block">System Manager Idle Sensor Block</string>
+    <string name="system_manager_aggressive_idle_mode_title">System Manager Aggressive Idle mode</string>
+    <string name="system_manager_aggressive_idle_mode_summary">Enable Aggressive Idle mode features</string>
+    <string name="system_manager_aggressive_idle_mode_ringer_title">Screen off ringer mode</string>
+    <string name="system_manager_aggressive_idle_mode_ringer_off_title">Do not change</string>
+    <string name="system_manager_aggressive_idle_mode_ringer_vibrate_title">വൈബ്രേറ്റുചെയ്യുക</string>
+    <string name="system_manager_aggressive_idle_mode_ringer_dnd_title">Do Not Disturb</string>
+    <string name="system_manager_aggressive_idle_mode_ringer_silent_title">Silent</string>
+    <string name="system_manager_aggressive_idle_mode_ringer_normal">Ring Mode</string>
+    <string name="system_manager_aggressive_idle_mode_ringer_timeout_title">Ringer Mode change timeout</string>
+    <string name="system_manager_aggressive_idle_mode_wifi_toggle_title">Turn off Wi-Fi</string>
+    <string name="system_manager_aggressive_idle_mode_wifi_toggle_summary">Disable Wi-Fi on screen off when System Manager Aggressive Idle mode is enabled</string>
+    <string name="system_manager_aggressive_idle_mode_wifi_timeout_title">Turn off Wi-Fi timeout</string>
+    <string name="system_manager_aggressive_idle_mode_bluetooth_toggle_title">Turn off Bluetooth</string>
+    <string name="system_manager_aggressive_idle_mode_bluetooth_toggle_summary">Disable Bluetooth on screen off when System Manager Aggressive Idle mode is enabled</string>
+    <string name="system_manager_aggressive_idle_mode_bluetooth_timeout_title">Turn off Bluetooth timeout</string>
+    <string name="system_manager_aggressive_idle_mode_cellular_toggle_title">Turn off Mobile data</string>
+    <string name="system_manager_aggressive_idle_mode_cellular_toggle_summary">Disable Mobile data on screen off when System Manager Aggressive Idle mode is enabled</string>
+    <string name="system_manager_aggressive_idle_mode_cellular_timeout_title">Turn off Mobile data timeout</string>
+    <string name="system_manager_aggressive_idle_mode_location_toggle_title">Turn off Location</string>
+    <string name="system_manager_aggressive_idle_mode_location_toggle_summary">Disable Location on screen off when System Manager Aggressive Idle mode is enabled</string>
+    <string name="system_manager_aggressive_idle_mode_location_timeout_title">Turn off Location timeout</string>
+    <string name="system_manager_info_title">Tips\u003a \n\n1. Game Boost will only activate when a game is active - requires app to be added on GameSpace list.\n\n2. Runtime power mode will override system power mode.\n\n3. Idle Sensor Block will prevent certain motion sensors from working properly.</string>
 </resources>
