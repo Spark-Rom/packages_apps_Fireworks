@@ -58,7 +58,7 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     private static final String KEY_SHOW_AUTO_BRIGHTNESS = "qs_show_auto_brightness";
     private static final String HEADS_UP_TIMEOUT_PREF = "heads_up_timeout";
     private static final String KEY_VOLUME_PANEL_LEFT = "volume_panel_on_left";
-
+    private static final String KEY_PREF_BATTERY_ESTIMATE = "qs_show_battery_estimate";
     private static final String SETTINGS_DASHBOARD_STYLE = "settings_dashboard_style";
     private static final String SETTINGS_HEADER_IMAGE = "settings_header_image";
     private static final String SETTINGS_HEADER_IMAGE_RANDOM = "settings_header_image_random";
@@ -86,7 +86,7 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     private ListPreference mShowBrightnessSlider;
     private ListPreference mBrightnessSliderPosition;
     private SwitchPreference mShowAutoBrightness;
-
+    private SwitchPreference mBatteryEstimate;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -150,6 +150,12 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
 
         mCombinedQsHeaders = findPreference("persist.sys.flags.combined_qs_headers");
         mCombinedQsHeaders.setOnPreferenceChangeListener(this);
+
+        boolean turboInstalled = SparkUtils.isPackageInstalled(getContext(),
+                "com.google.android.apps.turbo");
+        mBatteryEstimate = findPreference(KEY_PREF_BATTERY_ESTIMATE);
+        if (!turboInstalled)
+            prefScreen.removePreference(mBatteryEstimate);
     }
 
     private static boolean isAudioPanelOnLeftSide(Context context) {
@@ -294,5 +300,19 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
      * For search
      */
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.spark_settings_themes);
+            new BaseSearchIndexProvider(R.xml.spark_settings_themes) {
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    List<String> keys = super.getNonIndexableKeys(context);
+
+                    boolean turboInstalled = SparkUtils.isPackageInstalled(context,
+                            "com.google.android.apps.turbo");
+
+                    if (!turboInstalled)
+                        keys.add(KEY_PREF_BATTERY_ESTIMATE);
+
+                    return keys;
+                }
+            };
 }
