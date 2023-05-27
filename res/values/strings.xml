@@ -826,7 +826,7 @@
 
     <!-- QS date -->
     <string name="qs_date_title">Date</string>
-    <string name="qs_date_summary">Display date in quick status bar header</string>
+    <string name="qs_date_summary">Display date in quick status bar header (Works only on non combined qs headers)</string>
 
     <!-- AOD Icons on Lockscreen! -->
     <string name="alt_layout_category">Alternative layout</string>
