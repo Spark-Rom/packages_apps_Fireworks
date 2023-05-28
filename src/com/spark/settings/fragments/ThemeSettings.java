@@ -27,6 +27,7 @@ import android.provider.Settings;
 import com.android.settings.R;
 import lineageos.providers.LineageSettings;
 import com.spark.settings.preferences.CustomSeekBarPreference;
+import com.android.internal.util.spark.ThemeUtils;
 
 import com.spark.settings.preferences.SystemSettingListPreference;
 import com.spark.settings.preferences.SystemSettingSwitchPreference;
@@ -40,7 +41,6 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settings.Utils;
 import android.util.Log;
-import com.android.internal.util.spark.ThemeUtils;
 import com.android.internal.util.spark.SparkUtils;
 
 import java.util.List;
@@ -70,6 +70,8 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     private static final String HIDE_USER_CARD = "hide_user_card";
     private static final String KEY_SYS_INFO = "qs_system_info";
     private static final String KEY_SYS_INFO_ICON = "qs_system_info_icon";
+    private static final String KEY_QS_PANEL_STYLE  = "qs_panel_style";
+    private static final String overlayThemeTarget  = "com.android.systemui";
 
     private ThemeUtils mThemeUtils;
     private Handler mHandler;
@@ -91,6 +93,9 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mBatteryEstimate;
     private ListPreference mSystemInfo;
     private SwitchPreference mSystemInfoIcon;
+    private SystemSettingListPreference mQsStyle;
+
+    private int[] currentValue = new int[2];
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -100,6 +105,7 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
         final Context mContext = getActivity().getApplicationContext();
         final ContentResolver resolver = mContext.getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        mQsStyle = (SystemSettingListPreference) findPreference(KEY_QS_PANEL_STYLE);
 
         mShowBrightnessSlider = findPreference(KEY_SHOW_BRIGHTNESS_SLIDER);
         mShowBrightnessSlider.setOnPreferenceChangeListener(this);
@@ -236,6 +242,9 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
         } else if (preference == mSystemInfoIcon) {
             SparkUtils.showSystemUiRestartDialog(getContext());
             return true;
+        } else if (preference == mQsStyle) {
+            mCustomSettingsObserver.observe();
+            return true;
         }
          return false;
     }
@@ -254,14 +263,74 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.SETTINGS_DASHBOARD_STYLE),
                     false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_PANEL_STYLE),
+                    false, this, UserHandle.USER_ALL);
         }
 
         @Override
         public void onChange(boolean selfChange, Uri uri) {
             if (uri.equals(Settings.System.getUriFor(Settings.System.SETTINGS_DASHBOARD_STYLE))) {
                 updateSettingsStyle();
+            } else if (uri.equals(Settings.System.getUriFor(Settings.System.QS_PANEL_STYLE))) {
+                updateQsStyle();
             }
         }
+    }
+
+    private void updateQsStyle() {
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        int qsPanelStyle = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.QS_PANEL_STYLE , 0, UserHandle.USER_CURRENT);
+
+	String qsPanelStyleCategory = "android.theme.customization.qs_panel";
+
+	/// reset all overlays before applying
+	resetQsOverlays(qsPanelStyleCategory);
+
+	if (qsPanelStyle == 0) return;
+
+        switch (qsPanelStyle) {
+            case 1:
+              setQsStyle("com.android.system.qs.outline", qsPanelStyleCategory);
+              break;
+            case 2:
+            case 3:
+              setQsStyle("com.android.system.qs.twotoneaccent", qsPanelStyleCategory);
+              break;
+            case 4:
+              setQsStyle("com.android.system.qs.shaded", qsPanelStyleCategory);
+              break;
+            case 5:
+              setQsStyle("com.android.system.qs.cyberpunk", qsPanelStyleCategory);
+              break;
+            case 6:
+              setQsStyle("com.android.system.qs.neumorph", qsPanelStyleCategory);
+              break;
+            case 7:
+              setQsStyle("com.android.system.qs.reflected", qsPanelStyleCategory);
+              break;
+            case 8:
+              setQsStyle("com.android.system.qs.surround", qsPanelStyleCategory);
+              break;
+            case 9:
+              setQsStyle("com.android.system.qs.thin", qsPanelStyleCategory);
+              break;
+            case 10:
+              setQsStyle("com.android.system.qs.twotoneaccenttrans", qsPanelStyleCategory);
+              break;
+            default:
+              break;
+        }
+    }
+
+    public void resetQsOverlays(String category) {
+        mThemeUtils.setOverlayEnabled(category, overlayThemeTarget, overlayThemeTarget);
+    }
+
+    public void setQsStyle(String overlayName, String category) {
+        mThemeUtils.setOverlayEnabled(category, overlayName, overlayThemeTarget);
     }
 
     private void updateSettingsStyle() {
