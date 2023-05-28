@@ -74,6 +74,12 @@
             android:key="qs_styling"
             android:title="@string/qs_styling">
 
+    <Preference
+        android:key="tiles_layout"
+        android:title="@string/qs_tiles_layout_category"
+        android:summary="@string/qs_tile_layout_summary"
+        android:fragment="com.spark.settings.fragments.QsLayoutSettings"/> 
+
         <com.spark.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_transparency"
             android:title="@string/qs_transparency_title"
