@@ -19,7 +19,8 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 import android.provider.Settings;
 import com.android.settings.R;
-
+import com.android.internal.util.spark.SparkUtils;
+import com.spark.settings.preferences.colorpicker.SystemSettingColorPickerPreference;
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
@@ -37,6 +38,10 @@ import java.util.Collections;
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
+    private static final String AMBIENT_ICONS_COLOR = "ambient_icons_color";
+
+    private SystemSettingColorPickerPreference mAmbientIconsColor;
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -45,11 +50,18 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
+        mAmbientIconsColor = (SystemSettingColorPickerPreference) findPreference(AMBIENT_ICONS_COLOR);
+        mAmbientIconsColor.setOnPreferenceChangeListener(this);
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+	Context mContext = getActivity().getApplicationContext();
+	ContentResolver resolver = mContext.getContentResolver();
+        if (preference == mAmbientIconsColor) {
+            SparkUtils.showSystemUiRestartDialog(getContext());
+            return true;
+	}
         return false;
     }
 
