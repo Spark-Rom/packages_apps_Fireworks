@@ -41,6 +41,7 @@ import com.android.settingslib.widget.LayoutPreference;
 import com.spark.settings.preferences.CustomSeekBarPreference;
 import com.spark.settings.preferences.SystemSettingSwitchPreference;
 import com.spark.settings.preferences.SystemSettingListPreference;
+import com.spark.settings.preferences.SystemSettingSeekBarPreference;
 
 import com.android.internal.util.spark.ThemeUtils;
 
@@ -48,6 +49,7 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
     private static final String KEY_QS_HIDE_LABEL = "qs_tile_label_hide";
+    private static final String KEY_QS_LABEL_SIZE = "qs_tile_label_size";
     private static final String KEY_QS_VERTICAL_LAYOUT = "qs_tile_vertical_layout";
     private static final String KEY_QS_COLUMN_PORTRAIT = "qs_layout_columns";
     private static final String KEY_QS_ROW_PORTRAIT = "qs_layout_rows";
@@ -67,6 +69,7 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
 
     private SystemSettingSwitchPreference mHide;
     private SystemSettingSwitchPreference mVertical;
+    private SystemSettingSeekBarPreference mSize;
 
     private int[] currentValue = new int[2];
 
@@ -135,6 +138,10 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
 
         mVertical = (SystemSettingSwitchPreference) findPreference(KEY_QS_VERTICAL_LAYOUT);
         mVertical.setEnabled(!hideLabel);
+
+        mSize = (SystemSettingSeekBarPreference) findPreference(KEY_QS_LABEL_SIZE);
+        mSize.setEnabled(!hideLabel);
+
     }
 
     @Override
@@ -142,6 +149,7 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
         if (preference == mHide) {
             boolean hideLabel = (Boolean) newValue;
             mVertical.setEnabled(!hideLabel);
+            mSize.setEnabled(!hideLabel);
         } else if (preference == mQsColumns) {
             int qs_columns = Integer.parseInt(newValue.toString());
             mApplyChange.setEnabled(
