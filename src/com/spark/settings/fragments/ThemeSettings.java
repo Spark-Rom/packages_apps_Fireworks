@@ -76,6 +76,7 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     private static final String KEY_PREF_TILE_ANIM_STYLE = "qs_tile_animation_style";
     private static final String KEY_PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
     private static final String KEY_PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
+    private static final String KEY_QS_UI_STYLE  = "qs_ui_style";
 
     private ListPreference mTileAnimationStyle;
     private CustomSeekBarPreference mTileAnimationDuration;
@@ -102,6 +103,7 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     private ListPreference mSystemInfo;
     private SwitchPreference mSystemInfoIcon;
     private SystemSettingListPreference mQsStyle;
+    private SystemSettingListPreference mQsUI;
 
     private int[] currentValue = new int[2];
 
@@ -114,7 +116,7 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
         final ContentResolver resolver = mContext.getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
         mQsStyle = (SystemSettingListPreference) findPreference(KEY_QS_PANEL_STYLE);
-
+        mQsUI = (SystemSettingListPreference) findPreference(KEY_QS_UI_STYLE);
         mShowBrightnessSlider = findPreference(KEY_SHOW_BRIGHTNESS_SLIDER);
         mShowBrightnessSlider.setOnPreferenceChangeListener(this);
         boolean showSlider = LineageSettings.Secure.getIntForUser(resolver,
@@ -268,7 +270,7 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
         } else if (preference == mSystemInfoIcon) {
             SparkUtils.showSystemUiRestartDialog(getContext());
             return true;
-        } else if (preference == mQsStyle) {
+        } else if (preference == mQsStyle || preference == mQsUI) {
             mCustomSettingsObserver.observe();
             return true;
 	} else if (preference == mPageTransitions) {
@@ -309,13 +311,16 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.QS_PANEL_STYLE),
                     false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_UI_STYLE),
+                    false, this, UserHandle.USER_ALL);
         }
 
         @Override
         public void onChange(boolean selfChange, Uri uri) {
             if (uri.equals(Settings.System.getUriFor(Settings.System.SETTINGS_DASHBOARD_STYLE))) {
                 updateSettingsStyle();
-            } else if (uri.equals(Settings.System.getUriFor(Settings.System.QS_PANEL_STYLE))) {
+            } else if (uri.equals(Settings.System.getUriFor(Settings.System.QS_PANEL_STYLE)) || uri.equals(Settings.System.getUriFor(Settings.System.QS_UI_STYLE))) {
                 updateQsStyle();
             }
         }
@@ -327,10 +332,19 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
         int qsPanelStyle = Settings.System.getIntForUser(getContext().getContentResolver(),
                 Settings.System.QS_PANEL_STYLE , 0, UserHandle.USER_CURRENT);
 
+        boolean isA11Style = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.QS_UI_STYLE , 1, UserHandle.USER_CURRENT) == 1;
+
 	String qsPanelStyleCategory = "android.theme.customization.qs_panel";
+	String qsUIStyleCategory = "android.theme.customization.qs_ui";
 
 	/// reset all overlays before applying
 	resetQsOverlays(qsPanelStyleCategory);
+	resetQsOverlays(qsUIStyleCategory);
+
+	if (isA11Style) {
+	    setQsStyle("com.android.system.qs.ui.A11", qsUIStyleCategory);
+	}
 
 	if (qsPanelStyle == 0) return;
 
