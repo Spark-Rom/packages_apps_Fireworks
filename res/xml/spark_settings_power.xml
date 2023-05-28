@@ -69,6 +69,31 @@
         android:entryValues="@array/power_menu_type_values"
         android:defaultValue="0"/>
 
+        <com.spark.settings.preferences.SystemSettingSeekBarPreference
+            android:key="transparent_power_menu"
+            android:title="@string/power_menu_transparency"
+            android:max="100"
+            android:min="0"
+            settings:units="%"
+            android:defaultValue="100" />
+
+        <com.spark.settings.preferences.SystemSettingSeekBarPreference
+            android:key="transparent_power_dialog_dim"
+            android:title="@string/power_menu_dialog_dim"
+            android:max="100"
+            android:min="0"
+            settings:units="%"
+            android:defaultValue="50" />
+
+    <com.spark.settings.preferences.SystemSettingListPreference
+        android:key="power_menu_animations"
+        android:title="@string/power_menu_animation_title"
+        android:dialogTitle="@string/power_menu_animation_dialog_title"
+        android:entries="@array/power_menu_animations_entries"
+        android:entryValues="@array/power_menu_animations_values"
+        android:defaultValue="0"
+        android:summary="%s" />
+
    </PreferenceCategory>
 
     <PreferenceCategory
