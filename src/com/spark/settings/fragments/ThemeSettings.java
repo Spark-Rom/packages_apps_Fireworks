@@ -30,6 +30,7 @@ import com.spark.settings.preferences.CustomSeekBarPreference;
 import com.android.internal.util.spark.ThemeUtils;
 
 import com.spark.settings.preferences.SystemSettingListPreference;
+import com.spark.settings.preferences.SecureSettingListPreference;
 import com.spark.settings.preferences.SystemSettingSwitchPreference;
 import com.spark.settings.preferences.SystemSettingEditTextPreference;
 import java.util.Locale;
@@ -77,6 +78,7 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     private static final String KEY_PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
     private static final String KEY_PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
     private static final String KEY_QS_UI_STYLE  = "qs_ui_style";
+    private static final String KEY_QS_TILE_SHAPE  = "qs_tile_shape";
 
     private ListPreference mTileAnimationStyle;
     private CustomSeekBarPreference mTileAnimationDuration;
@@ -104,6 +106,7 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mSystemInfoIcon;
     private SystemSettingListPreference mQsStyle;
     private SystemSettingListPreference mQsUI;
+    private SecureSettingListPreference mQsTileShape;
 
     private int[] currentValue = new int[2];
 
@@ -117,6 +120,10 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
         mQsStyle = (SystemSettingListPreference) findPreference(KEY_QS_PANEL_STYLE);
         mQsUI = (SystemSettingListPreference) findPreference(KEY_QS_UI_STYLE);
+        mQsTileShape = (SecureSettingListPreference) findPreference(KEY_QS_TILE_SHAPE);
+        boolean isA11Style = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.QS_UI_STYLE , 0, UserHandle.USER_CURRENT) == 1;
+        mQsTileShape.setEnabled(isA11Style);
         mShowBrightnessSlider = findPreference(KEY_SHOW_BRIGHTNESS_SLIDER);
         mShowBrightnessSlider.setOnPreferenceChangeListener(this);
         boolean showSlider = LineageSettings.Secure.getIntForUser(resolver,
@@ -341,6 +348,8 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
 	/// reset all overlays before applying
 	resetQsOverlays(qsPanelStyleCategory);
 	resetQsOverlays(qsUIStyleCategory);
+
+        mQsTileShape.setEnabled(isA11Style);
 
 	if (isA11Style) {
 	    setQsStyle("com.android.system.qs.ui.A11", qsUIStyleCategory);
