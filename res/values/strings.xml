@@ -904,10 +904,10 @@
     <string name="qs_tile_hide_label_summary">Show only icon for QS tiles</string>
     <string name="qs_tile_vertical_layout_title">Vertical layout</string>
     <string name="qs_tile_vertical_layout_summary">Enable vertical layout for QS tiles</string>
-    <string name="qs_tile_label_size_title">Label text size</string>
 
     <!-- Quick settings styles -->
     <string name="qs_styles_title">Quick Settings Styles</string>
+    <string name="qs_ui_title">Quick Settings UI</string>
     <string name="qs_outline">Outline</string>
     <string name="qs_two_tone">Two-Tone Accent</string>
     <string name="qs_color_pop">Color Pop</string>
