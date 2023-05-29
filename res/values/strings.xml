@@ -991,6 +991,8 @@
     <string name="brightness_slider_style_thumbslider">Thumb Slider</string>
     <string name="brightness_slider_style_line">Thin Outline</string>
     <string name="brightness_slider_style_lighty">Lighty</string>
+    <string name="brightness_slider_style_acun">Acun</string>
+    <string name="brightness_slider_style_bang">Bang</string>
 
     <!-- QS tile shape -->
     <string name="qs_tile_shape">QS tile shape</string>
