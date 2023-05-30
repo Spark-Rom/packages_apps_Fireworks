@@ -128,4 +128,10 @@
         android:summary="@string/pulse_settings_summary"
         android:fragment="com.spark.settings.fragments.PulseSettings" />
 
+    <Preference
+         android:key="ambient_customization"
+         android:title="@string/ambient_text_category_title"
+         android:summary="@string/ambient_text_category_summary"
+         android:fragment="com.spark.settings.fragments.AmbientCustomizations" />
+
 </PreferenceScreen>
