@@ -40,6 +40,10 @@
         android:summary="@string/theme_customization_font_summary"
         android:fragment="com.spark.settings.fragments.FontsPicker"/>
 
+    <Preference
+        android:key="custom_font_preference"
+        android:title="@string/custom_font_preference_title" />
+
     <!-- Icon pack -->
     <Preference
         android:key="android.theme.customization.icon_pack"

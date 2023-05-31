@@ -28,7 +28,9 @@ import com.android.settings.R;
 import lineageos.providers.LineageSettings;
 import com.spark.settings.preferences.CustomSeekBarPreference;
 import com.android.internal.util.spark.ThemeUtils;
-
+import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.lifecycle.Lifecycle;
+import androidx.fragment.app.Fragment;
 import com.spark.settings.preferences.SystemSettingListPreference;
 import com.spark.settings.preferences.SecureSettingListPreference;
 import com.spark.settings.preferences.SystemSettingSwitchPreference;
@@ -38,6 +40,7 @@ import android.text.TextUtils;
 import android.view.View;
 
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settings.Utils;
@@ -51,9 +54,10 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @SearchIndexable
-public class ThemeSettings extends SettingsPreferenceFragment implements
+public class ThemeSettings extends DashboardFragment implements
         OnPreferenceChangeListener {
 
+    private static final String TAG = "ThemeSettings";
     private static final String KEY_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
     private static final String KEY_BRIGHTNESS_SLIDER_POSITION = "qs_brightness_slider_position";
     private static final String KEY_SHOW_AUTO_BRIGHTNESS = "qs_show_auto_brightness";
@@ -107,6 +111,7 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     private SystemSettingListPreference mQsStyle;
     private SystemSettingListPreference mQsUI;
     private SecureSettingListPreference mQsTileShape;
+    private static final String CUSTOM_FONT_PREFERENCE_KEY = "custom_font_preference";
 
     private int[] currentValue = new int[2];
 
@@ -114,7 +119,6 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.spark_settings_themes);
         final Context mContext = getActivity().getApplicationContext();
         final ContentResolver resolver = mContext.getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
@@ -451,6 +455,28 @@ public class ThemeSettings extends SettingsPreferenceFragment implements
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.SPARK_SETTINGS;
+    }
+
+    @Override
+    protected String getLogTag() {
+        return TAG;
+    }
+
+    @Override
+    protected int getPreferenceScreenResId() {
+        return R.xml.spark_settings_themes;
+    }
+
+    @Override
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
+        return buildPreferenceControllers(context, getSettingsLifecycle(), this);
+    }
+
+    private static List<AbstractPreferenceController> buildPreferenceControllers(
+            Context context, Lifecycle lifecycle, ThemeSettings fragment) {
+        final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new CustomFontPreferenceController(context, CUSTOM_FONT_PREFERENCE_KEY, fragment, lifecycle));
+        return controllers;
     }
 
     /**
