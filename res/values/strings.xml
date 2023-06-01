@@ -814,6 +814,14 @@
     <!-- QS Header -->
     <string name="qs_header_image_title">Header image</string>
 
+    <!-- Qs Header Image Styles -->
+    <string name="qs_header_image_styles_title">Header image filter</string>
+    <string name="qs_header_image_styles_none">None</string>
+    <string name="qs_header_image_styles_grayscale">Grayscale</string>
+    <string name="qs_header_image_styles_blur">Blur</string>
+    <string name="qs_header_image_styles_grayblur">Grayscale and blurred</string>
+    <string name="qs_header_image_blur_radius_title">Blur radius for header image</string>
+
     <!-- Custom settings dashboard style -->
     <string name="settings_styles_title">Settings Interface</string>
     <string name="settings_styles_summary">Customize settings user interface</string>
@@ -1136,4 +1144,5 @@
     <!-- Android P animation style -->
     <string name="pie_animation_style_title">Android P animation style</string>
     <string name="pie_animation_style_summary">Enable Android P \"Default\" animations</string>
+
 </resources>

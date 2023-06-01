@@ -1095,4 +1095,21 @@
         <item>14</item>
         <item>15</item>
     </string-array>
+
+
+    <!-- Qs Header Image Styles -->
+    <string-array name="qs_header_image_styles_entries">
+        <item>@string/qs_header_image_styles_none</item>
+        <item>@string/qs_header_image_styles_grayscale</item>
+        <item>@string/qs_header_image_styles_blur</item>
+        <item>@string/qs_header_image_styles_grayblur</item>
+    </string-array>
+
+    <string-array name="qs_header_image_styles_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
 </resources>
