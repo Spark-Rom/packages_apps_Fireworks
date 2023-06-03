@@ -13,6 +13,7 @@
     <string name="choose_app">Choose app</string>
     <string name="reset">Reset</string>
     <string name="never">Never</string>
+    <string name="not_available">Not available</string>
     <string name="accent_color">Accent color (Default)</string>
     <string name="notification_color">Notification color</string>
     <string name="wallpaper_color">Wallpaper color</string>
@@ -797,6 +798,8 @@
     <!-- UI settings -->
     <string name="monet_title">Monet settings</string>
     <string name="monet_summary">Customize Monet theme engine</string>
+    <string name="monet_engine_wallpaper_color_select_summary">Select a different accent color from your wallpaper</string>
+    <string name="monet_engine_wallpaper_color_select_title">Wallpaper Color Selector</string>
 
     <!-- Monet Engine -->
     <string name="monet_engine_custom_color_title">Accent color</string>
