@@ -1153,4 +1153,8 @@
     <!-- QS Dual Tone Colors -->
     <string name="qs_dual_tone_title">QS dual-tone</string>
     <string name="qs_dual_tone_summary">Use dual tone background colors</string>
+
+    <!-- MusicCard -->
+    <string name="volume_panel_musiccard_title">Music Card</string>
+    <string name="volume_panel_musiccard_summary">Enable music card in volume panel</string>
 </resources>

@@ -412,6 +412,12 @@
          android:summary="%s"
          android:defaultValue="0" />
 
+    <com.spark.settings.preferences.SystemSettingSwitchPreference
+         android:key="music_volume_panel_dialog"
+         android:title="@string/volume_panel_musiccard_title"
+         android:summary="@string/volume_panel_musiccard_summary"
+         android:defaultValue="true" />
+
     	<com.spark.settings.preferences.SystemSettingSwitchPreference
      	   android:key="volume_media_output_toggle"
      	   android:title="@string/volume_media_output_toggle_title"
