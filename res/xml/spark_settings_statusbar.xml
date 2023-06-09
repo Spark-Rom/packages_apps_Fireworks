@@ -87,6 +87,12 @@
             android:defaultValue="false"/>
 
         <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="show_fiveg_icon"
+            android:title="@string/show_fiveg_icon_title"
+            android:summary="@string/show_fiveg_icon_summary"
+            android:defaultValue="false" />
+
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="roaming_indicator_icon"
             android:title="@string/roaming_indicator_icon_title"
             android:summary="@string/roaming_indicator_icon_summary"
