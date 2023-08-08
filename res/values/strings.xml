@@ -742,11 +742,6 @@
     <string name="volume_media_output_toggle_title">Volume media output</string>
     <string name="volume_media_output_toggle_summary">Show media output toggle when there is an active stream</string>
 
-    <!-- Volume Styles -->
-    <string name="rui_style">Realme UI style</string>
-    <string name="rising_style">Rice style</string>
-    <string name="volume_style_title">Volume panel styles</string>
-
     <!-- Sensor block per-package -->
     <string name="sensor_block_title">Sensor block per-package</string>
     <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery</string>
@@ -1039,6 +1034,17 @@
     <string name="vowifi_icon_oneplus">OnePlus VoWiFi Icon</string>
     <string name="vowifi_icon_moto">Moto VoWiFi Icons</string>
     <string name="vowifi_icon_emui">EMUI Icons</string>
+
+    <!-- Volume Styles -->
+    <string name="rui_style">Realme UI style</string>
+    <string name="rising_style">Rising UI style</string>
+    <string name="double_layer_style">Double Layer style</string>
+    <string name="gradient_style">Gradient style</string>
+    <string name="neumorph_style">Neumorph style</string>
+    <string name="neumorph_outline_style">Neumorph Outline style</string>
+    <string name="outline_style">Outline style</string>
+    <string name="shaded_layer_style">Shaded Layer style</string>
+    <string name="volume_style_title">Volume panel styles</string>
 
     <!-- Ambient Customization -->
     <string name="ambient_text_category">Text Customization</string>
