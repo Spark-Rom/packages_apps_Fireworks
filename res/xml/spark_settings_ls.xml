@@ -70,6 +70,18 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:title="@string/weather_category">
+
+  <Preference
+        android:key="omnijaws_settings"
+        android:title="@string/weather_settings_title"
+        android:summary="@string/weather_settings_summary"
+        android:fragment="com.spark.settings.fragments.OmniJawsSettings" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
         android:key="lockscreen_misc_category"
         android:title="@string/misc_title">
 
