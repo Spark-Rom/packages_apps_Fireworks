@@ -561,6 +561,7 @@
     <string name="lockscreen_weather_condition_summary">Display current weather condition</string>
 
     <!-- Weather Styles -->
+    <string name="weather_style_0">"32°C Next to the date"</string>
     <string name="weather_style_1">"32°C"</string>
     <string name="weather_style_2">"32°C \u2022 Today 32° / 24°"</string>
     <string name="weather_style_3">"32°C \u2022 New York"</string>

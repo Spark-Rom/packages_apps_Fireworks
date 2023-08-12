@@ -383,6 +383,7 @@
 
     <!-- Weather Styles -->
     <string-array name="lockscreen_weather_styles_entries">
+        <item>@string/weather_style_0</item>
         <item>@string/weather_style_1</item>
         <item>@string/weather_style_2</item>
         <item>@string/weather_style_3</item>
@@ -394,6 +395,7 @@
 
     <!-- Weather Styles -->
     <string-array name="lockscreen_weather_styles_values">
+        <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
