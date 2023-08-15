@@ -59,7 +59,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         mAmbientIconsColor.setOnPreferenceChangeListener(this);
         mUdfpsCategory = findPreference(UDFPS_CATEGORY);
         if (!UdfpsUtils.hasUdfpsSupport(getContext())) {
-            prefScreen.removePreference(mUdfpsCategory);
+            prefSet.removePreference(mUdfpsCategory);
         }
     }
 
