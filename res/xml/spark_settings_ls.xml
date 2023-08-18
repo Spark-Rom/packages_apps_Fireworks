@@ -85,6 +85,12 @@
         android:key="lockscreen_misc_category"
         android:title="@string/misc_title">
 
+        <com.spark.settings.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.flags.enableBouncerUserSwitcher"
+            android:title="@string/lockscreen_user_switcher_title"
+            android:summary="@string/lockscreen_user_switcher_summary"
+            android:defaultValue="true" />
+
         <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="ambient_icons_lockscreen"
             android:title="@string/ambient_icons_lockscreen_title"

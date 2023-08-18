@@ -25,7 +25,7 @@ import com.spark.settings.preferences.colorpicker.SystemSettingColorPickerPrefer
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
-
+import androidx.preference.Preference.OnPreferenceChangeListener;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import android.util.Log;
@@ -46,6 +46,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 
     private SystemSettingColorPickerPreference mAmbientIconsColor;
     private PreferenceCategory mUdfpsCategory;
+    private Preference mUserSwitcher;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -57,6 +58,8 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 
         mAmbientIconsColor = (SystemSettingColorPickerPreference) findPreference(AMBIENT_ICONS_COLOR);
         mAmbientIconsColor.setOnPreferenceChangeListener(this);
+        mUserSwitcher = findPreference("persist.sys.flags.enableBouncerUserSwitcher");
+        mUserSwitcher.setOnPreferenceChangeListener(this);
         mUdfpsCategory = findPreference(UDFPS_CATEGORY);
         if (!UdfpsUtils.hasUdfpsSupport(getContext())) {
             prefSet.removePreference(mUdfpsCategory);
@@ -70,7 +73,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         if (preference == mAmbientIconsColor) {
             SparkUtils.showSystemUiRestartDialog(getContext());
             return true;
-	}
+	} else if (preference == mUserSwitcher) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putIntForUser(getContentResolver(),
+                Settings.Secure.PREF_KG_USER_SWITCHER, value ? 1 : 0, UserHandle.USER_CURRENT);
+            return true;
+        }
         return false;
     }
 
