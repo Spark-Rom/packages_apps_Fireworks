@@ -746,8 +746,6 @@
     <string name="rui_style">Realme UI style</string>
     <string name="rising_style">Rice style</string>
     <string name="volume_style_title">Volume panel styles</string>
-    <string name="two_tone_style">Two tone style</string>
-    <string name="two_tone_thin_style">Two tone thin style</string>
 
     <!-- Sensor block per-package -->
     <string name="sensor_block_title">Sensor block per-package</string>
