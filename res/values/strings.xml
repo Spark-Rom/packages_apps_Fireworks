@@ -1208,4 +1208,8 @@
     <string name="single_line">Single-line</string>
     <string name="double_line">Double-line</string>
 
+    <!-- Text Brightness -->
+    <string name="text_bright_title">Brightness Percentage</string>
+    <string name="text_bright_summary">Show brightness percentage text in brightness slider</string>
+
 </resources>
