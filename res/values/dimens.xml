@@ -39,4 +39,7 @@
 
     <!-- Oval preview size -->
     <dimen name="oval_notification_size">26dp</dimen>
+
+    <dimen name="lockscreen_preview_width">280dp</dimen>
+    <dimen name="lockscreen_preview_height">420dp</dimen>
 </resources>

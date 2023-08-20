@@ -17,7 +17,7 @@
             <stroke
                 android:color="@color/option_border_color"
                 android:width="4dp" />
-            <corners android:radius="?android:dialogCornerRadius" />
+            <corners android:radius="32dp" />
         </shape>
     </item>
     <item android:state_activated="false">
@@ -25,7 +25,7 @@
             <stroke
                 android:color="@color/option_border_color"
                 android:width="4dp" />
-            <corners android:radius="?android:dialogCornerRadius" />
+            <corners android:radius="32dp" />
         </shape>
     </item>
 </selector>

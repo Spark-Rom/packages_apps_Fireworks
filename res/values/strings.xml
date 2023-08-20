@@ -429,7 +429,12 @@
     <string name="theme_customization_wifi_icon_title">WiFi icon style</string>
     <string name="theme_customization_wifi_icon_summary">Set custom wifi icon style</string>
     <string name="theme_customization_navbar_title">Navbar style</string>
+    <string name="swipe_the_clock">Swipe the clock to change font style </string>
+    <string name="theme_customization_clock_font_title">Lockscreen clock style</string>
     <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
+    <string name="theme_customization_clock_font_summary">Set lockscreen clock style</string>
+    <string name="theme_customization_date_font_title">Lockscreen date font style</string>
+    <string name="theme_customization_date_font_summary">Set lockscreen date font style</string>
 
     <!-- Netflix Spoof -->
     <string name="netflix_spoof_title">Netflix spoof</string>
@@ -1171,4 +1176,15 @@
     <!-- Custom Data icons -->
     <string name="theme_customization_data_title">Data icon style</string>
     <string name="theme_customization_data_summary">Set custom data icon style</string>
+
+    <!-- Lockscreen Clock -->
+    <string name="kg_custom_clock_color_enabled_title">Lockscreen clock color</string>
+    <string name="kg_custom_clock_color_title">Select color</string>
+    <string name="kg_custom_clock_top_margin_title">Lockscreen clock bottom spacing</string>
+    <string name="kg_small_clock_text_size_title">Small Lockscreen clock text size</string>
+    <string name="kg_big_clock_text_size_title">Large Lockscreen clock text size</string>
+    <string name="clock_use_single_line_title">Lockscreen clock Format</string>
+    <string name="single_line">Single-line</string>
+    <string name="double_line">Double-line</string>
+
 </resources>
