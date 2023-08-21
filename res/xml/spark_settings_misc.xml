@@ -48,6 +48,13 @@
         android:summary="@string/smart_pixels_summary" 
         android:fragment="com.spark.settings.fragments.SmartPixels" />
 
+    <!-- System Manager Services -->
+    <Preference
+        android:key="system_manager_settings"
+        android:title="@string/system_manager_services_title"
+        android:summary="@string/system_manager_services_summary"
+        android:fragment="com.spark.settings.fragments.SystemManagerSettings" />
+
     <!-- Sensor block per package -->
     <Preference
         android:key="sensor_block_settings"
