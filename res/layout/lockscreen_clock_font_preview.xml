@@ -12,11 +12,11 @@
             android:id="@+id/wallpaper_frame"
             android:layout_width="@dimen/lockscreen_preview_width"
             android:layout_height="@dimen/lockscreen_preview_height"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="10dp"
             android:padding="40dp"
             android:layout_centerHorizontal="true"
             app:cardElevation="4dp"
-            app:cardCornerRadius="18dp"
+            app:cardCornerRadius="32dp"
             app:strokeColor="?android:attr/textColorPrimary"
             app:strokeWidth="3dp">
 
@@ -45,7 +45,7 @@
 
         <Button
             android:id="@+id/applyButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"

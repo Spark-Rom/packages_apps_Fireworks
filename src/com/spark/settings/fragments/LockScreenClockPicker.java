@@ -61,7 +61,6 @@ public class LockScreenClockPicker extends Fragment {
         // Add a PageTransformer for the lock screen preview effect
         CompositePageTransformer pageTransformer = new CompositePageTransformer();
         pageTransformer.addTransformer(new LockScreenPageTransformer());
-        pageTransformer.addTransformer(new MarginPageTransformer(32));
         viewPager.setPageTransformer(pageTransformer);
 
         viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
@@ -163,33 +162,75 @@ public class LockScreenClockPicker extends Fragment {
     }
 
     private static class LockScreenPageTransformer implements ViewPager2.PageTransformer {
-        private static final float MIN_SCALE = 0.85f;
-        private static final float MIN_ALPHA = 0.5f;
 
-        private final float pageWidthRatio = 0.75f;
-        private final float pageHeightRatio = 0.75f;
+    @Override
+    public void transformPage(@NonNull View page, float position) {
+        if (Math.abs(position) < 0.0001) {
+            resetTransformations(page);
+            return;
+        }
 
-        @Override
-        public void transformPage(@NonNull View page, float position) {
-            float scaleFactor = Math.max(MIN_SCALE, 1 - Math.abs(position));
-            float verticalMargin = page.getHeight() * (1 - scaleFactor) / 2;
-            float horizontalMargin = page.getWidth() * (1 - scaleFactor) / 2;
+        onPreTransform(page, position);
+        onTransform(page, position);
+    }
 
-            if (position < 0) {
-                page.setTranslationX(horizontalMargin - verticalMargin / 2);
-            } else {
-                page.setTranslationX(-horizontalMargin + verticalMargin / 2);
-            }
-
-            float targetWidth = page.getWidth() * scaleFactor * pageWidthRatio;
-            float targetHeight = page.getHeight() * scaleFactor * pageHeightRatio;
-            page.setScaleX(targetWidth / page.getWidth());
-            page.setScaleY(targetHeight / page.getHeight());
-
-            page.setAlpha(MIN_ALPHA + (scaleFactor - MIN_SCALE) / (1 - MIN_SCALE) * (1 - MIN_ALPHA));
+    protected void onPreTransform(View page, float position) {
+        float width = (float) page.getWidth();
+        page.setTranslationX(isPagingEnabled() ? 0.0f : (-width) * position);
+        if (hideOffscreenPages()) {
+            page.setAlpha(position > -1.0f && position < 1.0f ? 1.0f : 0.0f);
+        } else {
+            page.setAlpha(1.0f);
         }
     }
 
+    public void onTransform(View view, float position) {
+        if (position == 0) {
+            view.setPivotX(0);
+            view.setPivotY(view.getHeight() * 0.5f);
+            view.setRotationY(0);
+            view.setScaleX(1.0f);
+            view.setScaleY(1.0f);
+            return;
+        }
+
+        float f = 0.0f;
+        if (position < 0.0f) {
+            f = (float) view.getWidth();
+        }
+        view.setPivotX(f);
+        view.setPivotY(((float) view.getHeight()) * 0.5f);
+        view.setRotationY(20.0f * position);
+        float normalizedPosition = Math.abs(Math.abs(position) - 1.0f);
+        view.setScaleX((float) (((double) (normalizedPosition / 2.0f)) + 0.5d));
+        view.setScaleY((float) (((double) (normalizedPosition / 2.0f)) + 0.5d));
+    }
+
+    protected static final float min(float val, float min) {
+        return val < min ? min : val;
+    }
+
+    public boolean isPagingEnabled() {
+        return true;
+    }
+
+    protected boolean hideOffscreenPages() {
+        return true;
+    }
+
+    private void resetTransformations(View page) {
+        page.setRotationX(0.0f);
+        page.setRotationY(0.0f);
+        page.setRotation(0.0f);
+        page.setScaleX(1.0f);
+        page.setScaleY(1.0f);
+        page.setPivotX(0.0f);
+        page.setPivotY(0.0f);
+        page.setTranslationY(0.0f);
+        page.setTranslationX(0.0f);
+        page.setAlpha(1.0f);
+    }
+}
     public static class LockscreenClockSettingsPreferenceFragment extends PreferenceFragmentCompat {
 
         @Override
