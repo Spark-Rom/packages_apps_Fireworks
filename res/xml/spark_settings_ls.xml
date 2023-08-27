@@ -110,6 +110,12 @@
             android:defaultValue="true" />
 
         <com.spark.settings.preferences.SystemSettingSwitchPreference
+            android:key="enable_ripple_effect"
+            android:title="@string/enable_fingerprint_ripple_effect_title"
+            android:summary="@string/enable_fingerprint_ripple_effect_summary"
+            android:defaultValue="true" />
+
+        <com.spark.settings.preferences.SystemSettingSwitchPreference
             android:key="ambient_icons_lockscreen"
             android:title="@string/ambient_icons_lockscreen_title"
             android:summary="@string/ambient_icons_lockscreen_summary"
