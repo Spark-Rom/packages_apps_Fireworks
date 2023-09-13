@@ -18,6 +18,9 @@ package com.spark.settings.preferences;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.PorterDuff;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
+import android.provider.Settings;
 import androidx.core.content.res.TypedArrayUtils;
 import androidx.preference.*;
 import android.util.AttributeSet;
@@ -61,6 +64,9 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
     protected boolean mTrackingTouch = false;
     protected int mTrackingValue;
 
+    private final Context mContext;
+    private final Vibrator mVibrator;
+
     public CustomSeekBarPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
 
@@ -102,6 +108,9 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
 
         mSeekBar = new SeekBar(context, attrs);
         setLayoutResource(R.layout.preference_custom_seekbar);
+
+        mContext = context;
+        mVibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
     }
 
     public CustomSeekBarPreference(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -280,6 +289,7 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         if (mTrackingTouch && !mContinuousUpdates) {
             mTrackingValue = newValue;
             updateValueViews();
+            doHapticFeedback(VibrationEffect.EFFECT_TEXTURE_TICK);
         } else if (mValue != newValue) {
             // change rejected, revert to the previous value
             if (!callChangeListener(newValue)) {
@@ -375,5 +385,14 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
     public void refresh(int newValue) {
         // this will ...
         setValue(newValue, mSeekBar != null);
+    }
+
+    private void doHapticFeedback(int effect) {
+        final boolean hapticEnabled = Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.HAPTIC_FEEDBACK_ENABLED, 1) != 0;
+
+        if (hapticEnabled) {
+            mVibrator.vibrate(VibrationEffect.get(effect));
+        }
     }
 }
