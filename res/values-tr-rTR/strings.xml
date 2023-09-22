@@ -307,15 +307,15 @@
     <string name="solid_accent">Düz renk vurgusu</string>
     <string name="outline">Taslak</string>
     <string name="solid_accent_gradient">Düz renk vurgu gradyanı</string>
-    <string name="solid_gradient">Solid Gradient side</string>
-    <string name="solid_gradient_corner">Solid accent gradient sharp</string>
-    <string name="solid_gradient_void">Gradient Void</string>
-    <string name="solid_gradient_neumorph">Neumorph gradient</string>
-    <string name="solid_gradient_stroke">Sharp gradient stroke</string>
-    <string name="solid_accent_transperent">Accent transperent</string>
-    <string name="solid_gradient_light">Gradient light</string>
-    <string name="solid_gradient_shape">Sharp gradient corner</string>
-    <string name="solid_gradient_void_light">Gradient Void light</string>
+    <string name="solid_gradient">Düz Gradyan tarafı</string>
+    <string name="solid_gradient_corner">Düz vurgu gradyanı keskin</string>
+    <string name="solid_gradient_void">Gradyan Boşluğu</string>
+    <string name="solid_gradient_neumorph">Nömorf gradyanı</string>
+    <string name="solid_gradient_stroke">Keskin gradyan konturu</string>
+    <string name="solid_accent_transperent">Şeffaf vurgu</string>
+    <string name="solid_gradient_light">Gradyan ışığı</string>
+    <string name="solid_gradient_shape">Keskin gradyan köşesi</string>
+    <string name="solid_gradient_void_light">Gradyan boşluk ışığı</string>
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Saat &amp; Tarih</string>
     <string name="status_bar_clock_summary">Saati &amp; tarihi özelleştir</string>
@@ -733,7 +733,7 @@
     <string name="qs_header_image_styles_grayscale">Gri tonlama</string>
     <string name="qs_header_image_styles_blur">Bulanıklık</string>
     <string name="qs_header_image_styles_grayblur">Gri tonlama ve bulanık</string>
-    <string name="qs_header_image_blur_radius_title">Blur radius for header image</string>
+    <string name="qs_header_image_blur_radius_title">Başlık resmi için bulanıklaştırma yarıçapı</string>
     <!-- Custom settings dashboard style -->
     <string name="settings_styles_title">Ayarlar arayüzü</string>
     <string name="settings_styles_summary">Ayarlar kullanıcı arayüzünü özelleştirin</string>
@@ -781,7 +781,7 @@
     <string name="ambient_icons_lockscreen_summary">Bildirimleri AOD simgeleriyle değiştirin</string>
     <string name="ambient_icons_size_title">AOD simge boyutu</string>
     <string name="ambient_icons_color_title">AOD simge rengi</string>
-    <string name="ambient_icons_intro_text">Requires a SystemUI restart</string>
+    <string name="ambient_icons_intro_text">Sistem Arayüzü\'nün yeniden başlatılmasını gerektirir</string>
     <!-- QS Data Usage -->
     <string name="qs_data_usage_panel_title">Veri kullanımını göster</string>
     <string name="qs_data_usage_panel_summary">Genişletilmiş hızlı ayarlar panelinde veri kullanım ayrıntılarını içeren bir iletişim kutusu görüntüleyin</string>
@@ -846,7 +846,7 @@
     <string name="qs_reflected">QS Yansıtılı</string>
     <string name="qs_surround">QS Çevreli</string>
     <string name="qs_thin">QS ThinLine</string>
-    <string name="qs_two_tone_trans">Two-Tone Translucent</string>
+    <string name="qs_two_tone_trans">İki Tonlu Yarı Şeffaf</string>
     <string name="android_eleven">Android 11</string>
     <!-- QS Page Transitions -->
     <string name="qs_transitions_title">Hızlı ayarlar sayfa geçişleri</string>
@@ -887,27 +887,27 @@
     <string name="brightness_slider_style_default">Varsayılan</string>
     <string name="brightness_slider_style_filled">Doldurulmuş</string>
     <string name="brightness_slider_style_thin">İnce</string>
-    <string name="brightness_slider_style_cyberpunk">Blocky Thumb</string>
-    <string name="brightness_slider_style_gradiant">Double Layer</string>
-    <string name="brightness_slider_style_neumorph">Neumorph</string>
+    <string name="brightness_slider_style_cyberpunk">Bloklu Başparmak</string>
+    <string name="brightness_slider_style_gradiant">Çift katmanlı</string>
+    <string name="brightness_slider_style_neumorph">Nömorf</string>
     <string name="brightness_slider_style_outline">Taslak</string>
     <string name="brightness_slider_style_shaded">QS Gölgeli</string>
-    <string name="brightness_slider_style_thinoutline">Inline</string>
-    <string name="brightness_slider_style_translucent">Transparent</string>
-    <string name="brightness_slider_style_leafyoutline">Leafy Outline</string>
-    <string name="brightness_slider_style_minimalthumb">Minimal Thumb</string>
-    <string name="brightness_slider_style_oldschoolthumb">Old School Thumb</string>
-    <string name="brightness_slider_style_roundedclip">Rounded clip</string>
-    <string name="brightness_slider_style_thumbslider">Thumb Slider</string>
-    <string name="brightness_slider_style_line">Thin Outline</string>
-    <string name="brightness_slider_style_lighty">Lighty</string>
+    <string name="brightness_slider_style_thinoutline">Çizgi</string>
+    <string name="brightness_slider_style_translucent">Şeffaf</string>
+    <string name="brightness_slider_style_leafyoutline">Yapraklı Anahat</string>
+    <string name="brightness_slider_style_minimalthumb">Minimum Başparmak</string>
+    <string name="brightness_slider_style_oldschoolthumb">Eski Okul Başparmak</string>
+    <string name="brightness_slider_style_roundedclip">Yuvarlak klip</string>
+    <string name="brightness_slider_style_thumbslider">Başparmak Kaydırıcısı</string>
+    <string name="brightness_slider_style_line">İnce Anahat</string>
+    <string name="brightness_slider_style_lighty">Açık</string>
     <string name="brightness_slider_style_acun">Acun</string>
-    <string name="brightness_slider_style_bang">Bang</string>
+    <string name="brightness_slider_style_bang">Patlama</string>
     <!-- QS tile shape -->
     <string name="qs_tile_shape">Hızlı ayarlar kare şekli</string>
     <string name="qs_tile_round">Yuvarlak</string>
     <string name="qs_tile_rect">Yuvarlarılmış dikdörtgen</string>
-    <string name="qs_tile_mix">Round for active tiles and Rounded Rectangle for inactive tiles</string>
+    <string name="qs_tile_mix">Etkin kareler için Yuvarlak ve etkin olmayan kareler için Yuvarlak Dikdörtgen</string>
     <!-- VoLTE Icon Type -->
     <string name="volte_icon_style_title">VoLTE/HD simgesini seçin</string>
     <string name="volte_icon_off">Kapalı</string>
@@ -948,11 +948,11 @@
     <string name="rui_style">Realme arayüzü stili</string>
     <string name="rising_style">Rising arayüzü stili</string>
     <string name="double_layer_style">Çift katman stili</string>
-    <string name="gradient_style">Gradient style</string>
-    <string name="neumorph_style">Neumorph style</string>
-    <string name="neumorph_outline_style">Neumorph Outline style</string>
-    <string name="outline_style">Outline style</string>
-    <string name="shaded_layer_style">Shaded Layer style</string>
+    <string name="gradient_style">Graydan stili</string>
+    <string name="neumorph_style">Neumorf stili</string>
+    <string name="neumorph_outline_style">Neumorph Anahat stili</string>
+    <string name="outline_style">Anahat stili</string>
+    <string name="shaded_layer_style">Gölgeli Katman stili</string>
     <string name="volume_style_title">Ses paneli stilleri</string>
     <!-- Ambient Customization -->
     <string name="ambient_text_category">Metin özelleştirmeleri</string>
@@ -974,8 +974,8 @@
     <string name="ambient_text_align_end_top">Sol n üst</string>
     <string name="ambient_text_align_end_center">Sol n orta</string>
     <string name="ambient_text_align_end_bottom">Sol n alt</string>
-    <string name="ambient_text_align_center_top">Center n Top</string>
-    <string name="ambient_text_align_center_bottom">Center n Bottom</string>
+    <string name="ambient_text_align_center_top">Orta n Üst</string>
+    <string name="ambient_text_align_center_bottom">Orta n Alt</string>
     <string name="ambient_text_type_color_title">Ortam ekranı metin türü rengi</string>
     <string name="ambient_text_color_title">Ortam ekranı metin rengi</string>
     <string name="ambient_notification_light_color_mode_accent">Sistem vurgu rengi</string>
@@ -994,26 +994,29 @@
     <string name="function_font_thin_italic">İnce italik</string>
     <string name="function_font_light">Açık</string>
     <string name="function_font_thin">İnce</string>
-    <string name="function_font_condensed_normal">Condensed</string>
-    <string name="function_font_condensed_italic">Condensed Italic</string>
-    <string name="function_font_condensed_bold">Condensed Bold</string>
-    <string name="function_font_condensed_bold_italic">Condensed Bold Italic</string>
-    <string name="function_font_condensed_light">Condensed Light</string>
-    <string name="function_font_condensed_light_italic">Condensed Light Italic</string>
+    <string name="function_font_condensed_normal">Yoğun</string>
+    <string name="function_font_condensed_italic">Yoğun İtalik</string>
+    <string name="function_font_condensed_bold">Yoğun Kalın</string>
+    <string name="function_font_condensed_bold_italic">Yoğun Kalın İtalik</string>
+    <string name="function_font_condensed_light">Hafif yoğun</string>
+    <string name="function_font_condensed_light_italic">Hafif Yoğun İtalik</string>
     <string name="function_font_medium_normal">Orta</string>
     <string name="function_font_medium_italic">Orta italik</string>
     <string name="function_font_black">Siyah</string>
     <string name="function_font_black_italic">Siyah italik</string>
     <string name="function_font_dancingscript">DancingScript</string>
-    <string name="function_font_dancingscript_bold">DancingScript Bold</string>
-    <string name="function_font_comingsoon">ComingSoon</string>
+    <string name="function_font_dancingscript_bold">DancingScript Kalın</string>
+    <string name="function_font_comingsoon">Çok Yakında</string>
     <string name="function_font_notoserif">NotoSerif Normal</string>
-    <string name="function_font_notoserif_italic">NotoSerif Italic</string>
-    <string name="function_font_notoserif_bold">NotoSerif Bold</string>
-    <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
+    <string name="function_font_notoserif_italic">NotoSerif italik</string>
+    <string name="function_font_notoserif_bold">NotoSerif Kalın</string>
+    <string name="function_font_notoserif_bold_italic">NotoSerif Kalın İtalik</string>
     <!-- UDFPS Haptic Feedback -->
     <string name="udfps_haptic_feedback_title">UDFPS dokunumsal geri bildirim</string>
     <string name="udfps_haptic_feedback_summary">UDFPS simgesine dokunulduğunda titret</string>
+    <!-- Screen off UDFPS -->
+    <string name="screen_off_udfps_title">Screen off UDFPS</string>
+    <string name="screen_off_udfps_summary">Keep UDFPS enabled when the screen is off</string>
     <!-- UDFPS Recog Animation -->
     <string name="udfps_customization">UDFPS özelleştirmeleri</string>
     <string name="udfps_recog_animation">UDFPS animasyonu</string>
@@ -1056,8 +1059,8 @@
     <string name="pie_animation_style_title">Android P animasyon stili</string>
     <string name="pie_animation_style_summary">Android P \"Varsayılan\" animasyonları etkinleştirin</string>
     <!-- QS Dual Tone Colors -->
-    <string name="qs_dual_tone_title">QS dual-tone</string>
-    <string name="qs_dual_tone_summary">Use dual tone background colors</string>
+    <string name="qs_dual_tone_title">Hızlı ayarlar çift tonlu</string>
+    <string name="qs_dual_tone_summary">Çift tonlu arka plan renkleri kullan</string>
     <!-- MusicCard -->
     <string name="volume_panel_musiccard_title">Müzik kartı</string>
     <string name="volume_panel_musiccard_summary">Ses panelinde müzik kartını etkinleştirin</string>
@@ -1108,4 +1111,7 @@
     <string name="system_manager_aggressive_idle_mode_location_toggle_summary">Sistem yöneticisi Agresif boşta modu etkinleştirildiğinde, ekran kapalıyken Konumu devre dışı bırakın</string>
     <string name="system_manager_aggressive_idle_mode_location_timeout_title">Konum zaman aşımını kapat</string>
     <string name="system_manager_info_title">İpuçları\u003a \n\n1. Game Boost yalnızca bir oyun aktif olduğunda etkinleşir - uygulamanın GameSpace listesine eklenmesi gerektir.\n\n2. Çalışma zamanı güç modu, sistem güç modunu geçersiz kılar.\n\n3. Boşta Sensör bloğu, belirli hareket sensörlerinin düzgün çalışmasını engelleyecektir.</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
 </resources>

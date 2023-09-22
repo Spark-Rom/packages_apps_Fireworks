@@ -1016,6 +1016,9 @@
     <!-- UDFPS Haptic Feedback -->
     <string name="udfps_haptic_feedback_title">UDFPS haptic feedback</string>
     <string name="udfps_haptic_feedback_summary">Vibrate when touching UDFPS icon</string>
+    <!-- Screen off UDFPS -->
+    <string name="screen_off_udfps_title">Screen off UDFPS</string>
+    <string name="screen_off_udfps_summary">Keep UDFPS enabled when the screen is off</string>
     <!-- UDFPS Recog Animation -->
     <string name="udfps_customization">UDFPS customization</string>
     <string name="udfps_recog_animation">UDFPS animation</string>
@@ -1110,4 +1113,7 @@
     <string name="system_manager_aggressive_idle_mode_location_toggle_summary">Вимикати Місцезнаходження при вимкненому екрані, коли увімкнений режим енергозбереження</string>
     <string name="system_manager_aggressive_idle_mode_location_timeout_title">Тайм-аут вимкнення місцезнаходження</string>
     <string name="system_manager_info_title">Поради\u003a \n\n1. Пришвидшення гри буде активовано тільки тоді, коли гра активна - вимагає додавання програми в список GameSpace\n\n2. Режим роботи системи живлення буде перевизначати системний режим.\n\n3. Idle Sensor Block запобігає належній роботі певних датчиків руху.</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
 </resources>

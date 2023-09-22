@@ -1014,6 +1014,9 @@
     <!-- UDFPS Haptic Feedback -->
     <string name="udfps_haptic_feedback_title">Resposta tátil da impressão digital</string>
     <string name="udfps_haptic_feedback_summary">Vibrar ao tocar no ícone de impressão digital</string>
+    <!-- Screen off UDFPS -->
+    <string name="screen_off_udfps_title">Screen off UDFPS</string>
+    <string name="screen_off_udfps_summary">Keep UDFPS enabled when the screen is off</string>
     <!-- UDFPS Recog Animation -->
     <string name="udfps_customization">Personalização da impressão digital</string>
     <string name="udfps_recog_animation">Animação da impressão digital</string>
@@ -1108,4 +1111,7 @@
     <string name="system_manager_aggressive_idle_mode_location_toggle_summary">Desativar a localização ao desligar o ecrã quando o modo ocioso agressivo estiver ativado</string>
     <string name="system_manager_aggressive_idle_mode_location_timeout_title">Desativar o tempo limite de localização</string>
     <string name="system_manager_info_title">Dicas\u003a \n\n1. O Boost de Jogo só será ativado quando um jogo estiver ativo - requer que o aplicativo seja adicionado na lista do GameSSpace\n\n2. Modo de potência de execução irá substituir o modo de energia do sistema.\n\n3. Bloco de sensor de inatividade irá impedir que certos sensores de movimento funcionem corretamente.</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
 </resources>
