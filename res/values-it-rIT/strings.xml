@@ -14,7 +14,7 @@
     <string name="choose_app">Scegli app</string>
     <string name="reset">Reimposta</string>
     <string name="never">Mai</string>
-    <string name="not_available">Not available</string>
+    <string name="not_available">Non disponibile</string>
     <string name="accent_color">Colore primario (predefinito)</string>
     <string name="notification_color">Colore della notifica</string>
     <string name="wallpaper_color">Colore dallo sfondo</string>
@@ -40,7 +40,7 @@
     <string name="themes_title">Temi</string>
     <string name="buttons_category">Pulsanti</string>
     <string name="qs_themes">Impostazioni QS</string>
-    <string name="qs_battery_title">Qs Battery</string>
+    <string name="qs_battery_title">Batteria Qs</string>
     <string name="sb_gestures_title">Gesti per StatusBar</string>
     <string name="qs_footer_category">Personalizzazione piè QS</string>
     <string name="ls_gestures_title">Gesti per LockScreen</string>
@@ -304,18 +304,18 @@
     <!-- Statusbar Clock background chip -->
     <string name="statusbar_clock_chip_title">Chip di sfondo</string>
     <string name="statusbar_clock_chip_summary">Colora lo sfondo dell\'orologio nella barra di stato</string>
-    <string name="solid_accent">Solid color accent</string>
-    <string name="outline">Outline</string>
-    <string name="solid_accent_gradient">Solid color accent gradient</string>
-    <string name="solid_gradient">Solid Gradient side</string>
-    <string name="solid_gradient_corner">Solid accent gradient sharp</string>
-    <string name="solid_gradient_void">Gradient Void</string>
-    <string name="solid_gradient_neumorph">Neumorph gradient</string>
-    <string name="solid_gradient_stroke">Sharp gradient stroke</string>
-    <string name="solid_accent_transperent">Accent transperent</string>
-    <string name="solid_gradient_light">Gradient light</string>
-    <string name="solid_gradient_shape">Sharp gradient corner</string>
-    <string name="solid_gradient_void_light">Gradient Void light</string>
+    <string name="solid_accent">Accento tinta unita</string>
+    <string name="outline">Contorno</string>
+    <string name="solid_accent_gradient">Sfumatura colore accento tinta unita</string>
+    <string name="solid_gradient">Sfumatura tinta unita ai bordi</string>
+    <string name="solid_gradient_corner">Sfumatura tinta unita nitida</string>
+    <string name="solid_gradient_void">Sfumatura vuota</string>
+    <string name="solid_gradient_neumorph">Sfumatura Neumorph</string>
+    <string name="solid_gradient_stroke">Sfumatura a pennello nitida</string>
+    <string name="solid_accent_transperent">Accento trasparente</string>
+    <string name="solid_gradient_light">Sfumatura chiara</string>
+    <string name="solid_gradient_shape">Sfumatura nitida agli angoli</string>
+    <string name="solid_gradient_void_light">Sfumatura vuota chiara</string>
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Impostazioni orologio &amp; data</string>
     <string name="status_bar_clock_summary">Personalizza data e ora</string>
@@ -354,8 +354,8 @@
     <string name="clock_date_right">A destra dell\'ora</string>
     <string name="clock_date_left">A sinistra dell\'ora</string>
     <string name="clock_font_size_title">Dimensione carattere orologio</string>
-    <string name="status_bar_clock_font_style_title">Clock font style</string>
-    <string name="status_bar_clock_color_title">Clock font color</string>
+    <string name="status_bar_clock_font_style_title">Stile font dell\'orologio</string>
+    <string name="status_bar_clock_color_title">Colore carattere orologio</string>
     <!-- Tap to sleep on status bar -->
     <string name="statusbar_doubletap_sleep_title">Tocca per sospendere</string>
     <string name="statusbar_doubletap_sleep_summary">Doppio tocco sulla barra di stato per sospendere il dispositivo</string>
@@ -388,7 +388,7 @@
     <string name="theme_customization_wifi_icon_title">Stile icona Wi-Fi</string>
     <string name="theme_customization_wifi_icon_summary">Imposta lo stile dell\'icona Wi-Fi personalizzato</string>
     <string name="theme_customization_navbar_title">Stile barra di navigazione</string>
-    <string name="swipe_the_clock">Swipe the clock to change font style </string>
+    <string name="swipe_the_clock">Scorri l\'orologio per cambiare lo stile del carattere </string>
     <string name="theme_customization_clock_font_title">Stile font dell\'orologio</string>
     <string name="theme_customization_navbar_summary">Imposta uno stile personalizzato per la barra di navigazione</string>
     <string name="theme_customization_clock_font_summary">Imposta il font dell\'orologio sulla lockscreen</string>
@@ -410,8 +410,8 @@
     <string name="status_bar_battery_style_icon_landscape">Icona orizzontale (a sinistra)</string>
     <string name="status_bar_battery_style_circle">Cerchio</string>
     <string name="status_bar_battery_style_dotted_circle">Cerchio tratteggiato</string>
-    <string name="status_bar_battery_style_big_circle">Big circle</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Big dotted circle</string>
+    <string name="status_bar_battery_style_big_circle">Cerchio grande</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Cerchio grande punteggiato</string>
     <string name="status_bar_battery_style_filled_circle">Cerchio (pieno)</string>
     <string name="status_bar_battery_style_text">Testo</string>
     <string name="status_bar_battery_style_hidden">Nascosto</string>
@@ -422,19 +422,19 @@
     <string name="status_bar_battery_percent_text_next_left">Accanto all\'icona (a sinistra)</string>
     <string name="status_bar_battery_text_charging_title">Percentuale batteria quando in carica</string>
     <string name="status_bar_battery_text_charging_summary">Mostra sempre la percentuale della batteria durante la carica</string>
-    <string name="status_bar_battery_style_icon_rlandscape_style_a">Landscape R Style A</string>
-    <string name="status_bar_battery_style_icon_landscape_style_a">Landscape L Style A</string>
-    <string name="status_bar_battery_style_icon_rlandscape_style_b">Landscape R Style B</string>
-    <string name="status_bar_battery_style_icon_landscape_style_b">Landscape L Style B</string>
-    <string name="status_bar_battery_style_icon_landscape_pill">Portrait Mx</string>
-    <string name="status_bar_battery_style_icon_landscape_line">Landscape Lorn</string>
-    <string name="status_bar_battery_style_icon_landscape_musku">Portrait IOS</string>
-    <string name="status_bar_battery_style_icon_landscape_signal">Landscape Airoo</string>
-    <string name="status_bar_battery_style_icon_landscape_buddy">Landscape Capsule</string>
-    <string name="status_bar_battery_style_icon_landscape_ios15">Landscape iOS 15</string>
-    <string name="status_bar_battery_style_icon_landscape_ios16">Landscape iOS 16</string>
-    <string name="status_bar_battery_style_icon_landscape_origami">Landscape Origami</string>
-    <string name="status_bar_battery_style_icon_landscape_miui">Landscape Miui</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Orizzontale DX Stile A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Orizzontale SX Stile A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Orizzontale DX Stile B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Orizzontale SX Stile B</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Verticale Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Orizzontale Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Verticale iOS</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Orizzontale Airoo</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Orizzontale Capsula</string>
+    <string name="status_bar_battery_style_icon_landscape_ios15">Orizzontale iOS 15</string>
+    <string name="status_bar_battery_style_icon_landscape_ios16">Orizzontale iOS 16</string>
+    <string name="status_bar_battery_style_icon_landscape_origami">Orizzontale Origami</string>
+    <string name="status_bar_battery_style_icon_landscape_miui">Orizzontale Miui</string>
     <!-- QS battery -->
     <string name="qs_use_status_bar_battery_style">Segui lo stile della barra di stato</string>
     <!-- Battery estimate -->
@@ -538,19 +538,19 @@
     <string name="lockscreen_weather_enabled_info">Richiede l\'attivazione del servizio meteo</string>
     <string name="lockscreen_weather_location_title">Posizione meteo</string>
     <string name="lockscreen_weather_location_summary">Visualizza il meteo della posizione attuale</string>
-    <string name="lockscreen_weather_style_title">Lockscreen weather style</string>
-    <string name="lockscreen_weather_style_summary">Display weather as separate row</string>
+    <string name="lockscreen_weather_style_title">Stile meteo nel blocco schermo</string>
+    <string name="lockscreen_weather_style_summary">Mostra meteo come riga separata</string>
     <string name="lockscreen_weather_condition_title">Condizioni meteo</string>
-    <string name="lockscreen_weather_condition_summary">Display current weather condition</string>
+    <string name="lockscreen_weather_condition_summary">Visualizza le condizioni meteo attuali</string>
     <!-- Weather Styles -->
-    <string name="weather_style_0">"32°C Next to the date"</string>
+    <string name="weather_style_0">"32°C Successivo alla data"</string>
     <string name="weather_style_1">"32°C"</string>
-    <string name="weather_style_2">"32°C \u2022 Today 32° / 24°"</string>
+    <string name="weather_style_2">"32°C \u2022 Oggi 32° / 24°"</string>
     <string name="weather_style_3">"32°C \u2022 New York"</string>
-    <string name="weather_style_4">"32°C \u2022 Sunny"</string>
-    <string name="weather_style_5">"32°C \u2022 Today 32° / 24° \u2022 New York"</string>
-    <string name="weather_style_6">"32°C \u2022 Today 32° / 24° \u2022 Sunny"</string>
-    <string name="weather_style_7">"32°C \u2022 New York \u2022 Sunny"</string>
+    <string name="weather_style_4">"32°C \u2022 Soleggiato"</string>
+    <string name="weather_style_5">"32°C \u2022 Oggi 32° / 24° \u2022 New York"</string>
+    <string name="weather_style_6">"32°C \u2022 Oggi 32° / 24° \u2022 Soleggiato"</string>
+    <string name="weather_style_7">"32°C \u2022 New York \u2022 Soleggiato"</string>
     <!-- Omni weather -->
     <string name="weather_title">Impostazioni meteo</string>
     <string name="weather_config_title">Servizio meteo</string>
@@ -711,8 +711,8 @@
     <!-- UI settings -->
     <string name="monet_title">Impostazioni Monet</string>
     <string name="monet_summary">Personalizza il motore del tema Monet</string>
-    <string name="monet_engine_wallpaper_color_select_summary">Select a different accent color from your wallpaper</string>
-    <string name="monet_engine_wallpaper_color_select_title">Wallpaper Color Selector</string>
+    <string name="monet_engine_wallpaper_color_select_summary">Seleziona un colore di accento diverso dallo sfondo</string>
+    <string name="monet_engine_wallpaper_color_select_title">Selettore Colore Sfondo</string>
     <!-- Monet Engine -->
     <string name="monet_engine_custom_color_title">Colore primario</string>
     <string name="monet_engine_custom_color_summary">Scegli un colore primario personalizzato</string>
@@ -728,12 +728,12 @@
     <!-- QS Header -->
     <string name="qs_header_image_title">Immagine di intestazione</string>
     <!-- Qs Header Image Styles -->
-    <string name="qs_header_image_styles_title">Header image filter</string>
+    <string name="qs_header_image_styles_title">Filtro immagine intestazione</string>
     <string name="qs_header_image_styles_none">Nessuna</string>
     <string name="qs_header_image_styles_grayscale">Scala di grigi</string>
     <string name="qs_header_image_styles_blur">Sfoca</string>
     <string name="qs_header_image_styles_grayblur">Scala di grigi e sfocata</string>
-    <string name="qs_header_image_blur_radius_title">Blur radius for header image</string>
+    <string name="qs_header_image_blur_radius_title">Raggio di sfocatura per l\'immagine dell\'intestazione</string>
     <!-- Custom settings dashboard style -->
     <string name="settings_styles_title">Interfaccia Impostazioni</string>
     <string name="settings_styles_summary">Personalizza l’interfaccia delle impostazioni</string>
@@ -764,11 +764,11 @@
     <!-- Flags features -->
     <string name="combined_status_bar_signal_icons_title">Icone del segnale combinate</string>
     <string name="combined_status_bar_signal_icons_summary">Abilita le icone combinate del segnale\n(ATTENZIONE: avverrà un soft reboot abilitando le icone combinate del segnale)</string>
-    <string name="lockscreen_user_switcher_title">User Switcher</string>
-    <string name="lockscreen_user_switcher_summary">Show user switcher when unlocking secured device</string>
+    <string name="lockscreen_user_switcher_title">Cambia utente</string>
+    <string name="lockscreen_user_switcher_summary">Mostra cambio utente quando si sblocca il dispositivo protetto</string>
     <!-- Combined Qs Headers -->
-    <string name="combined_qs_headers_title">Combined Qs Headers </string>
-    <string name="combined_qs_headers_summary">Switch to QPR2 header layout</string>
+    <string name="combined_qs_headers_title">Intestazioni QS combinate </string>
+    <string name="combined_qs_headers_summary">Passa al layout dell\'intestazione QPR2</string>
     <!-- QS clock -->
     <string name="qs_clock_title">Orologio</string>
     <string name="qs_clock_summary">Mostra l\'orologio nell\'intestazione della barra di stato rapida</string>
@@ -776,12 +776,12 @@
     <string name="qs_date_title">Data</string>
     <string name="qs_date_summary">Mostra la data nell\'intestazione della barra di stato rapida</string>
     <!-- AOD Icons on Lockscreen! -->
-    <string name="alt_layout_category">Alternative layout</string>
-    <string name="ambient_icons_lockscreen_title">AOD icons on lockscreen</string>
-    <string name="ambient_icons_lockscreen_summary">Replace notifications with AOD icons</string>
-    <string name="ambient_icons_size_title">AOD icons size</string>
-    <string name="ambient_icons_color_title">AOD icons color</string>
-    <string name="ambient_icons_intro_text">Requires a SystemUI restart</string>
+    <string name="alt_layout_category">Disposizione alternativa</string>
+    <string name="ambient_icons_lockscreen_title">Icone AOD sulla schermata di blocco</string>
+    <string name="ambient_icons_lockscreen_summary">Sostituisci le notifiche con le icone AOD</string>
+    <string name="ambient_icons_size_title">Dimensioni icone AOD</string>
+    <string name="ambient_icons_color_title">Colori icone AOD</string>
+    <string name="ambient_icons_intro_text">Richiede un riavvio di SystemUI</string>
     <!-- QS Data Usage -->
     <string name="qs_data_usage_panel_title">Mostra Utilizzo Dati</string>
     <string name="qs_data_usage_panel_summary">Mostra una finestra di dialogo con i dettagli di utilizzo dati sul pannello qs</string>
@@ -801,7 +801,7 @@
     <string name="qs_system_info_gpu_clock">Frequenza GPU</string>
     <string name="qs_system_info_gpu_busy">Utilizzo GPU</string>
     <!-- Power menu Animations  -->
-    <string name="power_menu_anim_cat">Power UI Animation Option</string>
+    <string name="power_menu_anim_cat">Opzioni di animazione interfaccia alimentazione</string>
     <string name="power_menu_animation_title">Animazione menù alimentazione</string>
     <string name="power_menu_animation_dialog_title">Seleziona animazione menù alimentazione</string>
     <string name="power_menu_animation_aosp">AOSP (predefinita)</string>
@@ -816,27 +816,27 @@
     <string name="power_menu_animation_translucent_bottom">Traslucido (basso)</string>
     <string name="power_menu_animation_rotate">Ruota</string>
     <!-- Power menu and dialogs opacity -->
-    <string name="power_menu_transparency">Power/reboot menu opacity</string>
-    <string name="power_menu_dialog_dim">Power/reboot dialog dim background amount</string>
+    <string name="power_menu_transparency">Trasparenza del menù alimentazione/riavvio</string>
+    <string name="power_menu_dialog_dim">Imposta lo sfondo scuro sotto la finestra del menù alimentazione/riavvio</string>
     <!-- QS tiles layout -->
     <string name="qs_layout_category_title">Layout tile</string>
     <string name="qs_tile_layout_title">Layout verticale</string>
     <string name="qs_tile_layout_summary">Mostra l\'etichetta sotto l\'icona anziché accanto all\'icona</string>
-    <string name="qs_tiles_layout_category">Tiles layout</string>
-    <string name="qs_rows_portrait_title">Rows (Portrait)</string>
-    <string name="qqs_rows_portrait_title">Rows (Quick QS portrait)</string>
+    <string name="qs_tiles_layout_category">Layout tile</string>
+    <string name="qs_rows_portrait_title">Righe (verticale)</string>
+    <string name="qqs_rows_portrait_title">Righe (QS rapidi verticali)</string>
     <string name="qs_columns_portrait_title">Colonne (verticale)</string>
-    <string name="qs_apply_change_button_title">Apply change</string>
-    <string name="qs_apply_change_failed">Failed to apply change</string>
-    <string name="qs_tile_hide_label_title">Hide labels</string>
+    <string name="qs_apply_change_button_title">Applica le modifiche</string>
+    <string name="qs_apply_change_failed">Impossibile applicare le modifiche</string>
+    <string name="qs_tile_hide_label_title">Nascondi etichette</string>
     <string name="qs_tile_label_size_title">Dimensione testo etichetta</string>
-    <string name="qs_tile_secondary_label_size_title">Secondary Label text size</string>
-    <string name="qs_tile_hide_label_summary">Show only icon for QS tiles</string>
-    <string name="qs_tile_vertical_layout_title">Vertical layout</string>
-    <string name="qs_tile_vertical_layout_summary">Enable vertical layout for QS tiles</string>
+    <string name="qs_tile_secondary_label_size_title">Dimensione del testo dell\'etichetta secondaria</string>
+    <string name="qs_tile_hide_label_summary">Mostra solo icona per i tile</string>
+    <string name="qs_tile_vertical_layout_title">Layout verticale</string>
+    <string name="qs_tile_vertical_layout_summary">Abilita la disposizione verticale per i riquadri delle impostazioni rapide</string>
     <!-- Quick settings styles -->
     <string name="qs_styles_title">Stile pannelli QS</string>
-    <string name="qs_ui_title">Quick Settings UI</string>
+    <string name="qs_ui_title">UI Impostazioni rapide</string>
     <string name="qs_outline">QS stile contorno</string>
     <string name="qs_two_tone">QS accento due toni</string>
     <string name="qs_color_pop">QS colore Pop</string>
@@ -846,7 +846,7 @@
     <string name="qs_reflected">QS Riflessi</string>
     <string name="qs_surround">QS Surround</string>
     <string name="qs_thin">QS ThinLine</string>
-    <string name="qs_two_tone_trans">Two-Tone Translucent</string>
+    <string name="qs_two_tone_trans">Bicolore traslucido</string>
     <string name="android_eleven">Android 11</string>
     <!-- QS Page Transitions -->
     <string name="qs_transitions_title">Transizioni pagine QS</string>
@@ -872,8 +872,8 @@
     <string name="qs_tile_animation_interpolator_title">Interpolatore animazione tile</string>
     <string name="qs_tile_animation_style_off">Nessuna animazione</string>
     <string name="qs_tile_animation_style_rotate">Ruota</string>
-    <string name="qs_tile_animation_style_flipx">Flip X</string>
-    <string name="qs_tile_animation_style_flipy">Flip Y</string>
+    <string name="qs_tile_animation_style_flipx">Capovolgi X</string>
+    <string name="qs_tile_animation_style_flipy">Capovolgi Y</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Lineare</string>
     <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelera</string>
     <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelera</string>
@@ -883,76 +883,76 @@
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipa</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipa ed eccedi</string>
     <!-- Brightness slider styles -->
-    <string name="brightness_slider_style_title">Brightness slider style</string>
+    <string name="brightness_slider_style_title">Stile cursore luminosità</string>
     <string name="brightness_slider_style_default">Predefinito</string>
-    <string name="brightness_slider_style_filled">Filled</string>
+    <string name="brightness_slider_style_filled">Pieno</string>
     <string name="brightness_slider_style_thin">Sottile</string>
-    <string name="brightness_slider_style_cyberpunk">Blocky Thumb</string>
-    <string name="brightness_slider_style_gradiant">Double Layer</string>
+    <string name="brightness_slider_style_cyberpunk">A blocchetto</string>
+    <string name="brightness_slider_style_gradiant">Doppio strato</string>
     <string name="brightness_slider_style_neumorph">Neumorph</string>
-    <string name="brightness_slider_style_outline">Outline</string>
+    <string name="brightness_slider_style_outline">Contorno</string>
     <string name="brightness_slider_style_shaded">QS Ombreggiati</string>
-    <string name="brightness_slider_style_thinoutline">Inline</string>
-    <string name="brightness_slider_style_translucent">Transparent</string>
-    <string name="brightness_slider_style_leafyoutline">Leafy Outline</string>
-    <string name="brightness_slider_style_minimalthumb">Minimal Thumb</string>
-    <string name="brightness_slider_style_oldschoolthumb">Old School Thumb</string>
-    <string name="brightness_slider_style_roundedclip">Rounded clip</string>
-    <string name="brightness_slider_style_thumbslider">Thumb Slider</string>
-    <string name="brightness_slider_style_line">Thin Outline</string>
-    <string name="brightness_slider_style_lighty">Lighty</string>
+    <string name="brightness_slider_style_thinoutline">In linea</string>
+    <string name="brightness_slider_style_translucent">Trasparente</string>
+    <string name="brightness_slider_style_leafyoutline">Contorno A Foglia</string>
+    <string name="brightness_slider_style_minimalthumb">Minimale</string>
+    <string name="brightness_slider_style_oldschoolthumb">Vecchia Scuola</string>
+    <string name="brightness_slider_style_roundedclip">Clip arrotondata</string>
+    <string name="brightness_slider_style_thumbslider">Cursore</string>
+    <string name="brightness_slider_style_line">Contorno Sottile</string>
+    <string name="brightness_slider_style_lighty">Leggero</string>
     <string name="brightness_slider_style_acun">Acun</string>
     <string name="brightness_slider_style_bang">Bang</string>
     <!-- QS tile shape -->
-    <string name="qs_tile_shape">QS tile shape</string>
-    <string name="qs_tile_round">Round</string>
-    <string name="qs_tile_rect">Rounded Rectangle</string>
-    <string name="qs_tile_mix">Round for active tiles and Rounded Rectangle for inactive tiles</string>
+    <string name="qs_tile_shape">Forma dei tile QS</string>
+    <string name="qs_tile_round">Rotonde</string>
+    <string name="qs_tile_rect">Rettangolo arrotondato</string>
+    <string name="qs_tile_mix">Rotondo per piastrelle attive e rettangolo arrotondato per piastrelle inattive</string>
     <!-- VoLTE Icon Type -->
-    <string name="volte_icon_style_title">Select VoLTE/HD Icon</string>
+    <string name="volte_icon_style_title">Seleziona icona VoLTE/HD</string>
     <string name="volte_icon_off">Spegni</string>
-    <string name="volte_icon_vo">Vo Icon</string>
-    <string name="volte_icon_volte">VoLTE Icon</string>
-    <string name="volte_icon_oos">VoLTE OnePlus Icon</string>
-    <string name="volte_icon_dynamic">Dynamic VoLTE Icon</string>
-    <string name="volte_icon_hd">HD Icons</string>
-    <string name="volte_icon_miui">MiUi Icons</string>
-    <string name="volte_icon_emui">EMUI Icons</string>
-    <string name="volte_icon_margaritov">HD Filled Icon</string>
-    <string name="volte_icon_margaritov2">Margaritov VoLTE Icon</string>
-    <string name="volte_icon_vivo">Vivo Icon</string>
-    <string name="volte_icon_aris">Aris Icon</string>
-    <string name="volte_icon_beast">Aww Icon</string>
-    <string name="volte_icon_ios">Ios Icon</string>
-    <string name="volte_icon_lr">Livenge Icon</string>
-    <string name="volte_icon_realme">Realme Icon</string>
-    <string name="volte_icon_typeA">Mild Icon</string>
-    <string name="volte_icon_typeB">Filth Icon</string>
-    <string name="volte_icon_typeC">Mue Icon</string>
-    <string name="volte_icon_typeD">Sus Icon</string>
-    <string name="volte_icon_typeE">Acherus Icon</string>
-    <string name="volte_icon_vcircle">Circle Icon</string>
-    <string name="volte_icon_vimeo">Vimeo Icon</string>
-    <string name="volte_icon_volit">Volit Icon</string>
-    <string name="volte_icon_zirco">Ziroc Icon</string>
+    <string name="volte_icon_vo">Icona Vo</string>
+    <string name="volte_icon_volte">Icona VoLTE</string>
+    <string name="volte_icon_oos">Icona VoLTE OnePlus</string>
+    <string name="volte_icon_dynamic">Icona VoLTE Dinamica</string>
+    <string name="volte_icon_hd">Icona HD</string>
+    <string name="volte_icon_miui">Icone MiUi</string>
+    <string name="volte_icon_emui">Icone EMUI</string>
+    <string name="volte_icon_margaritov">Icona piena HD</string>
+    <string name="volte_icon_margaritov2">Icona VoLTE Margaritov</string>
+    <string name="volte_icon_vivo">Icona Vivo</string>
+    <string name="volte_icon_aris">Icona Aris</string>
+    <string name="volte_icon_beast">Icona Aww</string>
+    <string name="volte_icon_ios">Icona Ios</string>
+    <string name="volte_icon_lr">Icona Livenge</string>
+    <string name="volte_icon_realme">Icona Realme</string>
+    <string name="volte_icon_typeA">Icona Mild</string>
+    <string name="volte_icon_typeB">Icona Filth</string>
+    <string name="volte_icon_typeC">Icona Mue</string>
+    <string name="volte_icon_typeD">Icona Sus</string>
+    <string name="volte_icon_typeE">Icona Acherus</string>
+    <string name="volte_icon_vcircle">Icona circolare</string>
+    <string name="volte_icon_vimeo">Icona Vimeo</string>
+    <string name="volte_icon_volit">Icona Volit</string>
+    <string name="volte_icon_zirco">Icona Ziroc</string>
     <!-- VoWiFi icon -->
     <string name="vowifi_icon_title">Icona VoWiFi</string>
     <string name="vowifi_icon_summary">Mostra l\'icona VoWiFi quando disponibile</string>
     <string name="vowifi_icon_off">Spegni</string>
-    <string name="vowifi_icon_dynamic">Dynamic VoWiFi Icon</string>
-    <string name="vowifi_icon_asus">Asus VoWiFi Icon</string>
-    <string name="vowifi_icon_oneplus">OnePlus VoWiFi Icon</string>
-    <string name="vowifi_icon_moto">Moto VoWiFi Icons</string>
-    <string name="vowifi_icon_emui">EMUI Icons</string>
+    <string name="vowifi_icon_dynamic">Icona VoWiFi Dinamica</string>
+    <string name="vowifi_icon_asus">Icona VoWiFi Asus</string>
+    <string name="vowifi_icon_oneplus">Icona VoWiFi OnePlus</string>
+    <string name="vowifi_icon_moto">Icona VoWiFi Moto</string>
+    <string name="vowifi_icon_emui">Icone EMUI</string>
     <!-- Volume Styles -->
     <string name="rui_style">Stile Realme UI</string>
-    <string name="rising_style">Rising UI style</string>
-    <string name="double_layer_style">Double Layer style</string>
-    <string name="gradient_style">Gradient style</string>
-    <string name="neumorph_style">Neumorph style</string>
-    <string name="neumorph_outline_style">Neumorph Outline style</string>
-    <string name="outline_style">Outline style</string>
-    <string name="shaded_layer_style">Shaded Layer style</string>
+    <string name="rising_style">Stile RisingUI</string>
+    <string name="double_layer_style">Stile doppio strato</string>
+    <string name="gradient_style">Stile gradiente</string>
+    <string name="neumorph_style">Stile Neumorph</string>
+    <string name="neumorph_outline_style">Stile profilo Neumorph</string>
+    <string name="outline_style">Stile contorno</string>
+    <string name="shaded_layer_style">Stile livello ombreggiato</string>
     <string name="volume_style_title">Stili pannello del volume</string>
     <!-- Ambient Customization -->
     <string name="ambient_text_category">Personalizzazione testo</string>
@@ -974,46 +974,49 @@
     <string name="ambient_text_align_end_top">In alto verso sinistra</string>
     <string name="ambient_text_align_end_center">Centrato verso sinistra</string>
     <string name="ambient_text_align_end_bottom">In basso verso sinistra</string>
-    <string name="ambient_text_align_center_top">Center n Top</string>
-    <string name="ambient_text_align_center_bottom">Center n Bottom</string>
+    <string name="ambient_text_align_center_top">Centrato in alto</string>
+    <string name="ambient_text_align_center_bottom">Centrato in basso</string>
     <string name="ambient_text_type_color_title">Tipo di colore testo Ambient</string>
     <string name="ambient_text_color_title">Colore testo Ambient</string>
     <string name="ambient_notification_light_color_mode_accent">Colore di accento di sistema</string>
     <string name="ambient_notification_light_color_mode_custom">Colore personalizzato</string>
     <string name="ambient_notification_light_color_mode_wall">Colore dallo sfondo</string>
-    <string name="ambient_notification_light_color_mode_random">Random color</string>
+    <string name="ambient_notification_light_color_mode_random">Colore casuale</string>
     <string name="ambient_image_title">Immagine Ambient</string>
     <string name="file_header_select_title">Seleziona un\'immagine locale</string>
     <string name="file_header_select_summary">Seleziona un\'immagine dalla memoria</string>
     <!-- Font Customizations for Functions -->
-    <string name="function_font_stock">Normal (default)</string>
-    <string name="function_font_bold">Bold</string>
-    <string name="function_font_italic">Italic</string>
-    <string name="function_font_bold_italic">Bold Italic</string>
-    <string name="function_font_light_italic">Light Italic</string>
-    <string name="function_font_thin_italic">Thin Italic</string>
-    <string name="function_font_light">Light</string>
+    <string name="function_font_stock">Normale (predefinito)</string>
+    <string name="function_font_bold">Grassetto</string>
+    <string name="function_font_italic">Corsivo</string>
+    <string name="function_font_bold_italic">Grassetto corsivo</string>
+    <string name="function_font_light_italic">Corsivo leggero</string>
+    <string name="function_font_thin_italic">Corsivo sottile</string>
+    <string name="function_font_light">Fine</string>
     <string name="function_font_thin">Sottile</string>
-    <string name="function_font_condensed_normal">Condensed</string>
-    <string name="function_font_condensed_italic">Condensed Italic</string>
-    <string name="function_font_condensed_bold">Condensed Bold</string>
-    <string name="function_font_condensed_bold_italic">Condensed Bold Italic</string>
-    <string name="function_font_condensed_light">Condensed Light</string>
-    <string name="function_font_condensed_light_italic">Condensed Light Italic</string>
-    <string name="function_font_medium_normal">Medium</string>
-    <string name="function_font_medium_italic">Medium Italic</string>
-    <string name="function_font_black">Black</string>
-    <string name="function_font_black_italic">Black Italic</string>
+    <string name="function_font_condensed_normal">Compatto</string>
+    <string name="function_font_condensed_italic">Corsivo Compatto</string>
+    <string name="function_font_condensed_bold">Grassetto Compatto</string>
+    <string name="function_font_condensed_bold_italic">Grassetto corsivo compatto</string>
+    <string name="function_font_condensed_light">Compatto leggero</string>
+    <string name="function_font_condensed_light_italic">Compatto leggero corsivo</string>
+    <string name="function_font_medium_normal">Media</string>
+    <string name="function_font_medium_italic">Medio corsivo</string>
+    <string name="function_font_black">Nero</string>
+    <string name="function_font_black_italic">Nero corsivo</string>
     <string name="function_font_dancingscript">DancingScript</string>
-    <string name="function_font_dancingscript_bold">DancingScript Bold</string>
+    <string name="function_font_dancingscript_bold">DancingScript grassetto</string>
     <string name="function_font_comingsoon">ComingSoon</string>
-    <string name="function_font_notoserif">NotoSerif Normal</string>
-    <string name="function_font_notoserif_italic">NotoSerif Italic</string>
-    <string name="function_font_notoserif_bold">NotoSerif Bold</string>
-    <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
+    <string name="function_font_notoserif">NotoSerif normale</string>
+    <string name="function_font_notoserif_italic">NotoSerif Corsivo</string>
+    <string name="function_font_notoserif_bold">NotoSerif grassetto</string>
+    <string name="function_font_notoserif_bold_italic">NotoSerif Corsivo Grassetto</string>
     <!-- UDFPS Haptic Feedback -->
     <string name="udfps_haptic_feedback_title">FOD feedback tattile</string>
     <string name="udfps_haptic_feedback_summary">Vibra quando si tocca l\'icona FOD</string>
+    <!-- Screen off UDFPS -->
+    <string name="screen_off_udfps_title">Screen off UDFPS</string>
+    <string name="screen_off_udfps_summary">Keep UDFPS enabled when the screen is off</string>
     <!-- UDFPS Recog Animation -->
     <string name="udfps_customization">Personalizzazione UDFPS</string>
     <string name="udfps_recog_animation">Animazione Udfps</string>
@@ -1034,51 +1037,51 @@
     <string name="custom_fp_select_title">Seleziona l\'icona UDFPS personalizzata</string>
     <string name="custom_fp_select_summary">Seleziona un\'immagine personalizzata dai tuoi file o dalla galleria</string>
     <!-- Toast Animation -->
-    <string name="toast_animation_title">Toast animation</string>
+    <string name="toast_animation_title">Animazione toast</string>
     <string name="toast_none_animation">Nessuna</string>
     <string name="toast_default_animation">Predefinito</string>
     <string name="toast_fade_animation">Sfuma</string>
-    <string name="toast_SlideRight_animation">Slide right</string>
-    <string name="toast_SlideLeft_animation">Slide left</string>
+    <string name="toast_SlideRight_animation">Scorrimento a destra</string>
+    <string name="toast_SlideLeft_animation">Scorrimento da sinistra</string>
     <string name="toast_Xylon_animation">Xylon</string>
     <string name="toast_Toko_animation">Toko</string>
     <string name="toast_Tn_animation">Tn</string>
     <string name="toast_Honami_animation">Honami</string>
-    <string name="toast_FastFade_animation">Fast fade</string>
-    <string name="toast_GrowFade_animation">Grow fade</string>
-    <string name="toast_GrowFadeCenter_animation">Grow fade center</string>
-    <string name="toast_GrowFadeBottom_animation">Grow fade bottom</string>
-    <string name="toast_Translucent_animation">Translucent</string>
-    <string name="toast_SlideLeftRight_animation">Slide left to right</string>
-    <string name="toast_SlideRightLeft_animation">Slide right to left</string>
-    <string name="toast_animation_test">This is test for selected toast animation</string>
+    <string name="toast_FastFade_animation">Dissolvenza rapida</string>
+    <string name="toast_GrowFade_animation">Dissolvenza crescente</string>
+    <string name="toast_GrowFadeCenter_animation">Dissolvenza crescente al centro</string>
+    <string name="toast_GrowFadeBottom_animation">Dissolvenza crescente dal basso</string>
+    <string name="toast_Translucent_animation">Trasparente</string>
+    <string name="toast_SlideLeftRight_animation">Scorri da sinistra a destra</string>
+    <string name="toast_SlideRightLeft_animation">Scorri da destra a sinistra</string>
+    <string name="toast_animation_test">Questo è un test per l\'animazione del toast selezionata</string>
     <!-- Android P animation style -->
     <string name="pie_animation_style_title">Animazioni in stile Android P</string>
     <string name="pie_animation_style_summary">Attiva le animazioni \"predefinite\" di Android P</string>
     <!-- QS Dual Tone Colors -->
-    <string name="qs_dual_tone_title">QS dual-tone</string>
-    <string name="qs_dual_tone_summary">Use dual tone background colors</string>
+    <string name="qs_dual_tone_title">Dual-tone dei QS</string>
+    <string name="qs_dual_tone_summary">Usa colori di sfondo doppio tono</string>
     <!-- MusicCard -->
-    <string name="volume_panel_musiccard_title">Music Card</string>
-    <string name="volume_panel_musiccard_summary">Enable music card in volume panel</string>
+    <string name="volume_panel_musiccard_title">Scheda Musicale</string>
+    <string name="volume_panel_musiccard_summary">Abilita scheda musicale nel pannello del volume</string>
     <!-- 5G icon -->
-    <string name="show_fiveg_icon_summary">Show 5G instead of LTE &amp; 4G</string>
-    <string name="show_fiveg_icon_title">Display 5G Indicator</string>
+    <string name="show_fiveg_icon_summary">Mostra 5G invece di LTE &amp; 4G</string>
+    <string name="show_fiveg_icon_title">Mostra Indicatore 5G</string>
     <!-- Custom Data icons -->
-    <string name="theme_customization_data_title">Data icon style</string>
-    <string name="theme_customization_data_summary">Set custom data icon style</string>
+    <string name="theme_customization_data_title">Stile icona dati</string>
+    <string name="theme_customization_data_summary">Imposta lo stile personalizzato dell\'icona dei dati mobili</string>
     <!-- Lockscreen Clock -->
     <string name="kg_custom_clock_color_enabled_title">Colore orologio della schermata di blocco</string>
     <string name="kg_custom_clock_color_title">Scegli un colore per l\'orologio della schermata di blocco</string>
     <string name="kg_custom_clock_top_margin_title">Spaziatura inferiore orologio</string>
-    <string name="kg_small_clock_text_size_title">Small Lockscreen clock text size</string>
+    <string name="kg_small_clock_text_size_title">Dimensioni testo orologio piccolo nella schermata di blocco</string>
     <string name="kg_big_clock_text_size_title">Orologio di grandi dimensioni</string>
     <string name="clock_use_single_line_title">Formato orologio personalizzato</string>
     <string name="single_line">Linea singola</string>
     <string name="double_line">Linea doppia</string>
     <!-- Text Brightness -->
-    <string name="text_bright_title">Brightness Percentage</string>
-    <string name="text_bright_summary">Show brightness percentage text in brightness slider</string>
+    <string name="text_bright_title">Percentuale Luminosità</string>
+    <string name="text_bright_summary">Mostra percentuale di luminosità come testo nel cursore della luminosità</string>
     <!-- System Manager -->
     <string name="system_manager_services_title">Gestore di sistema</string>
     <string name="system_manager_services_summary">Ottimizza il consumo energetico del dispositivo e le prestazioni</string>
@@ -1108,4 +1111,7 @@
     <string name="system_manager_aggressive_idle_mode_location_toggle_summary">Disabilita la posizione a schermo spento quando la modalità Idle Aggressivo è abilitata nel gestore di sistema</string>
     <string name="system_manager_aggressive_idle_mode_location_timeout_title">Timeout disattivazione posizione</string>
     <string name="system_manager_info_title">Suggerimenti\u003a \n\n1. Game Boost si attiverà solo quando un gioco è attivo - richiede che l\'app sia aggiunta nella lista di GameSpace\n\n2. La modalità di alimentazione in esecuzione sovrascriverà la modalità di alimentazione del sistema.\n\n3. Il blocco sensori in Idle impedirà a determinati sensori di movimento di funzionare correttamente.</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
 </resources>

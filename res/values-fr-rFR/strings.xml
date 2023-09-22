@@ -85,7 +85,7 @@
     <string name="power_menu_title">Menu marche/arrêt</string>
     <string name="power_menu_summary">Customize power menu options</string>
     <string name="power_menu_actions_title">Actions</string>
-    <string name="power_menu_screenshot_title">Screenshot</string>
+    <string name="power_menu_screenshot_title">Capture d\'écran</string>
     <string name="power_menu_screenshot_summary">Long-press for partial screenshot</string>
     <string name="power_menu_onthego_title">On-The-Go mode</string>
     <string name="power_menu_advanced_title">Advanced reboot options</string>
@@ -535,12 +535,12 @@
     <string name="weather_settings_summary">Setup icon pack and weather service</string>
     <string name="lockscreen_weather_title">Weather condition</string>
     <string name="lockscreen_weather_summary">Display current weather condition and temperature</string>
-    <string name="lockscreen_weather_enabled_info">Requires weather service to be enabled</string>
+    <string name="lockscreen_weather_enabled_info">Nécessite l\'activation du service météo</string>
     <string name="lockscreen_weather_location_title">Weather location</string>
     <string name="lockscreen_weather_location_summary">Display current weather location</string>
     <string name="lockscreen_weather_style_title">Lockscreen weather style</string>
     <string name="lockscreen_weather_style_summary">Display weather as separate row</string>
-    <string name="lockscreen_weather_condition_title">Weather condition</string>
+    <string name="lockscreen_weather_condition_title">Conditions météorologiques</string>
     <string name="lockscreen_weather_condition_summary">Display current weather condition</string>
     <!-- Weather Styles -->
     <string name="weather_style_0">"32°C Next to the date"</string>
@@ -1014,6 +1014,9 @@
     <!-- UDFPS Haptic Feedback -->
     <string name="udfps_haptic_feedback_title">Retour haptique du capteur biométrique</string>
     <string name="udfps_haptic_feedback_summary">Vribrer lorsque l\'icône du capteur biométrique est pressée</string>
+    <!-- Screen off UDFPS -->
+    <string name="screen_off_udfps_title">Screen off UDFPS</string>
+    <string name="screen_off_udfps_summary">Keep UDFPS enabled when the screen is off</string>
     <!-- UDFPS Recog Animation -->
     <string name="udfps_customization">Personnalisation du lecteur d\'empreintes sous l\'écran</string>
     <string name="udfps_recog_animation">Animation Udfps</string>
@@ -1108,4 +1111,7 @@
     <string name="system_manager_aggressive_idle_mode_location_toggle_summary">Disable Location on screen off when System Manager Aggressive Idle mode is enabled</string>
     <string name="system_manager_aggressive_idle_mode_location_timeout_title">Turn off Location timeout</string>
     <string name="system_manager_info_title">Tips\u003a \n\n1. Game Boost will only activate when a game is active - requires app to be added on GameSpace list.\n\n2. Runtime power mode will override system power mode.\n\n3. Idle Sensor Block will prevent certain motion sensors from working properly.</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
 </resources>

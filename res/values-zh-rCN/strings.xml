@@ -1013,6 +1013,9 @@
     <!-- UDFPS Haptic Feedback -->
     <string name="udfps_haptic_feedback_title">Udfps 触发反馈</string>
     <string name="udfps_haptic_feedback_summary">触摸udfps图标时振动</string>
+    <!-- Screen off UDFPS -->
+    <string name="screen_off_udfps_title">Screen off UDFPS</string>
+    <string name="screen_off_udfps_summary">Keep UDFPS enabled when the screen is off</string>
     <!-- UDFPS Recog Animation -->
     <string name="udfps_customization">UDFPS customization</string>
     <string name="udfps_recog_animation">屏幕指纹动画</string>
@@ -1107,4 +1110,7 @@
     <string name="system_manager_aggressive_idle_mode_location_toggle_summary">启用系统管理器主动闲置模式时，禁用屏幕关闭位置</string>
     <string name="system_manager_aggressive_idle_mode_location_timeout_title">关闭位置超时</string>
     <string name="system_manager_info_title">提示\u003a \n\n1. 游戏提升只会在游戏活动时启动 - 需要将应用程序添加到 GameSpace 列表。\n\n2。 运行时电源模式将覆盖系统电源模式。\n\n3空闲传感器方块将防止某些运动传感器正常工作。</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
 </resources>

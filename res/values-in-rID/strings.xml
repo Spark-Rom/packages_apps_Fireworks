@@ -1013,6 +1013,9 @@
     <!-- UDFPS Haptic Feedback -->
     <string name="udfps_haptic_feedback_title">Umpan balik Sidik Jari Dalam Layar</string>
     <string name="udfps_haptic_feedback_summary">Bergetar saat menyentuh ikon Sidik Jari Dalam Layar</string>
+    <!-- Screen off UDFPS -->
+    <string name="screen_off_udfps_title">Screen off UDFPS</string>
+    <string name="screen_off_udfps_summary">Keep UDFPS enabled when the screen is off</string>
     <!-- UDFPS Recog Animation -->
     <string name="udfps_customization">Kustomisasi Sidik Jari Dalam Layar</string>
     <string name="udfps_recog_animation">Animasi Sidik Jari Dalam Layar</string>
@@ -1107,4 +1110,7 @@
     <string name="system_manager_aggressive_idle_mode_location_toggle_summary">Disable Location on screen off when System Manager Aggressive Idle mode is enabled</string>
     <string name="system_manager_aggressive_idle_mode_location_timeout_title">Nonaktifkan batas waktu Lokasi</string>
     <string name="system_manager_info_title">Kiat\u003a \n\n1. Game Boost hanya akan aktif saat game aktif - aplikasi harus ditambahkan ke daftar Ruang Game.\n\n2. Mode daya runtime akan menggantikan mode daya sistem.\n\n3. Blok Sensor Idle akan mencegah sensor gerak tertentu bekerja dengan benar.</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
 </resources>

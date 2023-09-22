@@ -1016,6 +1016,9 @@
     <!-- UDFPS Haptic Feedback -->
     <string name="udfps_haptic_feedback_title">Wibracja dla czytnika linii papilarnych</string>
     <string name="udfps_haptic_feedback_summary">Wibruj przy naciśnięciu ikony czytnika linii papilarnych</string>
+    <!-- Screen off UDFPS -->
+    <string name="screen_off_udfps_title">Screen off UDFPS</string>
+    <string name="screen_off_udfps_summary">Keep UDFPS enabled when the screen is off</string>
     <!-- UDFPS Recog Animation -->
     <string name="udfps_customization">Dostosowanie UDFPS</string>
     <string name="udfps_recog_animation">Animacja Udfps</string>
@@ -1110,4 +1113,7 @@
     <string name="system_manager_aggressive_idle_mode_location_toggle_summary">Wyłącz lokalizację na wyłączonym ekranie gdy włączony jest tryb agresywnej bezczynności</string>
     <string name="system_manager_aggressive_idle_mode_location_timeout_title">Wyłącz limit czasu lokalizacji</string>
     <string name="system_manager_info_title">Wskazówki\u003a \n\n1. Przyspieszenie gry aktywuje się tylko wtedy, gdy gra jest aktywna - wymaga aplikacji do dodania na liście GameSpace\n\n2. Tryb zasilania w czasie pracy zastąpi systemowy tryb zasilania.\n\n3. Blok czujników bezczynności uniemożliwi prawidłowe działanie niektórych czujników.</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
 </resources>

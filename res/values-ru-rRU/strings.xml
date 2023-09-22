@@ -306,18 +306,18 @@
     <!-- Statusbar Clock background chip -->
     <string name="statusbar_clock_chip_title">Фон часов</string>
     <string name="statusbar_clock_chip_summary">Показывать фон часов</string>
-    <string name="solid_accent">Solid color accent</string>
-    <string name="outline">Outline</string>
-    <string name="solid_accent_gradient">Solid color accent gradient</string>
+    <string name="solid_accent">Сплошной цветной акцент</string>
+    <string name="outline">Контур</string>
+    <string name="solid_accent_gradient">Сплошной градиентный цветной акцент</string>
     <string name="solid_gradient">Solid Gradient side</string>
     <string name="solid_gradient_corner">Solid accent gradient sharp</string>
     <string name="solid_gradient_void">Градиентная пустота</string>
     <string name="solid_gradient_neumorph">Нойморфный градиент</string>
     <string name="solid_gradient_stroke">Sharp gradient stroke</string>
     <string name="solid_accent_transperent">Accent transperent</string>
-    <string name="solid_gradient_light">Gradient light</string>
+    <string name="solid_gradient_light">Градиентный свет</string>
     <string name="solid_gradient_shape">Sharp gradient corner</string>
-    <string name="solid_gradient_void_light">Gradient Void light</string>
+    <string name="solid_gradient_void_light">Градиентный свет пустоты</string>
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Настройки часов и даты</string>
     <string name="status_bar_clock_summary">Изменить вид часов и даты</string>
@@ -356,7 +356,7 @@
     <string name="clock_date_right">Справа от времени</string>
     <string name="clock_date_left">Слева от времени</string>
     <string name="clock_font_size_title">Размер шрифта часов</string>
-    <string name="status_bar_clock_font_style_title">Clock font style</string>
+    <string name="status_bar_clock_font_style_title">Шрифт часов</string>
     <string name="status_bar_clock_color_title">Цвет шрифта часов</string>
     <!-- Tap to sleep on status bar -->
     <string name="statusbar_doubletap_sleep_title">Двойное касание для сна</string>
@@ -548,11 +548,11 @@
     <string name="weather_style_0">"32°C на следующий день"</string>
     <string name="weather_style_1">"32°C"</string>
     <string name="weather_style_2">"32°C \u2022 Сегодня 32° / 24°"</string>
-    <string name="weather_style_3">"32°C \u2022 New York"</string>
-    <string name="weather_style_4">"32°C \u2022 Sunny"</string>
-    <string name="weather_style_5">"32°C \u2022 Today 32° / 24° \u2022 New York"</string>
-    <string name="weather_style_6">"32°C \u2022 Today 32° / 24° \u2022 Sunny"</string>
-    <string name="weather_style_7">"32°C \u2022 New York \u2022 Sunny"</string>
+    <string name="weather_style_3">"32°C \u2022 Нью-Йорк"</string>
+    <string name="weather_style_4">"32°C \u2022 Солнечно"</string>
+    <string name="weather_style_5">"32°C \u2022 Сегодня 32° / 24° \u2022 Нью-Йорк"</string>
+    <string name="weather_style_6">"32°C \u2022 Сегодня 32° / 24° \u2022 Солнечно"</string>
+    <string name="weather_style_7">"32°C \u2022 Нью-Йорк \u2022 Солнечно"</string>
     <!-- Omni weather -->
     <string name="weather_title">Настройки погоды</string>
     <string name="weather_config_title">Настройки погоды</string>
@@ -713,7 +713,7 @@
     <!-- UI settings -->
     <string name="monet_title">Настройки Монет</string>
     <string name="monet_summary">Настройки движка Монет темы</string>
-    <string name="monet_engine_wallpaper_color_select_summary">Select a different accent color from your wallpaper</string>
+    <string name="monet_engine_wallpaper_color_select_summary">Выберите другой цвет акцента из ваших обоев</string>
     <string name="monet_engine_wallpaper_color_select_title">Выбор цвета обоев</string>
     <!-- Monet Engine -->
     <string name="monet_engine_custom_color_title">Акцентный цвет</string>
@@ -766,10 +766,10 @@
     <!-- Flags features -->
     <string name="combined_status_bar_signal_icons_title">Комбинированные значки сигнала</string>
     <string name="combined_status_bar_signal_icons_summary">Включить комбинированные значки сигнала\n(ВНИМАНИЕ: произойдёт мягкая перезагрузка при их включении)</string>
-    <string name="lockscreen_user_switcher_title">User Switcher</string>
-    <string name="lockscreen_user_switcher_summary">Show user switcher when unlocking secured device</string>
+    <string name="lockscreen_user_switcher_title">Переключение пользователей</string>
+    <string name="lockscreen_user_switcher_summary">Показывать пользовательский переключатель при разблокировке защищённого устройства</string>
     <!-- Combined Qs Headers -->
-    <string name="combined_qs_headers_title">Combined Qs Headers </string>
+    <string name="combined_qs_headers_title">Комбинированные заголовки быстрых настроек </string>
     <string name="combined_qs_headers_summary">Switch to QPR2 header layout</string>
     <!-- QS clock -->
     <string name="qs_clock_title">Часы</string>
@@ -813,18 +813,18 @@
     <string name="power_menu_animation_slide">Сдвиг</string>
     <string name="power_menu_animation_turn">Поворот</string>
     <string name="power_menu_animation_fly">Свечение</string>
-    <string name="power_menu_animation_card">3D</string>
+    <string name="power_menu_animation_card">3Д</string>
     <string name="power_menu_animation_translucent_top">Полупрозрачность (сверху)</string>
     <string name="power_menu_animation_translucent_bottom">Полупрозрачность (снизу)</string>
     <string name="power_menu_animation_rotate">Вращение</string>
     <!-- Power menu and dialogs opacity -->
-    <string name="power_menu_transparency">Power/reboot menu opacity</string>
-    <string name="power_menu_dialog_dim">Power/reboot dialog dim background amount</string>
+    <string name="power_menu_transparency">Непрозрачность меню кнопки питания</string>
+    <string name="power_menu_dialog_dim">Затемнение фона при отображении меню питания/перезагрузки</string>
     <!-- QS tiles layout -->
     <string name="qs_layout_category_title">Расположение плиток</string>
     <string name="qs_tile_layout_title">Вертикальное расположение</string>
     <string name="qs_tile_layout_summary">Показывать подпись под значком, а не сбоку</string>
-    <string name="qs_tiles_layout_category">Tiles layout</string>
+    <string name="qs_tiles_layout_category">Расположение плиток</string>
     <string name="qs_rows_portrait_title">Rows (Portrait)</string>
     <string name="qqs_rows_portrait_title">Rows (Quick QS portrait)</string>
     <string name="qs_columns_portrait_title">Столбцы (портрет)</string>
@@ -833,9 +833,9 @@
     <string name="qs_tile_hide_label_title">Скрыть подписи</string>
     <string name="qs_tile_label_size_title">Размер шрифта подписи</string>
     <string name="qs_tile_secondary_label_size_title">Secondary Label text size</string>
-    <string name="qs_tile_hide_label_summary">Show only icon for QS tiles</string>
-    <string name="qs_tile_vertical_layout_title">Vertical layout</string>
-    <string name="qs_tile_vertical_layout_summary">Enable vertical layout for QS tiles</string>
+    <string name="qs_tile_hide_label_summary">Показывать только значок у плиток быстрых настроек</string>
+    <string name="qs_tile_vertical_layout_title">Вертикальное расположение</string>
+    <string name="qs_tile_vertical_layout_summary">Показывать подпись под значком, а не справа</string>
     <!-- Quick settings styles -->
     <string name="qs_styles_title">Стиль панели быстрых настроек</string>
     <string name="qs_ui_title">Интерфейс быстрых настроек</string>
@@ -885,31 +885,31 @@
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">Ускорение</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">С оттяжкой и проскоком</string>
     <!-- Brightness slider styles -->
-    <string name="brightness_slider_style_title">Brightness slider style</string>
+    <string name="brightness_slider_style_title">Стиль ползунка яркости</string>
     <string name="brightness_slider_style_default">По умолчанию</string>
-    <string name="brightness_slider_style_filled">Filled</string>
+    <string name="brightness_slider_style_filled">Заполненный</string>
     <string name="brightness_slider_style_thin">Тонкий</string>
-    <string name="brightness_slider_style_cyberpunk">Blocky Thumb</string>
-    <string name="brightness_slider_style_gradiant">Double Layer</string>
-    <string name="brightness_slider_style_neumorph">Neumorph</string>
-    <string name="brightness_slider_style_outline">Outline</string>
+    <string name="brightness_slider_style_cyberpunk">Блочный</string>
+    <string name="brightness_slider_style_gradiant">Двойной слой</string>
+    <string name="brightness_slider_style_neumorph">Нейморф</string>
+    <string name="brightness_slider_style_outline">Контур</string>
     <string name="brightness_slider_style_shaded">Затенённый QS</string>
     <string name="brightness_slider_style_thinoutline">Inline</string>
-    <string name="brightness_slider_style_translucent">Transparent</string>
-    <string name="brightness_slider_style_leafyoutline">Leafy Outline</string>
-    <string name="brightness_slider_style_minimalthumb">Minimal Thumb</string>
-    <string name="brightness_slider_style_oldschoolthumb">Old School Thumb</string>
-    <string name="brightness_slider_style_roundedclip">Rounded clip</string>
+    <string name="brightness_slider_style_translucent">Прозрачный</string>
+    <string name="brightness_slider_style_leafyoutline">Лиственный контур</string>
+    <string name="brightness_slider_style_minimalthumb">Минимальный</string>
+    <string name="brightness_slider_style_oldschoolthumb">Старый</string>
+    <string name="brightness_slider_style_roundedclip">Скруглённый</string>
     <string name="brightness_slider_style_thumbslider">Thumb Slider</string>
-    <string name="brightness_slider_style_line">Thin Outline</string>
+    <string name="brightness_slider_style_line">Тонкий контур</string>
     <string name="brightness_slider_style_lighty">Lighty</string>
-    <string name="brightness_slider_style_acun">Acun</string>
-    <string name="brightness_slider_style_bang">Bang</string>
+    <string name="brightness_slider_style_acun">Акун</string>
+    <string name="brightness_slider_style_bang">Бэнг</string>
     <!-- QS tile shape -->
-    <string name="qs_tile_shape">QS tile shape</string>
+    <string name="qs_tile_shape">Форма плиток быстрых настроек</string>
     <string name="qs_tile_round">Round</string>
-    <string name="qs_tile_rect">Rounded Rectangle</string>
-    <string name="qs_tile_mix">Round for active tiles and Rounded Rectangle for inactive tiles</string>
+    <string name="qs_tile_rect">Прямоугольник с закруглёнными углами</string>
+    <string name="qs_tile_mix">Округление для активных плиток и закруглённый прямоугольник для неактивных плиток</string>
     <!-- VoLTE Icon Type -->
     <string name="volte_icon_style_title">Выберите иконку VoLTE</string>
     <string name="volte_icon_off">Выкл.</string>
@@ -924,16 +924,16 @@
     <string name="volte_icon_margaritov2">Маргаритов</string>
     <string name="volte_icon_vivo">Виво</string>
     <string name="volte_icon_aris">Арис</string>
-    <string name="volte_icon_beast">Aww Icon</string>
+    <string name="volte_icon_beast">Милая</string>
     <string name="volte_icon_ios">iOS</string>
     <string name="volte_icon_lr">Ливендж</string>
     <string name="volte_icon_realme">Реалми</string>
     <string name="volte_icon_typeA">Mild Icon</string>
     <string name="volte_icon_typeB">Filth Icon</string>
-    <string name="volte_icon_typeC">Mue Icon</string>
+    <string name="volte_icon_typeC">Муе</string>
     <string name="volte_icon_typeD">Самозванец</string>
-    <string name="volte_icon_typeE">Acherus Icon</string>
-    <string name="volte_icon_vcircle">Circle Icon</string>
+    <string name="volte_icon_typeE">Акхерус</string>
+    <string name="volte_icon_vcircle">Круг</string>
     <string name="volte_icon_vimeo">Вимео</string>
     <string name="volte_icon_volit">Volit Icon</string>
     <string name="volte_icon_zirco">Зирок</string>
@@ -948,7 +948,7 @@
     <string name="vowifi_icon_emui">EMUI Icons</string>
     <!-- Volume Styles -->
     <string name="rui_style">Realme UI</string>
-    <string name="rising_style">Rising UI style</string>
+    <string name="rising_style">Восходящий</string>
     <string name="double_layer_style">Двухслойный стиль</string>
     <string name="gradient_style">Градиентный стиль</string>
     <string name="neumorph_style">Нейроморфный стиль</string>
@@ -1009,13 +1009,16 @@
     <string name="function_font_dancingscript">DancingScript</string>
     <string name="function_font_dancingscript_bold">DancingScript Bold</string>
     <string name="function_font_comingsoon">ComingSoon</string>
-    <string name="function_font_notoserif">NotoSerif Normal</string>
-    <string name="function_font_notoserif_italic">NotoSerif Italic</string>
-    <string name="function_font_notoserif_bold">NotoSerif Bold</string>
-    <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
+    <string name="function_font_notoserif">NotoSerif обычный</string>
+    <string name="function_font_notoserif_italic">NotoSerif курсив</string>
+    <string name="function_font_notoserif_bold">NotoSerif жирный</string>
+    <string name="function_font_notoserif_bold_italic">NotoSerif жирный курсив</string>
     <!-- UDFPS Haptic Feedback -->
     <string name="udfps_haptic_feedback_title">Использовать виброотклик для сканера отпечатка пальцев</string>
     <string name="udfps_haptic_feedback_summary">Вибрировать при нажатии на иконку отпечатка пальца</string>
+    <!-- Screen off UDFPS -->
+    <string name="screen_off_udfps_title">Screen off UDFPS</string>
+    <string name="screen_off_udfps_summary">Keep UDFPS enabled when the screen is off</string>
     <!-- UDFPS Recog Animation -->
     <string name="udfps_customization">Настройки сканера отпечатка пальца под экраном</string>
     <string name="udfps_recog_animation">Анимация сканера отпечатка пальцев под экраном</string>
@@ -1051,8 +1054,8 @@
     <string name="toast_GrowFadeCenter_animation">Нарастающее затухание из центра</string>
     <string name="toast_GrowFadeBottom_animation">Нарастающее затухание снизу</string>
     <string name="toast_Translucent_animation">Полупрозрачный</string>
-    <string name="toast_SlideLeftRight_animation">Slide left to right</string>
-    <string name="toast_SlideRightLeft_animation">Slide right to left</string>
+    <string name="toast_SlideLeftRight_animation">Проведите слева направо</string>
+    <string name="toast_SlideRightLeft_animation">Проведите справа налево</string>
     <string name="toast_animation_test">Тест для анимации всплывающих уведомлений</string>
     <!-- Android P animation style -->
     <string name="pie_animation_style_title">Анимации из Android P</string>
@@ -1064,7 +1067,7 @@
     <string name="volume_panel_musiccard_title">Музыкальная карта</string>
     <string name="volume_panel_musiccard_summary">Включить музыкальную карту в панели громкости</string>
     <!-- 5G icon -->
-    <string name="show_fiveg_icon_summary">Show 5G instead of LTE &amp; 4G</string>
+    <string name="show_fiveg_icon_summary">Показать 5G вместо LTE и 4G</string>
     <string name="show_fiveg_icon_title">Отображать индикатор 5G</string>
     <!-- Custom Data icons -->
     <string name="theme_customization_data_title">Стиль значка данных</string>
@@ -1110,4 +1113,7 @@
     <string name="system_manager_aggressive_idle_mode_location_toggle_summary">Отключить местоположение при включенном режиме простоя Спарк</string>
     <string name="system_manager_aggressive_idle_mode_location_timeout_title">Интервал выключения месторасположения</string>
     <string name="system_manager_info_title">Советы\u003a \n\n1. Ускорение игры активируется только тогда, когда игра активна — нужно добавить приложение в список Игрового пространства.\n\n2. Режим работы питания переопределит системный режим питания.\n\n3. Блокировка датчиков будет препятствовать правильной работе некоторых датчиков движения.</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
 </resources>

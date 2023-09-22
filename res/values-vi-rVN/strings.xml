@@ -1013,6 +1013,9 @@
     <!-- UDFPS Haptic Feedback -->
     <string name="udfps_haptic_feedback_title">Phản hồi xúc giác UDFPS</string>
     <string name="udfps_haptic_feedback_summary">Rung khi chạm vào biểu tượng UDFPS</string>
+    <!-- Screen off UDFPS -->
+    <string name="screen_off_udfps_title">Screen off UDFPS</string>
+    <string name="screen_off_udfps_summary">Keep UDFPS enabled when the screen is off</string>
     <!-- UDFPS Recog Animation -->
     <string name="udfps_customization">Tùy chỉnh UDFPS</string>
     <string name="udfps_recog_animation">Hoạt ảnh UDFPS</string>
@@ -1107,4 +1110,7 @@
     <string name="system_manager_aggressive_idle_mode_location_toggle_summary">Tắt vị trí khi màn hình tắt</string>
     <string name="system_manager_aggressive_idle_mode_location_timeout_title">Thời gian tắt vị trí</string>
     <string name="system_manager_info_title">Mẹo\u003a \n\n1. Game Boost sẽ chỉ kích hoạt khi một trò chơi đang hoạt động - yêu cầu phải thêm ứng dụng vào danh sách GameSpace.\n\n2. Chế độ nguồn thời gian chạy sẽ ghi đè chế độ nguồn hệ thống.\n\n3. Idle Sensor Block sẽ ngăn một số cảm biến chuyển động hoạt động bình thường.</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
 </resources>

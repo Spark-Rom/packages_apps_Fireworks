@@ -1018,6 +1018,9 @@
     <!-- UDFPS Haptic Feedback -->
     <string name="udfps_haptic_feedback_title">FOD haptic feedback</string>
     <string name="udfps_haptic_feedback_summary">Vibrate when touching FOD icon</string>
+    <!-- Screen off UDFPS -->
+    <string name="screen_off_udfps_title">Screen off UDFPS</string>
+    <string name="screen_off_udfps_summary">Keep UDFPS enabled when the screen is off</string>
     <!-- UDFPS Recog Animation -->
     <string name="udfps_customization">تخصيص حساس بصمة اصبع اليد تحت الشاشة</string>
     <string name="udfps_recog_animation">Udfps animation</string>
@@ -1112,4 +1115,7 @@
     <string name="system_manager_aggressive_idle_mode_location_toggle_summary">Disable Location on screen off when System Manager Aggressive Idle mode is enabled</string>
     <string name="system_manager_aggressive_idle_mode_location_timeout_title">Turn off Location timeout</string>
     <string name="system_manager_info_title">Tips\u003a \n\n1. Game Boost will only activate when a game is active - requires app to be added on GameSpace list.\n\n2. Runtime power mode will override system power mode.\n\n3. Idle Sensor Block will prevent certain motion sensors from working properly.</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
 </resources>

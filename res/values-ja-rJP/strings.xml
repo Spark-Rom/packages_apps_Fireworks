@@ -1013,6 +1013,9 @@
     <!-- UDFPS Haptic Feedback -->
     <string name="udfps_haptic_feedback_title">画面内指紋認証の振動の使用</string>
     <string name="udfps_haptic_feedback_summary">画面内指紋認証アイコンに触れた時に振動させる</string>
+    <!-- Screen off UDFPS -->
+    <string name="screen_off_udfps_title">Screen off UDFPS</string>
+    <string name="screen_off_udfps_summary">Keep UDFPS enabled when the screen is off</string>
     <!-- UDFPS Recog Animation -->
     <string name="udfps_customization">画面内指紋認証の編集</string>
     <string name="udfps_recog_animation">画面内指紋認証アニメーション</string>
@@ -1107,4 +1110,7 @@
     <string name="system_manager_aggressive_idle_mode_location_toggle_summary">システムがアグレッシブアイドルモードのときは画面消灯時の位置情報を無効にします</string>
     <string name="system_manager_aggressive_idle_mode_location_timeout_title">位置情報のタイムアウトをしない</string>
     <string name="system_manager_info_title">ヒント\u003a \n\n1.ゲームブーストはゲーム時のみに起動します。ゲームスペースのリストにアプリを追加する必要があります。\n\n2.ランタイムパワーモードはパワーモードよりも優先されます。\n\n3.アイドルセンサーブロックは特定のモーションセンサーが動作しないように制御します。</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
 </resources>
