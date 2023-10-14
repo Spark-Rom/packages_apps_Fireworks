@@ -26,6 +26,7 @@ import lineageos.providers.LineageSettings;
 import com.spark.settings.utils.DeviceUtils;
 import com.spark.settings.preferences.SystemSettingSeekBarPreference;
 import com.spark.settings.utils.TelephonyUtils;
+import com.spark.settings.preferences.CustomSeekBarPreference;
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
@@ -53,6 +54,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private static final String KEY_SHOW_FOURG = "show_fourg_icon";
     private static final String KEY_SHOW_DATA_DISABLED = "data_disabled_icon";
     private static final String KEY_USE_OLD_MOBILETYPE = "use_old_mobiletype";
+    private static final String KEY_STATUSBAR_TOP_PADDING = "statusbar_top_padding";
+    private static final String KEY_STATUSBAR_LEFT_PADDING = "statusbar_left_padding";
+    private static final String KEY_STATUSBAR_RIGHT_PADDING = "statusbar_right_padding";
 
     private static final int BATTERY_STYLE_PORTRAIT = 0;
     private static final int BATTERY_STYLE_TEXT = 4;
@@ -94,6 +98,18 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch);
             mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch);
         }
+        
+        ((CustomSeekBarPreference) findPreference(KEY_STATUSBAR_LEFT_PADDING)).setDefaultValue(
+            getResources().getDimensionPixelSize(com.android.internal.R.dimen.status_bar_padding_start),
+            true);
+
+        ((CustomSeekBarPreference) findPreference(KEY_STATUSBAR_RIGHT_PADDING)).setDefaultValue(
+            getResources().getDimensionPixelSize(com.android.internal.R.dimen.status_bar_padding_end),
+            true);
+
+        ((CustomSeekBarPreference) findPreference(KEY_STATUSBAR_TOP_PADDING)).setDefaultValue(
+            getResources().getDimensionPixelSize(com.android.internal.R.dimen.status_bar_padding_top),
+            true);
 
         int batterystyle = Settings.System.getIntForUser(getContentResolver(),
                 Settings.System.STATUS_BAR_BATTERY_STYLE, BATTERY_STYLE_PORTRAIT, UserHandle.USER_CURRENT);
