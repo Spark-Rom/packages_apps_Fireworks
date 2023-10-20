@@ -312,5 +312,11 @@
             android:key="swap_volume_buttons"
             android:title="@string/swap_volume_buttons_title"
             android:summary="@string/swap_volume_buttons_summary" />
+
+        <Preference
+            android:key="volume_steps"
+            android:title="@string/volume_steps_title"
+            android:summary="@string/volume_steps_summary"
+            android:fragment="com.spark.settings.fragments.VolumeSteps" />
     </PreferenceCategory>
 </PreferenceScreen>
